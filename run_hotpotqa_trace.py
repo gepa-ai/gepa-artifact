@@ -24,6 +24,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'gepa_artifact'))
 
 # Trace imports
 from opto.trace.nodes import node, GRAPH, ParameterNode, MessageNode
+MessageNode.__format__ = lambda self, format_spec: str(self.data)
 from opto.optimizers import OptoPrime
 from opto.trace.bundle import bundle
 from opto.trace.modules import model
@@ -159,7 +160,7 @@ class HotpotMultiHopTrace(LLMCallable):
         # Fallback: just return the response if we can't parse it
         return response.strip()
     
-    @bundle(catch_execution_error=True)
+    @bundle(catch_execution_error=True, allow_external_dependencies=True)
     def create_dspy_prompt(self, input_fields, output_fields, instruction, values):
         """
         Create a DSPy-style prompt with system and user messages.
@@ -474,14 +475,32 @@ def generate_feedback(example, prediction, result):
 
 
 def optimization_function(model_instance, trainset, valset=None, num_steps=20):
-    """Main optimization function using OptoPrime"""
+    """Main optimization function using OptoPrime with one optimizer per LLM output"""
     
-    # Initialize optimizer with explicit LLM config
-    # Use gpt-4o-mini which is a valid model name
+    # Initialize 4 separate optimizers, one per LLM module output
+    # Each optimizer has access to ALL parameters for context
+    # Use gpt-4.1-mini which is a valid model name
     llm = LLM(model="gpt-4.1-mini")
-    optimizer = OptoPrime(model_instance.parameters(), llm=llm)
     
+    # Get all parameters - each optimizer gets access to all parameters
+    all_parameters = model_instance.parameters()
+    
+    # Create one optimizer per output, all sharing the same parameter list
+    # The key difference is that each calls backward() on a different output node
+    optimizer_summarize1 = OptoPrime(all_parameters, llm=llm)
+    optimizer_query_hop2 = OptoPrime(all_parameters, llm=llm)
+    optimizer_summarize2 = OptoPrime(all_parameters, llm=llm)
+    optimizer_final_answer = OptoPrime(all_parameters, llm=llm)
+    
+    optimizers = {
+        'summarize1': optimizer_summarize1,
+        'query_hop2': optimizer_query_hop2,
+        'summarize2': optimizer_summarize2,
+        'final_answer': optimizer_final_answer
+    }
+
     print(f"Starting optimization on {len(trainset)} training examples for {num_steps} steps...")
+    print(f"Using 4 separate optimizers (one per LLM output)")
     if valset:
         print(f"Validation set size: {len(valset)} examples")
     
@@ -511,29 +530,42 @@ def optimization_function(model_instance, trainset, valset=None, num_steps=20):
                 print(f"Predicted Answer: {result.get('answer', '')}")
                 print(f"Score: {score:.2f}")
             
-            print(f"Feedback: {feedback[:200]}...")
+            print(f"Feedback: {feedback}...")
             
-            # Optimize using feedback
+            # Optimize using feedback - update all 4 optimizers
             if score < 1.0:  # Only optimize if not perfect
-                optimizer.zero_feedback()
-                # Backward from the answer node which received the feedback
-                answer_node = result['answer']
-                optimizer.backward(answer_node, feedback)
-                optimizer.step()
+                # Zero feedback on all optimizers
+                for opt in optimizers.values():
+                    opt.zero_feedback()
                 
-                # Debug: Print optimizer log
-                if hasattr(optimizer, 'log') and optimizer.log:
-                    last_log = optimizer.log[-1]
-                    print("\n--- Optimizer Prompt & Response ---")
-                    print(f"System Prompt:\n{last_log.get('system_prompt', '')}")
-                    print(f"User Prompt:\n{last_log.get('user_prompt', '')}")
-                    print(f"Response:\n{last_log.get('response', '')}")
-                    print("-------------------------------------\n")
+                # Map each optimizer to its corresponding output field
+                optimizer_output_map = {
+                    'summarize1': result.get('summary_1'),
+                    'query_hop2': result.get('hop2_query'),
+                    'summarize2': result.get('summary_2'),
+                    'final_answer': result.get('answer')
+                }
+                
+                # Each optimizer performs backward on its specific output field
+                for opt_name, opt in optimizers.items():
+                    output_node = optimizer_output_map[opt_name]
+                    if output_node is not None:
+                        opt.backward(output_node, feedback)
+                        opt.step()
+                        
+                        # Debug: Print optimizer log for each optimizer
+                        if hasattr(opt, 'log') and opt.log:
+                            last_log = opt.log[-1]
+                            print(f"\n--- Optimizer '{opt_name}' Prompt & Response ---")
+                            print(f"System Prompt:\n{last_log.get('system_prompt', '')}")
+                            print(f"User Prompt:\n{last_log.get('user_prompt', '')}")
+                            print(f"Response:\n{last_log.get('response', '')}")
+                            print("-------------------------------------\n")
 
                 print("✓ Parameters updated:")
                 for name, param in model_instance.parameters_dict().items():
                     if getattr(param, 'trainable', False):
-                         print(f"  {name}: {param.data[:100]}..." if len(str(param.data)) > 100 else f"  {name}: {param.data}")
+                         print(f"  {name}: {param.data}")
             else:
                 print("✓ Answer correct, no update needed")
                 
@@ -543,25 +575,7 @@ def optimization_function(model_instance, trainset, valset=None, num_steps=20):
             traceback.print_exc()
             continue
         
-        # Evaluate on validation set every 5 steps
-        if (step + 1) % 5 == 0 and valset:
-            print(f"\n--- Validation Set Evaluation (10 random samples) ---")
-            eval_examples = random.sample(valset, min(10, len(valset)))
-            scores = []
-            
-            for eval_ex in eval_examples:
-                try:
-                    eval_result = model_instance.forward(eval_ex['question'])
-                    if not isinstance(eval_result, ExceptionNode):
-                        score = eval_metric(eval_ex, eval_result.get('answer', ''))
-                        scores.append(score)
-                except:
-                    scores.append(0.0)
-            
-            avg_score = sum(scores) / len(scores) if scores else 0.0
-            correct_count = sum(1 for s in scores if s >= 1.0)
-            print(f"Validation Accuracy: {avg_score:.3f} ({correct_count}/{len(scores)} correct)")
-    
+
     print("\n" + "="*80)
     print("Optimization Complete!")
     print("="*80)
