@@ -1,11 +1,10 @@
 """
-AIME Question Answering with Trace Optimization
-Adapted from run_hotpotqa_trace.py for AIME benchmark.
+LiveBench Math with Trace Optimization
+Adapted from run_hotpotqa_trace.py for LiveBench Math.
 
 Key Features:
-- Uses AIMEBench dataset
-- Optimizes prompt templates for CoT
-- Supports train/val/test splits
+- Uses LiveBenchMath dataset
+- Optimizes prompt templates for math problem solving
 """
 
 import os
@@ -39,32 +38,28 @@ from trace_utils import (
 
 # Benchmark specific imports
 import dspy
-from gepa_artifact.benchmarks.AIME.AIME_data import AIMEBench
-from gepa_artifact.benchmarks.AIME import metric
+from gepa_artifact.benchmarks.livebench_math.livebenchmath_data import LiveBenchMathBench
+from gepa_artifact.benchmarks.livebench_math import metric, metric_with_feedback
 
 @model
-class AIMETrace(LLMCallable):
-    """Traced version of AIME using Trace library"""
+class LiveBenchMathTrace(LLMCallable):
+    """Traced version of LiveBench Math"""
     
     def __init__(self):
         super().__init__()
         
-        # Define trainable prompt template
         self.generate_response_template = ParameterNode(
-            "Given the fields `problem`, produce the fields `answer`.",
+            "Given the fields `question`, produce the fields `answer`.",
             trainable=True,
-            description="Template for solving AIME problems. Should encourage step-by-step reasoning."
+            description="Template for solving math problems."
         )
     
-    def forward(self, problem):
-        """Main forward pass for AIME"""
-        
-        # Create prompt using DSPy format
+    def forward(self, question):
         system_prompt, user_prompt = create_dspy_prompt(
-            input_fields={"problem": "str"},
+            input_fields={"question": "str"},
             output_fields={"reasoning": "str", "answer": "str"},
             instruction=self.generate_response_template,
-            values={"problem": problem}
+            values={"question": question}
         )
         
         response = self.call_llm(system_prompt=system_prompt, user_prompt=user_prompt)
@@ -75,19 +70,19 @@ class AIMETrace(LLMCallable):
             "response": response
         }
 
-class AIMEBaseline(LLMCallableBaseline):
-    """Baseline version of AIME WITHOUT Trace library"""
+class LiveBenchMathBaseline(LLMCallableBaseline):
+    """Baseline version of LiveBench Math"""
     
     def __init__(self):
         super().__init__()
-        self.generate_response_template = "Given the fields `problem`, produce the fields `answer`."
+        self.generate_response_template = "Given the fields `question`, produce the fields `answer`."
     
-    def forward(self, problem):
+    def forward(self, question):
         system_prompt, user_prompt = create_dspy_prompt_baseline(
-            input_fields={"problem": "str"},
+            input_fields={"question": "str"},
             output_fields={"reasoning": "str", "answer": "str"},
             instruction=self.generate_response_template,
-            values={"problem": problem}
+            values={"question": question}
         )
         
         response = self.call_llm(system_prompt=system_prompt, user_prompt=user_prompt)
@@ -99,110 +94,90 @@ class AIMEBaseline(LLMCallableBaseline):
         }
 
 def eval_metric_wrapper(example, prediction):
-    """Evaluate if prediction matches the expected answer using benchmark metric"""
-
-    
-    if isinstance(prediction, dict):
-        prediction = prediction.get('answer', '')
-
     if hasattr(prediction, 'data'):
         prediction = prediction.data
-
-    # The metric function expects a dspy.Prediction object with an 'answer' attribute
-    # and an example dict-like object with 'answer'
-    dspy_pred = dspy.Prediction(answer=prediction)
-    
-    # AIME metric requires integer conversion check
+        
+    if isinstance(prediction, dict):
+        pred_answer = prediction.get('answer', '')
+    else:
+        pred_answer = prediction
+        
+    dspy_pred = dspy.Prediction(answer=pred_answer)
     return metric(example, dspy_pred)
 
 def generate_feedback(example, prediction, result):
-    """Generate feedback for the optimizer"""
-    # Use result instead of prediction
-    score = eval_metric_wrapper(example, result)
-    
-    correctness = (score == 1)
-    
-    if correctness:
-        feedback = "The answer is correct! No need to change anything."
+    if isinstance(result, dict):
+        pred_answer = result.get('answer', '')
     else:
-        feedback = f"The answer is wrong. We expect the output of your answer to be \"{example['answer']}\". Please modify the prompt and relevant parts of the program to help LLM produce the right answer."
-        
-        # Add solution if available (similar to metric_with_feedback in original)
-        written_solution = example.get('solution', '')
-        if written_solution:
-            feedback += f" Here's the full step-by-step solution:\n{written_solution}\n\nThink about what takeaways you can learn from this solution to improve your future answers and approach to similar problems."
+        pred_answer = result
 
-    return feedback, score
+    if hasattr(pred_answer, 'data'):
+        pred_answer = pred_answer.data
+        
+    dspy_pred = dspy.Prediction(answer=pred_answer)
+    feedback_result = metric_with_feedback(example, dspy_pred)
+    
+    return feedback_result.feedback, feedback_result.score
 
 def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False, optimizer="OptoPrime", save_dir=None):
-    print("Loading AIME dataset...")
+    print("Loading LiveBench Math dataset...")
     
     if seed is not None:
         random.seed(seed)
-        print(f"Random seed set to: {seed}")
     
     # Use save_dir if provided, otherwise use current directory
     if save_dir is None:
         save_dir = os.path.dirname(__file__)
     
-    benchmark = AIMEBench(dataset_mode=dataset_mode)
+    benchmark = LiveBenchMathBench(dataset_mode=dataset_mode)
     
     def example_to_dict(ex):
-        return {
-            "problem": ex.problem,
-            "answer": ex.answer,
-            "solution": ex.get("solution", "")
-        }
-    
+        # Ensure we preserve all fields needed (question, question_d, etc)
+        return dict(ex)
+        
     trainset = [example_to_dict(ex) for ex in benchmark.train_set]
     valset = [example_to_dict(ex) for ex in benchmark.val_set]
     testset = [example_to_dict(ex) for ex in benchmark.test_set]
     
-    print(f"Loaded dataset splits:")
-    print(f"  Train: {len(trainset)} examples")
-    print(f"  Val: {len(valset)} examples")
-    print(f"  Test: {len(testset)} examples")
+    print(f"Train: {len(trainset)}, Val: {len(valset)}, Test: {len(testset)}")
     
-    print("\nInitializing AIMETrace model...")
-    model_instance = AIMETrace()
+    model_instance = LiveBenchMathTrace()
     
     if run_test_baseline:
         evaluate_baseline_concurrent(
-            testset=testset, 
-            forward_fn=lambda x: AIMEBaseline().forward(x),
+            testset=testset,
+            forward_fn=lambda x: LiveBenchMathBaseline().forward(x),
             eval_fn=eval_metric_wrapper,
-            input_key="problem"
+            input_key="question"
         )
         return
-    
-    print(f"\nRunning optimization with {optimizer}...")
+        
+    print(f"Running optimization with {optimizer}...")
     optimized_model = train_optimization_loop(
         model_instance, 
-        trainset=trainset, 
+        trainset, 
         optimizer_config={"optimizer": "answer"},
         feedback_fn=generate_feedback,
-        input_key="problem",
+        input_key="question",
         num_steps=num_steps,
         optimizer_type=optimizer,
         save_dir=save_dir
     )
-    
-    print("\nCreating optimized baseline model for final evaluation (parallel)...")
-    optimized_baseline = AIMEBaseline()
+        
+    optimized_baseline = LiveBenchMathBaseline()
     optimized_baseline.generate_response_template = optimized_model.generate_response_template.data
     
     evaluate_baseline_concurrent(
-        testset=testset, 
+        testset=testset,
         forward_fn=lambda x: optimized_baseline.forward(x),
         eval_fn=eval_metric_wrapper,
-        input_key="problem"
+        input_key="question"
     )
 
 if __name__ == "__main__":
     import argparse
-    
-    parser = argparse.ArgumentParser(description="AIME with Trace Optimization")
-    parser.add_argument("--dataset-mode", type=str, default="lite", choices=["lite", "full", "tiny", "test"])
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset-mode", type=str, default="lite")
     parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--num-steps", type=int, default=20)
     parser.add_argument("--run-test-baseline", action="store_true")
@@ -210,14 +185,6 @@ if __name__ == "__main__":
                         help="Optimizer to use for training (default: OptoPrime)")
     parser.add_argument("--save-dir", type=str, default=None,
                         help="Directory to save optimized parameters (default: current directory)")
-    
     args = parser.parse_args()
     
-    main(
-        dataset_mode=args.dataset_mode, 
-        seed=args.seed, 
-        num_steps=args.num_steps,
-        run_test_baseline=args.run_test_baseline,
-        optimizer=args.optimizer,
-        save_dir=args.save_dir
-    )
+    main(args.dataset_mode, args.seed, args.num_steps, args.run_test_baseline, args.optimizer, args.save_dir)

@@ -15,6 +15,7 @@ Usage:
 import os
 import sys
 import re
+import time
 from textwrap import dedent
 from typing import List
 import json
@@ -31,6 +32,33 @@ from opto.trace.modules import model
 from opto.trace.errors import ExecutionError
 from opto.trace.nodes import ExceptionNode
 from opto.utils.llm import LLM
+
+
+class LLMWrapper:
+    """Wrapper around opto LLM to provide .create() method for TextGrad compatibility"""
+    def __init__(self, llm):
+        self.llm = llm
+    
+    def create(self, messages, max_tokens=None):
+        """Convert messages to LLM call and return in expected format"""
+        # Call the underlying LLM with messages parameter (opto LLM uses litellm which expects messages)
+        response = self.llm(messages=messages, max_tokens=max_tokens or 4096)
+        
+        # Extract text content from ModelResponse object
+        if hasattr(response, 'choices') and len(response.choices) > 0:
+            # It's already a ModelResponse object, just return it as-is
+            return response
+        else:
+            # It's a string, wrap it in the expected format
+            class Choice:
+                def __init__(self, content):
+                    self.message = type('obj', (object,), {'content': content})()
+            
+            class Response:
+                def __init__(self, content):
+                    self.choices = [Choice(content)]
+            
+            return Response(response)
 
 # Data and utility imports
 from datasets import load_dataset
@@ -469,13 +497,19 @@ def generate_feedback(example, prediction, result):
     if correctness:
         feedback = "The answer is correct! No need to change anything."
     else:
-        feedback = f"The answer is wrong. We expect the output of your answer to be \"{example['answer']}\". Please modify the prompt and relevant parts of the program to help LLM produce the right answer."
+        feedback = f"The answer is wrong. We expect the output of your answer to be \"{example['answer']}\". Please modify the prompt and relevant parts of the program to help LLM produce the right answer. Be general and not specific to the example."
     
     return feedback, score
 
 
-def optimization_function(model_instance, trainset, valset=None, num_steps=20):
-    """Main optimization function using OptoPrime with one optimizer per LLM output"""
+def optimization_function(model_instance, trainset, valset=None, num_steps=20, optimizer_type="OptoPrime", max_time_hours=3.0, save_dir=None):
+    """Main optimization function with one optimizer per LLM output
+    
+    Args:
+        optimizer_type: "OptoPrime" or "TextGrad"
+        max_time_hours: Maximum time in hours before graceful stop (default: 3.0)
+        save_dir: Directory to save optimized parameters (optional)
+    """
     
     # Initialize 4 separate optimizers, one per LLM module output
     # Each optimizer has access to ALL parameters for context
@@ -485,12 +519,26 @@ def optimization_function(model_instance, trainset, valset=None, num_steps=20):
     # Get all parameters - each optimizer gets access to all parameters
     all_parameters = model_instance.parameters()
     
+    # Select optimizer class based on type
+    from opto.optimizers import TextGrad
+    if optimizer_type == "TextGrad":
+        OptimizerClass = TextGrad
+        # Wrap LLM for TextGrad compatibility (TextGrad expects .create() method)
+        llm_for_optimizer = LLMWrapper(llm)
+        print(f"Using TextGrad optimizer")
+    elif optimizer_type == "OptoPrime":
+        OptimizerClass = OptoPrime
+        llm_for_optimizer = llm
+        print(f"Using OptoPrime optimizer")
+    else:
+        raise ValueError(f"Unknown optimizer type: {optimizer_type}")
+    
     # Create one optimizer per output, all sharing the same parameter list
     # The key difference is that each calls backward() on a different output node
-    optimizer_summarize1 = OptoPrime(all_parameters, llm=llm)
-    optimizer_query_hop2 = OptoPrime(all_parameters, llm=llm)
-    optimizer_summarize2 = OptoPrime(all_parameters, llm=llm)
-    optimizer_final_answer = OptoPrime(all_parameters, llm=llm)
+    optimizer_summarize1 = OptimizerClass(all_parameters, llm=llm_for_optimizer)
+    optimizer_query_hop2 = OptimizerClass(all_parameters, llm=llm_for_optimizer)
+    optimizer_summarize2 = OptimizerClass(all_parameters, llm=llm_for_optimizer)
+    optimizer_final_answer = OptimizerClass(all_parameters, llm=llm_for_optimizer)
     
     optimizers = {
         'summarize1': optimizer_summarize1,
@@ -500,11 +548,29 @@ def optimization_function(model_instance, trainset, valset=None, num_steps=20):
     }
 
     print(f"Starting optimization on {len(trainset)} training examples for {num_steps} steps...")
-    print(f"Using 4 separate optimizers (one per LLM output)")
+    print(f"Using 4 separate {optimizer_type} optimizers (one per LLM output)")
+    print(f"Maximum time allowed: {max_time_hours} hours ({max_time_hours * 60:.0f} minutes)")
     if valset:
         print(f"Validation set size: {len(valset)} examples")
     
+    # Track start time
+    start_time = time.time()
+    max_time_seconds = max_time_hours * 3600
+    time_exceeded = False
+    
     for step in range(num_steps):
+        # Check if time limit exceeded
+        elapsed_time = time.time() - start_time
+        if elapsed_time > max_time_seconds:
+            elapsed_hours = elapsed_time / 3600
+            print(f"\n{'='*80}")
+            print(f"⏱️  TIME LIMIT REACHED")
+            print(f"Elapsed time: {elapsed_hours:.2f} hours ({elapsed_time / 60:.1f} minutes)")
+            print(f"Completed {step}/{num_steps} optimization steps")
+            print(f"Gracefully stopping optimization and proceeding to evaluation...")
+            print(f"{'='*80}\n")
+            time_exceeded = True
+            break
         print(f"\n{'='*80}")
         print(f"Optimization Step {step + 1}/{num_steps}")
         print(f"{'='*80}")
@@ -566,6 +632,25 @@ def optimization_function(model_instance, trainset, valset=None, num_steps=20):
                 for name, param in model_instance.parameters_dict().items():
                     if getattr(param, 'trainable', False):
                          print(f"  {name}: {param.data}")
+                
+                # Save parameters after each update if save_dir is provided
+                if save_dir:
+                    import datetime
+                    
+                    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+                    
+                    # Collect all trainable parameters
+                    optimized_params = {}
+                    for name, param in model_instance.parameters_dict().items():
+                        if getattr(param, 'trainable', False):
+                            optimized_params[name] = param.data
+                    
+                    # Save to file with step number
+                    params_file = os.path.join(save_dir, f"optimized_params_step{step+1}_{timestamp}.json")
+                    with open(params_file, 'w') as f:
+                        json.dump(optimized_params, f, indent=2)
+                    
+                    print(f"  💾 Saved to: {params_file}")
             else:
                 print("✓ Answer correct, no update needed")
                 
@@ -574,11 +659,40 @@ def optimization_function(model_instance, trainset, valset=None, num_steps=20):
             import traceback
             traceback.print_exc()
             continue
-        
+    
+    # Print final timing information
+    total_time = time.time() - start_time
+    total_hours = total_time / 3600
+    total_minutes = total_time / 60
 
     print("\n" + "="*80)
-    print("Optimization Complete!")
+    if time_exceeded:
+        print(f"✓ Optimization stopped due to time limit")
+    else:
+        print(f"✓ Optimization completed all {num_steps} steps")
+    print(f"Total optimization time: {total_hours:.2f} hours ({total_minutes:.1f} minutes)")
     print("="*80)
+    
+    # Save final optimized parameters if save_dir is provided
+    if save_dir:
+        import datetime
+        
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        
+        # Collect all trainable parameters
+        optimized_params = {}
+        for name, param in model_instance.parameters_dict().items():
+            if getattr(param, 'trainable', False):
+                optimized_params[name] = param.data
+        
+        # Save final version
+        params_file = os.path.join(save_dir, f"optimized_params_FINAL_{timestamp}.json")
+        with open(params_file, 'w') as f:
+            json.dump(optimized_params, f, indent=2)
+        
+        print(f"✓ Final optimized parameters saved to: {params_file}")
+        print(f"  Parameters saved: {list(optimized_params.keys())}")
+        print()
     
     return model_instance
 
@@ -625,7 +739,7 @@ def evaluate_baseline(model_instance=None, testset=None, num_threads=20, baselin
     print(f"{'='*80}")
 
 
-def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False):
+def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False, use_params_file=None, optimizer="OptoPrime", save_dir=None):
     """
     Main execution function
     
@@ -634,6 +748,8 @@ def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False):
         seed: Random seed for reproducibility (optional)
         num_steps: Number of optimization steps (default: 20)
         run_test_baseline: If True, run baseline evaluation only
+        optimizer: Optimizer type - "OptoPrime" or "TextGrad"
+        save_dir: Directory to save optimized parameters (optional)
     """
     print("Loading HotpotQA dataset...")
     
@@ -641,6 +757,10 @@ def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False):
     if seed is not None:
         random.seed(seed)
         print(f"Random seed set to: {seed}")
+    
+    # Use save_dir if provided, otherwise use current directory
+    if save_dir is None:
+        save_dir = os.path.dirname(__file__)
     
     # Load dataset using the same benchmark class as DSPy version
     # This ensures exact same data splits and preprocessing:
@@ -676,32 +796,35 @@ def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False):
     model_instance = HotpotMultiHopTrace(k=7)
     
     if run_test_baseline:
-        evaluate_baseline(testset=testset)
+        baseline_model = None
+        if use_params_file:
+            print(f"\nLoading optimized parameters from: {use_params_file}")
+            with open(use_params_file, 'r') as f:
+                optimized_params = json.load(f)
+            
+            # Create baseline model with optimized parameters
+            baseline_model = HotpotMultiHopBaseline(k=7)
+            baseline_model.summarize1_template = optimized_params["summarize1_template"]
+            baseline_model.query_hop2_template = optimized_params["query_hop2_template"]
+            baseline_model.summarize2_template = optimized_params["summarize2_template"]
+            baseline_model.final_answer_template = optimized_params["final_answer_template"]
+            print("✓ Loaded optimized parameters:")
+            for key, value in optimized_params.items():
+                print(f"  - {key}: {value[:80]}...")
+        
+        evaluate_baseline(testset=testset, baseline_model=baseline_model)
         return
     
     # Run optimization on training set, validate on validation set
-    print(f"\nRunning optimization...")
+    print(f"\nRunning optimization with {optimizer}...")
     optimized_model = optimization_function(
         model_instance, 
         trainset=trainset, 
         valset=valset,
-        num_steps=num_steps
+        num_steps=num_steps,
+        optimizer_type=optimizer,
+        save_dir=save_dir
     )
-    
-    # Save optimized prompts
-    print("\nSaving optimized prompts...")
-    optimized_params = {
-        "summarize1_template": optimized_model.summarize1_template.data,
-        "query_hop2_template": optimized_model.query_hop2_template.data,
-        "summarize2_template": optimized_model.summarize2_template.data,
-        "final_answer_template": optimized_model.final_answer_template.data,
-    }
-    
-    output_path = os.path.join(os.path.dirname(__file__), "hotpotqa_optimized_params.json")
-    with open(output_path, 'w') as f:
-        json.dump(optimized_params, f, indent=2)
-    
-    print(f"✓ Optimized parameters saved to: {output_path}")
     
     # Final evaluation using optimized prompts with baseline (thread-safe) model
     print("\nCreating optimized baseline model for final evaluation (parallel)...")
@@ -714,7 +837,7 @@ def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False):
     print("\n" + "="*80)
     print(f"Final Parallel Evaluation on Test Set ({len(testset)} examples)")
     print("="*80)
-    evaluate_baseline(testset=testset, baseline_model=optimized_baseline)
+    evaluate_baseline(testset=valset, baseline_model=optimized_baseline)
 
 
 if __name__ == "__main__":
@@ -740,13 +863,32 @@ if __name__ == "__main__":
     parser.add_argument(
         "--num-steps",
         type=int,
-        default=800,
+        default=20,
         help="Number of optimization steps"
     )
     parser.add_argument(
         "--run-test-baseline",
         action="store_true",
         help="Run unoptimized model on test set in parallel"
+    )
+    parser.add_argument(
+        "--use-params-file",
+        type=str,
+        default=None,
+        help="Path to JSON file with optimized parameters (use with --run-test-baseline)"
+    )
+    parser.add_argument(
+        "--optimizer",
+        type=str,
+        default="OptoPrime",
+        choices=["OptoPrime", "TextGrad"],
+        help="Optimizer to use for training (default: OptoPrime)"
+    )
+    parser.add_argument(
+        "--save-dir",
+        type=str,
+        default=None,
+        help="Directory to save optimized parameters (default: current directory)"
     )
     
     args = parser.parse_args()
@@ -755,6 +897,9 @@ if __name__ == "__main__":
         dataset_mode=args.dataset_mode, 
         seed=args.seed, 
         num_steps=args.num_steps,
-        run_test_baseline=args.run_test_baseline
+        run_test_baseline=args.run_test_baseline,
+        use_params_file=args.use_params_file,
+        optimizer=args.optimizer,
+        save_dir=args.save_dir
     )
 
