@@ -92,6 +92,7 @@ def run_experiment_and_write_results_actual(
     dry_run=False,
     use_cache_from_opt=None,
     seed=0,
+    arbor_config_path=None,
 ):
     base_experiment_dir = BASE_EXPERIMENT_DIR
     lm_name = lm_config["name"]
@@ -222,9 +223,11 @@ def run_experiment_and_write_results_actual(
     print("Running", benchmark_name, prog_name, optim_name, lm_name, evalsetname, "seed", seed)
 
     try:
-        if optimizer_config is not None and "launch_arbor" in optimizer_config.langProBe_configs and optimizer_config.langProBe_configs["launch_arbor"]:
+        if (optimizer_config is not None and "launch_arbor" in optimizer_config.langProBe_configs and optimizer_config.langProBe_configs["launch_arbor"]) or "{portnum}" in lm_config["api_base"]:
             from gepa_artifact.utils.arbor_runner import ArborRunner
-            if "GRPO" in optim_name:
+            if arbor_config_path:
+                arbor_config_file_path = arbor_config_path
+            elif "GRPO" in optim_name:
                 arbor_config_file_path = os.path.join(os.getcwd(), "utils/arbor/arbor_train.yaml")
                 num_gpus = 3
             else:
@@ -236,6 +239,13 @@ def run_experiment_and_write_results_actual(
                     arbor_config_file_path = os.path.join(os.getcwd(), "utils/arbor/arbor_inference_2_gpus.yaml")
                 else:
                     raise ValueError(f"Number of GPUs {num_gpus} not supported")
+            
+            if not arbor_config_path and "GRPO" not in optim_name:
+                num_gpus = torch.cuda.device_count()
+            elif arbor_config_path:
+                # If custom path provided, determine num_gpus from torch
+                import torch
+                num_gpus = torch.cuda.device_count()
 
             arbor_config = {"config_filepath": arbor_config_file_path, "gpus": list(range(num_gpus))}
 
@@ -246,6 +256,7 @@ def run_experiment_and_write_results_actual(
 
             assert "{portnum}" in lm_config["api_base"]
             lm_config["api_base"] = lm_config["api_base"].format(portnum=arbor_config["portnum"])
+            print("UPDATED PORT")
 
         metric_counter = CounterWithLock()
 
@@ -469,6 +480,7 @@ def parse_arguments():
     parser.add_argument('--lm_config', type=json.loads, required=True, help='JSON string of the LM configuration')
     parser.add_argument('--use_cache_from_opt', type=str, default=None, help='Name of the optimizer to use cache from (default: None)')
     parser.add_argument('--seed', type=int, default=0, help='Random seed for reproducibility (default: 0)')
+    parser.add_argument('--arbor_config_path', type=str, default=None, help='Path to arbor config YAML file (default: None, uses automatic selection)')
 
     args = parser.parse_args()
 
