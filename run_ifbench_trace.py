@@ -207,7 +207,7 @@ def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False, 
         model_instance, 
         trainset, 
         optimizer_config={
-            'stage1': 'response',
+            # 'stage1': 'response',
             'stage2': 'final_response'
         },
         feedback_fn=generate_feedback,

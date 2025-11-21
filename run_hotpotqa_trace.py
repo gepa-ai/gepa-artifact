@@ -42,7 +42,7 @@ class LLMWrapper:
     def create(self, messages, max_tokens=None):
         """Convert messages to LLM call and return in expected format"""
         # Call the underlying LLM with messages parameter (opto LLM uses litellm which expects messages)
-        response = self.llm(messages=messages, max_tokens=max_tokens or 4096)
+        response = self.llm(messages=messages, max_tokens=max_tokens or 16384)
         
         # Extract text content from ModelResponse object
         if hasattr(response, 'choices') and len(response.choices) > 0:
@@ -74,7 +74,7 @@ from gepa_artifact.benchmarks.hotpotQA.hotpot_data import HotpotQABench
 
 class LLMCallable:
     """Helper class to interact with LLM API using autogen"""
-    def __init__(self, config_list=None, max_tokens=2048, verbose=False):
+    def __init__(self, config_list=None, max_tokens=16384, verbose=False):
         import autogen
         import datetime
         if config_list is None:
@@ -304,7 +304,7 @@ class HotpotMultiHopTrace(LLMCallable):
 
 class LLMCallableBaseline:
     """Helper class to interact with LLM API using autogen (Baseline, no trace)"""
-    def __init__(self, config_list=None, max_tokens=2048, verbose=False):
+    def __init__(self, config_list=None, max_tokens=16384, verbose=False):
         import autogen
         import datetime
         if config_list is None:

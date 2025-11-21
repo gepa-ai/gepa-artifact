@@ -134,7 +134,7 @@ def generate_feedback(example, prediction, result):
 
     return feedback, score
 
-def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False, optimizer="OptoPrime", save_dir=None):
+def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False, use_params_file=None, optimizer="OptoPrime", save_dir=None):
     print("Loading AIME dataset...")
     
     if seed is not None:
@@ -167,20 +167,41 @@ def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False, 
     model_instance = AIMETrace()
     
     if run_test_baseline:
+        baseline_model = None
+        if use_params_file:
+            print(f"\nLoading optimized parameters from: {use_params_file}")
+            with open(use_params_file, 'r') as f:
+                optimized_params = json.load(f)
+            
+            # Create baseline model with optimized parameters
+            baseline_model = AIMEBaseline()
+            baseline_model.generate_response_template = optimized_params["generate_response_template"]
+            print("✓ Loaded optimized parameters")
+            print(f"  Template preview: {baseline_model.generate_response_template[:100]}...")
+        else:
+            baseline_model = AIMEBaseline()
+        
         evaluate_baseline_concurrent(
             testset=testset, 
-            forward_fn=lambda x: AIMEBaseline().forward(x),
+            forward_fn=lambda x: baseline_model.forward(x),
             eval_fn=eval_metric_wrapper,
             input_key="problem"
         )
         return
     
     print(f"\nRunning optimization with {optimizer}...")
+    
+    # Create untraced baseline model for validation
+    untraced_model = AIMEBaseline()
+    
     optimized_model = train_optimization_loop(
-        model_instance, 
-        trainset=trainset, 
+        model_instance,
+        untraced_model_instance=untraced_model,
+        trainset=trainset,
         optimizer_config={"optimizer": "answer"},
         feedback_fn=generate_feedback,
+        eval_fn=eval_metric_wrapper,
+        valset=valset,
         input_key="problem",
         num_steps=num_steps,
         optimizer_type=optimizer,
@@ -206,6 +227,8 @@ if __name__ == "__main__":
     parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--num-steps", type=int, default=20)
     parser.add_argument("--run-test-baseline", action="store_true")
+    parser.add_argument("--use-params-file", type=str, default=None,
+                        help="Path to optimized parameters JSON file to use for testing")
     parser.add_argument("--optimizer", type=str, default="OptoPrime", choices=["OptoPrime", "TextGrad"],
                         help="Optimizer to use for training (default: OptoPrime)")
     parser.add_argument("--save-dir", type=str, default=None,
@@ -218,6 +241,7 @@ if __name__ == "__main__":
         seed=args.seed, 
         num_steps=args.num_steps,
         run_test_baseline=args.run_test_baseline,
+        use_params_file=args.use_params_file,
         optimizer=args.optimizer,
         save_dir=args.save_dir
     )

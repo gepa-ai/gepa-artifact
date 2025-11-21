@@ -257,7 +257,7 @@ def main(dataset_mode="lite", seed=None, num_steps=20, run_test_baseline=False, 
         model_instance, 
         trainset, 
         optimizer_config={
-            'craft': 'llm_request',
+            # 'craft': 'llm_request',
             'respond': 'response'
         },
         feedback_fn=generate_feedback,
