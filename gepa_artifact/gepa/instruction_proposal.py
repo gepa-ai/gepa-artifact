@@ -80,18 +80,18 @@ def call_lm_and_extract_response(prompt, lm, current_instruction_doc, user_examp
         start = lm_out.find("```")
         end = lm_out.rfind("```")
         if start >= end:
-            return lm_out
+            return lm_out, full_prompt
         if start == -1 or end == -1:
-            return lm_out
+            return lm_out, full_prompt
         else:
-            return lm_out[start+3:end].strip()
+            return lm_out[start+3:end].strip(), full_prompt
     else:
         lm_out = lm_out.strip()
         if lm_out.startswith("```"):
             lm_out = lm_out[3:]
         if lm_out.endswith("```"):
             lm_out = lm_out[:-3]
-        return lm_out
+        return lm_out, full_prompt
 
 class ProposeNewInstructionModule:
     def __init__(self, base_program, instruction_lm, dataset_with_feedback, knowledgebase_qe, kb_fetch_lm=None):
@@ -172,8 +172,10 @@ class ProposeNewInstructionModule:
     
     def compile(self):
         instruction = self.base_program.signature.instructions
-        
+
         sample = self.dataset_with_feedback
+        formatted_samples = self.format_samples(sample)
+
         if self.kb_query:
             kb_info = self.fetch_relevant_information(sample)
             # module_output = self.instruction_propose_module(
@@ -181,11 +183,11 @@ class ProposeNewInstructionModule:
             #     user_examples_and_feedback=self.format_samples(sample),
             #     reference_materials=kb_info
             # )
-            new_instruction = call_lm_and_extract_response(
+            new_instruction, full_prompt = call_lm_and_extract_response(
                 prompt2,
                 self.instruction_lm,
                 current_instruction_doc=instruction,
-                user_examples_and_feedback=self.format_samples(sample),
+                user_examples_and_feedback=formatted_samples,
                 reference_materials=kb_info
             )
         else:
@@ -194,11 +196,11 @@ class ProposeNewInstructionModule:
             #     current_instruction_doc=instruction,
             #     user_examples_and_feedback=self.format_samples(sample),
             # )
-            new_instruction = call_lm_and_extract_response(
+            new_instruction, full_prompt = call_lm_and_extract_response(
                 prompt1,
                 self.instruction_lm,
                 current_instruction_doc=instruction,
-                user_examples_and_feedback=self.format_samples(sample)
+                user_examples_and_feedback=formatted_samples
             )
             
         # new_instruction = module_output.improved_instruction_doc
@@ -207,9 +209,10 @@ class ProposeNewInstructionModule:
             "new_instruction": new_instruction,
             "module_output": {"improved_instruction_doc": new_instruction},
             "kb_info": kb_info,
+            "full_prompt_to_teacher_lm": full_prompt,  # 完整的 prompt 用于计算 cost
             "all_inputs": {
                 "current_instruction_doc": instruction,
-                "user_examples_and_feedback": self.format_samples(sample),
+                "user_examples_and_feedback": formatted_samples,
                 "reference_materials": kb_info
             }
         }

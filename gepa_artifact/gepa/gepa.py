@@ -41,6 +41,7 @@ class GEPA(dspy.teleprompt.teleprompt.Teleprompter):
         logger,
         run_dir: str,
         run_linearized_gepa: bool=True,
+        skip_full_eval_in_linear_mode: bool=False,
         num_threads=None,
         num_iters=None,
         failure_score=0,
@@ -70,6 +71,7 @@ class GEPA(dspy.teleprompt.teleprompt.Teleprompter):
         self.logger = logger
         self.run_dir = run_dir
         self.run_linearized_gepa = run_linearized_gepa
+        self.skip_full_eval_in_linear_mode = skip_full_eval_in_linear_mode
         self.num_threads = num_threads
         
         self.failure_score = failure_score
@@ -567,6 +569,17 @@ class GEPA(dspy.teleprompt.teleprompt.Teleprompter):
                 gepa_state.total_num_evals_per_trainval_instance += len(subsample_ids) / self.train_val_size
                 gepa_state.total_num_evals += len(subsample_ids)
 
+                # In pure SGD mode: skip validation, directly accept new prompt and move to next iteration
+                if self.skip_full_eval_in_linear_mode and gepa_state.running_linearized_gepa:
+                    self.logger.log(f"Iteration {gepa_state.i+1}: Pure SGD mode - directly accepting new prompt without validation")
+                    # Directly replace the current program with the new one
+                    gepa_state.program_candidates[curr_prog_id] = new_program
+                    # Use subsample_score from trace generation as proxy
+                    gepa_state.per_program_tracked_scores[curr_prog_id] = subsample_score
+                    last_iter_found_new_program = True
+                    continue
+
+                # Original validation logic: re-run minibatch with new prompt to check if it's better
                 subsample_evaluator_args = {**trainset_evaluator.__dict__}
                 subsample_evaluator_args['devset'] = [trainset[i] for i in subsample_ids]
                 subsample_evaluator_args['return_outputs'] = True
@@ -596,6 +609,7 @@ class GEPA(dspy.teleprompt.teleprompt.Teleprompter):
 
                 self.logger.log(f"Iteration {gepa_state.i+1}: New subsample score is better, going from {subsample_score} to {new_subsample_score}, updating program candidate!")
 
+                # Run full evaluation and add to GEPA tree (only reached when not in pure SGD mode)
                 new_program_idx, linear_pareto_front_idx = self.run_full_eval_add_new_program_to_gepa_tree(
                     new_program=new_program,
                     gepa_state=gepa_state,

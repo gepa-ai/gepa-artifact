@@ -1,23 +1,32 @@
 import argparse
 import os
-import os
 import time
 import json
 import traceback
 import random
 
 from gepa_artifact.utils.capture_stream_logger import Logger
-from .experiment_configs import BASE_EXPERIMENT_DIR, get_benchmarks, get_optimizers, get_max_invocations
+try:
+    from .experiment_configs import BASE_EXPERIMENT_DIR, get_benchmarks, get_optimizers, get_max_invocations
+except ImportError:
+    from experiment_configs import BASE_EXPERIMENT_DIR, get_benchmarks, get_optimizers, get_max_invocations
 
 def write_evaluation_result_to_path(evaluation_result, file_path):
     os.makedirs(file_path, exist_ok=True)
-    file_name = f"evaluation_result"
+    file_name = "evaluation_result"
     if evaluation_result.optimizer:
         optimizer_header = "optimizer,optimizer_cost,optimizer_input_tokens,optimizer_output_tokens"
         optimizer_values = (
             f"{evaluation_result.optimizer},{evaluation_result.optimizer_cost},"
             f"{evaluation_result.optimizer_input_tokens},{evaluation_result.optimizer_output_tokens},"
         )
+        # Add teacher_lm cost if available
+        if evaluation_result.teacher_lm_cost is not None:
+            optimizer_header += ",teacher_lm_cost,teacher_lm_input_tokens,teacher_lm_output_tokens"
+            optimizer_values += (
+                f"{evaluation_result.teacher_lm_cost},{evaluation_result.teacher_lm_input_tokens},"
+                f"{evaluation_result.teacher_lm_output_tokens},"
+            )
     else:
         optimizer_header = ""
         optimizer_values = ""
@@ -29,7 +38,7 @@ def write_evaluation_result_to_path(evaluation_result, file_path):
         )
     if evaluation_result.optimizer:
         evaluation_result.optimized_program.save(
-            os.path.join(file_path, f"optimized_program"),
+            os.path.join(file_path, "optimized_program"),
             save_program=True
         )
     if evaluation_result.optimizer_program_scores:
@@ -50,11 +59,33 @@ def calculate_stats(lm) -> tuple[float, int, int]:
     return cost, input_tokens, output_tokens
 
 def create_lm(lm_config):
+    """创建语言模型实例，支持 Arbor 本地模型、Azure OpenAI 和标准 OpenAI"""
     import dspy
     config = lm_config.copy()
     config['model'] = config.pop("new_model_name", config['model'])
+
+    # 判断是否是 Azure OpenAI（通过 api_base 或 api_version 判断）
+    api_base = config.get('api_base', '')
+    is_azure = (
+        'azure.com' in api_base or
+        'api_version' in config
+    )
+
+    # 设置 provider
     from dspy.clients.lm_local_arbor import ArborProvider
-    provider = ArborProvider() if "openai/arbor" in config['model'] else None
+    if "openai/arbor" in config['model']:
+        provider = ArborProvider()
+    elif is_azure:
+        # Azure OpenAI 需要告诉 litellm 这是 azure provider
+        config['custom_llm_provider'] = 'azure'
+        # 模型名称需要添加 azure/ 前缀
+        if not config['model'].startswith('azure/'):
+            config['model'] = 'azure/' + config['model']
+        provider = None
+    else:
+        # 标准 OpenAI API 或其他兼容 API
+        provider = None
+
     fixed_config = {
         "max_tokens": 16384,  # overriding the dspy defaults
         "num_retries": 0,
@@ -81,18 +112,29 @@ def get_free_port() -> int:
     return random.choice(ports)
 
 def run_experiment_and_write_results_actual(
-    bm_idx,
-    benchmark_name,
-    num_threads,
-    program_idx,
-    prog_name,
-    opt_idx,
-    optim_name,
-    lm_config,
-    dry_run=False,
-    use_cache_from_opt=None,
-    seed=0,
+    bm_idx,           # benchmark 索引
+    benchmark_name,   # benchmark 名称 (如 "HotpotQABench")
+    num_threads,      # 并行线程数
+    program_idx,      # program 索引
+    prog_name,        # program 名称 (如 "HotpotMultiHop")
+    opt_idx,          # optimizer 索引
+    optim_name,       # optimizer 名称 (如 "GEPA", "Baseline")
+    lm_config,        # LM 配置字典（Task LM）
+    teacher_lm_config=None,  # Teacher LM 配置字典（用于生成新 prompt）
+    dry_run=False,    # 是否为测试运行（只用少量数据）
+    use_cache_from_opt=None,  # 从哪个 optimizer 复用缓存
+    seed=0,           # 随机种子
+    skip_eval=False,  # 是否跳过 test set 评估
 ):
+    """运行单个实验并保存结果
+
+    主要流程：
+    1. 初始化路径和缓存
+    2. 加载 benchmark、program、optimizer
+    3. 运行优化器（或跳过优化直接评估基线）
+    4. 在测试集上评估优化后的程序
+    5. 保存评估结果
+    """
     base_experiment_dir = BASE_EXPERIMENT_DIR
     lm_name = lm_config["name"]
     print(f"Running {benchmark_name} with {prog_name} and {optim_name} on {lm_name}")
@@ -100,10 +142,10 @@ def run_experiment_and_write_results_actual(
     run_name = f"{benchmark_name}_{prog_name}_{optim_name}_{lm_name}"
     runs_dir = os.path.join(runs_dir_basepath, run_name)
 
-    #######################
-    # Cache Setup:
-    # use_cache_from_opt is used to ensure consistency
-    #######################
+    # ========== 缓存设置 ==========
+    # DSPy 会缓存 LM 调用结果，避免重复调用浪费成本
+    # use_cache_from_opt: 如果设置，会从另一个 optimizer 的缓存复制
+    # 例如：GEPA 可以复用 Baseline 的缓存，确保相同输入得到相同输出
     cache_dir = os.path.join(base_experiment_dir, "experiment_cache_dirs", f"seed_{seed}", run_name)
     if use_cache_from_opt is None:
         os.makedirs(cache_dir, exist_ok=True)
@@ -142,6 +184,7 @@ def run_experiment_and_write_results_actual(
     from gepa_artifact.utils.metric_logger import MetricWithLogger, CounterWithLock
     from gepa_artifact.utils.json_default_encoder import json_encoder
 
+    # 获取用于做metric评估的llm
     metric_lm_name = lm_config.get("metric_lm_name", lm_config["name"])
     metric_lm = lm_config.get("model", None)
 
@@ -210,7 +253,7 @@ def run_experiment_and_write_results_actual(
         try:
             os.rename(runs_dir, backup_dir)
             print(f"Fast-moved {runs_dir} to {backup_dir} via rename.")
-        except OSError as e:
+        except OSError:
             shutil.move(runs_dir, backup_dir)
 
         directory_existed = False
@@ -222,12 +265,18 @@ def run_experiment_and_write_results_actual(
     print("Running", benchmark_name, prog_name, optim_name, lm_name, evalsetname, "seed", seed)
 
     try:
+        # ========== Arbor 本地模型服务（可选）==========
+        # 只有当 launch_arbor=True 时才启动本地模型服务
+        # Arbor 是一个本地 LLM 推理服务，支持在本地 GPU 上运行开源模型
+        # 如果使用 OpenAI/Azure API，这部分会被跳过
         if optimizer_config is not None and "launch_arbor" in optimizer_config.langProBe_configs and optimizer_config.langProBe_configs["launch_arbor"]:
             from gepa_artifact.utils.arbor_runner import ArborRunner
             if "GRPO" in optim_name:
+                # GRPO 需要训练模式，使用 3 个 GPU
                 arbor_config_file_path = os.path.join(os.getcwd(), "utils/arbor/arbor_train.yaml")
                 num_gpus = 3
             else:
+                # 推理模式，根据可用 GPU 数量选择配置
                 import torch
                 num_gpus = torch.cuda.device_count()
                 if num_gpus == 4:
@@ -239,11 +288,14 @@ def run_experiment_and_write_results_actual(
 
             arbor_config = {"config_filepath": arbor_config_file_path, "gpus": list(range(num_gpus))}
 
+            # 获取一个空闲端口号，用于启动 Arbor 服务
             portnum = get_free_port()
             arbor_config["portnum"] = portnum
             arbor_runner_context = ArborRunner(arbor_config["config_filepath"], arbor_config["portnum"], runs_dir)
             arbor_runner_context.__enter__()
 
+            # 将端口号填入 LM 配置的 api_base
+            # 例如：api_base="http://localhost:{portnum}" 会变成 "http://localhost:8080"
             assert "{portnum}" in lm_config["api_base"]
             lm_config["api_base"] = lm_config["api_base"].format(portnum=arbor_config["portnum"])
 
@@ -256,7 +308,7 @@ def run_experiment_and_write_results_actual(
             benchmark.val_set = benchmark.val_set[:2]
             benchmark.dev_set = benchmark.dev_set[:2]
             benchmark.test_set = benchmark.test_set[:2]
-            print(f"Dry run: only using 2 examples from each set.")
+            print("Dry run: only using 2 examples from each set.")
 
         final_eval_set = benchmark.test_set
 
@@ -274,10 +326,9 @@ def run_experiment_and_write_results_actual(
             if optimizer_config is not None and "launch_arbor" in optimizer_config.langProBe_configs and optimizer_config.langProBe_configs["launch_arbor"]:
                 logger.log("Arbor in session:", arbor_runner_context.session_name)
 
-            #######################
-            # For GEPA, if feedback_fn_maps is not provided, we create a default feedback function based on metric_with_feedback
-            # and apply it to all predictors in the program.
-            #######################
+            # ========== GEPA 特殊配置 ==========
+            # GEPA 需要为每个模块提供反馈函数
+            # 如果 benchmark 没有提供，则基于 metric_with_feedback 创建默认反馈函数
             if "GEPA" in optim_name:
                 
                 if benchmark_meta.feedback_fn_maps is None or benchmark_meta.feedback_fn_maps[program_idx] is None:
@@ -293,14 +344,31 @@ def run_experiment_and_write_results_actual(
                     feedback_fn_map = benchmark_meta.feedback_fn_maps[program_idx]
                     assert all(k in feedback_fn_map for k, _ in program.named_predictors())
 
-                optimizer_config.init_args.update({
-                    "named_predictor_to_feedback_fn_map": feedback_fn_map,
-                    "knowledgebase_qe": None,
-                    "logger": logger,
-                    "run_dir": runs_dir,
-                    "use_wandb": True,
-                    "wandb_api_key": wandb_api_key,
-                })
+                # 创建 Teacher LM（如果配置了）
+                teacher_lm = None
+                if teacher_lm_config is not None:
+                    teacher_lm = create_lm(teacher_lm_config)
+                    logger.log(f"Using separate Teacher LM: {teacher_lm_config.get('name', teacher_lm_config.get('model'))}")
+
+                # GEPA-SGD 使用简化的初始化参数
+                if optim_name == "GEPA-SGD":
+                    optimizer_config.init_args.update({
+                        "named_predictor_to_feedback_fn_map": feedback_fn_map,
+                        "knowledgebase_qe": None,
+                        "logger": logger,
+                        "run_dir": runs_dir,
+                        "teacher_lm": teacher_lm,
+                    })
+                else:
+                    optimizer_config.init_args.update({
+                        "named_predictor_to_feedback_fn_map": feedback_fn_map,
+                        "knowledgebase_qe": None,
+                        "logger": logger,
+                        "run_dir": runs_dir,
+                        "use_wandb": True,
+                        "wandb_api_key": wandb_api_key,
+                        "teacher_lm": teacher_lm,
+                    })
 
                 logger.log("Optimizer config:", optimizer_config)
 
@@ -328,12 +396,13 @@ def run_experiment_and_write_results_actual(
                 program=prog_name,
             )
 
+            # ========== 运行优化器（或跳过） ==========
             if optim_name == "Baseline" or optimizer_config is None:
-                # Only run the final evaluation
+                # Baseline：直接使用原始程序，不进行优化
                 optimized_program = program
                 eval_results.optimized_program = optimized_program
             else:
-                # Run the optimizer, and then run the final evaluation
+                # 运行优化器（GEPA、MIPROv2 等）
                 optimizer = optimizer_config.optimizer
                 init_args = optimizer_config.init_args
                 
@@ -342,11 +411,13 @@ def run_experiment_and_write_results_actual(
                 #######################
                 if num_threads and "num_threads" in init_args:
                     init_args["num_threads"] = num_threads
-                if "provide_logdir_in_init" in optimizer_config.langProBe_configs and optimizer_config.langProBe_configs["provide_logdir_in_init"]:
+                # GEPA 使用 run_dir 而不是 log_dir，跳过 log_dir 设置
+                if "provide_logdir_in_init" in optimizer_config.langProBe_configs and optimizer_config.langProBe_configs["provide_logdir_in_init"] and "GEPA" not in optim_name:
                     init_args["log_dir"] = os.path.join(runs_dir, "optimizer_logs")
                     os.makedirs(init_args["log_dir"], exist_ok=True)
                 
-                if "add_max_errors_to_initargs" in optimizer_config.langProBe_configs and optimizer_config.langProBe_configs["add_max_errors_to_initargs"]:
+                # GEPA 不接受 max_errors 参数
+                if "add_max_errors_to_initargs" in optimizer_config.langProBe_configs and optimizer_config.langProBe_configs["add_max_errors_to_initargs"] and "GEPA" not in optim_name:
                     init_args["max_errors"] = (len(benchmark.train_set) + len(benchmark.val_set)) * 100
 
                 if "add_max_metric_calls" in optimizer_config.langProBe_configs and optimizer_config.langProBe_configs["add_max_metric_calls"]:
@@ -392,8 +463,15 @@ def run_experiment_and_write_results_actual(
                         valset=benchmark.val_set,
                         **compile_args,
                     )
+                elif optim_name == "GEPA-SGD":
+                    # GEPA-SGD 只需要 trainset
+                    optimized_program = optimizer.compile(
+                        program,
+                        trainset=benchmark.train_set,
+                        **compile_args,
+                    )
                 else:
-                    assert False
+                    assert False, f"Unknown compile config for {optim_name}"
 
                 if "use_model_name_from_optimized_program" in langProBe_configs and langProBe_configs["use_model_name_from_optimized_program"]:
                     lm_config["new_model_name"] = lm_for_optimizer.model
@@ -406,31 +484,46 @@ def run_experiment_and_write_results_actual(
                     eval_results.optimizer_output_tokens,
                 ) = calculate_stats(lm_for_optimizer)
 
+                # Track Teacher LM cost separately (if used)
+                if teacher_lm is not None:
+                    (
+                        eval_results.teacher_lm_cost,
+                        eval_results.teacher_lm_input_tokens,
+                        eval_results.teacher_lm_output_tokens,
+                    ) = calculate_stats(teacher_lm)
+                    logger.log(f"Teacher LM cost: ${eval_results.teacher_lm_cost:.4f}, "
+                              f"input tokens: {eval_results.teacher_lm_input_tokens}, "
+                              f"output tokens: {eval_results.teacher_lm_output_tokens}")
+
                 eval_results.optimizer = optim_name
                 eval_results.optimized_program = optimized_program
 
                 dspy.configure(lm=None, adapter=None)
                 del lm_for_optimizer
 
-            evaluate_prog = dspy.Evaluate(
-                devset=final_eval_set,
-                metric=metric_fn_with_logger,
-                num_threads=num_threads,
-                display_progress=True,
-                max_errors=len(final_eval_set)*10,
-                provide_traceback=True,
-            )
+            # ========== Test Set 评估（可选）==========
+            if not skip_eval:
+                evaluate_prog = dspy.Evaluate(
+                    devset=final_eval_set,
+                    metric=metric_fn_with_logger,
+                    num_threads=num_threads,
+                    display_progress=True,
+                    max_errors=len(final_eval_set)*10,
+                    provide_traceback=True,
+                )
 
-            eval_lm = create_lm(lm_config)
-            dspy.configure(lm=eval_lm, adapter=adapter)
-            score = evaluate_prog(optimized_program)
-            eval_results.score = score
-            eval_results.cost, eval_results.input_tokens, eval_results.output_tokens = calculate_stats(
-                eval_lm
-            )
+                eval_lm = create_lm(lm_config)
+                dspy.configure(lm=eval_lm, adapter=adapter)
+                score = evaluate_prog(optimized_program)
+                eval_results.score = score
+                eval_results.cost, eval_results.input_tokens, eval_results.output_tokens = calculate_stats(
+                    eval_lm
+                )
 
-            dspy.configure(lm=None, adapter=None)
-            del eval_lm
+                dspy.configure(lm=None, adapter=None)
+                del eval_lm
+            else:
+                logger.log("Skipping test set evaluation (--skip_eval)")
 
             write_evaluation_result_to_path(
                 eval_results,
@@ -467,10 +560,20 @@ def parse_arguments():
     parser.add_argument('--opt_idx', type=int, required=True, help='Index of the optimizer to run')
     parser.add_argument('--optim_name', type=str, required=True, help='Name of the optimizer to run')
     parser.add_argument('--lm_config', type=json.loads, required=True, help='JSON string of the LM configuration')
+    parser.add_argument('--teacher_lm_config', type=json.loads, default=None, help='JSON string of the Teacher LM configuration (for prompt optimization). If not provided, uses the same LM as task LM.')
     parser.add_argument('--use_cache_from_opt', type=str, default=None, help='Name of the optimizer to use cache from (default: None)')
     parser.add_argument('--seed', type=int, default=0, help='Random seed for reproducibility (default: 0)')
+    parser.add_argument('--skip_eval', action='store_true', default=False, help='Skip test set evaluation (only run optimization)')
 
     args = parser.parse_args()
+
+    # 处理 teacher_lm_config 的环境变量
+    if args.teacher_lm_config and 'api_key' in args.teacher_lm_config and args.teacher_lm_config['api_key'].startswith('env:'):
+        env_var = args.teacher_lm_config['api_key'].split(':')[1]
+        if env_var in os.environ:
+            args.teacher_lm_config['api_key'] = os.environ[env_var]
+        else:
+            raise ValueError(f"Environment variable {env_var} not found for teacher_lm_config.")
 
     if 'api_key' in args.lm_config and args.lm_config['api_key'].startswith('env:'):
         # If the API key is specified as an environment variable, we will set it here
@@ -483,9 +586,9 @@ def parse_arguments():
     return args
 
 if __name__ == "__main__":
-    assert "OPENAI_API_KEY" in os.environ, "Please set the OPENAI_API_KEY environment variable."
+    # assert "OPENAI_API_KEY" in os.environ, "Please set the OPENAI_API_KEY environment variable."
     assert "WANDB_API_KEY" in os.environ, "Please set the WANDB_API_KEY environment variable."
-    openai_api_key = os.environ["OPENAI_API_KEY"]
+    openai_api_key = os.environ["PROXY_KEY"] if "PROXY_KEY" in os.environ else os.environ.get("OPENAI_API_KEY", None)
     wandb_api_key = os.environ["WANDB_API_KEY"]
     args = parse_arguments()
     run_experiment_and_write_results(

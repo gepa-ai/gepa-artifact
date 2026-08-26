@@ -1,1 +1,15 @@
 experiment_runs_data.tar.gz filter=lfs diff=lfs merge=lfs -text
+
+# Preserve formatting in imported experiment scripts. Some prompts and
+# multiline examples intentionally retain line-ending spaces.
+download_hotpotqa.py whitespace=-trailing-space
+gepa_artifact/benchmarks/hotpotQA/hotpot_program_no_retrieval.py whitespace=-trailing-space
+gepa_artifact/gepa/gepa_sgd.py whitespace=-trailing-space
+scripts/estimate_teacher_lm_cost.py whitespace=-trailing-space
+scripts/quick_test_gepa_sgd.py whitespace=-trailing-space
+scripts/run_gepa_sgd_scalability_experiment.py whitespace=-trailing-space
+scripts/run_verusage_sgd.py whitespace=-trailing-space
+scripts/run_verusage_sgd_scalability.py whitespace=-trailing-space
+scripts/textgrad_fulltrace_baseline.py whitespace=-trailing-space
+scripts/verusage_offline_fulltrace_prompt_opt.py whitespace=-trailing-space
+webarena/run_gepa_webarena_offline.py whitespace=-trailing-space

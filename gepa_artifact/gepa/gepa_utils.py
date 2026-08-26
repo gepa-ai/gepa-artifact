@@ -270,14 +270,15 @@ def capture_module_trace_with_feedback(
     evalset: list[dspy.Example],
     metric_fn: callable,
     logger,
-    gepa_state: GEPAState,
+    gepa_state: GEPAState,  # Can be None for GEPA_SGD
     skip_perfect_score: bool,
     perfect_score: float,
     failure_score: float,
     format_failure_score: float,
     feedback_func: callable,
     add_format_failure_as_feedback: bool,
-    num_threads: int
+    num_threads: int,
+    rng: random.Random = None,  # Optional RNG for when gepa_state is None
 ):
     """
     Returns dataset_with_feedback, subsample_score, subsample_scores
@@ -296,6 +297,9 @@ def capture_module_trace_with_feedback(
 
     # round_data is a list of dictionaries with keys: ['example', 'prediction', 'trace', 'example_ind', 'score']
     subscores = []
+    # Use provided rng or gepa_state.rng1
+    _rng = rng if rng is not None else (gepa_state.rng1 if gepa_state is not None else random.Random())
+
     ret = []
     for data in round_data:
         d = {}
@@ -308,7 +312,8 @@ def capture_module_trace_with_feedback(
             trace_instances_for_current_pred = [t for t in trace_instances_for_current_pred if not isinstance(t[2], FailedPrediction)]
         
         if len(trace_instances_for_current_pred) == 0:
-            logger.log(f"Iteration {gepa_state.i+1}: No trace instances found for module {module.signature}. Skipping.")
+            iter_info = f"Iteration {gepa_state.i+1}: " if gepa_state is not None else ""
+            logger.log(f"{iter_info}No trace instances found for module {module.signature}. Skipping.")
             continue
 
         selected_trace_instance = None
@@ -321,7 +326,7 @@ def capture_module_trace_with_feedback(
             if isinstance(data['prediction'], FailedPrediction):
                 # This is coming from a different predictor, hence we don't have a good feedback for the current predictor
                 continue
-            selected_trace_instance = gepa_state.rng1.choice(trace_instances_for_current_pred)
+            selected_trace_instance = _rng.choice(trace_instances_for_current_pred)
 
         d['inputs'] = selected_trace_instance[1]
         d['generated_output'] = selected_trace_instance[2]
@@ -347,16 +352,19 @@ def capture_module_trace_with_feedback(
 
             score, feedback_text = feedback_d["feedback_score"], feedback_d["feedback_text"]
             d['feedback'] = feedback_text
+            d['score'] = data['score']  # 保存 overall score 到 trace
             subscores.append(data['score'])
 
         ret.append(d)
-    
+
+    iter_info = f"Iteration {gepa_state.i+1}: " if gepa_state is not None else ""
+
     if len(ret) == 0:
-        logger.log(f"Iteration {gepa_state.i+1}: No valid predictions found for module {module.signature}. Skipping.")
+        logger.log(f"{iter_info}No valid predictions found for module {module.signature}. Skipping.")
         return None, None, None
-    
+
     if skip_perfect_score and all(score >= perfect_score for score in subscores):
-        logger.log(f"Iteration {gepa_state.i+1}: All scores are perfect. Skipping module {module.signature}.")
+        logger.log(f"{iter_info}All scores are perfect. Skipping module {module.signature}.")
         return None, None, None
     
     return ret, sum(subscores), subscores

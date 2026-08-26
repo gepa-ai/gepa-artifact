@@ -1,0 +1,18 @@
+{
+  "baseline_run_dir": "experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o",
+  "train_traces_path": "experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/metric_logs/train_traces.jsonl",
+  "num_shots": 3,
+  "seed": 0,
+  "shuffle": true,
+  "predictors": [
+    "create_query_hop2.predict",
+    "final_answer.predict",
+    "summarize1.predict",
+    "summarize2.predict"
+  ],
+  "example_ids": [
+    "5a8a332455429930ff3c0cf6",
+    "5a7e33205542995ed0d166ca",
+    "5a7639bc554299109176e6be"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "site": "shopping",
+  "baseline": "textgrad_3traces",
+  "base_prompt": "webarena/p_cot_id_actree_2s.json",
+  "max_traces": 3,
+  "seed": 42,
+  "selected_task_ids": [
+    355,
+    674,
+    796
+  ],
+  "selected_trace_paths": [
+    "webarena/shopping/traces/trace_355.json",
+    "webarena/shopping/traces/trace_674.json",
+    "webarena/shopping/traces/trace_796.json"
+  ],
+  "model": "gpt-4o_2024-11-20",
+  "trapi_apipath": "redmond/interactive"
+}

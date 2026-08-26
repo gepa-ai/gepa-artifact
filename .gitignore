@@ -210,3 +210,36 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local OS metadata
+.DS_Store
+._*
+
+# Local datasets and generated retrieval indexes
+/hotpotQA/
+/wiki.abstracts.2017.tar.gz
+gepa_artifact/benchmarks/hover/wiki.abstracts.2017.jsonl
+gepa_artifact/benchmarks/hover/bm25s_retriever/
+baseline_rag/*_index*/
+baseline_rag/*_output*/
+
+# Generated traces, caches, logs, and run outputs
+**/.dspy_cache/
+webarena/**/traces/
+/evaluation_results/
+/metric_logs/
+/launch_commands
+/prompts_used.json
+/bash_run.txt
+webarena/view.txt
+
+# Local scratch utilities
+explain_reasoning.py
+show_prompts.py
+test_ColBERTv2.py
+run_gepa_hotpotqa_minimal.py
+why_no_reasoning.txt
+scripts/new_prompts.json
+
+# VeruSAGE is maintained as a separate local checkout/data source.
+/verusage/

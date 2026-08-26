@@ -6,6 +6,8 @@ This repository contains the code and data artifact for the paper titled 'GEPA: 
 
 **Note:**  
 
+Additional GEPA-SGD and offline baseline work on this branch is summarized in
+[`HANDOFF.md`](HANDOFF.md).
 
 ---
 

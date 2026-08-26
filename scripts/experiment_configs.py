@@ -33,42 +33,51 @@ TRAIN_KWARGS_GRPO_QWEN = {**TRAIN_KWARGS_GRPO_DEFAULT}
 
 # Add/modify available LMs here.
 LM_CONFIGS = [
+    # {
+    #     "name": "qwen3-8b",
+    #     "model": "openai/arbor:qwen/qwen3-8b",
+    #     "api_key": "API_KEY",
+    #     "api_base": "http://localhost:{portnum}/v1/",
+    #     "temperature": 0.6,
+    #     "top_p": 0.95,
+    #     "top_k": 20,
+    #     "launch_kwargs": LAUNCH_KWARGS,
+    #     "train_kwargs": TRAIN_KWARGS_GRPO_QWEN,
+    # },
+    # {
+    #     "name": "gpt-41-mini",
+    #     "model": "openai/gpt-4.1-mini-2025-04-14",
+    #     "api_key": "env:OPENAI_API_KEY",
+    #     "temperature": 1.0,
+    # },
+    # {
+    #     "name": "gpt-4o-trapi",
+    #     "model": "gpt-4o_2024-11-20",
+    #     "api_base": "https://trapi.research.microsoft.com/openai",
+    #     # 不需要 api_key，即使写了也会被自动移除
+    #     "temperature": 1.0,
+    # }
     {
-        "name": "qwen3-8b",
-        "model": "openai/arbor:qwen/qwen3-8b",
-        "api_key": "API_KEY",
-        "api_base": "http://localhost:{portnum}/v1/",
-        "temperature": 0.6,
-        "top_p": 0.95,
-        "top_k": 20,
-        "launch_kwargs": LAUNCH_KWARGS,
-        "train_kwargs": TRAIN_KWARGS_GRPO_QWEN,
-    },
-    {
-        "name": "gpt-41-mini",
-        "model": "openai/gpt-4.1-mini-2025-04-14",
-        "api_key": "env:OPENAI_API_KEY",
+        "name": "gpt-4o",
+        "model": "gpt-4o",
+        "api_base": "https://aimicius-southcentralus.openai.azure.com/",
+        "api_version": "2024-05-01-preview",
+        "api_key": "env:PROXY_KEY",
         "temperature": 1.0,
-    },
+    }
 ]
 
 def get_benchmarks():
-    from gepa_artifact.benchmarks.hover import benchmark as hover_metas
     from gepa_artifact.benchmarks.hotpotQA import benchmark as hotpotQA_metas
-    from gepa_artifact.benchmarks.papillon import benchmark as papillon_metas
-    from gepa_artifact.benchmarks.IFBench import benchmark as ifbench_metas
-    from gepa_artifact.benchmarks.livebench_math import benchmark as math_metas
-    from gepa_artifact.benchmarks.AIME import benchmark as aime_metas
 
-    from gepa_artifact.utils.optimizers import OptimizerConfig
-
-    benchmark_metas = hover_metas + hotpotQA_metas + papillon_metas + ifbench_metas + math_metas + aime_metas
+    # benchmark_metas = hover_metas + hotpotQA_metas + papillon_metas + ifbench_metas + math_metas + aime_metas
+    benchmark_metas = hotpotQA_metas
     return benchmark_metas
 
 def get_optimizers():
-    import dspy
     from gepa_artifact.gepa.gepa import GEPA
-    from dspy.teleprompt.grpo import GRPO
+    from gepa_artifact.gepa.gepa_sgd import GEPA_SGD
+    # from dspy.teleprompt.grpo import GRPO
     from gepa_artifact.utils.optimizers import OptimizerConfig
     optimizers = [
         ("Baseline", 
@@ -82,105 +91,189 @@ def get_optimizers():
                 name="Baseline",
             )
         ),
-        (
-            "MIPROv2-Heavy", 
-            OptimizerConfig(
-                optimizer=dspy.teleprompt.MIPROv2,
-                init_args=dict(auto="heavy", max_errors=10000),
-                compile_args=dict(
-                    requires_permission_to_run=False,
-                ),
-                langProBe_configs=dict(
-                    use_valset=True,
-                    save_candidate_score=True,
-                    provide_logdir_in_init=True,
-                    add_max_errors_to_initargs=True,
-                    launch_arbor=True,
-                    use_cache_from_opt="Baseline",
-                ),
-                name="MIPROv2-Heavy",
-            )
-        ),
-        (
-            "GEPA-MERGE",
-            OptimizerConfig(
-                optimizer=GEPA,
-                init_args=dict(run_linearized_gepa=False, use_merge=True, set_for_merge_minibatch='val', track_scores_on='val'),
-                compile_args=dict(),
-                langProBe_configs=dict(
-                    use_valset=True,
-                    add_max_metric_calls=True,
-                    max_metric_calls_source_opt_name="MIPROv2-Heavy",
-                    launch_arbor=True,
-                    use_cache_from_opt="MIPROv2-Heavy",
-                ),
-                name="GEPA-MERGE",
-            )
-        ),
+        # (
+        #     "MIPROv2-Heavy",
+        #     OptimizerConfig(
+        #         optimizer=dspy.teleprompt.MIPROv2,
+        #         init_args=dict(auto="heavy", max_errors=10000),
+        #         compile_args=dict(
+        #             requires_permission_to_run=False,
+        #         ),
+        #         langProBe_configs=dict(
+        #             use_valset=True,
+        #             save_candidate_score=True,
+        #             provide_logdir_in_init=True,
+        #             add_max_errors_to_initargs=True,
+        #             launch_arbor=True,
+        #             use_cache_from_opt="Baseline",
+        #         ),
+        #         name="MIPROv2-Heavy",
+        #     )
+        # ),
+        # (
+        #     "GEPA-MERGE",
+        #     OptimizerConfig(
+        #         optimizer=GEPA,
+        #         init_args=dict(run_linearized_gepa=False, use_merge=True, set_for_merge_minibatch='val', track_scores_on='val'),
+        #         compile_args=dict(),
+        #         langProBe_configs=dict(
+        #             use_valset=True,
+        #             add_max_metric_calls=True,
+        #             max_metric_calls_source_opt_name="MIPROv2-Heavy",
+        #             launch_arbor=True,
+        #             use_cache_from_opt="MIPROv2-Heavy",
+        #         ),
+        #         name="GEPA-MERGE",
+        #     )
+        # ),
         (
             "GEPA",
             OptimizerConfig(
                 optimizer=GEPA,
-                init_args=dict(run_linearized_gepa=False, use_merge=False, set_for_merge_minibatch='val', track_scores_on='val'),
+                init_args=dict(
+                    run_linearized_gepa=False,
+                    use_merge=False,
+                    set_for_merge_minibatch='val',
+                    track_scores_on='val',
+                    num_iters=20  # 设置优化迭代次数
+                ),
                 compile_args=dict(),
                 langProBe_configs=dict(
                     use_valset=True,
-                    add_max_metric_calls=True,
-                    max_metric_calls_source_opt_name="MIPROv2-Heavy",
+                    # add_max_metric_calls=True,
+                    # max_metric_calls_source_opt_name="MIPROv2-Heavy",
+                    save_candidate_score=True,
+                    provide_logdir_in_init=True,
+                    add_max_errors_to_initargs=True,
                     launch_arbor=True,
-                    use_cache_from_opt="MIPROv2-Heavy",
+                    # use_cache_from_opt="MIPROv2-Heavy",
+                    use_cache_from_opt="Baseline",
                 ),
                 name="GEPA",
             )
         ),
         (
-            "Abl-SelectBestCandidate",
+            "GEPA-FullTrainset",  # 看完整训练集的所有 trace 再优化
             OptimizerConfig(
                 optimizer=GEPA,
-                init_args=dict(run_linearized_gepa=True, use_merge=False, set_for_merge_minibatch='val', track_scores_on='val'),
+                init_args=dict(
+                    run_linearized_gepa=True,  # 线性模式
+                    use_merge=False,
+                    set_for_merge_minibatch='val',
+                    track_scores_on='val',
+                    num_dspy_examples_per_gepa_step=150,  # 设置为训练集大小，一次看完所有样本
+                    num_iters=1,  # 只需要 1 次迭代，因为一次就看完了所有训练集
+                ),
                 compile_args=dict(),
                 langProBe_configs=dict(
                     use_valset=True,
-                    add_max_metric_calls=True,
-                    max_metric_calls_source_opt_name="MIPROv2-Heavy",
-                    launch_arbor=True,
-                    use_cache_from_opt="MIPROv2-Heavy",
+                    save_candidate_score=True,
+                    provide_logdir_in_init=True,
+                    add_max_errors_to_initargs=True,
+                    launch_arbor=False,
+                    use_cache_from_opt="Baseline",
                 ),
-                name="Abl-SelectBestCandidate",
+                name="GEPA-FullTrainset",
             )
         ),
         (
-            "GRPO",
+            "GEPA-Linear",  # 简化版：线性优化，不用帕累托前沿
             OptimizerConfig(
-                optimizer=GRPO,
+                optimizer=GEPA,
                 init_args=dict(
-                    multitask=True,
-                    exclude_demos=False,
-                    num_train_steps=500,
-                    num_threads=25,
-                    use_train_as_val=False,
-                    num_steps_for_val=20,
-                    sampling_temperature=SAMPLING_TEMPERATURE,
-                    num_dspy_examples_per_grpo_step=4,
-                    num_rollouts_per_grpo_step=12,
-                    grpo_group_size=12,
-                    report_train_scores=False,
-                    variably_invoked_predictor_grouping_mode="fill",
-                    variably_invoked_predictor_fill_strategy="randint",
-                    max_context_length=MAX_CONTEXT_LENGTH_TRAINING,
+                    run_linearized_gepa=True,  # 启用线性模式
+                    skip_full_eval_in_linear_mode=True,  # 跳过完整评估，真正的SGD式迭代
+                    use_merge=False,
+                    set_for_merge_minibatch='val',
+                    track_scores_on='val',
+                    num_dspy_examples_per_gepa_step=10,  # minibatch 大小
+                    # 计算需要的迭代次数：trainset_size / minibatch_size
+                    # 例如：150 / 10 = 15 次迭代可以遍历整个训练集
+                    num_iters=15,
                 ),
                 compile_args=dict(),
                 langProBe_configs=dict(
                     use_valset=True,
-                    add_valset_to_trainset=False,
-                    use_model_name_from_optimized_program=True,
-                    set_lm_before_optimizer=True,
-                    launch_arbor=True,
-                    add_wandb_configs_to_initargs=True,
+                    save_candidate_score=True,
+                    provide_logdir_in_init=True,
+                    add_max_errors_to_initargs=True,
+                    launch_arbor=False,
+                    use_cache_from_opt="Baseline",
                 ),
-                name="GRPO",
+                name="GEPA-Linear",
             )
         ),
+        (
+            "GEPA-SGD",  # 纯 SGD 式优化，无验证，无帕累托
+            OptimizerConfig(
+                optimizer=GEPA_SGD,
+                init_args=dict(
+                    minibatch_size=10,  # 每个 minibatch 的样本数（38 × 4 ≈ 150）
+                    num_iters=4,        # 迭代次数
+                ),
+                compile_args=dict(),
+                langProBe_configs=dict(
+                    use_valset=False,   # 不需要 valset
+                    save_candidate_score=False,
+                    provide_logdir_in_init=False,
+                    add_max_errors_to_initargs=False,
+                    launch_arbor=False,
+                    use_cache_from_opt="Baseline",
+                ),
+                name="GEPA-SGD",
+            )
+        ),
+        # (
+        #     "Abl-SelectBestCandidate",
+        #     OptimizerConfig(
+        #         optimizer=GEPA,
+        #         init_args=dict(run_linearized_gepa=True, use_merge=False, set_for_merge_minibatch='val', track_scores_on='val'),
+        #         compile_args=dict(),
+        #         langProBe_configs=dict(
+        #             use_valset=True,
+        #             # add_max_metric_calls=True,
+        #             # max_metric_calls_source_opt_name="MIPROv2-Heavy",
+        #             save_candidate_score=True,
+        #             provide_logdir_in_init=True,
+        #             add_max_errors_to_initargs=True,
+        #             launch_arbor=True,
+        #             use_cache_from_opt="MIPROv2-Heavy",
+        #         ),
+        #         name="Abl-SelectBestCandidate",
+        #     )
+        # ),
+        # (
+        #     "GRPO",
+        #     OptimizerConfig(
+        #         optimizer=GRPO,
+        #         init_args=dict(
+        #             multitask=True,
+        #             exclude_demos=False,
+        #             num_train_steps=500,
+        #             num_threads=25,
+        #             use_train_as_val=False,
+        #             num_steps_for_val=20,
+        #             sampling_temperature=SAMPLING_TEMPERATURE,
+        #             num_dspy_examples_per_grpo_step=4,
+        #             num_rollouts_per_grpo_step=12,
+        #             grpo_group_size=12,
+        #             report_train_scores=False,
+        #             variably_invoked_predictor_grouping_mode="fill",
+        #             variably_invoked_predictor_fill_strategy="randint",
+        #             max_context_length=MAX_CONTEXT_LENGTH_TRAINING,
+        #         ),
+        #         compile_args=dict(),
+        #         langProBe_configs=dict(
+        #             use_valset=True,
+        #             add_valset_to_trainset=False,
+        #             use_model_name_from_optimized_program=True,
+        #             set_lm_before_optimizer=True,
+        #             launch_arbor=True,
+        #             add_wandb_configs_to_initargs=True,
+        #         ),
+        #         name="GRPO",
+        #     )
+        # ),
     ]
 
     return optimizers

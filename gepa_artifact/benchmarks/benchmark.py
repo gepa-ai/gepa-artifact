@@ -100,4 +100,9 @@ class EvaluationResult:
     optimizer_output_tokens: int = None
     optimizer_cost: float = None
 
+    # Teacher LM cost (e.g., Claude for prompt generation)
+    teacher_lm_cost: float = None
+    teacher_lm_input_tokens: int = None
+    teacher_lm_output_tokens: int = None
+
     optimizer_program_scores: list[float] = None
