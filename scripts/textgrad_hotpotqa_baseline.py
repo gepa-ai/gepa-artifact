@@ -305,10 +305,9 @@ def _load_trace_samples(traces_dir: Path, only_incorrect: bool, max_traces: int 
 
 
 def _load_lm_config(baseline_config_path: Path, lm_config_json: str | None) -> dict:
-    if lm_config_json:
-        return json.loads(lm_config_json)
-    cfg = _load_json(baseline_config_path)
-    return cfg.get("lm_config", cfg)
+    from scripts.eval_custom_prompts import _load_lm_config as load_lm_config
+
+    return load_lm_config(str(baseline_config_path), lm_config_json)
 
 
 def _evaluate_with_custom_prompts(

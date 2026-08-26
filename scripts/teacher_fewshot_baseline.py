@@ -347,7 +347,9 @@ def main():
     )
     teacher_lm_config = lm_config
     if args.teacher_lm_config_json:
-        teacher_lm_config = json.loads(args.teacher_lm_config_json)
+        teacher_lm_config = custom_eval._resolve_env_references(
+            json.loads(args.teacher_lm_config_json)
+        )
 
     teacher_lm = run_exps.create_lm(teacher_lm_config)
 

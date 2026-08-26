@@ -1,22 +1,19 @@
 # Baseline inventory
 
-## TextGrad-style
+| Baseline | Workload | Entry point | Prompt output |
+| --- | --- | --- | --- |
+| Original / zero-shot | HotpotQA | `scripts/run_experiments.py` | Baseline run's `metric_logs/prompts/` |
+| GEPA | HotpotQA, WebArena, VeruSAGE | `scripts/run_experiments.py`, `webarena/run_gepa_webarena_offline.py`, `scripts/verusage_offline_prompt_opt.py` | Task-specific output path |
+| Naive few-shot | HotpotQA | `scripts/naive_fewshot_baseline.py` | `--output_prompts_dir` |
+| Teacher-corrected few-shot | HotpotQA | `scripts/teacher_fewshot_baseline.py` | `--output_prompts_dir` |
+| Trace-RAG | HotpotQA, VeruSAGE | `baseline_rag/trace_rag.py` | `build-prompt --output_path` |
+| TextGrad-style | HotpotQA | `scripts/textgrad_hotpotqa_baseline.py` | `--output_prompts_dir` |
+| Full-trace TextGrad | VeruSAGE | `scripts/textgrad_fulltrace_baseline.py` | `--output_dir` |
+| Naive few-shot / RAG / TextGrad | WebArena | `webarena/build_webarena_baselines.py` | `webarena/<site>/*_<baseline>.json` |
 
-- HotpotQA entry point: `scripts/textgrad_hotpotqa_baseline.py`
-- VeruSAGE full-trace entry point: `scripts/textgrad_fulltrace_baseline.py`
-- Generated HotpotQA prompts and run metadata are written under
-  `experiment_runs_data/experiment_runs/`.
+完整运行命令见 [`HANDOFF.md`](HANDOFF.md#baselines)。HotpotQA 生成的任意
+一组 prompt 都可以用 `scripts/eval_custom_prompts.py` 评测。
 
-## Naive few-shot
-
-- Entry point: `scripts/naive_fewshot_baseline.py`
-- Retained prompt artifacts:
-  `scripts/prompts_naive_fewshot/naive_fewshot_metadata.json`
-- Evaluation runs and `prompts_used.json` are generated under
-  `experiment_runs_data/experiment_runs/`.
-
-## Retrieval-augmented generation
-
-- Documentation: `baseline_rag/README.md`
-- Entry point: `baseline_rag/trace_rag.py`
-- BM25 indexes and generated prompt outputs are excluded from Git.
+本项目将 `GEPA` 作为 `GEPA-SGD` 的 baseline；
+`GEPA-FullTrainset` 和 `GEPA-Linear` 属于变体或消融。运行方式见
+[`HANDOFF.md`](HANDOFF.md#gepa-baseline)。

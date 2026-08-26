@@ -8,6 +8,12 @@ LAUNCH_KWARGS = {
     "max_context_length": MAX_CONTEXT_LENGTH
 }
 SAMPLING_TEMPERATURE = 0.6
+HOTPOTQA_PREDICTOR_SUBSET = [
+    "summarize1.predict",
+    "create_query_hop2.predict",
+    "summarize2.predict",
+    "final_answer.predict",
+]
 TRAIN_KWARGS_GRPO_DEFAULT = {
     "update_interval": 1,
     "per_device_train_batch_size": 1,
@@ -86,7 +92,7 @@ def get_optimizers():
                 init_args={},
                 compile_args={},
                 langProBe_configs=dict(
-                    launch_arbor=True,
+                    launch_arbor=False,
                 ),
                 name="Baseline",
             )
@@ -135,7 +141,8 @@ def get_optimizers():
                     use_merge=False,
                     set_for_merge_minibatch='val',
                     track_scores_on='val',
-                    num_iters=20  # 设置优化迭代次数
+                    num_iters=20,  # 设置优化迭代次数
+                    predictor_subset=HOTPOTQA_PREDICTOR_SUBSET,
                 ),
                 compile_args=dict(),
                 langProBe_configs=dict(
@@ -145,7 +152,7 @@ def get_optimizers():
                     save_candidate_score=True,
                     provide_logdir_in_init=True,
                     add_max_errors_to_initargs=True,
-                    launch_arbor=True,
+                    launch_arbor=False,
                     # use_cache_from_opt="MIPROv2-Heavy",
                     use_cache_from_opt="Baseline",
                 ),
@@ -163,6 +170,7 @@ def get_optimizers():
                     track_scores_on='val',
                     num_dspy_examples_per_gepa_step=150,  # 设置为训练集大小，一次看完所有样本
                     num_iters=1,  # 只需要 1 次迭代，因为一次就看完了所有训练集
+                    predictor_subset=HOTPOTQA_PREDICTOR_SUBSET,
                 ),
                 compile_args=dict(),
                 langProBe_configs=dict(
@@ -190,6 +198,7 @@ def get_optimizers():
                     # 计算需要的迭代次数：trainset_size / minibatch_size
                     # 例如：150 / 10 = 15 次迭代可以遍历整个训练集
                     num_iters=15,
+                    predictor_subset=HOTPOTQA_PREDICTOR_SUBSET,
                 ),
                 compile_args=dict(),
                 langProBe_configs=dict(
@@ -210,6 +219,7 @@ def get_optimizers():
                 init_args=dict(
                     minibatch_size=10,  # 每个 minibatch 的样本数（38 × 4 ≈ 150）
                     num_iters=4,        # 迭代次数
+                    predictor_subset=HOTPOTQA_PREDICTOR_SUBSET,
                 ),
                 compile_args=dict(),
                 langProBe_configs=dict(

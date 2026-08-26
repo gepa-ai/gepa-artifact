@@ -10,11 +10,27 @@ def _load_json(path):
         return json.load(f)
 
 
+def _resolve_env_references(value):
+    if isinstance(value, dict):
+        return {key: _resolve_env_references(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [_resolve_env_references(item) for item in value]
+    if isinstance(value, str) and value.startswith("env:"):
+        env_name = value[4:]
+        env_value = os.environ.get(env_name)
+        if env_value is None:
+            raise ValueError(f"LM config references unset environment variable: {env_name}")
+        return env_value
+    return value
+
+
 def _load_lm_config(baseline_config_path, lm_config_json):
     if lm_config_json:
-        return json.loads(lm_config_json)
-    config = _load_json(baseline_config_path)
-    return config.get("lm_config", config)
+        config = json.loads(lm_config_json)
+    else:
+        config = _load_json(baseline_config_path)
+        config = config.get("lm_config", config)
+    return _resolve_env_references(config)
 
 
 def _load_prompts(prompts_path, prompts_dir):

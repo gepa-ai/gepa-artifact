@@ -14,7 +14,7 @@ import wandb
 
 from .instruction_proposal import ProposeNewInstructionModule
 from dspy import Example
-from typing import List, Set
+from typing import List, Optional, Set
 from collections import Counter
 
 from .gepa_utils import (
@@ -59,6 +59,7 @@ class GEPA(dspy.teleprompt.teleprompt.Teleprompter):
         set_for_merge_minibatch='train',  # 'train', 'val', or 'both'
         track_scores_on: Literal['val', 'train_val'] = 'train_val',
         add_format_failure_as_feedback: bool=False,
+        predictor_subset: Optional[List[str]] = None,
     ):
         # Exactly one of max_metric_calls, max_evals_per_trainval_instance or num_iters should be set
         assert (max_metric_calls is not None) + (max_evals_per_trainval_instance is not None) + (num_iters is not None) == 1, "Exactly one of max_metric_calls, max_evals_per_trainval_instance or num_iters should be set. You set max_metric_calls={}, max_evals_per_trainval_instance={}, num_iters={}".format(
@@ -102,6 +103,14 @@ class GEPA(dspy.teleprompt.teleprompt.Teleprompter):
         self.num_dspy_examples_per_gepa_step = num_dspy_examples_per_gepa_step
 
         self.add_format_failure_as_feedback = add_format_failure_as_feedback
+
+        self.predictor_subset = None
+        if predictor_subset:
+            self.predictor_subset = set()
+            for name in predictor_subset:
+                self.predictor_subset.add(name)
+                if not name.endswith(".predict"):
+                    self.predictor_subset.add(f"{name}.predict")
         
         self.shuffled_trainset_ids = []
         self.epoch = -1
@@ -483,10 +492,26 @@ class GEPA(dspy.teleprompt.teleprompt.Teleprompter):
 
                 gepa_state.full_program_trace[-1]['selected_program_candidate'] = curr_prog_id
 
-                predictor_to_update_id = gepa_state.named_predictor_id_to_update_next_for_program_candidate[curr_prog_id]
+                predictor_to_update_id = None
+                predictor_name_to_update = None
+                for _ in range(len(gepa_state.list_of_named_predictors)):
+                    candidate_id = gepa_state.named_predictor_id_to_update_next_for_program_candidate[curr_prog_id]
+                    gepa_state.named_predictor_id_to_update_next_for_program_candidate[curr_prog_id] = (
+                        candidate_id + 1
+                    ) % len(gepa_state.list_of_named_predictors)
+                    candidate_name = gepa_state.list_of_named_predictors[candidate_id]
+                    if self.predictor_subset is None or candidate_name in self.predictor_subset:
+                        predictor_to_update_id = candidate_id
+                        predictor_name_to_update = candidate_name
+                        break
+
+                if predictor_to_update_id is None:
+                    self.logger.log(
+                        f"Iteration {gepa_state.i+1}: Predictor subset did not match any program predictor, stopping"
+                    )
+                    break
+
                 gepa_state.full_program_trace[-1]['predictor_to_update_id'] = predictor_to_update_id
-                gepa_state.named_predictor_id_to_update_next_for_program_candidate[curr_prog_id] = (predictor_to_update_id + 1) % len(gepa_state.list_of_named_predictors)
-                predictor_name_to_update = gepa_state.list_of_named_predictors[predictor_to_update_id]
                 if predictor_name_to_update not in self.named_predictor_to_feedback_fn_map:
                     self.logger.log(f"Iteration {gepa_state.i+1}: Predictor {predictor_name_to_update} not in feedback map, skipping")
                     continue
