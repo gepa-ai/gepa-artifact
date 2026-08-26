@@ -1,5 +1,22 @@
 .vscode/
-experiment_runs_data/
+# Keep generated experiment output local by default. The HotpotQA Baseline
+# traces below are retained because the offline baselines consume them.
+experiment_runs_data/*
+!experiment_runs_data/experiment_runs/
+experiment_runs_data/experiment_runs/*
+!experiment_runs_data/experiment_runs/seed_0/
+experiment_runs_data/experiment_runs/seed_0/*
+!experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/
+experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/*
+!experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/metric_logs/
+experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/metric_logs/*
+!experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/metric_logs/background.md
+!experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/metric_logs/train_traces.jsonl
+!experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/metric_logs/test_traces.jsonl
+!experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/metric_logs/prompts/
+!experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/metric_logs/prompts/*.md
+!experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/metric_logs/traces/
+!experiment_runs_data/experiment_runs/seed_0/HotpotQABench_HotpotMultiHop_Baseline_gpt-4o/metric_logs/traces/trace_*.json
 gepa_artifact/utils/dspy/
 gepa_artifact/utils/arbor/
 gepa_artifact/benchmarks/hover/retriever_cache

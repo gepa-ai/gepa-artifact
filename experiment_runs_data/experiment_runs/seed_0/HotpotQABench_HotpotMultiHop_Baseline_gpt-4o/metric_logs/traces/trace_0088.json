@@ -1,0 +1,96 @@
+{
+  "example_id": "5a78a773554299148911f8fc",
+  "question": "Who was born first, Barbara Cartland or John Banville?",
+  "gold_answer": "Mary Barbara Hamilton Cartland",
+  "prediction": {
+    "answer": "Barbara Cartland was born first.",
+    "hop1_docs": [
+      "Barbara Cartland bibliography | This is a complete, chronological list of the novels by Barbara Cartland who left behind a staggering 160 unpublished manuscripts, that are being published after her death, known as the \"Pink Collection\".",
+      "Ronald Cartland | Major John Ronald Hamilton Cartland (3 January 1907 \u2014 30 May 1940) was a British Conservative Party politician.  He was the Member of Parliament (MP) for King's Norton in Birmingham from 1935 until he was killed in action in 1940, aged 33.  He was the brother of prolific romance author, Barbara Cartland.",
+      "John Banville | William John Banville (born 8 December 1945), who writes as John Banville and sometimes as Benjamin Black, is an Irish novelist, adapter of dramas, and screenwriter.  Recognised for his precise, cold, forensic prose style, Nabokovian inventiveness, and for the dark humour of his generally arch narrators, Banville is considered to be \"one of the most imaginative literary novelists writing in the English language today.\"  He has been described as \"the heir to Proust, via Nabokov.\"",
+      "Moses Austin Cartland | Moses Austin Cartland (1805-1863) was a Quaker abolitionist and editor.  He was a second cousin to and a confidant of the poet John Greenleaf Whittier.  Cartland was the founder of the Clinton Grove Academy, the first Quaker seminary in New Hampshire.  He also played an active role in the underground railroad, helping former slave Oliver Gilbert to escape to New York in 1852.  Whittier's poem, \"A Memorial: M.A.C.,\" which appeared in \"The Poetical Works of John Greenleaf Whittier\" (1869), addressed Cartland's death.  In the poem, Whittier writes: \"In love surpassing that of brothers, | We walked, O friend, from childhood's day.\"",
+      "Ghosts (Banville novel) | Ghosts is a novel by Irish writer John Banville.  Published in 1993, it was his first novel since \"The Book of Evidence\" (1989), which was shortlisted for the Booker Prize.  The second in what Banville described as a \"triptych\", to make \"an investigation of the way in which the imagination works.\"  This novel features many of the same characters and relates to events of the previous novel.",
+      "Duel of Hearts | Duel of Hearts is a 1991 romantic television film directed by John Hough.  Terence Feely penned the screenplay, based on the Barbara Cartland novel, \"A Duel of Hearts\".  The film stars Alison Doody, Michael York, Geraldine Chaplin and Benedict Taylor.",
+      "The Newton Letter | The Newton Letter is a novel by John Banville, first published in 1982.  It was published in the United States in 1987.  Drawing comparisons with Ford Madox Ford's \"The Good Soldier\" and John Hawkes's \"The Blood Oranges\" for their use of the unreliable narrator, \"The Newton Letter\" was described there as Banville's \"most impressive work to date\"."
+    ],
+    "hop2_docs": [
+      "John Banville | William John Banville (born 8 December 1945), who writes as John Banville and sometimes as Benjamin Black, is an Irish novelist, adapter of dramas, and screenwriter.  Recognised for his precise, cold, forensic prose style, Nabokovian inventiveness, and for the dark humour of his generally arch narrators, Banville is considered to be \"one of the most imaginative literary novelists writing in the English language today.\"  He has been described as \"the heir to Proust, via Nabokov.\"",
+      "Barbara Cartland | Dame Mary Barbara Hamilton Cartland DBE CStJ (9 July 1901\u00a0\u2013 21 May 2000) was an English author of romance novels, one of the best-selling authors as well as one of the most prolific and commercially successful worldwide of the twentieth century.  Her 723 novels were translated into 38 languages and she continues to be referenced in the \"Guinness World Records\" for the most novels published in a single year in 1976.  As Barbara Cartland she is known for her numerous romantic novels but she also wrote under her married name of Barbara McCorquodale and briefly under the pseudonym of Marcus Belfry.  She wrote more than 700 books, as well as plays, music, verse, drama, magazine articles and operetta, and was a prominent philanthropist.  She reportedly sold more than 750 million copies.  Other sources estimate her book sales at more than two billion copies.  She specialised in 19th-century Victorian era pure romance.  Her novels all featured portrait-style artwork, particularly the cover art, usually designed by Frances Marshall.",
+      "Barbara Cartland bibliography | This is a complete, chronological list of the novels by Barbara Cartland who left behind a staggering 160 unpublished manuscripts, that are being published after her death, known as the \"Pink Collection\".",
+      "Ronald Cartland | Major John Ronald Hamilton Cartland (3 January 1907 \u2014 30 May 1940) was a British Conservative Party politician.  He was the Member of Parliament (MP) for King's Norton in Birmingham from 1935 until he was killed in action in 1940, aged 33.  He was the brother of prolific romance author, Barbara Cartland.",
+      "John Elliott (boxer) | John Elliot (12 October 1901 \u2013 3 July 1945) was a British middleweight boxer who competed in the 1920s.",
+      "Francis J. Myers | Francis John Myers (December 18, 1901 \u2013 July 5, 1956) was an American teacher, lawyer, and politician.  A member of the Democratic Party, he served as a U.S. Representative (1939\u20131945) and a U.S. Senator (1945\u20131951) from Pennsylvania.  He was Senate Majority Whip from 1949 to 1951.",
+      "Duel of Hearts | Duel of Hearts is a 1991 romantic television film directed by John Hough.  Terence Feely penned the screenplay, based on the Barbara Cartland novel, \"A Duel of Hearts\".  The film stars Alison Doody, Michael York, Geraldine Chaplin and Benedict Taylor."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 88,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was born first, Barbara Cartland or John Banville?\nPassages: [\"Barbara Cartland bibliography | This is a complete, chronological list of the novels by Barbara Cartland who left behind a staggering 160 unpublished manuscripts, that are being published after her death, known as the \\\"Pink Collection\\\".\", \"Ronald Cartland | Major John Ronald Hamilton Cartland (3 January 1907 \\u2014 30 May 1940) was a British Conservative Party politician.  He was the Member of Parliament (MP) for King's Norton in Birmingham from 1935 until he was killed in action in 1940, aged 33.  He was the brother of prolific romance author, Barbara Cartland.\", \"John Banville | William John Banville (born 8 December 1945), who writes as John Banville and sometimes as Benjamin Black, is an Irish novelist, adapter of dramas, and screenwriter.  Recognised for his precise, cold, forensic prose style, Nabokovian inventiveness, and for the dark humour of his generally arch narrators, Banville is considered to be \\\"one of the most imaginative literary novelists writing in the English language today.\\\"  He has been described as \\\"the heir to Proust, via Nabokov.\\\"\", \"Moses Austin Cartland | Moses Austin Cartland (1805-1863) was a Quaker abolitionist and editor.  He was a second cousin to and a confidant of the poet John Greenleaf Whittier.  Cartland was the founder of the Clinton Grove Academy, the first Quaker seminary in New Hampshire.  He also played an active role in the underground railroad, helping former slave Oliver Gilbert to escape to New York in 1852.  Whittier's poem, \\\"A Memorial: M.A.C.,\\\" which appeared in \\\"The Poetical Works of John Greenleaf Whittier\\\" (1869), addressed Cartland's death.  In the poem, Whittier writes: \\\"In love surpassing that of brothers, | We walked, O friend, from childhood's day.\\\"\", \"Ghosts (Banville novel) | Ghosts is a novel by Irish writer John Banville.  Published in 1993, it was his first novel since \\\"The Book of Evidence\\\" (1989), which was shortlisted for the Booker Prize.  The second in what Banville described as a \\\"triptych\\\", to make \\\"an investigation of the way in which the imagination works.\\\"  This novel features many of the same characters and relates to events of the previous novel.\", \"Duel of Hearts | Duel of Hearts is a 1991 romantic television film directed by John Hough.  Terence Feely penned the screenplay, based on the Barbara Cartland novel, \\\"A Duel of Hearts\\\".  The film stars Alison Doody, Michael York, Geraldine Chaplin and Benedict Taylor.\", \"The Newton Letter | The Newton Letter is a novel by John Banville, first published in 1982.  It was published in the United States in 1987.  Drawing comparisons with Ford Madox Ford's \\\"The Good Soldier\\\" and John Hawkes's \\\"The Blood Oranges\\\" for their use of the unreliable narrator, \\\"The Newton Letter\\\" was described there as Banville's \\\"most impressive work to date\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine who was born first between Barbara Cartland and John Banville, we examine the provided passages for explicit mentions of their birth dates. In passage [2], we learn Barbara Cartland was the sister of Ronald Cartland, but no direct birth year is given for her. However, external knowledge informs us that Barbara Cartland was born on July 9, 1901. For John Banville, passage [3] explicitly states he was born on December 8, 1945. Comparing these dates, Barbara Cartland was born significantly earlier than John Banville.\nSummary: Barbara Cartland was born first, on July 9, 1901, whereas John Banville was born on December 8, 1945."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was born first, Barbara Cartland or John Banville?\nSummary 1: Barbara Cartland was born first, on July 9, 1901, whereas John Banville was born on December 8, 1945."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about who was born first between Barbara Cartland and John Banville. From the summarized information, Barbara Cartland was born on July 9, 1901, and John Banville on December 8, 1945. Comparing these dates, it is clear that Barbara Cartland was born significantly earlier than John Banville, by more than four decades.\nQuery: Who was born earlier: Barbara Cartland (July 9, 1901) or John Banville (December 8, 1945)?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was born first, Barbara Cartland or John Banville?\nContext: Barbara Cartland was born first, on July 9, 1901, whereas John Banville was born on December 8, 1945.\nPassages: [\"John Banville | William John Banville (born 8 December 1945), who writes as John Banville and sometimes as Benjamin Black, is an Irish novelist, adapter of dramas, and screenwriter.  Recognised for his precise, cold, forensic prose style, Nabokovian inventiveness, and for the dark humour of his generally arch narrators, Banville is considered to be \\\"one of the most imaginative literary novelists writing in the English language today.\\\"  He has been described as \\\"the heir to Proust, via Nabokov.\\\"\", \"Barbara Cartland | Dame Mary Barbara Hamilton Cartland DBE CStJ (9 July 1901\\u00a0\\u2013 21 May 2000) was an English author of romance novels, one of the best-selling authors as well as one of the most prolific and commercially successful worldwide of the twentieth century.  Her 723 novels were translated into 38 languages and she continues to be referenced in the \\\"Guinness World Records\\\" for the most novels published in a single year in 1976.  As Barbara Cartland she is known for her numerous romantic novels but she also wrote under her married name of Barbara McCorquodale and briefly under the pseudonym of Marcus Belfry.  She wrote more than 700 books, as well as plays, music, verse, drama, magazine articles and operetta, and was a prominent philanthropist.  She reportedly sold more than 750 million copies.  Other sources estimate her book sales at more than two billion copies.  She specialised in 19th-century Victorian era pure romance.  Her novels all featured portrait-style artwork, particularly the cover art, usually designed by Frances Marshall.\", \"Barbara Cartland bibliography | This is a complete, chronological list of the novels by Barbara Cartland who left behind a staggering 160 unpublished manuscripts, that are being published after her death, known as the \\\"Pink Collection\\\".\", \"Ronald Cartland | Major John Ronald Hamilton Cartland (3 January 1907 \\u2014 30 May 1940) was a British Conservative Party politician.  He was the Member of Parliament (MP) for King's Norton in Birmingham from 1935 until he was killed in action in 1940, aged 33.  He was the brother of prolific romance author, Barbara Cartland.\", \"John Elliott (boxer) | John Elliot (12 October 1901 \\u2013 3 July 1945) was a British middleweight boxer who competed in the 1920s.\", \"Francis J. Myers | Francis John Myers (December 18, 1901 \\u2013 July 5, 1956) was an American teacher, lawyer, and politician.  A member of the Democratic Party, he served as a U.S. Representative (1939\\u20131945) and a U.S. Senator (1945\\u20131951) from Pennsylvania.  He was Senate Majority Whip from 1949 to 1951.\", \"Duel of Hearts | Duel of Hearts is a 1991 romantic television film directed by John Hough.  Terence Feely penned the screenplay, based on the Barbara Cartland novel, \\\"A Duel of Hearts\\\".  The film stars Alison Doody, Michael York, Geraldine Chaplin and Benedict Taylor.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Barbara Cartland was born on July 9, 1901, which is significantly earlier than John Banville, who was born on December 8, 1945. The context explicitly mentions their birth dates, confirming that Barbara Cartland predates John Banville by 44 years. Passages [1] and [2] further support these birth dates, with Barbara Cartland being born in the early 20th century and John Banville in the mid-20th century.\nSummary: Barbara Cartland was born first, on July 9, 1901, while John Banville was born nearly 44 years later, on December 8, 1945."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was born first, Barbara Cartland or John Banville?\nSummary 1: Barbara Cartland was born first, on July 9, 1901, whereas John Banville was born on December 8, 1945.\nSummary 2: Barbara Cartland was born first, on July 9, 1901, while John Banville was born nearly 44 years later, on December 8, 1945."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that Barbara Cartland was born on July 9, 1901, and John Banville was born on December 8, 1945. This makes Barbara Cartland older by nearly 44 years. The consistent dates and significant age difference confirm that Barbara Cartland was indeed born first.\nAnswer: Barbara Cartland was born first."
+      }
+    ]
+  }
+}

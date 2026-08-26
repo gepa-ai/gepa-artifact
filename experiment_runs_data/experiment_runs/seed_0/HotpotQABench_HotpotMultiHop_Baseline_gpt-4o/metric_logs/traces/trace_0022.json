@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7c62b455429907fabeef77",
+  "question": "What year was the singer born who is featured in Still Growing Up:Live & Unwrapped?",
+  "gold_answer": "1950",
+  "prediction": {
+    "answer": "1950",
+    "hop1_docs": [
+      "Still Growing Up: Live &amp; Unwrapped | Still Growing Up: Live & Unwrapped is a DVD film by Hamish Hamilton and Peter Gabriel.  It features several live performances from Gabriel's 2004 Still Growing Up tour.  The film aims to show Gabriel in a more intimate setting, discarding many of the stage antics featured in \"Growing Up Live\".  Bonus features include exclusive interview footage of Gabriel and his live band, live rehearsals of \"Darkness\", \"No Way Out\" and \"Growing Up\", as well as live performances of \"Father, Son\" and \"Downside Up\" on \"Later... with Jools Holland\".",
+      "Live &amp; Unwrapped | The Live & Unwrapped is the fifth special concert by singer and songwriter Gloria Estefan, the tour was a special show made only to launch the album \"Unwrapped\", the show was made at The Colosseum in Caesars Palace, Las Vegas.",
+      "Growing Up Live | Growing Up Live is a concert film by Hamish Hamilton and Peter Gabriel.  It features a live performance from Gabriel's 2003 \"Growing Up\" tour.  The concert is notable for its dynamic set design by Robert Lepage.  Also of note is the addition of Melanie Gabriel, his daughter, for backing vocals in this concert footage.  Bonus features include Tony Levin's photo album selections and an interview with Peter Gabriel about the story of Growing Up.",
+      "All Growed Up | All Growed Up is the third TV movie of \"Rugrats\" that aired on July 21, 2001 during the show's 8th season to celebrate the series' 10th anniversary, and acts as the pilot episode of \"All Grown Up! \" Its premise was to focus on what the babies' lives would be like if they were 10 years older.  It proved to be popular enough for a spinoff based on it to be made.",
+      "Chindesaurus | Chindesaurus ( ) is a genus of herrerasaurid theropod dinosaur that lived approximately 235-210 million years ago during the latter part of the Triassic Period in what is now the Southwestern United States.  \"Chindesaurus\" was a small, bipedal, carnivore, that could grow up to 2 to long.",
+      "Tied Up (Casey Veggies song) | \"Tied Up\" is a song recorded by American rapper Casey Veggies.  It was released on April 27, 2015, as the second single from his debut studio album, \"Live & Grow\" (2015).  The song produced by Kane Beatz and Luca Polizzi, features guest vocals from American rapper and singer Dej Loaf.",
+      "Procompsognathus | Procompsognathus is an extinct genus of coelophysid theropod dinosaur that lived approximately 210 million years ago during the later part of the Triassic Period, in what is now Germany.  \"Procompsognathus\" was a small-sized, lightly built, ground-dwelling, bipedal carnivore, that could grow up to 1\u00a0m (3.3\u00a0ft) long."
+    ],
+    "hop2_docs": [
+      "Fokion Zaimis | Fokion (Phokion) Zaimis (1899\u20131967) was a Greek politician.  He served twice as minister of the interior (1949\u20131950, 1965\u20131966), minister of finance (March\u2013April 1950, August\u2013September 1950), minister of economy (March 1950, August\u2013September 1950, 1951), minister of housing and reconstruction (1950\u20131951), minister of health (1950), minister of welfare (1950\u20131952) and minister of commerce (1947\u20131948).",
+      "Lewis\u2013Thornburg Farm | Lewis\u2013Thornburg Farm, also known as the Thornburg Farm, is a historic home and farm complex near Asheboro, Randolph County, North Carolina.  The farmhouse was built about 1855, and is a two-story, single-pile, three-bay, frame dwelling.  It has a gable roof and a two-story rear ell, a one-story rear kitchen wing and a one-story enclosed rear porch.  Other contributing resources are two grape arbors (c. 1950), a smokehouse (c. 1920), an equipment shed/garage (c. 1930), an outhouse (c. 1930), five chicken houses (c. 1930, c. 1950), a dog house and pen (c. 1950), pigeon boxes (c. 1950), two equipment sheds (c. 1950), a storage shed, a barn (c. 1900, c. 1950), a tack shed (c. 1950), a carriage house (c. 1900), a three-board fence (c. 1950), an animal chute (c. 1950), a hog shelter (c. 1950), a wood shed (c. 1950), a hog house (c. 1950), and the agricultural landscape.",
+      "MAC Mle 1950 | The MAC 50 (also known as MAC 1950, MAS 50 or PA mod\u00e8le 1950) is a standard semi-automatic pistol of the French army and adopted in 1950.  It replaced the previous series of French pistols, the Mod\u00e8le 1935A & Mod\u00e8le 1935S, and was produced between 1950 and 1970.",
+      "Atlanta transit strike of 1950 | The Atlanta transit strike of 1950 was a lengthy transit strike that lasted from May 18, 1950 to November 16, 1950 in Atlanta, Georgia.",
+      "1950 Dutch TT | The 1950 Dutch TT was the third race of the 1950 Grand Prix motorcycle racing season.  It took place on the weekend of 8 July 1950 at the TT Circuit Assen.",
+      "1950 Ulster Grand Prix | The 1950 Ulster Grand Prix was the fifth round of the 1950 Grand Prix motorcycle racing season.  It took place on 19 August 1950 at the Clady Circuit.",
+      "1950 Swiss motorcycle Grand Prix | The 1950 Swiss motorcycle Grand Prix was the fourth race of the 1950 Grand Prix motorcycle racing season.  It took place on the weekend of 23 July 1950 in Geneva."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 22,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What year was the singer born who is featured in Still Growing Up:Live & Unwrapped?\nPassages: [\"Still Growing Up: Live &amp; Unwrapped | Still Growing Up: Live & Unwrapped is a DVD film by Hamish Hamilton and Peter Gabriel.  It features several live performances from Gabriel's 2004 Still Growing Up tour.  The film aims to show Gabriel in a more intimate setting, discarding many of the stage antics featured in \\\"Growing Up Live\\\".  Bonus features include exclusive interview footage of Gabriel and his live band, live rehearsals of \\\"Darkness\\\", \\\"No Way Out\\\" and \\\"Growing Up\\\", as well as live performances of \\\"Father, Son\\\" and \\\"Downside Up\\\" on \\\"Later... with Jools Holland\\\".\", \"Live &amp; Unwrapped | The Live & Unwrapped is the fifth special concert by singer and songwriter Gloria Estefan, the tour was a special show made only to launch the album \\\"Unwrapped\\\", the show was made at The Colosseum in Caesars Palace, Las Vegas.\", \"Growing Up Live | Growing Up Live is a concert film by Hamish Hamilton and Peter Gabriel.  It features a live performance from Gabriel's 2003 \\\"Growing Up\\\" tour.  The concert is notable for its dynamic set design by Robert Lepage.  Also of note is the addition of Melanie Gabriel, his daughter, for backing vocals in this concert footage.  Bonus features include Tony Levin's photo album selections and an interview with Peter Gabriel about the story of Growing Up.\", \"All Growed Up | All Growed Up is the third TV movie of \\\"Rugrats\\\" that aired on July 21, 2001 during the show's 8th season to celebrate the series' 10th anniversary, and acts as the pilot episode of \\\"All Grown Up! \\\" Its premise was to focus on what the babies' lives would be like if they were 10 years older.  It proved to be popular enough for a spinoff based on it to be made.\", \"Chindesaurus | Chindesaurus ( ) is a genus of herrerasaurid theropod dinosaur that lived approximately 235-210 million years ago during the latter part of the Triassic Period in what is now the Southwestern United States.  \\\"Chindesaurus\\\" was a small, bipedal, carnivore, that could grow up to 2 to long.\", \"Tied Up (Casey Veggies song) | \\\"Tied Up\\\" is a song recorded by American rapper Casey Veggies.  It was released on April 27, 2015, as the second single from his debut studio album, \\\"Live & Grow\\\" (2015).  The song produced by Kane Beatz and Luca Polizzi, features guest vocals from American rapper and singer Dej Loaf.\", \"Procompsognathus | Procompsognathus is an extinct genus of coelophysid theropod dinosaur that lived approximately 210 million years ago during the later part of the Triassic Period, in what is now Germany.  \\\"Procompsognathus\\\" was a small-sized, lightly built, ground-dwelling, bipedal carnivore, that could grow up to 1\\u00a0m (3.3\\u00a0ft) long.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the birth year of the singer featured in \"Still Growing Up: Live & Unwrapped\". From the passages, it can be identified that this performance is associated with Peter Gabriel (passage [1]). Peter Gabriel is a well-known musician who was born on February 13, 1950. This background knowledge is applied to identify his birth year since the passages do not explicitly mention it.\nSummary: The singer featured in \"Still Growing Up: Live & Unwrapped\", Peter Gabriel, was born in 1950."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What year was the singer born who is featured in Still Growing Up:Live & Unwrapped?\nSummary 1: The singer featured in \"Still Growing Up: Live & Unwrapped\", Peter Gabriel, was born in 1950."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To answer the question, I extracted the information about the featured singer, Peter Gabriel, from the provided summary. The summary states that Peter Gabriel was born in 1950, which directly addresses the query about the year of birth of the singer featured in \"Still Growing Up: Live & Unwrapped.\"\nQuery: 1950"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What year was the singer born who is featured in Still Growing Up:Live & Unwrapped?\nContext: The singer featured in \"Still Growing Up: Live & Unwrapped\", Peter Gabriel, was born in 1950.\nPassages: [\"Fokion Zaimis | Fokion (Phokion) Zaimis (1899\\u20131967) was a Greek politician.  He served twice as minister of the interior (1949\\u20131950, 1965\\u20131966), minister of finance (March\\u2013April 1950, August\\u2013September 1950), minister of economy (March 1950, August\\u2013September 1950, 1951), minister of housing and reconstruction (1950\\u20131951), minister of health (1950), minister of welfare (1950\\u20131952) and minister of commerce (1947\\u20131948).\", \"Lewis\\u2013Thornburg Farm | Lewis\\u2013Thornburg Farm, also known as the Thornburg Farm, is a historic home and farm complex near Asheboro, Randolph County, North Carolina.  The farmhouse was built about 1855, and is a two-story, single-pile, three-bay, frame dwelling.  It has a gable roof and a two-story rear ell, a one-story rear kitchen wing and a one-story enclosed rear porch.  Other contributing resources are two grape arbors (c. 1950), a smokehouse (c. 1920), an equipment shed/garage (c. 1930), an outhouse (c. 1930), five chicken houses (c. 1930, c. 1950), a dog house and pen (c. 1950), pigeon boxes (c. 1950), two equipment sheds (c. 1950), a storage shed, a barn (c. 1900, c. 1950), a tack shed (c. 1950), a carriage house (c. 1900), a three-board fence (c. 1950), an animal chute (c. 1950), a hog shelter (c. 1950), a wood shed (c. 1950), a hog house (c. 1950), and the agricultural landscape.\", \"MAC Mle 1950 | The MAC 50 (also known as MAC 1950, MAS 50 or PA mod\\u00e8le 1950) is a standard semi-automatic pistol of the French army and adopted in 1950.  It replaced the previous series of French pistols, the Mod\\u00e8le 1935A & Mod\\u00e8le 1935S, and was produced between 1950 and 1970.\", \"Atlanta transit strike of 1950 | The Atlanta transit strike of 1950 was a lengthy transit strike that lasted from May 18, 1950 to November 16, 1950 in Atlanta, Georgia.\", \"1950 Dutch TT | The 1950 Dutch TT was the third race of the 1950 Grand Prix motorcycle racing season.  It took place on the weekend of 8 July 1950 at the TT Circuit Assen.\", \"1950 Ulster Grand Prix | The 1950 Ulster Grand Prix was the fifth round of the 1950 Grand Prix motorcycle racing season.  It took place on 19 August 1950 at the Clady Circuit.\", \"1950 Swiss motorcycle Grand Prix | The 1950 Swiss motorcycle Grand Prix was the fourth race of the 1950 Grand Prix motorcycle racing season.  It took place on the weekend of 23 July 1950 in Geneva.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the birth year of the singer featured in \"Still Growing Up: Live & Unwrapped.\" The context states that Peter Gabriel is the singer in question and that he was born in 1950. The passages provided are unrelated to this query, focusing on unrelated historical events or artifacts that also occurred in or are associated with 1950. These passages do not provide any additional relevant information for answering this specific question. Thus, the birth year of the singer is directly available in the context.\nSummary: The singer featured in \"Still Growing Up: Live & Unwrapped,\" Peter Gabriel, was born in 1950."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What year was the singer born who is featured in Still Growing Up:Live & Unwrapped?\nSummary 1: The singer featured in \"Still Growing Up: Live & Unwrapped\", Peter Gabriel, was born in 1950.\nSummary 2: The singer featured in \"Still Growing Up: Live & Unwrapped,\" Peter Gabriel, was born in 1950."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries state that Peter Gabriel is the singer featured in \"Still Growing Up: Live & Unwrapped,\" and they agree that Peter Gabriel was born in 1950. Since both sources align and there is no conflicting information, it is reasonable to conclude that Peter Gabriel was born in 1950.\nAnswer: 1950"
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "example_id": "5adea64e55429975fa854f3d",
+  "question": "The World Food Championships were moved to the pedestrian mall in what city as of 2013?",
+  "gold_answer": "Las Vegas",
+  "prediction": {
+    "answer": "Downtown Las Vegas, Nevada.",
+    "hop1_docs": [
+      "World Food Championships | The World Food Championships is an international cooking competition currently held in Orange Beach, Alabama.  From 2012 to 2014 the even was hosted in Las Vegas, Nevada.  The competition features top chefs and home cooks from around the world who have won qualifying competitions.  Competitors compete in the categories of sandwiches, barbecue, chili, burgers, pasta, bacon and dessert.  As of 2014 the competition has total prizes of $300,000.  The competition is filmed by A&E Networks and broadcast on the network Fyi as the \"World Food Championships\" TV series.  The Championships were originally held on the Las Vegas Strip but in 2013 they were moved to the Fremont Street Experience in Downtown Las Vegas.",
+      "City Mall, Christchurch | City Mall is the main pedestrian mall in the central city of Christchurch, New Zealand, comprising two sections of Cashel Street plus the Bridge of Remembrance and one section of High Street.  The Bridge of Remembrance was pedestrianised in 1976.  The main mall was closed to traffic on 11\u00a0January 1982 and formally reopened as a pedestrian mall on 7\u00a0August, but it was not until 1992 that the entire mall was paved.  The mall was redeveloped between 2006 and 2009, and track was installed for an expansion of the heritage tram network.",
+      "2013 ICF Canoe Sprint World Championships | The 2013 ICF Canoe Sprint World Championships was held 29 August\u20131 September 2013 in Duisburg, Germany.  The championships were awarded originally to Szeged, Hungary, but Szeged was moved to 2011 in the wake of Vichy, France's withdrawal in 2010 and awarded to Rio de Janeiro, who withdrew in September 2012.  Consequently, the World Championships were awarded to Duisburg.",
+      "Ped Mall (Iowa City) | The Ped Mall, also known as the Pedestrian Mall, is a pedestrian mall located in downtown Iowa City, Iowa, near the University of Iowa campus.  Spanning from Burlington Street to Washington Street and Clinton Street to Linn Street, the Ped Mall serves as a gathering place for students, locals, and transients.  It draws large crowds for its summertime events such as the Friday Night Concert Series and the annual Iowa City Jazz Festival and Iowa City Arts Festival.  The Ped Mall area also contains restaurants, bars, retail, hotels, and the Iowa City Public Library.  The Coldren Opera House was located on the street which has now become the mall.",
+      "Pedestrian malls in the United States | Pedestrian malls, also known as pedestrian streets, are the most common form of pedestrian zone in large cities in the United States.  They are typically streets lined with storefronts and closed off to most automobile traffic.  Emergency vehicles may have access at all times and delivery vehicles may be restricted to either limited delivery hours or entrances on side streets.",
+      "Food Court Wars | Food Court Wars is an American competitive reality television cooking show on the Food Network that puts two teams of entrepreneurs in a shopping mall together with the teams having to battle each other in order to win a food court restaurant of their own, rent-free, for a year.  Each week's show is at a different city mall in the United States.  The malls want to open a new \"local\" eatery in the mall's food court that offer a fresh, region-specific menu.  The teams test, market, then run their concept for a full day feeding shoppers.  The team restaurant that makes the most profit at the end of the day wins their eatery space, which is a prize worth an estimated $100,000, and the losing team must vacate the premises.  The show premiered on July 7, 2013.  The first season finale, which was a rebroadcast of the pilot episode, aired on August 18, 2013.  Season 2 premiered on February 23, 2014, and will consist of thirteen episodes.",
+      "Food cart | A food cart is a mobile kitchen that is set up on the street to facilitate the sale and marketing of street food to people from the local pedestrian traffic.  Food carts are often found in large cities throughout the world and can be found selling food of just about any varieties."
+    ],
+    "hop2_docs": [
+      "World Food Championships | The World Food Championships is an international cooking competition currently held in Orange Beach, Alabama.  From 2012 to 2014 the even was hosted in Las Vegas, Nevada.  The competition features top chefs and home cooks from around the world who have won qualifying competitions.  Competitors compete in the categories of sandwiches, barbecue, chili, burgers, pasta, bacon and dessert.  As of 2014 the competition has total prizes of $300,000.  The competition is filmed by A&E Networks and broadcast on the network Fyi as the \"World Food Championships\" TV series.  The Championships were originally held on the Las Vegas Strip but in 2013 they were moved to the Fremont Street Experience in Downtown Las Vegas.",
+      "IZOD IndyCar World Championships | The IZOD IndyCar World Championship Presented by Honda was an IndyCar Series race on the 1.5 mi Las Vegas Motor Speedway, held from 1996\u20132000, and again in 2011.  It was first known as the Las Vegas 500k.  The Champ Car World Series held a race at the track during the 2004 and 2005 seasons as doubleheaders with the NASCAR Camping World Truck Series and a street race was held in Las Vegas at the Fremont Street Experience in 2007.",
+      "Downtown (Nevada gaming area) | \"Downtown Las Vegas Area\" is the name assigned by the Nevada Gaming Control Board NGCB which includes the Downtown Las Vegas area casinos and the Stratosphere Tower which is located 2 mi from Fremont Street.  The city of Las Vegas uses the term Downtown Gaming for the casinos near the Fremont Street Experience.  The land is part of the 110 acre that were auctioned on May 15, 1905 when the city was founded.",
+      "Fremont Street Experience | The Fremont Street Experience (FSE) is a pedestrian mall and attraction in Downtown Las Vegas, Nevada.  The FSE occupies the westernmost five blocks of Fremont Street, including the area known for years as \"Glitter Gulch,\" and portions of some other adjacent streets.",
+      "Golden Gate Hotel and Casino | The Golden Gate Hotel & Casino is located at One Fremont Street in Las Vegas, Nevada, in the United States.  A part of the Fremont Street Experience, it is the oldest and smallest hotel (106 rooms) on the Fremont Street Experience.",
+      "World Food Championships (TV series) | World Food Championships is a television series produced by A&E Television Networks and airing on the Fyi network.  The show features competitors at the annual World Food Championships in Las Vegas where top chefs and home cooks compete for a top prize of $300,000.",
+      "1997 World Series of Poker | The 1997 World Series of Poker (WSOP) was a series of poker tournaments held at Binion's Horseshoe.  Most notably, it was the only WSOP where the Main Event final table took place outdoors, at the Fremont Street Experience, just outside Binions.  The 1997 WSOP is also famous for marking the comeback of Stu Ungar, who had last won the Main Event in 1981."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 73,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The World Food Championships were moved to the pedestrian mall in what city as of 2013?\nPassages: [\"World Food Championships | The World Food Championships is an international cooking competition currently held in Orange Beach, Alabama.  From 2012 to 2014 the even was hosted in Las Vegas, Nevada.  The competition features top chefs and home cooks from around the world who have won qualifying competitions.  Competitors compete in the categories of sandwiches, barbecue, chili, burgers, pasta, bacon and dessert.  As of 2014 the competition has total prizes of $300,000.  The competition is filmed by A&E Networks and broadcast on the network Fyi as the \\\"World Food Championships\\\" TV series.  The Championships were originally held on the Las Vegas Strip but in 2013 they were moved to the Fremont Street Experience in Downtown Las Vegas.\", \"City Mall, Christchurch | City Mall is the main pedestrian mall in the central city of Christchurch, New Zealand, comprising two sections of Cashel Street plus the Bridge of Remembrance and one section of High Street.  The Bridge of Remembrance was pedestrianised in 1976.  The main mall was closed to traffic on 11\\u00a0January 1982 and formally reopened as a pedestrian mall on 7\\u00a0August, but it was not until 1992 that the entire mall was paved.  The mall was redeveloped between 2006 and 2009, and track was installed for an expansion of the heritage tram network.\", \"2013 ICF Canoe Sprint World Championships | The 2013 ICF Canoe Sprint World Championships was held 29 August\\u20131 September 2013 in Duisburg, Germany.  The championships were awarded originally to Szeged, Hungary, but Szeged was moved to 2011 in the wake of Vichy, France's withdrawal in 2010 and awarded to Rio de Janeiro, who withdrew in September 2012.  Consequently, the World Championships were awarded to Duisburg.\", \"Ped Mall (Iowa City) | The Ped Mall, also known as the Pedestrian Mall, is a pedestrian mall located in downtown Iowa City, Iowa, near the University of Iowa campus.  Spanning from Burlington Street to Washington Street and Clinton Street to Linn Street, the Ped Mall serves as a gathering place for students, locals, and transients.  It draws large crowds for its summertime events such as the Friday Night Concert Series and the annual Iowa City Jazz Festival and Iowa City Arts Festival.  The Ped Mall area also contains restaurants, bars, retail, hotels, and the Iowa City Public Library.  The Coldren Opera House was located on the street which has now become the mall.\", \"Pedestrian malls in the United States | Pedestrian malls, also known as pedestrian streets, are the most common form of pedestrian zone in large cities in the United States.  They are typically streets lined with storefronts and closed off to most automobile traffic.  Emergency vehicles may have access at all times and delivery vehicles may be restricted to either limited delivery hours or entrances on side streets.\", \"Food Court Wars | Food Court Wars is an American competitive reality television cooking show on the Food Network that puts two teams of entrepreneurs in a shopping mall together with the teams having to battle each other in order to win a food court restaurant of their own, rent-free, for a year.  Each week's show is at a different city mall in the United States.  The malls want to open a new \\\"local\\\" eatery in the mall's food court that offer a fresh, region-specific menu.  The teams test, market, then run their concept for a full day feeding shoppers.  The team restaurant that makes the most profit at the end of the day wins their eatery space, which is a prize worth an estimated $100,000, and the losing team must vacate the premises.  The show premiered on July 7, 2013.  The first season finale, which was a rebroadcast of the pilot episode, aired on August 18, 2013.  Season 2 premiered on February 23, 2014, and will consist of thirteen episodes.\", \"Food cart | A food cart is a mobile kitchen that is set up on the street to facilitate the sale and marketing of street food to people from the local pedestrian traffic.  Food carts are often found in large cities throughout the world and can be found selling food of just about any varieties.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks in what city the World Food Championships were moved to in 2013, specifically referring to a pedestrian mall. Passage [1] provides the most relevant information, stating that from 2012 to 2014, the World Food Championships were hosted in Las Vegas, Nevada. It further specifies that in 2013, the event was relocated from the Las Vegas Strip to the Fremont Street Experience, located in Downtown Las Vegas. Although the term \u201cpedestrian mall\u201d is not explicitly linked to Fremont Street, it is a notable pedestrian-friendly entertainment district resembling a pedestrian mall in functionality.\n\nTherefore, the World Food Championships were moved to the Fremont Street Experience in Downtown Las Vegas in 2013.\nSummary: The World Food Championships were moved to the Fremont Street Experience in Downtown Las Vegas, Nevada, in 2013."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The World Food Championships were moved to the pedestrian mall in what city as of 2013?\nSummary 1: The World Food Championships were moved to the Fremont Street Experience in Downtown Las Vegas, Nevada, in 2013."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The summary indicates that the World Food Championships were relocated to the Fremont Street Experience, which is located in Downtown Las Vegas, Nevada, in 2013. This aligns directly with the question about the relocation to a pedestrian mall, as Fremont Street is a well-known pedestrian mall in Las Vegas.\nQuery: What city is home to the Fremont Street Experience, where the World Food Championships were moved in 2013?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The World Food Championships were moved to the pedestrian mall in what city as of 2013?\nContext: The World Food Championships were moved to the Fremont Street Experience in Downtown Las Vegas, Nevada, in 2013.\nPassages: [\"World Food Championships | The World Food Championships is an international cooking competition currently held in Orange Beach, Alabama.  From 2012 to 2014 the even was hosted in Las Vegas, Nevada.  The competition features top chefs and home cooks from around the world who have won qualifying competitions.  Competitors compete in the categories of sandwiches, barbecue, chili, burgers, pasta, bacon and dessert.  As of 2014 the competition has total prizes of $300,000.  The competition is filmed by A&E Networks and broadcast on the network Fyi as the \\\"World Food Championships\\\" TV series.  The Championships were originally held on the Las Vegas Strip but in 2013 they were moved to the Fremont Street Experience in Downtown Las Vegas.\", \"IZOD IndyCar World Championships | The IZOD IndyCar World Championship Presented by Honda was an IndyCar Series race on the 1.5 mi Las Vegas Motor Speedway, held from 1996\\u20132000, and again in 2011.  It was first known as the Las Vegas 500k.  The Champ Car World Series held a race at the track during the 2004 and 2005 seasons as doubleheaders with the NASCAR Camping World Truck Series and a street race was held in Las Vegas at the Fremont Street Experience in 2007.\", \"Downtown (Nevada gaming area) | \\\"Downtown Las Vegas Area\\\" is the name assigned by the Nevada Gaming Control Board NGCB which includes the Downtown Las Vegas area casinos and the Stratosphere Tower which is located 2 mi from Fremont Street.  The city of Las Vegas uses the term Downtown Gaming for the casinos near the Fremont Street Experience.  The land is part of the 110 acre that were auctioned on May 15, 1905 when the city was founded.\", \"Fremont Street Experience | The Fremont Street Experience (FSE) is a pedestrian mall and attraction in Downtown Las Vegas, Nevada.  The FSE occupies the westernmost five blocks of Fremont Street, including the area known for years as \\\"Glitter Gulch,\\\" and portions of some other adjacent streets.\", \"Golden Gate Hotel and Casino | The Golden Gate Hotel & Casino is located at One Fremont Street in Las Vegas, Nevada, in the United States.  A part of the Fremont Street Experience, it is the oldest and smallest hotel (106 rooms) on the Fremont Street Experience.\", \"World Food Championships (TV series) | World Food Championships is a television series produced by A&E Television Networks and airing on the Fyi network.  The show features competitors at the annual World Food Championships in Las Vegas where top chefs and home cooks compete for a top prize of $300,000.\", \"1997 World Series of Poker | The 1997 World Series of Poker (WSOP) was a series of poker tournaments held at Binion's Horseshoe.  Most notably, it was the only WSOP where the Main Event final table took place outdoors, at the Fremont Street Experience, just outside Binions.  The 1997 WSOP is also famous for marking the comeback of Stu Ungar, who had last won the Main Event in 1981.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question inquires about the city to which the World Food Championships were moved as of 2013. From the context and passages provided, it is explicitly stated that the World Food Championships were moved to the Fremont Street Experience. The Fremont Street Experience is a pedestrian mall located in Downtown Las Vegas, Nevada. Thus, the city is Las Vegas.\nSummary: As of 2013, the World Food Championships were moved to the pedestrian mall at the Fremont Street Experience in Downtown Las Vegas, Nevada."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The World Food Championships were moved to the pedestrian mall in what city as of 2013?\nSummary 1: The World Food Championships were moved to the Fremont Street Experience in Downtown Las Vegas, Nevada, in 2013.\nSummary 2: As of 2013, the World Food Championships were moved to the pedestrian mall at the Fremont Street Experience in Downtown Las Vegas, Nevada."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the World Food Championships were relocated in 2013 to the pedestrian mall at the Fremont Street Experience in Downtown Las Vegas, Nevada. The location \"pedestrian mall at the Fremont Street Experience\" is clearly stated and confirmed in both summaries. There is no conflicting information between the summaries.\nAnswer: Downtown Las Vegas, Nevada."
+      }
+    ]
+  }
+}

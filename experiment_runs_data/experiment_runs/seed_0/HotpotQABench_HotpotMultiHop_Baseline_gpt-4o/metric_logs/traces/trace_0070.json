@@ -1,0 +1,96 @@
+{
+  "example_id": "5ae7509a5542995703ce8bdf",
+  "question": "What English keyboardist/guitarist was a member of Chicken Shack?",
+  "gold_answer": "Paul Raymond",
+  "prediction": {
+    "answer": "Christine Perfect (later known as Christine McVie).",
+    "hop1_docs": [
+      "Accept (Chicken Shack album) | Accept is the fourth studio album by the blues band, Chicken Shack, released in 1970.  \"Accept\" was Chicken Shack's last album on the Blue Horizon label.  This album was also the last for Andy Sylvester, Dave Bidwell and Paul Raymond as members of Chicken Shack.  It also marks a departure from pure blues to a more progressive and psychedelic sound.",
+      "100 Ton Chicken | 100 Ton Chicken is the third studio album by the blues band, Chicken Shack, released in 1969.  This album was Paul Raymond's first album as a member of Chicken Shack, replacing Christine Perfect.",
+      "Chicken Shack | Chicken Shack are a British blues band, founded in the mid-1960s by Stan Webb (guitar and vocals), Andy Silvester (bass guitar), and Alan Morley (drums), who were later joined by Christine Perfect (McVie) (vocals and keyboards) in 1968.  Chicken Shack has performed with various line-ups, Stan Webb being the only constant member.",
+      "Christine Perfect (album) | Christine Perfect is the eponymous debut solo album of former Chicken Shack keyboardist/singer Christine Perfect (later known as Christine McVie).",
+      "Chicken shack | A chicken shack is a restaurant that primarily serves chicken.",
+      "Island Styles (musician) | Island Styles is an American rock guitarist.  He is best known as the guitarist for American rock bands Candlebox and Jimmie's Chicken Shack, as well as singer Terry McDermott from NBC's The Voice.",
+      "Stan Webb | Stanley Frederick \"Stan\" Webb (born 3 February 1946) is the frontman and lead guitarist with the blues band Chicken Shack."
+    ],
+    "hop2_docs": [
+      "Christine Perfect (album) | Christine Perfect is the eponymous debut solo album of former Chicken Shack keyboardist/singer Christine Perfect (later known as Christine McVie).",
+      "Chicken Shack | Chicken Shack are a British blues band, founded in the mid-1960s by Stan Webb (guitar and vocals), Andy Silvester (bass guitar), and Alan Morley (drums), who were later joined by Christine Perfect (McVie) (vocals and keyboards) in 1968.  Chicken Shack has performed with various line-ups, Stan Webb being the only constant member.",
+      "100 Ton Chicken | 100 Ton Chicken is the third studio album by the blues band, Chicken Shack, released in 1969.  This album was Paul Raymond's first album as a member of Chicken Shack, replacing Christine Perfect.",
+      "Christine McVie | Christine Anne Perfect (born 12 July 1943), known professionally as Christine McVie after her marriage to John McVie, is a British singer, keyboardist, and songwriter.  She is best known as the keyboardist and co-lead vocalist of the band Fleetwood Mac, which she joined in 1970 while married to bassist McVie.  She has also released three solo albums.  McVie is known for her smoky, alto vocals and her direct but poignant lyrics, which are mostly concerned with relationships.  AllMusic describes her as an \"Unabashedly easy-on-the-ears singer/songwriter, and the prime mover behind some of Fleetwood Mac's biggest hits.\"  Eight of her songs appeared on Fleetwood Mac's 1988 \"Greatest Hits\" album.",
+      "Friend (Christine McVie song) | \"Friend\" is a 2004 song from Fleetwood Mac's keyboardist/vocalist Christine McVie.  The song was written by McVie, Robbie Patton, George Hawkins, and McVie's nephew Dan Perfect.  The song reached #29 on Billboard's Adult Contemporary Chart in 2004.",
+      "Christine McVie (album) | Christine McVie is the second solo album by the British Fleetwood Mac vocalist / keyboardist Christine McVie, released in 1984.",
+      "Mike Vernon (record producer) | Michael William Hugh \"Mike\" Vernon (born 20 November 1944) is an English music executive studio owner, and record producer from Harrow, Middlesex.  He produced albums for British blues artists and groups in the 1960s, working with the Bluesbreakers, David Bowie, Duster Bennett, Savoy Brown, Chicken Shack, Climax Blues Band, Eric Clapton, Fleetwood Mac, Peter Green, Danny Kirwan, John Mayall, Christine McVie and Ten Years After amongst others."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 70,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What English keyboardist/guitarist was a member of Chicken Shack?\nPassages: [\"Accept (Chicken Shack album) | Accept is the fourth studio album by the blues band, Chicken Shack, released in 1970.  \\\"Accept\\\" was Chicken Shack's last album on the Blue Horizon label.  This album was also the last for Andy Sylvester, Dave Bidwell and Paul Raymond as members of Chicken Shack.  It also marks a departure from pure blues to a more progressive and psychedelic sound.\", \"100 Ton Chicken | 100 Ton Chicken is the third studio album by the blues band, Chicken Shack, released in 1969.  This album was Paul Raymond's first album as a member of Chicken Shack, replacing Christine Perfect.\", \"Chicken Shack | Chicken Shack are a British blues band, founded in the mid-1960s by Stan Webb (guitar and vocals), Andy Silvester (bass guitar), and Alan Morley (drums), who were later joined by Christine Perfect (McVie) (vocals and keyboards) in 1968.  Chicken Shack has performed with various line-ups, Stan Webb being the only constant member.\", \"Christine Perfect (album) | Christine Perfect is the eponymous debut solo album of former Chicken Shack keyboardist/singer Christine Perfect (later known as Christine McVie).\", \"Chicken shack | A chicken shack is a restaurant that primarily serves chicken.\", \"Island Styles (musician) | Island Styles is an American rock guitarist.  He is best known as the guitarist for American rock bands Candlebox and Jimmie's Chicken Shack, as well as singer Terry McDermott from NBC's The Voice.\", \"Stan Webb | Stanley Frederick \\\"Stan\\\" Webb (born 3 February 1946) is the frontman and lead guitarist with the blues band Chicken Shack.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The passages provide information about several members of Chicken Shack, a British blues band. Based on these passages:  \n- [1] mentions Andy Sylvester, Dave Bidwell, and Paul Raymond as members of Chicken Shack.  \n- [2] states that Paul Raymond replaced Christine Perfect in the band.  \n- [3] notes that Stan Webb (guitar and vocals), Andy Silvester (bass guitar), and Christine Perfect (vocals and keyboards) were members of the band's early line-up.  \n- [4] confirms Christine Perfect (later Christine McVie) as a former keyboardist/singer of the band.  \n- [7] identifies Stan Webb as the frontman and lead guitarist of Chicken Shack.\n\nStan Webb and Christine Perfect/McVie are explicitly identified as a guitarist and keyboardist, respectively, within Chicken Shack.\nSummary: The English keyboardist/guitarist who was a member of Chicken Shack is Christine Perfect (later known as Christine McVie)."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What English keyboardist/guitarist was a member of Chicken Shack?\nSummary 1: The English keyboardist/guitarist who was a member of Chicken Shack is Christine Perfect (later known as Christine McVie)."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the name of an English keyboardist/guitarist who was a member of the band Chicken Shack. Based on the provided summary, the answer is Christine Perfect, who is also known later as Christine McVie.\nQuery: Who is Christine Perfect, also known as Christine McVie, in relation to the band Chicken Shack?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What English keyboardist/guitarist was a member of Chicken Shack?\nContext: The English keyboardist/guitarist who was a member of Chicken Shack is Christine Perfect (later known as Christine McVie).\nPassages: [\"Christine Perfect (album) | Christine Perfect is the eponymous debut solo album of former Chicken Shack keyboardist/singer Christine Perfect (later known as Christine McVie).\", \"Chicken Shack | Chicken Shack are a British blues band, founded in the mid-1960s by Stan Webb (guitar and vocals), Andy Silvester (bass guitar), and Alan Morley (drums), who were later joined by Christine Perfect (McVie) (vocals and keyboards) in 1968.  Chicken Shack has performed with various line-ups, Stan Webb being the only constant member.\", \"100 Ton Chicken | 100 Ton Chicken is the third studio album by the blues band, Chicken Shack, released in 1969.  This album was Paul Raymond's first album as a member of Chicken Shack, replacing Christine Perfect.\", \"Christine McVie | Christine Anne Perfect (born 12 July 1943), known professionally as Christine McVie after her marriage to John McVie, is a British singer, keyboardist, and songwriter.  She is best known as the keyboardist and co-lead vocalist of the band Fleetwood Mac, which she joined in 1970 while married to bassist McVie.  She has also released three solo albums.  McVie is known for her smoky, alto vocals and her direct but poignant lyrics, which are mostly concerned with relationships.  AllMusic describes her as an \\\"Unabashedly easy-on-the-ears singer/songwriter, and the prime mover behind some of Fleetwood Mac's biggest hits.\\\"  Eight of her songs appeared on Fleetwood Mac's 1988 \\\"Greatest Hits\\\" album.\", \"Friend (Christine McVie song) | \\\"Friend\\\" is a 2004 song from Fleetwood Mac's keyboardist/vocalist Christine McVie.  The song was written by McVie, Robbie Patton, George Hawkins, and McVie's nephew Dan Perfect.  The song reached #29 on Billboard's Adult Contemporary Chart in 2004.\", \"Christine McVie (album) | Christine McVie is the second solo album by the British Fleetwood Mac vocalist / keyboardist Christine McVie, released in 1984.\", \"Mike Vernon (record producer) | Michael William Hugh \\\"Mike\\\" Vernon (born 20 November 1944) is an English music executive studio owner, and record producer from Harrow, Middlesex.  He produced albums for British blues artists and groups in the 1960s, working with the Bluesbreakers, David Bowie, Duster Bennett, Savoy Brown, Chicken Shack, Climax Blues Band, Eric Clapton, Fleetwood Mac, Peter Green, Danny Kirwan, John Mayall, Christine McVie and Ten Years After amongst others.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of the English keyboardist/guitarist who was a member of Chicken Shack. The context directly identifies Christine Perfect, later known as Christine McVie, as a member of Chicken Shack and also as a keyboardist. This information is supported by passage [2], which details that Christine Perfect (later McVie) joined Chicken Shack in 1968 as a vocalist and keyboardist. Additional mentions of her career, such as passage [1] identifying her as a former Chicken Shack member, further corroborate the answer.\nSummary: The English keyboardist/guitarist who was a member of Chicken Shack is Christine Perfect, later known as Christine McVie."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What English keyboardist/guitarist was a member of Chicken Shack?\nSummary 1: The English keyboardist/guitarist who was a member of Chicken Shack is Christine Perfect (later known as Christine McVie).\nSummary 2: The English keyboardist/guitarist who was a member of Chicken Shack is Christine Perfect, later known as Christine McVie."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the English keyboardist/guitarist who was a member of Chicken Shack is Christine Perfect, who later became known as Christine McVie. There is no contradiction or discrepancy between the summaries, and they both provide the same information about her identity and association with the band.\nAnswer: Christine Perfect (later known as Christine McVie)."
+      }
+    ]
+  }
+}

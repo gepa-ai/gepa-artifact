@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7778e95542997042120a79",
+  "question": "What former drummer in late 1980's band Bros appeared in a 2002 American superhero horror film based on the fictional Marvel Comics character Blade?",
+  "gold_answer": "Luke Damon Goss",
+  "prediction": {
+    "answer": "Luke Goss",
+    "hop1_docs": [
+      "Blade II | Blade II is a 2002 American superhero horror film based on the fictional Marvel Comics character Blade.  It is the sequel of the first film and the second part of the \"Blade\" film series, followed by \"\".  It was written by David S. Goyer, who also wrote the previous film, directed by Guillermo del Toro, and had Wesley Snipes returning as the lead character and producer.",
+      "Firebird (Marvel Comics) | Firebird (Bonita Juarez), is a fictional superhero character appearing in American comic books published by Marvel Comics.  A former member of the Avengers and a member of the Rangers, she exists in Marvel's main shared universe, known as the Marvel Universe.  Firebird is a notable Latina superhero.",
+      "Deacon Frost | Deacon Frost is a fictional character appearing in American comic books published by Marvel Comics.  He appears in \"The Tomb of Dracula\", and is an enemy of Blade.  Frost appears in the \"Blade\" film series.",
+      "Fredzilla | Fred (nicknamed Fredzilla) is a fictional character appearing in American comic books published by Marvel Comics.  The character appears in particular in \"Big Hero 6\", which features a team of superheroes of which he is a member.  He also appeared in the 2014 Disney animated film \"Big Hero 6\", which is based on the book.",
+      "Ultimate Captain America | Ultimate Captain America (Steve Rogers) is a fictional comic book superhero appearing in books published by Marvel Comics.  He is an alternative version of the mainstream Marvel continuity Captain America that appears in Marvel's Ultimate line of books.  The character first appeared in \"The Ultimates\" #1 (March 2002), and was created by writer Mark Millar and artist Bryan Hitch (based upon the original version of the character by Joe Simon and Jack Kirby).",
+      "Flex (comics) | Flex (Adrian Corbo) is a fictional character, a superhero appearing in American comic books published by Marvel Comics.  He is a former member of the superhero team Alpha Flight, but later got downgraded to Beta Flight.",
+      "Feron | Feron is a fictional superhero appearing in American comic books published by Marvel Comics.  The character usually appears in comic books featuring the British superhero team Excalibur, of which he is a former member.  Created by writer/artist Alan Davis, he first appeared in \"Excalibur\" vol.  1 #48 (March 1992)."
+    ],
+    "hop2_docs": [
+      "Luke Goss | Luke Damon Goss (born 29 September 1968) is an English actor and former drummer in late 1980s band Bros.  He has appeared in numerous films including \"Blade II\" (2002) as Jared Nomak, \"One Night with the King\" (2006) as King Xerxes, \"\" (2008) as Prince Nuada, \"Tekken\" (2010) as Steve Fox and \"Interview with a Hitman\" (2012) as Viktor.",
+      "Frankenstein (Death Race) | Frankenstein is a fictional character and the protagonist of the Death Race franchise.  Within the film universe, the character is an alias taken on by other characters who participate in the titular race.  The character has been played by David Carradine, Jason Statham, Luke Goss, Dougray Scott & Manu Bennett.",
+      "Blade II | Blade II is a 2002 American superhero horror film based on the fictional Marvel Comics character Blade.  It is the sequel of the first film and the second part of the \"Blade\" film series, followed by \"\".  It was written by David S. Goyer, who also wrote the previous film, directed by Guillermo del Toro, and had Wesley Snipes returning as the lead character and producer.",
+      "Tom Goss (musician) | Thomas Patrick Goss (born April 30, 1981) is an American singer-songwriter and actor.  Goss has self-released five studio albums, one live album, two EPs, and multiple non-album singles.  He has seen commercial success with his music featured on MTV's Logo TV.  He won Best Gay Musician in DC from \"The Washington Blade\", both in 2011 and 2012.  Many of Goss' songs and music videos (\"Lover\", \"Bears\" and \"Make Believe\") speak to LGBT issues such as marriage equality, DADT, and gay subcultures such as bears.  Goss tours internationally, often playing at LGBT establishments.  In 2014, Goss landed his first starring role in a feature film\u2014the gay-themed \"Out to Kill\".",
+      "Abraham Whistler | Abraham Whistler is a fictional character in the Marvel Comics universe.  He is a vampire hunter and the mentor of Blade.  Screenwriter David S. Goyer created him for the 1998 film \"Blade\" (in which the part was played by Kris Kristofferson), but he first appeared on screen in \"Spider-Man: The Animated Series\" where he was voiced by Malcolm McDowell and later by Oliver Muirhead.  In 2006, Abraham Whistler appeared in the television show \"\".  He shares many traits and is partially inspired by the character Jamal Afari.  His first appearance in a comic can be found in the comic book movie adaption of the Blade II movie, but his face is also seen on 2 covers of the Max imprint Blade comic from Marvel.",
+      "List of Tales of the Abyss characters | The role-playing game \"Tales of the Abyss\" features several fictional characters designed by K\u014dsuke Fujishima.  The game primarily follows Luke fon Fabre, a teenager son of the Kimlasca King's sister who has suffered from amnesia ever since he was kidnapped.  He encounters Tear Grants, a member of the Order of Lorelei who seeks the death of her brother, Luke's teacher Van Grants.  As Luke and Tear meet and return to Kimlasca, they meet several other characters including Jade Curtiss from the Malkuth military forces, Fon Master Ion from Daath and his guardian Anise Tatlin.  They are also joined by Kimlasca's Guy Cecil, Luke's servant, and Natalia Luzu Kimlasca-Lanvaldear, Luke's fiance.  Another character who is briefly playable is Asch, a member from the Oracle Knights' God Generals who shares the party's goal of stopping an impending war.",
+      "Blade: Trinity | Blade: Trinity (also known as Blade III or Blade III: Trinity) is a 2004 American superhero film written, produced and directed by David S. Goyer, who also wrote the screenplays to \"Blade\" and \"Blade II\".  It stars Wesley Snipes, who also produced, in the title role based on the Marvel Comics character Blade alongside Ryan Reynolds, Jessica Biel, Kris Kristofferson, Dominic Purcell, Parker Posey and Triple H."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 71,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What former drummer in late 1980's band Bros appeared in a 2002 American superhero horror film based on the fictional Marvel Comics character Blade?\nPassages: [\"Blade II | Blade II is a 2002 American superhero horror film based on the fictional Marvel Comics character Blade.  It is the sequel of the first film and the second part of the \\\"Blade\\\" film series, followed by \\\"\\\".  It was written by David S. Goyer, who also wrote the previous film, directed by Guillermo del Toro, and had Wesley Snipes returning as the lead character and producer.\", \"Firebird (Marvel Comics) | Firebird (Bonita Juarez), is a fictional superhero character appearing in American comic books published by Marvel Comics.  A former member of the Avengers and a member of the Rangers, she exists in Marvel's main shared universe, known as the Marvel Universe.  Firebird is a notable Latina superhero.\", \"Deacon Frost | Deacon Frost is a fictional character appearing in American comic books published by Marvel Comics.  He appears in \\\"The Tomb of Dracula\\\", and is an enemy of Blade.  Frost appears in the \\\"Blade\\\" film series.\", \"Fredzilla | Fred (nicknamed Fredzilla) is a fictional character appearing in American comic books published by Marvel Comics.  The character appears in particular in \\\"Big Hero 6\\\", which features a team of superheroes of which he is a member.  He also appeared in the 2014 Disney animated film \\\"Big Hero 6\\\", which is based on the book.\", \"Ultimate Captain America | Ultimate Captain America (Steve Rogers) is a fictional comic book superhero appearing in books published by Marvel Comics.  He is an alternative version of the mainstream Marvel continuity Captain America that appears in Marvel's Ultimate line of books.  The character first appeared in \\\"The Ultimates\\\" #1 (March 2002), and was created by writer Mark Millar and artist Bryan Hitch (based upon the original version of the character by Joe Simon and Jack Kirby).\", \"Flex (comics) | Flex (Adrian Corbo) is a fictional character, a superhero appearing in American comic books published by Marvel Comics.  He is a former member of the superhero team Alpha Flight, but later got downgraded to Beta Flight.\", \"Feron | Feron is a fictional superhero appearing in American comic books published by Marvel Comics.  The character usually appears in comic books featuring the British superhero team Excalibur, of which he is a former member.  Created by writer/artist Alan Davis, he first appeared in \\\"Excalibur\\\" vol.  1 #48 (March 1992).\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about a former drummer in the late 1980s band Bros who appeared in the 2002 American superhero horror film \"Blade II.\" From the provided passages, we know that \"Blade II\" is a film based on the Marvel Comics character Blade, but the passages do not explicitly mention the actors or their backgrounds, nor does it provide a connection to Bros.\n\nHowever, external knowledge can help answer this particular query. Bros was a late 1980s English band featuring twin brothers Matt and Luke Goss. Luke Goss, the band's drummer, transitioned from music to acting and appeared in various films, including \"Blade II\" (2002), where he played the role of Jared Nomak.\nSummary: The former drummer of the late 1980s band Bros who appeared in the 2002 American superhero horror film \"Blade II\" is Luke Goss."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What former drummer in late 1980's band Bros appeared in a 2002 American superhero horror film based on the fictional Marvel Comics character Blade?\nSummary 1: The former drummer of the late 1980s band Bros who appeared in the 2002 American superhero horror film \"Blade II\" is Luke Goss."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is asking about the identity of a former drummer from the late 1980s band Bros who later appeared in a 2002 American superhero horror film. From the context provided in the summary, we learn that this film is \"Blade II,\" and the former drummer in question is Luke Goss, who portrayed one of the characters in that movie.\nQuery: Who is Luke Goss, and what character did he play in \"Blade II\"?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What former drummer in late 1980's band Bros appeared in a 2002 American superhero horror film based on the fictional Marvel Comics character Blade?\nContext: The former drummer of the late 1980s band Bros who appeared in the 2002 American superhero horror film \"Blade II\" is Luke Goss.\nPassages: [\"Luke Goss | Luke Damon Goss (born 29 September 1968) is an English actor and former drummer in late 1980s band Bros.  He has appeared in numerous films including \\\"Blade II\\\" (2002) as Jared Nomak, \\\"One Night with the King\\\" (2006) as King Xerxes, \\\"\\\" (2008) as Prince Nuada, \\\"Tekken\\\" (2010) as Steve Fox and \\\"Interview with a Hitman\\\" (2012) as Viktor.\", \"Frankenstein (Death Race) | Frankenstein is a fictional character and the protagonist of the Death Race franchise.  Within the film universe, the character is an alias taken on by other characters who participate in the titular race.  The character has been played by David Carradine, Jason Statham, Luke Goss, Dougray Scott & Manu Bennett.\", \"Blade II | Blade II is a 2002 American superhero horror film based on the fictional Marvel Comics character Blade.  It is the sequel of the first film and the second part of the \\\"Blade\\\" film series, followed by \\\"\\\".  It was written by David S. Goyer, who also wrote the previous film, directed by Guillermo del Toro, and had Wesley Snipes returning as the lead character and producer.\", \"Tom Goss (musician) | Thomas Patrick Goss (born April 30, 1981) is an American singer-songwriter and actor.  Goss has self-released five studio albums, one live album, two EPs, and multiple non-album singles.  He has seen commercial success with his music featured on MTV's Logo TV.  He won Best Gay Musician in DC from \\\"The Washington Blade\\\", both in 2011 and 2012.  Many of Goss' songs and music videos (\\\"Lover\\\", \\\"Bears\\\" and \\\"Make Believe\\\") speak to LGBT issues such as marriage equality, DADT, and gay subcultures such as bears.  Goss tours internationally, often playing at LGBT establishments.  In 2014, Goss landed his first starring role in a feature film\\u2014the gay-themed \\\"Out to Kill\\\".\", \"Abraham Whistler | Abraham Whistler is a fictional character in the Marvel Comics universe.  He is a vampire hunter and the mentor of Blade.  Screenwriter David S. Goyer created him for the 1998 film \\\"Blade\\\" (in which the part was played by Kris Kristofferson), but he first appeared on screen in \\\"Spider-Man: The Animated Series\\\" where he was voiced by Malcolm McDowell and later by Oliver Muirhead.  In 2006, Abraham Whistler appeared in the television show \\\"\\\".  He shares many traits and is partially inspired by the character Jamal Afari.  His first appearance in a comic can be found in the comic book movie adaption of the Blade II movie, but his face is also seen on 2 covers of the Max imprint Blade comic from Marvel.\", \"List of Tales of the Abyss characters | The role-playing game \\\"Tales of the Abyss\\\" features several fictional characters designed by K\\u014dsuke Fujishima.  The game primarily follows Luke fon Fabre, a teenager son of the Kimlasca King's sister who has suffered from amnesia ever since he was kidnapped.  He encounters Tear Grants, a member of the Order of Lorelei who seeks the death of her brother, Luke's teacher Van Grants.  As Luke and Tear meet and return to Kimlasca, they meet several other characters including Jade Curtiss from the Malkuth military forces, Fon Master Ion from Daath and his guardian Anise Tatlin.  They are also joined by Kimlasca's Guy Cecil, Luke's servant, and Natalia Luzu Kimlasca-Lanvaldear, Luke's fiance.  Another character who is briefly playable is Asch, a member from the Oracle Knights' God Generals who shares the party's goal of stopping an impending war.\", \"Blade: Trinity | Blade: Trinity (also known as Blade III or Blade III: Trinity) is a 2004 American superhero film written, produced and directed by David S. Goyer, who also wrote the screenplays to \\\"Blade\\\" and \\\"Blade II\\\".  It stars Wesley Snipes, who also produced, in the title role based on the Marvel Comics character Blade alongside Ryan Reynolds, Jessica Biel, Kris Kristofferson, Dominic Purcell, Parker Posey and Triple H.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to identify the connection between the former drummer of the late 1980s band Bros and their role in a specific movie. From the passages provided, passage [1] identifies Luke Damon Goss as a former drummer of Bros and states his role in \"Blade II\" (2002) as Jared Nomak. Additionally, passage [3] confirms that \"Blade II\" is a 2002 American superhero horror film. This collective evidence links Luke Goss as the individual in question who appeared in \"Blade II.\"\nSummary: The former drummer of the late 1980s band Bros who appeared in the 2002 American superhero horror film \"Blade II\" is Luke Goss."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What former drummer in late 1980's band Bros appeared in a 2002 American superhero horror film based on the fictional Marvel Comics character Blade?\nSummary 1: The former drummer of the late 1980s band Bros who appeared in the 2002 American superhero horror film \"Blade II\" is Luke Goss.\nSummary 2: The former drummer of the late 1980s band Bros who appeared in the 2002 American superhero horror film \"Blade II\" is Luke Goss."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of the former drummer of the late 1980s band Bros who went on to act in the 2002 film \"Blade II,\" which is based on the Marvel Comics character Blade. Both summaries confirm that Luke Goss was the drummer for Bros and later appeared in \"Blade II.\" The consistent information across the summaries allows us to conclude with certainty that Luke Goss is the answer.\nAnswer: Luke Goss"
+      }
+    ]
+  }
+}

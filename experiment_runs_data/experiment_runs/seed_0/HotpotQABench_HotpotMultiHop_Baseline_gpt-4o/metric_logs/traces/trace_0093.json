@@ -1,0 +1,96 @@
+{
+  "example_id": "5adf82ef5542993344016ca8",
+  "question": "In what year did the Irish rock band whose bassist was Mike Hogan reunite?",
+  "gold_answer": "2009",
+  "prediction": {
+    "answer": "2009",
+    "hop1_docs": [
+      "The Cranberries | The Cranberries are an Irish rock band who formed in Limerick in 1989.  The band consists of lead singer Dolores O'Riordan, guitarist Noel Hogan, bassist Mike Hogan, and drummer Fergal Lawler.  Although widely associated with alternative rock, the band's sound also incorporates indie pop, post-punk, Irish folk, and pop rock elements.",
+      "American Football (band) | American Football is an American rock band from Urbana, Illinois, originally active from 1997 until 2000 and reunited in 2014.  Guitarist/bassist and singer Mike Kinsella (formerly of Cap'n Jazz and Joan of Arc and currently of Owen), drummer and trumpet player Steve Lamos (formerly of The One Up Downstairs, one-time member of The Firebird Band and Edward Burch & the Staunch Characters, and currently of The Geese and DMS), and guitar player Steve Holmes (also of The Geese) formed the band.  American Football reunited in 2014 and played a festival set and announced three headline shows in the fall of that year.  They have since remained together.",
+      "Fat Mike | Michael John Burkett (born January 31, 1967), also known as Fat Mike, is an American musician and producer.  He is the bassist and lead vocalist for the punk rock band NOFX and the bassist for the punk rock supergroup cover band Me First and the Gimme Gimmes.  He was also a temporary bassist for the band Against Me! ",
+      "Buddy Zabala | Hector \"Buddy\" Avance\u00f1a Zabala (born November 13, 1971) is a Filipino musician and producer.  He is currently the bassist of Filipino punk rock band Hilera, Indie band Cambio, and widely known as the member of the formerly disbanded and now reunited alternative rock band, Eraserheads.  He is also the former bassist of Filipino rock band, The Dawn.",
+      "Snot (band) | Snot is an American rock band from Santa Barbara, California.  Formed in 1995, the band released their debut studio album \"Get Some\" with founding vocalist Lynn Strait in 1997 and disbanded after his death in 1998.  In 2008, the lineup of guitarists Mike Doling and Sonny Mayo, bassist John Fahnestock and drummer Jamie Miller reunited.  In 2009, a new band, Tons, was formed, with Brandon Espinoza as vocalist.  As of February 2014, Snot has reformed again.",
+      "Noel Hogan | Noel Anthony Hogan (born 25 December 1971, Moyross, Limerick, Ireland) is an Irish musician and producer best known as the lead guitarist and co-songwriter of the Irish rock band The Cranberries.",
+      "Strange Love (T.S.O.L. album) | Strange Love is the sixth studio album by the American rock band T.S.O.L. (True Sounds of Liberty), released in 1990 through Enigma Records.  It was the band's final studio album to include singer/guitarist Joe Wood and drummer Mitch Dean, and the only one to include guitarist Marshall Rohner.  Bassist and sole remaining original member Mike Roche left the group after the recording of \"Strange Love\", reuniting with the rest of the original lineup in 1991.  Wood and Dean carried on for a few more years with other members, but \"Strange Love\" was a commercial disappointment and the band was eventually dropped from Enigma.  In 1999 founding members Roche, Jack Grisham, Ron Emory, and Todd Barnes would win back legal rights to the name \"T.S.O.L.\" from Wood and relaunch the band, taking it back to its punk rock roots."
+    ],
+    "hop2_docs": [
+      "The Cranberries | The Cranberries are an Irish rock band who formed in Limerick in 1989.  The band consists of lead singer Dolores O'Riordan, guitarist Noel Hogan, bassist Mike Hogan, and drummer Fergal Lawler.  Although widely associated with alternative rock, the band's sound also incorporates indie pop, post-punk, Irish folk, and pop rock elements.",
+      "Noel Hogan | Noel Anthony Hogan (born 25 December 1971, Moyross, Limerick, Ireland) is an Irish musician and producer best known as the lead guitarist and co-songwriter of the Irish rock band The Cranberries.",
+      "Dolores O'Riordan | Dolores Mary Eileen O'Riordan ( ; born 6 September 1971) is an Irish musician and singer-songwriter.  She led the rock band The Cranberries to worldwide success for thirteen years before the band took a break starting in 2003, reuniting in 2009.",
+      "The Cranberries discography | The Cranberries are an Irish rock band formed in Limerick in 1989, originally under the name The Cranberry Saw Us.  Although widely associated with alternative rock, the band's sound incorporates post-punk and rock elements.  Since their formation, The Cranberries have released six studio albums, four EPs, and eighteen singles.",
+      "American Football (band) | American Football is an American rock band from Urbana, Illinois, originally active from 1997 until 2000 and reunited in 2014.  Guitarist/bassist and singer Mike Kinsella (formerly of Cap'n Jazz and Joan of Arc and currently of Owen), drummer and trumpet player Steve Lamos (formerly of The One Up Downstairs, one-time member of The Firebird Band and Edward Burch & the Staunch Characters, and currently of The Geese and DMS), and guitar player Steve Holmes (also of The Geese) formed the band.  American Football reunited in 2014 and played a festival set and announced three headline shows in the fall of that year.  They have since remained together.",
+      "D.A.R.K. | D.A.R.K. (formerly Jetlag) is an alternative rock band formed in New York City in early 2009.  It was founded by Ol\u00e9 Koretsky and former The Smiths bassist Andy Rourke.  In April 2014, D.A.R.K. began recording new material with Irish vocalist Dolores O'Riordan from The Cranberries.",
+      "Linger (song) | \"Linger\" is a song composed by Irish musicians Dolores O'Riordan and Noel Hogan of the rock band The Cranberries, released in 1993.  The song, which has an acoustic arrangement featuring a string section, became the band's first major hit, peaking at #3 in the Republic of Ireland, #8 in the United States, and #14 in the United Kingdom.  The song was voted by Triple J listeners as #3 on the Triple J Hottest 100, 1993 chart.  In 2017, the song was released as an acoustic, stripped-down version on the band's \"Something Else\" album."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 93,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year did the Irish rock band whose bassist was Mike Hogan reunite?\nPassages: [\"The Cranberries | The Cranberries are an Irish rock band who formed in Limerick in 1989.  The band consists of lead singer Dolores O'Riordan, guitarist Noel Hogan, bassist Mike Hogan, and drummer Fergal Lawler.  Although widely associated with alternative rock, the band's sound also incorporates indie pop, post-punk, Irish folk, and pop rock elements.\", \"American Football (band) | American Football is an American rock band from Urbana, Illinois, originally active from 1997 until 2000 and reunited in 2014.  Guitarist/bassist and singer Mike Kinsella (formerly of Cap'n Jazz and Joan of Arc and currently of Owen), drummer and trumpet player Steve Lamos (formerly of The One Up Downstairs, one-time member of The Firebird Band and Edward Burch & the Staunch Characters, and currently of The Geese and DMS), and guitar player Steve Holmes (also of The Geese) formed the band.  American Football reunited in 2014 and played a festival set and announced three headline shows in the fall of that year.  They have since remained together.\", \"Fat Mike | Michael John Burkett (born January 31, 1967), also known as Fat Mike, is an American musician and producer.  He is the bassist and lead vocalist for the punk rock band NOFX and the bassist for the punk rock supergroup cover band Me First and the Gimme Gimmes.  He was also a temporary bassist for the band Against Me! \", \"Buddy Zabala | Hector \\\"Buddy\\\" Avance\\u00f1a Zabala (born November 13, 1971) is a Filipino musician and producer.  He is currently the bassist of Filipino punk rock band Hilera, Indie band Cambio, and widely known as the member of the formerly disbanded and now reunited alternative rock band, Eraserheads.  He is also the former bassist of Filipino rock band, The Dawn.\", \"Snot (band) | Snot is an American rock band from Santa Barbara, California.  Formed in 1995, the band released their debut studio album \\\"Get Some\\\" with founding vocalist Lynn Strait in 1997 and disbanded after his death in 1998.  In 2008, the lineup of guitarists Mike Doling and Sonny Mayo, bassist John Fahnestock and drummer Jamie Miller reunited.  In 2009, a new band, Tons, was formed, with Brandon Espinoza as vocalist.  As of February 2014, Snot has reformed again.\", \"Noel Hogan | Noel Anthony Hogan (born 25 December 1971, Moyross, Limerick, Ireland) is an Irish musician and producer best known as the lead guitarist and co-songwriter of the Irish rock band The Cranberries.\", \"Strange Love (T.S.O.L. album) | Strange Love is the sixth studio album by the American rock band T.S.O.L. (True Sounds of Liberty), released in 1990 through Enigma Records.  It was the band's final studio album to include singer/guitarist Joe Wood and drummer Mitch Dean, and the only one to include guitarist Marshall Rohner.  Bassist and sole remaining original member Mike Roche left the group after the recording of \\\"Strange Love\\\", reuniting with the rest of the original lineup in 1991.  Wood and Dean carried on for a few more years with other members, but \\\"Strange Love\\\" was a commercial disappointment and the band was eventually dropped from Enigma.  In 1999 founding members Roche, Jack Grisham, Ron Emory, and Todd Barnes would win back legal rights to the name \\\"T.S.O.L.\\\" from Wood and relaunch the band, taking it back to its punk rock roots.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the year when the Irish rock band, whose bassist was Mike Hogan, reunited. From the provided passages, Passage [1] identifies Mike Hogan as the bassist of The Cranberries, an Irish rock band. However, none of the passages provide any information about The Cranberries reuniting after disbanding. Therefore, there is no direct evidence in the provided passages that answers the question about a year of reunion for The Cranberries or the involvement of Mike Hogan in such an event.\nSummary: The passages do not provide information about the year when The Cranberries, the Irish rock band whose bassist was Mike Hogan, reunited."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year did the Irish rock band whose bassist was Mike Hogan reunite?\nSummary 1: The passages do not provide information about the year when The Cranberries, the Irish rock band whose bassist was Mike Hogan, reunited."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The summary indicates that the provided passages lack information about the year when The Cranberries reunited. To answer the question, it would be necessary to conduct an additional search to find the specific year of their reunion. A precise search query can help retrieve this information effectively.\nQuery: \"What year did The Cranberries, the Irish rock band with bassist Mike Hogan, reunite?\""
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year did the Irish rock band whose bassist was Mike Hogan reunite?\nContext: The passages do not provide information about the year when The Cranberries, the Irish rock band whose bassist was Mike Hogan, reunited.\nPassages: [\"The Cranberries | The Cranberries are an Irish rock band who formed in Limerick in 1989.  The band consists of lead singer Dolores O'Riordan, guitarist Noel Hogan, bassist Mike Hogan, and drummer Fergal Lawler.  Although widely associated with alternative rock, the band's sound also incorporates indie pop, post-punk, Irish folk, and pop rock elements.\", \"Noel Hogan | Noel Anthony Hogan (born 25 December 1971, Moyross, Limerick, Ireland) is an Irish musician and producer best known as the lead guitarist and co-songwriter of the Irish rock band The Cranberries.\", \"Dolores O'Riordan | Dolores Mary Eileen O'Riordan ( ; born 6 September 1971) is an Irish musician and singer-songwriter.  She led the rock band The Cranberries to worldwide success for thirteen years before the band took a break starting in 2003, reuniting in 2009.\", \"The Cranberries discography | The Cranberries are an Irish rock band formed in Limerick in 1989, originally under the name The Cranberry Saw Us.  Although widely associated with alternative rock, the band's sound incorporates post-punk and rock elements.  Since their formation, The Cranberries have released six studio albums, four EPs, and eighteen singles.\", \"American Football (band) | American Football is an American rock band from Urbana, Illinois, originally active from 1997 until 2000 and reunited in 2014.  Guitarist/bassist and singer Mike Kinsella (formerly of Cap'n Jazz and Joan of Arc and currently of Owen), drummer and trumpet player Steve Lamos (formerly of The One Up Downstairs, one-time member of The Firebird Band and Edward Burch & the Staunch Characters, and currently of The Geese and DMS), and guitar player Steve Holmes (also of The Geese) formed the band.  American Football reunited in 2014 and played a festival set and announced three headline shows in the fall of that year.  They have since remained together.\", \"D.A.R.K. | D.A.R.K. (formerly Jetlag) is an alternative rock band formed in New York City in early 2009.  It was founded by Ol\\u00e9 Koretsky and former The Smiths bassist Andy Rourke.  In April 2014, D.A.R.K. began recording new material with Irish vocalist Dolores O'Riordan from The Cranberries.\", \"Linger (song) | \\\"Linger\\\" is a song composed by Irish musicians Dolores O'Riordan and Noel Hogan of the rock band The Cranberries, released in 1993.  The song, which has an acoustic arrangement featuring a string section, became the band's first major hit, peaking at #3 in the Republic of Ireland, #8 in the United States, and #14 in the United Kingdom.  The song was voted by Triple J listeners as #3 on the Triple J Hottest 100, 1993 chart.  In 2017, the song was released as an acoustic, stripped-down version on the band's \\\"Something Else\\\" album.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The context indicates that the specific year of The Cranberries' reunion is not directly found in most of the provided passages. However, passage [3] includes the information that Dolores O'Riordan led the band to success before they took a break in 2003 and reunited in 2009. This pinpoints the year of reunion as 2009. The involvement of bassist Mike Hogan, as mentioned in passage [1], confirms that this reunion relates to the Irish rock band in question.\nSummary: The Irish rock band whose bassist was Mike Hogan, The Cranberries, reunited in 2009."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year did the Irish rock band whose bassist was Mike Hogan reunite?\nSummary 1: The passages do not provide information about the year when The Cranberries, the Irish rock band whose bassist was Mike Hogan, reunited.\nSummary 2: The Irish rock band whose bassist was Mike Hogan, The Cranberries, reunited in 2009."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Summary_1 states that there is no information provided about the year The Cranberries reunited, while Summary_2 explicitly mentions that the band reunited in 2009. Given that Summary_2 provides a specific and factual detail about the band's reunion year, and there is nothing in Summary_1 to contradict or refute it, the answer derived from Summary_2 is likely correct.\nAnswer: 2009"
+      }
+    ]
+  }
+}

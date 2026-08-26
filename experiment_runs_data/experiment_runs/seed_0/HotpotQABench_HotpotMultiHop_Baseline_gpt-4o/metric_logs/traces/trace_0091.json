@@ -1,0 +1,96 @@
+{
+  "example_id": "5a87b4975542994846c1cdd3",
+  "question": "Sports Direct is owned by an English billionaire that owns which football/soccer club?",
+  "gold_answer": "Newcastle United",
+  "prediction": {
+    "answer": "Newcastle United Football Club.",
+    "hop1_docs": [
+      "Josh Kroenke | Josh Kroenke (born May 7, 1980) is an American heir to the Wal-Mart family inheritance and to Kroenke Sports & Entertainment, his father's sports-media conglomerate.  He is President and Governor of the Denver Nuggets basketball franchise, President and Governor of the Colorado Avalanche ice hockey franchise, Alternate Governor for the Colorado Rapids soccer franchise and non-executive director of English association football club Arsenal F.C. Kroenke Sports & Entertainment also owns the Paramount Theatre , the Pepsi Center , and Dick's Sporting Goods Park .  The company co-owns Elitch Gardens Theme Park as well.",
+      "Sports in Sal, Cape Verde | The island of Sal in Cape Verde in the east of the Barlavento Islands is home to several teams and clubs.  The major professional club may now be Acad\u00e9mico do Aeroporto do Sal, the remaining clubs are amateur or beginners.  In 1976, Sal would have its own island championships of each sport.  The football competition was the third along with Fogo to have its own first held in 1976 after the nation's independence.  Since 2014, the football (soccer) was the only competition divided into two divisions.",
+      "Sport Sal Rei Club | Sport Sal Rei Club (or as Sport Sal-Rei Clube) is a sports club that its football (soccer) team had played in the Premier division and plays in the Boa Vista Island South Zone Division in Cape Verde.  It is based in Sal Rei in the island of Boa Vista.  Its current president is Ogino Almeida and its manager is Marley Monteiro.  The club was once owned by Lin Fortes.",
+      "Al-Khaburah Club | Al-Khaburah Sports Club (Arabic: \u0646\u0627\u062f\u064a \u0627\u0644\u062e\u0627\u0628\u0648\u0631\u0629 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u200e \u200e ) is an Omani football club based in Al-Khaburah, Al Batinah Region, Oman.  The club is currently playing in the Oman Professional League, top division of Oman Football Association.  Their home ground is Sohar Regional Sports Complex.  The stadium is government owned, but they also own their own personal stadium and sports equipment, as well as their own training facilities.",
+      "Colorado Springs Switchbacks FC | Colorado Springs Switchbacks Football Club is a professional soccer team based in Colorado Springs, Colorado.  Founded in 2014, the team is a member of the United Soccer League, the second tier of the American soccer pyramid.  The franchise is owned and operated by Martin Ragain and Ragain Sports, LLC.  Ragain is the owner and founder of a global mechanical and electrical engineering design firm, which serves as a lighting consultant for Olympic Broadcast Systems.",
+      "Majees SC | Majees Sports Club (Arabic: \u0646\u0627\u062f\u064a \u0645\u062c\u064a\u0633 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u200e \u200e ) is an Omani sports club based in Majees.  The club is currently playing in the First Division League of Oman Football Association.  Their home ground is Sohar Regional Sports Complex.  The stadium is government owned, but they also own their own personal stadium and sports equipments, as well as their own training facilities.",
+      "Sur SC | Sur Sports Club (Arabic: \u0646\u0627\u062f\u064a \u0635\u0648\u0631 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u200e \u200e ) is an Omani sports club based in Sur.  The club is currently playing in the Oman Professional League, top division of Oman Football Association.  Their home stadium is Sur Sports Complex.  The stadium is government owned, but they also own their own personal stadium and sports equipments, as well as their own training facilities."
+    ],
+    "hop2_docs": [
+      "Mike Ashley (businessman) | Michael James Wallace \"Mike\" Ashley (born 9 September 1964) is an English billionaire retail entrepreneur in the sporting goods market.  He is also the owner of Newcastle United after paying around \u00a3135\u00a0million to buy the club.",
+      "Sports Direct | Sports Direct International plc is a British retailing group.  Established in 1982 by Mike Ashley, the company is the United Kingdom's largest sports-goods retailer and operates roughly 670 stores worldwide.  The company owns a large number of sporting brands and trades predominantly under the SportsDirect.com brand.  Other retailers owned by the company include USC and Lillywhites.  The company operates under low margins.",
+      "Colorado Springs Switchbacks FC | Colorado Springs Switchbacks Football Club is a professional soccer team based in Colorado Springs, Colorado.  Founded in 2014, the team is a member of the United Soccer League, the second tier of the American soccer pyramid.  The franchise is owned and operated by Martin Ragain and Ragain Sports, LLC.  Ragain is the owner and founder of a global mechanical and electrical engineering design firm, which serves as a lighting consultant for Olympic Broadcast Systems.",
+      "Ikapa Sporting F.C. | Ikapa Sporting is a football (soccer) club based in Cape Town, South Africa.  They play in the Western Cape Province of ABC Motsepe League.  The home venue of the club was Erica Park until May 2010, followed by a season where they opted to play home games at Wynberg Sports Ground and Ruyterwacht Sports Ground.  After the club was relegated from the National First Division in May 2009, they struggled to find new strength, until a takeover in the 2010\u201311 season, where the previous owner of Battswood (Shaun Pietersen) and the owner of Turner Legal (Brandell Turner) arrived with financial support.  The club currently play in the ABC Motsepe League, the third level of football in South Africa, but they have a long-term goal to return to the National First Division and eventually the South African Premier Soccer League.",
+      "Columbus Crew SC | Columbus Crew Soccer Club is an American professional soccer club based in Columbus, Ohio.  The Crew competes in Major League Soccer (MLS) as a member club of the league's Eastern Conference.  The Crew began play in 1996 as one of the ten charter clubs of the league.  The team is owned by Anthony Precourt and Precourt Sports Ventures LLC.  Precourt became the second owner in the history of the club on July 30, 2013.  The club's head coach is Gregg Berhalter, a former player of the United States men's national soccer team.",
+      "Ashley Corker | Ashley James Corker (born 18 September 1990) is an English professional footballer currently at Perth Soccer Club.  He plays as a left back.",
+      "Massimo Cellino | Massimo Cellino (] ; born 28 July 1956) is an Italian entrepreneur and football club owner.  Through his family trust Eleonora Sport Ltd he was the owner and chairman of the English club Leeds United.  He currently owns Brescia Calcio."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 91,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Sports Direct is owned by an English billionaire that owns which football/soccer club?\nPassages: [\"Josh Kroenke | Josh Kroenke (born May 7, 1980) is an American heir to the Wal-Mart family inheritance and to Kroenke Sports & Entertainment, his father's sports-media conglomerate.  He is President and Governor of the Denver Nuggets basketball franchise, President and Governor of the Colorado Avalanche ice hockey franchise, Alternate Governor for the Colorado Rapids soccer franchise and non-executive director of English association football club Arsenal F.C. Kroenke Sports & Entertainment also owns the Paramount Theatre , the Pepsi Center , and Dick's Sporting Goods Park .  The company co-owns Elitch Gardens Theme Park as well.\", \"Sports in Sal, Cape Verde | The island of Sal in Cape Verde in the east of the Barlavento Islands is home to several teams and clubs.  The major professional club may now be Acad\\u00e9mico do Aeroporto do Sal, the remaining clubs are amateur or beginners.  In 1976, Sal would have its own island championships of each sport.  The football competition was the third along with Fogo to have its own first held in 1976 after the nation's independence.  Since 2014, the football (soccer) was the only competition divided into two divisions.\", \"Sport Sal Rei Club | Sport Sal Rei Club (or as Sport Sal-Rei Clube) is a sports club that its football (soccer) team had played in the Premier division and plays in the Boa Vista Island South Zone Division in Cape Verde.  It is based in Sal Rei in the island of Boa Vista.  Its current president is Ogino Almeida and its manager is Marley Monteiro.  The club was once owned by Lin Fortes.\", \"Al-Khaburah Club | Al-Khaburah Sports Club (Arabic: \\u0646\\u0627\\u062f\\u064a \\u0627\\u0644\\u062e\\u0627\\u0628\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0631\\u064a\\u0627\\u0636\\u064a\\u200e \\u200e ) is an Omani football club based in Al-Khaburah, Al Batinah Region, Oman.  The club is currently playing in the Oman Professional League, top division of Oman Football Association.  Their home ground is Sohar Regional Sports Complex.  The stadium is government owned, but they also own their own personal stadium and sports equipment, as well as their own training facilities.\", \"Colorado Springs Switchbacks FC | Colorado Springs Switchbacks Football Club is a professional soccer team based in Colorado Springs, Colorado.  Founded in 2014, the team is a member of the United Soccer League, the second tier of the American soccer pyramid.  The franchise is owned and operated by Martin Ragain and Ragain Sports, LLC.  Ragain is the owner and founder of a global mechanical and electrical engineering design firm, which serves as a lighting consultant for Olympic Broadcast Systems.\", \"Majees SC | Majees Sports Club (Arabic: \\u0646\\u0627\\u062f\\u064a \\u0645\\u062c\\u064a\\u0633 \\u0627\\u0644\\u0631\\u064a\\u0627\\u0636\\u064a\\u200e \\u200e ) is an Omani sports club based in Majees.  The club is currently playing in the First Division League of Oman Football Association.  Their home ground is Sohar Regional Sports Complex.  The stadium is government owned, but they also own their own personal stadium and sports equipments, as well as their own training facilities.\", \"Sur SC | Sur Sports Club (Arabic: \\u0646\\u0627\\u062f\\u064a \\u0635\\u0648\\u0631 \\u0627\\u0644\\u0631\\u064a\\u0627\\u0636\\u064a\\u200e \\u200e ) is an Omani sports club based in Sur.  The club is currently playing in the Oman Professional League, top division of Oman Football Association.  Their home stadium is Sur Sports Complex.  The stadium is government owned, but they also own their own personal stadium and sports equipments, as well as their own training facilities.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The key term in the question is \"Sports Direct,\" which is missing from the provided passages. None of the excerpts indicate any connection between Sports Direct or its ownership and a specific football/soccer club. Therefore, there is no relevant information from the passages to answer the question about which football/soccer club the owner of Sports Direct owns.\n\nHowever, using broader knowledge, Sports Direct is owned by the English billionaire Mike Ashley, who is associated with Newcastle United Football Club. This detail is not present in the provided passages but aligns with general knowledge.\nSummary: Based on general knowledge, Sports Direct is owned by the English billionaire Mike Ashley, who was the owner of Newcastle United Football Club. However, this information is not found in the provided passages."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Sports Direct is owned by an English billionaire that owns which football/soccer club?\nSummary 1: Based on general knowledge, Sports Direct is owned by the English billionaire Mike Ashley, who was the owner of Newcastle United Football Club. However, this information is not found in the provided passages."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the football/soccer club owned by the billionaire who owns Sports Direct. From general knowledge, it is known that Mike Ashley, the owner of Sports Direct, was associated with Newcastle United Football Club. However, the summary mentions that this information is not available in the provided passages. To confirm or find the most up-to-date answer, it would be necessary to perform a search to cross-reference recent ownership details, as club ownership can change over time.\nQuery: What football/soccer club was owned by Mike Ashley, the owner of Sports Direct?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Sports Direct is owned by an English billionaire that owns which football/soccer club?\nContext: Based on general knowledge, Sports Direct is owned by the English billionaire Mike Ashley, who was the owner of Newcastle United Football Club. However, this information is not found in the provided passages.\nPassages: [\"Mike Ashley (businessman) | Michael James Wallace \\\"Mike\\\" Ashley (born 9 September 1964) is an English billionaire retail entrepreneur in the sporting goods market.  He is also the owner of Newcastle United after paying around \\u00a3135\\u00a0million to buy the club.\", \"Sports Direct | Sports Direct International plc is a British retailing group.  Established in 1982 by Mike Ashley, the company is the United Kingdom's largest sports-goods retailer and operates roughly 670 stores worldwide.  The company owns a large number of sporting brands and trades predominantly under the SportsDirect.com brand.  Other retailers owned by the company include USC and Lillywhites.  The company operates under low margins.\", \"Colorado Springs Switchbacks FC | Colorado Springs Switchbacks Football Club is a professional soccer team based in Colorado Springs, Colorado.  Founded in 2014, the team is a member of the United Soccer League, the second tier of the American soccer pyramid.  The franchise is owned and operated by Martin Ragain and Ragain Sports, LLC.  Ragain is the owner and founder of a global mechanical and electrical engineering design firm, which serves as a lighting consultant for Olympic Broadcast Systems.\", \"Ikapa Sporting F.C. | Ikapa Sporting is a football (soccer) club based in Cape Town, South Africa.  They play in the Western Cape Province of ABC Motsepe League.  The home venue of the club was Erica Park until May 2010, followed by a season where they opted to play home games at Wynberg Sports Ground and Ruyterwacht Sports Ground.  After the club was relegated from the National First Division in May 2009, they struggled to find new strength, until a takeover in the 2010\\u201311 season, where the previous owner of Battswood (Shaun Pietersen) and the owner of Turner Legal (Brandell Turner) arrived with financial support.  The club currently play in the ABC Motsepe League, the third level of football in South Africa, but they have a long-term goal to return to the National First Division and eventually the South African Premier Soccer League.\", \"Columbus Crew SC | Columbus Crew Soccer Club is an American professional soccer club based in Columbus, Ohio.  The Crew competes in Major League Soccer (MLS) as a member club of the league's Eastern Conference.  The Crew began play in 1996 as one of the ten charter clubs of the league.  The team is owned by Anthony Precourt and Precourt Sports Ventures LLC.  Precourt became the second owner in the history of the club on July 30, 2013.  The club's head coach is Gregg Berhalter, a former player of the United States men's national soccer team.\", \"Ashley Corker | Ashley James Corker (born 18 September 1990) is an English professional footballer currently at Perth Soccer Club.  He plays as a left back.\", \"Massimo Cellino | Massimo Cellino (] ; born 28 July 1956) is an Italian entrepreneur and football club owner.  Through his family trust Eleonora Sport Ltd he was the owner and chairman of the English club Leeds United.  He currently owns Brescia Calcio.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the given passages and context, we can deduce that Sports Direct is owned by Mike Ashley. According to passage [1], Mike Ashley is an English billionaire and the owner of Newcastle United Football Club, having purchased the club for approximately \u00a3135 million. This aligns with general knowledge that during Mike Ashley's ownership of Sports Direct, he also owned Newcastle United. Other passages in the provided set do not dispute or contradict this information.\nSummary: Sports Direct is owned by English billionaire Mike Ashley, who also owns Newcastle United Football Club."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Sports Direct is owned by an English billionaire that owns which football/soccer club?\nSummary 1: Based on general knowledge, Sports Direct is owned by the English billionaire Mike Ashley, who was the owner of Newcastle United Football Club. However, this information is not found in the provided passages.\nSummary 2: Sports Direct is owned by English billionaire Mike Ashley, who also owns Newcastle United Football Club."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that Sports Direct is owned by English billionaire Mike Ashley and that he owns Newcastle United Football Club. This correlation across the provided summaries gives confidence that the information is accurate and reliable.\nAnswer: Newcastle United Football Club."
+      }
+    ]
+  }
+}

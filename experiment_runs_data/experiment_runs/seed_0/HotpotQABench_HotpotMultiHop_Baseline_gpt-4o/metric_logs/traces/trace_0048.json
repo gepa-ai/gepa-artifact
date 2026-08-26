@@ -1,0 +1,96 @@
+{
+  "example_id": "5a8e3d8e554299068b959e7d",
+  "question": "Are both Matty Mullins and Andy Kuntz.from the same country?",
+  "gold_answer": "no",
+  "prediction": {
+    "answer": "No, Matty Mullins and Andy Kuntz are not from the same country.",
+    "hop1_docs": [
+      "Matty Mullins (album) | Matty Mullins is the first full-length album by American rock musician Matty Mullins which was released September 23, 2014 by Rise Records.",
+      "Matty Mullins | Matty Mullins (born July 3, 1988) is an American rock musician.  He is the lead vocalist of Dallas-based metalcore band Memphis May Fire.",
+      "Andy Kuntz | Andy Kuntz is a German Progressive Metal singer best known for his work with the band Vanden Plas.  In addition to his work with Vanden Plas he has also participated in a production of the musical Jesus Christ Superstar.",
+      "Andy Mullins (rugby union) | Andy Mullins (1964 - days) was a rugby union international who played for Harlequin FC and also represented England in 1989.",
+      "Andy Mullins (actor) | Andy Mullins (born 1960) is an American voice actor who works for the anime series of Funimation.  He provided voices for a number of English-language versions of Japanese anime films.",
+      "Andy Mulliner | Andrew Mulliner (born 3 January 1971) is an English-born Welsh former football goalkeeper who is the Academy Lead Goalkeeper coach at Manchester City.",
+      "Me and My Gang (song) | \"Me and My Gang\" is a song written by Jeffrey Steele, Jon Stone, and Tony Mullins and recorded by American country music group Rascal Flatts.  It was released on April 17, 2006 as the second single from their album of the same name.  The song peaked at #6 on the \"Billboard\" country singles charts that year."
+    ],
+    "hop2_docs": [
+      "Matty Mullins (album) | Matty Mullins is the first full-length album by American rock musician Matty Mullins which was released September 23, 2014 by Rise Records.",
+      "Matty Mullins | Matty Mullins (born July 3, 1988) is an American rock musician.  He is the lead vocalist of Dallas-based metalcore band Memphis May Fire.",
+      "Andy Kuntz | Andy Kuntz is a German Progressive Metal singer best known for his work with the band Vanden Plas.  In addition to his work with Vanden Plas he has also participated in a production of the musical Jesus Christ Superstar.",
+      "Andy Mullins (rugby union) | Andy Mullins (1964 - days) was a rugby union international who played for Harlequin FC and also represented England in 1989.",
+      "Andy Mullins (actor) | Andy Mullins (born 1960) is an American voice actor who works for the anime series of Funimation.  He provided voices for a number of English-language versions of Japanese anime films.",
+      "Andy Mulliner | Andrew Mulliner (born 3 January 1971) is an English-born Welsh former football goalkeeper who is the Academy Lead Goalkeeper coach at Manchester City.",
+      "Alan Kuntz | Alan Robert Kuntz (b. June 4, 1919 in Toronto, Ontario - d. March 7, 1987) was a professional ice hockey player who played 45 games in the National Hockey League (NHL).  He played with the New York Rangers.  He was the father of former NHL player Murray Kuntz, and grandfather of current NHLPA Agent Murray Kuntz Jr."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 48,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are both Matty Mullins and Andy Kuntz.from the same country?\nPassages: [\"Matty Mullins (album) | Matty Mullins is the first full-length album by American rock musician Matty Mullins which was released September 23, 2014 by Rise Records.\", \"Matty Mullins | Matty Mullins (born July 3, 1988) is an American rock musician.  He is the lead vocalist of Dallas-based metalcore band Memphis May Fire.\", \"Andy Kuntz | Andy Kuntz is a German Progressive Metal singer best known for his work with the band Vanden Plas.  In addition to his work with Vanden Plas he has also participated in a production of the musical Jesus Christ Superstar.\", \"Andy Mullins (rugby union) | Andy Mullins (1964 - days) was a rugby union international who played for Harlequin FC and also represented England in 1989.\", \"Andy Mullins (actor) | Andy Mullins (born 1960) is an American voice actor who works for the anime series of Funimation.  He provided voices for a number of English-language versions of Japanese anime films.\", \"Andy Mulliner | Andrew Mulliner (born 3 January 1971) is an English-born Welsh former football goalkeeper who is the Academy Lead Goalkeeper coach at Manchester City.\", \"Me and My Gang (song) | \\\"Me and My Gang\\\" is a song written by Jeffrey Steele, Jon Stone, and Tony Mullins and recorded by American country music group Rascal Flatts.  It was released on April 17, 2006 as the second single from their album of the same name.  The song peaked at #6 on the \\\"Billboard\\\" country singles charts that year.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Matty Mullins is identified as an American rock musician based on the details provided in passages [1] and [2]. Meanwhile, Andy Kuntz is specified as a German Progressive Metal singer in passage [3]. These passages make it clear that Matty Mullins and Andy Kuntz are from different countries\u2014Matty Mullins is American, and Andy Kuntz is German.\nSummary: No, Matty Mullins and Andy Kuntz are not from the same country. Matty Mullins is American, whereas Andy Kuntz is German."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are both Matty Mullins and Andy Kuntz.from the same country?\nSummary 1: No, Matty Mullins and Andy Kuntz are not from the same country. Matty Mullins is American, whereas Andy Kuntz is German."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine whether Matty Mullins and Andy Kuntz are from the same country, we need to identify their nationalities. Based on the information provided, Matty Mullins is American (from the United States), and Andy Kuntz is German (from Germany). As these are two different countries, they are not from the same country.\nQuery: What are the nationalities of Matty Mullins and Andy Kuntz?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are both Matty Mullins and Andy Kuntz.from the same country?\nContext: No, Matty Mullins and Andy Kuntz are not from the same country. Matty Mullins is American, whereas Andy Kuntz is German.\nPassages: [\"Matty Mullins (album) | Matty Mullins is the first full-length album by American rock musician Matty Mullins which was released September 23, 2014 by Rise Records.\", \"Matty Mullins | Matty Mullins (born July 3, 1988) is an American rock musician.  He is the lead vocalist of Dallas-based metalcore band Memphis May Fire.\", \"Andy Kuntz | Andy Kuntz is a German Progressive Metal singer best known for his work with the band Vanden Plas.  In addition to his work with Vanden Plas he has also participated in a production of the musical Jesus Christ Superstar.\", \"Andy Mullins (rugby union) | Andy Mullins (1964 - days) was a rugby union international who played for Harlequin FC and also represented England in 1989.\", \"Andy Mullins (actor) | Andy Mullins (born 1960) is an American voice actor who works for the anime series of Funimation.  He provided voices for a number of English-language versions of Japanese anime films.\", \"Andy Mulliner | Andrew Mulliner (born 3 January 1971) is an English-born Welsh former football goalkeeper who is the Academy Lead Goalkeeper coach at Manchester City.\", \"Alan Kuntz | Alan Robert Kuntz (b. June 4, 1919 in Toronto, Ontario - d. March 7, 1987) was a professional ice hockey player who played 45 games in the National Hockey League (NHL).  He played with the New York Rangers.  He was the father of former NHL player Murray Kuntz, and grandfather of current NHLPA Agent Murray Kuntz Jr.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the context provided, Matty Mullins is from the United States (American), while Andy Kuntz is from Germany (German). The passages confirm these nationalities: passages [1] and [2] identify Matty Mullins as an American rock musician, and passage [3] identifies Andy Kuntz as a German Progressive Metal singer. Since their nationalities are distinct, they are not from the same country.\nSummary: No, Matty Mullins and Andy Kuntz are not from the same country. Matty Mullins is American, and Andy Kuntz is German."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are both Matty Mullins and Andy Kuntz.from the same country?\nSummary 1: No, Matty Mullins and Andy Kuntz are not from the same country. Matty Mullins is American, whereas Andy Kuntz is German.\nSummary 2: No, Matty Mullins and Andy Kuntz are not from the same country. Matty Mullins is American, and Andy Kuntz is German."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries state clearly that Matty Mullins and Andy Kuntz are from different countries. Matty Mullins is identified as American, and Andy Kuntz is identified as German. Since their nationalities are distinct, it can be concluded that they are not from the same country.\nAnswer: No, Matty Mullins and Andy Kuntz are not from the same country."
+      }
+    ]
+  }
+}

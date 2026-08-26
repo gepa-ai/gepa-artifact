@@ -1,0 +1,96 @@
+{
+  "example_id": "5ac24dc955429951e9e6853e",
+  "question": "What album from Paul McCartney did the song Maybe I'm Amazed appear in?",
+  "gold_answer": "McCartney",
+  "prediction": {
+    "answer": "The song \"Maybe I'm Amazed\" appeared on Paul McCartney's 1970 album \"McCartney.\"",
+    "hop1_docs": [
+      "Maybe I'm Amazed | \"Maybe I'm Amazed\" is a song written by Paul McCartney that was first released on his 1970 album \"McCartney\".  McCartney dedicated the song to his wife, Linda, who had helped him get through the break-up of the Beatles.",
+      "Just a Ride | \"Just a Ride\" is the second single released by Jem from her debut album \"Finally Woken\".  The song was featured on \"\", along with \"Maybe I'm Amazed\" (a cover of the Paul McCartney song).",
+      "Long Player (album) | Long Player, from 1971, was the second album by the British rock group Faces.  Among the highlights are a live cover version of Paul McCartney's \"Maybe I'm Amazed\", the wistful \"Richmond\" and \"Sweet Lady Mary\", the rave-up \"Had Me a Real Good Time\" and the opening \"Bad 'n' Ruin\".  \"Maybe I'm Amazed\" and \"I Feel So Good\" were recorded live at the Fillmore East, New York on the 11th of October 1970.",
+      "What You're Doing | \"What You're Doing\" is a song by the English rock band the Beatles from their album \"Beatles for Sale\", released in December 1964.  It was written by Paul McCartney, although credited to Lennon\u2013McCartney.  The song was one of eight original compositions on \"Beatles for Sale\".  In North America, where Capitol Records typically altered the content of the band's albums, \"What You're Doing\" instead appeared on the 1965 US release \"Beatles VI\".",
+      "Tell Me What You See | \"Tell Me What You See\" is a song by the Beatles that first appeared in 1965 on their album \"Help! \" in the United Kingdom and on \"Beatles VI\" in the United States.  As with all Beatles compositions by either of the two, the song is credited to Lennon\u2013McCartney.  Regarding the song's authorship, Paul McCartney said, \"I seem to remember it as mine.  I would claim it as a 60-40 but it might have been totally me.\"  Lennon said, in his interviews with \"Playboy\" (1980) and \"Hit Parader\" (1972), that \"Tell Me What You See\" was written completely by McCartney.",
+      "Angel in Disguise (McCartney\u2013Starr song) | \"Angel in Disguise\" is a song co-written by Paul McCartney and Ringo Starr that has never been released.  The song was intended for Ringo's 1992 \"Time Takes Time\" album; however, it did not make it onto the album, and therefore remains an intriguing, publicly unheard song.  Had it been released in 1992 it would have been the first McCartney-Starkey composition on record, although there were Beatles songs that were credited to Lennon\u2013McCartney\u2013Starkey and Lennon\u2013McCartney\u2013Harrison\u2013Starkey.",
+      "Run Devil Run (Paul McCartney song) | \"Run Devil Run\" is a 1999 original Paul McCartney composition written in a Chuck Berry style as the title track of his 1999 covers album \"Run Devil Run\".  It is one of three original songs on the 15-song album, along with \"Try Not to Cry\", and \"What It Is\", and was also released as a promotional 7\" vinyl single."
+    ],
+    "hop2_docs": [
+      "Maybe I'm Amazed | \"Maybe I'm Amazed\" is a song written by Paul McCartney that was first released on his 1970 album \"McCartney\".  McCartney dedicated the song to his wife, Linda, who had helped him get through the break-up of the Beatles.",
+      "Just a Ride | \"Just a Ride\" is the second single released by Jem from her debut album \"Finally Woken\".  The song was featured on \"\", along with \"Maybe I'm Amazed\" (a cover of the Paul McCartney song).",
+      "Martha My Dear | \"Martha My Dear\" is a song by the Beatles written by Paul McCartney (credited to Lennon\u2013McCartney), which first appeared on the double album \"The Beatles\" (also known as \"the White Album\").  McCartney is the only Beatle to perform on the track.",
+      "Long Player (album) | Long Player, from 1971, was the second album by the British rock group Faces.  Among the highlights are a live cover version of Paul McCartney's \"Maybe I'm Amazed\", the wistful \"Richmond\" and \"Sweet Lady Mary\", the rave-up \"Had Me a Real Good Time\" and the opening \"Bad 'n' Ruin\".  \"Maybe I'm Amazed\" and \"I Feel So Good\" were recorded live at the Fillmore East, New York on the 11th of October 1970.",
+      "Every Night (Paul McCartney song) | \"Every Night\" is a song written by Paul McCartney while he was on holiday in Greece, and first released on his \"McCartney\" album on April 17, 1970.  McCartney first performed this live, in Liverpool, on 23 November 1979.",
+      "Girlfriend (Paul McCartney song) | \"Girlfriend\" is a song written by Paul McCartney.  McCartney thought of the song as one that Michael Jackson might like to record, and mentioned this to Jackson at a party in Hollywood.  Jackson had stated in interviews with the music press in the 1970s that he was a fan of The Beatles and the chance to record a McCartney original helped to inspire his next project.  However, McCartney ended up recording it himself with his band Wings, and it was issued in 1978 on the album \"London Town\".  Subsequently, it was suggested by Quincy Jones as a possible track for Jackson to record for his 1979 album \"Off the Wall\".  Jones was unaware that the song had been written for Jackson in the first place.  Jackson's recording omitted the middle eight heard in McCartney's version.  It was issued exclusively in the UK in 1980, as the fifth and final single from the \"Off the Wall\" album.  This proved to be another hit single for Jackson and one of his first recordings of a Paul McCartney song.",
+      "The Lovely Linda | \"The Lovely Linda\" is a song by English musician Paul McCartney, released as the opening track of his debut solo album, \"McCartney\", in April 1970.  McCartney wrote the song to his first wife, Linda McCartney."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 105,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What album from Paul McCartney did the song Maybe I'm Amazed appear in?\nPassages: [\"Maybe I'm Amazed | \\\"Maybe I'm Amazed\\\" is a song written by Paul McCartney that was first released on his 1970 album \\\"McCartney\\\".  McCartney dedicated the song to his wife, Linda, who had helped him get through the break-up of the Beatles.\", \"Just a Ride | \\\"Just a Ride\\\" is the second single released by Jem from her debut album \\\"Finally Woken\\\".  The song was featured on \\\"\\\", along with \\\"Maybe I'm Amazed\\\" (a cover of the Paul McCartney song).\", \"Long Player (album) | Long Player, from 1971, was the second album by the British rock group Faces.  Among the highlights are a live cover version of Paul McCartney's \\\"Maybe I'm Amazed\\\", the wistful \\\"Richmond\\\" and \\\"Sweet Lady Mary\\\", the rave-up \\\"Had Me a Real Good Time\\\" and the opening \\\"Bad 'n' Ruin\\\".  \\\"Maybe I'm Amazed\\\" and \\\"I Feel So Good\\\" were recorded live at the Fillmore East, New York on the 11th of October 1970.\", \"What You're Doing | \\\"What You're Doing\\\" is a song by the English rock band the Beatles from their album \\\"Beatles for Sale\\\", released in December 1964.  It was written by Paul McCartney, although credited to Lennon\\u2013McCartney.  The song was one of eight original compositions on \\\"Beatles for Sale\\\".  In North America, where Capitol Records typically altered the content of the band's albums, \\\"What You're Doing\\\" instead appeared on the 1965 US release \\\"Beatles VI\\\".\", \"Tell Me What You See | \\\"Tell Me What You See\\\" is a song by the Beatles that first appeared in 1965 on their album \\\"Help! \\\" in the United Kingdom and on \\\"Beatles VI\\\" in the United States.  As with all Beatles compositions by either of the two, the song is credited to Lennon\\u2013McCartney.  Regarding the song's authorship, Paul McCartney said, \\\"I seem to remember it as mine.  I would claim it as a 60-40 but it might have been totally me.\\\"  Lennon said, in his interviews with \\\"Playboy\\\" (1980) and \\\"Hit Parader\\\" (1972), that \\\"Tell Me What You See\\\" was written completely by McCartney.\", \"Angel in Disguise (McCartney\\u2013Starr song) | \\\"Angel in Disguise\\\" is a song co-written by Paul McCartney and Ringo Starr that has never been released.  The song was intended for Ringo's 1992 \\\"Time Takes Time\\\" album; however, it did not make it onto the album, and therefore remains an intriguing, publicly unheard song.  Had it been released in 1992 it would have been the first McCartney-Starkey composition on record, although there were Beatles songs that were credited to Lennon\\u2013McCartney\\u2013Starkey and Lennon\\u2013McCartney\\u2013Harrison\\u2013Starkey.\", \"Run Devil Run (Paul McCartney song) | \\\"Run Devil Run\\\" is a 1999 original Paul McCartney composition written in a Chuck Berry style as the title track of his 1999 covers album \\\"Run Devil Run\\\".  It is one of three original songs on the 15-song album, along with \\\"Try Not to Cry\\\", and \\\"What It Is\\\", and was also released as a promotional 7\\\" vinyl single.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine what album \"Maybe I'm Amazed\" by Paul McCartney appeared in, we analyze the provided passages. Passage [1] states that \"Maybe I'm Amazed\" is a song written by Paul McCartney that was first released on his 1970 album \"McCartney\". The other passages either refer to covers of the song or other unrelated works by McCartney, the Beatles, or other artists. Therefore, the information in passage [1] directly answers the question.\nSummary: The song \"Maybe I'm Amazed\" by Paul McCartney first appeared on his 1970 album \"McCartney\"."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What album from Paul McCartney did the song Maybe I'm Amazed appear in?\nSummary 1: The song \"Maybe I'm Amazed\" by Paul McCartney first appeared on his 1970 album \"McCartney\"."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The song \"Maybe I'm Amazed\" is associated with Paul McCartney's 1970 album \"McCartney\" as per the provided information. To effectively answer the query about the album it originated from, it's necessary to highlight its appearance in the \"McCartney\" album.\nQuery: \"McCartney\" is the album by Paul McCartney in which the song \"Maybe I'm Amazed\" first appeared."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What album from Paul McCartney did the song Maybe I'm Amazed appear in?\nContext: The song \"Maybe I'm Amazed\" by Paul McCartney first appeared on his 1970 album \"McCartney\".\nPassages: [\"Maybe I'm Amazed | \\\"Maybe I'm Amazed\\\" is a song written by Paul McCartney that was first released on his 1970 album \\\"McCartney\\\".  McCartney dedicated the song to his wife, Linda, who had helped him get through the break-up of the Beatles.\", \"Just a Ride | \\\"Just a Ride\\\" is the second single released by Jem from her debut album \\\"Finally Woken\\\".  The song was featured on \\\"\\\", along with \\\"Maybe I'm Amazed\\\" (a cover of the Paul McCartney song).\", \"Martha My Dear | \\\"Martha My Dear\\\" is a song by the Beatles written by Paul McCartney (credited to Lennon\\u2013McCartney), which first appeared on the double album \\\"The Beatles\\\" (also known as \\\"the White Album\\\").  McCartney is the only Beatle to perform on the track.\", \"Long Player (album) | Long Player, from 1971, was the second album by the British rock group Faces.  Among the highlights are a live cover version of Paul McCartney's \\\"Maybe I'm Amazed\\\", the wistful \\\"Richmond\\\" and \\\"Sweet Lady Mary\\\", the rave-up \\\"Had Me a Real Good Time\\\" and the opening \\\"Bad 'n' Ruin\\\".  \\\"Maybe I'm Amazed\\\" and \\\"I Feel So Good\\\" were recorded live at the Fillmore East, New York on the 11th of October 1970.\", \"Every Night (Paul McCartney song) | \\\"Every Night\\\" is a song written by Paul McCartney while he was on holiday in Greece, and first released on his \\\"McCartney\\\" album on April 17, 1970.  McCartney first performed this live, in Liverpool, on 23 November 1979.\", \"Girlfriend (Paul McCartney song) | \\\"Girlfriend\\\" is a song written by Paul McCartney.  McCartney thought of the song as one that Michael Jackson might like to record, and mentioned this to Jackson at a party in Hollywood.  Jackson had stated in interviews with the music press in the 1970s that he was a fan of The Beatles and the chance to record a McCartney original helped to inspire his next project.  However, McCartney ended up recording it himself with his band Wings, and it was issued in 1978 on the album \\\"London Town\\\".  Subsequently, it was suggested by Quincy Jones as a possible track for Jackson to record for his 1979 album \\\"Off the Wall\\\".  Jones was unaware that the song had been written for Jackson in the first place.  Jackson's recording omitted the middle eight heard in McCartney's version.  It was issued exclusively in the UK in 1980, as the fifth and final single from the \\\"Off the Wall\\\" album.  This proved to be another hit single for Jackson and one of his first recordings of a Paul McCartney song.\", \"The Lovely Linda | \\\"The Lovely Linda\\\" is a song by English musician Paul McCartney, released as the opening track of his debut solo album, \\\"McCartney\\\", in April 1970.  McCartney wrote the song to his first wife, Linda McCartney.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks on which Paul McCartney album the song \"Maybe I'm Amazed\" first appeared. According to the context and passages provided, \"Maybe I'm Amazed\" was written by Paul McCartney and included on his debut solo album titled \"McCartney,\" released in 1970. Multiple passages, particularly [1] and [7], confirm this information, and no conflicting information is presented.\nSummary: The song \"Maybe I'm Amazed\" by Paul McCartney originally appeared on his 1970 debut solo album \"McCartney.\""
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What album from Paul McCartney did the song Maybe I'm Amazed appear in?\nSummary 1: The song \"Maybe I'm Amazed\" by Paul McCartney first appeared on his 1970 album \"McCartney\".\nSummary 2: The song \"Maybe I'm Amazed\" by Paul McCartney originally appeared on his 1970 debut solo album \"McCartney.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the song \"Maybe I'm Amazed\" by Paul McCartney was first released on his 1970 album titled \"McCartney.\" There is consistent information in both summaries regarding the album and the year of release. No contradictions or alternative claims are presented.\nAnswer: The song \"Maybe I'm Amazed\" appeared on Paul McCartney's 1970 album \"McCartney.\""
+      }
+    ]
+  }
+}

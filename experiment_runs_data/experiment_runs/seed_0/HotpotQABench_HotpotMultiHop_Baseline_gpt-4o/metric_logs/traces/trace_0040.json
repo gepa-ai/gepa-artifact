@@ -1,0 +1,96 @@
+{
+  "example_id": "5a74d3d955429974ef308c78",
+  "question": "Potassium bitartrate, sugar, water, colourings and flavorings can be combined to make which Scottish confection?",
+  "gold_answer": "Edinburgh rock",
+  "prediction": {
+    "answer": "Edinburgh rock",
+    "hop1_docs": [
+      "Potassium bitartrate | Potassium bitartrate, also known as potassium hydrogen tartrate, with formula KCHO, is a byproduct of winemaking.  In cooking it is known as cream of tartar.  It is the potassium acid salt of tartaric acid (a carboxylic acid).  It can be used in baking or as a cleaning solution (when mixed with an acidic solution such as lemon juice or white vinegar).",
+      "Edinburgh rock | Edinburgh rock or Edinburgh Castle rock is a traditional Scottish confection, and is quite distinct from conventional rock.  It consists of sugar, water, cream of tartar, colourings and flavourings.  It is formed into sticks, and has a soft and crumbly texture.",
+      "Masghati | Masghati (\u0645\u0633\u0642\u0637\u06cc) is a soft and transparent confection in Iran made with rose water, starch, sugar and water.  Along with koloocheh, it is a tradition of Norooz New Year celebrations.  Pistachio and saffron can also be used to make the cookies.",
+      "Potassium tartrate | Potassium tartrate, dipotassium tartrate or argol has formula KCHO.  It is the potassium salt of tartaric acid.  It is often confused with potassium bitartrate, also known as cream of tartar.  As a food additive, it shares the E number E336 with potassium bitartrate.",
+      "Fruit salt | Fruit salt or fruit salts is a term for effervescent compounds made up of organic acids such as citric acid or tartaric acid and salts such as sodium bicarbonate, sodium carbonate, or sodium bitartrate in combination with added flavoring and sugar.  Historically, fruit salts were sold for a wide range of ailments, and today they are used primarily as antacids.",
+      "Divinity (confectionery) | Divinity is a nougat-like confection made with egg white, corn syrup, and sugar.  Optional ingredients such as flavors, chopped dried fruit and chopped nuts are frequently added.  Replacing the sugar with brown sugar results in a related confection called \"sea foam\".",
+      "Watermelon rind preserves | Watermelon rind preserves are made by boiling chunks of watermelon rind with sugar and other ingredients.  The mixture is then canned in glass jars.  According to some recipes, the rind is pared to only the white portion, strips or cubes of which are soaked overnight in a solution of lime or salt and water, then rinsed.  It is then boiled, combined with sugar and flavorings such as ginger and lemon, and cooked until the rind is clear."
+    ],
+    "hop2_docs": [
+      "Edinburgh rock | Edinburgh rock or Edinburgh Castle rock is a traditional Scottish confection, and is quite distinct from conventional rock.  It consists of sugar, water, cream of tartar, colourings and flavourings.  It is formed into sticks, and has a soft and crumbly texture.",
+      "Potassium tartrate | Potassium tartrate, dipotassium tartrate or argol has formula KCHO.  It is the potassium salt of tartaric acid.  It is often confused with potassium bitartrate, also known as cream of tartar.  As a food additive, it shares the E number E336 with potassium bitartrate.",
+      "Potassium bitartrate | Potassium bitartrate, also known as potassium hydrogen tartrate, with formula KCHO, is a byproduct of winemaking.  In cooking it is known as cream of tartar.  It is the potassium acid salt of tartaric acid (a carboxylic acid).  It can be used in baking or as a cleaning solution (when mixed with an acidic solution such as lemon juice or white vinegar).",
+      "Fruit salt | Fruit salt or fruit salts is a term for effervescent compounds made up of organic acids such as citric acid or tartaric acid and salts such as sodium bicarbonate, sodium carbonate, or sodium bitartrate in combination with added flavoring and sugar.  Historically, fruit salts were sold for a wide range of ailments, and today they are used primarily as antacids.",
+      "Lemon drop (candy) | A lemon drop is a sugar coated, lemon-flavored candy that is typically colored yellow and often shaped like a miniature lemon.  They can be sweet or have a more sour flavor.  Lemon drops are made by boiling sugar, water and cream of tartar until it reaches the hard crack stage.  As the mixture cools, lemon flavor is added.  The candy is then rolled into long ropes, cut into small pieces and rolled in sugar.  Lemon drops originated in England, where confectioners learned that adding acid such as lemon juice to the boiled sugar mixture prevented sugar from crystallizing.",
+      "Weinstein | Weinstein is a German-language surname meaning \"wine stone\", referring to the crystals of potassium bitartrate resulting from the process of fermenting grape juice.",
+      "Ice cream | Ice cream (derived from earlier iced cream or cream ice) is a sweetened frozen food typically eaten as a snack or dessert.  It is usually made from dairy products, such as milk and cream, and often combined with fruits or other ingredients and flavors.  It is typically sweetened with sugar or sugar substitutes. Typically, flavourings and colourings are added in addition to stabilizers.  The mixture is stirred to incorporate air spaces and cooled below the freezing point of water to prevent detectable ice crystals from forming.  The result is a smooth, semi-solid foam that is solid at very low temperatures (<\u00a035 F ).  It becomes more malleable as its temperature increases."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 40,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Potassium bitartrate, sugar, water, colourings and flavorings can be combined to make which Scottish confection?\nPassages: [\"Potassium bitartrate | Potassium bitartrate, also known as potassium hydrogen tartrate, with formula KCHO, is a byproduct of winemaking.  In cooking it is known as cream of tartar.  It is the potassium acid salt of tartaric acid (a carboxylic acid).  It can be used in baking or as a cleaning solution (when mixed with an acidic solution such as lemon juice or white vinegar).\", \"Edinburgh rock | Edinburgh rock or Edinburgh Castle rock is a traditional Scottish confection, and is quite distinct from conventional rock.  It consists of sugar, water, cream of tartar, colourings and flavourings.  It is formed into sticks, and has a soft and crumbly texture.\", \"Masghati | Masghati (\\u0645\\u0633\\u0642\\u0637\\u06cc) is a soft and transparent confection in Iran made with rose water, starch, sugar and water.  Along with koloocheh, it is a tradition of Norooz New Year celebrations.  Pistachio and saffron can also be used to make the cookies.\", \"Potassium tartrate | Potassium tartrate, dipotassium tartrate or argol has formula KCHO.  It is the potassium salt of tartaric acid.  It is often confused with potassium bitartrate, also known as cream of tartar.  As a food additive, it shares the E number E336 with potassium bitartrate.\", \"Fruit salt | Fruit salt or fruit salts is a term for effervescent compounds made up of organic acids such as citric acid or tartaric acid and salts such as sodium bicarbonate, sodium carbonate, or sodium bitartrate in combination with added flavoring and sugar.  Historically, fruit salts were sold for a wide range of ailments, and today they are used primarily as antacids.\", \"Divinity (confectionery) | Divinity is a nougat-like confection made with egg white, corn syrup, and sugar.  Optional ingredients such as flavors, chopped dried fruit and chopped nuts are frequently added.  Replacing the sugar with brown sugar results in a related confection called \\\"sea foam\\\".\", \"Watermelon rind preserves | Watermelon rind preserves are made by boiling chunks of watermelon rind with sugar and other ingredients.  The mixture is then canned in glass jars.  According to some recipes, the rind is pared to only the white portion, strips or cubes of which are soaked overnight in a solution of lime or salt and water, then rinsed.  It is then boiled, combined with sugar and flavorings such as ginger and lemon, and cooked until the rind is clear.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to identify a specific Scottish confection made with potassium bitartrate, sugar, water, colourings, and flavorings. Among the passages, passage [2] describes \"Edinburgh rock,\" a traditional Scottish confection made from sugar, water, cream of tartar (another name for potassium bitartrate), colourings, and flavorings, formed into sticks with a soft and crumbly texture. None of the other passages describe confections fitting the criteria provided in the question, such as ingredients and Scottish origin.\nSummary: The Scottish confection made with potassium bitartrate, sugar, water, colourings, and flavorings is Edinburgh rock."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Potassium bitartrate, sugar, water, colourings and flavorings can be combined to make which Scottish confection?\nSummary 1: The Scottish confection made with potassium bitartrate, sugar, water, colourings, and flavorings is Edinburgh rock."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Edinburgh rock is a traditional Scottish confectionery known for its soft, crumbly, and melt-in-the-mouth texture. The ingredients listed\u2014potassium bitartrate, sugar, water, colourings, and flavorings\u2014are typical for producing this type of sweet. Potassium bitartrate, in particular, plays a role in controlling the crystallization of sugar, which is a critical factor in achieving the unique texture of Edinburgh rock.\nQuery: What are the steps involved in making Edinburgh rock from potassium bitartrate, sugar, water, colourings, and flavorings?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Potassium bitartrate, sugar, water, colourings and flavorings can be combined to make which Scottish confection?\nContext: The Scottish confection made with potassium bitartrate, sugar, water, colourings, and flavorings is Edinburgh rock.\nPassages: [\"Edinburgh rock | Edinburgh rock or Edinburgh Castle rock is a traditional Scottish confection, and is quite distinct from conventional rock.  It consists of sugar, water, cream of tartar, colourings and flavourings.  It is formed into sticks, and has a soft and crumbly texture.\", \"Potassium tartrate | Potassium tartrate, dipotassium tartrate or argol has formula KCHO.  It is the potassium salt of tartaric acid.  It is often confused with potassium bitartrate, also known as cream of tartar.  As a food additive, it shares the E number E336 with potassium bitartrate.\", \"Potassium bitartrate | Potassium bitartrate, also known as potassium hydrogen tartrate, with formula KCHO, is a byproduct of winemaking.  In cooking it is known as cream of tartar.  It is the potassium acid salt of tartaric acid (a carboxylic acid).  It can be used in baking or as a cleaning solution (when mixed with an acidic solution such as lemon juice or white vinegar).\", \"Fruit salt | Fruit salt or fruit salts is a term for effervescent compounds made up of organic acids such as citric acid or tartaric acid and salts such as sodium bicarbonate, sodium carbonate, or sodium bitartrate in combination with added flavoring and sugar.  Historically, fruit salts were sold for a wide range of ailments, and today they are used primarily as antacids.\", \"Lemon drop (candy) | A lemon drop is a sugar coated, lemon-flavored candy that is typically colored yellow and often shaped like a miniature lemon.  They can be sweet or have a more sour flavor.  Lemon drops are made by boiling sugar, water and cream of tartar until it reaches the hard crack stage.  As the mixture cools, lemon flavor is added.  The candy is then rolled into long ropes, cut into small pieces and rolled in sugar.  Lemon drops originated in England, where confectioners learned that adding acid such as lemon juice to the boiled sugar mixture prevented sugar from crystallizing.\", \"Weinstein | Weinstein is a German-language surname meaning \\\"wine stone\\\", referring to the crystals of potassium bitartrate resulting from the process of fermenting grape juice.\", \"Ice cream | Ice cream (derived from earlier iced cream or cream ice) is a sweetened frozen food typically eaten as a snack or dessert.  It is usually made from dairy products, such as milk and cream, and often combined with fruits or other ingredients and flavors.  It is typically sweetened with sugar or sugar substitutes. Typically, flavourings and colourings are added in addition to stabilizers.  The mixture is stirred to incorporate air spaces and cooled below the freezing point of water to prevent detectable ice crystals from forming.  The result is a smooth, semi-solid foam that is solid at very low temperatures (<\\u00a035 F ).  It becomes more malleable as its temperature increases.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Potassium bitartrate, also known as cream of tartar, is commonly used in confectionery to modify texture or stabilize sugar-based mixtures. The reference to potassium bitartrate, sugar, water, colorings, and flavorings matches the ingredients listed for Edinburgh rock in passage [1]. Edinburgh rock is a traditional Scottish confection known for its soft and crumbly texture, distinct from conventional rock. Other passages discuss related ingredients or products, but they do not specifically describe a Scottish confection other than Edinburgh rock. Thus, Edinburgh rock is the answer to the question.\nSummary: The Scottish confection made with potassium bitartrate, sugar, water, colorings, and flavorings is Edinburgh rock."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Potassium bitartrate, sugar, water, colourings and flavorings can be combined to make which Scottish confection?\nSummary 1: The Scottish confection made with potassium bitartrate, sugar, water, colourings, and flavorings is Edinburgh rock.\nSummary 2: The Scottish confection made with potassium bitartrate, sugar, water, colorings, and flavorings is Edinburgh rock."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree on the answer, stating that the Scottish confection made with potassium bitartrate, sugar, water, colourings, and flavorings is Edinburgh rock. There are no discrepancies between the two summaries, and the information aligns with the question's description of ingredients. Based on this consistency, the answer can be considered reliable.\nAnswer: Edinburgh rock"
+      }
+    ]
+  }
+}

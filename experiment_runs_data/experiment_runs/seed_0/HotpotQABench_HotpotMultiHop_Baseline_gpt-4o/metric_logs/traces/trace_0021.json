@@ -1,0 +1,96 @@
+{
+  "example_id": "5ade8dca5542992fa25da7c3",
+  "question": "The winner of the Mt. Baker Banked Slalom receives an ambroidered jacket made by a U.S.-based clothing company headquartered where?",
+  "gold_answer": "Dearborn, Michigan",
+  "prediction": {
+    "answer": "Dearborn, Michigan",
+    "hop1_docs": [
+      "Mt. Baker Legendary Banked Slalom | Mt. Baker Banked Slalom, also known as the Legendary Banked Slalom (LBS), is a snowboarding contest held annually since 1985 at Mt. Baker Ski Area, in Washington State, United States.  The LBS is regarded as the predecessor to the boardercross event, and has been won by some of the biggest names in the history of snowboarding.  The winner receives a Duct Tape trophy and an embroidered Carhartt jacket.  Terje H\u00e5konsen is the winningest male pro snowboarder with 7 trophies over a 17-year period; the winningest female pro snowboarder is Ma\u00eblle Ricker with 7 consecutive wins from 2007 to 2013.",
+      "Schott NYC | Schott NYC (Schott Bros) is an American clothing manufacturing company located in New York City.  The company was founded in 1913 by brothers Irving and Jack Schott.  Schott NYC was the first company to put a zipper on a jacket and they created the classic Perfecto motorcycle jacket, which was made popular by films such as \"The Wild One\" (1953).  The company made clothing for the United States Armed Forces during World War II and later also for American law enforcement.  Schott NYC is still owned by the Schott family and still manufacture much of their clothing in the United States.",
+      "Alpha Industries | Alpha Industries is an American clothing manufacturer founded in 1959 in Knoxville, Tennessee.  Initially as a contractor to the United States military, the company grew into an international commercial seller of American military style and fashion apparel.  Alpha makes items such as flight jackets and vests, and has made jackets for the military of the United States like the M65 Jacket for over half a century.  The jackets are made for men and women, as well as children.  Popular models include the MA-1 and CWU-45/P pilot jackets.",
+      "Waxed jacket | A Waxed jacket is a type of hip-length raincoat made from waxed cotton cloth, iconic of British and Irish country life.  Today it is commonly worn for outdoor rural pursuits such as hunting, shooting and fishing.  It is a cotton jacket made water-resistant by a paraffin-based waxing, typically with a tartan lining and a corduroy or leather collar.  The main drawback of a waxed fabric is its lack of breathability.",
+      "Achiva nidhi | \"Achiva Nidhi\" (Hindi: \u0905\u091a\u093f\u0935\u093e ) is an Indian banking and financial services Nidhi Company headquartered in Vadodara, Gujarat.  Achiva, which started as a Trading company in 2014, received nidhi licence by Ministry of Corporate Affairs and there under Rules & Regulations made by Reserve Bank of India for Nidhi Company in 2015.",
+      "MT-Energie | MT-Energie GmbH is a biogas technology company operating in the field of renewable energies.  The company's headquarters are in Zeven (Germany) The UK branch office is located in Bridgnorth, Shropshire.  MT-Energie develops and distributes both turnkey biogas powerplants and special bioprocess engineering components.  Furthermore, it offers technical and biological services for biogas plants.  The company\u2019s subsidiary MT-Biomethan GmbH, which was founded as part of the MT Group in 2008, offers technologies for biogas upgrading based on the process of pressureless amine scrubbing and a membrane-based gas permeation.",
+      "Merc Clothing | Merc Clothing is a United Kingdom-based clothing company which specialises in the production of shirts, trousers, suits, parkas, harrington jackets, shoes and accessories for men and women (primarily focusing on the former).  Although the brand originally focused on the mod and skinhead styles, they have adapted to target a wider clientele.  They also carry a more casual range of jeans and T-shirts.  The brand occasionally incorporates the Royal Air Force roundel (sometimes called the \"mod target\") in its designs.  Merc Clothing is a privately owned company."
+    ],
+    "hop2_docs": [
+      "University of Michigan-Dearborn Fieldhouse | The University of Michigan-Dearborn Fieldhouse is a multi-purpose arena/athletic facility located in Dearborn, Michigan on the campus of University of Michigan-Dearborn.",
+      "University of Michigan\u2013Dearborn | The University of Michigan\u2013Dearborn (commonly referred to as UM-Dearborn or UM-D) is a public university located in Dearborn, Michigan, United States.  It is one of the two regional campuses of the University of Michigan operating under the policies of the Board of Regents.  The University of Michigan in Ann Arbor is located 35 miles to the west; the other regional campus is in Flint.",
+      "Commandant's Quarters (Dearborn, Michigan) | The Commandant's Quarters at the Dearborn Arsenal is a military structure located at 21950 Michigan Avenue in Dearborn, Michigan.  Built in the early 1830s, it is the oldest building in Dearborn still located on its original site, and is considered to be one of the seven most significant buildings in Michigan.  It was designated a Michigan State Historic Site in 1956 and listed on the National Register of Historic Places in 1970.",
+      "Dearborn Public Schools | The Dearborn Public Schools is a school district that includes the entire city of Dearborn, Michigan and a small portion of Dearborn Heights, both in Greater Detroit.  Dearborn Public Schools is the fourth largest school district in Michigan, serving 18,300 students.  The district had a $227 million budget for 2010.",
+      "Westwood Community School District (Michigan) | Westwood Community School District is a school district headquartered in Dearborn Heights, Michigan, United States in Metro Detroit.  It serves portions of Dearborn Heights, Inkster, and Dearborn; the sections of Dearborn within the district are zoned for industrial and commercial uses.",
+      "Dearborn City Hall Complex | The Dearborn City Hall Complex is a complex of three government buildings located at 13615 Michigan Avenue in Dearborn, Michigan.  The complex includes the 1921 Dearborn City Hall (originally the Springwells Municipal Building), the 1929 Police and Municipal Courts Building, and a office/auditorium concourse addition constructed in 1981.  The complex was listed on the National Register of Historic Places in 2014.",
+      "Dearborn High School | Dearborn High School (DHS) is a public high school located in Dearborn, Michigan.  It was founded in 1893 in Dearborn near Greater Detroit.  Dearborn High is one of the three high schools of the Dearborn City School District and is located at 19501 Outer Drive.  There are over 2000 students currently attending Dearborn High."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 21,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The winner of the Mt. Baker Banked Slalom receives an ambroidered jacket made by a U.S.-based clothing company headquartered where?\nPassages: [\"Mt. Baker Legendary Banked Slalom | Mt. Baker Banked Slalom, also known as the Legendary Banked Slalom (LBS), is a snowboarding contest held annually since 1985 at Mt. Baker Ski Area, in Washington State, United States.  The LBS is regarded as the predecessor to the boardercross event, and has been won by some of the biggest names in the history of snowboarding.  The winner receives a Duct Tape trophy and an embroidered Carhartt jacket.  Terje H\\u00e5konsen is the winningest male pro snowboarder with 7 trophies over a 17-year period; the winningest female pro snowboarder is Ma\\u00eblle Ricker with 7 consecutive wins from 2007 to 2013.\", \"Schott NYC | Schott NYC (Schott Bros) is an American clothing manufacturing company located in New York City.  The company was founded in 1913 by brothers Irving and Jack Schott.  Schott NYC was the first company to put a zipper on a jacket and they created the classic Perfecto motorcycle jacket, which was made popular by films such as \\\"The Wild One\\\" (1953).  The company made clothing for the United States Armed Forces during World War II and later also for American law enforcement.  Schott NYC is still owned by the Schott family and still manufacture much of their clothing in the United States.\", \"Alpha Industries | Alpha Industries is an American clothing manufacturer founded in 1959 in Knoxville, Tennessee.  Initially as a contractor to the United States military, the company grew into an international commercial seller of American military style and fashion apparel.  Alpha makes items such as flight jackets and vests, and has made jackets for the military of the United States like the M65 Jacket for over half a century.  The jackets are made for men and women, as well as children.  Popular models include the MA-1 and CWU-45/P pilot jackets.\", \"Waxed jacket | A Waxed jacket is a type of hip-length raincoat made from waxed cotton cloth, iconic of British and Irish country life.  Today it is commonly worn for outdoor rural pursuits such as hunting, shooting and fishing.  It is a cotton jacket made water-resistant by a paraffin-based waxing, typically with a tartan lining and a corduroy or leather collar.  The main drawback of a waxed fabric is its lack of breathability.\", \"Achiva nidhi | \\\"Achiva Nidhi\\\" (Hindi: \\u0905\\u091a\\u093f\\u0935\\u093e ) is an Indian banking and financial services Nidhi Company headquartered in Vadodara, Gujarat.  Achiva, which started as a Trading company in 2014, received nidhi licence by Ministry of Corporate Affairs and there under Rules & Regulations made by Reserve Bank of India for Nidhi Company in 2015.\", \"MT-Energie | MT-Energie GmbH is a biogas technology company operating in the field of renewable energies.  The company's headquarters are in Zeven (Germany) The UK branch office is located in Bridgnorth, Shropshire.  MT-Energie develops and distributes both turnkey biogas powerplants and special bioprocess engineering components.  Furthermore, it offers technical and biological services for biogas plants.  The company\\u2019s subsidiary MT-Biomethan GmbH, which was founded as part of the MT Group in 2008, offers technologies for biogas upgrading based on the process of pressureless amine scrubbing and a membrane-based gas permeation.\", \"Merc Clothing | Merc Clothing is a United Kingdom-based clothing company which specialises in the production of shirts, trousers, suits, parkas, harrington jackets, shoes and accessories for men and women (primarily focusing on the former).  Although the brand originally focused on the mod and skinhead styles, they have adapted to target a wider clientele.  They also carry a more casual range of jeans and T-shirts.  The brand occasionally incorporates the Royal Air Force roundel (sometimes called the \\\"mod target\\\") in its designs.  Merc Clothing is a privately owned company.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The passages reveal that the winner of the Mt. Baker Banked Slalom receives an embroidered Carhartt jacket. However, the passages do not explicitly mention the headquarters location of Carhartt itself. Nonetheless, Carhartt is widely recognized as a U.S.-based clothing company headquartered in Dearborn, Michigan. While none of the provided excerpts explicitly corroborate this detail, external knowledge about Carhartt clarifies its base of operations.\nSummary: The winner of the Mt. Baker Banked Slalom receives an embroidered jacket made by Carhartt, a U.S.-based clothing company headquartered in Dearborn, Michigan."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The winner of the Mt. Baker Banked Slalom receives an ambroidered jacket made by a U.S.-based clothing company headquartered where?\nSummary 1: The winner of the Mt. Baker Banked Slalom receives an embroidered jacket made by Carhartt, a U.S.-based clothing company headquartered in Dearborn, Michigan."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The summary indicates that the jacket given to the winner of the Mt. Baker Banked Slalom is produced by Carhartt, a U.S.-based company headquartered in Dearborn, Michigan. To answer the question precisely, the location of the company's headquarters, which is Dearborn, Michigan, directly addresses the query.\nQuery: Dearborn, Michigan"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The winner of the Mt. Baker Banked Slalom receives an ambroidered jacket made by a U.S.-based clothing company headquartered where?\nContext: The winner of the Mt. Baker Banked Slalom receives an embroidered jacket made by Carhartt, a U.S.-based clothing company headquartered in Dearborn, Michigan.\nPassages: [\"University of Michigan-Dearborn Fieldhouse | The University of Michigan-Dearborn Fieldhouse is a multi-purpose arena/athletic facility located in Dearborn, Michigan on the campus of University of Michigan-Dearborn.\", \"University of Michigan\\u2013Dearborn | The University of Michigan\\u2013Dearborn (commonly referred to as UM-Dearborn or UM-D) is a public university located in Dearborn, Michigan, United States.  It is one of the two regional campuses of the University of Michigan operating under the policies of the Board of Regents.  The University of Michigan in Ann Arbor is located 35 miles to the west; the other regional campus is in Flint.\", \"Commandant's Quarters (Dearborn, Michigan) | The Commandant's Quarters at the Dearborn Arsenal is a military structure located at 21950 Michigan Avenue in Dearborn, Michigan.  Built in the early 1830s, it is the oldest building in Dearborn still located on its original site, and is considered to be one of the seven most significant buildings in Michigan.  It was designated a Michigan State Historic Site in 1956 and listed on the National Register of Historic Places in 1970.\", \"Dearborn Public Schools | The Dearborn Public Schools is a school district that includes the entire city of Dearborn, Michigan and a small portion of Dearborn Heights, both in Greater Detroit.  Dearborn Public Schools is the fourth largest school district in Michigan, serving 18,300 students.  The district had a $227 million budget for 2010.\", \"Westwood Community School District (Michigan) | Westwood Community School District is a school district headquartered in Dearborn Heights, Michigan, United States in Metro Detroit.  It serves portions of Dearborn Heights, Inkster, and Dearborn; the sections of Dearborn within the district are zoned for industrial and commercial uses.\", \"Dearborn City Hall Complex | The Dearborn City Hall Complex is a complex of three government buildings located at 13615 Michigan Avenue in Dearborn, Michigan.  The complex includes the 1921 Dearborn City Hall (originally the Springwells Municipal Building), the 1929 Police and Municipal Courts Building, and a office/auditorium concourse addition constructed in 1981.  The complex was listed on the National Register of Historic Places in 2014.\", \"Dearborn High School | Dearborn High School (DHS) is a public high school located in Dearborn, Michigan.  It was founded in 1893 in Dearborn near Greater Detroit.  Dearborn High is one of the three high schools of the Dearborn City School District and is located at 19501 Outer Drive.  There are over 2000 students currently attending Dearborn High.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The context directly identifies Carhartt as the U.S.-based clothing company that makes the embroidered jacket for the Mt. Baker Banked Slalom winner. Additionally, Carhartt's headquarters is clearly stated to be in Dearborn, Michigan. The passages provided discuss several aspects of Dearborn, Michigan, such as schools and historic sites, but none contradict or expand upon the context regarding Carhartt being headquartered there. Given this, we can confidently deduce that the headquarters of Carhartt, and thus the answer to the question, is Dearborn, Michigan.\nSummary: The winner of the Mt. Baker Banked Slalom receives an embroidered jacket made by Carhartt, a U.S.-based clothing company headquartered in Dearborn, Michigan."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The winner of the Mt. Baker Banked Slalom receives an ambroidered jacket made by a U.S.-based clothing company headquartered where?\nSummary 1: The winner of the Mt. Baker Banked Slalom receives an embroidered jacket made by Carhartt, a U.S.-based clothing company headquartered in Dearborn, Michigan.\nSummary 2: The winner of the Mt. Baker Banked Slalom receives an embroidered jacket made by Carhartt, a U.S.-based clothing company headquartered in Dearborn, Michigan."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the winner of the Mt. Baker Banked Slalom receives an embroidered jacket made by Carhartt, a U.S.-based clothing company headquartered in Dearborn, Michigan. There are no conflicts or discrepancies between the summaries, and the information provided is consistent and sufficient to answer the question directly without any ambiguity.\nAnswer: Dearborn, Michigan"
+      }
+    ]
+  }
+}

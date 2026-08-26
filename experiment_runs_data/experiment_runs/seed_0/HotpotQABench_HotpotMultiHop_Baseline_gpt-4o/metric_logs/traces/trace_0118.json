@@ -1,0 +1,96 @@
+{
+  "example_id": "5a862ce955429960ec39b63d",
+  "question": "Were Patrick McCabe and John Braine of the same nationality?",
+  "gold_answer": "no",
+  "prediction": {
+    "answer": "No, Patrick McCabe and John Braine were not of the same nationality. Patrick McCabe is Irish, while John Braine was English.",
+    "hop1_docs": [
+      "The Butcher Boy (1997 film) | The Butcher Boy is an 1997 Irish-American tragicomic drama film adapted to film by Neil Jordan and Patrick McCabe from McCabe's 1992 novel of the same name.",
+      "Breakfast on Pluto (film) | Breakfast on Pluto is a 2005 British-Irish comedy-drama film written and directed by Neil Jordan and based on the novel of the same name by Patrick McCabe, as adapted by Jordan and McCabe.  This dark comedy stars Cillian Murphy as a transgender foundling searching for love and her long-lost mother in small town Ireland and London in the 1970s.",
+      "Patrick McCabe (novelist) | Patrick McCabe (born 27 March 1955) is an Irish writer.  Known for his mostly dark and violent novels set in contemporary\u2014often small-town\u2014Ireland, McCabe has been twice shortlisted for the Booker Prize, for \"The Butcher Boy\" and \"Breakfast on Pluto\", both of which have been made into films.",
+      "Patrick E. McCabe | Patrick E. McCabe (June 26, 1860 \u2013 November 2, 1931) was Clerk of the New York State Senate in Albany.  He was the Democratic leader of Albany County, New York for 20 years.",
+      "Pat McCabe (lacrosse) | Patrick \"Pat\" J. McCabe (born April 15, 1969) is a retired professional lacrosse player from the United States.  In 2006, McCabe was elected to the US Lacrosse Hall of Fame.",
+      "China brain | In the philosophy of mind, the China brain thought experiment (also known as the Chinese Nation or Chinese Gym) considers what would happen if each member of the Chinese nation were asked to simulate the action of one neuron in the brain, using telephones or walkie-talkies to simulate the axons and dendrites that connect neurons.  Would this arrangement have a mind or consciousness in the same way that brains do?",
+      "Christopher John McCabe | Christopher John McCabe (born 20 October 1967) is a British scientist and novelist.  He is Professor of Molecular Endocrinology at the University of Birmingham. and writes novels under the pseudonyms John McCabe and John Macken."
+    ],
+    "hop2_docs": [
+      "China brain | In the philosophy of mind, the China brain thought experiment (also known as the Chinese Nation or Chinese Gym) considers what would happen if each member of the Chinese nation were asked to simulate the action of one neuron in the brain, using telephones or walkie-talkies to simulate the axons and dendrites that connect neurons.  Would this arrangement have a mind or consciousness in the same way that brains do?",
+      "Leslie Ungerleider | Leslie G. Ungerleider (born 1946) is an experimental psychologist and neuroscientist, currently Chief of the Laboratory of Brain and Cognition at the National Institute of Mental Health.  Ungerleider is known for introducing the concepts of the dorsal (where) and ventral (what) streams, two pathways of information processing in the brain that specialize in visuospatial processing and object recognition, respectively.",
+      "Externalism | Externalism is a group of positions in the philosophy of mind which argues that the conscious mind is not only the result of what is going on inside the nervous system (or the brain), but also what \"occurs\" or \"exists\" outside the subject.  It is contrasted with internalism which holds that the mind emerges from neural activity alone.  Externalism is a belief that the mind is not just the brain or functions of the brain.",
+      "John Pickard (professor) | John Douglas Pickard FRCS FMedSci (born 21 March 1946) is a British professor emeritus of neurosurgery in the Department of Clinical Neurosciences of University of Cambridge.  He is the honorary director of the National Institute for Health Research's Healthcare Technology Cooperative (HTC) for brain injury.  His research focuses on advancing the care of patients with acute brain injury, hydrocephalus and prolonged disorders of consciousness through functional brain imaging, studies of pathophysiology and new treatments; as well as focusing on health, economic and ethical aspects.",
+      "Parallel processing (psychology) | In psychology, parallel processing is the ability of the brain to simultaneously process incoming stimuli of differing quality.  This becomes most important in vision, as the brain divides what it sees into four components: color, motion, shape, and depth.  These are individually analyzed and then compared to stored memories, which helps the brain identify what you are viewing.  The brain then combines all of these into the field of view that you see and comprehend.  Parallel processing has been linked, by some experimental psychologists, to the Stroop effect.  This is a continual and seamless operation.",
+      "The Lost Mind of Dr. Brain | The Lost Mind of Dr. Brain is the third installment of the educational Dr. Brain series, created and published by Sierra On-Line.  Several new characters have been introduced: Dr. Brain's niece, Elaina (voiced by Kayce Glasse) is on hand to replace Dr. Brain (voiced by Rodney Sherwood) as host, and also serves as a guide to Dr. Brain's mental pathways.  Also, Rathbone, Dr. Brain's laboratory rat, provides what limited verbal humor can be found in the game.",
+      "John Braine | John Gerard Braine (13 April 1922 \u2013 28 October 1986) was an English novelist.  Braine is usually listed among the Angry Young Men, a loosely defined group of English writers who emerged on the literary scene in the 1950s."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 118,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Were Patrick McCabe and John Braine of the same nationality?\nPassages: [\"The Butcher Boy (1997 film) | The Butcher Boy is an 1997 Irish-American tragicomic drama film adapted to film by Neil Jordan and Patrick McCabe from McCabe's 1992 novel of the same name.\", \"Breakfast on Pluto (film) | Breakfast on Pluto is a 2005 British-Irish comedy-drama film written and directed by Neil Jordan and based on the novel of the same name by Patrick McCabe, as adapted by Jordan and McCabe.  This dark comedy stars Cillian Murphy as a transgender foundling searching for love and her long-lost mother in small town Ireland and London in the 1970s.\", \"Patrick McCabe (novelist) | Patrick McCabe (born 27 March 1955) is an Irish writer.  Known for his mostly dark and violent novels set in contemporary\\u2014often small-town\\u2014Ireland, McCabe has been twice shortlisted for the Booker Prize, for \\\"The Butcher Boy\\\" and \\\"Breakfast on Pluto\\\", both of which have been made into films.\", \"Patrick E. McCabe | Patrick E. McCabe (June 26, 1860 \\u2013 November 2, 1931) was Clerk of the New York State Senate in Albany.  He was the Democratic leader of Albany County, New York for 20 years.\", \"Pat McCabe (lacrosse) | Patrick \\\"Pat\\\" J. McCabe (born April 15, 1969) is a retired professional lacrosse player from the United States.  In 2006, McCabe was elected to the US Lacrosse Hall of Fame.\", \"China brain | In the philosophy of mind, the China brain thought experiment (also known as the Chinese Nation or Chinese Gym) considers what would happen if each member of the Chinese nation were asked to simulate the action of one neuron in the brain, using telephones or walkie-talkies to simulate the axons and dendrites that connect neurons.  Would this arrangement have a mind or consciousness in the same way that brains do?\", \"Christopher John McCabe | Christopher John McCabe (born 20 October 1967) is a British scientist and novelist.  He is Professor of Molecular Endocrinology at the University of Birmingham. and writes novels under the pseudonyms John McCabe and John Macken.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Patrick McCabe is identified as an Irish writer based on several passages (e.g., passages [1], [2], and [3]). He is known for novels set in Ireland, and his nationality is explicitly stated as Irish in passage [3]. John Braine, however, is not directly mentioned in the provided passages, leaving his nationality unstated. Since there is no information provided about John Braine, his nationality cannot be confirmed or compared to Patrick McCabe's. Thus, it is impossible to determine if they were of the same nationality with the given information.\nSummary: Based on the provided passages, Patrick McCabe is Irish, but there is no information available regarding John Braine's nationality. Therefore, it cannot be determined if they were of the same nationality."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Were Patrick McCabe and John Braine of the same nationality?\nSummary 1: Based on the provided passages, Patrick McCabe is Irish, but there is no information available regarding John Braine's nationality. Therefore, it cannot be determined if they were of the same nationality."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The summary indicates that Patrick McCabe is Irish, but there is no information about John Braine's nationality. To determine if the two individuals share the same nationality, additional information about John Braine's nationality must be obtained.\nQuery: What is the nationality of John Braine?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Were Patrick McCabe and John Braine of the same nationality?\nContext: Based on the provided passages, Patrick McCabe is Irish, but there is no information available regarding John Braine's nationality. Therefore, it cannot be determined if they were of the same nationality.\nPassages: [\"China brain | In the philosophy of mind, the China brain thought experiment (also known as the Chinese Nation or Chinese Gym) considers what would happen if each member of the Chinese nation were asked to simulate the action of one neuron in the brain, using telephones or walkie-talkies to simulate the axons and dendrites that connect neurons.  Would this arrangement have a mind or consciousness in the same way that brains do?\", \"Leslie Ungerleider | Leslie G. Ungerleider (born 1946) is an experimental psychologist and neuroscientist, currently Chief of the Laboratory of Brain and Cognition at the National Institute of Mental Health.  Ungerleider is known for introducing the concepts of the dorsal (where) and ventral (what) streams, two pathways of information processing in the brain that specialize in visuospatial processing and object recognition, respectively.\", \"Externalism | Externalism is a group of positions in the philosophy of mind which argues that the conscious mind is not only the result of what is going on inside the nervous system (or the brain), but also what \\\"occurs\\\" or \\\"exists\\\" outside the subject.  It is contrasted with internalism which holds that the mind emerges from neural activity alone.  Externalism is a belief that the mind is not just the brain or functions of the brain.\", \"John Pickard (professor) | John Douglas Pickard FRCS FMedSci (born 21 March 1946) is a British professor emeritus of neurosurgery in the Department of Clinical Neurosciences of University of Cambridge.  He is the honorary director of the National Institute for Health Research's Healthcare Technology Cooperative (HTC) for brain injury.  His research focuses on advancing the care of patients with acute brain injury, hydrocephalus and prolonged disorders of consciousness through functional brain imaging, studies of pathophysiology and new treatments; as well as focusing on health, economic and ethical aspects.\", \"Parallel processing (psychology) | In psychology, parallel processing is the ability of the brain to simultaneously process incoming stimuli of differing quality.  This becomes most important in vision, as the brain divides what it sees into four components: color, motion, shape, and depth.  These are individually analyzed and then compared to stored memories, which helps the brain identify what you are viewing.  The brain then combines all of these into the field of view that you see and comprehend.  Parallel processing has been linked, by some experimental psychologists, to the Stroop effect.  This is a continual and seamless operation.\", \"The Lost Mind of Dr. Brain | The Lost Mind of Dr. Brain is the third installment of the educational Dr. Brain series, created and published by Sierra On-Line.  Several new characters have been introduced: Dr. Brain's niece, Elaina (voiced by Kayce Glasse) is on hand to replace Dr. Brain (voiced by Rodney Sherwood) as host, and also serves as a guide to Dr. Brain's mental pathways.  Also, Rathbone, Dr. Brain's laboratory rat, provides what limited verbal humor can be found in the game.\", \"John Braine | John Gerard Braine (13 April 1922 \\u2013 28 October 1986) was an English novelist.  Braine is usually listed among the Angry Young Men, a loosely defined group of English writers who emerged on the literary scene in the 1950s.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks whether Patrick McCabe and John Braine were of the same nationality. From the context, it is stated that Patrick McCabe is Irish, while passage [7] provides information about John Braine, identifying him as an English novelist. Irish and English nationalities are distinct, and therefore, it can be concluded that Patrick McCabe and John Braine were not of the same nationality.\nSummary: No, Patrick McCabe and John Braine were not of the same nationality. Patrick McCabe is Irish, while John Braine was English."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Were Patrick McCabe and John Braine of the same nationality?\nSummary 1: Based on the provided passages, Patrick McCabe is Irish, but there is no information available regarding John Braine's nationality. Therefore, it cannot be determined if they were of the same nationality.\nSummary 2: No, Patrick McCabe and John Braine were not of the same nationality. Patrick McCabe is Irish, while John Braine was English."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The first summary suggests Patrick McCabe is Irish, but does not provide information on John Braine's nationality, leaving the matter inconclusive. The second summary states definitively that Patrick McCabe is Irish and John Braine was English, meaning they are not of the same nationality. Given this contradiction, the answer must align with the explanation that provides clear information about both individuals' nationalities, which is present in the second summary.\nAnswer: No, Patrick McCabe and John Braine were not of the same nationality. Patrick McCabe is Irish, while John Braine was English."
+      }
+    ]
+  }
+}

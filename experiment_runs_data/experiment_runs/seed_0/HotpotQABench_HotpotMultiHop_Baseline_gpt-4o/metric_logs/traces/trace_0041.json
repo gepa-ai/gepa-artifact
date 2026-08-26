@@ -1,0 +1,96 @@
+{
+  "example_id": "5a8bb35e5542995e66a474ce",
+  "question": "Bryan Lee Vera is best known for his memorable and notable victories over which Irish professional boxer born on June 11, 1984?",
+  "gold_answer": "Andy Lee",
+  "prediction": {
+    "answer": "Andy Lee",
+    "hop1_docs": [
+      "Brian Vera | Bryan Lee Vera (born December 28, 1981) is an American professional boxer who fights at super middleweight.  He is best known for his memorable and notable victories over then-undefeated Andy Lee in 2008, former world champion Sergio Mora (twice, in 2011 and 2012) and Serhiy Dzinziruk in 2013.  Vera currently trains in Cedar Park, Texas.",
+      "Andy Lee (boxer) | Andy Lee (born 11 June 1984) is an Irish professional boxer.  He held the WBO middleweight title from 2014 to 2015, and the Irish super middleweight title in 2007.",
+      "Steve Little (boxer) | Steve \"Lightning\" Little (June 9, 1965 \u2013 January 30, 2000) was an American professional boxer.  Little was the \"Lineal\"/WBA Super Middleweight champion in 1994.  He is best known for his victories over former world champions Pipino Cuevas and Michael Nunn.",
+      "Zuri Lawrence | Zuri Lawrence (born June 22, 1970 in Poughkeepsie, New York) is a professional heavyweight boxer best known for scoring a few notable wins over famous boxers but never reaching contender status.  He is most well-known for having never scored a knockout win in 44 professional fights.",
+      "Howard King (boxer) | Howard King (born in Texas, United States) was an American heavyweight boxer and noted heavyweight contender during the 1950s and 60s.  Best known as Howard \"Honeyboy\" King, he held a notable victory over George Chuvalo (which Chuvalo later avenged), and a draw against Archie Moore, regarded as the #1 Pound-for-Pound boxer of all time by Boxrec.",
+      "Robert Alfonso | Robert Leodan Alfonso Acea (born November 11, 1986) is a Cuban professional boxer.  He is best known for his victory at the 2007 Pan American games in the super heavyweight division.",
+      "Dmitry Chudinov | Dmitry Chudinov (born 15 September 1986) is a Russian professional boxer.  He is a former WBA interim middleweight champion, and holds notable victories over Grady Brewer and Jorge Navarro.  His brother Fedor Chudinov is also a professional boxer."
+    ],
+    "hop2_docs": [
+      "Andy Lee (footballer, born 1962) | Andy Lee (born 14 September 1962) is an English footballer who played as a defender in the Football League for Tranmere Rovers and Cambridge United.",
+      "Andy Lee (German musician) | Andy Lee is a German musician who plays American piano rock 'n' roll music solo or with his backing band Tennessee Rain.  In 2012, with other Hannover-based musicians, Lee took part in the release of \"HerzSt\u00fccke\" a fund-raising CD for Hannover's children's hospital.",
+      "Andy Scott-Lee | Andy Scott-Lee (born Robert Andrew Jason Scott-Lee; 29 March 1980) is a Welsh singer and the brother of Steps singer Lisa Scott-Lee.",
+      "Andy Page (producer) | Andy Page is a producer who has frequently co-produced tracks with artists such as Sasha, Desyn Masiello, Phil K, Lee Burridge, and BT.",
+      "Andy Lee (comedian) | Andrew Thomas \"Andy\" Lee (born 24 May 1981) is an Australian comedian and musician.  He is known for working alongside Hamish Blake as part of the comedy duo Hamish & Andy.",
+      "Andy Lee (footballer, born 1982) | Andrew \"Andy\" Lee (born 18 August 1982) is an English retired footballer who made two league appearances for Bradford City between 2002 and 2003.  He signed for Aberystwyth Town in 2003 and also played for Wakefield & Emley.  He was born in Bradford.  He also played for Bradford Park Avenue and in 2010 won the Yorkshire Matchplay golf tournament.",
+      "Andy Newton-Lee | Andy Newton-Lee is.  a British actor best known for playing the part of Robbie Flynn in Channel 4's weeknight soap \"Hollyoaks\".  Newton-Lee attended Malet Lambert School in Hull, Yorkshire, England, where he grew up."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 41,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Bryan Lee Vera is best known for his memorable and notable victories over which Irish professional boxer born on June 11, 1984?\nPassages: [\"Brian Vera | Bryan Lee Vera (born December 28, 1981) is an American professional boxer who fights at super middleweight.  He is best known for his memorable and notable victories over then-undefeated Andy Lee in 2008, former world champion Sergio Mora (twice, in 2011 and 2012) and Serhiy Dzinziruk in 2013.  Vera currently trains in Cedar Park, Texas.\", \"Andy Lee (boxer) | Andy Lee (born 11 June 1984) is an Irish professional boxer.  He held the WBO middleweight title from 2014 to 2015, and the Irish super middleweight title in 2007.\", \"Steve Little (boxer) | Steve \\\"Lightning\\\" Little (June 9, 1965 \\u2013 January 30, 2000) was an American professional boxer.  Little was the \\\"Lineal\\\"/WBA Super Middleweight champion in 1994.  He is best known for his victories over former world champions Pipino Cuevas and Michael Nunn.\", \"Zuri Lawrence | Zuri Lawrence (born June 22, 1970 in Poughkeepsie, New York) is a professional heavyweight boxer best known for scoring a few notable wins over famous boxers but never reaching contender status.  He is most well-known for having never scored a knockout win in 44 professional fights.\", \"Howard King (boxer) | Howard King (born in Texas, United States) was an American heavyweight boxer and noted heavyweight contender during the 1950s and 60s.  Best known as Howard \\\"Honeyboy\\\" King, he held a notable victory over George Chuvalo (which Chuvalo later avenged), and a draw against Archie Moore, regarded as the #1 Pound-for-Pound boxer of all time by Boxrec.\", \"Robert Alfonso | Robert Leodan Alfonso Acea (born November 11, 1986) is a Cuban professional boxer.  He is best known for his victory at the 2007 Pan American games in the super heavyweight division.\", \"Dmitry Chudinov | Dmitry Chudinov (born 15 September 1986) is a Russian professional boxer.  He is a former WBA interim middleweight champion, and holds notable victories over Grady Brewer and Jorge Navarro.  His brother Fedor Chudinov is also a professional boxer.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the Irish professional boxer born on June 11, 1984, who Bryan Lee Vera is best known for defeating. Passage [1] mentions Bryan Lee Vera's notable victories, including defeating then-undefeated Andy Lee in 2008. In passage [2], Andy Lee is described as an Irish professional boxer born on June 11, 1984. This confirms the connection between Andy Lee and Bryan Lee Vera's victory over him.\nSummary: Bryan Lee Vera is best known for his memorable and notable victory over Irish professional boxer Andy Lee, who was born on June 11, 1984."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Bryan Lee Vera is best known for his memorable and notable victories over which Irish professional boxer born on June 11, 1984?\nSummary 1: Bryan Lee Vera is best known for his memorable and notable victory over Irish professional boxer Andy Lee, who was born on June 11, 1984."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about an Irish professional boxer born on June 11, 1984, over whom Bryan Lee Vera achieved notable victories. The summary explicitly mentions that Andy Lee, born on that exact date, is the boxer in question. Thus, the answer is clearly indicated within the provided summary.\nQuery: Who is Andy Lee?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Bryan Lee Vera is best known for his memorable and notable victories over which Irish professional boxer born on June 11, 1984?\nContext: Bryan Lee Vera is best known for his memorable and notable victory over Irish professional boxer Andy Lee, who was born on June 11, 1984.\nPassages: [\"Andy Lee (footballer, born 1962) | Andy Lee (born 14 September 1962) is an English footballer who played as a defender in the Football League for Tranmere Rovers and Cambridge United.\", \"Andy Lee (German musician) | Andy Lee is a German musician who plays American piano rock 'n' roll music solo or with his backing band Tennessee Rain.  In 2012, with other Hannover-based musicians, Lee took part in the release of \\\"HerzSt\\u00fccke\\\" a fund-raising CD for Hannover's children's hospital.\", \"Andy Scott-Lee | Andy Scott-Lee (born Robert Andrew Jason Scott-Lee; 29 March 1980) is a Welsh singer and the brother of Steps singer Lisa Scott-Lee.\", \"Andy Page (producer) | Andy Page is a producer who has frequently co-produced tracks with artists such as Sasha, Desyn Masiello, Phil K, Lee Burridge, and BT.\", \"Andy Lee (comedian) | Andrew Thomas \\\"Andy\\\" Lee (born 24 May 1981) is an Australian comedian and musician.  He is known for working alongside Hamish Blake as part of the comedy duo Hamish & Andy.\", \"Andy Lee (footballer, born 1982) | Andrew \\\"Andy\\\" Lee (born 18 August 1982) is an English retired footballer who made two league appearances for Bradford City between 2002 and 2003.  He signed for Aberystwyth Town in 2003 and also played for Wakefield & Emley.  He was born in Bradford.  He also played for Bradford Park Avenue and in 2010 won the Yorkshire Matchplay golf tournament.\", \"Andy Newton-Lee | Andy Newton-Lee is.  a British actor best known for playing the part of Robbie Flynn in Channel 4's weeknight soap \\\"Hollyoaks\\\".  Newton-Lee attended Malet Lambert School in Hull, Yorkshire, England, where he grew up.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The Irish professional boxer born on June 11, 1984, mentioned in the context is Andy Lee. Based on the context and the passages provided, Bryan Lee Vera's notable victory is linked specifically to Andy Lee, the boxer, not to the other individuals named Andy Lee in the passages. None of the alternative individuals listed in the passages fit the description provided in the question or context. Therefore, the answer explicitly points to Irish boxer Andy Lee.\nSummary: Bryan Lee Vera is best known for his memorable and notable victory over Irish professional boxer Andy Lee, who was born on June 11, 1984."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Bryan Lee Vera is best known for his memorable and notable victories over which Irish professional boxer born on June 11, 1984?\nSummary 1: Bryan Lee Vera is best known for his memorable and notable victory over Irish professional boxer Andy Lee, who was born on June 11, 1984.\nSummary 2: Bryan Lee Vera is best known for his memorable and notable victory over Irish professional boxer Andy Lee, who was born on June 11, 1984."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries explicitly state that Bryan Lee Vera is best known for his memorable and notable victory over Irish professional boxer Andy Lee, who was born on June 11, 1984. There is no discrepancy or ambiguity between the two summaries, and they clearly answer the question directly.\nAnswer: Andy Lee"
+      }
+    ]
+  }
+}

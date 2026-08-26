@@ -1,0 +1,96 @@
+{
+  "example_id": "5ac00b0c5542997d642959ac",
+  "question": "Are either Australian Terrier or Schipperke breeds of cat?",
+  "gold_answer": "no",
+  "prediction": {
+    "answer": "No, neither the Australian Terrier nor the Schipperke are breeds of cat; they are both breeds of dogs.",
+    "hop1_docs": [
+      "Australian Silky Terrier | The Australian Silky Terrier is a small breed of dog of the terrier dog type.  The breed was developed in Australia, although the ancestral types and breeds were from Great Britain.  It is closely related to the Australian Terrier and the Yorkshire Terrier.  The breed is called the \"Silky Terrier\" in North America, but is called the \"Australian Silky Terrier\" in its country of origin and in the rest of the world.",
+      "Australian Terrier | The Australian Terrier is a small breed of dog of the terrier dog type.  The breed was developed in Australia, although the ancestral types of dogs from which the breed descends were from Great Britain.",
+      "Yorkshire Terrier | The Yorkshire Terrier is a small dog breed of terrier type, developed during the 19th century in Yorkshire, England, to catch rats in clothing mills.  The defining feature of the breed is its maximum size of 7 lb , although some may exceed this and grow up to 15 lb .  It is placed in the Toy Terrier section of the Terrier Group by the F\u00e9d\u00e9ration Cynologique Internationale and in the Toy Group or Companion Group by other kennel clubs, including the American Kennel Club.  A popular companion dog, the Yorkshire Terrier has also been part of the development of other breeds, such as the Australian Silky Terrier.  It has a grey, black, and tan coat, and the breed's nickname is \"Yorkie\".",
+      "Schipperke | A Schipperke ( ; ] ) is a small Belgian breed of dog that originated in the early 16th century.  There has been a long informal debate over whether this type of dog is a spitz or miniature sheepdog.  In their home country of Belgium they are considered a small shepherd.",
+      "Irish Terrier | The Irish Terrier () is a dog breed from Ireland, one of many breeds of terrier.  The Irish Terrier is considered one of the oldest terrier breeds.  The Dublin dog show in 1873 was the first to provide a separate class for Irish Terriers.  By the 1880s, Irish Terriers were the fourth most popular breed in Ireland and Britain.",
+      "Australian Cat Federation | The Australian Cat Federation (ACF) is an Australian organisation created in 1972.  Its goal is to better the breeding of cats, to recognise new breeds, and to keep standards and rules regarding competitions.",
+      "Iris cyst | An iris cyst, or uveal cyst, is a small hollow structure either attached to the iris of the eye or floating free in the anterior chamber.  An iris cyst is composed of a single cell layer of epithelium and is filled with fluid.  It is most commonly seen as secondary to inflammation in the eye, especially with canine glaucoma.  They are most commonly seen in dogs. Golden Retrievers, Labrador Retrievers, and Boston Terriers are the most commonly affected breeds.  Iris cysts also occur in cats and horses.  The cysts are usually free floating in dogs, attached to the pupillary margin in cats, and present in the interior of the iris (especially blue irises) in horses."
+    ],
+    "hop2_docs": [
+      "Australian Silky Terrier | The Australian Silky Terrier is a small breed of dog of the terrier dog type.  The breed was developed in Australia, although the ancestral types and breeds were from Great Britain.  It is closely related to the Australian Terrier and the Yorkshire Terrier.  The breed is called the \"Silky Terrier\" in North America, but is called the \"Australian Silky Terrier\" in its country of origin and in the rest of the world.",
+      "What's a Girl to Do? | \"What's a Girl to Do?\"  is the follow-up single to the previous Australian hit \"Sister\" by Australian sisters/band Sister2Sister.  It is heard on the 2000 teen film \"Bring It On\".",
+      "Schipperke | A Schipperke ( ; ] ) is a small Belgian breed of dog that originated in the early 16th century.  There has been a long informal debate over whether this type of dog is a spitz or miniature sheepdog.  In their home country of Belgium they are considered a small shepherd.",
+      "Australian Terrier | The Australian Terrier is a small breed of dog of the terrier dog type.  The breed was developed in Australia, although the ancestral types of dogs from which the breed descends were from Great Britain.",
+      "What Do You Know? (TV series) | What Do You Know?  is a children's television program first screened on the Australian children's channel ABC3 on 27 December 2010.",
+      "Do You See What I See? (song) | \"Do You See What I See?\"  is the fourteenth single by Australian Pub rock band Hunters & Collectors, released in 1987.  It was released ahead of the album on August 1987 in both 7\" and 12\" formats.  It was released as the first single from Hunters & Collectors fifth album \"What's a Few Men? \".  \"Do You See What I See?\"  peaked at number 33 on the ARIA Charts and at number 13 on the Recorded Music NZ.",
+      "Black and Tan Terrier | The English Black and Tan Terrier is an extinct species of dog that was drawn into The Kennel Club as the Welsh Terrier and that remains extant outside of the Kennel Club as a \"Fell Terrier\"."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 23,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are either Australian Terrier or Schipperke breeds of cat?\nPassages: [\"Australian Silky Terrier | The Australian Silky Terrier is a small breed of dog of the terrier dog type.  The breed was developed in Australia, although the ancestral types and breeds were from Great Britain.  It is closely related to the Australian Terrier and the Yorkshire Terrier.  The breed is called the \\\"Silky Terrier\\\" in North America, but is called the \\\"Australian Silky Terrier\\\" in its country of origin and in the rest of the world.\", \"Australian Terrier | The Australian Terrier is a small breed of dog of the terrier dog type.  The breed was developed in Australia, although the ancestral types of dogs from which the breed descends were from Great Britain.\", \"Yorkshire Terrier | The Yorkshire Terrier is a small dog breed of terrier type, developed during the 19th century in Yorkshire, England, to catch rats in clothing mills.  The defining feature of the breed is its maximum size of 7 lb , although some may exceed this and grow up to 15 lb .  It is placed in the Toy Terrier section of the Terrier Group by the F\\u00e9d\\u00e9ration Cynologique Internationale and in the Toy Group or Companion Group by other kennel clubs, including the American Kennel Club.  A popular companion dog, the Yorkshire Terrier has also been part of the development of other breeds, such as the Australian Silky Terrier.  It has a grey, black, and tan coat, and the breed's nickname is \\\"Yorkie\\\".\", \"Schipperke | A Schipperke ( ; ] ) is a small Belgian breed of dog that originated in the early 16th century.  There has been a long informal debate over whether this type of dog is a spitz or miniature sheepdog.  In their home country of Belgium they are considered a small shepherd.\", \"Irish Terrier | The Irish Terrier () is a dog breed from Ireland, one of many breeds of terrier.  The Irish Terrier is considered one of the oldest terrier breeds.  The Dublin dog show in 1873 was the first to provide a separate class for Irish Terriers.  By the 1880s, Irish Terriers were the fourth most popular breed in Ireland and Britain.\", \"Australian Cat Federation | The Australian Cat Federation (ACF) is an Australian organisation created in 1972.  Its goal is to better the breeding of cats, to recognise new breeds, and to keep standards and rules regarding competitions.\", \"Iris cyst | An iris cyst, or uveal cyst, is a small hollow structure either attached to the iris of the eye or floating free in the anterior chamber.  An iris cyst is composed of a single cell layer of epithelium and is filled with fluid.  It is most commonly seen as secondary to inflammation in the eye, especially with canine glaucoma.  They are most commonly seen in dogs. Golden Retrievers, Labrador Retrievers, and Boston Terriers are the most commonly affected breeds.  Iris cysts also occur in cats and horses.  The cysts are usually free floating in dogs, attached to the pupillary margin in cats, and present in the interior of the iris (especially blue irises) in horses.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The passages indicate that both the Australian Terrier and the Schipperke are breeds of dogs. Specifically:\n- The Australian Terrier is described as a small breed of dog developed in Australia (passages [1], [2]).\n- The Schipperke is identified as a small Belgian breed of dog, originating in the 16th century (passage [4]).\nThere is no evidence in the provided passages to suggest that either the Australian Terrier or the Schipperke are breeds of cat.\nSummary: No, neither the Australian Terrier nor the Schipperke are breeds of cat; they are both breeds of dogs."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are either Australian Terrier or Schipperke breeds of cat?\nSummary 1: No, neither the Australian Terrier nor the Schipperke are breeds of cat; they are both breeds of dogs."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To answer whether the Australian Terrier or Schipperke are breeds of cat, it is necessary to identify the animal species each breed belongs to. Based on the provided summary, it is clear that both the Australian Terrier and the Schipperke are not cat breeds but are instead dog breeds. This directly resolves the question.\nQuery: What species do the Australian Terrier and Schipperke belong to?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are either Australian Terrier or Schipperke breeds of cat?\nContext: No, neither the Australian Terrier nor the Schipperke are breeds of cat; they are both breeds of dogs.\nPassages: [\"Australian Silky Terrier | The Australian Silky Terrier is a small breed of dog of the terrier dog type.  The breed was developed in Australia, although the ancestral types and breeds were from Great Britain.  It is closely related to the Australian Terrier and the Yorkshire Terrier.  The breed is called the \\\"Silky Terrier\\\" in North America, but is called the \\\"Australian Silky Terrier\\\" in its country of origin and in the rest of the world.\", \"What's a Girl to Do? | \\\"What's a Girl to Do?\\\"  is the follow-up single to the previous Australian hit \\\"Sister\\\" by Australian sisters/band Sister2Sister.  It is heard on the 2000 teen film \\\"Bring It On\\\".\", \"Schipperke | A Schipperke ( ; ] ) is a small Belgian breed of dog that originated in the early 16th century.  There has been a long informal debate over whether this type of dog is a spitz or miniature sheepdog.  In their home country of Belgium they are considered a small shepherd.\", \"Australian Terrier | The Australian Terrier is a small breed of dog of the terrier dog type.  The breed was developed in Australia, although the ancestral types of dogs from which the breed descends were from Great Britain.\", \"What Do You Know? (TV series) | What Do You Know?  is a children's television program first screened on the Australian children's channel ABC3 on 27 December 2010.\", \"Do You See What I See? (song) | \\\"Do You See What I See?\\\"  is the fourteenth single by Australian Pub rock band Hunters & Collectors, released in 1987.  It was released ahead of the album on August 1987 in both 7\\\" and 12\\\" formats.  It was released as the first single from Hunters & Collectors fifth album \\\"What's a Few Men? \\\".  \\\"Do You See What I See?\\\"  peaked at number 33 on the ARIA Charts and at number 13 on the Recorded Music NZ.\", \"Black and Tan Terrier | The English Black and Tan Terrier is an extinct species of dog that was drawn into The Kennel Club as the Welsh Terrier and that remains extant outside of the Kennel Club as a \\\"Fell Terrier\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the provided passages and context, the Australian Terrier and the Schipperke are clearly identified as dog breeds. The Australian Terrier is described in passages [1] and [4] as a small terrier-type dog developed in Australia. The Schipperke, according to passage [3], is a small Belgian dog breed with historical origins in the 16th century. There is no mention or suggestion that either of these breeds is related to cats. Thus, they are not cat breeds but rather distinct dog breeds.\nSummary: No, neither the Australian Terrier nor the Schipperke are breeds of cat; they are both breeds of dogs."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are either Australian Terrier or Schipperke breeds of cat?\nSummary 1: No, neither the Australian Terrier nor the Schipperke are breeds of cat; they are both breeds of dogs.\nSummary 2: No, neither the Australian Terrier nor the Schipperke are breeds of cat; they are both breeds of dogs."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries clearly state that the Australian Terrier and the Schipperke are breeds of dogs, not cats. Since both provide the same information and there is no contradictory evidence, the conclusion is straightforward and consistent.\nAnswer: No, neither the Australian Terrier nor the Schipperke are breeds of cat; they are both breeds of dogs."
+      }
+    ]
+  }
+}

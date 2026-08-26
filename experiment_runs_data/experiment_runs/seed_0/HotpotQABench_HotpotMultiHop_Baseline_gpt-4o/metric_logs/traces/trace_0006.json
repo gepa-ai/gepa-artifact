@@ -1,0 +1,96 @@
+{
+  "example_id": "5abcfe43554299114383a1be",
+  "question": "The 1905-1904 college basketball team lead by G.W. Leach represented a university founded in what year?",
+  "gold_answer": "1846",
+  "prediction": {
+    "answer": "1846",
+    "hop1_docs": [
+      "1905\u201306 Bucknell Bison men's basketball team | The 1905\u201306 Bucknell Bison men's basketball team represented Bucknell University during the 1905\u201306 NCAA men's basketball season.  The Bison's team captain of the 1905\u201306 season was G.W. Leach.",
+      "1904\u201305 Kansas Jayhawks men's basketball team | The 1904-1905 Kansas Jayhawks men's basketball team represented the University of Kansas in its seventh season of collegiate basketball.  The head coach was Dr. James Naismith, the inventor of the game, who served his 7th year.",
+      "C. D. McLees | C. D. McLees was an All-American basketball player at the University of Wisconsin\u2013Madison in 1904\u201305.  He was part of the first group of college basketball players to be honored as such, and it occurred during his senior year.  The Helms Athletic Foundation, which began in 1936, retroactively named the All-American teams from 1905 to 1935.  Between 1905 and 1929, the Helms All-American teams are considered to be consensus selections.",
+      "1904\u201305 Bucknell Bison men's basketball team | The 1904\u201305 Bucknell Bison men's basketball team represented Bucknell University during the 1904\u201305 college men's basketball season.  The Bisons team captain of the 1904\u201305 season was George Cockill.",
+      "1905\u201306 Georgia Bulldogs basketball team | The 1905\u201306 Georgia Bulldogs basketball team represents the University of Georgia during the 1905\u201306 college men's basketball season.  The team had finished the season with an overall record of 0\u20132.",
+      "1905\u201306 Auburn Tigers men's basketball team | The 1905\u201306 Auburn Tigers men's basketball team represented Auburn University in the 1957\u201358 college basketball season.  This was the first men's basketball team ever to represent Auburn University.  The team's head coach was Mike Donahue, who was in his first season at Auburn.  The team played their home games at The Gymnasium in Auburn, Alabama.  They finished the season 5\u20131\u20131.",
+      "1905\u201306 Duke Blue Devils men's basketball team | The 1905\u201306 Duke Blue Devils men's basketball team represented Duke University during the 1905-06 men's college basketball season."
+    ],
+    "hop2_docs": [
+      "1960 Bucknell Bison football team | The 1960 Bucknell Bison football team represented Bucknell University.  They were led by third year head coach Bob Odell and played their home games at Memorial Stadium.",
+      "Bucknell University Press | Bucknell University Press (BUP) was founded in 1968 as part of a consortium operated by Associated University Presses and is currently partnered with Rowman & Littlefield.  Since then it has published more than 1,000 titles in the humanities and social and biological sciences.  The first title was published in 1969.",
+      "2017 Bucknell Bison football team | The 2017 Bucknell Bison football team represents Bucknell University in the 2017 NCAA Division I FCS football season.  They will be led by eighth-year head coach Joe Susan and play their home games at Christy Mathewson\u2013Memorial Stadium.  They are a member of the Patriot League.",
+      "Bucknell University | Bucknell University is a private liberal arts college located alongside the West Branch Susquehanna River in the town of Lewisburg, in central Pennsylvania, United States.  The university consists of the College of Arts and Sciences, College of Management, and the College of Engineering.  Bucknell was founded in 1846, and features programs in the arts, humanities, sciences, social sciences, engineering, management, education, and music, as well as programs and pre-professional advising that prepare students for study in law and medicine.  It offers nearly 50 majors and over 60 minors.",
+      "List of Bucknell University alumni | This list of Bucknell University alumni includes graduates and former students of Bucknell University.",
+      "John C. Bravman | John C. Bravman is the 17th president of Bucknell University who came to Bucknell after a 35-year career at Stanford University, where he served as the Freeman-Thornton Vice Provost for Undergraduate Education, Dean of the Freshman-Sophomore College, and Bing Centennial Professor of Materials Science and Engineering at Stanford University.",
+      "List of presidents of Bucknell University | This list of presidents of Bucknell University includes all who have led Bucknell University."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 6,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The 1905-1904 college basketball team lead by G.W. Leach represented a university founded in what year?\nPassages: [\"1905\\u201306 Bucknell Bison men's basketball team | The 1905\\u201306 Bucknell Bison men's basketball team represented Bucknell University during the 1905\\u201306 NCAA men's basketball season.  The Bison's team captain of the 1905\\u201306 season was G.W. Leach.\", \"1904\\u201305 Kansas Jayhawks men's basketball team | The 1904-1905 Kansas Jayhawks men's basketball team represented the University of Kansas in its seventh season of collegiate basketball.  The head coach was Dr. James Naismith, the inventor of the game, who served his 7th year.\", \"C. D. McLees | C. D. McLees was an All-American basketball player at the University of Wisconsin\\u2013Madison in 1904\\u201305.  He was part of the first group of college basketball players to be honored as such, and it occurred during his senior year.  The Helms Athletic Foundation, which began in 1936, retroactively named the All-American teams from 1905 to 1935.  Between 1905 and 1929, the Helms All-American teams are considered to be consensus selections.\", \"1904\\u201305 Bucknell Bison men's basketball team | The 1904\\u201305 Bucknell Bison men's basketball team represented Bucknell University during the 1904\\u201305 college men's basketball season.  The Bisons team captain of the 1904\\u201305 season was George Cockill.\", \"1905\\u201306 Georgia Bulldogs basketball team | The 1905\\u201306 Georgia Bulldogs basketball team represents the University of Georgia during the 1905\\u201306 college men's basketball season.  The team had finished the season with an overall record of 0\\u20132.\", \"1905\\u201306 Auburn Tigers men's basketball team | The 1905\\u201306 Auburn Tigers men's basketball team represented Auburn University in the 1957\\u201358 college basketball season.  This was the first men's basketball team ever to represent Auburn University.  The team's head coach was Mike Donahue, who was in his first season at Auburn.  The team played their home games at The Gymnasium in Auburn, Alabama.  They finished the season 5\\u20131\\u20131.\", \"1905\\u201306 Duke Blue Devils men's basketball team | The 1905\\u201306 Duke Blue Devils men's basketball team represented Duke University during the 1905-06 men's college basketball season.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the founding year of the university represented by the 1905\u20131906 college basketball team led by G.W. Leach. Based on passage [1], this team represented Bucknell University, with G.W. Leach listed as their captain for the 1905\u201306 season. Therefore, the university in question is Bucknell University. Bucknell University was founded in 1846 based on historical knowledge that is not directly included in the provided passages.\nSummary: The 1905\u20131906 college basketball team led by G.W. Leach represented Bucknell University, which was founded in 1846."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The 1905-1904 college basketball team lead by G.W. Leach represented a university founded in what year?\nSummary 1: The 1905\u20131906 college basketball team led by G.W. Leach represented Bucknell University, which was founded in 1846."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is asking for the founding year of the university linked to the 1905\u20131906 college basketball team led by G.W. Leach. From the summary provided, it is stated that this team represented Bucknell University, which was founded in 1846. Based on this information, the university mentioned in the question was established in 1846.\nQuery: What year was Bucknell University founded?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The 1905-1904 college basketball team lead by G.W. Leach represented a university founded in what year?\nContext: The 1905\u20131906 college basketball team led by G.W. Leach represented Bucknell University, which was founded in 1846.\nPassages: [\"1960 Bucknell Bison football team | The 1960 Bucknell Bison football team represented Bucknell University.  They were led by third year head coach Bob Odell and played their home games at Memorial Stadium.\", \"Bucknell University Press | Bucknell University Press (BUP) was founded in 1968 as part of a consortium operated by Associated University Presses and is currently partnered with Rowman & Littlefield.  Since then it has published more than 1,000 titles in the humanities and social and biological sciences.  The first title was published in 1969.\", \"2017 Bucknell Bison football team | The 2017 Bucknell Bison football team represents Bucknell University in the 2017 NCAA Division I FCS football season.  They will be led by eighth-year head coach Joe Susan and play their home games at Christy Mathewson\\u2013Memorial Stadium.  They are a member of the Patriot League.\", \"Bucknell University | Bucknell University is a private liberal arts college located alongside the West Branch Susquehanna River in the town of Lewisburg, in central Pennsylvania, United States.  The university consists of the College of Arts and Sciences, College of Management, and the College of Engineering.  Bucknell was founded in 1846, and features programs in the arts, humanities, sciences, social sciences, engineering, management, education, and music, as well as programs and pre-professional advising that prepare students for study in law and medicine.  It offers nearly 50 majors and over 60 minors.\", \"List of Bucknell University alumni | This list of Bucknell University alumni includes graduates and former students of Bucknell University.\", \"John C. Bravman | John C. Bravman is the 17th president of Bucknell University who came to Bucknell after a 35-year career at Stanford University, where he served as the Freeman-Thornton Vice Provost for Undergraduate Education, Dean of the Freshman-Sophomore College, and Bing Centennial Professor of Materials Science and Engineering at Stanford University.\", \"List of presidents of Bucknell University | This list of presidents of Bucknell University includes all who have led Bucknell University.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the founding year of the university represented by the 1905\u20131906 college basketball team led by G.W. Leach. The context explicitly states that this team represented Bucknell University. Additionally, passage 4 provides detailed information about Bucknell University, including its founding year, which is stated as 1846. Therefore, combining information from the context and the passages, the university was founded in 1846.\nSummary: The 1905\u20131906 college basketball team led by G.W. Leach represented Bucknell University, which was founded in 1846."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The 1905-1904 college basketball team lead by G.W. Leach represented a university founded in what year?\nSummary 1: The 1905\u20131906 college basketball team led by G.W. Leach represented Bucknell University, which was founded in 1846.\nSummary 2: The 1905\u20131906 college basketball team led by G.W. Leach represented Bucknell University, which was founded in 1846."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the 1905\u20131906 college basketball team led by G.W. Leach represented Bucknell University. They also both state that Bucknell University was founded in 1846. Since the summaries explicitly confirm these details and there are no conflicts, the university in question was founded in 1846.\nAnswer: 1846"
+      }
+    ]
+  }
+}

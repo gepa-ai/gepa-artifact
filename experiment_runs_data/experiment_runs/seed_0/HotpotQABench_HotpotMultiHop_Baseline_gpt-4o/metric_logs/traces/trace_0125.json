@@ -1,0 +1,96 @@
+{
+  "example_id": "5abe87185542993f32c2a153",
+  "question": "Anthony Levandowski's project, Waymo, is from what company?",
+  "gold_answer": "autonomous car development company spun out of Google's parent company, Alphabet Inc., in December 2016.",
+  "prediction": {
+    "answer": "Waymo is associated with Alphabet Inc., the parent company of Google.",
+    "hop1_docs": [
+      "Anthony Levandowski | Anthony Levandowski (born March 15, 1980) is an American self-driving car engineer.  In 2016 he co-founded Otto, an autonomous trucking company, with Lior Ron, Claire Delaunay and Don Burnette.  Prior to Otto, he built the Google self-driving car while working as a co-founder and technical lead on the project, known as Waymo.  He is known for his work in the advancement of self-driving technology.",
+      "Waymo | Waymo is an autonomous car development company spun out of Google's parent company, Alphabet Inc., in December 2016.  It then took over the self-driving car project which Google had begun in 2009.  Alphabet describes Waymo as \"a self-driving tech company with a mission to make it safe and easy for people and things to move around\".  The new company, which will be headed by long-time automotive executive John Krafcik, is working towards making self-driving cars available to the public soon.  From the company's FAQ:",
+      "John Krafcik | John Krafcik (born September 18, 1961) is the chief executive officer (CEO) of Waymo Inc. Krafcik was the former president of True Car Inc. and President and CEO of Hyundai Motor America.  His current position was announced In December 2016, after Google separated its self-driving car project and transitioned it into a new company called Waymo, which is now housed under Google\u2019s parent company Alphabet.",
+      "Lior Ron (business executive) | Lior Ron (born March 16, 1977) is an Israeli-born businessman.  He served in the Israel Defense Forces from 1997 to 2004, before attending Stanford to pursue a MBA.  In 2016 he co-founded Otto, a self-driving truck company, with Anthony Levandowski, Claire Delaunay and Don Burnette.  Prior to Otto he was the Product Lead for Google Maps and then the Product Lead for Motorola Mobility, which was acquired by Google in 2011.",
+      "Otto (company) | Otto, legal name Ottomotto LLC is an American self-driving technology company established in January 2016 by Lior Ron and Anthony Levandowski.  The San Francisco-based team, which has 90 employees as of August 2016, retrofits semi trucks with radars, cameras and laser sensors to make them capable of driving themselves.  In August 2016 Otto was acquired by the transportation network company Uber.  Co-founder Lior Ron has stated that Otto will have self-driving fleets of trucks on the road by early 2017.",
+      "Now (The Tubes album) | Now is the third album released by The Tubes.  It was produced by John Anthony.  Fed up with constant meddling from Bud Scoppa and Don Wood under the direction of Bill Spooner including surreptitiously remixing a track when John was not at the studio, John Anthony was advised to quit the project by Jerry Moss.  Head of A&M A&R Kip Cohen said they took advantage of John and believed they overran the budget to bump up their union fees.  Bill Spooner took over and completed the project with the help of engineer Don Wood and Bud Scoppa.  John believes in retrospect he should not have tried to be \"one of the boys\" with this band but remains proud of his idea to get the band playing again live in the studio liked they used to do in the Bay Area bars.  \"My Head Is My Only House Unless It Rains\" is a firm Anthony favourite and sonically shows what he was trying to achieve.",
+      "SynBio | SynBio is a long-term project started in 2011 with the goal of creating innovative medicines, including what are known as Biobetters.  This project is a collaborative effort of several Russian and international pharmaceutical companies.  The largest private participant of SynBio is the Human Stem Cells Institute (HSCI), a leading Russian biotech company, and Rusnano is a key investor.  The project is a significant example of international cooperation between researchers in Russia, England, and Germany.  Special project company SynBio LLC is headquartered in Moscow."
+    ],
+    "hop2_docs": [
+      "Anthony Levandowski | Anthony Levandowski (born March 15, 1980) is an American self-driving car engineer.  In 2016 he co-founded Otto, an autonomous trucking company, with Lior Ron, Claire Delaunay and Don Burnette.  Prior to Otto, he built the Google self-driving car while working as a co-founder and technical lead on the project, known as Waymo.  He is known for his work in the advancement of self-driving technology.",
+      "Waymo | Waymo is an autonomous car development company spun out of Google's parent company, Alphabet Inc., in December 2016.  It then took over the self-driving car project which Google had begun in 2009.  Alphabet describes Waymo as \"a self-driving tech company with a mission to make it safe and easy for people and things to move around\".  The new company, which will be headed by long-time automotive executive John Krafcik, is working towards making self-driving cars available to the public soon.  From the company's FAQ:",
+      "John Krafcik | John Krafcik (born September 18, 1961) is the chief executive officer (CEO) of Waymo Inc. Krafcik was the former president of True Car Inc. and President and CEO of Hyundai Motor America.  His current position was announced In December 2016, after Google separated its self-driving car project and transitioned it into a new company called Waymo, which is now housed under Google\u2019s parent company Alphabet.",
+      "Otto (company) | Otto, legal name Ottomotto LLC is an American self-driving technology company established in January 2016 by Lior Ron and Anthony Levandowski.  The San Francisco-based team, which has 90 employees as of August 2016, retrofits semi trucks with radars, cameras and laser sensors to make them capable of driving themselves.  In August 2016 Otto was acquired by the transportation network company Uber.  Co-founder Lior Ron has stated that Otto will have self-driving fleets of trucks on the road by early 2017.",
+      "Lior Ron (business executive) | Lior Ron (born March 16, 1977) is an Israeli-born businessman.  He served in the Israel Defense Forces from 1997 to 2004, before attending Stanford to pursue a MBA.  In 2016 he co-founded Otto, a self-driving truck company, with Anthony Levandowski, Claire Delaunay and Don Burnette.  Prior to Otto he was the Product Lead for Google Maps and then the Product Lead for Motorola Mobility, which was acquired by Google in 2011.",
+      "Digitel Wireless | Digitel Wireless is a wireless broadband integrator associated with primarily rural and agricultural projects in the Southeastern United States.  It is best known for involvement in public and private funded projects that have compound results such as Internet access, research data collection, and water conservation.  The core team within Digitel Wireless are from what was once Camvera Networks (previously Tri-State Broadband).  Companies like Digitel Wireless are often associated with municipal wireless network projects.",
+      "Anthony Braxton's Charlie Parker Project 1993 | Anthony Braxton's Charlie Parker Project 1993 is an album featuring live and studio performances of compositions associated with Charlie Parker arranged and performed by saxophonist Anthony Braxton which was recorded in Switzerland and Germany in 1993 and released on the HatART label as a double CD in 1995."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 125,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Anthony Levandowski's project, Waymo, is from what company?\nPassages: [\"Anthony Levandowski | Anthony Levandowski (born March 15, 1980) is an American self-driving car engineer.  In 2016 he co-founded Otto, an autonomous trucking company, with Lior Ron, Claire Delaunay and Don Burnette.  Prior to Otto, he built the Google self-driving car while working as a co-founder and technical lead on the project, known as Waymo.  He is known for his work in the advancement of self-driving technology.\", \"Waymo | Waymo is an autonomous car development company spun out of Google's parent company, Alphabet Inc., in December 2016.  It then took over the self-driving car project which Google had begun in 2009.  Alphabet describes Waymo as \\\"a self-driving tech company with a mission to make it safe and easy for people and things to move around\\\".  The new company, which will be headed by long-time automotive executive John Krafcik, is working towards making self-driving cars available to the public soon.  From the company's FAQ:\", \"John Krafcik | John Krafcik (born September 18, 1961) is the chief executive officer (CEO) of Waymo Inc. Krafcik was the former president of True Car Inc. and President and CEO of Hyundai Motor America.  His current position was announced In December 2016, after Google separated its self-driving car project and transitioned it into a new company called Waymo, which is now housed under Google\\u2019s parent company Alphabet.\", \"Lior Ron (business executive) | Lior Ron (born March 16, 1977) is an Israeli-born businessman.  He served in the Israel Defense Forces from 1997 to 2004, before attending Stanford to pursue a MBA.  In 2016 he co-founded Otto, a self-driving truck company, with Anthony Levandowski, Claire Delaunay and Don Burnette.  Prior to Otto he was the Product Lead for Google Maps and then the Product Lead for Motorola Mobility, which was acquired by Google in 2011.\", \"Otto (company) | Otto, legal name Ottomotto LLC is an American self-driving technology company established in January 2016 by Lior Ron and Anthony Levandowski.  The San Francisco-based team, which has 90 employees as of August 2016, retrofits semi trucks with radars, cameras and laser sensors to make them capable of driving themselves.  In August 2016 Otto was acquired by the transportation network company Uber.  Co-founder Lior Ron has stated that Otto will have self-driving fleets of trucks on the road by early 2017.\", \"Now (The Tubes album) | Now is the third album released by The Tubes.  It was produced by John Anthony.  Fed up with constant meddling from Bud Scoppa and Don Wood under the direction of Bill Spooner including surreptitiously remixing a track when John was not at the studio, John Anthony was advised to quit the project by Jerry Moss.  Head of A&M A&R Kip Cohen said they took advantage of John and believed they overran the budget to bump up their union fees.  Bill Spooner took over and completed the project with the help of engineer Don Wood and Bud Scoppa.  John believes in retrospect he should not have tried to be \\\"one of the boys\\\" with this band but remains proud of his idea to get the band playing again live in the studio liked they used to do in the Bay Area bars.  \\\"My Head Is My Only House Unless It Rains\\\" is a firm Anthony favourite and sonically shows what he was trying to achieve.\", \"SynBio | SynBio is a long-term project started in 2011 with the goal of creating innovative medicines, including what are known as Biobetters.  This project is a collaborative effort of several Russian and international pharmaceutical companies.  The largest private participant of SynBio is the Human Stem Cells Institute (HSCI), a leading Russian biotech company, and Rusnano is a key investor.  The project is a significant example of international cooperation between researchers in Russia, England, and Germany.  Special project company SynBio LLC is headquartered in Moscow.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the company associated with Waymo, a project by Anthony Levandowski. From passage [1], we learn that Levandowski built the Google self-driving car and was a co-founder and technical lead of this project, which is known as Waymo. In passage [2], it is clarified that Waymo is an autonomous car development company that became a distinct entity under Google's parent company, Alphabet Inc. Additionally, passage [3] confirms that Waymo was spun out of Google's self-driving car project and transitioned into Alphabet Inc. This connects Waymo to Google and Alphabet.\nSummary: Anthony Levandowski's project, Waymo, is associated with Google's parent company, Alphabet Inc."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Anthony Levandowski's project, Waymo, is from what company?\nSummary 1: Anthony Levandowski's project, Waymo, is associated with Google's parent company, Alphabet Inc."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Waymo is a self-driving car project that was originally started under Google and is now a subsidiary of Alphabet Inc., which is Google's parent company. Anthony Levandowski was an influential figure in the development of self-driving technology and contributed to Waymo while it was part of Google's projects before Alphabet was formed. Thus, the company associated with Waymo is Alphabet Inc.\nQuery: What company is Anthony Levandowski's project, Waymo, associated with?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Anthony Levandowski's project, Waymo, is from what company?\nContext: Anthony Levandowski's project, Waymo, is associated with Google's parent company, Alphabet Inc.\nPassages: [\"Anthony Levandowski | Anthony Levandowski (born March 15, 1980) is an American self-driving car engineer.  In 2016 he co-founded Otto, an autonomous trucking company, with Lior Ron, Claire Delaunay and Don Burnette.  Prior to Otto, he built the Google self-driving car while working as a co-founder and technical lead on the project, known as Waymo.  He is known for his work in the advancement of self-driving technology.\", \"Waymo | Waymo is an autonomous car development company spun out of Google's parent company, Alphabet Inc., in December 2016.  It then took over the self-driving car project which Google had begun in 2009.  Alphabet describes Waymo as \\\"a self-driving tech company with a mission to make it safe and easy for people and things to move around\\\".  The new company, which will be headed by long-time automotive executive John Krafcik, is working towards making self-driving cars available to the public soon.  From the company's FAQ:\", \"John Krafcik | John Krafcik (born September 18, 1961) is the chief executive officer (CEO) of Waymo Inc. Krafcik was the former president of True Car Inc. and President and CEO of Hyundai Motor America.  His current position was announced In December 2016, after Google separated its self-driving car project and transitioned it into a new company called Waymo, which is now housed under Google\\u2019s parent company Alphabet.\", \"Otto (company) | Otto, legal name Ottomotto LLC is an American self-driving technology company established in January 2016 by Lior Ron and Anthony Levandowski.  The San Francisco-based team, which has 90 employees as of August 2016, retrofits semi trucks with radars, cameras and laser sensors to make them capable of driving themselves.  In August 2016 Otto was acquired by the transportation network company Uber.  Co-founder Lior Ron has stated that Otto will have self-driving fleets of trucks on the road by early 2017.\", \"Lior Ron (business executive) | Lior Ron (born March 16, 1977) is an Israeli-born businessman.  He served in the Israel Defense Forces from 1997 to 2004, before attending Stanford to pursue a MBA.  In 2016 he co-founded Otto, a self-driving truck company, with Anthony Levandowski, Claire Delaunay and Don Burnette.  Prior to Otto he was the Product Lead for Google Maps and then the Product Lead for Motorola Mobility, which was acquired by Google in 2011.\", \"Digitel Wireless | Digitel Wireless is a wireless broadband integrator associated with primarily rural and agricultural projects in the Southeastern United States.  It is best known for involvement in public and private funded projects that have compound results such as Internet access, research data collection, and water conservation.  The core team within Digitel Wireless are from what was once Camvera Networks (previously Tri-State Broadband).  Companies like Digitel Wireless are often associated with municipal wireless network projects.\", \"Anthony Braxton's Charlie Parker Project 1993 | Anthony Braxton's Charlie Parker Project 1993 is an album featuring live and studio performances of compositions associated with Charlie Parker arranged and performed by saxophonist Anthony Braxton which was recorded in Switzerland and Germany in 1993 and released on the HatART label as a double CD in 1995.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Anthony Levandowski's project, Waymo, originated from Google's self-driving car initiative, as described in passages. Waymo later became an independent company under Alphabet Inc., Google's parent company, as stated in passage [2] and reiterated in passage [3]. This indicates that the company responsible for the project is Alphabet Inc.\nSummary: Anthony Levandowski's project, Waymo, is from Alphabet Inc., the parent company of Google."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Anthony Levandowski's project, Waymo, is from what company?\nSummary 1: Anthony Levandowski's project, Waymo, is associated with Google's parent company, Alphabet Inc.\nSummary 2: Anthony Levandowski's project, Waymo, is from Alphabet Inc., the parent company of Google."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries indicate that Anthony Levandowski's project, Waymo, is associated with Alphabet Inc., which is Google's parent company. The information in both summaries is consistent and provides a clear answer to the question.\nAnswer: Waymo is associated with Alphabet Inc., the parent company of Google."
+      }
+    ]
+  }
+}

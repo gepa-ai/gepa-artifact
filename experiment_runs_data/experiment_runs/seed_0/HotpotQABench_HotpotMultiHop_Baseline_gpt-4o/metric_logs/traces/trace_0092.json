@@ -1,0 +1,96 @@
+{
+  "example_id": "5a8f0bbb5542997ba9cb318c",
+  "question": "Nancy Steiner developed costumes for a 2009 supernatural drama film directed by whom?",
+  "gold_answer": "Peter Jackson",
+  "prediction": {
+    "answer": "Conor McPherson",
+    "hop1_docs": [
+      "Nancy Steiner | Nancy Steiner is an American costume designer.  Her credits include \"Little Miss Sunshine\", \"Lost in Translation\", \"The Lovely Bones\", \"The Good Girl\" and \"The Virgin Suicides\".",
+      "Parrish (film) | Parrish is a 1961 American drama film made by Warner Bros..  It was written, produced and directed by Delmer Daves, based on the 1958 novel of the same name by Mildred Savage.  The music score was by Max Steiner, the Technicolor cinematography by Harry Stradling Sr., the art direction by Leo K. Kuter and the costume design by Howard Shoup.",
+      "The Eclipse (2009 film) | The Eclipse is a 2009 Irish supernatural drama film directed by Conor McPherson and stars Ciar\u00e1n Hinds, Iben Hjejle and Aidan Quinn.",
+      "The Sudden Loneliness of Konrad Steiner | The Sudden Loneliness of Konrad Steiner (German: \"Die pl\u00f6tzliche Einsamkeit des Konrad Steiner\" ) is a 1976 Swiss drama film directed by Kurt Gloor.  It was entered into the 26th Berlin International Film Festival.",
+      "Count Your Blessings (1959 film) | Count Your Blessings is a 1959 drama film made by Metro-Goldwyn-Mayer.  It was directed by Jean Negulesco, written and produced by Karl Tunberg, based on the 1951 novel \"The Blessing\" by Nancy Mitford.  The music score was by Franz Waxman and the cinematography by George J. Folsey and Milton R. Krasner.  The costume design was by Helen Rose.",
+      "The Duchess (film) | The Duchess is a 2008 British drama film directed by Saul Dibb.  It is based on Amanda Foreman's biography of the 18th-century English aristocrat Georgiana Cavendish, Duchess of Devonshire.  It was released in September 2008 in the United Kingdom.  The film received the Academy Award for Best Costume Design at the 81st ceremony in 2009.  Costumer = Michael O'Connor",
+      "According to Greta | According to Greta (also known as \"Surviving Summer\") is a 2009 American independent drama film directed by Nancy Bardawil."
+    ],
+    "hop2_docs": [
+      "The Eclipse (2009 film) | The Eclipse is a 2009 Irish supernatural drama film directed by Conor McPherson and stars Ciar\u00e1n Hinds, Iben Hjejle and Aidan Quinn.",
+      "The Twilight Saga: Eclipse | The Twilight Saga: Eclipse, commonly referred to as Eclipse, is a 2010 American romantic fantasy film based on Stephenie Meyer's 2007 novel \"Eclipse\".  It is the third installment of \"The Twilight Saga\" film series, following 2008's \"Twilight\" and 2009's \"\".  Summit Entertainment greenlit the film in February 2009.  Directed by David Slade, the film stars Kristen Stewart, Robert Pattinson, and Taylor Lautner, reprising their roles as Bella Swan, Edward Cullen, and Jacob Black, respectively.  Melissa Rosenberg, who penned the scripts for both \"Twilight\" and \"New Moon\", returned as screenwriter.",
+      "Eclipse (1994 film) | Eclipse is a Canadian drama film, written and directed by Jeremy Podeswa and released in 1994.",
+      "Son of the Sunshine | Son of the Sunshine is a Canadian supernatural drama film.  Directed by Ryan Ward and written by Ward and Matthew Heiti, the film stars Ward as Sonny Johnns, a young man with Tourette syndrome who undergoes an experimental surgical procedure to cure the condition, only to discover that he also loses his supernatural ability to heal others.",
+      "Graghanam | Graghanam (English: Eclipse ) is an upcoming Tamil supernatural dark crime thriller film directed by Elan and produced by Big Print Pictures Production.  The film features an ensemble cast including Kreshna, Chandran and Nandini Rai in the lead roles.",
+      "Incomplete Eclipse | Incomplete Eclipse (Czech: \"Ne\u00fapln\u00e9 zatmen\u00ed\" ) is a 1982 Czech drama film directed by Jaromil Jire\u0161.  It was entered into the 33rd Berlin International Film Festival.  The film was also selected as the Czechoslovak entry for the Best Foreign Language Film at the 56th Academy Awards, but was not accepted as a nominee.",
+      "The Grudge 3 | The Grudge 3 is a 2009 American direct-to-video supernatural horror film and the third film in \"The Grudge\" series.  Toby Wilkins, who had previously directed the successful film \"Splinter\" and the short films \"Tales from the Grudge\", took Takashi Shimizu's place as director who later served as executive producer, while Brad Keene replaced Stephen Susco as screenwriter.  The film stars Johanna Braddy, Shawnee Smith and Marina Sirtis, with a special appearance by Matthew Knight (from \"The Grudge 2\"), and was released on DVD on May 12, 2009."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 92,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Nancy Steiner developed costumes for a 2009 supernatural drama film directed by whom?\nPassages: [\"Nancy Steiner | Nancy Steiner is an American costume designer.  Her credits include \\\"Little Miss Sunshine\\\", \\\"Lost in Translation\\\", \\\"The Lovely Bones\\\", \\\"The Good Girl\\\" and \\\"The Virgin Suicides\\\".\", \"Parrish (film) | Parrish is a 1961 American drama film made by Warner Bros..  It was written, produced and directed by Delmer Daves, based on the 1958 novel of the same name by Mildred Savage.  The music score was by Max Steiner, the Technicolor cinematography by Harry Stradling Sr., the art direction by Leo K. Kuter and the costume design by Howard Shoup.\", \"The Eclipse (2009 film) | The Eclipse is a 2009 Irish supernatural drama film directed by Conor McPherson and stars Ciar\\u00e1n Hinds, Iben Hjejle and Aidan Quinn.\", \"The Sudden Loneliness of Konrad Steiner | The Sudden Loneliness of Konrad Steiner (German: \\\"Die pl\\u00f6tzliche Einsamkeit des Konrad Steiner\\\" ) is a 1976 Swiss drama film directed by Kurt Gloor.  It was entered into the 26th Berlin International Film Festival.\", \"Count Your Blessings (1959 film) | Count Your Blessings is a 1959 drama film made by Metro-Goldwyn-Mayer.  It was directed by Jean Negulesco, written and produced by Karl Tunberg, based on the 1951 novel \\\"The Blessing\\\" by Nancy Mitford.  The music score was by Franz Waxman and the cinematography by George J. Folsey and Milton R. Krasner.  The costume design was by Helen Rose.\", \"The Duchess (film) | The Duchess is a 2008 British drama film directed by Saul Dibb.  It is based on Amanda Foreman's biography of the 18th-century English aristocrat Georgiana Cavendish, Duchess of Devonshire.  It was released in September 2008 in the United Kingdom.  The film received the Academy Award for Best Costume Design at the 81st ceremony in 2009.  Costumer = Michael O'Connor\", \"According to Greta | According to Greta (also known as \\\"Surviving Summer\\\") is a 2009 American independent drama film directed by Nancy Bardawil.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To identify the director of the 2009 supernatural drama film for which Nancy Steiner developed costumes, we assess the provided passages. Among the mentioned films, \"The Eclipse\" is described as a 2009 Irish supernatural drama film, directed by Conor McPherson (passage [3]). While other films referenced in the passages (e.g., \"The Duchess\", \"According to Greta\") either do not fit the \"supernatural drama\" genre or do not involve costume work by Nancy Steiner, \"The Eclipse\" satisfies the question's criteria.\nSummary: Nancy Steiner developed costumes for \"The Eclipse,\" a 2009 supernatural drama film directed by Conor McPherson."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Nancy Steiner developed costumes for a 2009 supernatural drama film directed by whom?\nSummary 1: Nancy Steiner developed costumes for \"The Eclipse,\" a 2009 supernatural drama film directed by Conor McPherson."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the name of the director of a 2009 supernatural drama film for which Nancy Steiner developed costumes. Summary_1 directly provides the information by stating that Nancy Steiner worked on \"The Eclipse,\" which was directed by Conor McPherson.\nQuery: Who directed the 2009 supernatural drama film \"The Eclipse\"?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Nancy Steiner developed costumes for a 2009 supernatural drama film directed by whom?\nContext: Nancy Steiner developed costumes for \"The Eclipse,\" a 2009 supernatural drama film directed by Conor McPherson.\nPassages: [\"The Eclipse (2009 film) | The Eclipse is a 2009 Irish supernatural drama film directed by Conor McPherson and stars Ciar\\u00e1n Hinds, Iben Hjejle and Aidan Quinn.\", \"The Twilight Saga: Eclipse | The Twilight Saga: Eclipse, commonly referred to as Eclipse, is a 2010 American romantic fantasy film based on Stephenie Meyer's 2007 novel \\\"Eclipse\\\".  It is the third installment of \\\"The Twilight Saga\\\" film series, following 2008's \\\"Twilight\\\" and 2009's \\\"\\\".  Summit Entertainment greenlit the film in February 2009.  Directed by David Slade, the film stars Kristen Stewart, Robert Pattinson, and Taylor Lautner, reprising their roles as Bella Swan, Edward Cullen, and Jacob Black, respectively.  Melissa Rosenberg, who penned the scripts for both \\\"Twilight\\\" and \\\"New Moon\\\", returned as screenwriter.\", \"Eclipse (1994 film) | Eclipse is a Canadian drama film, written and directed by Jeremy Podeswa and released in 1994.\", \"Son of the Sunshine | Son of the Sunshine is a Canadian supernatural drama film.  Directed by Ryan Ward and written by Ward and Matthew Heiti, the film stars Ward as Sonny Johnns, a young man with Tourette syndrome who undergoes an experimental surgical procedure to cure the condition, only to discover that he also loses his supernatural ability to heal others.\", \"Graghanam | Graghanam (English: Eclipse ) is an upcoming Tamil supernatural dark crime thriller film directed by Elan and produced by Big Print Pictures Production.  The film features an ensemble cast including Kreshna, Chandran and Nandini Rai in the lead roles.\", \"Incomplete Eclipse | Incomplete Eclipse (Czech: \\\"Ne\\u00fapln\\u00e9 zatmen\\u00ed\\\" ) is a 1982 Czech drama film directed by Jaromil Jire\\u0161.  It was entered into the 33rd Berlin International Film Festival.  The film was also selected as the Czechoslovak entry for the Best Foreign Language Film at the 56th Academy Awards, but was not accepted as a nominee.\", \"The Grudge 3 | The Grudge 3 is a 2009 American direct-to-video supernatural horror film and the third film in \\\"The Grudge\\\" series.  Toby Wilkins, who had previously directed the successful film \\\"Splinter\\\" and the short films \\\"Tales from the Grudge\\\", took Takashi Shimizu's place as director who later served as executive producer, while Brad Keene replaced Stephen Susco as screenwriter.  The film stars Johanna Braddy, Shawnee Smith and Marina Sirtis, with a special appearance by Matthew Knight (from \\\"The Grudge 2\\\"), and was released on DVD on May 12, 2009.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks who directed the 2009 supernatural drama film for which Nancy Steiner developed the costumes. From the context provided, it is stated that Nancy Steiner created costumes for \"The Eclipse,\" a 2009 supernatural drama film directed by Conor McPherson. Additionally, passage [1] confirms that \"The Eclipse\" is a 2009 Irish supernatural drama film directed by Conor McPherson. Cross-referencing the context and passages verifies that the director of the film is Conor McPherson.\nSummary: Nancy Steiner developed costumes for \"The Eclipse,\" a 2009 supernatural drama film directed by Conor McPherson."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Nancy Steiner developed costumes for a 2009 supernatural drama film directed by whom?\nSummary 1: Nancy Steiner developed costumes for \"The Eclipse,\" a 2009 supernatural drama film directed by Conor McPherson.\nSummary 2: Nancy Steiner developed costumes for \"The Eclipse,\" a 2009 supernatural drama film directed by Conor McPherson."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that Nancy Steiner developed costumes for \"The Eclipse,\" a 2009 supernatural drama film directed by Conor McPherson. There is no contradiction, and both summaries provide the same specific information regarding the director.\nAnswer: Conor McPherson"
+      }
+    ]
+  }
+}

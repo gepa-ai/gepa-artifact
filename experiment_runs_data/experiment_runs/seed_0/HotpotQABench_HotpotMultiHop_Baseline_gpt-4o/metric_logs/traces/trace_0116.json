@@ -1,0 +1,96 @@
+{
+  "example_id": "5a73c1425542992d56e7e393",
+  "question": "What is the name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin off show of Space Ghost Coast to Coast?",
+  "gold_answer": "Zorak",
+  "prediction": {
+    "answer": "Zorak",
+    "hop1_docs": [
+      "Cartoon Planet | Cartoon Planet was an American animated variety show that originally ran from 1995 to 1998, and from March 30, 2012 to February 8, 2014 (in a different format) on Cartoon Network.  A spin-off of the animated \"Space Ghost Coast to Coast\" talk show, the original premise was that Space Ghost had recruited his imprisoned evil nemesis Zorak and his loud and dimwitted archenemy Brak to assist him in hosting a variety show.",
+      "The Brak Show | The Brak Show is an American adult animated sitcom that aired on Adult Swim.  \"The Brak Show\" was created by Andy Merrill, Jim Fortier, and Pete Smith, serving as a spin-off of the animated television series, \"Space Ghost Coast to Coast\", and featured recurring characters from \"Space Ghost Coast to Coast\" and \"Cartoon Planet\".  Both programs used stock footage from the Hanna-Barbera cartoon \"Space Ghost\".  The protagonist is Brak, voiced by Andy Merrill, who developed a quirky persona for the character.",
+      "List of Space Ghost Coast to Coast episodes | \"Space Ghost Coast to Coast\" is an animated talk show starring washed up superhero Space Ghost, a.k.a. Tad Ghostal, as a late-night talk show host.  To aid him, Space Ghost has imprisoned his arch enemies Zorak and Moltar, and has forced them into slavery.  Zorak acts as band leader and Moltar acts as director and producer.  They regularly disrupt the show and make no secret of the fact that they hate Space Ghost.",
+      "Zorak | Zorak is a fictional character who first appeared in the Hanna-Barbera animated series \"Space Ghost\".  Zorak appeared as a 7 ft green mantis and is a foe of the show's titular superhero.",
+      "Take Two with Phineas and Ferb | Take Two with Phineas and Ferb is a spin-off series from \"Phineas and Ferb\" that premiered on Disney Channel on December 3, 2010.  The series revolves around Phineas and Ferb interviewing celebrities, a premise which bears similarities to that of Cartoon Network's late-night animated talk show \"Space Ghost Coast to Coast\" on Adult Swim.  The show was cancelled after one season.",
+      "Space Ghost Coast to Coast | Space Ghost Coast to Coast is an American adult animated parody talk show, created by Mike Lazzo and hosted by the 1960s Hanna-Barbera cartoon character Space Ghost.  Though the original 1960s series aired as a standard Hanna-Barbera Saturday-morning superhero cartoon, \"Space Ghost Coast to Coast\" was a total reboot of the series intended for adults, now reinterpreted as a surreal spoof talk show and produced using the original artwork.  The first two seasons were presented as a serious talk show with subdued jokes, while the later seasons relied more on surrealism, non-sequiturs, and parodies.",
+      "George Lowe | George Edward Lowe (born November 10, 1958) is an American voice actor and comedian.  He is perhaps best known for his role as the voice of Space Ghost on the Cartoon Network/Adult Swim/GameTap animated series \"Space Ghost Coast to Coast\"; he also played the part for its spin-off \"Cartoon Planet\".  He continued to voice Space Ghost in several cameos in other programs for several years, even following the conclusion of the series.  He has also made recurring voice appearances on \"Aqua Teen Hunger Force\" and \"Robot Chicken\"."
+    ],
+    "hop2_docs": [
+      "Zorak | Zorak is a fictional character who first appeared in the Hanna-Barbera animated series \"Space Ghost\".  Zorak appeared as a 7 ft green mantis and is a foe of the show's titular superhero.",
+      "Zorak, Armenia | Zorak (Armenian: \u0536\u0578\u0580\u0561\u056f ), is a village in the Ararat Province of Armenia.",
+      "List of Space Ghost Coast to Coast episodes | \"Space Ghost Coast to Coast\" is an animated talk show starring washed up superhero Space Ghost, a.k.a. Tad Ghostal, as a late-night talk show host.  To aid him, Space Ghost has imprisoned his arch enemies Zorak and Moltar, and has forced them into slavery.  Zorak acts as band leader and Moltar acts as director and producer.  They regularly disrupt the show and make no secret of the fact that they hate Space Ghost.",
+      "Space Ghost's Musical Bar-B-Que | Space Ghost's Musical Bar-B-Que is the first of two commercially available Cartoon Planet soundtrack albums, the second being Space Ghost's Surf & Turf.  Featuring songs and skits by Space Ghost and his arch enemies Zorak and Brak.",
+      "Space Ghost's Surf &amp; Turf | Space Ghost's Surf & Turf is the second of two commercially available \"Cartoon Planet\" soundtrack albums, the first being Space Ghost's Musical Bar-B-Que.  Featuring songs and skits by Space Ghost and his former arch enemies Zorak and Brak.",
+      "C. Martin Croker | Clay Martin Croker (January 10, 1962 \u2013 September 17, 2016), generally billed as C. Martin Croker, was an American animator and voice actor.  He was best known for having provided the voices of Zorak and Moltar on the animated series \"Space Ghost Coast to Coast\", replacing Don Messick, who originally voiced the characters in the 1960s series \"Space Ghost\".",
+      "Brak (character) | Brak is a fictional character and supervillain on the 1966 Hanna-Barbera animated series \"Space Ghost\", portrayed as a catlike alien space pirate trying to conquer the galaxy.  Brak appeared alongside his twin brother Sisto in such episodes as \"The Lure\" and \"The Looters\", and was also a member of the Council of Doom (an organization of \"Space Ghost\" villains which originally consisted of Zorak, Moltar, Metallus, Creature King, Black Widow, and himself).  In the 1990s the Brak character"
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 116,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin off show of Space Ghost Coast to Coast?\nPassages: [\"Cartoon Planet | Cartoon Planet was an American animated variety show that originally ran from 1995 to 1998, and from March 30, 2012 to February 8, 2014 (in a different format) on Cartoon Network.  A spin-off of the animated \\\"Space Ghost Coast to Coast\\\" talk show, the original premise was that Space Ghost had recruited his imprisoned evil nemesis Zorak and his loud and dimwitted archenemy Brak to assist him in hosting a variety show.\", \"The Brak Show | The Brak Show is an American adult animated sitcom that aired on Adult Swim.  \\\"The Brak Show\\\" was created by Andy Merrill, Jim Fortier, and Pete Smith, serving as a spin-off of the animated television series, \\\"Space Ghost Coast to Coast\\\", and featured recurring characters from \\\"Space Ghost Coast to Coast\\\" and \\\"Cartoon Planet\\\".  Both programs used stock footage from the Hanna-Barbera cartoon \\\"Space Ghost\\\".  The protagonist is Brak, voiced by Andy Merrill, who developed a quirky persona for the character.\", \"List of Space Ghost Coast to Coast episodes | \\\"Space Ghost Coast to Coast\\\" is an animated talk show starring washed up superhero Space Ghost, a.k.a. Tad Ghostal, as a late-night talk show host.  To aid him, Space Ghost has imprisoned his arch enemies Zorak and Moltar, and has forced them into slavery.  Zorak acts as band leader and Moltar acts as director and producer.  They regularly disrupt the show and make no secret of the fact that they hate Space Ghost.\", \"Zorak | Zorak is a fictional character who first appeared in the Hanna-Barbera animated series \\\"Space Ghost\\\".  Zorak appeared as a 7 ft green mantis and is a foe of the show's titular superhero.\", \"Take Two with Phineas and Ferb | Take Two with Phineas and Ferb is a spin-off series from \\\"Phineas and Ferb\\\" that premiered on Disney Channel on December 3, 2010.  The series revolves around Phineas and Ferb interviewing celebrities, a premise which bears similarities to that of Cartoon Network's late-night animated talk show \\\"Space Ghost Coast to Coast\\\" on Adult Swim.  The show was cancelled after one season.\", \"Space Ghost Coast to Coast | Space Ghost Coast to Coast is an American adult animated parody talk show, created by Mike Lazzo and hosted by the 1960s Hanna-Barbera cartoon character Space Ghost.  Though the original 1960s series aired as a standard Hanna-Barbera Saturday-morning superhero cartoon, \\\"Space Ghost Coast to Coast\\\" was a total reboot of the series intended for adults, now reinterpreted as a surreal spoof talk show and produced using the original artwork.  The first two seasons were presented as a serious talk show with subdued jokes, while the later seasons relied more on surrealism, non-sequiturs, and parodies.\", \"George Lowe | George Edward Lowe (born November 10, 1958) is an American voice actor and comedian.  He is perhaps best known for his role as the voice of Space Ghost on the Cartoon Network/Adult Swim/GameTap animated series \\\"Space Ghost Coast to Coast\\\"; he also played the part for its spin-off \\\"Cartoon Planet\\\".  He continued to voice Space Ghost in several cameos in other programs for several years, even following the conclusion of the series.  He has also made recurring voice appearances on \\\"Aqua Teen Hunger Force\\\" and \\\"Robot Chicken\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the name of the 7 ft green mantis who is an imprisoned evil nemesis in the spin-off show of \"Space Ghost Coast to Coast.\" Based on the provided passages, several key points clarify the answer: Zorak is explicitly described as a 7 ft green mantis and a foe of the titular superhero in \"Space Ghost\" as per passage [4]. Additionally, passages [1] and [3] confirm Zorak's role as Space Ghost's imprisoned nemesis recruited to assist in \"Cartoon Planet,\" a spin-off of \"Space Ghost Coast to Coast.\" Zorak's character fulfills all descriptors mentioned in the question.\nSummary: The name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin-off show of \"Space Ghost Coast to Coast\" is Zorak."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin off show of Space Ghost Coast to Coast?\nSummary 1: The name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin-off show of \"Space Ghost Coast to Coast\" is Zorak."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The summary states that the name of the 7 ft green mantis, who is an imprisoned evil nemesis on the spin-off show of \"Space Ghost Coast to Coast,\" is Zorak. Since the summary directly provides the answer to the question, no further analysis is needed, and the response aligns perfectly with the query.\nQuery: Zorak"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin off show of Space Ghost Coast to Coast?\nContext: The name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin-off show of \"Space Ghost Coast to Coast\" is Zorak.\nPassages: [\"Zorak | Zorak is a fictional character who first appeared in the Hanna-Barbera animated series \\\"Space Ghost\\\".  Zorak appeared as a 7 ft green mantis and is a foe of the show's titular superhero.\", \"Zorak, Armenia | Zorak (Armenian: \\u0536\\u0578\\u0580\\u0561\\u056f ), is a village in the Ararat Province of Armenia.\", \"List of Space Ghost Coast to Coast episodes | \\\"Space Ghost Coast to Coast\\\" is an animated talk show starring washed up superhero Space Ghost, a.k.a. Tad Ghostal, as a late-night talk show host.  To aid him, Space Ghost has imprisoned his arch enemies Zorak and Moltar, and has forced them into slavery.  Zorak acts as band leader and Moltar acts as director and producer.  They regularly disrupt the show and make no secret of the fact that they hate Space Ghost.\", \"Space Ghost's Musical Bar-B-Que | Space Ghost's Musical Bar-B-Que is the first of two commercially available Cartoon Planet soundtrack albums, the second being Space Ghost's Surf & Turf.  Featuring songs and skits by Space Ghost and his arch enemies Zorak and Brak.\", \"Space Ghost's Surf &amp; Turf | Space Ghost's Surf & Turf is the second of two commercially available \\\"Cartoon Planet\\\" soundtrack albums, the first being Space Ghost's Musical Bar-B-Que.  Featuring songs and skits by Space Ghost and his former arch enemies Zorak and Brak.\", \"C. Martin Croker | Clay Martin Croker (January 10, 1962 \\u2013 September 17, 2016), generally billed as C. Martin Croker, was an American animator and voice actor.  He was best known for having provided the voices of Zorak and Moltar on the animated series \\\"Space Ghost Coast to Coast\\\", replacing Don Messick, who originally voiced the characters in the 1960s series \\\"Space Ghost\\\".\", \"Brak (character) | Brak is a fictional character and supervillain on the 1966 Hanna-Barbera animated series \\\"Space Ghost\\\", portrayed as a catlike alien space pirate trying to conquer the galaxy.  Brak appeared alongside his twin brother Sisto in such episodes as \\\"The Lure\\\" and \\\"The Looters\\\", and was also a member of the Council of Doom (an organization of \\\"Space Ghost\\\" villains which originally consisted of Zorak, Moltar, Metallus, Creature King, Black Widow, and himself).  In the 1990s the Brak character\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin-off show \"Space Ghost Coast to Coast.\" The context provides that the character's name is Zorak and mentions his role as a nemesis. In the provided passages, [1] confirms Zorak is a fictional character and a 7 ft green mantis, while [3] specifies his role as an imprisoned arch enemy aiding Space Ghost on \"Space Ghost Coast to Coast.\" Additionally, [6] confirms that Zorak was one of the main characters on the show. Together, these references validate Zorak's identity and role on the show.\nSummary: The name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin-off show \"Space Ghost Coast to Coast\" is Zorak."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin off show of Space Ghost Coast to Coast?\nSummary 1: The name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin-off show of \"Space Ghost Coast to Coast\" is Zorak.\nSummary 2: The name of the 7 ft green mantis who is an imprisoned evil nemesis on the spin-off show \"Space Ghost Coast to Coast\" is Zorak."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries clearly state that the name of the 7 ft green mantis, an imprisoned evil nemesis on the spin-off show of \"Space Ghost Coast to Coast,\" is Zorak. The information in both summaries aligns without any discrepancies, confirming the correct answer.\nAnswer: Zorak"
+      }
+    ]
+  }
+}

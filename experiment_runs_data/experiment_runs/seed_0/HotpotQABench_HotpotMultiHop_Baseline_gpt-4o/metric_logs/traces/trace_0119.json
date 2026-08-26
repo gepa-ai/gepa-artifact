@@ -1,0 +1,96 @@
+{
+  "example_id": "5ae1390d55429901ffe4ae08",
+  "question": "Which is a non-towered airport, Wichita Dwight D. Eisenhower National Airport or Montrose Regional Airport?",
+  "gold_answer": "Montrose Regional Airport",
+  "prediction": {
+    "answer": "Montrose Regional Airport is the non-towered airport.",
+    "hop1_docs": [
+      "Wichita Dwight D. Eisenhower National Airport | Wichita Dwight D. Eisenhower National Airport (IATA: ICT,\u00a0ICAO: KICT,\u00a0FAA LID: ICT) is a commercial airport located about 7 mi west of downtown Wichita, Kansas, United States.  It is the largest and busiest airport in the state of Kansas.  ICT covers 3,248 acres (1,314 ha).",
+      "Westport Airport (Kansas) | Westport Airport (FAA LID: 71K) is a privately owned, public use airport located three\u00a0nautical miles (6\u00a0km) southwest of the central business district of Wichita, a city in Sedgwick County, Kansas, United States\u2014and is in the Class C airspace of neighboring Wichita Dwight D. Eisenhower National Airport.",
+      "Montrose Regional Airport | Montrose Regional Airport (IATA: MTJ,\u00a0ICAO: KMTJ,\u00a0FAA LID: MTJ) is a non-towered public airport on the northwest side of Montrose, in zip code 81401 in southwestern Colorado.  Its two runways are at elevation 5,759 feet (1,755 m).  MTJ covers 966 acres (391 ha) of land.",
+      "Non-towered airport | A non-towered airport is an airport with no operating tower, or air traffic control unit.  The vast majority of the world's airports are non-towered, and even airports with control towers may operate as non-towered during off-hours, typically during the night.",
+      "Vernon Regional Airport | Vernon Regional Airport, (IATA: YVE,\u00a0ICAO: CYVK) , is a small, non-towered airport located 1.8 NM southwest of Vernon, British Columbia, Canada.  It is one of the few airports in the Okanagan Valley that can offer skydiving because all commercial operators must give written consent to a skydiving company for skydiving to occur, something which is not feasible at a larger airport like Kelowna International Airport.",
+      "Sheboygan County Memorial Airport | Sheboygan County Memorial Airport (IATA: SBM,\u00a0ICAO: KSBM,\u00a0FAA LID: SBM) is a county owned public use non-towered airport located in the Town of Sheboygan Falls, three\u00a0nautical miles (6\u00a0km) northwest of the City of Sheboygan, in Sheboygan County, Wisconsin, United States.  It is included in the Federal Aviation Administration (FAA) National Plan of Integrated Airport Systems for 2017\u20132021, in which it is categorized as a regional general aviation facility.  Sheboygan's National Weather Service observation station is based at the airport.",
+      "Punxsutawney Municipal Airport | Punxsutawney Municipal Airport is a small regional non-towered airport located 3 miles North-East of Punxsutawney, Pennsylvania."
+    ],
+    "hop2_docs": [
+      "Wichita Dwight D. Eisenhower National Airport | Wichita Dwight D. Eisenhower National Airport (IATA: ICT,\u00a0ICAO: KICT,\u00a0FAA LID: ICT) is a commercial airport located about 7 mi west of downtown Wichita, Kansas, United States.  It is the largest and busiest airport in the state of Kansas.  ICT covers 3,248 acres (1,314 ha).",
+      "Hammond Northshore Regional Airport | Hammond Northshore Regional Airport (ICAO: KHDC,\u00a0FAA LID: HDC) is a city-owned, public-use, joint civil-military, general aviation airport located three nautical miles (6 km) northeast of the central business district of Hammond, a city in Tangipahoa Parish, Louisiana, United States.  The airport was previously an uncontrolled facility utilizing VHF-band UNICOM as a Common Traffic Advisory Frequency (CTAF).  As a result of the relocation of Army National Guard flight operations from Lakefront Airport to Hammond, a new control tower was constructed at the airport.  This tower, manned by military air traffic controllers from the Air Operations Department of the Louisiana Army National Guard's Army Aviation Support Facility #1 at the airport, became operational on 15 December 2014.",
+      "Non-towered airport | A non-towered airport is an airport with no operating tower, or air traffic control unit.  The vast majority of the world's airports are non-towered, and even airports with control towers may operate as non-towered during off-hours, typically during the night.",
+      "Westport Airport (Kansas) | Westport Airport (FAA LID: 71K) is a privately owned, public use airport located three\u00a0nautical miles (6\u00a0km) southwest of the central business district of Wichita, a city in Sedgwick County, Kansas, United States\u2014and is in the Class C airspace of neighboring Wichita Dwight D. Eisenhower National Airport.",
+      "Northern California TRACON | Northern California TRACON (NCT) (Terminal Radar Approach Control), or NorCal TRACON for short, is an air traffic control facility that provides safety alerts, separation, and sequencing of air traffic arriving, departing, and transiting the airspace and airports in Northern California.  Located in Rancho Cordova near Sacramento, NCT controls airspace over 19000 square miles, and serves Reno International Airport, Sacramento International Airport, San Jose International Airport, Oakland International Airport, and San Francisco International Airport, plus 19 other smaller airports with air traffic control towers.  NCT is the 3rd busiest TRACON in America.  NorCal TRACON is the step between local control (in an airport's control tower) and Air Route Traffic Control Center (ARTCC), in this case, Oakland Center (ICAO code: ZOA).  San Francisco International Airport is the 2nd largest airport in California and the largest airport serving Northern California.",
+      "Airport | An airport is an aerodrome with extended facilities, mostly for commercial air transport.  Airports often have facilities to store and maintain aircraft, and a control tower.  An airport consists of a landing area, which comprises an aerially accessible open space including at least one operationally active surface such as a runway for a plane to take off or a helipad, and often includes adjacent utility buildings such as control towers, hangars and terminals. Larger airports may have fixed-base operator services, airport aprons, taxiway bridges, air traffic control centres, passenger facilities such as restaurants and lounges, and emergency services.",
+      "Control zone | A control zone (CTR or controlled traffic region) in aviation is a volume of controlled airspace, normally around an airport, which extends from the \"surface\" to a \"specified upper limit\", established to protect air traffic operating to and from that airport.  Because CTRs are, by definition, controlled airspace, aircraft can only fly in it after receiving a specific clearance from air traffic control.  This means that air traffic control at the airport know exactly which aircraft are in that airspace, and can take steps to ensure aircraft are aware of each other, either using separation or by passing traffic information."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 119,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is a non-towered airport, Wichita Dwight D. Eisenhower National Airport or Montrose Regional Airport?\nPassages: [\"Wichita Dwight D. Eisenhower National Airport | Wichita Dwight D. Eisenhower National Airport (IATA: ICT,\\u00a0ICAO: KICT,\\u00a0FAA LID: ICT) is a commercial airport located about 7 mi west of downtown Wichita, Kansas, United States.  It is the largest and busiest airport in the state of Kansas.  ICT covers 3,248 acres (1,314 ha).\", \"Westport Airport (Kansas) | Westport Airport (FAA LID: 71K) is a privately owned, public use airport located three\\u00a0nautical miles (6\\u00a0km) southwest of the central business district of Wichita, a city in Sedgwick County, Kansas, United States\\u2014and is in the Class C airspace of neighboring Wichita Dwight D. Eisenhower National Airport.\", \"Montrose Regional Airport | Montrose Regional Airport (IATA: MTJ,\\u00a0ICAO: KMTJ,\\u00a0FAA LID: MTJ) is a non-towered public airport on the northwest side of Montrose, in zip code 81401 in southwestern Colorado.  Its two runways are at elevation 5,759 feet (1,755 m).  MTJ covers 966 acres (391 ha) of land.\", \"Non-towered airport | A non-towered airport is an airport with no operating tower, or air traffic control unit.  The vast majority of the world's airports are non-towered, and even airports with control towers may operate as non-towered during off-hours, typically during the night.\", \"Vernon Regional Airport | Vernon Regional Airport, (IATA: YVE,\\u00a0ICAO: CYVK) , is a small, non-towered airport located 1.8 NM southwest of Vernon, British Columbia, Canada.  It is one of the few airports in the Okanagan Valley that can offer skydiving because all commercial operators must give written consent to a skydiving company for skydiving to occur, something which is not feasible at a larger airport like Kelowna International Airport.\", \"Sheboygan County Memorial Airport | Sheboygan County Memorial Airport (IATA: SBM,\\u00a0ICAO: KSBM,\\u00a0FAA LID: SBM) is a county owned public use non-towered airport located in the Town of Sheboygan Falls, three\\u00a0nautical miles (6\\u00a0km) northwest of the City of Sheboygan, in Sheboygan County, Wisconsin, United States.  It is included in the Federal Aviation Administration (FAA) National Plan of Integrated Airport Systems for 2017\\u20132021, in which it is categorized as a regional general aviation facility.  Sheboygan's National Weather Service observation station is based at the airport.\", \"Punxsutawney Municipal Airport | Punxsutawney Municipal Airport is a small regional non-towered airport located 3 miles North-East of Punxsutawney, Pennsylvania.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine which airport is non-towered, we analyze the provided passages for each airport. From passage [1], Wichita Dwight D. Eisenhower National Airport is described as a commercial airport located in Kansas, but no mention is made about it being non-towered. Furthermore, given its description as the largest and busiest airport in Kansas, it would typically require a control tower for efficient air traffic management. Passage [3], on the other hand, explicitly describes Montrose Regional Airport as a \"non-towered public airport,\" clearly indicating that it lacks an operating air traffic control tower. The definition of a non-towered airport from passage [4] reinforces this conclusion.\nSummary: Montrose Regional Airport is a non-towered airport, while Wichita Dwight D. Eisenhower National Airport is not."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is a non-towered airport, Wichita Dwight D. Eisenhower National Airport or Montrose Regional Airport?\nSummary 1: Montrose Regional Airport is a non-towered airport, while Wichita Dwight D. Eisenhower National Airport is not."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine which airport is a non-towered airport, it is necessary to compare their operational structures. Montrose Regional Airport is identified as a non-towered airport based on its lack of an air traffic control tower, whereas Wichita Dwight D. Eisenhower National Airport operates as a towered airport with air traffic control services. Thus, Montrose Regional Airport fits the criteria of being a non-towered airport.\nQuery: What is the operational structure of Wichita Dwight D. Eisenhower National Airport and Montrose Regional Airport in terms of air traffic control towers?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is a non-towered airport, Wichita Dwight D. Eisenhower National Airport or Montrose Regional Airport?\nContext: Montrose Regional Airport is a non-towered airport, while Wichita Dwight D. Eisenhower National Airport is not.\nPassages: [\"Wichita Dwight D. Eisenhower National Airport | Wichita Dwight D. Eisenhower National Airport (IATA: ICT,\\u00a0ICAO: KICT,\\u00a0FAA LID: ICT) is a commercial airport located about 7 mi west of downtown Wichita, Kansas, United States.  It is the largest and busiest airport in the state of Kansas.  ICT covers 3,248 acres (1,314 ha).\", \"Hammond Northshore Regional Airport | Hammond Northshore Regional Airport (ICAO: KHDC,\\u00a0FAA LID: HDC) is a city-owned, public-use, joint civil-military, general aviation airport located three nautical miles (6 km) northeast of the central business district of Hammond, a city in Tangipahoa Parish, Louisiana, United States.  The airport was previously an uncontrolled facility utilizing VHF-band UNICOM as a Common Traffic Advisory Frequency (CTAF).  As a result of the relocation of Army National Guard flight operations from Lakefront Airport to Hammond, a new control tower was constructed at the airport.  This tower, manned by military air traffic controllers from the Air Operations Department of the Louisiana Army National Guard's Army Aviation Support Facility #1 at the airport, became operational on 15 December 2014.\", \"Non-towered airport | A non-towered airport is an airport with no operating tower, or air traffic control unit.  The vast majority of the world's airports are non-towered, and even airports with control towers may operate as non-towered during off-hours, typically during the night.\", \"Westport Airport (Kansas) | Westport Airport (FAA LID: 71K) is a privately owned, public use airport located three\\u00a0nautical miles (6\\u00a0km) southwest of the central business district of Wichita, a city in Sedgwick County, Kansas, United States\\u2014and is in the Class C airspace of neighboring Wichita Dwight D. Eisenhower National Airport.\", \"Northern California TRACON | Northern California TRACON (NCT) (Terminal Radar Approach Control), or NorCal TRACON for short, is an air traffic control facility that provides safety alerts, separation, and sequencing of air traffic arriving, departing, and transiting the airspace and airports in Northern California.  Located in Rancho Cordova near Sacramento, NCT controls airspace over 19000 square miles, and serves Reno International Airport, Sacramento International Airport, San Jose International Airport, Oakland International Airport, and San Francisco International Airport, plus 19 other smaller airports with air traffic control towers.  NCT is the 3rd busiest TRACON in America.  NorCal TRACON is the step between local control (in an airport's control tower) and Air Route Traffic Control Center (ARTCC), in this case, Oakland Center (ICAO code: ZOA).  San Francisco International Airport is the 2nd largest airport in California and the largest airport serving Northern California.\", \"Airport | An airport is an aerodrome with extended facilities, mostly for commercial air transport.  Airports often have facilities to store and maintain aircraft, and a control tower.  An airport consists of a landing area, which comprises an aerially accessible open space including at least one operationally active surface such as a runway for a plane to take off or a helipad, and often includes adjacent utility buildings such as control towers, hangars and terminals. Larger airports may have fixed-base operator services, airport aprons, taxiway bridges, air traffic control centres, passenger facilities such as restaurants and lounges, and emergency services.\", \"Control zone | A control zone (CTR or controlled traffic region) in aviation is a volume of controlled airspace, normally around an airport, which extends from the \\\"surface\\\" to a \\\"specified upper limit\\\", established to protect air traffic operating to and from that airport.  Because CTRs are, by definition, controlled airspace, aircraft can only fly in it after receiving a specific clearance from air traffic control.  This means that air traffic control at the airport know exactly which aircraft are in that airspace, and can take steps to ensure aircraft are aware of each other, either using separation or by passing traffic information.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the context provided, it is straightforward that Montrose Regional Airport is a non-towered airport, meaning it does not have an operating control tower or air traffic control unit. On the other hand, Wichita Dwight D. Eisenhower National Airport is not described as non-towered, meaning it operates with an air traffic control tower. Supporting passages [1] confirm Wichita Dwight D. Eisenhower National Airport as a significant commercial airport, which typically has air traffic control operations. Furthermore, the definition of non-towered airports in passage [3] aligns with Montrose Regional Airport's designation as non-towered. Therefore, Wichita Dwight D. Eisenhower National Airport is not a non-towered airport, whereas Montrose Regional Airport is.\nSummary: Wichita Dwight D. Eisenhower National Airport is not a non-towered airport, whereas Montrose Regional Airport is a non-towered airport."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is a non-towered airport, Wichita Dwight D. Eisenhower National Airport or Montrose Regional Airport?\nSummary 1: Montrose Regional Airport is a non-towered airport, while Wichita Dwight D. Eisenhower National Airport is not.\nSummary 2: Wichita Dwight D. Eisenhower National Airport is not a non-towered airport, whereas Montrose Regional Airport is a non-towered airport."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that Wichita Dwight D. Eisenhower National Airport is not a non-towered airport, while Montrose Regional Airport is. When both summaries are consistent, they reinforce the information that Montrose Regional Airport is the non-towered airport in question.\nAnswer: Montrose Regional Airport is the non-towered airport."
+      }
+    ]
+  }
+}

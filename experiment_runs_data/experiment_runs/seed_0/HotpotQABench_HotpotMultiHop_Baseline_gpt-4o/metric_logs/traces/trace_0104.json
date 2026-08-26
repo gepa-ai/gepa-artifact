@@ -1,0 +1,96 @@
+{
+  "example_id": "5ae1021d55429920d5234273",
+  "question": "Tennessee\u2013Tombigbee Waterway and Walhonding Canal, are located in which country?",
+  "gold_answer": "United States",
+  "prediction": {
+    "answer": "The Tennessee\u2013Tombigbee Waterway and the Walhonding Canal are located in the United States.",
+    "hop1_docs": [
+      "Tennessee\u2013Tombigbee Waterway | The Tennessee\u2013Tombigbee Waterway (popularly known as the Tenn-Tom) is a 234-mile (377-kilometer) man-made waterway that extends from the Tennessee River to the junction of the Black Warrior-Tombigbee River system near Demopolis, Alabama, United States.  The Tennessee\u2013Tombigbee Waterway links commercial navigation from the nation\u2019s midsection to the Gulf of Mexico.  The major features of the waterway are 10 locks and dams, a 175 ft deep cut between the Tombigbee River watershed and the Tennessee River watershed, and 234 mi of navigation channels.",
+      "Holcut, Mississippi | Holcut was a small town located in Tishomingo County, Mississippi, United States.  In 1976, the U.S. Army Corps of Engineers bought out and then completely demolished the town because it lay directly in the path of the Divide Cut, a 29 mi artificial canal section of the Tennessee\u2013Tombigbee Waterway, which was constructed between 1972 and 1984.",
+      "Great Loop | The Great Loop is a system of waterways that encompasses the eastern portion of the United States and part of Canada.  It is made up of both natural and man-made waterways, including the Atlantic and Gulf Intracoastal Waterways, the Great Lakes, the Rideau Canal, and the Mississippi and Tennessee-Tombigbee Waterway.  The entire loop is approximately 6,000 miles long.",
+      "Walhonding Canal | The Walhonding Canal was a canal in Coshocton County, Ohio that was used as a feeder canal for the Ohio and Erie Canal.  A small canal, at only 25 mi long, it was wholly contained within Coshocton County, following the Mohican River from Cavallo south to the confluence with the Kokosing River, which together with the Mohican forms the Walhonding River.  The canal followed the Walhonding River southeast toward Coshocton where it met the Ohio and Erie Canal in Roscoe Village.",
+      "Aberdeen Lock and Dam | The Aberdeen Lock and Dam is one of four lock and dam structures on the Tennessee-Tombigbee Waterway that generally lie along the original course of the Tombigbee River.  It is located east of Aberdeen in Monroe County, Mississippi and impounds Aberdeen Lake.",
+      "Tom Bevill Lock and Dam | The Tom Bevill Lock and Dam, formerly named Aliceville Lock and Dam, is one of four lock and dam structures on the Tennessee-Tombigbee Waterway that generally lie along the original course of the Tombigbee River.  It is located near Aliceville, Alabama and impounds Aliceville Lake.  It is named for Tom Bevill, a proponent of the Tenn-Tom.",
+      "Glover Wilkins Lock | The Glover Wilkins Lock (formerly named Lock B) is part of the Tennessee-Tombigbee Waterway.  It is located close to Smithville, Mississippi.  It was named for Glover Wilkins."
+    ],
+    "hop2_docs": [
+      "Tennessee\u2013Tombigbee Waterway | The Tennessee\u2013Tombigbee Waterway (popularly known as the Tenn-Tom) is a 234-mile (377-kilometer) man-made waterway that extends from the Tennessee River to the junction of the Black Warrior-Tombigbee River system near Demopolis, Alabama, United States.  The Tennessee\u2013Tombigbee Waterway links commercial navigation from the nation\u2019s midsection to the Gulf of Mexico.  The major features of the waterway are 10 locks and dams, a 175 ft deep cut between the Tombigbee River watershed and the Tennessee River watershed, and 234 mi of navigation channels.",
+      "Great Loop | The Great Loop is a system of waterways that encompasses the eastern portion of the United States and part of Canada.  It is made up of both natural and man-made waterways, including the Atlantic and Gulf Intracoastal Waterways, the Great Lakes, the Rideau Canal, and the Mississippi and Tennessee-Tombigbee Waterway.  The entire loop is approximately 6,000 miles long.",
+      "Holcut, Mississippi | Holcut was a small town located in Tishomingo County, Mississippi, United States.  In 1976, the U.S. Army Corps of Engineers bought out and then completely demolished the town because it lay directly in the path of the Divide Cut, a 29 mi artificial canal section of the Tennessee\u2013Tombigbee Waterway, which was constructed between 1972 and 1984.",
+      "Tombigbee River | The Tombigbee River is a tributary of the Mobile River, approximately 200\u00a0mi (325\u00a0km) long, in the U.S. states of Mississippi and Alabama.  Together with the Alabama, it merges to form the short Mobile River before the latter empties into Mobile Bay on the Gulf of Mexico.  The Tombigbee watershed encompasses much of the rural coastal plain of western Alabama and northeastern Mississippi, flowing generally southward.  The river provides one of the principal routes of commercial navigation in the southern United States, as it is navigable along much of its length through locks and connected in its upper reaches to the Tennessee River via the Tennessee-Tombigbee Waterway.",
+      "Mobile River | The Mobile River is located in southern Alabama in the United States.  Formed out of the confluence of the Tombigbee and Alabama rivers, the approximately 45 mi river drains an area of 44000 sqmi of Alabama, with a watershed extending into Mississippi, Georgia, and Tennessee.  Its drainage basin is the fourth-largest of primary stream drainage basins entirely in the United States.  The river has historically provided the principal navigational access for Alabama.  Since construction of the Tennessee-Tombigbee Waterway, it also provides an alternative route into the Ohio River watershed.",
+      "Howell Heflin Lock and Dam | The Howell Heflin Lock and Dam, formerly Gainesville Lock and Dam, is one of four lock and dam structures on the Tennessee-Tombigbee Waterway that generally lie along the original course of the Tombigbee River.  It is located near Gainesville, Alabama, and impounds Gainesville Lake.  It is named for Howell Heflin, a former United States Senator from Alabama.",
+      "Walhonding Canal | The Walhonding Canal was a canal in Coshocton County, Ohio that was used as a feeder canal for the Ohio and Erie Canal.  A small canal, at only 25 mi long, it was wholly contained within Coshocton County, following the Mohican River from Cavallo south to the confluence with the Kokosing River, which together with the Mohican forms the Walhonding River.  The canal followed the Walhonding River southeast toward Coshocton where it met the Ohio and Erie Canal in Roscoe Village."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 104,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Tennessee\u2013Tombigbee Waterway and Walhonding Canal, are located in which country?\nPassages: [\"Tennessee\\u2013Tombigbee Waterway | The Tennessee\\u2013Tombigbee Waterway (popularly known as the Tenn-Tom) is a 234-mile (377-kilometer) man-made waterway that extends from the Tennessee River to the junction of the Black Warrior-Tombigbee River system near Demopolis, Alabama, United States.  The Tennessee\\u2013Tombigbee Waterway links commercial navigation from the nation\\u2019s midsection to the Gulf of Mexico.  The major features of the waterway are 10 locks and dams, a 175 ft deep cut between the Tombigbee River watershed and the Tennessee River watershed, and 234 mi of navigation channels.\", \"Holcut, Mississippi | Holcut was a small town located in Tishomingo County, Mississippi, United States.  In 1976, the U.S. Army Corps of Engineers bought out and then completely demolished the town because it lay directly in the path of the Divide Cut, a 29 mi artificial canal section of the Tennessee\\u2013Tombigbee Waterway, which was constructed between 1972 and 1984.\", \"Great Loop | The Great Loop is a system of waterways that encompasses the eastern portion of the United States and part of Canada.  It is made up of both natural and man-made waterways, including the Atlantic and Gulf Intracoastal Waterways, the Great Lakes, the Rideau Canal, and the Mississippi and Tennessee-Tombigbee Waterway.  The entire loop is approximately 6,000 miles long.\", \"Walhonding Canal | The Walhonding Canal was a canal in Coshocton County, Ohio that was used as a feeder canal for the Ohio and Erie Canal.  A small canal, at only 25 mi long, it was wholly contained within Coshocton County, following the Mohican River from Cavallo south to the confluence with the Kokosing River, which together with the Mohican forms the Walhonding River.  The canal followed the Walhonding River southeast toward Coshocton where it met the Ohio and Erie Canal in Roscoe Village.\", \"Aberdeen Lock and Dam | The Aberdeen Lock and Dam is one of four lock and dam structures on the Tennessee-Tombigbee Waterway that generally lie along the original course of the Tombigbee River.  It is located east of Aberdeen in Monroe County, Mississippi and impounds Aberdeen Lake.\", \"Tom Bevill Lock and Dam | The Tom Bevill Lock and Dam, formerly named Aliceville Lock and Dam, is one of four lock and dam structures on the Tennessee-Tombigbee Waterway that generally lie along the original course of the Tombigbee River.  It is located near Aliceville, Alabama and impounds Aliceville Lake.  It is named for Tom Bevill, a proponent of the Tenn-Tom.\", \"Glover Wilkins Lock | The Glover Wilkins Lock (formerly named Lock B) is part of the Tennessee-Tombigbee Waterway.  It is located close to Smithville, Mississippi.  It was named for Glover Wilkins.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The Tennessee\u2013Tombigbee Waterway is mentioned in passages [1], [2], [3], [5], [6], and [7]. It is located in the United States, specifically in the states of Alabama and Mississippi, and is part of a waterway system used for navigation and commercial purposes. The Walhonding Canal is discussed in passage [4], where it is noted as a canal located in Coshocton County, Ohio, within the United States. Both waterway systems are, therefore, situated within the same country, the United States.\nSummary: The Tennessee\u2013Tombigbee Waterway and the Walhonding Canal are both located in the United States."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Tennessee\u2013Tombigbee Waterway and Walhonding Canal, are located in which country?\nSummary 1: The Tennessee\u2013Tombigbee Waterway and the Walhonding Canal are both located in the United States."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The Tennessee\u2013Tombigbee Waterway and Walhonding Canal are both specified as being located in the United States in the provided summary. Therefore, the country in question is confirmed as the United States.\nQuery: What is the significance of the Tennessee\u2013Tombigbee Waterway and Walhonding Canal in the United States?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Tennessee\u2013Tombigbee Waterway and Walhonding Canal, are located in which country?\nContext: The Tennessee\u2013Tombigbee Waterway and the Walhonding Canal are both located in the United States.\nPassages: [\"Tennessee\\u2013Tombigbee Waterway | The Tennessee\\u2013Tombigbee Waterway (popularly known as the Tenn-Tom) is a 234-mile (377-kilometer) man-made waterway that extends from the Tennessee River to the junction of the Black Warrior-Tombigbee River system near Demopolis, Alabama, United States.  The Tennessee\\u2013Tombigbee Waterway links commercial navigation from the nation\\u2019s midsection to the Gulf of Mexico.  The major features of the waterway are 10 locks and dams, a 175 ft deep cut between the Tombigbee River watershed and the Tennessee River watershed, and 234 mi of navigation channels.\", \"Great Loop | The Great Loop is a system of waterways that encompasses the eastern portion of the United States and part of Canada.  It is made up of both natural and man-made waterways, including the Atlantic and Gulf Intracoastal Waterways, the Great Lakes, the Rideau Canal, and the Mississippi and Tennessee-Tombigbee Waterway.  The entire loop is approximately 6,000 miles long.\", \"Holcut, Mississippi | Holcut was a small town located in Tishomingo County, Mississippi, United States.  In 1976, the U.S. Army Corps of Engineers bought out and then completely demolished the town because it lay directly in the path of the Divide Cut, a 29 mi artificial canal section of the Tennessee\\u2013Tombigbee Waterway, which was constructed between 1972 and 1984.\", \"Tombigbee River | The Tombigbee River is a tributary of the Mobile River, approximately 200\\u00a0mi (325\\u00a0km) long, in the U.S. states of Mississippi and Alabama.  Together with the Alabama, it merges to form the short Mobile River before the latter empties into Mobile Bay on the Gulf of Mexico.  The Tombigbee watershed encompasses much of the rural coastal plain of western Alabama and northeastern Mississippi, flowing generally southward.  The river provides one of the principal routes of commercial navigation in the southern United States, as it is navigable along much of its length through locks and connected in its upper reaches to the Tennessee River via the Tennessee-Tombigbee Waterway.\", \"Mobile River | The Mobile River is located in southern Alabama in the United States.  Formed out of the confluence of the Tombigbee and Alabama rivers, the approximately 45 mi river drains an area of 44000 sqmi of Alabama, with a watershed extending into Mississippi, Georgia, and Tennessee.  Its drainage basin is the fourth-largest of primary stream drainage basins entirely in the United States.  The river has historically provided the principal navigational access for Alabama.  Since construction of the Tennessee-Tombigbee Waterway, it also provides an alternative route into the Ohio River watershed.\", \"Howell Heflin Lock and Dam | The Howell Heflin Lock and Dam, formerly Gainesville Lock and Dam, is one of four lock and dam structures on the Tennessee-Tombigbee Waterway that generally lie along the original course of the Tombigbee River.  It is located near Gainesville, Alabama, and impounds Gainesville Lake.  It is named for Howell Heflin, a former United States Senator from Alabama.\", \"Walhonding Canal | The Walhonding Canal was a canal in Coshocton County, Ohio that was used as a feeder canal for the Ohio and Erie Canal.  A small canal, at only 25 mi long, it was wholly contained within Coshocton County, following the Mohican River from Cavallo south to the confluence with the Kokosing River, which together with the Mohican forms the Walhonding River.  The canal followed the Walhonding River southeast toward Coshocton where it met the Ohio and Erie Canal in Roscoe Village.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to identify the country where the Tennessee\u2013Tombigbee Waterway and the Walhonding Canal are located. Based on the context, both waterways are explicitly stated to be in the United States. The passages further support this conclusion. The Tennessee\u2013Tombigbee Waterway is described in detail as spanning Mississippi and Alabama, while the Walhonding Canal is located in Ohio. All these locations are part of the United States.\nSummary: The Tennessee\u2013Tombigbee Waterway and the Walhonding Canal are both located in the United States."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Tennessee\u2013Tombigbee Waterway and Walhonding Canal, are located in which country?\nSummary 1: The Tennessee\u2013Tombigbee Waterway and the Walhonding Canal are both located in the United States.\nSummary 2: The Tennessee\u2013Tombigbee Waterway and the Walhonding Canal are both located in the United States."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both Summary 1 and Summary 2 agree that the Tennessee\u2013Tombigbee Waterway and the Walhonding Canal are located in the United States. There is no conflicting information, and the location provided aligns with known geographical knowledge of these waterways.\nAnswer: The Tennessee\u2013Tombigbee Waterway and the Walhonding Canal are located in the United States."
+      }
+    ]
+  }
+}

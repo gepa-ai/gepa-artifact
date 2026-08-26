@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab274f1554299722f9b4d35",
+  "question": "Jim Wilson ran unsuccessfully against a Democratic Incumbent US Representative who was born on which day ?",
+  "gold_answer": "August 2, 1973",
+  "prediction": {
+    "answer": "August 2, 1973",
+    "hop1_docs": [
+      "Jim Wilson (Oklahoma politician) | Jim Wilson was an Oklahoma Senator from District 3, which includes Adair, Cherokee and Sequoyah counties, from 2004 to 2012.  He earlier was a member of the Oklahoma House of Representatives from 2000 through 2004.  He ran unsuccessfully against Democratic Incumbent US Rep. Dan Boren in Oklahoma's 2nd Congressional District in the July 27 Democratic primary.",
+      "Lois Murphy | Lois Murphy (born February 27, 1963 in Hempstead, New York) is a Democrat from the state of Pennsylvania, who unsuccessfully ran for the U.S. House in Pennsylvania's 6th congressional district (map) against the Republican incumbent, Jim Gerlach in 2004 and 2006.",
+      "Gifford Miller | A. Gifford Miller (born November 6, 1969) is the former Speaker of the New York City Council, where he represented Council District 5.  Barred from seeking reelection due to term limits, the Democrat ran unsuccessfully in the Democratic primary for the opportunity to run against incumbent Republican Mayor, Michael Bloomberg in November 2005.",
+      "Bill McChesney (politician) | Bill McChesney (born October 3, 1948) is an American politician and member of the Democratic Party who was a member of the Montana House of Representatives, representing District 40, from 2007 to 2015.  Term-limited in 2014, he ran for the 19th District of the Montana Senate but was defeated by Republican incumbent Frederick Moore.  He ran for Governor of Montana in the 2016 election against Democratic incumbent Steve Bullock, but lost in the Democratic primary.",
+      "Francis Tenaglio | Francis X. Tenaglio (born January 8, 1949) is a former Democratic member of the Pennsylvania House of Representatives.  Tenaglio served from 1977 through 1978, representing the 159th District.  In 2012, Tenaglio ran for US Congress in the Democratic Primary of New Jersey's 1st congressional district against incumbent Rob Andrews.",
+      "Buck Newton | Eldon Sharpe (Buck) Newton III (born July 5, 1968) is a Republican Senator in the North Carolina General Assembly representing District 11 (Wilson and Nash counties).  Newton won his seat in the 2010 election, defeating Democratic incumbent A.B. Swindell.  Newton was an unsuccessful Republican nominee for North Carolina Attorney General against Democrat Josh Stein, losing by approximately 25,000 votes, or 0.5%.",
+      "Francine Busby | Francine Pocino Busby (born March 3, 1951) is a former member of the school board in Cardiff, California and is the chair of the San Diego County Democratic Party.  She has four times been the Democratic candidate for Congress in California's 50th congressional district, in North San Diego County.  In 2004 she ran unsuccessfully against incumbent Republican Congressman Randy \"Duke\" Cunningham.  Before his term was up Cunningham resigned due to his conviction on bribery charges, and she ran in the June 2006 special election to replace him; she lost to Republican Brian Bilbray, who again defeated her in the 2006 general election that November.  She also ran unsuccessfully against Bilbray in 2010."
+    ],
+    "hop2_docs": [
+      "Jim Wilson (Oklahoma politician) | Jim Wilson was an Oklahoma Senator from District 3, which includes Adair, Cherokee and Sequoyah counties, from 2004 to 2012.  He earlier was a member of the Oklahoma House of Representatives from 2000 through 2004.  He ran unsuccessfully against Democratic Incumbent US Rep. Dan Boren in Oklahoma's 2nd Congressional District in the July 27 Democratic primary.",
+      "Boren family | The family is one of the most notable in Oklahoma, producing Democratic politicians including Lyle Boren (1909\u20131992), U.S. Representative for Oklahoma's 4th district from 1937 to 1947, his son David Boren (born 1941), Governor of Oklahoma from 1975 to 1979, U.S. Senator from 1979 to 1994, and current President of the University of Oklahoma since 1994, and his grandson Dan Boren (born 1973), a Blue Dog who was the U.S. Representative for Oklahoma's 2nd district from 2005 to 2013.",
+      "Bill McChesney (politician) | Bill McChesney (born October 3, 1948) is an American politician and member of the Democratic Party who was a member of the Montana House of Representatives, representing District 40, from 2007 to 2015.  Term-limited in 2014, he ran for the 19th District of the Montana Senate but was defeated by Republican incumbent Frederick Moore.  He ran for Governor of Montana in the 2016 election against Democratic incumbent Steve Bullock, but lost in the Democratic primary.",
+      "Dan Boren | Daniel David Boren (born August 2, 1973) is a retired American politician, who served as the U.S. Representative for Oklahoma 's 2 congressional district from 2005 to 2013.  The district includes most of the eastern part of the state outside of Tulsa.  He is a member of the Democratic Party.",
+      "Jim Betts (politician) | Jim Betts is a former member of the Ohio House of Representatives.  He ran against incumbent U.S. Senator John Glenn in 1980.  He lost and ran in 1982 for Lieutenant Governor.",
+      "George W. Reese Jr. | George Wilson Reese Jr. (August 10, 1923 \u2013 January 22, 1998), was a lawyer from New Orleans, who was a leading figure in the development of the Republican Party in the U.S. state of Louisiana during the 1950s and the 1960s.  He ran for the United States House of Representatives against Democrat Felix Edward H\u00e9bert from Louisiana's 1st congressional district in 1952 and 1954 and the United States Senate in 1960 against incumbent Allen J. Ellender.  He was prior to 1960 the state's Republican national committeeman.",
+      "North Carolina gubernatorial election, 1984 | The North Carolina gubernatorial election of 1984 was held on November 6, 1984.  Popular Democratic incumbent Jim Hunt was unable to run for another consecutive term under the North Carolina Constitution.  Hunt ran instead for the U.S. Senate against Jesse Helms and lost.  Popular 9th District Congressman James G. Martin ran as the Republican nominee against Democratic Attorney General Rufus L. Edmisten, who defeated Hunt's Lt. Governor, James Green, among other candidates, in a hotly contested primary."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 103,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Jim Wilson ran unsuccessfully against a Democratic Incumbent US Representative who was born on which day ?\nPassages: [\"Jim Wilson (Oklahoma politician) | Jim Wilson was an Oklahoma Senator from District 3, which includes Adair, Cherokee and Sequoyah counties, from 2004 to 2012.  He earlier was a member of the Oklahoma House of Representatives from 2000 through 2004.  He ran unsuccessfully against Democratic Incumbent US Rep. Dan Boren in Oklahoma's 2nd Congressional District in the July 27 Democratic primary.\", \"Lois Murphy | Lois Murphy (born February 27, 1963 in Hempstead, New York) is a Democrat from the state of Pennsylvania, who unsuccessfully ran for the U.S. House in Pennsylvania's 6th congressional district (map) against the Republican incumbent, Jim Gerlach in 2004 and 2006.\", \"Gifford Miller | A. Gifford Miller (born November 6, 1969) is the former Speaker of the New York City Council, where he represented Council District 5.  Barred from seeking reelection due to term limits, the Democrat ran unsuccessfully in the Democratic primary for the opportunity to run against incumbent Republican Mayor, Michael Bloomberg in November 2005.\", \"Bill McChesney (politician) | Bill McChesney (born October 3, 1948) is an American politician and member of the Democratic Party who was a member of the Montana House of Representatives, representing District 40, from 2007 to 2015.  Term-limited in 2014, he ran for the 19th District of the Montana Senate but was defeated by Republican incumbent Frederick Moore.  He ran for Governor of Montana in the 2016 election against Democratic incumbent Steve Bullock, but lost in the Democratic primary.\", \"Francis Tenaglio | Francis X. Tenaglio (born January 8, 1949) is a former Democratic member of the Pennsylvania House of Representatives.  Tenaglio served from 1977 through 1978, representing the 159th District.  In 2012, Tenaglio ran for US Congress in the Democratic Primary of New Jersey's 1st congressional district against incumbent Rob Andrews.\", \"Buck Newton | Eldon Sharpe (Buck) Newton III (born July 5, 1968) is a Republican Senator in the North Carolina General Assembly representing District 11 (Wilson and Nash counties).  Newton won his seat in the 2010 election, defeating Democratic incumbent A.B. Swindell.  Newton was an unsuccessful Republican nominee for North Carolina Attorney General against Democrat Josh Stein, losing by approximately 25,000 votes, or 0.5%.\", \"Francine Busby | Francine Pocino Busby (born March 3, 1951) is a former member of the school board in Cardiff, California and is the chair of the San Diego County Democratic Party.  She has four times been the Democratic candidate for Congress in California's 50th congressional district, in North San Diego County.  In 2004 she ran unsuccessfully against incumbent Republican Congressman Randy \\\"Duke\\\" Cunningham.  Before his term was up Cunningham resigned due to his conviction on bribery charges, and she ran in the June 2006 special election to replace him; she lost to Republican Brian Bilbray, who again defeated her in the 2006 general election that November.  She also ran unsuccessfully against Bilbray in 2010.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the birth date of the Democratic incumbent U.S. Representative who Jim Wilson ran against unsuccessfully. From the passages, it is clear that Jim Wilson ran unsuccessfully against Democratic incumbent U.S. Representative Dan Boren in Oklahoma's 2nd Congressional District. However, the passages do not provide the birth date of Dan Boren directly. Therefore, it is not possible to determine the birth date of Dan Boren from the provided information.\nSummary: The birth date of the Democratic incumbent U.S. Representative Dan Boren, whom Jim Wilson ran against unsuccessfully, is not provided in the passages."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Jim Wilson ran unsuccessfully against a Democratic Incumbent US Representative who was born on which day ?\nSummary 1: The birth date of the Democratic incumbent U.S. Representative Dan Boren, whom Jim Wilson ran against unsuccessfully, is not provided in the passages."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the birth date of the Democratic incumbent U.S. Representative that Jim Wilson ran against. From the summary provided, it is clear that the birth date of the individual (Dan Boren) is not mentioned. To answer the question, additional information about Dan Boren's birth date must be sourced.\nQuery: What is the birth date of Dan Boren, the Democratic incumbent U.S. Representative who ran against Jim Wilson?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Jim Wilson ran unsuccessfully against a Democratic Incumbent US Representative who was born on which day ?\nContext: The birth date of the Democratic incumbent U.S. Representative Dan Boren, whom Jim Wilson ran against unsuccessfully, is not provided in the passages.\nPassages: [\"Jim Wilson (Oklahoma politician) | Jim Wilson was an Oklahoma Senator from District 3, which includes Adair, Cherokee and Sequoyah counties, from 2004 to 2012.  He earlier was a member of the Oklahoma House of Representatives from 2000 through 2004.  He ran unsuccessfully against Democratic Incumbent US Rep. Dan Boren in Oklahoma's 2nd Congressional District in the July 27 Democratic primary.\", \"Boren family | The family is one of the most notable in Oklahoma, producing Democratic politicians including Lyle Boren (1909\\u20131992), U.S. Representative for Oklahoma's 4th district from 1937 to 1947, his son David Boren (born 1941), Governor of Oklahoma from 1975 to 1979, U.S. Senator from 1979 to 1994, and current President of the University of Oklahoma since 1994, and his grandson Dan Boren (born 1973), a Blue Dog who was the U.S. Representative for Oklahoma's 2nd district from 2005 to 2013.\", \"Bill McChesney (politician) | Bill McChesney (born October 3, 1948) is an American politician and member of the Democratic Party who was a member of the Montana House of Representatives, representing District 40, from 2007 to 2015.  Term-limited in 2014, he ran for the 19th District of the Montana Senate but was defeated by Republican incumbent Frederick Moore.  He ran for Governor of Montana in the 2016 election against Democratic incumbent Steve Bullock, but lost in the Democratic primary.\", \"Dan Boren | Daniel David Boren (born August 2, 1973) is a retired American politician, who served as the U.S. Representative for Oklahoma 's 2 congressional district from 2005 to 2013.  The district includes most of the eastern part of the state outside of Tulsa.  He is a member of the Democratic Party.\", \"Jim Betts (politician) | Jim Betts is a former member of the Ohio House of Representatives.  He ran against incumbent U.S. Senator John Glenn in 1980.  He lost and ran in 1982 for Lieutenant Governor.\", \"George W. Reese Jr. | George Wilson Reese Jr. (August 10, 1923 \\u2013 January 22, 1998), was a lawyer from New Orleans, who was a leading figure in the development of the Republican Party in the U.S. state of Louisiana during the 1950s and the 1960s.  He ran for the United States House of Representatives against Democrat Felix Edward H\\u00e9bert from Louisiana's 1st congressional district in 1952 and 1954 and the United States Senate in 1960 against incumbent Allen J. Ellender.  He was prior to 1960 the state's Republican national committeeman.\", \"North Carolina gubernatorial election, 1984 | The North Carolina gubernatorial election of 1984 was held on November 6, 1984.  Popular Democratic incumbent Jim Hunt was unable to run for another consecutive term under the North Carolina Constitution.  Hunt ran instead for the U.S. Senate against Jesse Helms and lost.  Popular 9th District Congressman James G. Martin ran as the Republican nominee against Democratic Attorney General Rufus L. Edmisten, who defeated Hunt's Lt. Governor, James Green, among other candidates, in a hotly contested primary.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is asking about the birthdate of Dan Boren, a Democratic incumbent U.S. Representative whom Jim Wilson ran against unsuccessfully. In the context and passages provided, we see that Dan Boren is mentioned in multiple passages. Most notably, Passage [2] and Passage [4] provide pertinent information about Boren. Passage [2] specifies that Dan Boren was born in 1973, and Passage [4] explicitly states his birthdate as August 2, 1973. Therefore, the birthdate of the Democratic incumbent U.S. Representative Dan Boren is August 2, 1973.\nSummary: Jim Wilson ran unsuccessfully against Democratic incumbent U.S. Representative Dan Boren, who was born on August 2, 1973."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Jim Wilson ran unsuccessfully against a Democratic Incumbent US Representative who was born on which day ?\nSummary 1: The birth date of the Democratic incumbent U.S. Representative Dan Boren, whom Jim Wilson ran against unsuccessfully, is not provided in the passages.\nSummary 2: Jim Wilson ran unsuccessfully against Democratic incumbent U.S. Representative Dan Boren, who was born on August 2, 1973."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Summary_1 indicates that the birth date of the Democratic incumbent U.S. Representative Dan Boren is not provided. However, summary_2 specifies that Dan Boren was born on August 2, 1973. Based on the information from summary_2, we can determine the birth date of the Democratic incumbent.\nAnswer: August 2, 1973"
+      }
+    ]
+  }
+}

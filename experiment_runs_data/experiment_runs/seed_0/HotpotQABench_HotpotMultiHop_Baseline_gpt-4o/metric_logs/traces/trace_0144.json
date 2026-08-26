@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab8538f55429934fafe6d61",
+  "question": "Where is the team Marc Arnold has directed since 2008?",
+  "gold_answer": "Braunschweig, Lower Saxony",
+  "prediction": {
+    "answer": "Braunschweig, Lower Saxony, Germany.",
+    "hop1_docs": [
+      "Marc Arnold | Marc Arnold (born 19 September 1970 in Johannesburg) is a retired German-South African footballer who spent his entire professional career in Germany.  Since his retirement as a player, he has worked as director of football at Hessen Kassel (from 2007 until 2008) and Eintracht Braunschweig (since 2008).",
+      "Marc Boblet | Marc Boblet (born 1 September 1971) is a French Olympic dressage rider.  Representing France, he competed at the 2008 Summer Olympics in Beijing where he finished 20th in the individual competition and 6th in the team competition.",
+      "SKINNY (directing team) | SKINNY is a directing team based in Los Angeles that specializes in commercials and music videos.  It is composed of David Hache and Marc-Edouard Leon.  In 2008, SKINNY signed to the acclaimed music video and commercial production company Partizan.",
+      "Marc Tyler Arnold | Marc Tyler Arnold (born November 20, 1992) is an American chess Grandmaster.",
+      "Marc Aillet | Marc Marie Max Aillet (born 17 April 1957) has been the bishop of Bayonne since 30 November 2008.  He had previously served as vicar general of the diocese of Fr\u00e9jus-Toulon.",
+      "Arnold Marc Gorter | Arnold Marc Gorter (1866, Almelo \u2013 1933, Amsterdam), was a 19th-century landscape painter from the Northern Netherlands.",
+      "Newt Arnold | Newt Arnold (February 22, 1922 \u2013 February 12, 2000) was an American film director, producer and screenwriter.  Arnold directed \"Bloodsport\", which was released in 1988 and has since become a cult film and several other screen works.  Arnold was the two-time recipient of the Directors Guild of America Award for his work as an assistant director of \"The Godfather Part II\" and \"12 Angry Men\"."
+    ],
+    "hop2_docs": [
+      "Marc Arnold | Marc Arnold (born 19 September 1970 in Johannesburg) is a retired German-South African footballer who spent his entire professional career in Germany.  Since his retirement as a player, he has worked as director of football at Hessen Kassel (from 2007 until 2008) and Eintracht Braunschweig (since 2008).",
+      "Eintracht Braunschweig II | Eintracht Braunschweig II (sometimes also called Eintracht Braunschweig U-23 and formerly known as Eintracht Braunschweig Amateure) is the reserve team of German football club \"Eintracht Braunschweig\".",
+      "Daniyel Cimen | Daniyel Cimen (] ; born 19 January 1985 in Hanau) is a German football manager and former footballer of Aramean ethnicity.  He was playing for Eintracht Frankfurt, but had some problems earning a spot in the regular squad.  Eintracht Frankfurt loaned him to the then 2.  Bundesliga side Eintracht Braunschweig.  After being relegated with Braunschweig, Cimen joined Frankfurt rival Kickers Offenbach in June 2007.  Cimen moved from Kickers Offenbach to FC Erzgebirge Aue in July 2008, but returned to Eintracht Frankfurt in summer 2010.",
+      "2010\u201311 Eintracht Braunschweig season | The 2010\u201311 season of Eintracht Braunschweig began on 13 June with a first training session.  It is the club's third consecutive season in the 3.  Liga after its first start in 2008.  On 10 April 2011, with a victory over SpVgg Unterhaching, Eintracht secured the promotion to the 2.  Bundesliga with six matches to play.  With 85 points got Eintracht the championship of the 3.  Liga, secured with a victory over VfB Stuttgart II on the 36th matchday.  The team scored 81 goals the most, with 22 goals against the fewest in the league.",
+      "2014\u201315 Eintracht Braunschweig season | The 2014\u201315 Eintracht Braunschweig season is the 121st season in the club's football history.  In 2014\u201315 the club plays in the 2.  Bundesliga, the second tier of German football.  It is the club's first season in this league since having been relegated from the Bundesliga in 2014.",
+      "Eintracht Braunschweig | Braunschweiger Turn- und Sportverein Eintracht von 1895 e.V., commonly known as Eintracht Braunschweig (] ) or BTSV ] , is a German football and sports club based in Braunschweig, Lower Saxony.  The club was one of the founding members of the Bundesliga in 1963 and won the national title in 1967.  The club currently plays in the 2.  Bundesliga, the second tier of the German football league system.",
+      "List of Eintracht Braunschweig players | Eintracht Braunschweig is a German professional football club based in Braunschweig, Lower Saxony.  The club was founded in 1895."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 144,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Where is the team Marc Arnold has directed since 2008?\nPassages: [\"Marc Arnold | Marc Arnold (born 19 September 1970 in Johannesburg) is a retired German-South African footballer who spent his entire professional career in Germany.  Since his retirement as a player, he has worked as director of football at Hessen Kassel (from 2007 until 2008) and Eintracht Braunschweig (since 2008).\", \"Marc Boblet | Marc Boblet (born 1 September 1971) is a French Olympic dressage rider.  Representing France, he competed at the 2008 Summer Olympics in Beijing where he finished 20th in the individual competition and 6th in the team competition.\", \"SKINNY (directing team) | SKINNY is a directing team based in Los Angeles that specializes in commercials and music videos.  It is composed of David Hache and Marc-Edouard Leon.  In 2008, SKINNY signed to the acclaimed music video and commercial production company Partizan.\", \"Marc Tyler Arnold | Marc Tyler Arnold (born November 20, 1992) is an American chess Grandmaster.\", \"Marc Aillet | Marc Marie Max Aillet (born 17 April 1957) has been the bishop of Bayonne since 30 November 2008.  He had previously served as vicar general of the diocese of Fr\\u00e9jus-Toulon.\", \"Arnold Marc Gorter | Arnold Marc Gorter (1866, Almelo \\u2013 1933, Amsterdam), was a 19th-century landscape painter from the Northern Netherlands.\", \"Newt Arnold | Newt Arnold (February 22, 1922 \\u2013 February 12, 2000) was an American film director, producer and screenwriter.  Arnold directed \\\"Bloodsport\\\", which was released in 1988 and has since become a cult film and several other screen works.  Arnold was the two-time recipient of the Directors Guild of America Award for his work as an assistant director of \\\"The Godfather Part II\\\" and \\\"12 Angry Men\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the team Marc Arnold has directed since 2008. Among the provided passages, passage [1] outlines Marc Arnold's background and directly addresses the role he has taken since 2008. It states that Marc Arnold works as the director of football at Eintracht Braunschweig since 2008. The other passages do not mention Marc Arnold or his professional affiliations, instead discussing unrelated individuals or topics.\nSummary: Marc Arnold has directed the team Eintracht Braunschweig since 2008."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Where is the team Marc Arnold has directed since 2008?\nSummary 1: Marc Arnold has directed the team Eintracht Braunschweig since 2008."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the team that Marc Arnold has directed since 2008. According to the provided information, Marc Arnold has directed the team Eintracht Braunschweig since 2008. Therefore, the correct response can be formulated to reflect this detail.\nQuery: Marc Arnold has directed Eintracht Braunschweig since 2008."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Where is the team Marc Arnold has directed since 2008?\nContext: Marc Arnold has directed the team Eintracht Braunschweig since 2008.\nPassages: [\"Marc Arnold | Marc Arnold (born 19 September 1970 in Johannesburg) is a retired German-South African footballer who spent his entire professional career in Germany.  Since his retirement as a player, he has worked as director of football at Hessen Kassel (from 2007 until 2008) and Eintracht Braunschweig (since 2008).\", \"Eintracht Braunschweig II | Eintracht Braunschweig II (sometimes also called Eintracht Braunschweig U-23 and formerly known as Eintracht Braunschweig Amateure) is the reserve team of German football club \\\"Eintracht Braunschweig\\\".\", \"Daniyel Cimen | Daniyel Cimen (] ; born 19 January 1985 in Hanau) is a German football manager and former footballer of Aramean ethnicity.  He was playing for Eintracht Frankfurt, but had some problems earning a spot in the regular squad.  Eintracht Frankfurt loaned him to the then 2.  Bundesliga side Eintracht Braunschweig.  After being relegated with Braunschweig, Cimen joined Frankfurt rival Kickers Offenbach in June 2007.  Cimen moved from Kickers Offenbach to FC Erzgebirge Aue in July 2008, but returned to Eintracht Frankfurt in summer 2010.\", \"2010\\u201311 Eintracht Braunschweig season | The 2010\\u201311 season of Eintracht Braunschweig began on 13 June with a first training session.  It is the club's third consecutive season in the 3.  Liga after its first start in 2008.  On 10 April 2011, with a victory over SpVgg Unterhaching, Eintracht secured the promotion to the 2.  Bundesliga with six matches to play.  With 85 points got Eintracht the championship of the 3.  Liga, secured with a victory over VfB Stuttgart II on the 36th matchday.  The team scored 81 goals the most, with 22 goals against the fewest in the league.\", \"2014\\u201315 Eintracht Braunschweig season | The 2014\\u201315 Eintracht Braunschweig season is the 121st season in the club's football history.  In 2014\\u201315 the club plays in the 2.  Bundesliga, the second tier of German football.  It is the club's first season in this league since having been relegated from the Bundesliga in 2014.\", \"Eintracht Braunschweig | Braunschweiger Turn- und Sportverein Eintracht von 1895 e.V., commonly known as Eintracht Braunschweig (] ) or BTSV ] , is a German football and sports club based in Braunschweig, Lower Saxony.  The club was one of the founding members of the Bundesliga in 1963 and won the national title in 1967.  The club currently plays in the 2.  Bundesliga, the second tier of the German football league system.\", \"List of Eintracht Braunschweig players | Eintracht Braunschweig is a German professional football club based in Braunschweig, Lower Saxony.  The club was founded in 1895.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The provided context states that Marc Arnold has been the director of the team Eintracht Braunschweig since 2008. The passages confirm this by indicating that Eintracht Braunschweig is a football club based in Braunschweig, Lower Saxony, and competes in the German football league system. Specifically, Passage [1] mentions Marc Arnold's tenure as director of football with Eintracht Braunschweig beginning in 2008. \n\nTherefore, the team that Marc Arnold has directed since 2008 is Eintracht Braunschweig, which is based in Braunschweig, Lower Saxony.\nSummary: The team that Marc Arnold has directed since 2008 is Eintracht Braunschweig, which is based in Braunschweig, Lower Saxony, Germany."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Where is the team Marc Arnold has directed since 2008?\nSummary 1: Marc Arnold has directed the team Eintracht Braunschweig since 2008.\nSummary 2: The team that Marc Arnold has directed since 2008 is Eintracht Braunschweig, which is based in Braunschweig, Lower Saxony, Germany."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Summary_1 specifies that Marc Arnold has directed the team Eintracht Braunschweig since 2008. Summary_2 adds additional context by stating that this team is based in Braunschweig, Lower Saxony, Germany. Combining this information, the location of the team Marc Arnold has directed since 2008 is Braunschweig, Lower Saxony, Germany.\nAnswer: Braunschweig, Lower Saxony, Germany."
+      }
+    ]
+  }
+}

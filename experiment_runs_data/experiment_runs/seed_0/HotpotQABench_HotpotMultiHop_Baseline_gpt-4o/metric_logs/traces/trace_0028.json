@@ -1,0 +1,96 @@
+{
+  "example_id": "5a8c4cda554299653c1aa02f",
+  "question": "Fernando Rey starred in That obscure Object of Desire that was directed by whom?",
+  "gold_answer": "Luis Bu\u00f1uel.",
+  "prediction": {
+    "answer": "Luis Bu\u00f1uel",
+    "hop1_docs": [
+      "That Obscure Object of Desire | That Obscure Object of Desire (French: Cet obscur objet du d\u00e9sir ; Spanish: Ese oscuro objeto del deseo ), a French and Spanish co-production released in 1977, was the final film directed by Luis Bu\u00f1uel.  Set in Spain and France against the backdrop of a terrorist insurgency, the film conveys the story told through a series of flashbacks by an aging Frenchman, Mathieu, played by Fernando Rey, who recounts falling in love with a beautiful young Spanish woman, Conchita, played interchangeably by two actresses, Carole Bouquet and Angela Molina, that repeatedly frustrates his romantic and sexual desires.",
+      "Fernando Rey | Fernando Casado Arambillet (20 September 1917\u00a0\u2013 9 March 1994), best known as Fernando Rey, was a Spanish film, theatre, and television actor, who worked in both Europe and the United States.  A suave, international actor best known for his roles in the films of surrealist director Luis Bu\u00f1uel (\"Tristana\", 1970; \"Discreet Charm of the Bourgeoisie\", 1972; \"That Obscure Object of Desire\", 1977) and as a drug lord in \"The French Connection\" (1971), he appeared in more than 150 films over half a century.",
+      "Airport (1953 film) | Airport (Spanish: Aeropuerto) is a 1953 Spanish comedy film directed by Luis Lucia and starring Fernando Fern\u00e1n G\u00f3mez, Margarita Andrey and Fernando Rey.",
+      "Cervantes (film) | Cervantes is a highly fictionalized 1967 film biography of the early life of Miguel de Cervantes (1547\u20131616).  It was the first screen biography of the author.  Directed by Vincent Sherman, and filmed in color, it stars Horst Buchholz as Cervantes, Gina Lollobrigida as a prostitute with whom he becomes involved, Jos\u00e9 Ferrer as Hassan Bey, the Turk who held Cervantes in captivity, Louis Jourdan as Cardinal Giulio Acquaviva, and Fernando Rey as King Philip II.",
+      "Cabaret (1953 film) | Cabaret is a 1953 Spanish musical film directed by Eduardo Manzanos Brochero and starring Fernando Rey, Nati Mistral and Jos\u00e9 B\u00f3dalo.",
+      "Manuela (1976 film) | Manuela is a 1976 Spanish drama film directed by Gonzalo Garc\u00eda Pelayo and starring Charo L\u00f3pez, Fernando Rey and M\u00e1ximo Valverde.",
+      "The Doubt | The Doubt (Spanish:La duda) is a 1972 Spanish drama film directed by Rafael Gil and starring Fernando Rey, Anal\u00eda Gad\u00e9 and Jos\u00e9 \u00c1ngel Espinosa 'Ferrusquilla'."
+    ],
+    "hop2_docs": [
+      "That Obscure Object of Desire | That Obscure Object of Desire (French: Cet obscur objet du d\u00e9sir ; Spanish: Ese oscuro objeto del deseo ), a French and Spanish co-production released in 1977, was the final film directed by Luis Bu\u00f1uel.  Set in Spain and France against the backdrop of a terrorist insurgency, the film conveys the story told through a series of flashbacks by an aging Frenchman, Mathieu, played by Fernando Rey, who recounts falling in love with a beautiful young Spanish woman, Conchita, played interchangeably by two actresses, Carole Bouquet and Angela Molina, that repeatedly frustrates his romantic and sexual desires.",
+      "Revolutionary Army of the Infant Jesus | Revolutionary Army of the Infant Jesus is an experimental music collective that was formed in Liverpool, England in 1985 by founding members Leslie\u00a0Hampson, Jon Egan, and Paul Boyce.  Their name is a reference to the terrorist group in Luis Bu\u00f1uel's final film, \"That Obscure Object of Desire.\"",
+      "Sexual desire | Sexual desire is a motivational state and an interest in \u201csexual objects or activities, or as a wish, need or drive to seek out sexual objects or to engage in sexual activities\u201d.  Synonyms for sexual desire are \"libido\", \"sexual attraction\" and \"lust\".  Sexual desire is an aspect of a person's sexuality, which varies significantly from one person to another, and also varies depending on circumstances at a particular time.  Not every person experiences sexual desire; those who do not experience may be labelled asexual.",
+      "Fernando Rey | Fernando Casado Arambillet (20 September 1917\u00a0\u2013 9 March 1994), best known as Fernando Rey, was a Spanish film, theatre, and television actor, who worked in both Europe and the United States.  A suave, international actor best known for his roles in the films of surrealist director Luis Bu\u00f1uel (\"Tristana\", 1970; \"Discreet Charm of the Bourgeoisie\", 1972; \"That Obscure Object of Desire\", 1977) and as a drug lord in \"The French Connection\" (1971), he appeared in more than 150 films over half a century.",
+      "Object skill | Object Skill is the kind of skill that helps humans and animals accelerate the speed of finding certain desirable objects, thereby reducing the reward delay in this process.  Along with action skill, it is an essential component of any reward-directed skills.",
+      "The Fighting American | The Fighting American is a surviving 1924 silent film produced and distributed by Universal Pictures and directed by Tom Forman.  The young Mary Astor plays a young college coed who is the object of desire in the eyes of the hero.",
+      "Barricade (disambiguation) | A barricade is an object used to control, block passage, or force the flow of traffic in the desired direction."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 28,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Fernando Rey starred in That obscure Object of Desire that was directed by whom?\nPassages: [\"That Obscure Object of Desire | That Obscure Object of Desire (French: Cet obscur objet du d\\u00e9sir ; Spanish: Ese oscuro objeto del deseo ), a French and Spanish co-production released in 1977, was the final film directed by Luis Bu\\u00f1uel.  Set in Spain and France against the backdrop of a terrorist insurgency, the film conveys the story told through a series of flashbacks by an aging Frenchman, Mathieu, played by Fernando Rey, who recounts falling in love with a beautiful young Spanish woman, Conchita, played interchangeably by two actresses, Carole Bouquet and Angela Molina, that repeatedly frustrates his romantic and sexual desires.\", \"Fernando Rey | Fernando Casado Arambillet (20 September 1917\\u00a0\\u2013 9 March 1994), best known as Fernando Rey, was a Spanish film, theatre, and television actor, who worked in both Europe and the United States.  A suave, international actor best known for his roles in the films of surrealist director Luis Bu\\u00f1uel (\\\"Tristana\\\", 1970; \\\"Discreet Charm of the Bourgeoisie\\\", 1972; \\\"That Obscure Object of Desire\\\", 1977) and as a drug lord in \\\"The French Connection\\\" (1971), he appeared in more than 150 films over half a century.\", \"Airport (1953 film) | Airport (Spanish: Aeropuerto) is a 1953 Spanish comedy film directed by Luis Lucia and starring Fernando Fern\\u00e1n G\\u00f3mez, Margarita Andrey and Fernando Rey.\", \"Cervantes (film) | Cervantes is a highly fictionalized 1967 film biography of the early life of Miguel de Cervantes (1547\\u20131616).  It was the first screen biography of the author.  Directed by Vincent Sherman, and filmed in color, it stars Horst Buchholz as Cervantes, Gina Lollobrigida as a prostitute with whom he becomes involved, Jos\\u00e9 Ferrer as Hassan Bey, the Turk who held Cervantes in captivity, Louis Jourdan as Cardinal Giulio Acquaviva, and Fernando Rey as King Philip II.\", \"Cabaret (1953 film) | Cabaret is a 1953 Spanish musical film directed by Eduardo Manzanos Brochero and starring Fernando Rey, Nati Mistral and Jos\\u00e9 B\\u00f3dalo.\", \"Manuela (1976 film) | Manuela is a 1976 Spanish drama film directed by Gonzalo Garc\\u00eda Pelayo and starring Charo L\\u00f3pez, Fernando Rey and M\\u00e1ximo Valverde.\", \"The Doubt | The Doubt (Spanish:La duda) is a 1972 Spanish drama film directed by Rafael Gil and starring Fernando Rey, Anal\\u00eda Gad\\u00e9 and Jos\\u00e9 \\u00c1ngel Espinosa 'Ferrusquilla'.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks who directed the film \"That Obscure Object of Desire,\" in which Fernando Rey starred. Passage [1] provides clear information stating that \"That Obscure Object of Desire,\" released in 1977, was the final film directed by Luis Bu\u00f1uel. Additionally, Passage [2] reinforces Fernando Rey's connection to Luis Bu\u00f1uel, mentioning Rey's roles in several of the director's films, including this one. Based on this evidence, the director of \"That Obscure Object of Desire\" is Luis Bu\u00f1uel.\nSummary: Luis Bu\u00f1uel directed \"That Obscure Object of Desire,\" starring Fernando Rey."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Fernando Rey starred in That obscure Object of Desire that was directed by whom?\nSummary 1: Luis Bu\u00f1uel directed \"That Obscure Object of Desire,\" starring Fernando Rey."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the director of the movie \"That Obscure Object of Desire,\" which starred Fernando Rey. According to the provided summary, Luis Bu\u00f1uel is identified as the director of this film. Therefore, we have the necessary information to verify and directly answer the query.\nQuery: Who directed \"That Obscure Object of Desire\"?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Fernando Rey starred in That obscure Object of Desire that was directed by whom?\nContext: Luis Bu\u00f1uel directed \"That Obscure Object of Desire,\" starring Fernando Rey.\nPassages: [\"That Obscure Object of Desire | That Obscure Object of Desire (French: Cet obscur objet du d\\u00e9sir ; Spanish: Ese oscuro objeto del deseo ), a French and Spanish co-production released in 1977, was the final film directed by Luis Bu\\u00f1uel.  Set in Spain and France against the backdrop of a terrorist insurgency, the film conveys the story told through a series of flashbacks by an aging Frenchman, Mathieu, played by Fernando Rey, who recounts falling in love with a beautiful young Spanish woman, Conchita, played interchangeably by two actresses, Carole Bouquet and Angela Molina, that repeatedly frustrates his romantic and sexual desires.\", \"Revolutionary Army of the Infant Jesus | Revolutionary Army of the Infant Jesus is an experimental music collective that was formed in Liverpool, England in 1985 by founding members Leslie\\u00a0Hampson, Jon Egan, and Paul Boyce.  Their name is a reference to the terrorist group in Luis Bu\\u00f1uel's final film, \\\"That Obscure Object of Desire.\\\"\", \"Sexual desire | Sexual desire is a motivational state and an interest in \\u201csexual objects or activities, or as a wish, need or drive to seek out sexual objects or to engage in sexual activities\\u201d.  Synonyms for sexual desire are \\\"libido\\\", \\\"sexual attraction\\\" and \\\"lust\\\".  Sexual desire is an aspect of a person's sexuality, which varies significantly from one person to another, and also varies depending on circumstances at a particular time.  Not every person experiences sexual desire; those who do not experience may be labelled asexual.\", \"Fernando Rey | Fernando Casado Arambillet (20 September 1917\\u00a0\\u2013 9 March 1994), best known as Fernando Rey, was a Spanish film, theatre, and television actor, who worked in both Europe and the United States.  A suave, international actor best known for his roles in the films of surrealist director Luis Bu\\u00f1uel (\\\"Tristana\\\", 1970; \\\"Discreet Charm of the Bourgeoisie\\\", 1972; \\\"That Obscure Object of Desire\\\", 1977) and as a drug lord in \\\"The French Connection\\\" (1971), he appeared in more than 150 films over half a century.\", \"Object skill | Object Skill is the kind of skill that helps humans and animals accelerate the speed of finding certain desirable objects, thereby reducing the reward delay in this process.  Along with action skill, it is an essential component of any reward-directed skills.\", \"The Fighting American | The Fighting American is a surviving 1924 silent film produced and distributed by Universal Pictures and directed by Tom Forman.  The young Mary Astor plays a young college coed who is the object of desire in the eyes of the hero.\", \"Barricade (disambiguation) | A barricade is an object used to control, block passage, or force the flow of traffic in the desired direction.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the context provided, we know that Luis Bu\u00f1uel directed \"That Obscure Object of Desire.\" This information is confirmed in passage [1], which specifies that this film was his final directorial work, released in 1977. Additionally, passage [4] makes it clear that Fernando Rey starred in this film, further corroborating the information. The other passages do not directly relate to the film's director or the actor's involvement in it.\nSummary: Luis Bu\u00f1uel directed \"That Obscure Object of Desire,\" which starred Fernando Rey."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Fernando Rey starred in That obscure Object of Desire that was directed by whom?\nSummary 1: Luis Bu\u00f1uel directed \"That Obscure Object of Desire,\" starring Fernando Rey.\nSummary 2: Luis Bu\u00f1uel directed \"That Obscure Object of Desire,\" which starred Fernando Rey."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries, summary_1 and summary_2, clearly state that Luis Bu\u00f1uel is the director of \"That Obscure Object of Desire,\" in which Fernando Rey starred. There is no ambiguity or conflicting information, so it is evident that Luis Bu\u00f1uel directed the film.\nAnswer: Luis Bu\u00f1uel"
+      }
+    ]
+  }
+}

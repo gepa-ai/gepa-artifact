@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7ba9c155429927d897c010",
+  "question": "Blue Dream Media is know for following what American basic cable, internet and satellite business?",
+  "gold_answer": "CNBC",
+  "prediction": {
+    "answer": "CNBC",
+    "hop1_docs": [
+      "CNBC | CNBC is an American basic cable, internet and satellite business news television channel that is owned by NBCUniversal News Group, a division of NBCUniversal, owned by Comcast.  Headquartered in Englewood Cliffs, New Jersey, the network primarily carries business day coverage of U.S. and international financial markets; following the end of the business day and on non-trading days, CNBC primarily carries financial and business-themed documentaries and reality shows.",
+      "History of Nickelodeon | Nickelodeon is an American basic cable and satellite television network owned by the MTV Networks Kids & Family Group, a unit of the Viacom Media Networks division of Viacom, which focuses on programs aimed at children and teenagers; it has since expanded to include three spin-off digital cable and satellite networks in the United States, and international channels in six continents.",
+      "Googled: The End of the World as We Know It | Googled: The End of the World as We Know It is a book published in 2009 by American writer, journalist and media critic Ken Auletta.  It examines the evolution of Google as a company, its philosophy, business ethics, future plans and impact on society, the world of business and the Internet.",
+      "CNN | Cable News Network (CNN) is an American basic cable and satellite television news channel owned by the Turner Broadcasting System, a division of Time Warner.  CNN was founded in 1980 by American media proprietor Ted Turner as a 24-hour cable news channel.  Upon its launch, CNN was the first television channel to provide 24-hour news coverage, and was the first all-news television channel in the United States.",
+      "C-SPAN | C-SPAN ( ), an acronym for Cable-Satellite Public Affairs Network, is an American cable and satellite television network that was created in 1979 by the cable television industry as a public service.  C-SPAN televises many proceedings of the United States federal government, as well as other public affairs programming.  The C-SPAN network includes three television channels (C-SPAN, C-SPAN2 and C-SPAN3), one radio station (WCSP-FM) and a group of websites that provide streaming media and archives of C-SPAN programs.  C-SPAN's television channels are available to approximately 100 million cable and satellite households within the United States, while WCSP-FM, also called C-SPAN Radio, is broadcast on FM radio in Washington, D.C., and is available throughout the U.S. on XM Satellite Radio, via Internet streaming, and through apps for iOS, BlackBerry and Android devices.",
+      "Over-the-top content | Over-the-top content (OTT) is a term used in broadcasting and technology business reporting to refer to audio, video, and other media transmitted via the Internet as a standalone product, that is, without an operator of multiple cable or direct-broadcast satellite television systems (so-called multiple-system operators) controlling or distributing the content.",
+      "IPTV | Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks.  This is in contrast to delivery through traditional terrestrial, satellite, and cable television formats.  Unlike downloaded media, IPTV offers the ability to stream the source media continuously.  As a result, a client media player can begin playing the content (such as a TV channel) almost immediately.  This is known as streaming media."
+    ],
+    "hop2_docs": [
+      "CNBC | CNBC is an American basic cable, internet and satellite business news television channel that is owned by NBCUniversal News Group, a division of NBCUniversal, owned by Comcast.  Headquartered in Englewood Cliffs, New Jersey, the network primarily carries business day coverage of U.S. and international financial markets; following the end of the business day and on non-trading days, CNBC primarily carries financial and business-themed documentaries and reality shows.",
+      "History of Nickelodeon | Nickelodeon is an American basic cable and satellite television network owned by the MTV Networks Kids & Family Group, a unit of the Viacom Media Networks division of Viacom, which focuses on programs aimed at children and teenagers; it has since expanded to include three spin-off digital cable and satellite networks in the United States, and international channels in six continents.",
+      "IPTV | Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks.  This is in contrast to delivery through traditional terrestrial, satellite, and cable television formats.  Unlike downloaded media, IPTV offers the ability to stream the source media continuously.  As a result, a client media player can begin playing the content (such as a TV channel) almost immediately.  This is known as streaming media.",
+      "CNN | Cable News Network (CNN) is an American basic cable and satellite television news channel owned by the Turner Broadcasting System, a division of Time Warner.  CNN was founded in 1980 by American media proprietor Ted Turner as a 24-hour cable news channel.  Upon its launch, CNN was the first television channel to provide 24-hour news coverage, and was the first all-news television channel in the United States.",
+      "C-SPAN | C-SPAN ( ), an acronym for Cable-Satellite Public Affairs Network, is an American cable and satellite television network that was created in 1979 by the cable television industry as a public service.  C-SPAN televises many proceedings of the United States federal government, as well as other public affairs programming.  The C-SPAN network includes three television channels (C-SPAN, C-SPAN2 and C-SPAN3), one radio station (WCSP-FM) and a group of websites that provide streaming media and archives of C-SPAN programs.  C-SPAN's television channels are available to approximately 100 million cable and satellite households within the United States, while WCSP-FM, also called C-SPAN Radio, is broadcast on FM radio in Washington, D.C., and is available throughout the U.S. on XM Satellite Radio, via Internet streaming, and through apps for iOS, BlackBerry and Android devices.",
+      "History of MSNBC: 2008\u20132015 | The following is a history of MSNBC from 2008\u20132015.  MSNBC is an American basic cable and satellite news television channel that was .  This era is known for its focus on more opinionated programming, which was drastically cut back in the recent shift towards hard news.",
+      "Over-the-top content | Over-the-top content (OTT) is a term used in broadcasting and technology business reporting to refer to audio, video, and other media transmitted via the Internet as a standalone product, that is, without an operator of multiple cable or direct-broadcast satellite television systems (so-called multiple-system operators) controlling or distributing the content."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 129,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Blue Dream Media is know for following what American basic cable, internet and satellite business?\nPassages: [\"CNBC | CNBC is an American basic cable, internet and satellite business news television channel that is owned by NBCUniversal News Group, a division of NBCUniversal, owned by Comcast.  Headquartered in Englewood Cliffs, New Jersey, the network primarily carries business day coverage of U.S. and international financial markets; following the end of the business day and on non-trading days, CNBC primarily carries financial and business-themed documentaries and reality shows.\", \"History of Nickelodeon | Nickelodeon is an American basic cable and satellite television network owned by the MTV Networks Kids & Family Group, a unit of the Viacom Media Networks division of Viacom, which focuses on programs aimed at children and teenagers; it has since expanded to include three spin-off digital cable and satellite networks in the United States, and international channels in six continents.\", \"Googled: The End of the World as We Know It | Googled: The End of the World as We Know It is a book published in 2009 by American writer, journalist and media critic Ken Auletta.  It examines the evolution of Google as a company, its philosophy, business ethics, future plans and impact on society, the world of business and the Internet.\", \"CNN | Cable News Network (CNN) is an American basic cable and satellite television news channel owned by the Turner Broadcasting System, a division of Time Warner.  CNN was founded in 1980 by American media proprietor Ted Turner as a 24-hour cable news channel.  Upon its launch, CNN was the first television channel to provide 24-hour news coverage, and was the first all-news television channel in the United States.\", \"C-SPAN | C-SPAN ( ), an acronym for Cable-Satellite Public Affairs Network, is an American cable and satellite television network that was created in 1979 by the cable television industry as a public service.  C-SPAN televises many proceedings of the United States federal government, as well as other public affairs programming.  The C-SPAN network includes three television channels (C-SPAN, C-SPAN2 and C-SPAN3), one radio station (WCSP-FM) and a group of websites that provide streaming media and archives of C-SPAN programs.  C-SPAN's television channels are available to approximately 100 million cable and satellite households within the United States, while WCSP-FM, also called C-SPAN Radio, is broadcast on FM radio in Washington, D.C., and is available throughout the U.S. on XM Satellite Radio, via Internet streaming, and through apps for iOS, BlackBerry and Android devices.\", \"Over-the-top content | Over-the-top content (OTT) is a term used in broadcasting and technology business reporting to refer to audio, video, and other media transmitted via the Internet as a standalone product, that is, without an operator of multiple cable or direct-broadcast satellite television systems (so-called multiple-system operators) controlling or distributing the content.\", \"IPTV | Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks.  This is in contrast to delivery through traditional terrestrial, satellite, and cable television formats.  Unlike downloaded media, IPTV offers the ability to stream the source media continuously.  As a result, a client media player can begin playing the content (such as a TV channel) almost immediately.  This is known as streaming media.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine the American basic cable, internet, and satellite business that Blue Dream Media is known for following, we must identify an entity that matches the specified characteristics from the given passages. Passage [1] describes CNBC as an American basic cable, internet, and satellite business dedicated to financial markets and themed documentaries. Passages [4] (CNN) and [5] (C-SPAN) also qualify as American basic cable and satellite television entities, but their focus diverges to news and public affairs programming, respectively. Nickelodeon ([2]) is a TV network focusing on children and teenagers, which doesn't align closely with the business theme. Other passages ([6, 7]) focus on technological content delivery frameworks rather than distinct business entities. Based on aligning themes and detailed descriptions, CNBC emerges as the likely candidate for what Blue Dream Media is known for following.\nSummary: Blue Dream Media is known for following CNBC, an American basic cable, internet, and satellite business news channel."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Blue Dream Media is know for following what American basic cable, internet and satellite business?\nSummary 1: Blue Dream Media is known for following CNBC, an American basic cable, internet, and satellite business news channel."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the specific American basic cable, internet, and satellite business associated with Blue Dream Media. The first summary explicitly identifies CNBC as this entity. This implies that the query should reaffirm CNBC as the answer.\nQuery: What is Blue Dream Media known for following, specifically in the realm of American basic cable, internet, and satellite business?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Blue Dream Media is know for following what American basic cable, internet and satellite business?\nContext: Blue Dream Media is known for following CNBC, an American basic cable, internet, and satellite business news channel.\nPassages: [\"CNBC | CNBC is an American basic cable, internet and satellite business news television channel that is owned by NBCUniversal News Group, a division of NBCUniversal, owned by Comcast.  Headquartered in Englewood Cliffs, New Jersey, the network primarily carries business day coverage of U.S. and international financial markets; following the end of the business day and on non-trading days, CNBC primarily carries financial and business-themed documentaries and reality shows.\", \"History of Nickelodeon | Nickelodeon is an American basic cable and satellite television network owned by the MTV Networks Kids & Family Group, a unit of the Viacom Media Networks division of Viacom, which focuses on programs aimed at children and teenagers; it has since expanded to include three spin-off digital cable and satellite networks in the United States, and international channels in six continents.\", \"IPTV | Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks.  This is in contrast to delivery through traditional terrestrial, satellite, and cable television formats.  Unlike downloaded media, IPTV offers the ability to stream the source media continuously.  As a result, a client media player can begin playing the content (such as a TV channel) almost immediately.  This is known as streaming media.\", \"CNN | Cable News Network (CNN) is an American basic cable and satellite television news channel owned by the Turner Broadcasting System, a division of Time Warner.  CNN was founded in 1980 by American media proprietor Ted Turner as a 24-hour cable news channel.  Upon its launch, CNN was the first television channel to provide 24-hour news coverage, and was the first all-news television channel in the United States.\", \"C-SPAN | C-SPAN ( ), an acronym for Cable-Satellite Public Affairs Network, is an American cable and satellite television network that was created in 1979 by the cable television industry as a public service.  C-SPAN televises many proceedings of the United States federal government, as well as other public affairs programming.  The C-SPAN network includes three television channels (C-SPAN, C-SPAN2 and C-SPAN3), one radio station (WCSP-FM) and a group of websites that provide streaming media and archives of C-SPAN programs.  C-SPAN's television channels are available to approximately 100 million cable and satellite households within the United States, while WCSP-FM, also called C-SPAN Radio, is broadcast on FM radio in Washington, D.C., and is available throughout the U.S. on XM Satellite Radio, via Internet streaming, and through apps for iOS, BlackBerry and Android devices.\", \"History of MSNBC: 2008\\u20132015 | The following is a history of MSNBC from 2008\\u20132015.  MSNBC is an American basic cable and satellite news television channel that was .  This era is known for its focus on more opinionated programming, which was drastically cut back in the recent shift towards hard news.\", \"Over-the-top content | Over-the-top content (OTT) is a term used in broadcasting and technology business reporting to refer to audio, video, and other media transmitted via the Internet as a standalone product, that is, without an operator of multiple cable or direct-broadcast satellite television systems (so-called multiple-system operators) controlling or distributing the content.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question indicates a need to identify the specific American basic cable, internet, and satellite business that Blue Dream Media is associated with. The context directly states that Blue Dream Media is known for following CNBC, which aligns with passage [1]. Passage [1] provides details about CNBC being an American business news channel primarily focused on financial markets and business-themed programming, further corroborating the context. None of the other passages mention Blue Dream Media or provide conflicting information.\nSummary: Blue Dream Media is known for following CNBC, an American basic cable, internet, and satellite business news channel."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Blue Dream Media is know for following what American basic cable, internet and satellite business?\nSummary 1: Blue Dream Media is known for following CNBC, an American basic cable, internet, and satellite business news channel.\nSummary 2: Blue Dream Media is known for following CNBC, an American basic cable, internet, and satellite business news channel."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries confirm that Blue Dream Media is known for following CNBC. CNBC is accurately described as an American basic cable, internet, and satellite business news channel. There is agreement between the two summaries, and they both directly address the question.\nAnswer: CNBC"
+      }
+    ]
+  }
+}

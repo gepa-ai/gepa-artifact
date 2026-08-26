@@ -1,0 +1,96 @@
+{
+  "example_id": "5ac520545542994611c8b3be",
+  "question": "Liam Green was born in what town in Lincolnshire, England",
+  "gold_answer": "Grimsby",
+  "prediction": {
+    "answer": "Grimsby",
+    "hop1_docs": [
+      "Liam Green | Liam Green (born 27 August 1985 in Grimsby, England) is an English footballer.",
+      "Hubberts Bridge | Hubberts Bridge is a village in the borough of Boston, Lincolnshire, England.  It is situated within the civil parish of Frampton, and approximately 3 mi west from the market town of Boston. Thought To be owned by Robert Hubbert, Born on the 02 March In Lincolnshire, England And Died in 1850 In Boston, Lincolnshire, England.",
+      "Kirkby Green | Kirkby Green is a small village in the North Kesteven district of Lincolnshire, England.  The village lies east from Scopwick on the B1191 road to Timberland, 10 mi south-east from the county town of Lincoln, 6.5 mi south-west from Woodhall Spa, and 8 mi north from Sleaford.",
+      "Liam Darville | Liam Thomas Darville (born 26 October 1990) is an English semi-professional footballer who plays as a defender for Richmond Town.  He previously played for Leeds United, Rotherham United, Tranmere Rovers, York City and Harrogate Town.  He has represented England at two levels; under-16 and under-17.",
+      "Frodingham, Lincolnshire | Frodingham was a hamlet in Lincolnshire which has grown into a suburb of Scunthorpe, North Lincolnshire.  Although the village lay directly to the south of what is now Scunthorpe town centre, the name Frodingham is now often used to refer to the area directly to the north of the town centre.",
+      "Louth, Lincolnshire | Louth ( ) is a market town and civil parish in the East Lindsey district of Lincolnshire, England.  Louth is the principal town and centre for a large rural area of eastern Lincolnshire.  It attracts visitors for St James' Church, Hubbard's Hills, market, Lincolnshire's last remaining cattle market and many independent retailers.",
+      "North Lincolnshire Museum | North Lincolnshire Museum (formerly known as Scunthorpe Museum) is a local museum in the town of Scunthorpe, north Lincolnshire, England."
+    ],
+    "hop2_docs": [
+      "Liam Green | Liam Green (born 27 August 1985 in Grimsby, England) is an English footballer.",
+      "Liam Deois | Liam Deois (aka Liam Joyce), fl.  early 19th century, was a highwayman who lived at Gleann 'a Ghada\u00ed (valley of the robbers), Ballybackagh, some four miles north-west of Athenry, Co Galway, Ireland.  Locally described as a big man and feared by his neighbours, Deois robbed people going to and from the Galway market, usually in the area between C\u00fainne Geal - near what is now Carnmore Airport - to Cussaun Cross on the Galway-Monivea road.  He would escape pursuit at his hideout at a place now known as Poll Liam Deois.  During the summer months, he targeted people on the road from Merlin Park to Renmore, just outside Galway.",
+      "Emergency childbirth | Emergency childbirth is the birth of an infant in places or situations other than what was planned.  In most cases the location of childbirth is planned ahead of time and may be at home, hospital, medical facility or birthing center.  In other situations, the birth occurs on the way to these facilities.  Oftentimes, no trained medical personnel are present.  This sometimes occurs with police and paramedics present.  Emergency measures are indicated when childbirth is imminent.",
+      "Place of birth | The place of birth (POB) is the place where a person was born.  This place is often used in legal documents, together with name and date of birth, to uniquely identify a person.  As a general rule with respect to passports, the place of birth is determined to be country that currently has \"sovereignty\" over the actual place of birth regardless of when the birth actually occurred.  The place of birth is not necessarily the place where the parents of the new baby live.  If the baby is born in a hospital in another place, that place is the place of birth.  In many countries, this also means that the government requires that the birth of the new baby is registered in the place of birth.",
+      "Liam Noble | Liam Thomas Noble (born 8 May 1991) is an English professional footballer who plays as a midfielder.  He has formerly played for Carlisle United and Sunderland.  He currently plays for Forest Green Rovers.",
+      "Heineken Green Energy | Heineken Green Energy is an Irish music festival that takes place at Dublin Castle over the May bank holiday weekend.  It attracts over 50,000 people per year for what is the opening of the music festival season in Ireland.  Heineken Green Energy first took place in 1996 and since then has occurred on an annual basis, with smaller shows in other city venues supporting the main event in the Castle.",
+      "J. Green | J. Green (full name and dates of birth and death unknown) was an English cricketer.  Green's batting style is unknown."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 74,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Liam Green was born in what town in Lincolnshire, England\nPassages: [\"Liam Green | Liam Green (born 27 August 1985 in Grimsby, England) is an English footballer.\", \"Hubberts Bridge | Hubberts Bridge is a village in the borough of Boston, Lincolnshire, England.  It is situated within the civil parish of Frampton, and approximately 3 mi west from the market town of Boston. Thought To be owned by Robert Hubbert, Born on the 02 March In Lincolnshire, England And Died in 1850 In Boston, Lincolnshire, England.\", \"Kirkby Green | Kirkby Green is a small village in the North Kesteven district of Lincolnshire, England.  The village lies east from Scopwick on the B1191 road to Timberland, 10 mi south-east from the county town of Lincoln, 6.5 mi south-west from Woodhall Spa, and 8 mi north from Sleaford.\", \"Liam Darville | Liam Thomas Darville (born 26 October 1990) is an English semi-professional footballer who plays as a defender for Richmond Town.  He previously played for Leeds United, Rotherham United, Tranmere Rovers, York City and Harrogate Town.  He has represented England at two levels; under-16 and under-17.\", \"Frodingham, Lincolnshire | Frodingham was a hamlet in Lincolnshire which has grown into a suburb of Scunthorpe, North Lincolnshire.  Although the village lay directly to the south of what is now Scunthorpe town centre, the name Frodingham is now often used to refer to the area directly to the north of the town centre.\", \"Louth, Lincolnshire | Louth ( ) is a market town and civil parish in the East Lindsey district of Lincolnshire, England.  Louth is the principal town and centre for a large rural area of eastern Lincolnshire.  It attracts visitors for St James' Church, Hubbard's Hills, market, Lincolnshire's last remaining cattle market and many independent retailers.\", \"North Lincolnshire Museum | North Lincolnshire Museum (formerly known as Scunthorpe Museum) is a local museum in the town of Scunthorpe, north Lincolnshire, England.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the provided passages, the direct information about Liam Green indicates that he was born in Grimsby, England (Passage [1]). Although the question specifies Lincolnshire, England, Grimsby is a town located within Lincolnshire, as confirmed by geography outside the provided text. The remaining passages do not provide any contradicting or additional relevant information about Liam Green's birthplace. Therefore, the correct answer is directly stated in Passage [1].\nSummary: Liam Green was born in Grimsby, Lincolnshire, England."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Liam Green was born in what town in Lincolnshire, England\nSummary 1: Liam Green was born in Grimsby, Lincolnshire, England."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the town in Lincolnshire, England, where Liam Green was born. Based on the provided summary, Liam Green was born in Grimsby, which is located in Lincolnshire, England.\nQuery: What is the place of birth of Liam Green?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Liam Green was born in what town in Lincolnshire, England\nContext: Liam Green was born in Grimsby, Lincolnshire, England.\nPassages: [\"Liam Green | Liam Green (born 27 August 1985 in Grimsby, England) is an English footballer.\", \"Liam Deois | Liam Deois (aka Liam Joyce), fl.  early 19th century, was a highwayman who lived at Gleann 'a Ghada\\u00ed (valley of the robbers), Ballybackagh, some four miles north-west of Athenry, Co Galway, Ireland.  Locally described as a big man and feared by his neighbours, Deois robbed people going to and from the Galway market, usually in the area between C\\u00fainne Geal - near what is now Carnmore Airport - to Cussaun Cross on the Galway-Monivea road.  He would escape pursuit at his hideout at a place now known as Poll Liam Deois.  During the summer months, he targeted people on the road from Merlin Park to Renmore, just outside Galway.\", \"Emergency childbirth | Emergency childbirth is the birth of an infant in places or situations other than what was planned.  In most cases the location of childbirth is planned ahead of time and may be at home, hospital, medical facility or birthing center.  In other situations, the birth occurs on the way to these facilities.  Oftentimes, no trained medical personnel are present.  This sometimes occurs with police and paramedics present.  Emergency measures are indicated when childbirth is imminent.\", \"Place of birth | The place of birth (POB) is the place where a person was born.  This place is often used in legal documents, together with name and date of birth, to uniquely identify a person.  As a general rule with respect to passports, the place of birth is determined to be country that currently has \\\"sovereignty\\\" over the actual place of birth regardless of when the birth actually occurred.  The place of birth is not necessarily the place where the parents of the new baby live.  If the baby is born in a hospital in another place, that place is the place of birth.  In many countries, this also means that the government requires that the birth of the new baby is registered in the place of birth.\", \"Liam Noble | Liam Thomas Noble (born 8 May 1991) is an English professional footballer who plays as a midfielder.  He has formerly played for Carlisle United and Sunderland.  He currently plays for Forest Green Rovers.\", \"Heineken Green Energy | Heineken Green Energy is an Irish music festival that takes place at Dublin Castle over the May bank holiday weekend.  It attracts over 50,000 people per year for what is the opening of the music festival season in Ireland.  Heineken Green Energy first took place in 1996 and since then has occurred on an annual basis, with smaller shows in other city venues supporting the main event in the Castle.\", \"J. Green | J. Green (full name and dates of birth and death unknown) was an English cricketer.  Green's batting style is unknown.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the information provided in the context\u2014\"Liam Green was born in Grimsby, Lincolnshire, England\"\u2014and passage [1], which reiterates this information, we can confirm that Liam Green was born in Grimsby, Lincolnshire, England. No other passages contain contradictory or relevant information about his birthplace.\nSummary: Liam Green was born in Grimsby, Lincolnshire, England."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Liam Green was born in what town in Lincolnshire, England\nSummary 1: Liam Green was born in Grimsby, Lincolnshire, England.\nSummary 2: Liam Green was born in Grimsby, Lincolnshire, England."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries confirm that Liam Green was born in Grimsby, a town in Lincolnshire, England. Since both summaries agree and provide the same information, it is reasonable to conclude that Grimsby is the correct answer.\nAnswer: Grimsby"
+      }
+    ]
+  }
+}

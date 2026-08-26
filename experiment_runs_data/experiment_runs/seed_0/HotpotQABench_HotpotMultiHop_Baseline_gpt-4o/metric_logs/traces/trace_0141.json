@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7c462a55429935c91b514a",
+  "question": "Lili K. released which debut album after collaborating with members of the Chicago collective Save Money?",
+  "gold_answer": "Ruby",
+  "prediction": {
+    "answer": "Ruby",
+    "hop1_docs": [
+      "Chance the Rapper | Chancellor Johnathan Bennett (born April 16, 1993), known professionally as Chance the Rapper, is an American rapper, singer, songwriter, record producer, and actor from the West Chatham neighborhood of Chicago, Illinois.  In 2013, he began to gain recognition following the release of his second mixtape, \"Acid Rap\".  Apart from his solo career, he is a member of the Chicago collective Save Money (along with frequent collaborator Vic Mensa).  He has worked as the lead vocalist for the band The Social Experiment; they released the album \"Surf\" in May 2015.",
+      "Vic Mensa | Victor Kwesi Mensah (born June 6, 1993), better known by his stage name Vic Mensa, is an American rapper from Chicago, Illinois.  He is currently signed to Roc Nation and was a member of the group Kids These Days, which broke up in May 2013, after which he released his first solo mixtape \"Innanetape\".  Mensa is also founder of the hip-hop collective Savemoney which includes frequent collaborator Chance the Rapper.  His debut single \"Down on My Luck\" was released in June 2014 by Virgin EMI.  His debut studio album \"The Autobiography\" was released in 2017.",
+      "Save Dat Money | \"Save Dat Money\" (stylized as $ave Dat Money), is a song by American hip hop recording artist Lil Dicky from his debut studio album \"Professional Rapper\".  It was released on June 10, 2015 as the album's first single.  It was produced by Money Alwayz and features guest appearances by Fetty Wap and Rich Homie Quan.  It peaked at number 71 on the \"Billboard\" Hot 100.",
+      "Lili K. | Lillianna Kryzanek (born July 1, 1991), better known as her stage name Lili K. is an American jazz and soul vocalist and songwriter born in Milwaukee, Wisconsin and based in Chicago, Illinois.  She released her debut album \"Ruby\" on April 21, 2015, after becoming widely known for her feature work with artists such as Chance the Rapper and Vic Mensa.",
+      "Every Girl (Young Money song) | \"Every Girl\" (album version titled \"Every Girl in the World\") is a song by rap group Young Money released as the 1st single from their debut collaboration album titled \"We Are Young Money\".  It was legally released to the iTunes Store on June 11, 2009.  Young Money Entertainment rappers Lil Wayne, Drake, Jae Millz, Gudda Gudda, and Mack Maine make appearances on the track.  The video was shot on February 13, 2009 and was released on April 6 of that same year.  The song was leaked to the internet on January 28, 2009, just two days after \"Prom Queen\" was officially released.",
+      "Mutya Buena discography | English singer Mutya Buena has released one studio album, one collaborative album, and ten singles (including six as a featured artist).  Buena embarked on her solo career after releasing her debut album \"Real Girl\" in June 2007 releasing five singles from the album and collaborating with George Michael, Groove Armada, and Amy Winehouse.  In 2010 Buena contributed to the collaborative album \"\"Sound of Camden\"\".  In July 2012 reformed with the original members of the Sugababes under the new name of Mutya Keisha Siobhan and are set to release their debut album in early 2013.",
+      "Fingerprints (Amelia Lily album) | Fingerprints is the second studio album by British singer Amelia Lily.  It was never released following the lead single California not doing so well in the charts.  After the cancellation of Lilys' original debut album \"Be A Fighter\" in 2013, Lily attempted to start fresh with a new sound and new record deal with Warner Music."
+    ],
+    "hop2_docs": [
+      "Chance the Rapper | Chancellor Johnathan Bennett (born April 16, 1993), known professionally as Chance the Rapper, is an American rapper, singer, songwriter, record producer, and actor from the West Chatham neighborhood of Chicago, Illinois.  In 2013, he began to gain recognition following the release of his second mixtape, \"Acid Rap\".  Apart from his solo career, he is a member of the Chicago collective Save Money (along with frequent collaborator Vic Mensa).  He has worked as the lead vocalist for the band The Social Experiment; they released the album \"Surf\" in May 2015.",
+      "Vic Mensa | Victor Kwesi Mensah (born June 6, 1993), better known by his stage name Vic Mensa, is an American rapper from Chicago, Illinois.  He is currently signed to Roc Nation and was a member of the group Kids These Days, which broke up in May 2013, after which he released his first solo mixtape \"Innanetape\".  Mensa is also founder of the hip-hop collective Savemoney which includes frequent collaborator Chance the Rapper.  His debut single \"Down on My Luck\" was released in June 2014 by Virgin EMI.  His debut studio album \"The Autobiography\" was released in 2017.",
+      "Save Dat Money | \"Save Dat Money\" (stylized as $ave Dat Money), is a song by American hip hop recording artist Lil Dicky from his debut studio album \"Professional Rapper\".  It was released on June 10, 2015 as the album's first single.  It was produced by Money Alwayz and features guest appearances by Fetty Wap and Rich Homie Quan.  It peaked at number 71 on the \"Billboard\" Hot 100.",
+      "Lili K. | Lillianna Kryzanek (born July 1, 1991), better known as her stage name Lili K. is an American jazz and soul vocalist and songwriter born in Milwaukee, Wisconsin and based in Chicago, Illinois.  She released her debut album \"Ruby\" on April 21, 2015, after becoming widely known for her feature work with artists such as Chance the Rapper and Vic Mensa.",
+      "Every Girl (Young Money song) | \"Every Girl\" (album version titled \"Every Girl in the World\") is a song by rap group Young Money released as the 1st single from their debut collaboration album titled \"We Are Young Money\".  It was legally released to the iTunes Store on June 11, 2009.  Young Money Entertainment rappers Lil Wayne, Drake, Jae Millz, Gudda Gudda, and Mack Maine make appearances on the track.  The video was shot on February 13, 2009 and was released on April 6 of that same year.  The song was leaked to the internet on January 28, 2009, just two days after \"Prom Queen\" was officially released.",
+      "Mutya Buena discography | English singer Mutya Buena has released one studio album, one collaborative album, and ten singles (including six as a featured artist).  Buena embarked on her solo career after releasing her debut album \"Real Girl\" in June 2007 releasing five singles from the album and collaborating with George Michael, Groove Armada, and Amy Winehouse.  In 2010 Buena contributed to the collaborative album \"\"Sound of Camden\"\".  In July 2012 reformed with the original members of the Sugababes under the new name of Mutya Keisha Siobhan and are set to release their debut album in early 2013.",
+      "Fingerprints (Amelia Lily album) | Fingerprints is the second studio album by British singer Amelia Lily.  It was never released following the lead single California not doing so well in the charts.  After the cancellation of Lilys' original debut album \"Be A Fighter\" in 2013, Lily attempted to start fresh with a new sound and new record deal with Warner Music."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 141,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Lili K. released which debut album after collaborating with members of the Chicago collective Save Money?\nPassages: [\"Chance the Rapper | Chancellor Johnathan Bennett (born April 16, 1993), known professionally as Chance the Rapper, is an American rapper, singer, songwriter, record producer, and actor from the West Chatham neighborhood of Chicago, Illinois.  In 2013, he began to gain recognition following the release of his second mixtape, \\\"Acid Rap\\\".  Apart from his solo career, he is a member of the Chicago collective Save Money (along with frequent collaborator Vic Mensa).  He has worked as the lead vocalist for the band The Social Experiment; they released the album \\\"Surf\\\" in May 2015.\", \"Vic Mensa | Victor Kwesi Mensah (born June 6, 1993), better known by his stage name Vic Mensa, is an American rapper from Chicago, Illinois.  He is currently signed to Roc Nation and was a member of the group Kids These Days, which broke up in May 2013, after which he released his first solo mixtape \\\"Innanetape\\\".  Mensa is also founder of the hip-hop collective Savemoney which includes frequent collaborator Chance the Rapper.  His debut single \\\"Down on My Luck\\\" was released in June 2014 by Virgin EMI.  His debut studio album \\\"The Autobiography\\\" was released in 2017.\", \"Save Dat Money | \\\"Save Dat Money\\\" (stylized as $ave Dat Money), is a song by American hip hop recording artist Lil Dicky from his debut studio album \\\"Professional Rapper\\\".  It was released on June 10, 2015 as the album's first single.  It was produced by Money Alwayz and features guest appearances by Fetty Wap and Rich Homie Quan.  It peaked at number 71 on the \\\"Billboard\\\" Hot 100.\", \"Lili K. | Lillianna Kryzanek (born July 1, 1991), better known as her stage name Lili K. is an American jazz and soul vocalist and songwriter born in Milwaukee, Wisconsin and based in Chicago, Illinois.  She released her debut album \\\"Ruby\\\" on April 21, 2015, after becoming widely known for her feature work with artists such as Chance the Rapper and Vic Mensa.\", \"Every Girl (Young Money song) | \\\"Every Girl\\\" (album version titled \\\"Every Girl in the World\\\") is a song by rap group Young Money released as the 1st single from their debut collaboration album titled \\\"We Are Young Money\\\".  It was legally released to the iTunes Store on June 11, 2009.  Young Money Entertainment rappers Lil Wayne, Drake, Jae Millz, Gudda Gudda, and Mack Maine make appearances on the track.  The video was shot on February 13, 2009 and was released on April 6 of that same year.  The song was leaked to the internet on January 28, 2009, just two days after \\\"Prom Queen\\\" was officially released.\", \"Mutya Buena discography | English singer Mutya Buena has released one studio album, one collaborative album, and ten singles (including six as a featured artist).  Buena embarked on her solo career after releasing her debut album \\\"Real Girl\\\" in June 2007 releasing five singles from the album and collaborating with George Michael, Groove Armada, and Amy Winehouse.  In 2010 Buena contributed to the collaborative album \\\"\\\"Sound of Camden\\\"\\\".  In July 2012 reformed with the original members of the Sugababes under the new name of Mutya Keisha Siobhan and are set to release their debut album in early 2013.\", \"Fingerprints (Amelia Lily album) | Fingerprints is the second studio album by British singer Amelia Lily.  It was never released following the lead single California not doing so well in the charts.  After the cancellation of Lilys' original debut album \\\"Be A Fighter\\\" in 2013, Lily attempted to start fresh with a new sound and new record deal with Warner Music.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the debut album Lili K. released after collaborating with members of the Chicago collective Save Money. From the passages, passage [4] provides information about Lili K., stating that she is an American jazz and soul vocalist based in Chicago who released her debut album, \"Ruby,\" on April 21, 2015. This information is directly relevant as it aligns her with collaborations involving Save Money members like Chance the Rapper and Vic Mensa, mentioned in the same passage.\nSummary: Lili K. released her debut album \"Ruby\" on April 21, 2015, after collaborating with members of the Chicago collective Save Money."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Lili K. released which debut album after collaborating with members of the Chicago collective Save Money?\nSummary 1: Lili K. released her debut album \"Ruby\" on April 21, 2015, after collaborating with members of the Chicago collective Save Money."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the debut album released by Lili K. after working with members of the Chicago collective Save Money. The summary provides clear information that Lili K.\u2019s debut album is titled \"Ruby,\" released on April 21, 2015, fulfilling the conditions mentioned in the question.\nQuery: What is the debut album released by Lili K. after collaborating with members of the Chicago collective Save Money?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Lili K. released which debut album after collaborating with members of the Chicago collective Save Money?\nContext: Lili K. released her debut album \"Ruby\" on April 21, 2015, after collaborating with members of the Chicago collective Save Money.\nPassages: [\"Chance the Rapper | Chancellor Johnathan Bennett (born April 16, 1993), known professionally as Chance the Rapper, is an American rapper, singer, songwriter, record producer, and actor from the West Chatham neighborhood of Chicago, Illinois.  In 2013, he began to gain recognition following the release of his second mixtape, \\\"Acid Rap\\\".  Apart from his solo career, he is a member of the Chicago collective Save Money (along with frequent collaborator Vic Mensa).  He has worked as the lead vocalist for the band The Social Experiment; they released the album \\\"Surf\\\" in May 2015.\", \"Vic Mensa | Victor Kwesi Mensah (born June 6, 1993), better known by his stage name Vic Mensa, is an American rapper from Chicago, Illinois.  He is currently signed to Roc Nation and was a member of the group Kids These Days, which broke up in May 2013, after which he released his first solo mixtape \\\"Innanetape\\\".  Mensa is also founder of the hip-hop collective Savemoney which includes frequent collaborator Chance the Rapper.  His debut single \\\"Down on My Luck\\\" was released in June 2014 by Virgin EMI.  His debut studio album \\\"The Autobiography\\\" was released in 2017.\", \"Save Dat Money | \\\"Save Dat Money\\\" (stylized as $ave Dat Money), is a song by American hip hop recording artist Lil Dicky from his debut studio album \\\"Professional Rapper\\\".  It was released on June 10, 2015 as the album's first single.  It was produced by Money Alwayz and features guest appearances by Fetty Wap and Rich Homie Quan.  It peaked at number 71 on the \\\"Billboard\\\" Hot 100.\", \"Lili K. | Lillianna Kryzanek (born July 1, 1991), better known as her stage name Lili K. is an American jazz and soul vocalist and songwriter born in Milwaukee, Wisconsin and based in Chicago, Illinois.  She released her debut album \\\"Ruby\\\" on April 21, 2015, after becoming widely known for her feature work with artists such as Chance the Rapper and Vic Mensa.\", \"Every Girl (Young Money song) | \\\"Every Girl\\\" (album version titled \\\"Every Girl in the World\\\") is a song by rap group Young Money released as the 1st single from their debut collaboration album titled \\\"We Are Young Money\\\".  It was legally released to the iTunes Store on June 11, 2009.  Young Money Entertainment rappers Lil Wayne, Drake, Jae Millz, Gudda Gudda, and Mack Maine make appearances on the track.  The video was shot on February 13, 2009 and was released on April 6 of that same year.  The song was leaked to the internet on January 28, 2009, just two days after \\\"Prom Queen\\\" was officially released.\", \"Mutya Buena discography | English singer Mutya Buena has released one studio album, one collaborative album, and ten singles (including six as a featured artist).  Buena embarked on her solo career after releasing her debut album \\\"Real Girl\\\" in June 2007 releasing five singles from the album and collaborating with George Michael, Groove Armada, and Amy Winehouse.  In 2010 Buena contributed to the collaborative album \\\"\\\"Sound of Camden\\\"\\\".  In July 2012 reformed with the original members of the Sugababes under the new name of Mutya Keisha Siobhan and are set to release their debut album in early 2013.\", \"Fingerprints (Amelia Lily album) | Fingerprints is the second studio album by British singer Amelia Lily.  It was never released following the lead single California not doing so well in the charts.  After the cancellation of Lilys' original debut album \\\"Be A Fighter\\\" in 2013, Lily attempted to start fresh with a new sound and new record deal with Warner Music.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question pertains to the debut album released by Lili K. after collaborating with members of the Chicago collective Save Money. The context explicitly states that Lili K. released her debut album \"Ruby\" on April 21, 2015 following collaborations with Save Money members. Additionally, Passage [4] indicates that Lili K. gained recognition for her feature work with Chance the Rapper and Vic Mensa, both affiliated with the Save Money collective. This information matches the details provided in the context.\nSummary: Lili K. released her debut album \"Ruby\" on April 21, 2015 after collaborating with members of the Chicago collective Save Money."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Lili K. released which debut album after collaborating with members of the Chicago collective Save Money?\nSummary 1: Lili K. released her debut album \"Ruby\" on April 21, 2015, after collaborating with members of the Chicago collective Save Money.\nSummary 2: Lili K. released her debut album \"Ruby\" on April 21, 2015 after collaborating with members of the Chicago collective Save Money."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries explicitly mention that Lili K.'s debut album is titled \"Ruby,\" and it was released on April 21, 2015 after collaborating with members of the Chicago collective Save Money. The given data aligns with the question, clearly identifying the album name as \"Ruby.\"\nAnswer: Ruby"
+      }
+    ]
+  }
+}

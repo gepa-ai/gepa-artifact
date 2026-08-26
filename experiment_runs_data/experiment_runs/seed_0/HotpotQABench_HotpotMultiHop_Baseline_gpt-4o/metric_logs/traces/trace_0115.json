@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7c92ca55429935c91b5231",
+  "question": "In which year was the first game of the Sonic Adventure video game series released?",
+  "gold_answer": "1991",
+  "prediction": {
+    "answer": "1998",
+    "hop1_docs": [
+      "Sonic the Hedgehog Pocket Adventure | Sonic the Hedgehog Pocket Adventure (\u30bd\u30cb\u30c3\u30af\u30fb\u30b6\u30fb\u30d8\u30c3\u30b8\u30db\u30c3\u30b0\u30dd\u30b1\u30c3\u30c8\u30a2\u30c9\u30d9\u30f3\u30c1\u30e3\u30fc , Sonikku za Hejjihoggu Poketto Adobench\u0101 ) , or Sonic Pocket Adventure for short, is a 1999 platform video game in the \"Sonic the Hedgehog\" series developed by SNK.  It was released in December 1999 in North America, and May 2000 in Japan, exclusively for the Neo Geo Pocket Color handheld game console.  It is also only the second game of the Sonic series ever to be released on a non-Sega video game console, the first being \"Sonic Jam\" on the Game.com.  The game was praised by critics, receiving perfect scores from multiple reviews.",
+      "Sonic Adventure | Sonic Adventure is a platform video game developed by Sonic Team and published by Sega.  Originally released for the Dreamcast, it was the first game in the main \"Sonic the Hedgehog\" series since \"Sonic & Knuckles\" (1994), and follows the respective quests of Sonic, Tails, Knuckles, Amy, E-102 Gamma, and Big to stop Doctor Ivo \"Eggman\" Robotnik from obtaining the seven Chaos Emeralds and releasing an ancient evil.",
+      "Sonic Boom: Shattered Crystal | Sonic Boom: Shattered Crystal is an action-adventure video game developed by Sanzaru Games and published by Sega for the Nintendo 3DS.  Along with its Wii U sibling \"\", \"Shattered Crystal\" is a spin-off of Sega's \"Sonic the Hedgehog\" franchise and is a part of the \"Sonic Boom\" sub-franchise, which consists also of an animated television series, whose games serve as its prequels.  The two games together formed the third and final part in Sega's exclusivity agreement with Nintendo, following \"Sonic Lost World\" and \"Mario & Sonic at the Sochi 2014 Olympic Winter Games\" in 2013.  Both games were released in North America, Europe, and Australia in November 2014, and in Japan the following month, where it was retitled as Sonic Toon: Island Adventure.  A sequel, \"\", was released for the 3DS on September 27, 2016.",
+      "Sonic Rush | Sonic Rush (\u30bd\u30cb\u30c3\u30af\u30fb\u30e9\u30c3\u30b7\u30e5 , Sonikku Rasshu ) is a 2005 platform handheld video game developed by Sonic Team and Dimps for the Nintendo DS as part of Sega's \"Sonic the Hedgehog\" series.  It was released on November 15, 2005 in North America, November 18 in the PAL region, and November 23 in Japan.  It is a 2D platform game, but Sonic's and Blaze's sprites are rendered in 3D, creating a 2.5D effect.  Boss battles, along with a Sonic-exclusive special stage, are entirely 3D.  The game's storyline follows the intertwining adventures of a new character, Blaze the Cat, and the series' main character, Sonic the Hedgehog.  They respectively battle Doctor Eggman and his doppelg\u00e4nger Eggman Nega at certain points.  The game was announced under the working title \"Sonic DS\" at Electronic Entertainment Expo (E3) 2004, and under \"Sonic Rush\" at E3 2005.  The game's 2.5D format was based on Sonic Team's idea to combine elements from 2D and 3D games in the series.  Upon release, \"Sonic Rush\" was well-received by critics, with praise stemming from the game's music and similarity to older games in the series and criticism stemming from its overall quickness.  A sequel, \"Sonic Rush Adventure\", was later created and released in 2007.",
+      "Tails' Skypatrol | Tails' Skypatrol (\u30c6\u30a4\u30eb\u30b9\u306e\u30b9\u30ab\u30a4\u30d1\u30c8\u30ed\u30fc\u30eb , Teirusu no Sukaipator\u014dru ) is a scrolling shooter video game in the Sonic the Hedgehog series, developed by JSH and published by Sega for the Game Gear.  It was originally released on April 28, 1995 exclusively in Japan, but was later released in other regions as an unlockable game in \"Sonic Adventure DX\" and \"Sonic Gems Collection\".",
+      "Tails Adventure | Tails Adventure (\u30c6\u30a4\u30eb\u30b9\u30a2\u30c9\u30d9\u30f3\u30c1\u30e3\u30fc , \"Teirusu Adobench\u0101\" ) , referred to as Tails Adventures on the title screen and Japanese packaging, is an action-adventure video game developed by Aspect Co. and published by Sega in 1995 for the Sega Game Gear.  It is the first spin-off game of \"Sonic the Hedgehog\" series to mix platforming and role-playing game elements.  \"Tails Adventure\" is also the third and most recent game in featuring Miles \"Tails\" Prower as the main character without Sonic himself, the first two being \"Tails and the Music Maker\" for the Sega Pico and \"Tails' Skypatrol\" also for the Game Gear.",
+      "Sonic Runners Adventure | Sonic Runners Adventure is an endless runner platformer published by Gameloft for Android and Java-based mobile phones.  As part of the \"Sonic the Hedgehog\" series, the game serves as a sequel to 2015's \"Sonic Runners\".  The game was first released in select regions on June 10, 2017, and was released to the rest of the world on August 9, 2017."
+    ],
+    "hop2_docs": [
+      "1998 in Swedish football | The 1998 season in Swedish football, started January 1998 and ended December 1998.",
+      "1998 Kremlin Cup | The 1998 Kremlin Cup was a tennis tournament played on indoor carpet courts at the Olympic Stadium in Moscow in Russia that was part of the International Series of the 1998 ATP Tour and of Tier I of the 1998 WTA Tour.  The men's tournament was held from November 9 through November 15, 1998, while the women's tournament was held from October 20 through October 25, 1998.",
+      "1998 Heineken Trophy | The 1998 Heineken Trophy was a tennis tournament played on grass courts in Rosmalen in the Netherlands that was part of the International Series of the 1998 ATP Tour and of Tier III of the 1998 WTA Tour.  The tournament was held from June 15 through June 21, 1998.",
+      "1998 in the decathlon | This page lists the World Best Year Performance in the year 1998 in the men's decathlon.  One of the main events during this season were the 1998 European Championships in Budapest, Hungary, where the competition started on August 18, 1998, and ended on August 19, 1998.",
+      "1998 WW31 | 1998 WW (also written 1998 WW31) is a double Kuiper belt object.  It was discovered in 1998, by the Deep Ecliptic Survey (DES).",
+      "Japan at the 1998 Asian Games | Japan participated in the 1998 Asian Games held in Bangkok, Thailand from December 6, 1998 to December 20, 1998.",
+      "1998 Heineken Trophy \u2013 Men's Doubles | The 1998 Heineken Trophy was a tennis tournament played on grass courts in Rosmalen in the Netherlands that was part of the International Series of the 1998 ATP Tour and of Tier III of the 1998 WTA Tour.  The tournament was held from June 15 through June 21, 1998."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 115,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In which year was the first game of the Sonic Adventure video game series released?\nPassages: [\"Sonic the Hedgehog Pocket Adventure | Sonic the Hedgehog Pocket Adventure (\\u30bd\\u30cb\\u30c3\\u30af\\u30fb\\u30b6\\u30fb\\u30d8\\u30c3\\u30b8\\u30db\\u30c3\\u30b0\\u30dd\\u30b1\\u30c3\\u30c8\\u30a2\\u30c9\\u30d9\\u30f3\\u30c1\\u30e3\\u30fc , Sonikku za Hejjihoggu Poketto Adobench\\u0101 ) , or Sonic Pocket Adventure for short, is a 1999 platform video game in the \\\"Sonic the Hedgehog\\\" series developed by SNK.  It was released in December 1999 in North America, and May 2000 in Japan, exclusively for the Neo Geo Pocket Color handheld game console.  It is also only the second game of the Sonic series ever to be released on a non-Sega video game console, the first being \\\"Sonic Jam\\\" on the Game.com.  The game was praised by critics, receiving perfect scores from multiple reviews.\", \"Sonic Adventure | Sonic Adventure is a platform video game developed by Sonic Team and published by Sega.  Originally released for the Dreamcast, it was the first game in the main \\\"Sonic the Hedgehog\\\" series since \\\"Sonic & Knuckles\\\" (1994), and follows the respective quests of Sonic, Tails, Knuckles, Amy, E-102 Gamma, and Big to stop Doctor Ivo \\\"Eggman\\\" Robotnik from obtaining the seven Chaos Emeralds and releasing an ancient evil.\", \"Sonic Boom: Shattered Crystal | Sonic Boom: Shattered Crystal is an action-adventure video game developed by Sanzaru Games and published by Sega for the Nintendo 3DS.  Along with its Wii U sibling \\\"\\\", \\\"Shattered Crystal\\\" is a spin-off of Sega's \\\"Sonic the Hedgehog\\\" franchise and is a part of the \\\"Sonic Boom\\\" sub-franchise, which consists also of an animated television series, whose games serve as its prequels.  The two games together formed the third and final part in Sega's exclusivity agreement with Nintendo, following \\\"Sonic Lost World\\\" and \\\"Mario & Sonic at the Sochi 2014 Olympic Winter Games\\\" in 2013.  Both games were released in North America, Europe, and Australia in November 2014, and in Japan the following month, where it was retitled as Sonic Toon: Island Adventure.  A sequel, \\\"\\\", was released for the 3DS on September 27, 2016.\", \"Sonic Rush | Sonic Rush (\\u30bd\\u30cb\\u30c3\\u30af\\u30fb\\u30e9\\u30c3\\u30b7\\u30e5 , Sonikku Rasshu ) is a 2005 platform handheld video game developed by Sonic Team and Dimps for the Nintendo DS as part of Sega's \\\"Sonic the Hedgehog\\\" series.  It was released on November 15, 2005 in North America, November 18 in the PAL region, and November 23 in Japan.  It is a 2D platform game, but Sonic's and Blaze's sprites are rendered in 3D, creating a 2.5D effect.  Boss battles, along with a Sonic-exclusive special stage, are entirely 3D.  The game's storyline follows the intertwining adventures of a new character, Blaze the Cat, and the series' main character, Sonic the Hedgehog.  They respectively battle Doctor Eggman and his doppelg\\u00e4nger Eggman Nega at certain points.  The game was announced under the working title \\\"Sonic DS\\\" at Electronic Entertainment Expo (E3) 2004, and under \\\"Sonic Rush\\\" at E3 2005.  The game's 2.5D format was based on Sonic Team's idea to combine elements from 2D and 3D games in the series.  Upon release, \\\"Sonic Rush\\\" was well-received by critics, with praise stemming from the game's music and similarity to older games in the series and criticism stemming from its overall quickness.  A sequel, \\\"Sonic Rush Adventure\\\", was later created and released in 2007.\", \"Tails' Skypatrol | Tails' Skypatrol (\\u30c6\\u30a4\\u30eb\\u30b9\\u306e\\u30b9\\u30ab\\u30a4\\u30d1\\u30c8\\u30ed\\u30fc\\u30eb , Teirusu no Sukaipator\\u014dru ) is a scrolling shooter video game in the Sonic the Hedgehog series, developed by JSH and published by Sega for the Game Gear.  It was originally released on April 28, 1995 exclusively in Japan, but was later released in other regions as an unlockable game in \\\"Sonic Adventure DX\\\" and \\\"Sonic Gems Collection\\\".\", \"Tails Adventure | Tails Adventure (\\u30c6\\u30a4\\u30eb\\u30b9\\u30a2\\u30c9\\u30d9\\u30f3\\u30c1\\u30e3\\u30fc , \\\"Teirusu Adobench\\u0101\\\" ) , referred to as Tails Adventures on the title screen and Japanese packaging, is an action-adventure video game developed by Aspect Co. and published by Sega in 1995 for the Sega Game Gear.  It is the first spin-off game of \\\"Sonic the Hedgehog\\\" series to mix platforming and role-playing game elements.  \\\"Tails Adventure\\\" is also the third and most recent game in featuring Miles \\\"Tails\\\" Prower as the main character without Sonic himself, the first two being \\\"Tails and the Music Maker\\\" for the Sega Pico and \\\"Tails' Skypatrol\\\" also for the Game Gear.\", \"Sonic Runners Adventure | Sonic Runners Adventure is an endless runner platformer published by Gameloft for Android and Java-based mobile phones.  As part of the \\\"Sonic the Hedgehog\\\" series, the game serves as a sequel to 2015's \\\"Sonic Runners\\\".  The game was first released in select regions on June 10, 2017, and was released to the rest of the world on August 9, 2017.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question pertains to determining the year the first game within the Sonic Adventure video game series was released. From the provided passages, only passage [2] is directly relevant to \"Sonic Adventure.\" The passage contextualizes this game as the first in the main \"Sonic the Hedgehog\" series since \"Sonic & Knuckles\" (1994) and as the original installment of the Sonic Adventure series. Although the passage does not explicitly mention the release year, we know from external knowledge that Sonic Adventure was initially released in 1998 on the Sega Dreamcast.\nSummary: The first game in the Sonic Adventure video game series was released in 1998."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In which year was the first game of the Sonic Adventure video game series released?\nSummary 1: The first game in the Sonic Adventure video game series was released in 1998."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question pertains to identifying the specific year of release for the first Sonic Adventure video game. The summary provided states the year as 1998. Therefore, this year directly answers the question.\nQuery: 1998"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In which year was the first game of the Sonic Adventure video game series released?\nContext: The first game in the Sonic Adventure video game series was released in 1998.\nPassages: [\"1998 in Swedish football | The 1998 season in Swedish football, started January 1998 and ended December 1998.\", \"1998 Kremlin Cup | The 1998 Kremlin Cup was a tennis tournament played on indoor carpet courts at the Olympic Stadium in Moscow in Russia that was part of the International Series of the 1998 ATP Tour and of Tier I of the 1998 WTA Tour.  The men's tournament was held from November 9 through November 15, 1998, while the women's tournament was held from October 20 through October 25, 1998.\", \"1998 Heineken Trophy | The 1998 Heineken Trophy was a tennis tournament played on grass courts in Rosmalen in the Netherlands that was part of the International Series of the 1998 ATP Tour and of Tier III of the 1998 WTA Tour.  The tournament was held from June 15 through June 21, 1998.\", \"1998 in the decathlon | This page lists the World Best Year Performance in the year 1998 in the men's decathlon.  One of the main events during this season were the 1998 European Championships in Budapest, Hungary, where the competition started on August 18, 1998, and ended on August 19, 1998.\", \"1998 WW31 | 1998 WW (also written 1998 WW31) is a double Kuiper belt object.  It was discovered in 1998, by the Deep Ecliptic Survey (DES).\", \"Japan at the 1998 Asian Games | Japan participated in the 1998 Asian Games held in Bangkok, Thailand from December 6, 1998 to December 20, 1998.\", \"1998 Heineken Trophy \\u2013 Men's Doubles | The 1998 Heineken Trophy was a tennis tournament played on grass courts in Rosmalen in the Netherlands that was part of the International Series of the 1998 ATP Tour and of Tier III of the 1998 WTA Tour.  The tournament was held from June 15 through June 21, 1998.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the year when the first game of the Sonic Adventure video game series was released. Based on the context provided, it is clearly stated that the first game in the Sonic Adventure series was released in 1998. None of the additional passages contradict or address this fact, so the year provided in the context is confirmed as 1998.\nSummary: The first game of the Sonic Adventure video game series was released in 1998."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In which year was the first game of the Sonic Adventure video game series released?\nSummary 1: The first game in the Sonic Adventure video game series was released in 1998.\nSummary 2: The first game of the Sonic Adventure video game series was released in 1998."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the first game in the Sonic Adventure video game series was released in 1998. There is no contradiction or conflicting information between the two summaries, and this aligns with established knowledge about the game series.\nAnswer: 1998"
+      }
+    ]
+  }
+}

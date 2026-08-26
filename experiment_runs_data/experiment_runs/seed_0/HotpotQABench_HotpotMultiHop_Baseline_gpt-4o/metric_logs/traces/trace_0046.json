@@ -1,0 +1,96 @@
+{
+  "example_id": "5a72e7c65542992359bc31c9",
+  "question": "Will the towers at Manhattan West or 15 Penn Plaza have 2,050,000 square feet of floor space?",
+  "gold_answer": "15 Penn Plaza",
+  "prediction": {
+    "answer": "15 Penn Plaza.",
+    "hop1_docs": [
+      "15 Penn Plaza | 15 Penn Plaza, also known as the Vornado Tower, is a proposed 68-story tower in the Midtown Manhattan section of New York City planned by Vornado Realty Trust.  It would have 430 units and 2,050,000 square feet (190,451 m\u00b2) of floor space.  The Hiller Group is the designer.  Despite only having 68 floors, it would be just 10 m shorter than the Empire State Building, which has 102 floors.",
+      "Suncor Energy Centre | The Suncor Energy Centre, formerly the Petro-Canada Centre is a 1,945,000 square foot (181,000 m\u00b2) project composed of two granite and reflective glass-clad office towers of 32 floors and 53 floors, situated in the office core of downtown Calgary, Alberta.  At 215 m (measured to top of the structure), the west tower is the 13th tallest building in Canada and the fourth tallest skyscraper outside of Toronto, having been surpassed on July 8, 2010 by the neighbouring Bow.  The office towers encompass 1,702,000 square feet (158,000 m\u00b2) of rentable office space with the complex also containing 243,000 square feet (23,000 m\u00b2) of retail and underground parking area.  A glass-enclosed walkway (part of the +15 System) provides shelter, and easy access to the surrounding buildings.",
+      "Wuhan Poly Plaza | Wuhan Poly Plaza, previously named Wuhan Poly Culture Plaza, is west of the intersection of Zhongnan Road and Hongshan Square in the Wuchang District of Wuhan, China.  Its height is 221 meters, measured from surface to its roof; it has no spires.  Designed by Skidmore, Owings & Merrill, it has a floor area of 149,000 m2, which includes both the 46 floors of the main tower and 20 floors of its annex.  With a design similar to a chair, the building leaves an open space between the main tower and its annex, below the bridge connecting those two at the height of its 20th floor.  Floor 1 to 5 is designed as a shopping mall, 6 and 7 as restaurant and food court, 8 for a movie theater, and the rest of the floors for office space.",
+      "Harbour Plaza | Harbour Plaza is a mixed-use development under construction in the South Core district of Toronto, Ontario.  It will consist of 65 and 69 storey condominium towers and will have 200,000 square feet of retail space, originally Target was supposed to be an anchor tenant until they pulled out of Canada.",
+      "400 Poydras Tower | 400 Poydras Tower, formerly known as the Texaco Center, located at 400 Poydras Street in the Central Business District of New Orleans, Louisiana, is a 32-story, 442 ft -tall skyscraper.  Built in 1983, this modern office tower features more than 620,000 square feet of office space with an average of 22,000 rentable square feet per floor.",
+      "Citigroup Center | The Citigroup Center (formerly Citicorp Center and now known by its address, 601 Lexington Avenue) is an office tower in New York City, located at 53rd Street between Lexington Avenue and Third Avenue in midtown Manhattan.  It was built in 1977 to house the headquarters of Citibank.  It is 915 feet (279 m) tall, one of the ten tallest skyscraper in New York, and has 59 floors with 1.3 million square feet (120,000 m\u00b2) of office space.",
+      "West Coast Plaza | West Coast Plaza is a mixed retail and residential development.  The retail building is a 3-storey development totalling approximately 160,000 square feet of retail space."
+    ],
+    "hop2_docs": [
+      "15 Penn Plaza | 15 Penn Plaza, also known as the Vornado Tower, is a proposed 68-story tower in the Midtown Manhattan section of New York City planned by Vornado Realty Trust.  It would have 430 units and 2,050,000 square feet (190,451 m\u00b2) of floor space.  The Hiller Group is the designer.  Despite only having 68 floors, it would be just 10 m shorter than the Empire State Building, which has 102 floors.",
+      "Manhattan Hill | Manhattan Hill () is a high-rise development located in the Lai Chi Kok district of Kowloon in Hong Kong, formerly Kowloon Motor Bus Lai Chi Kok Depot.  The complex consists of five towers.  Towers 1 and 2, which are interconnected, rise 51 floors, while towers 3, 5 and 6 rise 49 floors; each of the five towers is 198 m high.  The entire complex was developed by Sun Hung Kai Properties and was completed in January 2007.",
+      "Wuhan Poly Plaza | Wuhan Poly Plaza, previously named Wuhan Poly Culture Plaza, is west of the intersection of Zhongnan Road and Hongshan Square in the Wuchang District of Wuhan, China.  Its height is 221 meters, measured from surface to its roof; it has no spires.  Designed by Skidmore, Owings & Merrill, it has a floor area of 149,000 m2, which includes both the 46 floors of the main tower and 20 floors of its annex.  With a design similar to a chair, the building leaves an open space between the main tower and its annex, below the bridge connecting those two at the height of its 20th floor.  Floor 1 to 5 is designed as a shopping mall, 6 and 7 as restaurant and food court, 8 for a movie theater, and the rest of the floors for office space.",
+      "Fakhro Tower | Fakhro Tower is a commercial office complex in Manama, Kingdom of Bahrain, located across the street from the Bahrain City Centre mall.  The building is constructed on 30 floors consisting of a double-height lobby with showroom space, 5 floors of podium parking, and 24 floors of office space.  The tower was designed by The Modern Architect and constructed by Kooheji Contractors.",
+      "459 West 18th Street | 459 West 18th Street is a mid-rise condominium located at that address in the West Chelsea neighborhood of the New York City borough of Manhattan.  It is an 11-story building with retail space on its ground floor and 10 residential units, one on each floor, for a total of 29700 sqft .  Della Valle + Bernheimer of Brooklyn was the architect.",
+      "The Chitte Building | The Chitte Building is an apartment building on the Upper West Side of Manhattan, New York City.  Located at 349 Amsterdam Avenue between West 76th and 77th Streets, this five floor walk-up has twelve apartments and ground floor commercial space once occupied by the sports bar Time Out.",
+      "Park Avenue West Tower | Park Avenue West Tower is a 502 ft skyscraper in downtown Portland, Oregon, United States.  It is the fourth tallest building in Portland behind the Wells Fargo Center, KOIN Center, and the US Bancorp Tower.  Developed by TMT Development and designed by TVA Architects, the tower consists of commercial office space, ground floor retail, and apartments."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 46,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Will the towers at Manhattan West or 15 Penn Plaza have 2,050,000 square feet of floor space?\nPassages: [\"15 Penn Plaza | 15 Penn Plaza, also known as the Vornado Tower, is a proposed 68-story tower in the Midtown Manhattan section of New York City planned by Vornado Realty Trust.  It would have 430 units and 2,050,000 square feet (190,451 m\\u00b2) of floor space.  The Hiller Group is the designer.  Despite only having 68 floors, it would be just 10 m shorter than the Empire State Building, which has 102 floors.\", \"Suncor Energy Centre | The Suncor Energy Centre, formerly the Petro-Canada Centre is a 1,945,000 square foot (181,000 m\\u00b2) project composed of two granite and reflective glass-clad office towers of 32 floors and 53 floors, situated in the office core of downtown Calgary, Alberta.  At 215 m (measured to top of the structure), the west tower is the 13th tallest building in Canada and the fourth tallest skyscraper outside of Toronto, having been surpassed on July 8, 2010 by the neighbouring Bow.  The office towers encompass 1,702,000 square feet (158,000 m\\u00b2) of rentable office space with the complex also containing 243,000 square feet (23,000 m\\u00b2) of retail and underground parking area.  A glass-enclosed walkway (part of the +15 System) provides shelter, and easy access to the surrounding buildings.\", \"Wuhan Poly Plaza | Wuhan Poly Plaza, previously named Wuhan Poly Culture Plaza, is west of the intersection of Zhongnan Road and Hongshan Square in the Wuchang District of Wuhan, China.  Its height is 221 meters, measured from surface to its roof; it has no spires.  Designed by Skidmore, Owings & Merrill, it has a floor area of 149,000 m2, which includes both the 46 floors of the main tower and 20 floors of its annex.  With a design similar to a chair, the building leaves an open space between the main tower and its annex, below the bridge connecting those two at the height of its 20th floor.  Floor 1 to 5 is designed as a shopping mall, 6 and 7 as restaurant and food court, 8 for a movie theater, and the rest of the floors for office space.\", \"Harbour Plaza | Harbour Plaza is a mixed-use development under construction in the South Core district of Toronto, Ontario.  It will consist of 65 and 69 storey condominium towers and will have 200,000 square feet of retail space, originally Target was supposed to be an anchor tenant until they pulled out of Canada.\", \"400 Poydras Tower | 400 Poydras Tower, formerly known as the Texaco Center, located at 400 Poydras Street in the Central Business District of New Orleans, Louisiana, is a 32-story, 442 ft -tall skyscraper.  Built in 1983, this modern office tower features more than 620,000 square feet of office space with an average of 22,000 rentable square feet per floor.\", \"Citigroup Center | The Citigroup Center (formerly Citicorp Center and now known by its address, 601 Lexington Avenue) is an office tower in New York City, located at 53rd Street between Lexington Avenue and Third Avenue in midtown Manhattan.  It was built in 1977 to house the headquarters of Citibank.  It is 915 feet (279 m) tall, one of the ten tallest skyscraper in New York, and has 59 floors with 1.3 million square feet (120,000 m\\u00b2) of office space.\", \"West Coast Plaza | West Coast Plaza is a mixed retail and residential development.  The retail building is a 3-storey development totalling approximately 160,000 square feet of retail space.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the provided passages:\n- 15 Penn Plaza is mentioned in passage [1] as having 2,050,000 square feet of floor space.\n- No specific mention of Manhattan West is present in the passages to confirm or deny whether it has 2,050,000 square feet of floor space.\nTherefore, the 2,050,000 square feet of floor space should be attributed to 15 Penn Plaza based on the available information.\nSummary: 15 Penn Plaza will have 2,050,000 square feet of floor space according to the provided information."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Will the towers at Manhattan West or 15 Penn Plaza have 2,050,000 square feet of floor space?\nSummary 1: 15 Penn Plaza will have 2,050,000 square feet of floor space according to the provided information."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: According to the provided information, 15 Penn Plaza is explicitly mentioned to have 2,050,000 square feet of floor space. There is no specific mention about Manhattan West having this exact square footage in the given details.\nQuery: What is the floor space of the towers at Manhattan West?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Will the towers at Manhattan West or 15 Penn Plaza have 2,050,000 square feet of floor space?\nContext: 15 Penn Plaza will have 2,050,000 square feet of floor space according to the provided information.\nPassages: [\"15 Penn Plaza | 15 Penn Plaza, also known as the Vornado Tower, is a proposed 68-story tower in the Midtown Manhattan section of New York City planned by Vornado Realty Trust.  It would have 430 units and 2,050,000 square feet (190,451 m\\u00b2) of floor space.  The Hiller Group is the designer.  Despite only having 68 floors, it would be just 10 m shorter than the Empire State Building, which has 102 floors.\", \"Manhattan Hill | Manhattan Hill () is a high-rise development located in the Lai Chi Kok district of Kowloon in Hong Kong, formerly Kowloon Motor Bus Lai Chi Kok Depot.  The complex consists of five towers.  Towers 1 and 2, which are interconnected, rise 51 floors, while towers 3, 5 and 6 rise 49 floors; each of the five towers is 198 m high.  The entire complex was developed by Sun Hung Kai Properties and was completed in January 2007.\", \"Wuhan Poly Plaza | Wuhan Poly Plaza, previously named Wuhan Poly Culture Plaza, is west of the intersection of Zhongnan Road and Hongshan Square in the Wuchang District of Wuhan, China.  Its height is 221 meters, measured from surface to its roof; it has no spires.  Designed by Skidmore, Owings & Merrill, it has a floor area of 149,000 m2, which includes both the 46 floors of the main tower and 20 floors of its annex.  With a design similar to a chair, the building leaves an open space between the main tower and its annex, below the bridge connecting those two at the height of its 20th floor.  Floor 1 to 5 is designed as a shopping mall, 6 and 7 as restaurant and food court, 8 for a movie theater, and the rest of the floors for office space.\", \"Fakhro Tower | Fakhro Tower is a commercial office complex in Manama, Kingdom of Bahrain, located across the street from the Bahrain City Centre mall.  The building is constructed on 30 floors consisting of a double-height lobby with showroom space, 5 floors of podium parking, and 24 floors of office space.  The tower was designed by The Modern Architect and constructed by Kooheji Contractors.\", \"459 West 18th Street | 459 West 18th Street is a mid-rise condominium located at that address in the West Chelsea neighborhood of the New York City borough of Manhattan.  It is an 11-story building with retail space on its ground floor and 10 residential units, one on each floor, for a total of 29700 sqft .  Della Valle + Bernheimer of Brooklyn was the architect.\", \"The Chitte Building | The Chitte Building is an apartment building on the Upper West Side of Manhattan, New York City.  Located at 349 Amsterdam Avenue between West 76th and 77th Streets, this five floor walk-up has twelve apartments and ground floor commercial space once occupied by the sports bar Time Out.\", \"Park Avenue West Tower | Park Avenue West Tower is a 502 ft skyscraper in downtown Portland, Oregon, United States.  It is the fourth tallest building in Portland behind the Wells Fargo Center, KOIN Center, and the US Bancorp Tower.  Developed by TMT Development and designed by TVA Architects, the tower consists of commercial office space, ground floor retail, and apartments.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the provided context, 15 Penn Plaza is the building with 2,050,000 square feet of floor space. The passages confirm this as well, clearly stating that 15 Penn Plaza (also known as the Vornado Tower) will have 2,050,000 square feet of floor space. The Manhattan West towers are not discussed in any of the passages, and no information is provided about their floor space. Therefore, the correct answer is that 15 Penn Plaza, not the towers at Manhattan West, will have 2,050,000 square feet of floor space.\nSummary: 15 Penn Plaza will have 2,050,000 square feet of floor space, not the towers at Manhattan West."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Will the towers at Manhattan West or 15 Penn Plaza have 2,050,000 square feet of floor space?\nSummary 1: 15 Penn Plaza will have 2,050,000 square feet of floor space according to the provided information.\nSummary 2: 15 Penn Plaza will have 2,050,000 square feet of floor space, not the towers at Manhattan West."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries clearly state that 15 Penn Plaza will have 2,050,000 square feet of floor space. Additionally, summary_2 explicitly points out that this figure is not applicable to the towers at Manhattan West. Therefore, the correct answer is that the building with 2,050,000 square feet of floor space will be 15 Penn Plaza.\nAnswer: 15 Penn Plaza."
+      }
+    ]
+  }
+}

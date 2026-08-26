@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab9bd08554299131ca423e9",
+  "question": "Are both Brandon Wood and Mike Tramp a citizen of the same country?",
+  "gold_answer": "no",
+  "prediction": {
+    "answer": "It is indeterminate whether Brandon Wood and Mike Tramp are citizens of the same country due to a lack of complete information about Brandon Wood's nationality.",
+    "hop1_docs": [
+      "Mike Tramp | Michael Trempenau (born January 14, 1961), better known as Mike Tramp, is a Danish singer and songwriter who is best known for his work with the hard rock bands, White Lion and Freak of Nature.  Since 1998, he has released several solo albums.  In 2012, Tramp went on a solo acoustic tour releasing acoustic albums in both 2013 and 2014.  He returned with a full band line up in 2015 and in 2017, released the album \"Maybe Tomorrow\" which charted at #1 in Denmark.",
+      "Stand Your Ground (Mike Tramp album) | Stand Your Ground is the sixth solo album (and second under the banner of 'Mike Tramp & The Rock 'N' Roll Circuz') by former Freak of Nature and current White Lion lead singer, Mike Tramp.",
+      "Capricorn (Mike Tramp album) | Capricorn is the debut solo album by former White Lion and Freak of Nature lead singer, Mike Tramp.",
+      "Nomad (Mike Tramp album) | Nomad is the ninth solo album by former White Lion and Freak of Nature lead singer, Mike Tramp, released August 28, 2015 on Target Records.",
+      "Museum (Mike Tramp album) | Museum is the eighth solo album by former White Lion and Freak of Nature lead singer, Mike Tramp, released August 18, 2014 on Target Records.",
+      "Mike Tramp &amp; The Rock 'N' Roll Circuz | The Rock 'N' Roll Circuz is a hard rock album by former Freak of Nature and current White Lion lead singer, Mike Tramp, released on 5 October 2009.",
+      "Maybe Tomorrow (Mike Tramp album) | Maybe Tomorrow is the tenth solo album by former White Lion and Freak of Nature lead singer, Mike Tramp, released on February 24, 2017 through Mighty Music/Target Records."
+    ],
+    "hop2_docs": [
+      "Brandon Hartson | Brandon Hartson (born October 3, 1989) was an National Football Player long snapper who is retired after suffering 3 ACL surgeries, one in his right knee and 2 in his left knee.  Played on many teams, and loved what he did best.  Brandon was said to be the most Fluid snapper in the National Football League.  He now does what he always dreamed of, teaches science and a football, basketball, and track coach at Fairfield, Texas.",
+      "Brandon Wood (basketball) | Brandon Wood (born January 5, 1989) is an American professional basketball player.  He played college basketball at Southern Illinois, Valparaiso and Michigan State.",
+      "Brandon Woods | Brandon Woods is an Australian violinist, composer and music producer who is currently based in Brisbane, Queensland.  He gained wide attention after the release of his electronic dance music single \"Vortex,\" and winning three gold medals, and three Champion of the World titles, at the World Championships of Performing Arts in July, 2016.",
+      "Brandon Wood | Richard Brandon Wood (born March 2, 1985) is an American former professional baseball infielder and current Minor League Baseball manager.  He played for the Los Angeles Angels of Anaheim and Pittsburgh Pirates of Major League Baseball from 2007 through 2011.  He manages the Tri-City Dust Devils of the Class A-Short Season Northwest League.",
+      "Wait and See (Brandon Heath song) | \"Wait and See\" is a song by Christian contemporary-alternative rock musician Brandon Heath from his second studio album, \"What If We\".  It was released sometime in early 2009, as the second single from the album.",
+      "Love Never Fails (Brandon Heath song) | \"Love Never Fails\" is a song by Christian contemporary-alternative rock musician Brandon Heath from his second studio album, \"What If We\".  It was released on February 5, 2009, as the third single from the album.",
+      "John Joseph Woods | John Joseph Woods was a New Zealand teacher and songwriter.  He is best known for winning a competition to set \"God Defend New Zealand\", a poem by Thomas Bracken, to music.  By doing this, he composed the tune to what later became New Zealand's national anthem.  Woods was also the Tuapeka County Council clerk for 55 years."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 11,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are both Brandon Wood and Mike Tramp a citizen of the same country?\nPassages: [\"Mike Tramp | Michael Trempenau (born January 14, 1961), better known as Mike Tramp, is a Danish singer and songwriter who is best known for his work with the hard rock bands, White Lion and Freak of Nature.  Since 1998, he has released several solo albums.  In 2012, Tramp went on a solo acoustic tour releasing acoustic albums in both 2013 and 2014.  He returned with a full band line up in 2015 and in 2017, released the album \\\"Maybe Tomorrow\\\" which charted at #1 in Denmark.\", \"Stand Your Ground (Mike Tramp album) | Stand Your Ground is the sixth solo album (and second under the banner of 'Mike Tramp & The Rock 'N' Roll Circuz') by former Freak of Nature and current White Lion lead singer, Mike Tramp.\", \"Capricorn (Mike Tramp album) | Capricorn is the debut solo album by former White Lion and Freak of Nature lead singer, Mike Tramp.\", \"Nomad (Mike Tramp album) | Nomad is the ninth solo album by former White Lion and Freak of Nature lead singer, Mike Tramp, released August 28, 2015 on Target Records.\", \"Museum (Mike Tramp album) | Museum is the eighth solo album by former White Lion and Freak of Nature lead singer, Mike Tramp, released August 18, 2014 on Target Records.\", \"Mike Tramp &amp; The Rock 'N' Roll Circuz | The Rock 'N' Roll Circuz is a hard rock album by former Freak of Nature and current White Lion lead singer, Mike Tramp, released on 5 October 2009.\", \"Maybe Tomorrow (Mike Tramp album) | Maybe Tomorrow is the tenth solo album by former White Lion and Freak of Nature lead singer, Mike Tramp, released on February 24, 2017 through Mighty Music/Target Records.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the passages provided, it is expressly stated that Mike Tramp (full name Michael Trempenau) is a Danish singer and songwriter. There is no specific information in the given passages about Brandon Wood or his nationality. Without knowledge or evidence about Brandon Wood's nationality, it is impossible to determine whether both Mike Tramp and Brandon Wood are citizens of the same country. Further information about Brandon Wood would be required for a conclusive answer.\nSummary: Mike Tramp is a Danish citizen, but there is no information provided about Brandon Wood's nationality. Therefore, it cannot be determined if they are citizens of the same country."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are both Brandon Wood and Mike Tramp a citizen of the same country?\nSummary 1: Mike Tramp is a Danish citizen, but there is no information provided about Brandon Wood's nationality. Therefore, it cannot be determined if they are citizens of the same country."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine whether Brandon Wood and Mike Tramp are citizens of the same country, we need to know Brandon Wood's nationality. Since Mike Tramp's nationality is Danish, the answer hinges on whether Brandon Wood is also a Danish citizen. The provided summary indicates there is no information available on Brandon Wood's citizenship. Therefore, to answer the question, additional research or clarification regarding Brandon Wood's nationality is necessary.\nQuery: What is Brandon Wood's nationality?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are both Brandon Wood and Mike Tramp a citizen of the same country?\nContext: Mike Tramp is a Danish citizen, but there is no information provided about Brandon Wood's nationality. Therefore, it cannot be determined if they are citizens of the same country.\nPassages: [\"Brandon Hartson | Brandon Hartson (born October 3, 1989) was an National Football Player long snapper who is retired after suffering 3 ACL surgeries, one in his right knee and 2 in his left knee.  Played on many teams, and loved what he did best.  Brandon was said to be the most Fluid snapper in the National Football League.  He now does what he always dreamed of, teaches science and a football, basketball, and track coach at Fairfield, Texas.\", \"Brandon Wood (basketball) | Brandon Wood (born January 5, 1989) is an American professional basketball player.  He played college basketball at Southern Illinois, Valparaiso and Michigan State.\", \"Brandon Woods | Brandon Woods is an Australian violinist, composer and music producer who is currently based in Brisbane, Queensland.  He gained wide attention after the release of his electronic dance music single \\\"Vortex,\\\" and winning three gold medals, and three Champion of the World titles, at the World Championships of Performing Arts in July, 2016.\", \"Brandon Wood | Richard Brandon Wood (born March 2, 1985) is an American former professional baseball infielder and current Minor League Baseball manager.  He played for the Los Angeles Angels of Anaheim and Pittsburgh Pirates of Major League Baseball from 2007 through 2011.  He manages the Tri-City Dust Devils of the Class A-Short Season Northwest League.\", \"Wait and See (Brandon Heath song) | \\\"Wait and See\\\" is a song by Christian contemporary-alternative rock musician Brandon Heath from his second studio album, \\\"What If We\\\".  It was released sometime in early 2009, as the second single from the album.\", \"Love Never Fails (Brandon Heath song) | \\\"Love Never Fails\\\" is a song by Christian contemporary-alternative rock musician Brandon Heath from his second studio album, \\\"What If We\\\".  It was released on February 5, 2009, as the third single from the album.\", \"John Joseph Woods | John Joseph Woods was a New Zealand teacher and songwriter.  He is best known for winning a competition to set \\\"God Defend New Zealand\\\", a poem by Thomas Bracken, to music.  By doing this, he composed the tune to what later became New Zealand's national anthem.  Woods was also the Tuapeka County Council clerk for 55 years.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The context states that Mike Tramp is a Danish citizen but provides no information regarding Brandon Wood's citizenship. Upon reviewing the passages, Brandon Wood's nationality can be determined as American from passage [4], which states that he is an \"American former professional baseball infielder.\" This establishes that Mike Tramp and Brandon Wood are not citizens of the same country, as one is Danish and the other is American.\nSummary: No, Brandon Wood and Mike Tramp are not citizens of the same country. Brandon Wood is American, while Mike Tramp is Danish."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are both Brandon Wood and Mike Tramp a citizen of the same country?\nSummary 1: Mike Tramp is a Danish citizen, but there is no information provided about Brandon Wood's nationality. Therefore, it cannot be determined if they are citizens of the same country.\nSummary 2: No, Brandon Wood and Mike Tramp are not citizens of the same country. Brandon Wood is American, while Mike Tramp is Danish."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The two summaries provide conflicting information. Summary 1 states that Mike Tramp is Danish but gives no information about Brandon Wood\u2019s citizenship, making it indeterminate. Summary 2 claims that Brandon Wood is American and Mike Tramp is Danish, explicitly stating they are not citizens of the same country. Without more verifiable information about Brandon Wood's nationality, summary 2 makes an assumption about his citizenship, which cannot be verified within the context of the given information. Therefore, it is not entirely possible to confirm whether they are citizens of the same country.\nAnswer: It is indeterminate whether Brandon Wood and Mike Tramp are citizens of the same country due to a lack of complete information about Brandon Wood's nationality."
+      }
+    ]
+  }
+}

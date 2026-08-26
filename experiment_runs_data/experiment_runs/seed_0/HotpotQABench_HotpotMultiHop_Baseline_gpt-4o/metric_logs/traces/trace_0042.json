@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab58be7554299488d4d99d3",
+  "question": "Is the 50 West Street tower shorter than the Trump Palace Condominiums?",
+  "gold_answer": "no",
+  "prediction": {
+    "answer": "No, the 50 West Street tower is not shorter than the Trump Palace Condominiums. It is taller.",
+    "hop1_docs": [
+      "Trump Palace Condominiums | Trump Palace Condominiums is a 623 ft tall skyscraper at 200 East 69th Street in New York City, New York.  It was completed in 1991 and has 54 floors.  Frank Williams and Associates, headed by architect Frank Williams designed the building, which is the 70th tallest in New York City, and the tallest in the Upper East Side.",
+      "Trump Tower | Trump Tower is a 58-story, 664 ft mixed-use skyscraper located at 721\u2013725 Fifth Avenue between 56th and 57th Streets in Midtown Manhattan, New York City.  Trump Tower serves as the headquarters for The Trump Organization.  Additionally, it houses the penthouse condominium residences of the building's namesake and developer, U.S. President Donald Trump, who was a businessman and real estate developer when the tower was developed.  Several members of the Trump family also reside, or have resided, in the building.  The tower stands upon a plot where the flagship store of department-store chain Bonwit Teller was formerly located.",
+      "Trump Bay Street | Trump Bay Street is a 50-story apartment tower named after Donald Trump and located at 65 Bay Street in Jersey City, New Jersey.  It is located adjacent to the Trump Plaza apartment tower, which was completed in 2008.  A second Trump Plaza tower had initially been planned but was delayed, and the property for the proposed building was sold several times during the Great Recession.",
+      "50 West Street | 50 West Street is a 64-story, 778 ft tall mixed-use retail and residential condominium tower developed by Time Equities Inc. in Lower Manhattan, New York City.  It contains 191 residential units.",
+      "Trump International Hotel and Tower (Vancouver) | The Trump International Hotel and Tower Vancouver is a skyscraper in Downtown Vancouver, British Columbia, Canada.  The 63-storey, 187.8 m , mixed-use tower is located at 1151 West Georgia Street, and was completed in 2016.  The Trump Tower is the second tallest building in the city, after the Shangri-La tower located across West Georgia Street.",
+      "Trump Ocean Club International Hotel and Tower | The Trump International Hotel & Tower Panama (formerly Trump Ocean Club or Trump Ocean Club International Hotel and Tower) is a 70-story, 2500000 sqft , mixed-use waterfront condominium tower development in Panama City, Panama.",
+      "Trump Plaza (West Palm Beach) | Trump Plaza, also known as Trump Plaza of the Palm Beaches, is a twin-tower condominium property located along the Intracoastal Waterway in West Palm Beach, Florida.  The property was developed by Robert Armour and Michael Guider through their company, Armour Guider Development Corporation.  Construction of the project, originally known as The Plaza, began in 1981.  After several construction delays, The Plaza opened in October 1985, although Robert Armour had only minimal success in selling the condominium units"
+    ],
+    "hop2_docs": [
+      "Trump Palace Condominiums | Trump Palace Condominiums is a 623 ft tall skyscraper at 200 East 69th Street in New York City, New York.  It was completed in 1991 and has 54 floors.  Frank Williams and Associates, headed by architect Frank Williams designed the building, which is the 70th tallest in New York City, and the tallest in the Upper East Side.",
+      "Trump Tower | Trump Tower is a 58-story, 664 ft mixed-use skyscraper located at 721\u2013725 Fifth Avenue between 56th and 57th Streets in Midtown Manhattan, New York City.  Trump Tower serves as the headquarters for The Trump Organization.  Additionally, it houses the penthouse condominium residences of the building's namesake and developer, U.S. President Donald Trump, who was a businessman and real estate developer when the tower was developed.  Several members of the Trump family also reside, or have resided, in the building.  The tower stands upon a plot where the flagship store of department-store chain Bonwit Teller was formerly located.",
+      "Trump Bay Street | Trump Bay Street is a 50-story apartment tower named after Donald Trump and located at 65 Bay Street in Jersey City, New Jersey.  It is located adjacent to the Trump Plaza apartment tower, which was completed in 2008.  A second Trump Plaza tower had initially been planned but was delayed, and the property for the proposed building was sold several times during the Great Recession.",
+      "50 West Street | 50 West Street is a 64-story, 778 ft tall mixed-use retail and residential condominium tower developed by Time Equities Inc. in Lower Manhattan, New York City.  It contains 191 residential units.",
+      "Trump International Hotel and Tower (Vancouver) | The Trump International Hotel and Tower Vancouver is a skyscraper in Downtown Vancouver, British Columbia, Canada.  The 63-storey, 187.8 m , mixed-use tower is located at 1151 West Georgia Street, and was completed in 2016.  The Trump Tower is the second tallest building in the city, after the Shangri-La tower located across West Georgia Street.",
+      "Trump Ocean Club International Hotel and Tower | The Trump International Hotel & Tower Panama (formerly Trump Ocean Club or Trump Ocean Club International Hotel and Tower) is a 70-story, 2500000 sqft , mixed-use waterfront condominium tower development in Panama City, Panama.",
+      "Trump Plaza (West Palm Beach) | Trump Plaza, also known as Trump Plaza of the Palm Beaches, is a twin-tower condominium property located along the Intracoastal Waterway in West Palm Beach, Florida.  The property was developed by Robert Armour and Michael Guider through their company, Armour Guider Development Corporation.  Construction of the project, originally known as The Plaza, began in 1981.  After several construction delays, The Plaza opened in October 1985, although Robert Armour had only minimal success in selling the condominium units"
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 42,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Is the 50 West Street tower shorter than the Trump Palace Condominiums?\nPassages: [\"Trump Palace Condominiums | Trump Palace Condominiums is a 623 ft tall skyscraper at 200 East 69th Street in New York City, New York.  It was completed in 1991 and has 54 floors.  Frank Williams and Associates, headed by architect Frank Williams designed the building, which is the 70th tallest in New York City, and the tallest in the Upper East Side.\", \"Trump Tower | Trump Tower is a 58-story, 664 ft mixed-use skyscraper located at 721\\u2013725 Fifth Avenue between 56th and 57th Streets in Midtown Manhattan, New York City.  Trump Tower serves as the headquarters for The Trump Organization.  Additionally, it houses the penthouse condominium residences of the building's namesake and developer, U.S. President Donald Trump, who was a businessman and real estate developer when the tower was developed.  Several members of the Trump family also reside, or have resided, in the building.  The tower stands upon a plot where the flagship store of department-store chain Bonwit Teller was formerly located.\", \"Trump Bay Street | Trump Bay Street is a 50-story apartment tower named after Donald Trump and located at 65 Bay Street in Jersey City, New Jersey.  It is located adjacent to the Trump Plaza apartment tower, which was completed in 2008.  A second Trump Plaza tower had initially been planned but was delayed, and the property for the proposed building was sold several times during the Great Recession.\", \"50 West Street | 50 West Street is a 64-story, 778 ft tall mixed-use retail and residential condominium tower developed by Time Equities Inc. in Lower Manhattan, New York City.  It contains 191 residential units.\", \"Trump International Hotel and Tower (Vancouver) | The Trump International Hotel and Tower Vancouver is a skyscraper in Downtown Vancouver, British Columbia, Canada.  The 63-storey, 187.8 m , mixed-use tower is located at 1151 West Georgia Street, and was completed in 2016.  The Trump Tower is the second tallest building in the city, after the Shangri-La tower located across West Georgia Street.\", \"Trump Ocean Club International Hotel and Tower | The Trump International Hotel & Tower Panama (formerly Trump Ocean Club or Trump Ocean Club International Hotel and Tower) is a 70-story, 2500000 sqft , mixed-use waterfront condominium tower development in Panama City, Panama.\", \"Trump Plaza (West Palm Beach) | Trump Plaza, also known as Trump Plaza of the Palm Beaches, is a twin-tower condominium property located along the Intracoastal Waterway in West Palm Beach, Florida.  The property was developed by Robert Armour and Michael Guider through their company, Armour Guider Development Corporation.  Construction of the project, originally known as The Plaza, began in 1981.  After several construction delays, The Plaza opened in October 1985, although Robert Armour had only minimal success in selling the condominium units\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question compares the height of the 50 West Street tower to the Trump Palace Condominiums. According to passage [1], Trump Palace Condominiums is 623 ft tall. Passage [4] states that the 50 West Street tower is 778 ft tall. By comparing these heights, it is evident that the 50 West Street tower is taller than the Trump Palace Condominiums.\nSummary: No, the 50 West Street tower is taller than the Trump Palace Condominiums. The Trump Palace Condominiums is 623 ft tall, while the 50 West Street tower stands at 778 ft."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Is the 50 West Street tower shorter than the Trump Palace Condominiums?\nSummary 1: No, the 50 West Street tower is taller than the Trump Palace Condominiums. The Trump Palace Condominiums is 623 ft tall, while the 50 West Street tower stands at 778 ft."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine if the 50 West Street tower is shorter than the Trump Palace Condominiums, we compare their heights. The height of the Trump Palace Condominiums is 623 ft, whereas the height of the 50 West Street tower is 778 ft. Since 778 ft is greater than 623 ft, the 50 West Street tower is taller, not shorter, than the Trump Palace Condominiums.\nQuery: What are the heights of the Trump Palace Condominiums and the 50 West Street tower?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Is the 50 West Street tower shorter than the Trump Palace Condominiums?\nContext: No, the 50 West Street tower is taller than the Trump Palace Condominiums. The Trump Palace Condominiums is 623 ft tall, while the 50 West Street tower stands at 778 ft.\nPassages: [\"Trump Palace Condominiums | Trump Palace Condominiums is a 623 ft tall skyscraper at 200 East 69th Street in New York City, New York.  It was completed in 1991 and has 54 floors.  Frank Williams and Associates, headed by architect Frank Williams designed the building, which is the 70th tallest in New York City, and the tallest in the Upper East Side.\", \"Trump Tower | Trump Tower is a 58-story, 664 ft mixed-use skyscraper located at 721\\u2013725 Fifth Avenue between 56th and 57th Streets in Midtown Manhattan, New York City.  Trump Tower serves as the headquarters for The Trump Organization.  Additionally, it houses the penthouse condominium residences of the building's namesake and developer, U.S. President Donald Trump, who was a businessman and real estate developer when the tower was developed.  Several members of the Trump family also reside, or have resided, in the building.  The tower stands upon a plot where the flagship store of department-store chain Bonwit Teller was formerly located.\", \"Trump Bay Street | Trump Bay Street is a 50-story apartment tower named after Donald Trump and located at 65 Bay Street in Jersey City, New Jersey.  It is located adjacent to the Trump Plaza apartment tower, which was completed in 2008.  A second Trump Plaza tower had initially been planned but was delayed, and the property for the proposed building was sold several times during the Great Recession.\", \"50 West Street | 50 West Street is a 64-story, 778 ft tall mixed-use retail and residential condominium tower developed by Time Equities Inc. in Lower Manhattan, New York City.  It contains 191 residential units.\", \"Trump International Hotel and Tower (Vancouver) | The Trump International Hotel and Tower Vancouver is a skyscraper in Downtown Vancouver, British Columbia, Canada.  The 63-storey, 187.8 m , mixed-use tower is located at 1151 West Georgia Street, and was completed in 2016.  The Trump Tower is the second tallest building in the city, after the Shangri-La tower located across West Georgia Street.\", \"Trump Ocean Club International Hotel and Tower | The Trump International Hotel & Tower Panama (formerly Trump Ocean Club or Trump Ocean Club International Hotel and Tower) is a 70-story, 2500000 sqft , mixed-use waterfront condominium tower development in Panama City, Panama.\", \"Trump Plaza (West Palm Beach) | Trump Plaza, also known as Trump Plaza of the Palm Beaches, is a twin-tower condominium property located along the Intracoastal Waterway in West Palm Beach, Florida.  The property was developed by Robert Armour and Michael Guider through their company, Armour Guider Development Corporation.  Construction of the project, originally known as The Plaza, began in 1981.  After several construction delays, The Plaza opened in October 1985, although Robert Armour had only minimal success in selling the condominium units\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the context provided, the 50 West Street tower stands at 778 feet tall, while the Trump Palace Condominiums is 623 feet tall. Clearly, the 50 West Street tower is taller than the Trump Palace Condominiums. The passages also support this, as passage [4] confirms the height of the 50 West Street tower and passage [1] confirms the height of the Trump Palace Condominiums. Therefore, the comparison shows that the former is not shorter but rather taller than the latter.\nSummary: No, the 50 West Street tower is not shorter than the Trump Palace Condominiums. It is taller, standing at 778 feet compared to the Trump Palace Condominiums' height of 623 feet."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Is the 50 West Street tower shorter than the Trump Palace Condominiums?\nSummary 1: No, the 50 West Street tower is taller than the Trump Palace Condominiums. The Trump Palace Condominiums is 623 ft tall, while the 50 West Street tower stands at 778 ft.\nSummary 2: No, the 50 West Street tower is not shorter than the Trump Palace Condominiums. It is taller, standing at 778 feet compared to the Trump Palace Condominiums' height of 623 feet."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries clearly state that the 50 West Street tower is taller than the Trump Palace Condominiums. They provide specific measurements, with the Trump Palace Condominiums being 623 feet tall and the 50 West Street tower standing at 778 feet. Hence, the 50 West Street tower is not shorter but taller.\nAnswer: No, the 50 West Street tower is not shorter than the Trump Palace Condominiums. It is taller."
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "example_id": "5adea86555429975fa854f56",
+  "question": "Gong Hyo-jin had a role in what 2014 television series airing on SBS?",
+  "gold_answer": "It's Okay, That's Love",
+  "prediction": {
+    "answer": "It's Okay, That's Love",
+    "hop1_docs": [
+      "It's Okay, That's Love | It's Okay, That's Love () is a 2014 South Korean television series starring Jo In-sung, Gong Hyo-jin, Sung Dong-il, Lee Kwang-soo and Do Kyung-soo.  It aired on SBS from July 23 to September 11, 2014 on Wednesdays and Thursdays at 21:55 for 16 episodes.",
+      "Hello My Teacher | Hello My Teacher (; lit.  Biscuit Teacher and Star Candy) is a 2005 South Korean television series starring Gong Hyo-jin, Gong Yoo, Kim Da-hyun, and Choi Yeo-jin.  It aired on SBS from April 13 to June 2, 2005 on Wednesdays and Thursdays at 21:55 for 16 episodes.",
+      "Master's Sun | Master's Sun () is a 2013 South Korean television series starring So Ji-sub and Gong Hyo-jin.  The horror-romantic comedy is written by the Hong sisters, and aired on SBS from August 7 to October 3, 2013, on Wednesdays and Thursdays at 21:55 for 17 episodes.",
+      "Gong Hyo-jin | Gong Hyo-jin (born April 4, 1980) is a South Korean actress.  She is best known for her leading role in the film \"Crush and Blush\" (2008), as well as for her popular television series \"Sang-doo!  Let's Go to School\" (2003), \"Thank You\" (2007), \"Pasta\" (2010), \"The Greatest Love\" (2011), \"Master's Sun\" (2013), \"It's Okay, That's Love\" (2014), \"The Producers\" (2015), and \"Jealousy Incarnate\" (2016).  She is considered to be the queen of romantic comedies due to her successful portrayals in her rom-com dramas.",
+      "Jealousy Incarnate | Jealousy Incarnate () is a South Korean television series starring Gong Hyo-jin, Jo Jung-suk, Go Kyung-pyo, Lee Mi-sook, Park Ji-young, Lee Sung-jae and Seo Ji-hye.  It aired every Wednesday and Thursday at 22:00 (KST) on SBS from August 24 to November 10, 2016 for 24 episodes.",
+      "Beautiful Gong Shim | Beautiful Gong Shim () is a South Korean television series, starring Namkoong Min, Bang Minah, On Joo-wan and Seo Hyo-rim.  It replaced \"Mrs. Cop 2\" and aired on SBS on Saturdays and Sundays at 22:00 (KST) for 20 episodes from May 14, 2016 to July 17, 2016.",
+      "The Second Last Love | The Second Last Love () is a South Korean television series starring Kim Hee-ae, Ji Jin-hee and Kwak Si-yang.  It is a Korean drama remake of the Japanese television drama series \"Saigo Kara Nibanme no Koi\" which aired on Fuji TV from 2012 to 2014.  It replaced \"Beautiful Gong Shim\" and aired on SBS on Saturdays and Sundays at 22:00 (KST) for 16 episodes from July 30 to October 16, 2016."
+    ],
+    "hop2_docs": [
+      "It's Okay, That's Love | It's Okay, That's Love () is a 2014 South Korean television series starring Jo In-sung, Gong Hyo-jin, Sung Dong-il, Lee Kwang-soo and Do Kyung-soo.  It aired on SBS from July 23 to September 11, 2014 on Wednesdays and Thursdays at 21:55 for 16 episodes.",
+      "It's Not Right but It's Okay | \"It's Not Right but It's Okay\" is a song by American singer Whitney Houston, from her fourth studio album, \"My Love Is Your Love\".  It was written by LaShawn Daniels, Rodney Jerkins, Fred Jerkins III, Isaac Phillips, Toni Estes, and produced by Darkchild.  The song examines a woman confronting her lover about his infidelity.",
+      "Be Okay | \"Be Okay\" is a song written and produced by Mitchy Collins, Danielle Bouchard, Christian Medice, Phoebe Ryan, Denis Lipari, and Larzz Principato and recorded by indie pop band Oh Honey.  It was re-released in March 2014 as a part of the band's album \"With Love-EP\" (2014).",
+      "Kim Kyu-tae | Kim Kyu-tae is a South Korean television director and producer.  He directed the Korean dramas \"A Love to Kill\" (2005), \"Iris\" (2009), \"Padam Padam... The Sound of His and Her Heartbeats\" (2011), \"That Winter, the Wind Blows\" (2013) and \"It's Okay, That's Love\" (2014).",
+      "Okay High School | Okay High School is a high school located in Okay, Oklahoma.",
+      "Okay (album) | Okay (stylised as okay.)  is the second studio album by British pop punk band As It Is.",
+      "Okay Hot-Shot, Okay! | Okay Hot-Shot, Okay!  (sometimes Okay Hot-Shot) is a 1963 pop art painting by Roy Lichtenstein that uses his Ben-Day dots style and a text balloon.  It is one of several examples of military art that Lichtenstein created between 1962 and 1964, including several with aeronautical themes like this one.  It was inspired by panels from four different comic books that provide the sources for the plane, the pilot, the text balloon and the graphic onomatopoeia, \"VOOMP!\" ."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 12,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Gong Hyo-jin had a role in what 2014 television series airing on SBS?\nPassages: [\"It's Okay, That's Love | It's Okay, That's Love () is a 2014 South Korean television series starring Jo In-sung, Gong Hyo-jin, Sung Dong-il, Lee Kwang-soo and Do Kyung-soo.  It aired on SBS from July 23 to September 11, 2014 on Wednesdays and Thursdays at 21:55 for 16 episodes.\", \"Hello My Teacher | Hello My Teacher (; lit.  Biscuit Teacher and Star Candy) is a 2005 South Korean television series starring Gong Hyo-jin, Gong Yoo, Kim Da-hyun, and Choi Yeo-jin.  It aired on SBS from April 13 to June 2, 2005 on Wednesdays and Thursdays at 21:55 for 16 episodes.\", \"Master's Sun | Master's Sun () is a 2013 South Korean television series starring So Ji-sub and Gong Hyo-jin.  The horror-romantic comedy is written by the Hong sisters, and aired on SBS from August 7 to October 3, 2013, on Wednesdays and Thursdays at 21:55 for 17 episodes.\", \"Gong Hyo-jin | Gong Hyo-jin (born April 4, 1980) is a South Korean actress.  She is best known for her leading role in the film \\\"Crush and Blush\\\" (2008), as well as for her popular television series \\\"Sang-doo!  Let's Go to School\\\" (2003), \\\"Thank You\\\" (2007), \\\"Pasta\\\" (2010), \\\"The Greatest Love\\\" (2011), \\\"Master's Sun\\\" (2013), \\\"It's Okay, That's Love\\\" (2014), \\\"The Producers\\\" (2015), and \\\"Jealousy Incarnate\\\" (2016).  She is considered to be the queen of romantic comedies due to her successful portrayals in her rom-com dramas.\", \"Jealousy Incarnate | Jealousy Incarnate () is a South Korean television series starring Gong Hyo-jin, Jo Jung-suk, Go Kyung-pyo, Lee Mi-sook, Park Ji-young, Lee Sung-jae and Seo Ji-hye.  It aired every Wednesday and Thursday at 22:00 (KST) on SBS from August 24 to November 10, 2016 for 24 episodes.\", \"Beautiful Gong Shim | Beautiful Gong Shim () is a South Korean television series, starring Namkoong Min, Bang Minah, On Joo-wan and Seo Hyo-rim.  It replaced \\\"Mrs. Cop 2\\\" and aired on SBS on Saturdays and Sundays at 22:00 (KST) for 20 episodes from May 14, 2016 to July 17, 2016.\", \"The Second Last Love | The Second Last Love () is a South Korean television series starring Kim Hee-ae, Ji Jin-hee and Kwak Si-yang.  It is a Korean drama remake of the Japanese television drama series \\\"Saigo Kara Nibanme no Koi\\\" which aired on Fuji TV from 2012 to 2014.  It replaced \\\"Beautiful Gong Shim\\\" and aired on SBS on Saturdays and Sundays at 22:00 (KST) for 16 episodes from July 30 to October 16, 2016.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the given passages, \"It's Okay, That's Love\" is identified as a 2014 South Korean television series in which Gong Hyo-jin starred. This series aired on SBS from July 23 to September 11, 2014. Other series listed, such as \"Hello My Teacher,\" \"Master's Sun,\" and \"Jealousy Incarnate,\" were either aired before or after 2014, confirming that \"It's Okay, That's Love\" is the correct answer.\nSummary: Gong Hyo-jin had a role in the 2014 SBS television series \"It's Okay, That's Love.\""
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Gong Hyo-jin had a role in what 2014 television series airing on SBS?\nSummary 1: Gong Hyo-jin had a role in the 2014 SBS television series \"It's Okay, That's Love.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question inquires about a television series in 2014 featuring Gong Hyo-jin and aired on SBS. The provided summary states that Gong Hyo-jin had a role in the series \"It's Okay, That's Love,\" which matches the query's constraints of year, platform, and actor.\nQuery: \"It's Okay, That's Love\""
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Gong Hyo-jin had a role in what 2014 television series airing on SBS?\nContext: Gong Hyo-jin had a role in the 2014 SBS television series \"It's Okay, That's Love.\"\nPassages: [\"It's Okay, That's Love | It's Okay, That's Love () is a 2014 South Korean television series starring Jo In-sung, Gong Hyo-jin, Sung Dong-il, Lee Kwang-soo and Do Kyung-soo.  It aired on SBS from July 23 to September 11, 2014 on Wednesdays and Thursdays at 21:55 for 16 episodes.\", \"It's Not Right but It's Okay | \\\"It's Not Right but It's Okay\\\" is a song by American singer Whitney Houston, from her fourth studio album, \\\"My Love Is Your Love\\\".  It was written by LaShawn Daniels, Rodney Jerkins, Fred Jerkins III, Isaac Phillips, Toni Estes, and produced by Darkchild.  The song examines a woman confronting her lover about his infidelity.\", \"Be Okay | \\\"Be Okay\\\" is a song written and produced by Mitchy Collins, Danielle Bouchard, Christian Medice, Phoebe Ryan, Denis Lipari, and Larzz Principato and recorded by indie pop band Oh Honey.  It was re-released in March 2014 as a part of the band's album \\\"With Love-EP\\\" (2014).\", \"Kim Kyu-tae | Kim Kyu-tae is a South Korean television director and producer.  He directed the Korean dramas \\\"A Love to Kill\\\" (2005), \\\"Iris\\\" (2009), \\\"Padam Padam... The Sound of His and Her Heartbeats\\\" (2011), \\\"That Winter, the Wind Blows\\\" (2013) and \\\"It's Okay, That's Love\\\" (2014).\", \"Okay High School | Okay High School is a high school located in Okay, Oklahoma.\", \"Okay (album) | Okay (stylised as okay.)  is the second studio album by British pop punk band As It Is.\", \"Okay Hot-Shot, Okay! | Okay Hot-Shot, Okay!  (sometimes Okay Hot-Shot) is a 1963 pop art painting by Roy Lichtenstein that uses his Ben-Day dots style and a text balloon.  It is one of several examples of military art that Lichtenstein created between 1962 and 1964, including several with aeronautical themes like this one.  It was inspired by panels from four different comic books that provide the sources for the plane, the pilot, the text balloon and the graphic onomatopoeia, \\\"VOOMP!\\\" .\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Gong Hyo-jin had a role in the 2014 SBS television series \"It's Okay, That's Love,\" as indicated in both the context and passage [1]. Passage [1] confirms not only the series' title but also its airing details, as well as that Gong Hyo-jin was one of the starring actors. Passage [4] also supports this by listing the series \"It's Okay, That's Love\" (2014) among works directed by Kim Kyu-tae, further cementing the connection between the actress and this series.\nSummary: Gong Hyo-jin had a role in the 2014 SBS television series \"It's Okay, That's Love.\""
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Gong Hyo-jin had a role in what 2014 television series airing on SBS?\nSummary 1: Gong Hyo-jin had a role in the 2014 SBS television series \"It's Okay, That's Love.\"\nSummary 2: Gong Hyo-jin had a role in the 2014 SBS television series \"It's Okay, That's Love.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries confirm that Gong Hyo-jin had a role in the 2014 SBS television series titled \"It's Okay, That's Love.\" The consistency between the two summaries provides ample evidence to determine the correct answer.\nAnswer: It's Okay, That's Love"
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "example_id": "5a78d66855429970f5fffd9d",
+  "question": "Who directed this South Korean romantic comedy musical film starring Sung Dong-il?",
+  "gold_answer": "Kim Yong-hwa",
+  "prediction": {
+    "answer": "The director of the South Korean romantic comedy musical film starring Sung Dong-il cannot be determined from the provided information.",
+    "hop1_docs": [
+      "Real (2017 film) | Real () is a South Korean action thriller noir film directed by Lee Sa-rang, starring Kim Soo-hyun, Sung Dong-il, Lee Sung-min, Choi Jin-ri and Jo Woo-jin.  The film was released on June 28, 2017 in South Korea.",
+      "The Butcher (2007 film) | The Butcher is a 2007 South Korean horror film directed by Kim Jin-won and produced by Choi Gong-jae. The film starring Kim Sung-il, You Dong-hun in the lead roles.",
+      "Mr. Go (film) | Mr. Go () is a 2013 sport-comedy film written and directed by Kim Yong-hwa based on Huh Young-man's 1984 comic \"The 7th Team\" ().  About a gorilla who becomes a baseball superstar and his 15-year-old female manager, it stars Xu Jiao and Sung Dong-il.  \"Mr. Go\" was the first South Korean film to be fully shot in 3D.  A co-production between South Korea and China, it was released simultaneously in both countries on July 17 and 18, respectively.",
+      "A Violent Prosecutor | A Violent Prosecutor is a 2016 South Korean crime film directed by Lee Il-hyung, produced by Guk Su Ran and starring Hwang Jung-min, Kang Dong-won, Lee Sung-min and Park Sung-woong.  It was released in South Korea on February 3, 2016 by Showbox.",
+      "Sung Dong-il | Sung Dong-il (born April 27, 1967) is a South Korean actor.  Sung made his acting debut in theater in 1987, then was recruited at the 1991 SBS open talent auditions.  He rose to fame as the comic, Jeolla dialect-speaking character \"Red Socks\" in the television drama \"Eun-shil\", though he later tried to fight typecasting by playing the son of a chaebol tycoon in \"Love In 3 Colors\" and a university professor in \"March\".  Following years of supporting roles in TV, Sung's film career was jumpstarted by hit romantic comedy \"200 Pounds Beauty\" in 2006.  Subsequently, he became one of Korean cinema's most reliable supporting actors, displaying his comic skills and easy charm in films such as \"Take Off\", \"Foxy Festival\", \"Children...\", \"The Suicide Forecast\", and \"The Client\".  He also had major roles in \"The Suck Up Project: Mr. XXX-Kisser\", 3D blockbuster \"Mr. Go\", and mystery-comedy \"The Accidental Detective\".  On the small screen, Sung garnered praise as a villain in \"The Slave Hunters\", and a gruff but caring father in \"Reply 1997\" and its spin-offs \"Reply 1994\" and \"Reply 1988\".",
+      "Gyeongju (film) | Gyeongju () is a 2014 South Korean romantic comedy film written and directed by Zhang Lu, starring Park Hae-il and Shin Min-ah.",
+      "The Art of Seduction (film) | Art of Seduction () is a 2005 South Korean romantic comedy film starring Son Ye-jin, Song Il-gook and directed by Oh Ki-hwan.  It was released on 21 December 2005."
+    ],
+    "hop2_docs": [
+      "Sung Dong-il | Sung Dong-il (born April 27, 1967) is a South Korean actor.  Sung made his acting debut in theater in 1987, then was recruited at the 1991 SBS open talent auditions.  He rose to fame as the comic, Jeolla dialect-speaking character \"Red Socks\" in the television drama \"Eun-shil\", though he later tried to fight typecasting by playing the son of a chaebol tycoon in \"Love In 3 Colors\" and a university professor in \"March\".  Following years of supporting roles in TV, Sung's film career was jumpstarted by hit romantic comedy \"200 Pounds Beauty\" in 2006.  Subsequently, he became one of Korean cinema's most reliable supporting actors, displaying his comic skills and easy charm in films such as \"Take Off\", \"Foxy Festival\", \"Children...\", \"The Suicide Forecast\", and \"The Client\".  He also had major roles in \"The Suck Up Project: Mr. XXX-Kisser\", 3D blockbuster \"Mr. Go\", and mystery-comedy \"The Accidental Detective\".  On the small screen, Sung garnered praise as a villain in \"The Slave Hunters\", and a gruff but caring father in \"Reply 1997\" and its spin-offs \"Reply 1994\" and \"Reply 1988\".",
+      "Real (2017 film) | Real () is a South Korean action thriller noir film directed by Lee Sa-rang, starring Kim Soo-hyun, Sung Dong-il, Lee Sung-min, Choi Jin-ri and Jo Woo-jin.  The film was released on June 28, 2017 in South Korea.",
+      "The Butcher (2007 film) | The Butcher is a 2007 South Korean horror film directed by Kim Jin-won and produced by Choi Gong-jae. The film starring Kim Sung-il, You Dong-hun in the lead roles.",
+      "Mr. Go (film) | Mr. Go () is a 2013 sport-comedy film written and directed by Kim Yong-hwa based on Huh Young-man's 1984 comic \"The 7th Team\" ().  About a gorilla who becomes a baseball superstar and his 15-year-old female manager, it stars Xu Jiao and Sung Dong-il.  \"Mr. Go\" was the first South Korean film to be fully shot in 3D.  A co-production between South Korea and China, it was released simultaneously in both countries on July 17 and 18, respectively.",
+      "Min Kyu-dong | Min Kyu-dong (born September 12, 1970) is a South Korean film director, screenwriter and producer.  He made his feature directorial debut in horror film \"Memento Mori\" (1999), followed by romantic comedies \"All for Love\" (2005) and \"All About My Wife\" (2012), queer films \"Antique\" (2008) and \"In My End Is My Beginning\" (2013), melodrama \"The Last Blossom\" (2011), and period drama \"The Treacherous\" (2015).",
+      "Phantom Detective | Phantom Detective (; lit.  Detective Hong Gil-Dong: Disappeared Village) is a 2016 South Korean film noir comedy action film directed and written by Jo Sung-hee.  Its central protagonist is a modern iteration of the classic Korean folk hero Hong Gildong.  It was released in South Korea on May 4, 2016.  It was released in U.S. and Canada on 20 May 2016.",
+      "A Violent Prosecutor | A Violent Prosecutor is a 2016 South Korean crime film directed by Lee Il-hyung, produced by Guk Su Ran and starring Hwang Jung-min, Kang Dong-won, Lee Sung-min and Park Sung-woong.  It was released in South Korea on February 3, 2016 by Showbox."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 101,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who directed this South Korean romantic comedy musical film starring Sung Dong-il?\nPassages: [\"Real (2017 film) | Real () is a South Korean action thriller noir film directed by Lee Sa-rang, starring Kim Soo-hyun, Sung Dong-il, Lee Sung-min, Choi Jin-ri and Jo Woo-jin.  The film was released on June 28, 2017 in South Korea.\", \"The Butcher (2007 film) | The Butcher is a 2007 South Korean horror film directed by Kim Jin-won and produced by Choi Gong-jae. The film starring Kim Sung-il, You Dong-hun in the lead roles.\", \"Mr. Go (film) | Mr. Go () is a 2013 sport-comedy film written and directed by Kim Yong-hwa based on Huh Young-man's 1984 comic \\\"The 7th Team\\\" ().  About a gorilla who becomes a baseball superstar and his 15-year-old female manager, it stars Xu Jiao and Sung Dong-il.  \\\"Mr. Go\\\" was the first South Korean film to be fully shot in 3D.  A co-production between South Korea and China, it was released simultaneously in both countries on July 17 and 18, respectively.\", \"A Violent Prosecutor | A Violent Prosecutor is a 2016 South Korean crime film directed by Lee Il-hyung, produced by Guk Su Ran and starring Hwang Jung-min, Kang Dong-won, Lee Sung-min and Park Sung-woong.  It was released in South Korea on February 3, 2016 by Showbox.\", \"Sung Dong-il | Sung Dong-il (born April 27, 1967) is a South Korean actor.  Sung made his acting debut in theater in 1987, then was recruited at the 1991 SBS open talent auditions.  He rose to fame as the comic, Jeolla dialect-speaking character \\\"Red Socks\\\" in the television drama \\\"Eun-shil\\\", though he later tried to fight typecasting by playing the son of a chaebol tycoon in \\\"Love In 3 Colors\\\" and a university professor in \\\"March\\\".  Following years of supporting roles in TV, Sung's film career was jumpstarted by hit romantic comedy \\\"200 Pounds Beauty\\\" in 2006.  Subsequently, he became one of Korean cinema's most reliable supporting actors, displaying his comic skills and easy charm in films such as \\\"Take Off\\\", \\\"Foxy Festival\\\", \\\"Children...\\\", \\\"The Suicide Forecast\\\", and \\\"The Client\\\".  He also had major roles in \\\"The Suck Up Project: Mr. XXX-Kisser\\\", 3D blockbuster \\\"Mr. Go\\\", and mystery-comedy \\\"The Accidental Detective\\\".  On the small screen, Sung garnered praise as a villain in \\\"The Slave Hunters\\\", and a gruff but caring father in \\\"Reply 1997\\\" and its spin-offs \\\"Reply 1994\\\" and \\\"Reply 1988\\\".\", \"Gyeongju (film) | Gyeongju () is a 2014 South Korean romantic comedy film written and directed by Zhang Lu, starring Park Hae-il and Shin Min-ah.\", \"The Art of Seduction (film) | Art of Seduction () is a 2005 South Korean romantic comedy film starring Son Ye-jin, Song Il-gook and directed by Oh Ki-hwan.  It was released on 21 December 2005.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the director of a South Korean romantic comedy musical film starring Sung Dong-il. Reviewing the provided passages, there is no mention of a romantic comedy musical fitting the description. Sung Dong-il appears in \"Mr. Go,\" a sports-comedy film directed by Kim Yong-hwa (#3), but this does not fit the \"romantic comedy musical\" criteria. Additionally, none of the other listed films match the genre and casting described. Thus, the passages do not provide enough information to identify the specific film or its director for the question.\nSummary: The passages do not provide sufficient information to identify a South Korean romantic comedy musical film starring Sung Dong-il or its director."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who directed this South Korean romantic comedy musical film starring Sung Dong-il?\nSummary 1: The passages do not provide sufficient information to identify a South Korean romantic comedy musical film starring Sung Dong-il or its director."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The summary indicates that there is insufficient information in the given passages to identify the specific South Korean romantic comedy musical film starring Sung Dong-il or its director. As a result, further clarification or additional information about the film and its context is required to provide an accurate answer.\nQuery: Who directed the South Korean romantic comedy musical film featuring Sung Dong-il? Provide the film's name and its director."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who directed this South Korean romantic comedy musical film starring Sung Dong-il?\nContext: The passages do not provide sufficient information to identify a South Korean romantic comedy musical film starring Sung Dong-il or its director.\nPassages: [\"Sung Dong-il | Sung Dong-il (born April 27, 1967) is a South Korean actor.  Sung made his acting debut in theater in 1987, then was recruited at the 1991 SBS open talent auditions.  He rose to fame as the comic, Jeolla dialect-speaking character \\\"Red Socks\\\" in the television drama \\\"Eun-shil\\\", though he later tried to fight typecasting by playing the son of a chaebol tycoon in \\\"Love In 3 Colors\\\" and a university professor in \\\"March\\\".  Following years of supporting roles in TV, Sung's film career was jumpstarted by hit romantic comedy \\\"200 Pounds Beauty\\\" in 2006.  Subsequently, he became one of Korean cinema's most reliable supporting actors, displaying his comic skills and easy charm in films such as \\\"Take Off\\\", \\\"Foxy Festival\\\", \\\"Children...\\\", \\\"The Suicide Forecast\\\", and \\\"The Client\\\".  He also had major roles in \\\"The Suck Up Project: Mr. XXX-Kisser\\\", 3D blockbuster \\\"Mr. Go\\\", and mystery-comedy \\\"The Accidental Detective\\\".  On the small screen, Sung garnered praise as a villain in \\\"The Slave Hunters\\\", and a gruff but caring father in \\\"Reply 1997\\\" and its spin-offs \\\"Reply 1994\\\" and \\\"Reply 1988\\\".\", \"Real (2017 film) | Real () is a South Korean action thriller noir film directed by Lee Sa-rang, starring Kim Soo-hyun, Sung Dong-il, Lee Sung-min, Choi Jin-ri and Jo Woo-jin.  The film was released on June 28, 2017 in South Korea.\", \"The Butcher (2007 film) | The Butcher is a 2007 South Korean horror film directed by Kim Jin-won and produced by Choi Gong-jae. The film starring Kim Sung-il, You Dong-hun in the lead roles.\", \"Mr. Go (film) | Mr. Go () is a 2013 sport-comedy film written and directed by Kim Yong-hwa based on Huh Young-man's 1984 comic \\\"The 7th Team\\\" ().  About a gorilla who becomes a baseball superstar and his 15-year-old female manager, it stars Xu Jiao and Sung Dong-il.  \\\"Mr. Go\\\" was the first South Korean film to be fully shot in 3D.  A co-production between South Korea and China, it was released simultaneously in both countries on July 17 and 18, respectively.\", \"Min Kyu-dong | Min Kyu-dong (born September 12, 1970) is a South Korean film director, screenwriter and producer.  He made his feature directorial debut in horror film \\\"Memento Mori\\\" (1999), followed by romantic comedies \\\"All for Love\\\" (2005) and \\\"All About My Wife\\\" (2012), queer films \\\"Antique\\\" (2008) and \\\"In My End Is My Beginning\\\" (2013), melodrama \\\"The Last Blossom\\\" (2011), and period drama \\\"The Treacherous\\\" (2015).\", \"Phantom Detective | Phantom Detective (; lit.  Detective Hong Gil-Dong: Disappeared Village) is a 2016 South Korean film noir comedy action film directed and written by Jo Sung-hee.  Its central protagonist is a modern iteration of the classic Korean folk hero Hong Gildong.  It was released in South Korea on May 4, 2016.  It was released in U.S. and Canada on 20 May 2016.\", \"A Violent Prosecutor | A Violent Prosecutor is a 2016 South Korean crime film directed by Lee Il-hyung, produced by Guk Su Ran and starring Hwang Jung-min, Kang Dong-won, Lee Sung-min and Park Sung-woong.  It was released in South Korea on February 3, 2016 by Showbox.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The context indicates that the given passages do not contain sufficient information to identify the South Korean romantic comedy musical film starring Sung Dong-il or its director. While some passages mention Sung Dong-il and the films he has starred in, none of them provide details about a romantic comedy musical film featuring Sung Dong-il or its director. The passages primarily describe other genres and projects associated with the actor and other filmmakers.\nSummary: The available information does not identify the South Korean romantic comedy musical film starring Sung Dong-il or its director."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who directed this South Korean romantic comedy musical film starring Sung Dong-il?\nSummary 1: The passages do not provide sufficient information to identify a South Korean romantic comedy musical film starring Sung Dong-il or its director.\nSummary 2: The available information does not identify the South Korean romantic comedy musical film starring Sung Dong-il or its director."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both provided summaries indicate that there is no information available regarding a South Korean romantic comedy musical film starring Sung Dong-il or its director. Since the details about the film or its director are not provided in the given summaries, I cannot determine the answer to the question.\nAnswer: The director of the South Korean romantic comedy musical film starring Sung Dong-il cannot be determined from the provided information."
+      }
+    ]
+  }
+}

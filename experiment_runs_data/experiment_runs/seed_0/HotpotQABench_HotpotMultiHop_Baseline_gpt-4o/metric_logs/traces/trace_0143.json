@@ -1,0 +1,96 @@
+{
+  "example_id": "5a760d99554299109176e639",
+  "question": "What pair of American dicephalic parapagus twins has a show that was brodcasted on BBC Three in April and May 2013?",
+  "gold_answer": "Abby and Brittany Hensel",
+  "prediction": {
+    "answer": "Abby and Brittany Hensel are the American dicephalic parapagus twins who had a show titled \"Abby & Brittany,\" broadcast on BBC Three in April and May 2013.",
+    "hop1_docs": [
+      "Dicephalic parapagus twins | Dicephalic parapagus is a rare form of partial twinning where there are two heads side by side on one torso.  Infants conjoined this way are sometimes called \"two-headed babies\" in popular media.  The condition is also called parapagus dicephalus.",
+      "Abby and Brittany Hensel | Abigail Loraine \"Abby\" Hensel and Brittany Lee Hensel (born March 7, 1990) are American dicephalic parapagus twins; in other words, they are conjoined twins, each of whom has a separate head, but whose bodies are joined.  They are highly symmetric for conjoined twins, giving the appearance of having a single body without marked variation from normal proportions.  In fact, several vital organs are doubled; each twin has a separate heart, stomach, spine, pair of lungs, and spinal cord.",
+      "Abby &amp; Brittany | Abby & Brittany was an American reality show on TLC starring 22-year-old conjoined twins Abby and Brittany Hensel that premiered on August 28, 2012.  The show features their graduation from Bethel University, subsequent job search, and their travels in Europe.  It was broadcast on BBC Three in the UK in April and May 2013, as three 60-minute episodes.",
+      "The Politician's Husband | The Politician's Husband is a three-episode British television miniseries, first shown on BBC Two between 25 April and 9 May 2013.  Written by Paula Milne, it makes a pair with her 1995 drama \"The Politician's Wife\".",
+      "Five Minutes to a Fortune | Five Minutes to a Fortune is a British game show, which aired on Channel 4 from 6 April 2013 to 5 May 2013 and was hosted by Davina McCall.  It offered pairs of contestants the chance to win a top prize of \u00a350,000 (or \u00a3100,000 for celebrity specials).  The show aired weekdays at 5:00pm but was unable to generate high ratings to compete with ITV's \"The Chase\" and BBC's \"Pointless\", both of which air roughly in the same timeslot.",
+      "Lip Service (TV series) | Lip Service is a British television serial drama portraying the lives of a group of lesbians living in Glasgow, Scotland.  Production on the show, which stars Laura Fraser, Ruta Gedmintas and Fiona Button, began in summer 2009 in Glasgow.  The show debuted on BBC Three on 12 October 2010.  Filming on a second series was confirmed in late 2010, with filming beginning on 30 May 2011.  The second series aired on BBC Three from 20 April 2012.  In January 2013, show's creator, Harriet Braun, announced that BBC Three cancelled the series without explanation.",
+      "James May's Things You Need to Know | James May's Things You Need to Know is a British television series presented by \"Top Gear\" presenter James May.  The first, three-part series was aired on BBC Two between 20 June and 4 July 2011.  A second, six-part series was aired on BBC Two starting 13 August 2012.  The show answers key questions on aspects of everyday life, including what makes up the human body, what a cloud is and what makes the universe work so effectively.  The first series has yet to be released on DVD."
+    ],
+    "hop2_docs": [
+      "Abby &amp; Brittany | Abby & Brittany was an American reality show on TLC starring 22-year-old conjoined twins Abby and Brittany Hensel that premiered on August 28, 2012.  The show features their graduation from Bethel University, subsequent job search, and their travels in Europe.  It was broadcast on BBC Three in the UK in April and May 2013, as three 60-minute episodes.",
+      "Abby and Brittany Hensel | Abigail Loraine \"Abby\" Hensel and Brittany Lee Hensel (born March 7, 1990) are American dicephalic parapagus twins; in other words, they are conjoined twins, each of whom has a separate head, but whose bodies are joined.  They are highly symmetric for conjoined twins, giving the appearance of having a single body without marked variation from normal proportions.  In fact, several vital organs are doubled; each twin has a separate heart, stomach, spine, pair of lungs, and spinal cord.",
+      "Abbi (Saxon) | Abbi (also Abbio) was a Saxon warrior who fought alongside Widukind.  He is mentioned in Carolingian annals for the year 785.  He fled across the Elbe with Widukind, and after a peace was negotiated with Charlemagne in the Bardengau, Abbi and Widukind were both baptized.  Abbi was probably closely related to Widukind, who was possibly his stepson or his brother in law.",
+      "Hurricane Abby (1960) | Hurricane Abby was the only tropical cyclone in the Caribbean Sea during the 1960 Atlantic hurricane season.  The second tropical cyclone and first named storm season, Abby developed on July 10 from a tropical wave in the vicinity of the Lesser Antilles.  Abby rapidly intensified into a hurricane after being a tropical storm for less than six hours.  It briefly peaked as a category 2 hurricane before weakening back.  Abby rapidly weakened to a minimal tropical storm a few days thereafter.  The storm re-strengthened into a hurricane as it began to parallel the coast of Honduras.  Hurricane Abby made landfall in British Honduras (present-day Belize) on July 15.  Abby dissipated over Mexico later the next day.  The remnants of Abby ultimately became Hurricane Celeste in the Pacific Ocean.  Despite passing through or near several countries, Hurricane Abby had a relatively light impact on land, resulting in just $640,500 (1960 USD, $ \u00a0USD) in damage and six fatalities.",
+      "Abbie Graham | Abbie Graham (May 28, 1889 \u2013 February 1972) was a successful non-fiction author in the United States.  This was a significant time, with many changes occurring in the rights of Women in the United States.",
+      "Abby Takes a Stand | Abby Takes a Stand is a 2005 book by Patricia McKissack.  It is the first book in the \"Scraps of Time\" series and is predominantly set in the 1960s.  It concerns an African American grandmother, Abby, talking with some of her young relatives about the time she was a young girl in Nashville, Tennessee, her experiences with segregation, and her involvement with civil rights.",
+      "Abby Hayes | Abigail \"Abby\" Hayes lives a relatively normal life with a successful and supportive family and many friends.  Abby aspires to be like her siblings, Isabel, Eva, and Alex, each of whom excel in a variety of fields.  Although fairly strong (she is shown to be a natural swimmer), she is poor in math while rich in literature.  Just because she excels in writing, she still feels incomparable to her siblings, though her older sisters envy her hair, and her brother looks up to her.  In \"That's the Way the Cookie Crumbles\", Abby is a talented baker.  She is willing to break the rules at times but only when she feels she needs to (e.g., she wanted to attend a writing camp next summer.)  Abby is a very good role model for young girls."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 143,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What pair of American dicephalic parapagus twins has a show that was brodcasted on BBC Three in April and May 2013?\nPassages: [\"Dicephalic parapagus twins | Dicephalic parapagus is a rare form of partial twinning where there are two heads side by side on one torso.  Infants conjoined this way are sometimes called \\\"two-headed babies\\\" in popular media.  The condition is also called parapagus dicephalus.\", \"Abby and Brittany Hensel | Abigail Loraine \\\"Abby\\\" Hensel and Brittany Lee Hensel (born March 7, 1990) are American dicephalic parapagus twins; in other words, they are conjoined twins, each of whom has a separate head, but whose bodies are joined.  They are highly symmetric for conjoined twins, giving the appearance of having a single body without marked variation from normal proportions.  In fact, several vital organs are doubled; each twin has a separate heart, stomach, spine, pair of lungs, and spinal cord.\", \"Abby &amp; Brittany | Abby & Brittany was an American reality show on TLC starring 22-year-old conjoined twins Abby and Brittany Hensel that premiered on August 28, 2012.  The show features their graduation from Bethel University, subsequent job search, and their travels in Europe.  It was broadcast on BBC Three in the UK in April and May 2013, as three 60-minute episodes.\", \"The Politician's Husband | The Politician's Husband is a three-episode British television miniseries, first shown on BBC Two between 25 April and 9 May 2013.  Written by Paula Milne, it makes a pair with her 1995 drama \\\"The Politician's Wife\\\".\", \"Five Minutes to a Fortune | Five Minutes to a Fortune is a British game show, which aired on Channel 4 from 6 April 2013 to 5 May 2013 and was hosted by Davina McCall.  It offered pairs of contestants the chance to win a top prize of \\u00a350,000 (or \\u00a3100,000 for celebrity specials).  The show aired weekdays at 5:00pm but was unable to generate high ratings to compete with ITV's \\\"The Chase\\\" and BBC's \\\"Pointless\\\", both of which air roughly in the same timeslot.\", \"Lip Service (TV series) | Lip Service is a British television serial drama portraying the lives of a group of lesbians living in Glasgow, Scotland.  Production on the show, which stars Laura Fraser, Ruta Gedmintas and Fiona Button, began in summer 2009 in Glasgow.  The show debuted on BBC Three on 12 October 2010.  Filming on a second series was confirmed in late 2010, with filming beginning on 30 May 2011.  The second series aired on BBC Three from 20 April 2012.  In January 2013, show's creator, Harriet Braun, announced that BBC Three cancelled the series without explanation.\", \"James May's Things You Need to Know | James May's Things You Need to Know is a British television series presented by \\\"Top Gear\\\" presenter James May.  The first, three-part series was aired on BBC Two between 20 June and 4 July 2011.  A second, six-part series was aired on BBC Two starting 13 August 2012.  The show answers key questions on aspects of everyday life, including what makes up the human body, what a cloud is and what makes the universe work so effectively.  The first series has yet to be released on DVD.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the pair of American dicephalic parapagus twins who had a show that aired on BBC Three in April and May 2013. From passage [2], we learn about Abby and Brittany Hensel, who are American dicephalic parapagus twins. Passage [3] mentions that they had a reality show called \"Abby & Brittany,\" which was broadcast on BBC Three in April and May 2013. None of the other passages discuss a show related to dicephalic parapagus twins or provide conflicting information.\nSummary: The pair of American dicephalic parapagus twins who had a show broadcast on BBC Three in April and May 2013 are Abby and Brittany Hensel. Their show was titled \"Abby & Brittany.\""
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What pair of American dicephalic parapagus twins has a show that was brodcasted on BBC Three in April and May 2013?\nSummary 1: The pair of American dicephalic parapagus twins who had a show broadcast on BBC Three in April and May 2013 are Abby and Brittany Hensel. Their show was titled \"Abby & Brittany.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the identity of the American dicephalic parapagus twins who had a show aired on BBC Three during a specific timeframe. According to the summary provided, the twins are Abby and Brittany Hensel. Their show was named \"Abby & Brittany.\" This information directly answers the question through the context given in summary_1.\nQuery: Who are Abby and Brittany Hensel, and what is their significance in relation to \"Abby & Brittany\"?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What pair of American dicephalic parapagus twins has a show that was brodcasted on BBC Three in April and May 2013?\nContext: The pair of American dicephalic parapagus twins who had a show broadcast on BBC Three in April and May 2013 are Abby and Brittany Hensel. Their show was titled \"Abby & Brittany.\"\nPassages: [\"Abby &amp; Brittany | Abby & Brittany was an American reality show on TLC starring 22-year-old conjoined twins Abby and Brittany Hensel that premiered on August 28, 2012.  The show features their graduation from Bethel University, subsequent job search, and their travels in Europe.  It was broadcast on BBC Three in the UK in April and May 2013, as three 60-minute episodes.\", \"Abby and Brittany Hensel | Abigail Loraine \\\"Abby\\\" Hensel and Brittany Lee Hensel (born March 7, 1990) are American dicephalic parapagus twins; in other words, they are conjoined twins, each of whom has a separate head, but whose bodies are joined.  They are highly symmetric for conjoined twins, giving the appearance of having a single body without marked variation from normal proportions.  In fact, several vital organs are doubled; each twin has a separate heart, stomach, spine, pair of lungs, and spinal cord.\", \"Abbi (Saxon) | Abbi (also Abbio) was a Saxon warrior who fought alongside Widukind.  He is mentioned in Carolingian annals for the year 785.  He fled across the Elbe with Widukind, and after a peace was negotiated with Charlemagne in the Bardengau, Abbi and Widukind were both baptized.  Abbi was probably closely related to Widukind, who was possibly his stepson or his brother in law.\", \"Hurricane Abby (1960) | Hurricane Abby was the only tropical cyclone in the Caribbean Sea during the 1960 Atlantic hurricane season.  The second tropical cyclone and first named storm season, Abby developed on July 10 from a tropical wave in the vicinity of the Lesser Antilles.  Abby rapidly intensified into a hurricane after being a tropical storm for less than six hours.  It briefly peaked as a category 2 hurricane before weakening back.  Abby rapidly weakened to a minimal tropical storm a few days thereafter.  The storm re-strengthened into a hurricane as it began to parallel the coast of Honduras.  Hurricane Abby made landfall in British Honduras (present-day Belize) on July 15.  Abby dissipated over Mexico later the next day.  The remnants of Abby ultimately became Hurricane Celeste in the Pacific Ocean.  Despite passing through or near several countries, Hurricane Abby had a relatively light impact on land, resulting in just $640,500 (1960 USD, $ \\u00a0USD) in damage and six fatalities.\", \"Abbie Graham | Abbie Graham (May 28, 1889 \\u2013 February 1972) was a successful non-fiction author in the United States.  This was a significant time, with many changes occurring in the rights of Women in the United States.\", \"Abby Takes a Stand | Abby Takes a Stand is a 2005 book by Patricia McKissack.  It is the first book in the \\\"Scraps of Time\\\" series and is predominantly set in the 1960s.  It concerns an African American grandmother, Abby, talking with some of her young relatives about the time she was a young girl in Nashville, Tennessee, her experiences with segregation, and her involvement with civil rights.\", \"Abby Hayes | Abigail \\\"Abby\\\" Hayes lives a relatively normal life with a successful and supportive family and many friends.  Abby aspires to be like her siblings, Isabel, Eva, and Alex, each of whom excel in a variety of fields.  Although fairly strong (she is shown to be a natural swimmer), she is poor in math while rich in literature.  Just because she excels in writing, she still feels incomparable to her siblings, though her older sisters envy her hair, and her brother looks up to her.  In \\\"That's the Way the Cookie Crumbles\\\", Abby is a talented baker.  She is willing to break the rules at times but only when she feels she needs to (e.g., she wanted to attend a writing camp next summer.)  Abby is a very good role model for young girls.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question concerns identifying the twins whose show was broadcast on BBC Three in 2013. By analyzing the provided context and relevant passages, it is confirmed that Abby and Brittany Hensel are the American dicephalic parapagus twins in question. Their show, titled \"Abby & Brittany,\" was originally a reality series aired in 2012 in the U.S., and later broadcast in the UK on BBC Three in April and May 2013. Evidence for this is found both in the context and in passage [1].\nSummary: Abby and Brittany Hensel, American dicephalic parapagus twins, had a show titled \"Abby & Brittany\" that was broadcast on BBC Three in April and May 2013."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What pair of American dicephalic parapagus twins has a show that was brodcasted on BBC Three in April and May 2013?\nSummary 1: The pair of American dicephalic parapagus twins who had a show broadcast on BBC Three in April and May 2013 are Abby and Brittany Hensel. Their show was titled \"Abby & Brittany.\"\nSummary 2: Abby and Brittany Hensel, American dicephalic parapagus twins, had a show titled \"Abby & Brittany\" that was broadcast on BBC Three in April and May 2013."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries provide consistent information regarding the pair of American dicephalic parapagus twins with a show on BBC Three in April and May 2013. They identify Abby and Brittany Hensel as the twins and specify the name of their show as \"Abby & Brittany.\" The provided details align, confirming the identity of the twins and the timeframe of the show's broadcast.\nAnswer: Abby and Brittany Hensel are the American dicephalic parapagus twins who had a show titled \"Abby & Brittany,\" broadcast on BBC Three in April and May 2013."
+      }
+    ]
+  }
+}

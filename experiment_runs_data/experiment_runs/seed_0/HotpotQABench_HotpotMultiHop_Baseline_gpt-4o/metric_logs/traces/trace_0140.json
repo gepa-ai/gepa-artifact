@@ -1,0 +1,96 @@
+{
+  "example_id": "5ade580f5542992fa25da75b",
+  "question": "Who directed the 1997 Australian comedy-drama Microwave Jenny got their name from?",
+  "gold_answer": "Australian comedy-drama film directed by Rob Sitch.",
+  "prediction": {
+    "answer": "Rob Sitch directed the 1997 Australian comedy-drama \"The Castle,\" which inspired the name Microwave Jenny.",
+    "hop1_docs": [
+      "Microwave Jenny | Microwave Jenny is an Australian pop/folk/jazz duet that consists of Tessa Nuku on vocals and Brendon Boney on guitar and vocals.  They both have Indigenous backgrounds with Brendon having been born and raised in Wagga Wagga, and Tessa having been born in Ulladulla, New South Wales before moving to and growing up in Umina Beach, New South Wales Brendon was the singing voice for the character Willie in film Bran Nue Dae.  The phrase 'Microwave Jenny' comes from the 1997 film \"The Castle\".  The duo are married and have a daughter.",
+      "Jenny Kissed Me (film) | Jenny Kissed Me is a 1986 Australian drama film directed by Brian Trenchard-Smith.  The director calls it a \"tearjerker for men\".",
+      "Got to Believe | <onlyinclude>Got to Believe is a 2013 Philippine romantic comedy-drama television series directed by Cathy Garcia-Molina and starring Kathryn Bernardo and Daniel Padilla.  The series was aired on ABS-CBN and worldwide on The Filipino Channel from August 26, 2013 to March 7, 2014, replacing \"Huwag Ka Lang Mawawala\".  The series finale, dubbed as the \"Best Ending Ever\", ranked #1 by Kantar Media nationwide TV rating. <ref name=\"03/07-lionheartv\"> </ref><ref name=\"03/07-abscbnpr\"> </ref></onlyinclude>",
+      "Just in Time (film) | Just in Time is a 1997 American romantic comedy-drama film directed by Shawn Levy from a screenplay by Eric Tuchman.  This was the first feature film directed by Levy, who went on to direct such hits as \"Night at the Museum\" (2006) and \"Date Night\" (2010).",
+      "Daddy's Dyin': Who's Got the Will? | Daddy's Dyin' ...Who's Got the Will?  is an American ensemble comedy-drama film.",
+      "The Castle (1997 Australian film) | The Castle is a 1997 Australian comedy-drama film directed by Rob Sitch.  It starred Michael Caton, Anne Tenney, Tiriel Mora, Stephen Curry, Sophie Lee, Eric Bana (in his film debut) and Charles 'Bud' Tingwell.  The screenwriting team comprised Sitch, Santo Cilauro, Tom Gleisner and Jane Kennedy of Working Dog Productions.",
+      "Obvious Child | Obvious Child is a 2014 American romantic comedy-drama film written and directed by Gillian Robespierre (in her directorial debut) and stars Jenny Slate, Jake Lacy, Gaby Hoffmann and David Cross.  The story follows Donna, a stand-up comedian, who has a drunken one-night stand with a man named Max after breaking up with her boyfriend.  She subsequently finds out she is pregnant and decides to have an abortion."
+    ],
+    "hop2_docs": [
+      "Microwave Jenny | Microwave Jenny is an Australian pop/folk/jazz duet that consists of Tessa Nuku on vocals and Brendon Boney on guitar and vocals.  They both have Indigenous backgrounds with Brendon having been born and raised in Wagga Wagga, and Tessa having been born in Ulladulla, New South Wales before moving to and growing up in Umina Beach, New South Wales Brendon was the singing voice for the character Willie in film Bran Nue Dae.  The phrase 'Microwave Jenny' comes from the 1997 film \"The Castle\".  The duo are married and have a daughter.",
+      "The Castle (1997 Australian film) | The Castle is a 1997 Australian comedy-drama film directed by Rob Sitch.  It starred Michael Caton, Anne Tenney, Tiriel Mora, Stephen Curry, Sophie Lee, Eric Bana (in his film debut) and Charles 'Bud' Tingwell.  The screenwriting team comprised Sitch, Santo Cilauro, Tom Gleisner and Jane Kennedy of Working Dog Productions.",
+      "One Way Ticket (1997 film) | One Way Ticket is a 1997 Australian made-for-television drama film directed by Richard Franklin.  The film was inspired by real events in the life of prison officer Heather Parker who assisted in the escape of Peter Gibb and Archie Butterly.",
+      "Hero No. 1 | Hero No.1 is a 1997 Indian Hindi comedy-drama film directed by David Dhawan.  It stars Govinda and Karishma Kapoor in lead roles.  Most of the film's story is inspired by \"Bawarchi\", a comedy film directed by Hrishikesh Mukherjee.  It was remade in Telugu as \"Goppinti Alludu.\"",
+      "Jenny Kissed Me (film) | Jenny Kissed Me is a 1986 Australian drama film directed by Brian Trenchard-Smith.  The director calls it a \"tearjerker for men\".",
+      "Road to Nhill | Road to Nhill is a 1997 Australian comedy-drama film directed by Sue Brooks.  The film won the \"Golden Alexander\" (first prize) for Best Feature-Length Film at The International Thessaloniki Film Festival (Greece).",
+      "Blackrock (film) | Blackrock is a 1997 Australian drama thriller film directed by Steven Vidler and written by Nick Enright.  Marking Vidler's directorial debut, the film was adapted from the play of the same name, also written by Enright, which was inspired by the murder of Leigh Leigh.  The film stars Laurence Breuls, Simon Lyndon and Linda Cropper, and also features the first credited film performance of Heath Ledger.  The film follows Jared (Breuls), a young surfer who witnesses his friends raping a girl.  When she is found murdered the next day, Jared is torn between revealing what he saw and protecting his friends."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 140,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who directed the 1997 Australian comedy-drama Microwave Jenny got their name from?\nPassages: [\"Microwave Jenny | Microwave Jenny is an Australian pop/folk/jazz duet that consists of Tessa Nuku on vocals and Brendon Boney on guitar and vocals.  They both have Indigenous backgrounds with Brendon having been born and raised in Wagga Wagga, and Tessa having been born in Ulladulla, New South Wales before moving to and growing up in Umina Beach, New South Wales Brendon was the singing voice for the character Willie in film Bran Nue Dae.  The phrase 'Microwave Jenny' comes from the 1997 film \\\"The Castle\\\".  The duo are married and have a daughter.\", \"Jenny Kissed Me (film) | Jenny Kissed Me is a 1986 Australian drama film directed by Brian Trenchard-Smith.  The director calls it a \\\"tearjerker for men\\\".\", \"Got to Believe | <onlyinclude>Got to Believe is a 2013 Philippine romantic comedy-drama television series directed by Cathy Garcia-Molina and starring Kathryn Bernardo and Daniel Padilla.  The series was aired on ABS-CBN and worldwide on The Filipino Channel from August 26, 2013 to March 7, 2014, replacing \\\"Huwag Ka Lang Mawawala\\\".  The series finale, dubbed as the \\\"Best Ending Ever\\\", ranked #1 by Kantar Media nationwide TV rating. <ref name=\\\"03/07-lionheartv\\\"> </ref><ref name=\\\"03/07-abscbnpr\\\"> </ref></onlyinclude>\", \"Just in Time (film) | Just in Time is a 1997 American romantic comedy-drama film directed by Shawn Levy from a screenplay by Eric Tuchman.  This was the first feature film directed by Levy, who went on to direct such hits as \\\"Night at the Museum\\\" (2006) and \\\"Date Night\\\" (2010).\", \"Daddy's Dyin': Who's Got the Will? | Daddy's Dyin' ...Who's Got the Will?  is an American ensemble comedy-drama film.\", \"The Castle (1997 Australian film) | The Castle is a 1997 Australian comedy-drama film directed by Rob Sitch.  It starred Michael Caton, Anne Tenney, Tiriel Mora, Stephen Curry, Sophie Lee, Eric Bana (in his film debut) and Charles 'Bud' Tingwell.  The screenwriting team comprised Sitch, Santo Cilauro, Tom Gleisner and Jane Kennedy of Working Dog Productions.\", \"Obvious Child | Obvious Child is a 2014 American romantic comedy-drama film written and directed by Gillian Robespierre (in her directorial debut) and stars Jenny Slate, Jake Lacy, Gaby Hoffmann and David Cross.  The story follows Donna, a stand-up comedian, who has a drunken one-night stand with a man named Max after breaking up with her boyfriend.  She subsequently finds out she is pregnant and decides to have an abortion.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the director of the 1997 Australian comedy-drama film that gave the duo Microwave Jenny their name. Passage [1] states that the phrase \"Microwave Jenny\" comes from the 1997 film \"The Castle.\" Passage [6] provides details about the film \"The Castle\" and identifies its director as Rob Sitch. This shows that the name inspiration is tied to the film \"The Castle,\" which was directed by Rob Sitch.\nSummary: The 1997 Australian comedy-drama film that inspired the name Microwave Jenny is \"The Castle,\" directed by Rob Sitch."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who directed the 1997 Australian comedy-drama Microwave Jenny got their name from?\nSummary 1: The 1997 Australian comedy-drama film that inspired the name Microwave Jenny is \"The Castle,\" directed by Rob Sitch."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the summary, it is clear that the name \"Microwave Jenny\" originates from the 1997 Australian comedy-drama \"The Castle.\" Therefore, the focus of the query should be to validate and confirm this connection and ensure Rob Sitch is correctly identified as the director of the film.\nQuery: Who directed \"The Castle,\" the 1997 Australian comedy-drama film that inspired the name Microwave Jenny?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who directed the 1997 Australian comedy-drama Microwave Jenny got their name from?\nContext: The 1997 Australian comedy-drama film that inspired the name Microwave Jenny is \"The Castle,\" directed by Rob Sitch.\nPassages: [\"Microwave Jenny | Microwave Jenny is an Australian pop/folk/jazz duet that consists of Tessa Nuku on vocals and Brendon Boney on guitar and vocals.  They both have Indigenous backgrounds with Brendon having been born and raised in Wagga Wagga, and Tessa having been born in Ulladulla, New South Wales before moving to and growing up in Umina Beach, New South Wales Brendon was the singing voice for the character Willie in film Bran Nue Dae.  The phrase 'Microwave Jenny' comes from the 1997 film \\\"The Castle\\\".  The duo are married and have a daughter.\", \"The Castle (1997 Australian film) | The Castle is a 1997 Australian comedy-drama film directed by Rob Sitch.  It starred Michael Caton, Anne Tenney, Tiriel Mora, Stephen Curry, Sophie Lee, Eric Bana (in his film debut) and Charles 'Bud' Tingwell.  The screenwriting team comprised Sitch, Santo Cilauro, Tom Gleisner and Jane Kennedy of Working Dog Productions.\", \"One Way Ticket (1997 film) | One Way Ticket is a 1997 Australian made-for-television drama film directed by Richard Franklin.  The film was inspired by real events in the life of prison officer Heather Parker who assisted in the escape of Peter Gibb and Archie Butterly.\", \"Hero No. 1 | Hero No.1 is a 1997 Indian Hindi comedy-drama film directed by David Dhawan.  It stars Govinda and Karishma Kapoor in lead roles.  Most of the film's story is inspired by \\\"Bawarchi\\\", a comedy film directed by Hrishikesh Mukherjee.  It was remade in Telugu as \\\"Goppinti Alludu.\\\"\", \"Jenny Kissed Me (film) | Jenny Kissed Me is a 1986 Australian drama film directed by Brian Trenchard-Smith.  The director calls it a \\\"tearjerker for men\\\".\", \"Road to Nhill | Road to Nhill is a 1997 Australian comedy-drama film directed by Sue Brooks.  The film won the \\\"Golden Alexander\\\" (first prize) for Best Feature-Length Film at The International Thessaloniki Film Festival (Greece).\", \"Blackrock (film) | Blackrock is a 1997 Australian drama thriller film directed by Steven Vidler and written by Nick Enright.  Marking Vidler's directorial debut, the film was adapted from the play of the same name, also written by Enright, which was inspired by the murder of Leigh Leigh.  The film stars Laurence Breuls, Simon Lyndon and Linda Cropper, and also features the first credited film performance of Heath Ledger.  The film follows Jared (Breuls), a young surfer who witnesses his friends raping a girl.  When she is found murdered the next day, Jared is torn between revealing what he saw and protecting his friends.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks who directed the 1997 Australian comedy-drama film that inspired the name Microwave Jenny. According to the context, as well as passages [1] and [2], the phrase \"Microwave Jenny\" comes specifically from the film \"The Castle,\" which was released in 1997. Passage [2] confirms that \"The Castle\" was directed by Rob Sitch. Other passages mention different films from 1997, but none are relevant to the inspiration for the name Microwave Jenny, eliminating them from consideration. Based on this evidence, the director of \"The Castle\" is clearly identified as Rob Sitch, which directly answers the question.\nSummary: The 1997 Australian comedy-drama film \"The Castle,\" directed by Rob Sitch, inspired the name Microwave Jenny."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who directed the 1997 Australian comedy-drama Microwave Jenny got their name from?\nSummary 1: The 1997 Australian comedy-drama film that inspired the name Microwave Jenny is \"The Castle,\" directed by Rob Sitch.\nSummary 2: The 1997 Australian comedy-drama film \"The Castle,\" directed by Rob Sitch, inspired the name Microwave Jenny."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries confirm that the 1997 Australian comedy-drama film \"The Castle,\" directed by Rob Sitch, served as the inspiration for the name Microwave Jenny. The director's name is explicitly clarified in both summaries, confirming that Rob Sitch directed the film.\nAnswer: Rob Sitch directed the 1997 Australian comedy-drama \"The Castle,\" which inspired the name Microwave Jenny."
+      }
+    ]
+  }
+}

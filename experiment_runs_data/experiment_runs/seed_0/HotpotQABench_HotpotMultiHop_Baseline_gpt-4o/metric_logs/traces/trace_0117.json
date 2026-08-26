@@ -1,0 +1,96 @@
+{
+  "example_id": "5a74a85c55429916b01641a7",
+  "question": "In what town in the Central West region of New South Wales was Brad Haddin born?",
+  "gold_answer": "Cowra",
+  "prediction": {
+    "answer": "Cowra",
+    "hop1_docs": [
+      "Brad Haddin | Bradley James Haddin (born 23 October 1977 in Cowra, New South Wales), is a former Australian cricketer who has represented Australia in all three forms of international cricket (Test, One-Day International and Twenty20 International).  He also played for the New South Wales Blues in both domestic first class and list A cricket.  Haddin is a right-handed batsman and wicket-keeper.  He was a member of the Australian World cup winning squad at the 2015 Cricket World Cup.  He retired from One Day International Cricket on 17 May 2015, soon after the 2015 Cricket World Cup.  He also became the ambassador for his home ground, Sydney Cricket Ground (SCG) along with Steven Smith.  Haddin announced his retirement from international and first class cricket with New South Wales on 9 September 2015.  He currently plays in Australia's Big Bash League for the Sydney Sixers.",
+      "Albert, New South Wales | Albert is a town in the Central West region of New South Wales, Australia.  The town is in the Lachlan Shire local government area, 481 km west north west of the state capital, Sydney.  At the 2006 census , Albert had a population of 96.",
+      "Central West (New South Wales) | The Central West is a region of New South Wales, Australia.  The region is geographically in eastern New South Wales, in the area west of the Blue Mountains, which are west of Sydney.  It has an area of 63262 km2 .",
+      "Toogong, New South Wales | Toogong is a town in the Central West region of New South Wales, Australia.  The town is located in the Cabonne Shire local government area, 300 km west of the state capital, Sydney.  At the 2006 census , Toogong had a population of 370.",
+      "Yullundry, New South Wales | Yullundry is a rural locality between the towns of Yeoval and Cumnock in the Central West region of New South Wales, Australia.",
+      "Alectown, New South Wales | Alectown is a town in the Central West region of New South Wales, Australia.  The town is on the Newell Highway and in the Parkes Shire local government area, 382 km , west north west of the state capital, Sydney.  At the 2006 census , Alectown and the surrounding area had a population of 201",
+      "Murga, New South Wales | Murga is a former town in the Central West region of New South Wales, Australia.  The former town is located in the Cabonne Shire local government area, 320 km west of the state capital, Sydney.  At the 2006 census, Murga had a population of 199."
+    ],
+    "hop2_docs": [
+      "Cowra Guardian | The Cowra Guardian, also published as \"The Guardian, Cowra Guardian, Canowindra Star, The Canowindra Star and Eugowra News, Cowra Guardian and Lachlan Agricultural Recorder \"is a tri-weekly newspaper published in Cowra, New South Wales, Australia since 1885.  It is the biggest waste of $1.50.  It has two pages.",
+      "Cowra Japanese Garden and Cultural Centre | The Cowra Japanese Garden and Cultural Centre is located in Cowra, in the Central West region of New South Wales, Australia.  The five hectares (12 acres) garden was established to recognize and develop the relationship between the people of Cowra Shire and the people of Japan.",
+      "The Cowra Breakout (miniseries) | The Cowra Breakout is a 1985 Australian mini series based on the Cowra breakout, focusing on the friendship between an Australian soldier and Japanese prisoner.",
+      "Cowra Free Press | The Cowra Free Press was a semi-weekly English language newspaper published from 1878 to 1937 in Cowra, New South Wales, Australia.",
+      "Cowra | Cowra is a town in the Central West region of New South Wales, Australia.  It is the largest population centre and the council seat for the Cowra Shire, with a population of 10,063.",
+      "Cowra wine region | Cowra is a wine region and Australian Geographical Indication in the Central Ranges zone in the Australian state of New South Wales.  It is named for the town of Cowra.",
+      "Electoral district of Cowra | Cowra was an electoral district of the Legislative Assembly in the Australian state of New South Wales from 1894 to 1904, including the town of Cowra.  It was partly replaced by Belubula."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 117,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what town in the Central West region of New South Wales was Brad Haddin born?\nPassages: [\"Brad Haddin | Bradley James Haddin (born 23 October 1977 in Cowra, New South Wales), is a former Australian cricketer who has represented Australia in all three forms of international cricket (Test, One-Day International and Twenty20 International).  He also played for the New South Wales Blues in both domestic first class and list A cricket.  Haddin is a right-handed batsman and wicket-keeper.  He was a member of the Australian World cup winning squad at the 2015 Cricket World Cup.  He retired from One Day International Cricket on 17 May 2015, soon after the 2015 Cricket World Cup.  He also became the ambassador for his home ground, Sydney Cricket Ground (SCG) along with Steven Smith.  Haddin announced his retirement from international and first class cricket with New South Wales on 9 September 2015.  He currently plays in Australia's Big Bash League for the Sydney Sixers.\", \"Albert, New South Wales | Albert is a town in the Central West region of New South Wales, Australia.  The town is in the Lachlan Shire local government area, 481 km west north west of the state capital, Sydney.  At the 2006 census , Albert had a population of 96.\", \"Central West (New South Wales) | The Central West is a region of New South Wales, Australia.  The region is geographically in eastern New South Wales, in the area west of the Blue Mountains, which are west of Sydney.  It has an area of 63262 km2 .\", \"Toogong, New South Wales | Toogong is a town in the Central West region of New South Wales, Australia.  The town is located in the Cabonne Shire local government area, 300 km west of the state capital, Sydney.  At the 2006 census , Toogong had a population of 370.\", \"Yullundry, New South Wales | Yullundry is a rural locality between the towns of Yeoval and Cumnock in the Central West region of New South Wales, Australia.\", \"Alectown, New South Wales | Alectown is a town in the Central West region of New South Wales, Australia.  The town is on the Newell Highway and in the Parkes Shire local government area, 382 km , west north west of the state capital, Sydney.  At the 2006 census , Alectown and the surrounding area had a population of 201\", \"Murga, New South Wales | Murga is a former town in the Central West region of New South Wales, Australia.  The former town is located in the Cabonne Shire local government area, 320 km west of the state capital, Sydney.  At the 2006 census, Murga had a population of 199.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Brad Haddin was born in Cowra, New South Wales, as stated in Passage [1]. The passage notes this explicitly and identifies Cowra as part of the broader New South Wales region, but does not specifically categorize Cowra into a region. However, Cowra is known to be part of the Central West region of New South Wales, as it falls geographically within this area, which is west of the Blue Mountains (as described in Passage [3]). Other passages focus on specific towns in the Central West region but do not mention Cowra.\nSummary: Brad Haddin was born in Cowra, a town in the Central West region of New South Wales."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what town in the Central West region of New South Wales was Brad Haddin born?\nSummary 1: Brad Haddin was born in Cowra, a town in the Central West region of New South Wales."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is asking for the town in the Central West region of New South Wales where Brad Haddin was born. According to the summary provided, Brad Haddin's birthplace is Cowra, which matches the description of a town in the specified region.\nQuery: Cowra"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what town in the Central West region of New South Wales was Brad Haddin born?\nContext: Brad Haddin was born in Cowra, a town in the Central West region of New South Wales.\nPassages: [\"Cowra Guardian | The Cowra Guardian, also published as \\\"The Guardian, Cowra Guardian, Canowindra Star, The Canowindra Star and Eugowra News, Cowra Guardian and Lachlan Agricultural Recorder \\\"is a tri-weekly newspaper published in Cowra, New South Wales, Australia since 1885.  It is the biggest waste of $1.50.  It has two pages.\", \"Cowra Japanese Garden and Cultural Centre | The Cowra Japanese Garden and Cultural Centre is located in Cowra, in the Central West region of New South Wales, Australia.  The five hectares (12 acres) garden was established to recognize and develop the relationship between the people of Cowra Shire and the people of Japan.\", \"The Cowra Breakout (miniseries) | The Cowra Breakout is a 1985 Australian mini series based on the Cowra breakout, focusing on the friendship between an Australian soldier and Japanese prisoner.\", \"Cowra Free Press | The Cowra Free Press was a semi-weekly English language newspaper published from 1878 to 1937 in Cowra, New South Wales, Australia.\", \"Cowra | Cowra is a town in the Central West region of New South Wales, Australia.  It is the largest population centre and the council seat for the Cowra Shire, with a population of 10,063.\", \"Cowra wine region | Cowra is a wine region and Australian Geographical Indication in the Central Ranges zone in the Australian state of New South Wales.  It is named for the town of Cowra.\", \"Electoral district of Cowra | Cowra was an electoral district of the Legislative Assembly in the Australian state of New South Wales from 1894 to 1904, including the town of Cowra.  It was partly replaced by Belubula.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the town in the Central West region of New South Wales where Brad Haddin was born. The context clearly states that Brad Haddin was born in Cowra, which is a town in that region. This is supported by multiple passages, particularly passages [5] and [6], which describe Cowra as a town located in the Central West region of New South Wales, affirming the information in the context.\nSummary: Brad Haddin was born in Cowra, a town in the Central West region of New South Wales."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what town in the Central West region of New South Wales was Brad Haddin born?\nSummary 1: Brad Haddin was born in Cowra, a town in the Central West region of New South Wales.\nSummary 2: Brad Haddin was born in Cowra, a town in the Central West region of New South Wales."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both provided summaries explicitly state that Brad Haddin was born in Cowra, which is located in the Central West region of New South Wales. Since both summaries agree on this fact with no contradiction or ambiguity, it is reasonable to conclude that this information is accurate.\nAnswer: Cowra"
+      }
+    ]
+  }
+}

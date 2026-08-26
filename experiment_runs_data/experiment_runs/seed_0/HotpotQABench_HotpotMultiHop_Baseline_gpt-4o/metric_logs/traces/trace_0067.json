@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab85d3755429934fafe6d86",
+  "question": "What English actor starred in Where DAnger Lives?",
+  "gold_answer": "Claude Rains",
+  "prediction": {
+    "answer": "There is no evidence that an English actor starred in \"Where Danger Lives.\"",
+    "hop1_docs": [
+      "Where Danger Lives | Where Danger Lives is a 1950 film noir thriller directed by John Farrow and starring Robert Mitchum, Faith Domergue and Claude Rains.  At the time, Domergue was the latest of Howard Hughes' proteges.",
+      "Jackson Rogow | Jackson Rogow (born October 5, 1991) is an American actor.  He is best known for starring in the Cartoon Network live action series \"Dude, What Would Happen? \"",
+      "Alan Feinstein (actor) | Alan Feinstein (born 8 September 1941, New York City, New York) is an American actor noted for his 1983 award-winning stage performance in \"A View From the Bridge\".  From 1978-1979 he starred in the short lived QM Productions series \"The Runaways\" as the main character, Steve Arrizio, a former juvenile officer turned clinical psychologist who worked rescuing runaway children from danger.",
+      "Live at Wembley (Beyonc\u00e9 album) | Live at Wembley is a live album by American singer Beyonc\u00e9.  It was released on April 26, 2004 through Columbia Music Video and Sony Music Entertainment.  The DVD features her concert at Wembley Arena in London, England, as part of her Dangerously in Love Tour in support of her debut solo studio album \"Dangerously in Love\" (2003).  Most of the songs on \"Live at Wembley\" originate from \"Dangerously in Love\", although Beyonc\u00e9 also performed a medley of past songs by her former group Destiny's Child.  \"Live at Wembley\" was critically acclaimed, with AllMusic giving it a grade of three-and-a-half stars out of five.  The cover of Rose Royce's \"Wishing on a Star\", included on the album, was nominated in the category for Best Female R&B Vocal Performance at the 48th Annual Grammy Awards (2006).",
+      "Dangerously They Live | Dangerously They Live is a 1941 American World War II spy film directed by Robert Florey, and starring John Garfield, Nancy Coleman and Raymond Massey.  Nazi spies try to pry information out of a British agent.",
+      "Danger in the Past | Danger in the Past is the debut solo album by Robert Forster, formerly of the Go-Betweens.  It was recorded in Germany, where Forster was soon to live.",
+      "Jace Norman | Jace Lee Norman (born March 21, 2000) is an American actor.  He is known for his starring role as Henry Hart/Kid Danger in the Nickelodeon television series \"Henry Danger\"."
+    ],
+    "hop2_docs": [
+      "Live Read | Live Read is a monthly live staged reading of a film script and a part of the Film Independent at LACMA film series at the Bing Theater directed by Jason Reitman and hosted by Elvis Mitchell.  Reitman reads the stage directions in the scripts while images from the film are projected behind the cast.  The script that is read is only announced days before the event and while some actors are announced beforehand, full cast lists and the role each actor will play are kept secret until the event itself.  The actors do not rehearse ahead of time.",
+      "John Verbruggen | John Baptista Verbruggen, d. 1708, was an English actor working in London.  Verbruggen is first mentioned as a member of the United Company in a Lord Chamberlain's warrant in 1688.  His name does not appear in any cast lists until October 1690.  The \"Biographical Dictionary of Actors\" contains an inconclusive discussion of the claim in Davies' \"Dramatic Miscellanies\" (1784) that Verbruggen was identical to the actor referred to in 1680s and 90s cast lists as \"Mr. Alexander\", supposedly an alias based on the part of Alexander the Great in John Dryden's Rival Queens.  The evidence is confusing, and there is no independent support for Davies' anecdote, written down a century later.  Verbruggen had never played the part of Alexander the Great, and was not to do so until January 1703.",
+      "English Young Liberals | English Young Liberals is the youth and student wing of the English Liberal Democrats.  Its membership is open to any member of the Liberal Democrats living, working or studying in England and is either under 26 years of age or in full or part-time education above that age.",
+      "One Life to Live cast members | This is a list of actors and actresses who have had roles on the soap opera, \"One Life to Live\".  For a full historical character listing, see List of \"One Life to Live\" characters.",
+      "Random Acts of Comedy | Random Acts of Comedy is an American comedy game show hosted by David Alan Grier.  The show was co-created and executive produced by John Cervenka.  It premiered October 8, 1999, on the Fox Family Channel.  Two contestants had to identify \"The Who\", \"The What\", and \"The Where\" in a scene performed by improv actors.  For example, the actors could be asked to act out Santa Claus (The Who) serving hot dogs (The What) at a Boy Scout meeting (The Where).  None of the actors were informed of \"The Who\", \"The What\", or \"The Where\" of each round prior to the show.  As each scene was being performed, the contestants could buzz in and identify any of the three elements of the scene for points.  Five rounds were played, with the last round being a musical round.  Correct answers were worth ten points in round one, twenty points in rounds two and three, thirty points in round four, and fifty points in round five.  If at any time, the actors accidentally revealed a clue, it was thrown out and both players get the points.  At the end of the game, the contestant with the higher score won a prize package.",
+      "The Full Monteverdi | The Full Monteverdi is a 2007 British film written and directed by John La Bouchardi\u00e8re and based on his live production of the same name, itself based on Claudio Monteverdi's fourth book of madrigals (1603) which, in turn, is a collection of settings of poems by such Italian renaissance poets as Giovanni Battista Guarini, Ottavio Rinuccini and Torquato Tasso.  The film features the British vocal ensemble I Fagiolini and the original cast of actors from the live production.  The title is a play on the name of the 1997 film The Full Monty.",
+      "Sunshine (2007 film) | Sunshine is a 2007 British-American science fiction thriller film directed by Danny Boyle.  The film was adapted from a screenplay written by Alex Garland about the crew of a spacecraft on a dangerous mission to the Sun.  In 2057, with the Earth in peril from the dying Sun, the crew is sent on a mission to reignite the star with a nuclear bomb that has a mass equivalent to Manhattan Island.  The script was based on a scientific back-story that took the characters on a psychological journey.  The director cast a group of international actors for the film, and had the actors live together and learn about topics related to their roles, as a form of method acting.  To have the actors realistically react to visual effects that would be implemented in post-production, the filmmakers constructed live sets to serve as cues.  The ensemble cast features Cillian Murphy, Chris Evans, Rose Byrne, Michelle Yeoh, Cliff Curtis, Troy Garity, Hiroyuki Sanada, Benedict Wong, and Chipo Chung."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 67,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What English actor starred in Where DAnger Lives?\nPassages: [\"Where Danger Lives | Where Danger Lives is a 1950 film noir thriller directed by John Farrow and starring Robert Mitchum, Faith Domergue and Claude Rains.  At the time, Domergue was the latest of Howard Hughes' proteges.\", \"Jackson Rogow | Jackson Rogow (born October 5, 1991) is an American actor.  He is best known for starring in the Cartoon Network live action series \\\"Dude, What Would Happen? \\\"\", \"Alan Feinstein (actor) | Alan Feinstein (born 8 September 1941, New York City, New York) is an American actor noted for his 1983 award-winning stage performance in \\\"A View From the Bridge\\\".  From 1978-1979 he starred in the short lived QM Productions series \\\"The Runaways\\\" as the main character, Steve Arrizio, a former juvenile officer turned clinical psychologist who worked rescuing runaway children from danger.\", \"Live at Wembley (Beyonc\\u00e9 album) | Live at Wembley is a live album by American singer Beyonc\\u00e9.  It was released on April 26, 2004 through Columbia Music Video and Sony Music Entertainment.  The DVD features her concert at Wembley Arena in London, England, as part of her Dangerously in Love Tour in support of her debut solo studio album \\\"Dangerously in Love\\\" (2003).  Most of the songs on \\\"Live at Wembley\\\" originate from \\\"Dangerously in Love\\\", although Beyonc\\u00e9 also performed a medley of past songs by her former group Destiny's Child.  \\\"Live at Wembley\\\" was critically acclaimed, with AllMusic giving it a grade of three-and-a-half stars out of five.  The cover of Rose Royce's \\\"Wishing on a Star\\\", included on the album, was nominated in the category for Best Female R&B Vocal Performance at the 48th Annual Grammy Awards (2006).\", \"Dangerously They Live | Dangerously They Live is a 1941 American World War II spy film directed by Robert Florey, and starring John Garfield, Nancy Coleman and Raymond Massey.  Nazi spies try to pry information out of a British agent.\", \"Danger in the Past | Danger in the Past is the debut solo album by Robert Forster, formerly of the Go-Betweens.  It was recorded in Germany, where Forster was soon to live.\", \"Jace Norman | Jace Lee Norman (born March 21, 2000) is an American actor.  He is known for his starring role as Henry Hart/Kid Danger in the Nickelodeon television series \\\"Henry Danger\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the English actor who starred in \"Where Danger Lives\". The provided passages discuss various topics, such as the film \"Where Danger Lives\", roles of American actors, and works by other performers. Passage [1] specifically identifies \"Where Danger Lives\" as a 1950 film noir thriller directed by John Farrow and featuring Robert Mitchum, Faith Domergue, and Claude Rains as actors. However, none of these actors are identified as being English. Given the context and lack of an English actor mentioned in connection with \"Where Danger Lives\", it appears there is no English actor starring in this film based on the provided information.\nSummary: The film \"Where Danger Lives\" stars Robert Mitchum, Faith Domergue, and Claude Rains. None of these actors are English based on the information provided."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What English actor starred in Where DAnger Lives?\nSummary 1: The film \"Where Danger Lives\" stars Robert Mitchum, Faith Domergue, and Claude Rains. None of these actors are English based on the information provided."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the provided summary, none of the listed main actors in \"Where Danger Lives\"\u2014Robert Mitchum, Faith Domergue, and Claude Rains\u2014are identified as English. To accurately answer the question, it will be necessary to cross-check the full cast of the film and determine if any English actors were involved.\nQuery: \"Full cast of 'Where Danger Lives' and identify if any English actor is part of it.\""
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What English actor starred in Where DAnger Lives?\nContext: The film \"Where Danger Lives\" stars Robert Mitchum, Faith Domergue, and Claude Rains. None of these actors are English based on the information provided.\nPassages: [\"Live Read | Live Read is a monthly live staged reading of a film script and a part of the Film Independent at LACMA film series at the Bing Theater directed by Jason Reitman and hosted by Elvis Mitchell.  Reitman reads the stage directions in the scripts while images from the film are projected behind the cast.  The script that is read is only announced days before the event and while some actors are announced beforehand, full cast lists and the role each actor will play are kept secret until the event itself.  The actors do not rehearse ahead of time.\", \"John Verbruggen | John Baptista Verbruggen, d. 1708, was an English actor working in London.  Verbruggen is first mentioned as a member of the United Company in a Lord Chamberlain's warrant in 1688.  His name does not appear in any cast lists until October 1690.  The \\\"Biographical Dictionary of Actors\\\" contains an inconclusive discussion of the claim in Davies' \\\"Dramatic Miscellanies\\\" (1784) that Verbruggen was identical to the actor referred to in 1680s and 90s cast lists as \\\"Mr. Alexander\\\", supposedly an alias based on the part of Alexander the Great in John Dryden's Rival Queens.  The evidence is confusing, and there is no independent support for Davies' anecdote, written down a century later.  Verbruggen had never played the part of Alexander the Great, and was not to do so until January 1703.\", \"English Young Liberals | English Young Liberals is the youth and student wing of the English Liberal Democrats.  Its membership is open to any member of the Liberal Democrats living, working or studying in England and is either under 26 years of age or in full or part-time education above that age.\", \"One Life to Live cast members | This is a list of actors and actresses who have had roles on the soap opera, \\\"One Life to Live\\\".  For a full historical character listing, see List of \\\"One Life to Live\\\" characters.\", \"Random Acts of Comedy | Random Acts of Comedy is an American comedy game show hosted by David Alan Grier.  The show was co-created and executive produced by John Cervenka.  It premiered October 8, 1999, on the Fox Family Channel.  Two contestants had to identify \\\"The Who\\\", \\\"The What\\\", and \\\"The Where\\\" in a scene performed by improv actors.  For example, the actors could be asked to act out Santa Claus (The Who) serving hot dogs (The What) at a Boy Scout meeting (The Where).  None of the actors were informed of \\\"The Who\\\", \\\"The What\\\", or \\\"The Where\\\" of each round prior to the show.  As each scene was being performed, the contestants could buzz in and identify any of the three elements of the scene for points.  Five rounds were played, with the last round being a musical round.  Correct answers were worth ten points in round one, twenty points in rounds two and three, thirty points in round four, and fifty points in round five.  If at any time, the actors accidentally revealed a clue, it was thrown out and both players get the points.  At the end of the game, the contestant with the higher score won a prize package.\", \"The Full Monteverdi | The Full Monteverdi is a 2007 British film written and directed by John La Bouchardi\\u00e8re and based on his live production of the same name, itself based on Claudio Monteverdi's fourth book of madrigals (1603) which, in turn, is a collection of settings of poems by such Italian renaissance poets as Giovanni Battista Guarini, Ottavio Rinuccini and Torquato Tasso.  The film features the British vocal ensemble I Fagiolini and the original cast of actors from the live production.  The title is a play on the name of the 1997 film The Full Monty.\", \"Sunshine (2007 film) | Sunshine is a 2007 British-American science fiction thriller film directed by Danny Boyle.  The film was adapted from a screenplay written by Alex Garland about the crew of a spacecraft on a dangerous mission to the Sun.  In 2057, with the Earth in peril from the dying Sun, the crew is sent on a mission to reignite the star with a nuclear bomb that has a mass equivalent to Manhattan Island.  The script was based on a scientific back-story that took the characters on a psychological journey.  The director cast a group of international actors for the film, and had the actors live together and learn about topics related to their roles, as a form of method acting.  To have the actors realistically react to visual effects that would be implemented in post-production, the filmmakers constructed live sets to serve as cues.  The ensemble cast features Cillian Murphy, Chris Evans, Rose Byrne, Michelle Yeoh, Cliff Curtis, Troy Garity, Hiroyuki Sanada, Benedict Wong, and Chipo Chung.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the English actor who starred in the film \"Where Danger Lives.\" The context mentions Robert Mitchum, Faith Domergue, and Claude Rains as the stars of the film; none of these actors are described as English in the provided details. The passages do not provide further information about other actors or indicate the presence of an English actor in the cast of \"Where Danger Lives.\" It seems unlikely that an English actor starred in this specific film, based on the available sources.\nSummary: There is no evidence suggesting that an English actor starred in \"Where Danger Lives.\" The primary cast listed includes Robert Mitchum, Faith Domergue, and Claude Rains, none of whom are English."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What English actor starred in Where DAnger Lives?\nSummary 1: The film \"Where Danger Lives\" stars Robert Mitchum, Faith Domergue, and Claude Rains. None of these actors are English based on the information provided.\nSummary 2: There is no evidence suggesting that an English actor starred in \"Where Danger Lives.\" The primary cast listed includes Robert Mitchum, Faith Domergue, and Claude Rains, none of whom are English."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries indicate that the main actors in the film \"Where Danger Lives\" are Robert Mitchum, Faith Domergue, and Claude Rains. None of these actors are English, according to the available information. As such, there is no evidence to suggest that an English actor starred in this film.\nAnswer: There is no evidence that an English actor starred in \"Where Danger Lives.\""
+      }
+    ]
+  }
+}

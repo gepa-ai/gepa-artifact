@@ -1,0 +1,96 @@
+{
+  "example_id": "5ae21314554299495565d9e1",
+  "question": "Zehnder's is a large restaurant in Frankenmuth, Frankenmuth is a city in Saginaw County in the state of Michigan, in which country?",
+  "gold_answer": "United States",
+  "prediction": {
+    "answer": "United States",
+    "hop1_docs": [
+      "Frankenmuth, Michigan | Frankenmuth is a city in Saginaw County in the U.S. state of Michigan.  The population was 4,944 at the 2010 census.  The city is located within Frankenmuth Township survey area.  Bronner's Christmas Wonderland, which bills itself as \"the World's Largest Christmas Store\", is located in Frankenmuth.",
+      "Frankenmuth Township, Michigan | Frankenmuth Township is a civil township of Saginaw County in the U.S. state of Michigan.  The population was 2,049 at the 2000 census.  The 2008 census estimate places the population at 1,919.  The City of Frankenmuth is located within the survey township area, but is administratively autonomous.",
+      "Zehnder's | Zehnder's is a large restaurant in Frankenmuth, Michigan.  It has seating for 1,500 people and features all-you-can-eat family-style chicken dinners, seafood, steaks, fresh baked goods and European desserts.  Every year Zehnder's serves almost a million people.  In the 1980s, it was one of the ten largest restaurants in the United States.",
+      "Frankenmuth School District | Frankenmuth School District is a school district headquartered in Frankenmuth, Michigan.  It is a part of the Saginaw Intermediate School District and serves the Frankenmuth area.  Its schools include the Preschool, List Elementary School, E.F. Rittmueller Middle School, and Frankenmuth High School.",
+      "Frankenmuth Brewery | Frankenmuth Brewery is a brewery and restaurant in Frankenmuth, Michigan.  It is one of the oldest breweries in Michigan.  The business closed in 2003 and reopened in 2009.",
+      "Kenneth Horn | Kenneth B. 'Ken' Horn is a member of the Michigan Senate for the 32nd District and former member of the Michigan House of Representatives for the 94th District encompassing part of Saginaw County) from 2007 through 2012.  Horn was first elected to the House in 2006, and re-elected in 2008 and 2010.  In 2014, Horn was elected to the Michigan Senate from the 32nd District, which includes Saginaw County and the westernmost portion of Genesee County.  Before his career in the Michigan legislature, he served as a Saginaw County commissioner for 14 years, and operated a restaurant in Frankenmuth.",
+      "M-83 (Michigan highway) | M-83 is a north\u2013south state trunkline highway in the Lower Peninsula of the US state of Michigan primarily serving as a link between Interstate\u00a075/US Highway\u00a023 (I-75/US\u00a023) in Birch Run, including a a short east\u2013west section with M-54, and the Bavarian-themed town of Frankenmuth.  M-83 is primarily a north\u2013south trunkline that passes by such landmarks as Bronner's Christmas Wonderland, Zehnder's and the Bavarian Inn before leaving town.  The landscape in the remainder of the area is composed of farm fields between Frankenmuth and the northern terminus at M-15 near Richville."
+    ],
+    "hop2_docs": [
+      "Frankenmuth, Michigan | Frankenmuth is a city in Saginaw County in the U.S. state of Michigan.  The population was 4,944 at the 2010 census.  The city is located within Frankenmuth Township survey area.  Bronner's Christmas Wonderland, which bills itself as \"the World's Largest Christmas Store\", is located in Frankenmuth.",
+      "Frankenmuth Township, Michigan | Frankenmuth Township is a civil township of Saginaw County in the U.S. state of Michigan.  The population was 2,049 at the 2000 census.  The 2008 census estimate places the population at 1,919.  The City of Frankenmuth is located within the survey township area, but is administratively autonomous.",
+      "Frankenmuth Brewery | Frankenmuth Brewery is a brewery and restaurant in Frankenmuth, Michigan.  It is one of the oldest breweries in Michigan.  The business closed in 2003 and reopened in 2009.",
+      "Frankenmuth School District | Frankenmuth School District is a school district headquartered in Frankenmuth, Michigan.  It is a part of the Saginaw Intermediate School District and serves the Frankenmuth area.  Its schools include the Preschool, List Elementary School, E.F. Rittmueller Middle School, and Frankenmuth High School.",
+      "M-83 (Michigan highway) | M-83 is a north\u2013south state trunkline highway in the Lower Peninsula of the US state of Michigan primarily serving as a link between Interstate\u00a075/US Highway\u00a023 (I-75/US\u00a023) in Birch Run, including a a short east\u2013west section with M-54, and the Bavarian-themed town of Frankenmuth.  M-83 is primarily a north\u2013south trunkline that passes by such landmarks as Bronner's Christmas Wonderland, Zehnder's and the Bavarian Inn before leaving town.  The landscape in the remainder of the area is composed of farm fields between Frankenmuth and the northern terminus at M-15 near Richville.",
+      "Zehnder's | Zehnder's is a large restaurant in Frankenmuth, Michigan.  It has seating for 1,500 people and features all-you-can-eat family-style chicken dinners, seafood, steaks, fresh baked goods and European desserts.  Every year Zehnder's serves almost a million people.  In the 1980s, it was one of the ten largest restaurants in the United States.",
+      "Birmingham Country Club (Michigan) | Birmingham Country Club, located in Birmingham, Michigan, was founded in 1916 as Birmingham Golf Club.  The golf course at the club hosted the PGA Championship in 1953, which Walter Burkemo won, as well as the 1968 United States Women's Amateur Golf Championship."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 123,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Zehnder's is a large restaurant in Frankenmuth, Frankenmuth is a city in Saginaw County in the state of Michigan, in which country?\nPassages: [\"Frankenmuth, Michigan | Frankenmuth is a city in Saginaw County in the U.S. state of Michigan.  The population was 4,944 at the 2010 census.  The city is located within Frankenmuth Township survey area.  Bronner's Christmas Wonderland, which bills itself as \\\"the World's Largest Christmas Store\\\", is located in Frankenmuth.\", \"Frankenmuth Township, Michigan | Frankenmuth Township is a civil township of Saginaw County in the U.S. state of Michigan.  The population was 2,049 at the 2000 census.  The 2008 census estimate places the population at 1,919.  The City of Frankenmuth is located within the survey township area, but is administratively autonomous.\", \"Zehnder's | Zehnder's is a large restaurant in Frankenmuth, Michigan.  It has seating for 1,500 people and features all-you-can-eat family-style chicken dinners, seafood, steaks, fresh baked goods and European desserts.  Every year Zehnder's serves almost a million people.  In the 1980s, it was one of the ten largest restaurants in the United States.\", \"Frankenmuth School District | Frankenmuth School District is a school district headquartered in Frankenmuth, Michigan.  It is a part of the Saginaw Intermediate School District and serves the Frankenmuth area.  Its schools include the Preschool, List Elementary School, E.F. Rittmueller Middle School, and Frankenmuth High School.\", \"Frankenmuth Brewery | Frankenmuth Brewery is a brewery and restaurant in Frankenmuth, Michigan.  It is one of the oldest breweries in Michigan.  The business closed in 2003 and reopened in 2009.\", \"Kenneth Horn | Kenneth B. 'Ken' Horn is a member of the Michigan Senate for the 32nd District and former member of the Michigan House of Representatives for the 94th District encompassing part of Saginaw County) from 2007 through 2012.  Horn was first elected to the House in 2006, and re-elected in 2008 and 2010.  In 2014, Horn was elected to the Michigan Senate from the 32nd District, which includes Saginaw County and the westernmost portion of Genesee County.  Before his career in the Michigan legislature, he served as a Saginaw County commissioner for 14 years, and operated a restaurant in Frankenmuth.\", \"M-83 (Michigan highway) | M-83 is a north\\u2013south state trunkline highway in the Lower Peninsula of the US state of Michigan primarily serving as a link between Interstate\\u00a075/US Highway\\u00a023 (I-75/US\\u00a023) in Birch Run, including a a short east\\u2013west section with M-54, and the Bavarian-themed town of Frankenmuth.  M-83 is primarily a north\\u2013south trunkline that passes by such landmarks as Bronner's Christmas Wonderland, Zehnder's and the Bavarian Inn before leaving town.  The landscape in the remainder of the area is composed of farm fields between Frankenmuth and the northern terminus at M-15 near Richville.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks in which country Frankenmuth, Michigan, is located. Passages [1] and [2] explicitly state that Frankenmuth is a city in Saginaw County in the U.S. state of Michigan. The information indicates that Frankenmuth, and therefore the restaurant Zehnder's which is located in Frankenmuth (as per passage [3]), is in the United States. Several other passages mention the U.S. context, confirming that Michigan is part of the United States.\nSummary: Frankenmuth, Michigan, where Zehnder's restaurant is located, is in the United States."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Zehnder's is a large restaurant in Frankenmuth, Frankenmuth is a city in Saginaw County in the state of Michigan, in which country?\nSummary 1: Frankenmuth, Michigan, where Zehnder's restaurant is located, is in the United States."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is asking about the country in which Frankenmuth, Michigan, is located. Based on the information provided in summary_1, Frankenmuth, Michigan, is in the United States. Hence, the country in which Zehnder's restaurant and Frankenmuth are located is the United States.\nQuery: The country in which Frankenmuth, Michigan, is located is the United States."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Zehnder's is a large restaurant in Frankenmuth, Frankenmuth is a city in Saginaw County in the state of Michigan, in which country?\nContext: Frankenmuth, Michigan, where Zehnder's restaurant is located, is in the United States.\nPassages: [\"Frankenmuth, Michigan | Frankenmuth is a city in Saginaw County in the U.S. state of Michigan.  The population was 4,944 at the 2010 census.  The city is located within Frankenmuth Township survey area.  Bronner's Christmas Wonderland, which bills itself as \\\"the World's Largest Christmas Store\\\", is located in Frankenmuth.\", \"Frankenmuth Township, Michigan | Frankenmuth Township is a civil township of Saginaw County in the U.S. state of Michigan.  The population was 2,049 at the 2000 census.  The 2008 census estimate places the population at 1,919.  The City of Frankenmuth is located within the survey township area, but is administratively autonomous.\", \"Frankenmuth Brewery | Frankenmuth Brewery is a brewery and restaurant in Frankenmuth, Michigan.  It is one of the oldest breweries in Michigan.  The business closed in 2003 and reopened in 2009.\", \"Frankenmuth School District | Frankenmuth School District is a school district headquartered in Frankenmuth, Michigan.  It is a part of the Saginaw Intermediate School District and serves the Frankenmuth area.  Its schools include the Preschool, List Elementary School, E.F. Rittmueller Middle School, and Frankenmuth High School.\", \"M-83 (Michigan highway) | M-83 is a north\\u2013south state trunkline highway in the Lower Peninsula of the US state of Michigan primarily serving as a link between Interstate\\u00a075/US Highway\\u00a023 (I-75/US\\u00a023) in Birch Run, including a a short east\\u2013west section with M-54, and the Bavarian-themed town of Frankenmuth.  M-83 is primarily a north\\u2013south trunkline that passes by such landmarks as Bronner's Christmas Wonderland, Zehnder's and the Bavarian Inn before leaving town.  The landscape in the remainder of the area is composed of farm fields between Frankenmuth and the northern terminus at M-15 near Richville.\", \"Zehnder's | Zehnder's is a large restaurant in Frankenmuth, Michigan.  It has seating for 1,500 people and features all-you-can-eat family-style chicken dinners, seafood, steaks, fresh baked goods and European desserts.  Every year Zehnder's serves almost a million people.  In the 1980s, it was one of the ten largest restaurants in the United States.\", \"Birmingham Country Club (Michigan) | Birmingham Country Club, located in Birmingham, Michigan, was founded in 1916 as Birmingham Golf Club.  The golf course at the club hosted the PGA Championship in 1953, which Walter Burkemo won, as well as the 1968 United States Women's Amateur Golf Championship.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks in which country Frankenmuth, Michigan is located. From the context provided, Frankenmuth is mentioned to be a city in Michigan, and Michigan is clearly stated to be a state in the United States. Furthermore, the passages also confirm this information multiple times. For example, passage [1] explicitly states that Frankenmuth is a city in the U.S. state of Michigan.\nSummary: Frankenmuth, Michigan, where Zehnder's restaurant is located, is in the United States."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Zehnder's is a large restaurant in Frankenmuth, Frankenmuth is a city in Saginaw County in the state of Michigan, in which country?\nSummary 1: Frankenmuth, Michigan, where Zehnder's restaurant is located, is in the United States.\nSummary 2: Frankenmuth, Michigan, where Zehnder's restaurant is located, is in the United States."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries clearly state that Frankenmuth, Michigan, where Zehnder's restaurant is located, is in the United States. Since Michigan is a state within the United States, it verifies that Frankenmuth lies within the United States.\nAnswer: United States"
+      }
+    ]
+  }
+}

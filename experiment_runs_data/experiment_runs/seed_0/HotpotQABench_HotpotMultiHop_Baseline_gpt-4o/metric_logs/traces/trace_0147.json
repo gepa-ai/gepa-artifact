@@ -1,0 +1,96 @@
+{
+  "example_id": "5ac49bed5542997ea680ca9a",
+  "question": "Who was the director of the 1998 comedy film on which the 2016 Romanian comedy film, directed by Paul Negoescu, is loosely based?",
+  "gold_answer": "Kirk Jones",
+  "prediction": {
+    "answer": "Kirk Jones was the director of the 1998 comedy film \"Waking Ned,\" on which the 2016 Romanian comedy film, directed by Paul Negoescu, is loosely based.",
+    "hop1_docs": [
+      "Two Lottery Tickets | Two Loterry Tickets (Romanian: Dou\u0103 lozuri) is a 2016 Romanian comedy film directed by Paul Negoescu and loosely based on Waking Ned.  It is a story of a working man losing his lottery ticket that was for a huge prize goes through bizarre events and takes an another ticket and wins it.  The name of the film is based on Ion Luca Caragiale's short story \"Dou\u0103 loturi\".",
+      "Just One Time (film) | Just One Time is a 1999 feature length comedy film, written and directed by Lane Janger.  It is also a 1998 short film by the same director on which the long feature was based on.",
+      "Yes Man (film) | Yes Man is a 2008 British-American comedy film directed by Peyton Reed, written by Nicholas Stoller, Jarrad Paul, and Andrew Mogel and starring Jim Carrey and co-starring Zooey Deschanel.  The film is based loosely on the 2005 book \"Yes Man\" by British humorist Danny Wallace, who also makes a cameo appearance in the film.",
+      "Paul Feig | Paul Samuel Feig ( ; born September 17, 1962) is an American actor, film director, producer, and screenwriter.  He is best known for directing the 2011 film \"Bridesmaids\", featuring Kristen Wiig and Melissa McCarthy and the 2016 film \"Ghostbusters\" also starring Wiig and McCarthy.  Feig also directed the comedy films \"The Heat\" (2013) starring McCarthy and Sandra Bullock, and \"Spy\" (2015) which stars McCarthy, Jason Statham, and Jude Law.",
+      "Aquamarine (film) | Aquamarine is a 2006 Australian-American teen comedy film starring Sara Paxton, Emma Roberts and JoJo.  The film, which was made in both the United States and Australia, was released in North America on March 3, 2006.  The film was loosely based on a children's book of the same name by Alice Hoffman, and was directed by American director Elizabeth Allen.  The movie was filmed in Queensland, Australia.",
+      "The Party (film) | The Party is a 1968 American comedy film directed by Blake Edwards, starring Peter Sellers and Claudine Longet.  The film has a very loose structure, and essentially serves as a series of setpieces for Sellers's improvisational comedy talents.  The comedy is based on a fish out of water premise, in which a bungling Indian actor accidentally gets invited to a lavish Hollywood dinner party and \"makes terrible mistakes based upon ignorance of Western ways\" set in the 1960s.",
+      "Bucharest Non Stop | Bucharest Non Stop (Romanian: \"Bucure\u0219ti NonStop\" ) is a 2015 Romanian comedy film directed by the Romanian actor, director and film producer Dan Chi\u0219u ."
+    ],
+    "hop2_docs": [
+      "Kirk Jones (director) | Kirk Jones (born 31 October 1964) is an English film director and screenwriter.",
+      "The Misadventures of Merlin Jones | The Misadventures of Merlin Jones is a 1964 Walt Disney production starring Tommy Kirk and Annette Funicello.  Kirk plays a college student who experiments with mind-reading and hypnotism, leading to run-ins with a local judge.  Funicello plays his girlfriend (and sings the film's title song written by brothers Robert and Richard Sherman).",
+      "Blacktrash: The Autobiography of Kirk Jones | Blacktrash: The Autobiography of Kirk Jones is the first solo album by Onyx member Sticky Fingaz, released May 22, 2001.  The lyricist portrays the fictional Kirk Jones, a felon just released from prison who is now struggling to come to terms with life outside jail.  The listener is taken from street drama on \"My Dogz Iz My Gunz\" to metaphysical musings on \"Oh My God\" and rage-filled vents on his girlfriend in \"Cheatin'\" before an ironic, post-mortem cover version of Louis Armstrong's \"What a Wonderful World\" finishes this album which went deeper than many critics had expected from the hardcore rapper.  The album was also released in a clean version.  The album is now out of print.",
+      "Rip, Rig and Panic (album) | Rip, Rig and Panic is a 1965 jazz album by saxophonist Roland Kirk.  It was recorded at Rudy Van Gelder's studio by a quartet of Kirk, Jaki Byard (piano), Richard Davis (bass), and Elvin Jones (drums); they were described as \"the most awesome rhythm section he ever recorded with\".  The set is made up primarily of original Kirk compositions.",
+      "A Meeting of the Times | A Meeting of the Times is an album by jazz multi-instrumentalist Rahsaan Roland Kirk and vocalist Al Hibbler recorded in March 1972 in New York City.  It features performances by Kirk and Hibbler with Hank Jones, Ron Carter and Grady Tate with an additional track recorded by Kirk with Leon Thomas, Lonnie Liston Smith, Major Holley and Charles Crosby from the sessions that produced \"Here Comes the Whistleman\" (1965).",
+      "K. C. Jones (American football) | Kirk Cameron Jones (born March 28, 1974) is a former American football center for the Denver Broncos from 1997-2000.  Played college football at the University of Miami from 1993-1996 at the position of Center.  Jones was inducted into the University of Miami Sports Hall of Fame 2008.",
+      "Kirk Bovill | Kirk Bovill (born January 17, 1961) is an American actor, writer and producer.  His film credits include \"20th Century Women\", \"Free State of Jones\", \"Get on Up\", \"Contraband\", \"Texas Killing Fields\", \"White Lightnin'\", \"The Butterfly Circus\", and \"God Bless America\"."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 147,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the director of the 1998 comedy film on which the 2016 Romanian comedy film, directed by Paul Negoescu, is loosely based?\nPassages: [\"Two Lottery Tickets | Two Loterry Tickets (Romanian: Dou\\u0103 lozuri) is a 2016 Romanian comedy film directed by Paul Negoescu and loosely based on Waking Ned.  It is a story of a working man losing his lottery ticket that was for a huge prize goes through bizarre events and takes an another ticket and wins it.  The name of the film is based on Ion Luca Caragiale's short story \\\"Dou\\u0103 loturi\\\".\", \"Just One Time (film) | Just One Time is a 1999 feature length comedy film, written and directed by Lane Janger.  It is also a 1998 short film by the same director on which the long feature was based on.\", \"Yes Man (film) | Yes Man is a 2008 British-American comedy film directed by Peyton Reed, written by Nicholas Stoller, Jarrad Paul, and Andrew Mogel and starring Jim Carrey and co-starring Zooey Deschanel.  The film is based loosely on the 2005 book \\\"Yes Man\\\" by British humorist Danny Wallace, who also makes a cameo appearance in the film.\", \"Paul Feig | Paul Samuel Feig ( ; born September 17, 1962) is an American actor, film director, producer, and screenwriter.  He is best known for directing the 2011 film \\\"Bridesmaids\\\", featuring Kristen Wiig and Melissa McCarthy and the 2016 film \\\"Ghostbusters\\\" also starring Wiig and McCarthy.  Feig also directed the comedy films \\\"The Heat\\\" (2013) starring McCarthy and Sandra Bullock, and \\\"Spy\\\" (2015) which stars McCarthy, Jason Statham, and Jude Law.\", \"Aquamarine (film) | Aquamarine is a 2006 Australian-American teen comedy film starring Sara Paxton, Emma Roberts and JoJo.  The film, which was made in both the United States and Australia, was released in North America on March 3, 2006.  The film was loosely based on a children's book of the same name by Alice Hoffman, and was directed by American director Elizabeth Allen.  The movie was filmed in Queensland, Australia.\", \"The Party (film) | The Party is a 1968 American comedy film directed by Blake Edwards, starring Peter Sellers and Claudine Longet.  The film has a very loose structure, and essentially serves as a series of setpieces for Sellers's improvisational comedy talents.  The comedy is based on a fish out of water premise, in which a bungling Indian actor accidentally gets invited to a lavish Hollywood dinner party and \\\"makes terrible mistakes based upon ignorance of Western ways\\\" set in the 1960s.\", \"Bucharest Non Stop | Bucharest Non Stop (Romanian: \\\"Bucure\\u0219ti NonStop\\\" ) is a 2015 Romanian comedy film directed by the Romanian actor, director and film producer Dan Chi\\u0219u .\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The 2016 Romanian comedy film \"Two Lottery Tickets,\" directed by Paul Negoescu, is mentioned in passage [1] as being loosely based on the 1998 film \"Waking Ned.\" While the provided passages do not explicitly name the director of \"Waking Ned,\" external knowledge confirms that the director of \"Waking Ned\" is Kirk Jones, as the movie was not covered in the passages.\nSummary: The 1998 comedy film \"Waking Ned,\" upon which the 2016 Romanian comedy \"Two Lottery Tickets\" is loosely based, was directed by Kirk Jones."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the director of the 1998 comedy film on which the 2016 Romanian comedy film, directed by Paul Negoescu, is loosely based?\nSummary 1: The 1998 comedy film \"Waking Ned,\" upon which the 2016 Romanian comedy \"Two Lottery Tickets\" is loosely based, was directed by Kirk Jones."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to identify the director of a 1998 comedy film that influenced the 2016 Romanian comedy directed by Paul Negoescu. Based on the provided summary, \"Waking Ned\" is the 1998 film in question, and its director is Kirk Jones. Therefore, the answer to the query can be determined from the summary directly.\nQuery: Kirk Jones"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the director of the 1998 comedy film on which the 2016 Romanian comedy film, directed by Paul Negoescu, is loosely based?\nContext: The 1998 comedy film \"Waking Ned,\" upon which the 2016 Romanian comedy \"Two Lottery Tickets\" is loosely based, was directed by Kirk Jones.\nPassages: [\"Kirk Jones (director) | Kirk Jones (born 31 October 1964) is an English film director and screenwriter.\", \"The Misadventures of Merlin Jones | The Misadventures of Merlin Jones is a 1964 Walt Disney production starring Tommy Kirk and Annette Funicello.  Kirk plays a college student who experiments with mind-reading and hypnotism, leading to run-ins with a local judge.  Funicello plays his girlfriend (and sings the film's title song written by brothers Robert and Richard Sherman).\", \"Blacktrash: The Autobiography of Kirk Jones | Blacktrash: The Autobiography of Kirk Jones is the first solo album by Onyx member Sticky Fingaz, released May 22, 2001.  The lyricist portrays the fictional Kirk Jones, a felon just released from prison who is now struggling to come to terms with life outside jail.  The listener is taken from street drama on \\\"My Dogz Iz My Gunz\\\" to metaphysical musings on \\\"Oh My God\\\" and rage-filled vents on his girlfriend in \\\"Cheatin'\\\" before an ironic, post-mortem cover version of Louis Armstrong's \\\"What a Wonderful World\\\" finishes this album which went deeper than many critics had expected from the hardcore rapper.  The album was also released in a clean version.  The album is now out of print.\", \"Rip, Rig and Panic (album) | Rip, Rig and Panic is a 1965 jazz album by saxophonist Roland Kirk.  It was recorded at Rudy Van Gelder's studio by a quartet of Kirk, Jaki Byard (piano), Richard Davis (bass), and Elvin Jones (drums); they were described as \\\"the most awesome rhythm section he ever recorded with\\\".  The set is made up primarily of original Kirk compositions.\", \"A Meeting of the Times | A Meeting of the Times is an album by jazz multi-instrumentalist Rahsaan Roland Kirk and vocalist Al Hibbler recorded in March 1972 in New York City.  It features performances by Kirk and Hibbler with Hank Jones, Ron Carter and Grady Tate with an additional track recorded by Kirk with Leon Thomas, Lonnie Liston Smith, Major Holley and Charles Crosby from the sessions that produced \\\"Here Comes the Whistleman\\\" (1965).\", \"K. C. Jones (American football) | Kirk Cameron Jones (born March 28, 1974) is a former American football center for the Denver Broncos from 1997-2000.  Played college football at the University of Miami from 1993-1996 at the position of Center.  Jones was inducted into the University of Miami Sports Hall of Fame 2008.\", \"Kirk Bovill | Kirk Bovill (born January 17, 1961) is an American actor, writer and producer.  His film credits include \\\"20th Century Women\\\", \\\"Free State of Jones\\\", \\\"Get on Up\\\", \\\"Contraband\\\", \\\"Texas Killing Fields\\\", \\\"White Lightnin'\\\", \\\"The Butterfly Circus\\\", and \\\"God Bless America\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is focused on identifying the director of the 1998 comedy film \"Waking Ned,\" since the 2016 Romanian film \"Two Lottery Tickets,\" directed by Paul Negoescu, is loosely based on it. From the context provided, it is explicitly mentioned that the director of \"Waking Ned\" is Kirk Jones. The passages include multiple mentions of individuals with the name \"Kirk,\" but only context passage [1] is applicable as it refers to Kirk Jones being an English film director, which aligns with his role as the director of \"Waking Ned.\"\nSummary: The director of the 1998 comedy film \"Waking Ned,\" which served as an influence for the 2016 Romanian comedy \"Two Lottery Tickets,\" was Kirk Jones."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the director of the 1998 comedy film on which the 2016 Romanian comedy film, directed by Paul Negoescu, is loosely based?\nSummary 1: The 1998 comedy film \"Waking Ned,\" upon which the 2016 Romanian comedy \"Two Lottery Tickets\" is loosely based, was directed by Kirk Jones.\nSummary 2: The director of the 1998 comedy film \"Waking Ned,\" which served as an influence for the 2016 Romanian comedy \"Two Lottery Tickets,\" was Kirk Jones."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the 1998 comedy film \"Waking Ned,\" which influenced the 2016 Romanian comedy \"Two Lottery Tickets,\" was directed by Kirk Jones. There is no contradiction or ambiguity in the information provided.\nAnswer: Kirk Jones was the director of the 1998 comedy film \"Waking Ned,\" on which the 2016 Romanian comedy film, directed by Paul Negoescu, is loosely based."
+      }
+    ]
+  }
+}

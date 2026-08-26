@@ -1,0 +1,96 @@
+{
+  "example_id": "5a845bdd5542996488c2e524",
+  "question": "Matt McNamara was portrayed on the series Nip/Tuck by which American actor?",
+  "gold_answer": "John Carter Hensley",
+  "prediction": {
+    "answer": "John Hensley",
+    "hop1_docs": [
+      "Matt McNamara | Matthew \"Matt\" McNamara is a fictional character on the American television series \"Nip/Tuck\", portrayed by John Hensley.",
+      "Julia McNamara | Julia McNamara (\"n\u00e9e\" Noughton) is a fictional character in the American television series \"Nip/Tuck\", portrayed by Joely Richardson.",
+      "Sean McNamara (Nip/Tuck) | Dr. Sean McNamara is a fictional character on FX Networks' drama series \"Nip/Tuck\", portrayed by Dylan Walsh.  His character opens the show with the trademark catchphrase, \"Tell me what you don't like about yourself.\"  His partner, Christian Troy, has been his best friend since attending college together at the University of Miami, which is partly why they went into business together.  Sean is portrayed as the more skilled, yet more troubled surgeon, who apparently specializes in craniofacial surgery.  He is often plagued by family distresses involving his wife Julia and son Matt.  The two also have a daughter, Annie, and a newborn son named Conor.",
+      "List of Nip/Tuck episodes | \"Nip/Tuck\" is an American drama created by Ryan Murphy, which aired on FX in the United States between 2003 and 2010.  The series focuses on McNamara/Troy, a plastic surgery practice, and follows its founders, Sean McNamara and Christian Troy (portrayed by Dylan Walsh and Julian McMahon).  Each episode typically involves the cosmetic procedures of one or more patients, and also features the personal and professional lives of its main cast.",
+      "John Hensley | John Carter Hensley (born August 29, 1977) is an American actor, best known for his role as Matt McNamara on \"Nip/Tuck\".",
+      "Grace Santiago | Grace Santiago is a fictional character on the American television series \"Nip/Tuck\".  She is the staff psychologist for McNamara/Troy.  She was portrayed by Valerie Cruz.",
+      "Nip/Tuck | Nip/Tuck is an American television drama series created by Ryan Murphy; it aired on FX in the United States from July 22, 2003 to March 3, 2010.  The series focuses on \"McNamara/Troy\", a cutting-edge, controversial plastic surgery center\u2014but, particularly its founders: Drs. Sean McNamara and Christian Troy (portrayed by Dylan Walsh and Julian McMahon).  Each episode featured graphic, partial-depictions of the plastic surgeries of one or more patients (who requested both popular [e.g., breast augmentation] and exotic [e.g., \"vaginal rejuvenation\"] procedures\u2014as well as removals of obscure skin diseases).  Much of the series' drama is derived from the tumultuous personal lives of its main characters (including the doctors' loved ones)."
+    ],
+    "hop2_docs": [
+      "Matt McNamara | Matthew \"Matt\" McNamara is a fictional character on the American television series \"Nip/Tuck\", portrayed by John Hensley.",
+      "John Hensley | John Carter Hensley (born August 29, 1977) is an American actor, best known for his role as Matt McNamara on \"Nip/Tuck\".",
+      "Sean McNamara (Nip/Tuck) | Dr. Sean McNamara is a fictional character on FX Networks' drama series \"Nip/Tuck\", portrayed by Dylan Walsh.  His character opens the show with the trademark catchphrase, \"Tell me what you don't like about yourself.\"  His partner, Christian Troy, has been his best friend since attending college together at the University of Miami, which is partly why they went into business together.  Sean is portrayed as the more skilled, yet more troubled surgeon, who apparently specializes in craniofacial surgery.  He is often plagued by family distresses involving his wife Julia and son Matt.  The two also have a daughter, Annie, and a newborn son named Conor.",
+      "Julia McNamara | Julia McNamara (\"n\u00e9e\" Noughton) is a fictional character in the American television series \"Nip/Tuck\", portrayed by Joely Richardson.",
+      "List of Nip/Tuck episodes | \"Nip/Tuck\" is an American drama created by Ryan Murphy, which aired on FX in the United States between 2003 and 2010.  The series focuses on McNamara/Troy, a plastic surgery practice, and follows its founders, Sean McNamara and Christian Troy (portrayed by Dylan Walsh and Julian McMahon).  Each episode typically involves the cosmetic procedures of one or more patients, and also features the personal and professional lives of its main cast.",
+      "Nip/Tuck | Nip/Tuck is an American television drama series created by Ryan Murphy; it aired on FX in the United States from July 22, 2003 to March 3, 2010.  The series focuses on \"McNamara/Troy\", a cutting-edge, controversial plastic surgery center\u2014but, particularly its founders: Drs. Sean McNamara and Christian Troy (portrayed by Dylan Walsh and Julian McMahon).  Each episode featured graphic, partial-depictions of the plastic surgeries of one or more patients (who requested both popular [e.g., breast augmentation] and exotic [e.g., \"vaginal rejuvenation\"] procedures\u2014as well as removals of obscure skin diseases).  Much of the series' drama is derived from the tumultuous personal lives of its main characters (including the doctors' loved ones).",
+      "Grace Santiago | Grace Santiago is a fictional character on the American television series \"Nip/Tuck\".  She is the staff psychologist for McNamara/Troy.  She was portrayed by Valerie Cruz."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 135,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Matt McNamara was portrayed on the series Nip/Tuck by which American actor?\nPassages: [\"Matt McNamara | Matthew \\\"Matt\\\" McNamara is a fictional character on the American television series \\\"Nip/Tuck\\\", portrayed by John Hensley.\", \"Julia McNamara | Julia McNamara (\\\"n\\u00e9e\\\" Noughton) is a fictional character in the American television series \\\"Nip/Tuck\\\", portrayed by Joely Richardson.\", \"Sean McNamara (Nip/Tuck) | Dr. Sean McNamara is a fictional character on FX Networks' drama series \\\"Nip/Tuck\\\", portrayed by Dylan Walsh.  His character opens the show with the trademark catchphrase, \\\"Tell me what you don't like about yourself.\\\"  His partner, Christian Troy, has been his best friend since attending college together at the University of Miami, which is partly why they went into business together.  Sean is portrayed as the more skilled, yet more troubled surgeon, who apparently specializes in craniofacial surgery.  He is often plagued by family distresses involving his wife Julia and son Matt.  The two also have a daughter, Annie, and a newborn son named Conor.\", \"List of Nip/Tuck episodes | \\\"Nip/Tuck\\\" is an American drama created by Ryan Murphy, which aired on FX in the United States between 2003 and 2010.  The series focuses on McNamara/Troy, a plastic surgery practice, and follows its founders, Sean McNamara and Christian Troy (portrayed by Dylan Walsh and Julian McMahon).  Each episode typically involves the cosmetic procedures of one or more patients, and also features the personal and professional lives of its main cast.\", \"John Hensley | John Carter Hensley (born August 29, 1977) is an American actor, best known for his role as Matt McNamara on \\\"Nip/Tuck\\\".\", \"Grace Santiago | Grace Santiago is a fictional character on the American television series \\\"Nip/Tuck\\\".  She is the staff psychologist for McNamara/Troy.  She was portrayed by Valerie Cruz.\", \"Nip/Tuck | Nip/Tuck is an American television drama series created by Ryan Murphy; it aired on FX in the United States from July 22, 2003 to March 3, 2010.  The series focuses on \\\"McNamara/Troy\\\", a cutting-edge, controversial plastic surgery center\\u2014but, particularly its founders: Drs. Sean McNamara and Christian Troy (portrayed by Dylan Walsh and Julian McMahon).  Each episode featured graphic, partial-depictions of the plastic surgeries of one or more patients (who requested both popular [e.g., breast augmentation] and exotic [e.g., \\\"vaginal rejuvenation\\\"] procedures\\u2014as well as removals of obscure skin diseases).  Much of the series' drama is derived from the tumultuous personal lives of its main characters (including the doctors' loved ones).\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine which actor portrayed Matt McNamara on the series \"Nip/Tuck\", I reviewed the provided passages for mentions of the specific character and actor associated with that role. Passage [1] clearly states that \"Matt McNamara is a fictional character on the American television series 'Nip/Tuck', portrayed by John Hensley.\" This information is corroborated in passage [5], which mentions John Hensley's most notable role being Matt McNamara on \"Nip/Tuck.\" No other passages contradict these facts, confirming John Hensley as the actor who played Matt McNamara.\nSummary: Matt McNamara was portrayed on the series \"Nip/Tuck\" by American actor John Hensley."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Matt McNamara was portrayed on the series Nip/Tuck by which American actor?\nSummary 1: Matt McNamara was portrayed on the series \"Nip/Tuck\" by American actor John Hensley."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The summary provided states that the actor who portrayed Matt McNamara on the series \"Nip/Tuck\" is John Hensley. This connects directly to the question as it explicitly answers which American actor played that role.\nQuery: Who portrayed Matt McNamara on \"Nip/Tuck\"? John Hensley."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Matt McNamara was portrayed on the series Nip/Tuck by which American actor?\nContext: Matt McNamara was portrayed on the series \"Nip/Tuck\" by American actor John Hensley.\nPassages: [\"Matt McNamara | Matthew \\\"Matt\\\" McNamara is a fictional character on the American television series \\\"Nip/Tuck\\\", portrayed by John Hensley.\", \"John Hensley | John Carter Hensley (born August 29, 1977) is an American actor, best known for his role as Matt McNamara on \\\"Nip/Tuck\\\".\", \"Sean McNamara (Nip/Tuck) | Dr. Sean McNamara is a fictional character on FX Networks' drama series \\\"Nip/Tuck\\\", portrayed by Dylan Walsh.  His character opens the show with the trademark catchphrase, \\\"Tell me what you don't like about yourself.\\\"  His partner, Christian Troy, has been his best friend since attending college together at the University of Miami, which is partly why they went into business together.  Sean is portrayed as the more skilled, yet more troubled surgeon, who apparently specializes in craniofacial surgery.  He is often plagued by family distresses involving his wife Julia and son Matt.  The two also have a daughter, Annie, and a newborn son named Conor.\", \"Julia McNamara | Julia McNamara (\\\"n\\u00e9e\\\" Noughton) is a fictional character in the American television series \\\"Nip/Tuck\\\", portrayed by Joely Richardson.\", \"List of Nip/Tuck episodes | \\\"Nip/Tuck\\\" is an American drama created by Ryan Murphy, which aired on FX in the United States between 2003 and 2010.  The series focuses on McNamara/Troy, a plastic surgery practice, and follows its founders, Sean McNamara and Christian Troy (portrayed by Dylan Walsh and Julian McMahon).  Each episode typically involves the cosmetic procedures of one or more patients, and also features the personal and professional lives of its main cast.\", \"Nip/Tuck | Nip/Tuck is an American television drama series created by Ryan Murphy; it aired on FX in the United States from July 22, 2003 to March 3, 2010.  The series focuses on \\\"McNamara/Troy\\\", a cutting-edge, controversial plastic surgery center\\u2014but, particularly its founders: Drs. Sean McNamara and Christian Troy (portrayed by Dylan Walsh and Julian McMahon).  Each episode featured graphic, partial-depictions of the plastic surgeries of one or more patients (who requested both popular [e.g., breast augmentation] and exotic [e.g., \\\"vaginal rejuvenation\\\"] procedures\\u2014as well as removals of obscure skin diseases).  Much of the series' drama is derived from the tumultuous personal lives of its main characters (including the doctors' loved ones).\", \"Grace Santiago | Grace Santiago is a fictional character on the American television series \\\"Nip/Tuck\\\".  She is the staff psychologist for McNamara/Troy.  She was portrayed by Valerie Cruz.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of the actor who portrayed Matt McNamara on the TV series \"Nip/Tuck.\" From the context, it is clearly stated that Matt McNamara was portrayed by American actor John Hensley. The passages corroborate this information; passage [1] explicitly states that Matt McNamara was portrayed by John Hensley, and passage [2] further identifies John Hensley as best known for his role as Matt McNamara on \"Nip/Tuck.\" Thus, the provided information consistently points to John Hensley being the actor in question.\nSummary: Matt McNamara was portrayed on the series \"Nip/Tuck\" by American actor John Hensley."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Matt McNamara was portrayed on the series Nip/Tuck by which American actor?\nSummary 1: Matt McNamara was portrayed on the series \"Nip/Tuck\" by American actor John Hensley.\nSummary 2: Matt McNamara was portrayed on the series \"Nip/Tuck\" by American actor John Hensley."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that Matt McNamara was portrayed on the series \"Nip/Tuck\" by American actor John Hensley. There are no discrepancies between the summaries, and they both provide the exact same information. This consistent information strongly supports the validity of the answer.\nAnswer: John Hensley"
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "example_id": "5abbebfa5542996606241744",
+  "question": "Both Buddy Murphy and Wesley Blake are both professional what?",
+  "gold_answer": "professional wrestler",
+  "prediction": {
+    "answer": "Professional wrestlers.",
+    "hop1_docs": [
+      "Blake and Murphy | Blake and Murphy was a villainous professional wrestling tag team in the WWE at their development territory NXT consisting of Wesley Blake, Buddy Murphy and their valet Alexa Bliss, where they are one time NXT Tag Team Champions after defeating former champions The Lucha Dragons.",
+      "Buddy Murphy | Matthew Murphy Adams (born 26 September 1988) is an Australian professional wrestler.  He is currently signed to WWE, where he performs in the developmental territory WWE NXT under the ring name Buddy Murphy.  He is a one-time NXT Tag Team Champion with Wesley Blake.",
+      "Wesley Blake | Cory James Weston (born September 4, 1987) is an American professional wrestler.  He is signed to WWE, where he wrestles in their developmental territory WWE NXT under the ring name Wesley Blake.  He is a one-time NXT Tag Team Champion with Buddy Murphy.",
+      "Blake Wesley | Trevor \"Blake\" Wesley (born July 10, 1959 in Red Deer, Alberta) is a retired Canadian professional ice hockey defenceman who played parts of seven seasons in the National Hockey League (NHL) for the Philadelphia Flyers, Hartford Whalers, Quebec Nordiques and Toronto Maple Leafs.  His younger brother Glen also played in the NHL.  Wesley's nephew, Josh Wesley, was drafted by the Carolina Hurricanes in the 2014 NHL Entry Draft.",
+      "Buddy Austin | Austin Wesley Rogers (born Austin Wesley Rapes, February 27, 1929 - August 13, 1981) was an American professional wrestler, better known by the ring name \"Killer\" Buddy Austin.  He is best known for his appearances with the Los Angeles, California-based Worldwide Wrestling Associates promotion in the mid-1960s, where he held the WWA World Heavyweight Championship and the WWA World Tag Team Championship on three occasions each.",
+      "Murphy baronets | There have been two baronetcies created for persons with the surname Murphy, both in the Baronetage of the United Kingdom.  Both creations are extinct.",
+      "Blake Swihart | Blake Aubry Swihart (born April 3, 1992) is an American professional baseball catcher and left fielder for the Boston Red Sox of Major League Baseball.  He stands 6'1\" and weighs 205 lbs.  Blake hits effectively from both sides of the plate.  He made his major-league debut in May 2015 and ended that season hitting .274 with 5 HRs and 31 RBIs in 84 games played."
+    ],
+    "hop2_docs": [
+      "Buddy Murphy | Matthew Murphy Adams (born 26 September 1988) is an Australian professional wrestler.  He is currently signed to WWE, where he performs in the developmental territory WWE NXT under the ring name Buddy Murphy.  He is a one-time NXT Tag Team Champion with Wesley Blake.",
+      "Wesley Blake | Cory James Weston (born September 4, 1987) is an American professional wrestler.  He is signed to WWE, where he wrestles in their developmental territory WWE NXT under the ring name Wesley Blake.  He is a one-time NXT Tag Team Champion with Buddy Murphy.",
+      "Blake and Murphy | Blake and Murphy was a villainous professional wrestling tag team in the WWE at their development territory NXT consisting of Wesley Blake, Buddy Murphy and their valet Alexa Bliss, where they are one time NXT Tag Team Champions after defeating former champions The Lucha Dragons.",
+      "Buddy Austin | Austin Wesley Rogers (born Austin Wesley Rapes, February 27, 1929 - August 13, 1981) was an American professional wrestler, better known by the ring name \"Killer\" Buddy Austin.  He is best known for his appearances with the Los Angeles, California-based Worldwide Wrestling Associates promotion in the mid-1960s, where he held the WWA World Heavyweight Championship and the WWA World Tag Team Championship on three occasions each.",
+      "Blake Wesley | Trevor \"Blake\" Wesley (born July 10, 1959 in Red Deer, Alberta) is a retired Canadian professional ice hockey defenceman who played parts of seven seasons in the National Hockey League (NHL) for the Philadelphia Flyers, Hartford Whalers, Quebec Nordiques and Toronto Maple Leafs.  His younger brother Glen also played in the NHL.  Wesley's nephew, Josh Wesley, was drafted by the Carolina Hurricanes in the 2014 NHL Entry Draft.",
+      "Buddy Rogers (wrestler) | Herman Gustav Rohde Jr. (February 20, 1921 \u2013 June 26, 1992), better known by the ring name Buddy Rogers, was an American professional wrestler.",
+      "Buddy Roberts | Dale Hey (May 16, 1947 \u2013 November 26, 2012) was an American professional wrestler, better known by his ring name, Buddy Roberts.  Primarily a tag team wrestler, Roberts is known for his appearances as one of The Hollywood Blonds in the 1970s and as one of The Fabulous Freebirds in the 1980s.  He was inducted into the Professional Wrestling Hall of Fame in 2015 and the WWE Hall of Fame in 2016."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 16,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Both Buddy Murphy and Wesley Blake are both professional what?\nPassages: [\"Blake and Murphy | Blake and Murphy was a villainous professional wrestling tag team in the WWE at their development territory NXT consisting of Wesley Blake, Buddy Murphy and their valet Alexa Bliss, where they are one time NXT Tag Team Champions after defeating former champions The Lucha Dragons.\", \"Buddy Murphy | Matthew Murphy Adams (born 26 September 1988) is an Australian professional wrestler.  He is currently signed to WWE, where he performs in the developmental territory WWE NXT under the ring name Buddy Murphy.  He is a one-time NXT Tag Team Champion with Wesley Blake.\", \"Wesley Blake | Cory James Weston (born September 4, 1987) is an American professional wrestler.  He is signed to WWE, where he wrestles in their developmental territory WWE NXT under the ring name Wesley Blake.  He is a one-time NXT Tag Team Champion with Buddy Murphy.\", \"Blake Wesley | Trevor \\\"Blake\\\" Wesley (born July 10, 1959 in Red Deer, Alberta) is a retired Canadian professional ice hockey defenceman who played parts of seven seasons in the National Hockey League (NHL) for the Philadelphia Flyers, Hartford Whalers, Quebec Nordiques and Toronto Maple Leafs.  His younger brother Glen also played in the NHL.  Wesley's nephew, Josh Wesley, was drafted by the Carolina Hurricanes in the 2014 NHL Entry Draft.\", \"Buddy Austin | Austin Wesley Rogers (born Austin Wesley Rapes, February 27, 1929 - August 13, 1981) was an American professional wrestler, better known by the ring name \\\"Killer\\\" Buddy Austin.  He is best known for his appearances with the Los Angeles, California-based Worldwide Wrestling Associates promotion in the mid-1960s, where he held the WWA World Heavyweight Championship and the WWA World Tag Team Championship on three occasions each.\", \"Murphy baronets | There have been two baronetcies created for persons with the surname Murphy, both in the Baronetage of the United Kingdom.  Both creations are extinct.\", \"Blake Swihart | Blake Aubry Swihart (born April 3, 1992) is an American professional baseball catcher and left fielder for the Boston Red Sox of Major League Baseball.  He stands 6'1\\\" and weighs 205 lbs.  Blake hits effectively from both sides of the plate.  He made his major-league debut in May 2015 and ended that season hitting .274 with 5 HRs and 31 RBIs in 84 games played.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Passages [1], [2], and [3] provide direct evidence that both Buddy Murphy and Wesley Blake are professional wrestlers. Specifically, passage [1] mentions that Buddy Murphy and Wesley Blake formed a professional wrestling tag team in WWE's NXT division, achieving success as NXT Tag Team Champions. Passages [2] and [3] confirm that Buddy Murphy, an Australian, and Wesley Blake, an American, are professional wrestlers currently performing in WWE's NXT developmental territory.\nSummary: Both Buddy Murphy and Wesley Blake are professional wrestlers."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Both Buddy Murphy and Wesley Blake are both professional what?\nSummary 1: Both Buddy Murphy and Wesley Blake are professional wrestlers."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the shared profession of Buddy Murphy and Wesley Blake. From the information provided in the summary, they are identified as professional wrestlers. Therefore, the answer to the question should confirm that they are indeed professional wrestlers.\nQuery: Buddy Murphy and Wesley Blake are both professional wrestlers."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Both Buddy Murphy and Wesley Blake are both professional what?\nContext: Both Buddy Murphy and Wesley Blake are professional wrestlers.\nPassages: [\"Buddy Murphy | Matthew Murphy Adams (born 26 September 1988) is an Australian professional wrestler.  He is currently signed to WWE, where he performs in the developmental territory WWE NXT under the ring name Buddy Murphy.  He is a one-time NXT Tag Team Champion with Wesley Blake.\", \"Wesley Blake | Cory James Weston (born September 4, 1987) is an American professional wrestler.  He is signed to WWE, where he wrestles in their developmental territory WWE NXT under the ring name Wesley Blake.  He is a one-time NXT Tag Team Champion with Buddy Murphy.\", \"Blake and Murphy | Blake and Murphy was a villainous professional wrestling tag team in the WWE at their development territory NXT consisting of Wesley Blake, Buddy Murphy and their valet Alexa Bliss, where they are one time NXT Tag Team Champions after defeating former champions The Lucha Dragons.\", \"Buddy Austin | Austin Wesley Rogers (born Austin Wesley Rapes, February 27, 1929 - August 13, 1981) was an American professional wrestler, better known by the ring name \\\"Killer\\\" Buddy Austin.  He is best known for his appearances with the Los Angeles, California-based Worldwide Wrestling Associates promotion in the mid-1960s, where he held the WWA World Heavyweight Championship and the WWA World Tag Team Championship on three occasions each.\", \"Blake Wesley | Trevor \\\"Blake\\\" Wesley (born July 10, 1959 in Red Deer, Alberta) is a retired Canadian professional ice hockey defenceman who played parts of seven seasons in the National Hockey League (NHL) for the Philadelphia Flyers, Hartford Whalers, Quebec Nordiques and Toronto Maple Leafs.  His younger brother Glen also played in the NHL.  Wesley's nephew, Josh Wesley, was drafted by the Carolina Hurricanes in the 2014 NHL Entry Draft.\", \"Buddy Rogers (wrestler) | Herman Gustav Rohde Jr. (February 20, 1921 \\u2013 June 26, 1992), better known by the ring name Buddy Rogers, was an American professional wrestler.\", \"Buddy Roberts | Dale Hey (May 16, 1947 \\u2013 November 26, 2012) was an American professional wrestler, better known by his ring name, Buddy Roberts.  Primarily a tag team wrestler, Roberts is known for his appearances as one of The Hollywood Blonds in the 1970s and as one of The Fabulous Freebirds in the 1980s.  He was inducted into the Professional Wrestling Hall of Fame in 2015 and the WWE Hall of Fame in 2016.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: By analyzing the context and passages, it is clear that both Buddy Murphy (whose real name is Matthew Adams) and Wesley Blake (whose real name is Cory James Weston) are described as professional wrestlers. Both are mentioned as being signed to WWE and competing in their developmental territory, WWE NXT. Additionally, they formed a tag team together and won the NXT Tag Team Championship. These details collectively reinforce that both individuals are indeed professional wrestlers.\nSummary: Buddy Murphy and Wesley Blake are both professional wrestlers."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Both Buddy Murphy and Wesley Blake are both professional what?\nSummary 1: Both Buddy Murphy and Wesley Blake are professional wrestlers.\nSummary 2: Buddy Murphy and Wesley Blake are both professional wrestlers."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries clearly identify Buddy Murphy and Wesley Blake as professional wrestlers, and there is no conflict or additional information provided that contradicts this statement. Therefore, it's reasonable to conclude that both are indeed professional wrestlers.\nAnswer: Professional wrestlers."
+      }
+    ]
+  }
+}

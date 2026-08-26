@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab4b82c55429942dd415f7e",
+  "question": "Bob Olderman attended a school in Georgia that was founded in what year ?",
+  "gold_answer": "1901",
+  "prediction": {
+    "answer": "Bob Olderman attended a school in Georgia, Marist School, which was founded in 1901.",
+    "hop1_docs": [
+      "Bob Olderman | Robert Bruce Olderman (June 6, 1962 \u2013 October 20, 1993) was an American football player who played one season with the Kansas City Chiefs of the National Football League (NFL).  He was drafted by the Chiefs in the fourth round of the 1985 NFL Draft.  He played college football at the University of Virginia and attended Marist School in Brookhaven, Georgia.",
+      "Robert May's School | Robert May's School is a coeducational secondary school with academy status, located in the village of Odiham, Hampshire, England.  All children in Year 6 whose families live in the catchment area, and who attend named feeder schools in the area are eligible for a place at the school in Year 7.  The school's admissions policies are published on its website.  The school was founded in 1694 with donations from the will of Robert May, a local man, and other benefactors who contributed to what is now the Odiham Consolidated Charities.",
+      "Joey Hamilton | Johns Joseph \"Joey\" Hamilton (born September 9, 1970) is a former Major League Baseball pitcher who played professionally for nine seasons, recording a 74\u201373 win\u2013loss record, a 4.44 earned run average (ERA) and 894 strikeouts.  He attended Statesboro High School in Georgia.  Following high school, Hamilton attended Georgia Southern University for three years.",
+      "Shaw High School (Georgia) | William Henry Shaw High School is located in Columbus, Georgia, United States.  It opened in 1978 at its present location in the Northern Columbus area.  Students began attending classes in September of the same year.",
+      "Olderman | Olderman is a Swedish surname.  Notable people with the surname include:",
+      "George W. Woodruff | George Waldo Woodruff (August 27, 1895 - February 4, 1987 in Atlanta, Georgia) was an engineer, businessman, and philanthropist in Atlanta, Georgia.  He attended the Georgia Institute of Technology in 1917 and gave generously to both his alma mater and Emory University, including (in coordination with his brother Robert W. Woodruff) what was at the time the single largest donation ever to a school, $105 million to Emory University in 1979.",
+      "Robert S. Jepson Jr. | Robert S. \"Bob\" Jepson Jr. (born 1942) is a Georgia-based philanthropist and businessman.  He founded the Jepson School of Leadership Studies at University of Richmond, and is the current chair of the Georgia Ports Authority."
+    ],
+    "hop2_docs": [
+      "Marist School (Georgia) | Marist School is an independent private Roman Catholic college preparatory school located in Brookhaven, Georgia, United States, north of the city of Atlanta.  Founded in 1901, it is operated independently of the Roman Catholic Archdiocese of Atlanta.",
+      "Bob Olderman | Robert Bruce Olderman (June 6, 1962 \u2013 October 20, 1993) was an American football player who played one season with the Kansas City Chiefs of the National Football League (NFL).  He was drafted by the Chiefs in the fourth round of the 1985 NFL Draft.  He played college football at the University of Virginia and attended Marist School in Brookhaven, Georgia.",
+      "Marist High School (Chicago, Illinois) | Marist High School is a private Catholic preparatory high school located in the Mount Greenwood neighborhood of Chicago, Illinois, operated by the Marist Brothers on behalf of the Archdiocese of Chicago.  Founded in 1963 as an all-male institution, the school became co-ed in 2002 and today educates over 1,700 young men and women each year.",
+      "Marist Brothers Secondary School, Dete | Marist Brothers Secondary School (MBSS), otherwise referred to as 'Marist Dete' is an elite co-educational (mixed) boarding secondary school located in Dete, in the Hwange district of Zimbabwe\u2019s Matabeleland North Province.  The school was established in 1972 and is part of the international family of Marist schools run by the Marist Brothers, a Catholic society founded in 1817 by Saint Marcellin Champagnat in France.",
+      "Marist School (Marikina) | Marist School (Tagalog: Paaralang Marist) is a Catholic school for boys located in Marikina, Metro Manila, Philippines established by the Marist Brothers in 1964.  The school currently holds a level III accreditation from PAASCU and is considered to be the largest educational institution to date in Marikina City.  This was the second school founded by the Marist Brothers in the Philippines; the first one was the Notre Dame of Cotabato in Cotabato City in 1948.",
+      "John Paul II High School, Greymouth | John Paul II High School, Greymouth is an integrated Catholic, co-educational Year 9 to Year 13 (Form 3-7) secondary school located in Greymouth, New Zealand.  The school was founded in 1980 from the amalgamation of two schools, St Mary\u2019s High School, operated by the Sisters of Mercy (who arrived in Greymouth in 1882) and Marist Brothers Boys\u2019 School operated by the Marist Brothers (founded in 1892).  John Paul II High School was integrated into the State education system by the agreement of the proprietor of the school the (Catholic Bishop of Christchurch) and the Minister of Education in 1983.  The staff of the school is now made up of nearly all lay people.",
+      "Marist-Sion College | Marist-Son College is a coeducational Catholic independent school founded in 1975 in Warragul, Victoria, Australia.  Marist-Sion enrols students from towns spanning from Morwell to Pakenham, Neerim District and Ellinbank District.  Marist-Sion serves four local parishes; Warragul, Drouin, Trafalgar and Iona/Maryknoll.  The College is one of the founding members of the Association of Marist Schools of Australia."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 111,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Bob Olderman attended a school in Georgia that was founded in what year ?\nPassages: [\"Bob Olderman | Robert Bruce Olderman (June 6, 1962 \\u2013 October 20, 1993) was an American football player who played one season with the Kansas City Chiefs of the National Football League (NFL).  He was drafted by the Chiefs in the fourth round of the 1985 NFL Draft.  He played college football at the University of Virginia and attended Marist School in Brookhaven, Georgia.\", \"Robert May's School | Robert May's School is a coeducational secondary school with academy status, located in the village of Odiham, Hampshire, England.  All children in Year 6 whose families live in the catchment area, and who attend named feeder schools in the area are eligible for a place at the school in Year 7.  The school's admissions policies are published on its website.  The school was founded in 1694 with donations from the will of Robert May, a local man, and other benefactors who contributed to what is now the Odiham Consolidated Charities.\", \"Joey Hamilton | Johns Joseph \\\"Joey\\\" Hamilton (born September 9, 1970) is a former Major League Baseball pitcher who played professionally for nine seasons, recording a 74\\u201373 win\\u2013loss record, a 4.44 earned run average (ERA) and 894 strikeouts.  He attended Statesboro High School in Georgia.  Following high school, Hamilton attended Georgia Southern University for three years.\", \"Shaw High School (Georgia) | William Henry Shaw High School is located in Columbus, Georgia, United States.  It opened in 1978 at its present location in the Northern Columbus area.  Students began attending classes in September of the same year.\", \"Olderman | Olderman is a Swedish surname.  Notable people with the surname include:\", \"George W. Woodruff | George Waldo Woodruff (August 27, 1895 - February 4, 1987 in Atlanta, Georgia) was an engineer, businessman, and philanthropist in Atlanta, Georgia.  He attended the Georgia Institute of Technology in 1917 and gave generously to both his alma mater and Emory University, including (in coordination with his brother Robert W. Woodruff) what was at the time the single largest donation ever to a school, $105 million to Emory University in 1979.\", \"Robert S. Jepson Jr. | Robert S. \\\"Bob\\\" Jepson Jr. (born 1942) is a Georgia-based philanthropist and businessman.  He founded the Jepson School of Leadership Studies at University of Richmond, and is the current chair of the Georgia Ports Authority.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine the founding year of the school in Georgia that Bob Olderman attended, we analyze the provided passages. Passage [1] mentions that Bob Olderman attended Marist School in Brookhaven, Georgia. However, no information regarding the founding year of Marist School is provided in the passages. None of the remaining passages supply founding details about Marist School either. Since relevant information about the founding year is missing from the given passages, the specific year cannot be concluded from the text provided.\nSummary: The passages indicate that Bob Olderman attended Marist School in Brookhaven, Georgia, but they do not provide information about the founding year of the school."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Bob Olderman attended a school in Georgia that was founded in what year ?\nSummary 1: The passages indicate that Bob Olderman attended Marist School in Brookhaven, Georgia, but they do not provide information about the founding year of the school."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Since the passages indicate that Bob Olderman attended Marist School in Brookhaven, Georgia, but they do not provide the founding year of the school, the logical next step is to search for information regarding the founding year of Marist School to answer the question.\nQuery: What year was Marist School in Brookhaven, Georgia founded?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Bob Olderman attended a school in Georgia that was founded in what year ?\nContext: The passages indicate that Bob Olderman attended Marist School in Brookhaven, Georgia, but they do not provide information about the founding year of the school.\nPassages: [\"Marist School (Georgia) | Marist School is an independent private Roman Catholic college preparatory school located in Brookhaven, Georgia, United States, north of the city of Atlanta.  Founded in 1901, it is operated independently of the Roman Catholic Archdiocese of Atlanta.\", \"Bob Olderman | Robert Bruce Olderman (June 6, 1962 \\u2013 October 20, 1993) was an American football player who played one season with the Kansas City Chiefs of the National Football League (NFL).  He was drafted by the Chiefs in the fourth round of the 1985 NFL Draft.  He played college football at the University of Virginia and attended Marist School in Brookhaven, Georgia.\", \"Marist High School (Chicago, Illinois) | Marist High School is a private Catholic preparatory high school located in the Mount Greenwood neighborhood of Chicago, Illinois, operated by the Marist Brothers on behalf of the Archdiocese of Chicago.  Founded in 1963 as an all-male institution, the school became co-ed in 2002 and today educates over 1,700 young men and women each year.\", \"Marist Brothers Secondary School, Dete | Marist Brothers Secondary School (MBSS), otherwise referred to as 'Marist Dete' is an elite co-educational (mixed) boarding secondary school located in Dete, in the Hwange district of Zimbabwe\\u2019s Matabeleland North Province.  The school was established in 1972 and is part of the international family of Marist schools run by the Marist Brothers, a Catholic society founded in 1817 by Saint Marcellin Champagnat in France.\", \"Marist School (Marikina) | Marist School (Tagalog: Paaralang Marist) is a Catholic school for boys located in Marikina, Metro Manila, Philippines established by the Marist Brothers in 1964.  The school currently holds a level III accreditation from PAASCU and is considered to be the largest educational institution to date in Marikina City.  This was the second school founded by the Marist Brothers in the Philippines; the first one was the Notre Dame of Cotabato in Cotabato City in 1948.\", \"John Paul II High School, Greymouth | John Paul II High School, Greymouth is an integrated Catholic, co-educational Year 9 to Year 13 (Form 3-7) secondary school located in Greymouth, New Zealand.  The school was founded in 1980 from the amalgamation of two schools, St Mary\\u2019s High School, operated by the Sisters of Mercy (who arrived in Greymouth in 1882) and Marist Brothers Boys\\u2019 School operated by the Marist Brothers (founded in 1892).  John Paul II High School was integrated into the State education system by the agreement of the proprietor of the school the (Catholic Bishop of Christchurch) and the Minister of Education in 1983.  The staff of the school is now made up of nearly all lay people.\", \"Marist-Sion College | Marist-Son College is a coeducational Catholic independent school founded in 1975 in Warragul, Victoria, Australia.  Marist-Sion enrols students from towns spanning from Morwell to Pakenham, Neerim District and Ellinbank District.  Marist-Sion serves four local parishes; Warragul, Drouin, Trafalgar and Iona/Maryknoll.  The College is one of the founding members of the Association of Marist Schools of Australia.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question pertains to the founding year of the school in Georgia attended by Bob Olderman. The context specifies that he attended Marist School in Brookhaven, Georgia. Passage [1], which discusses Marist School in Georgia, states that the school was founded in 1901. This directly answers the question about the year it was founded.\nSummary: Bob Olderman attended Marist School in Brookhaven, Georgia, which was founded in 1901."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Bob Olderman attended a school in Georgia that was founded in what year ?\nSummary 1: The passages indicate that Bob Olderman attended Marist School in Brookhaven, Georgia, but they do not provide information about the founding year of the school.\nSummary 2: Bob Olderman attended Marist School in Brookhaven, Georgia, which was founded in 1901."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Summary 1 states that the passages do not provide information about the founding year of Marist School, while summary 2 explicitly mentions that the school was founded in 1901. Given the conflict between the summaries, we must rely on the more detailed information provided in summary 2, which includes the founding year.\nAnswer: Bob Olderman attended a school in Georgia, Marist School, which was founded in 1901."
+      }
+    ]
+  }
+}

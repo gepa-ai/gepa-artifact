@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab66bbe55429954757d329c",
+  "question": "Which is located in Kansas, Garden City Regional Airport or Valdez Airport?",
+  "gold_answer": "Garden City Regional Airport",
+  "prediction": {
+    "answer": "Garden City Regional Airport is located in Kansas.",
+    "hop1_docs": [
+      "Wilroads Gardens Airport | Wilroads Gardens Airport or Wilroads Garden Airport (FAA LID: 9K1) is a public use airport located one nautical mile (1.85\u00a0km) southeast of the central business district of Dodge City, in Ford County, Kansas, United States.",
+      "Garden City Regional Airport | Garden City Regional Airport (IATA: GCK,\u00a0ICAO: KGCK,\u00a0FAA LID: GCK) is nine miles southeast of Garden City, in Finney County, Kansas.  It is served by one scheduled airline, subsidized by the federal government's Essential Air Service program at a cost of $2,919,026 (per year).",
+      "Valdez Airport | Valdez Airport (IATA: VDZ,\u00a0ICAO: PAVD,\u00a0FAA LID: VDZ) , also known as Pioneer Field, is a state-owned public-use airport located three nautical miles (6\u00a0km) east of the central business district of Valdez, a city in the Valdez-Cordova Census Area of the U.S. state of Alaska.",
+      "Herington Regional Airport | Herington Regional Airport (ICAO: KHRU,\u00a0FAA LID: HRU) is a public use airport in Morris County, Kansas, United States.  The airport is owned by the City of Herington and is located seven\u00a0nautical miles (8\u00a0mi, 13\u00a0km) northeast of its central business district.  Although the airport is in Morris County, most of Herington is located in Dickinson County.  Previously known as Herington Municipal Airport, the airport is located on the site of the former Herington Army Airfield.  This airport is included in the National Plan of Integrated Airport Systems for 2011\u20132015, which categorized it as a \"general aviation\" facility.",
+      "Cordova Municipal Airport | Cordova Municipal Airport (IATA: CKU,\u00a0FAA LID: CKU) is a state-owned public-use airport located one nautical mile (1.8\u00a0km) east of the central business district of Cordova, a city in the Valdez-Cordova Census Area of the U.S. state of Alaska.  It is located on Eyak Lake on which it also has a landing area for seaplanes.",
+      "Eureka Municipal Airport (Kansas) | Eureka Municipal Airport (FAA LID: 13K) , also known as Lt. William M. Milliken Airport, is a city owned, public use airport located two\u00a0nautical miles (4\u00a0km) north of the central business district of Eureka, a city in Greenwood County, Kansas, United States.  It is included in the National Plan of Integrated Airport Systems for 2011\u20132015, which categorized it as a \"general aviation\" facility.",
+      "Manhattan Regional Airport | Manhattan Regional Airport (IATA: MHK,\u00a0ICAO: KMHK,\u00a0FAA LID: MHK) in Riley County, Kansas is the second-busiest commercial airport in Kansas.  It is owned by the city of Manhattan, Kansas, and is about five miles southwest of downtown Manhattan.  American Airlines serves the airport with five daily flights to Chicago O'Hare International Airport and Dallas/Fort Worth International Airport.  The airport is also used for general aviation and for planes chartered by the military and college sports teams (the airport is four miles east of Fort Riley and eight miles southwest of Kansas State University's athletic complex)."
+    ],
+    "hop2_docs": [
+      "Garden City Regional Airport | Garden City Regional Airport (IATA: GCK,\u00a0ICAO: KGCK,\u00a0FAA LID: GCK) is nine miles southeast of Garden City, in Finney County, Kansas.  It is served by one scheduled airline, subsidized by the federal government's Essential Air Service program at a cost of $2,919,026 (per year).",
+      "Wilroads Gardens Airport | Wilroads Gardens Airport or Wilroads Garden Airport (FAA LID: 9K1) is a public use airport located one nautical mile (1.85\u00a0km) southeast of the central business district of Dodge City, in Ford County, Kansas, United States.",
+      "Herington Regional Airport | Herington Regional Airport (ICAO: KHRU,\u00a0FAA LID: HRU) is a public use airport in Morris County, Kansas, United States.  The airport is owned by the City of Herington and is located seven\u00a0nautical miles (8\u00a0mi, 13\u00a0km) northeast of its central business district.  Although the airport is in Morris County, most of Herington is located in Dickinson County.  Previously known as Herington Municipal Airport, the airport is located on the site of the former Herington Army Airfield.  This airport is included in the National Plan of Integrated Airport Systems for 2011\u20132015, which categorized it as a \"general aviation\" facility.",
+      "Elizabeth City Regional Airport | Elizabeth City Regional Airport (IATA: ECG,\u00a0ICAO: KECG,\u00a0FAA LID: ECG) is a joint civil-military public and military use airport located three\u00a0nautical miles (6\u00a0km) southeast of the central business district of Elizabeth City, in Pasquotank County, North Carolina, United States.  The airport, on the shore of the Pasquotank River, is also known as Elizabeth City-Pasquotank County Regional Airport or ECG Regional Airport.  It is included in the National Plan of Integrated Airport Systems for 2011\u20132015, which categorized it as a \"general aviation\" facility.",
+      "Dubbo City Regional Airport | Dubbo City Regional Airport (IATA: DBO,\u00a0ICAO: YSDU) , is a regional airport serving Dubbo, a city in the Australian state of New South Wales.  The airport is located 2 NM northwest of Dubbo and is operated by the Dubbo City Council.  It is also known as Dubbo Airport or Dubbo City Airport.",
+      "Manhattan Regional Airport | Manhattan Regional Airport (IATA: MHK,\u00a0ICAO: KMHK,\u00a0FAA LID: MHK) in Riley County, Kansas is the second-busiest commercial airport in Kansas.  It is owned by the city of Manhattan, Kansas, and is about five miles southwest of downtown Manhattan.  American Airlines serves the airport with five daily flights to Chicago O'Hare International Airport and Dallas/Fort Worth International Airport.  The airport is also used for general aviation and for planes chartered by the military and college sports teams (the airport is four miles east of Fort Riley and eight miles southwest of Kansas State University's athletic complex).",
+      "Brookings Regional Airport | Brookings Regional Airport (IATA: BKX,\u00a0ICAO: KBKX,\u00a0FAA LID: BKX) , formerly known as Brookings Municipal Airport, is a city owned, public use airport located in Brookings, a city in Brookings County, South Dakota, United States.  It is included in the National Plan of Integrated Airport Systems for 2011\u20132015, which categorized it as a \"general aviation\" airport.  Starting from September 2009, the airport is no longer served by a commercial airline after the United States Department of Transportation ended the subsidy for this airport's Essential Air Service program."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 98,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is located in Kansas, Garden City Regional Airport or Valdez Airport?\nPassages: [\"Wilroads Gardens Airport | Wilroads Gardens Airport or Wilroads Garden Airport (FAA LID: 9K1) is a public use airport located one nautical mile (1.85\\u00a0km) southeast of the central business district of Dodge City, in Ford County, Kansas, United States.\", \"Garden City Regional Airport | Garden City Regional Airport (IATA: GCK,\\u00a0ICAO: KGCK,\\u00a0FAA LID: GCK) is nine miles southeast of Garden City, in Finney County, Kansas.  It is served by one scheduled airline, subsidized by the federal government's Essential Air Service program at a cost of $2,919,026 (per year).\", \"Valdez Airport | Valdez Airport (IATA: VDZ,\\u00a0ICAO: PAVD,\\u00a0FAA LID: VDZ) , also known as Pioneer Field, is a state-owned public-use airport located three nautical miles (6\\u00a0km) east of the central business district of Valdez, a city in the Valdez-Cordova Census Area of the U.S. state of Alaska.\", \"Herington Regional Airport | Herington Regional Airport (ICAO: KHRU,\\u00a0FAA LID: HRU) is a public use airport in Morris County, Kansas, United States.  The airport is owned by the City of Herington and is located seven\\u00a0nautical miles (8\\u00a0mi, 13\\u00a0km) northeast of its central business district.  Although the airport is in Morris County, most of Herington is located in Dickinson County.  Previously known as Herington Municipal Airport, the airport is located on the site of the former Herington Army Airfield.  This airport is included in the National Plan of Integrated Airport Systems for 2011\\u20132015, which categorized it as a \\\"general aviation\\\" facility.\", \"Cordova Municipal Airport | Cordova Municipal Airport (IATA: CKU,\\u00a0FAA LID: CKU) is a state-owned public-use airport located one nautical mile (1.8\\u00a0km) east of the central business district of Cordova, a city in the Valdez-Cordova Census Area of the U.S. state of Alaska.  It is located on Eyak Lake on which it also has a landing area for seaplanes.\", \"Eureka Municipal Airport (Kansas) | Eureka Municipal Airport (FAA LID: 13K) , also known as Lt. William M. Milliken Airport, is a city owned, public use airport located two\\u00a0nautical miles (4\\u00a0km) north of the central business district of Eureka, a city in Greenwood County, Kansas, United States.  It is included in the National Plan of Integrated Airport Systems for 2011\\u20132015, which categorized it as a \\\"general aviation\\\" facility.\", \"Manhattan Regional Airport | Manhattan Regional Airport (IATA: MHK,\\u00a0ICAO: KMHK,\\u00a0FAA LID: MHK) in Riley County, Kansas is the second-busiest commercial airport in Kansas.  It is owned by the city of Manhattan, Kansas, and is about five miles southwest of downtown Manhattan.  American Airlines serves the airport with five daily flights to Chicago O'Hare International Airport and Dallas/Fort Worth International Airport.  The airport is also used for general aviation and for planes chartered by the military and college sports teams (the airport is four miles east of Fort Riley and eight miles southwest of Kansas State University's athletic complex).\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the provided passages, Garden City Regional Airport is explicitly mentioned as being located in Finney County, Kansas, approximately nine miles southeast of Garden City. On the other hand, Valdez Airport, also known as Pioneer Field, is stated to be located in Valdez, Alaska, within the Valdez-Cordova Census Area. Therefore, the correct answer is that Garden City Regional Airport is located in Kansas.\nSummary: Garden City Regional Airport is located in Kansas, while Valdez Airport is located in Alaska."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is located in Kansas, Garden City Regional Airport or Valdez Airport?\nSummary 1: Garden City Regional Airport is located in Kansas, while Valdez Airport is located in Alaska."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the provided summary, it is clear that Garden City Regional Airport is located in Kansas, while Valdez Airport is located in Alaska. Therefore, the airport located in Kansas is Garden City Regional Airport.\nQuery: Which airport, between Garden City Regional Airport and Valdez Airport, is located in Kansas? From the given information, the correct answer is Garden City Regional Airport."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is located in Kansas, Garden City Regional Airport or Valdez Airport?\nContext: Garden City Regional Airport is located in Kansas, while Valdez Airport is located in Alaska.\nPassages: [\"Garden City Regional Airport | Garden City Regional Airport (IATA: GCK,\\u00a0ICAO: KGCK,\\u00a0FAA LID: GCK) is nine miles southeast of Garden City, in Finney County, Kansas.  It is served by one scheduled airline, subsidized by the federal government's Essential Air Service program at a cost of $2,919,026 (per year).\", \"Wilroads Gardens Airport | Wilroads Gardens Airport or Wilroads Garden Airport (FAA LID: 9K1) is a public use airport located one nautical mile (1.85\\u00a0km) southeast of the central business district of Dodge City, in Ford County, Kansas, United States.\", \"Herington Regional Airport | Herington Regional Airport (ICAO: KHRU,\\u00a0FAA LID: HRU) is a public use airport in Morris County, Kansas, United States.  The airport is owned by the City of Herington and is located seven\\u00a0nautical miles (8\\u00a0mi, 13\\u00a0km) northeast of its central business district.  Although the airport is in Morris County, most of Herington is located in Dickinson County.  Previously known as Herington Municipal Airport, the airport is located on the site of the former Herington Army Airfield.  This airport is included in the National Plan of Integrated Airport Systems for 2011\\u20132015, which categorized it as a \\\"general aviation\\\" facility.\", \"Elizabeth City Regional Airport | Elizabeth City Regional Airport (IATA: ECG,\\u00a0ICAO: KECG,\\u00a0FAA LID: ECG) is a joint civil-military public and military use airport located three\\u00a0nautical miles (6\\u00a0km) southeast of the central business district of Elizabeth City, in Pasquotank County, North Carolina, United States.  The airport, on the shore of the Pasquotank River, is also known as Elizabeth City-Pasquotank County Regional Airport or ECG Regional Airport.  It is included in the National Plan of Integrated Airport Systems for 2011\\u20132015, which categorized it as a \\\"general aviation\\\" facility.\", \"Dubbo City Regional Airport | Dubbo City Regional Airport (IATA: DBO,\\u00a0ICAO: YSDU) , is a regional airport serving Dubbo, a city in the Australian state of New South Wales.  The airport is located 2 NM northwest of Dubbo and is operated by the Dubbo City Council.  It is also known as Dubbo Airport or Dubbo City Airport.\", \"Manhattan Regional Airport | Manhattan Regional Airport (IATA: MHK,\\u00a0ICAO: KMHK,\\u00a0FAA LID: MHK) in Riley County, Kansas is the second-busiest commercial airport in Kansas.  It is owned by the city of Manhattan, Kansas, and is about five miles southwest of downtown Manhattan.  American Airlines serves the airport with five daily flights to Chicago O'Hare International Airport and Dallas/Fort Worth International Airport.  The airport is also used for general aviation and for planes chartered by the military and college sports teams (the airport is four miles east of Fort Riley and eight miles southwest of Kansas State University's athletic complex).\", \"Brookings Regional Airport | Brookings Regional Airport (IATA: BKX,\\u00a0ICAO: KBKX,\\u00a0FAA LID: BKX) , formerly known as Brookings Municipal Airport, is a city owned, public use airport located in Brookings, a city in Brookings County, South Dakota, United States.  It is included in the National Plan of Integrated Airport Systems for 2011\\u20132015, which categorized it as a \\\"general aviation\\\" airport.  Starting from September 2009, the airport is no longer served by a commercial airline after the United States Department of Transportation ended the subsidy for this airport's Essential Air Service program.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the provided context, it is clear that Garden City Regional Airport is located in Kansas. It is supported by additional factual information from passage [1], which mentions that this airport is in Finney County, Kansas. On the other hand, Valdez Airport is not mentioned in the passages, but according to the context, it is located in Alaska. Therefore, based on the given context and passages, Garden City Regional Airport is the one located in Kansas.\nSummary: Garden City Regional Airport is located in Kansas, while Valdez Airport is located in Alaska."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is located in Kansas, Garden City Regional Airport or Valdez Airport?\nSummary 1: Garden City Regional Airport is located in Kansas, while Valdez Airport is located in Alaska.\nSummary 2: Garden City Regional Airport is located in Kansas, while Valdez Airport is located in Alaska."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries confirm that Garden City Regional Airport is located in Kansas, while Valdez Airport is located in Alaska. Since Kansas is explicitly mentioned as the location for Garden City Regional Airport, it is the airport located in Kansas.\nAnswer: Garden City Regional Airport is located in Kansas."
+      }
+    ]
+  }
+}

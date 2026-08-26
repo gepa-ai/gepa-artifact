@@ -1,0 +1,96 @@
+{
+  "example_id": "5abd2fca55429933744ab754",
+  "question": " Our Town is a 1955 episode of the American series \"Producers' Showcase\" featuring songs by which American lyricist that died in 1993?",
+  "gold_answer": "Sammy Cahn",
+  "prediction": {
+    "answer": "Sammy Cahn.",
+    "hop1_docs": [
+      "Our Town (Producers' Showcase) | Our Town is a 1955 episode of the American series \"Producers' Showcase\" directed by Delbert Mann and starring Frank Sinatra, Paul Newman and Eva Marie Saint.  The episode is a musical adaption of Thornton Wilder's 1938 play \"Our Town\", with songs by Jimmy van Heusen and Sammy Cahn.  It was Sinatra's only performance in a dramatic role specifically for television until \"Contract on Cherry Street\" in 1977.",
+      "Our Children, Ourselves | \"Our Children, Ourselves\" is the 12th episode of the second season of the American television comedy series, \"Modern Family\" and the 36th overall episode of the series.  Executive producers Dan O'Shannon & Bill Wrubel wrote the episode, and Adam Shankman directed it.  The episode originally aired on the American Broadcasting Company (ABC) in the United States on January 12, 2011.  It featured guest star Mary Lynn Rajskub as Mitchell's ex-girlfriend.",
+      "Wide Wide World | Wide Wide World was a 90-minute documentary series telecast live on NBC on Sunday afternoons at 4pm Eastern.  Conceived by network head Pat Weaver and hosted by Dave Garroway, \"Wide Wide World\" was introduced on the \"Producers' Showcase\" series on June 27, 1955.  The premiere episode, featuring entertainment from the US, Canada and Mexico, was the first international North American telecast in the history of the medium.",
+      "List of Desperate Housewives Africa episodes | Desperate Housewives Africa is a Nigerian television Comedy-drama-mystery that premiered on Ebony Life TV on 30 April 2015.  It is an adaptation of the American series \"Desperate Housewives\".  The majority of the episodes are titled according to the original version which were in turn named after lyrics by composer/lyricist Stephen Sondheim.  The show revolves around four housewives namely; Ese De Souza (Nini Wacera), Kiki Obi (Kehinde Bankole), Tari Gambadia (Michelle Dede), and Funke Lawal (Omotu Bissong).  The show is showcased from Rume Bello (Marcy Dolapo Oni) point of view who dies at the pilot episode.",
+      "Cross-Canada Hit Parade | Cross-Canada Hit Parade was a Canadian music television series which aired on CBC Television from 1955 to 1960.  Episodes featured performances of current popular songs in a concept derived from the American series \"Your Hit Parade\".",
+      "Our Town (The X-Files) | \"Our Town\" is the twenty-fourth episode of the second season of the American science fiction television series \"The X-Files\".  It premiered on the Fox network in the United States on May 12, 1995.  It was written by Frank Spotnitz and directed by Rob Bowman.  The episode is a \"Monster-of-the-Week\" story, unconnected to the series' wider mythology.  \"Our Town\" received a Nielsen rating of 9.4 and was watched by 9.0 million households.  The episode received mixed reviews from critics.",
+      "The Patti Page Show | The Patti Page Show is an American television series which aired from 1955 to 1956.  It aired in a 15-minute time-slot, with two commercial breaks for sponsor Oldsmobile.  In the series, Patti Page lip-synced pop songs, mostly standards, with additional songs by the Page Five singers, a vocal group of three men and two women.  The series aired in first-run-syndication.  It was produced was Screen Gems.  There were 78 quarter-hour episodes, which circa 1958 were edited into 31 half-hour episodes.  The half-hour re-edit episodes run about 25-26 minutes excluding the commercials, as can be seen on episodes on the Internet Archive."
+    ],
+    "hop2_docs": [
+      "Frank Sinatra Sings the Select Sammy Cahn | Frank Sinatra Sings the Select Sammy Cahn is a 1996 compilation album by Frank Sinatra that has him singing the songs written by Sammy Cahn.",
+      "Sinatra Sings the Songs of Van Heusen &amp; Cahn | Sinatra Sings the Songs of Van Heusen & Cahn is a 1991 compilation album by Frank Sinatra.  It comprises his renditions of Jimmy Van Heusen and Sammy Cahn.",
+      "Sammy Cahn | Sammy Cahn (June 18, 1913\u00a0\u2013 January 15, 1993) was an American lyricist, songwriter and musician.  He is best known for his romantic lyrics to films and Broadway songs, as well as stand-alone songs premiered by recording companies in the Greater Los Angeles Area.  He and his collaborators had a series of hit recordings with Frank Sinatra during the singer's tenure at Capitol Records, but also enjoyed hits with Dean Martin, Doris Day and many others.  He played the piano and violin.  He won the Academy Award four times for his songs, including the popular song \"Three Coins in the Fountain\".",
+      "(Love Is) The Tender Trap | \"(Love Is) The Tender Trap\" is a popular song composed by Jimmy Van Heusen, with lyrics by Sammy Cahn.",
+      "Wonder Why (song) | \"Wonder Why\" is a song written by Nicholas Brodszky (music) and Sammy Cahn (lyrics), published in 1951.",
+      "Call Me Irresponsible | \"Call Me Irresponsible\" is a 1962 song composed by Jimmy Van Heusen with lyrics written by Sammy Cahn.",
+      "Day by Day (song) | \"Day by Day\" is a popular song with music by Axel Stordahl and Paul Weston and lyrics by Sammy Cahn.  <br>"
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 36,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question:  Our Town is a 1955 episode of the American series \"Producers' Showcase\" featuring songs by which American lyricist that died in 1993?\nPassages: [\"Our Town (Producers' Showcase) | Our Town is a 1955 episode of the American series \\\"Producers' Showcase\\\" directed by Delbert Mann and starring Frank Sinatra, Paul Newman and Eva Marie Saint.  The episode is a musical adaption of Thornton Wilder's 1938 play \\\"Our Town\\\", with songs by Jimmy van Heusen and Sammy Cahn.  It was Sinatra's only performance in a dramatic role specifically for television until \\\"Contract on Cherry Street\\\" in 1977.\", \"Our Children, Ourselves | \\\"Our Children, Ourselves\\\" is the 12th episode of the second season of the American television comedy series, \\\"Modern Family\\\" and the 36th overall episode of the series.  Executive producers Dan O'Shannon & Bill Wrubel wrote the episode, and Adam Shankman directed it.  The episode originally aired on the American Broadcasting Company (ABC) in the United States on January 12, 2011.  It featured guest star Mary Lynn Rajskub as Mitchell's ex-girlfriend.\", \"Wide Wide World | Wide Wide World was a 90-minute documentary series telecast live on NBC on Sunday afternoons at 4pm Eastern.  Conceived by network head Pat Weaver and hosted by Dave Garroway, \\\"Wide Wide World\\\" was introduced on the \\\"Producers' Showcase\\\" series on June 27, 1955.  The premiere episode, featuring entertainment from the US, Canada and Mexico, was the first international North American telecast in the history of the medium.\", \"List of Desperate Housewives Africa episodes | Desperate Housewives Africa is a Nigerian television Comedy-drama-mystery that premiered on Ebony Life TV on 30 April 2015.  It is an adaptation of the American series \\\"Desperate Housewives\\\".  The majority of the episodes are titled according to the original version which were in turn named after lyrics by composer/lyricist Stephen Sondheim.  The show revolves around four housewives namely; Ese De Souza (Nini Wacera), Kiki Obi (Kehinde Bankole), Tari Gambadia (Michelle Dede), and Funke Lawal (Omotu Bissong).  The show is showcased from Rume Bello (Marcy Dolapo Oni) point of view who dies at the pilot episode.\", \"Cross-Canada Hit Parade | Cross-Canada Hit Parade was a Canadian music television series which aired on CBC Television from 1955 to 1960.  Episodes featured performances of current popular songs in a concept derived from the American series \\\"Your Hit Parade\\\".\", \"Our Town (The X-Files) | \\\"Our Town\\\" is the twenty-fourth episode of the second season of the American science fiction television series \\\"The X-Files\\\".  It premiered on the Fox network in the United States on May 12, 1995.  It was written by Frank Spotnitz and directed by Rob Bowman.  The episode is a \\\"Monster-of-the-Week\\\" story, unconnected to the series' wider mythology.  \\\"Our Town\\\" received a Nielsen rating of 9.4 and was watched by 9.0 million households.  The episode received mixed reviews from critics.\", \"The Patti Page Show | The Patti Page Show is an American television series which aired from 1955 to 1956.  It aired in a 15-minute time-slot, with two commercial breaks for sponsor Oldsmobile.  In the series, Patti Page lip-synced pop songs, mostly standards, with additional songs by the Page Five singers, a vocal group of three men and two women.  The series aired in first-run-syndication.  It was produced was Screen Gems.  There were 78 quarter-hour episodes, which circa 1958 were edited into 31 half-hour episodes.  The half-hour re-edit episodes run about 25-26 minutes excluding the commercials, as can be seen on episodes on the Internet Archive.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the name of the American lyricist associated with the songs in the 1955 episode of \"Producers' Showcase\" titled \"Our Town.\" Passage [1] provides relevant information directly connected to this episode. It mentions that the songs in this musical adaptation were created by Jimmy Van Heusen and Sammy Cahn. Among these two names, Sammy Cahn is the lyricist, as Jimmy Van Heusen is a composer. Additionally, Sammy Cahn died in 1993, which aligns with the detail in the question. Therefore, the American lyricist referenced is Sammy Cahn.\nSummary: The American lyricist who contributed songs to the 1955 episode of \"Producers' Showcase\" titled \"Our Town\" and died in 1993 is Sammy Cahn."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question:  Our Town is a 1955 episode of the American series \"Producers' Showcase\" featuring songs by which American lyricist that died in 1993?\nSummary 1: The American lyricist who contributed songs to the 1955 episode of \"Producers' Showcase\" titled \"Our Town\" and died in 1993 is Sammy Cahn."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the name of the American lyricist who contributed songs to the 1955 episode \"Our Town\" of \"Producers' Showcase\" and passed away in 1993. Based on the provided summary, the relevant answer is Sammy Cahn, as he fits both the involvement with the show and the year of passing.\nQuery: Who is Sammy Cahn?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question:  Our Town is a 1955 episode of the American series \"Producers' Showcase\" featuring songs by which American lyricist that died in 1993?\nContext: The American lyricist who contributed songs to the 1955 episode of \"Producers' Showcase\" titled \"Our Town\" and died in 1993 is Sammy Cahn.\nPassages: [\"Frank Sinatra Sings the Select Sammy Cahn | Frank Sinatra Sings the Select Sammy Cahn is a 1996 compilation album by Frank Sinatra that has him singing the songs written by Sammy Cahn.\", \"Sinatra Sings the Songs of Van Heusen &amp; Cahn | Sinatra Sings the Songs of Van Heusen & Cahn is a 1991 compilation album by Frank Sinatra.  It comprises his renditions of Jimmy Van Heusen and Sammy Cahn.\", \"Sammy Cahn | Sammy Cahn (June 18, 1913\\u00a0\\u2013 January 15, 1993) was an American lyricist, songwriter and musician.  He is best known for his romantic lyrics to films and Broadway songs, as well as stand-alone songs premiered by recording companies in the Greater Los Angeles Area.  He and his collaborators had a series of hit recordings with Frank Sinatra during the singer's tenure at Capitol Records, but also enjoyed hits with Dean Martin, Doris Day and many others.  He played the piano and violin.  He won the Academy Award four times for his songs, including the popular song \\\"Three Coins in the Fountain\\\".\", \"(Love Is) The Tender Trap | \\\"(Love Is) The Tender Trap\\\" is a popular song composed by Jimmy Van Heusen, with lyrics by Sammy Cahn.\", \"Wonder Why (song) | \\\"Wonder Why\\\" is a song written by Nicholas Brodszky (music) and Sammy Cahn (lyrics), published in 1951.\", \"Call Me Irresponsible | \\\"Call Me Irresponsible\\\" is a 1962 song composed by Jimmy Van Heusen with lyrics written by Sammy Cahn.\", \"Day by Day (song) | \\\"Day by Day\\\" is a popular song with music by Axel Stordahl and Paul Weston and lyrics by Sammy Cahn.  <br>\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the lyricist who contributed songs to the 1955 episode of \"Producers' Showcase\" titled \"Our Town\" and passed away in 1993. The provided context directly states that the lyricist in question is Sammy Cahn. Additional confirmation comes from the passages, particularly passage [3], which describes Sammy Cahn as a prominent American lyricist who died in 1993 and contributed extensively to popular songs, Broadway lyrics, and films during his career. His work with famous songs and artists, including his collaboration with Frank Sinatra and others, further underscores his status as a celebrated lyricist.\nSummary: The American lyricist who contributed songs to the 1955 episode of \"Producers' Showcase\" titled \"Our Town\" and passed away in 1993 is Sammy Cahn."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question:  Our Town is a 1955 episode of the American series \"Producers' Showcase\" featuring songs by which American lyricist that died in 1993?\nSummary 1: The American lyricist who contributed songs to the 1955 episode of \"Producers' Showcase\" titled \"Our Town\" and died in 1993 is Sammy Cahn.\nSummary 2: The American lyricist who contributed songs to the 1955 episode of \"Producers' Showcase\" titled \"Our Town\" and passed away in 1993 is Sammy Cahn."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries identify Sammy Cahn as the American lyricist who contributed songs to the 1955 episode of \"Producers' Showcase\" titled \"Our Town\" and passed away in 1993. There is no discrepancy between the two summaries, and the information is consistent with historical records, as Sammy Cahn is indeed a well-known lyricist who died in 1993.\nAnswer: Sammy Cahn."
+      }
+    ]
+  }
+}

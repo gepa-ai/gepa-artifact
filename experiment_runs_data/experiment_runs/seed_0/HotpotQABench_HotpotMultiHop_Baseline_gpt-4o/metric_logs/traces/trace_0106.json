@@ -1,0 +1,96 @@
+{
+  "example_id": "5a78a672554299078472770d",
+  "question": "When did the series that Tyler Ross stars in with Josh Duhamel premier?",
+  "gold_answer": "March 1, 2015",
+  "prediction": {
+    "answer": "The series that Tyler Ross stars in with Josh Duhamel, \"Battle Creek,\" premiered on March 1, 2015.",
+    "hop1_docs": [
+      "Battle Creek (TV series) | Battle Creek is an American comedy-drama television series that premiered on CBS on March 1, 2015.  Starring Josh Duhamel and Dean Winters, the show followed the mismatched partnership of a police detective and FBI agent in Battle Creek, Michigan.",
+      "When in Rome (2010 film) | When in Rome is a 2010 American romantic comedy film directed by Mark Steven Johnson, co-written by Johnson, David Diamond and David Weissman.  It stars Kristen Bell and Josh Duhamel.  It was released by Touchstone Pictures in the United States on January 29, 2010.",
+      "Scenic Route (film) | Scenic Route, also known in the UK as Wrecked, is a 2013 American psychological thriller film written by Kyle Killen, directed by Kevin and Michael Goetz, and starring Josh Duhamel and Dan Fogler.  The film premiered at the 2013 South by Southwest Film Festival and was released on August 23, 2013.",
+      "Lost in the Sun | Lost in the Sun is a 2015 drama thriller film written and directed by Trey Nelson, and starring Josh Duhamel, Josh Wiggins, Lynn Collins, and Emma Fuhrmann.",
+      "Tyler Ross | Tyler Ross (born March 13, 1989) is an American actor best known for playing Kyle Stansbury in season four of the television series \"The Killing\" and for starring in the Stephen Cone films \"The Wise Kids\" (2011), \"Henry Gamble's Birthday Party\" (2015), and \"Princess Cyd\" (2017).  Ross has also appeared in the series \"Boss\", \"NCIS\", \"Major Crimes\", \"Crash & Bernstein\", and \"Battle Creek\", and the films \"Officer Downe\" (2016) and \"American Milkshake\" (2013).",
+      "Fire with Fire (2012 film) | Fire with Fire is a 2012 American action film directed by David Barrett starring Josh Duhamel, Bruce Willis and Rosario Dawson.  Duhamel plays a firefighter forced to confront a neo-Nazi murderer.  The film was released straight to DVD and Blu-ray Disc on November 6, 2012.",
+      "Dean Winters | Dean Gerard Winters (born July 20, 1964) is an American actor.  He is known for his role as Ryan O'Reily on the HBO prison drama \"Oz\", and has also appeared on such television series as \"Rescue Me\", \"30 Rock\", and \"\", as well as the character \"Mayhem\" in a series of Allstate Insurance commercials.  Winters co-starred with Josh Duhamel in one season of the CBS Network cop drama series \"Battle Creek\"."
+    ],
+    "hop2_docs": [
+      "Battle Creek (TV series) | Battle Creek is an American comedy-drama television series that premiered on CBS on March 1, 2015.  Starring Josh Duhamel and Dean Winters, the show followed the mismatched partnership of a police detective and FBI agent in Battle Creek, Michigan.",
+      "Tyler Ross | Tyler Ross (born March 13, 1989) is an American actor best known for playing Kyle Stansbury in season four of the television series \"The Killing\" and for starring in the Stephen Cone films \"The Wise Kids\" (2011), \"Henry Gamble's Birthday Party\" (2015), and \"Princess Cyd\" (2017).  Ross has also appeared in the series \"Boss\", \"NCIS\", \"Major Crimes\", \"Crash & Bernstein\", and \"Battle Creek\", and the films \"Officer Downe\" (2016) and \"American Milkshake\" (2013).",
+      "Dean Winters | Dean Gerard Winters (born July 20, 1964) is an American actor.  He is known for his role as Ryan O'Reily on the HBO prison drama \"Oz\", and has also appeared on such television series as \"Rescue Me\", \"30 Rock\", and \"\", as well as the character \"Mayhem\" in a series of Allstate Insurance commercials.  Winters co-starred with Josh Duhamel in one season of the CBS Network cop drama series \"Battle Creek\".",
+      "Win a Date with Tad Hamilton! | Win a Date with Tad Hamilton!  is a 2004 American romantic comedy film directed by Robert Luketic, written by Victor Levin, and starring Kate Bosworth, Topher Grace, Josh Duhamel, Gary Cole, Ginnifer Goodwin, Sean Hayes, and Nathan Lane.  Heavily inspired by Ram Gopal Varma's 1995 Indian film \"Rangeela\", the film follows a small-town girl (Bosworth) who wins a contest for a date with a male celebrity (Duhamel), and a love triangle forms between the girl, the star, and the girl's best friend (Grace).",
+      "Scenic Route (film) | Scenic Route, also known in the UK as Wrecked, is a 2013 American psychological thriller film written by Kyle Killen, directed by Kevin and Michael Goetz, and starring Josh Duhamel and Dan Fogler.  The film premiered at the 2013 South by Southwest Film Festival and was released on August 23, 2013.",
+      "Lost in the Sun | Lost in the Sun is a 2015 drama thriller film written and directed by Trey Nelson, and starring Josh Duhamel, Josh Wiggins, Lynn Collins, and Emma Fuhrmann.",
+      "Fire with Fire (2012 film) | Fire with Fire is a 2012 American action film directed by David Barrett starring Josh Duhamel, Bruce Willis and Rosario Dawson.  Duhamel plays a firefighter forced to confront a neo-Nazi murderer.  The film was released straight to DVD and Blu-ray Disc on November 6, 2012."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 106,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: When did the series that Tyler Ross stars in with Josh Duhamel premier?\nPassages: [\"Battle Creek (TV series) | Battle Creek is an American comedy-drama television series that premiered on CBS on March 1, 2015.  Starring Josh Duhamel and Dean Winters, the show followed the mismatched partnership of a police detective and FBI agent in Battle Creek, Michigan.\", \"When in Rome (2010 film) | When in Rome is a 2010 American romantic comedy film directed by Mark Steven Johnson, co-written by Johnson, David Diamond and David Weissman.  It stars Kristen Bell and Josh Duhamel.  It was released by Touchstone Pictures in the United States on January 29, 2010.\", \"Scenic Route (film) | Scenic Route, also known in the UK as Wrecked, is a 2013 American psychological thriller film written by Kyle Killen, directed by Kevin and Michael Goetz, and starring Josh Duhamel and Dan Fogler.  The film premiered at the 2013 South by Southwest Film Festival and was released on August 23, 2013.\", \"Lost in the Sun | Lost in the Sun is a 2015 drama thriller film written and directed by Trey Nelson, and starring Josh Duhamel, Josh Wiggins, Lynn Collins, and Emma Fuhrmann.\", \"Tyler Ross | Tyler Ross (born March 13, 1989) is an American actor best known for playing Kyle Stansbury in season four of the television series \\\"The Killing\\\" and for starring in the Stephen Cone films \\\"The Wise Kids\\\" (2011), \\\"Henry Gamble's Birthday Party\\\" (2015), and \\\"Princess Cyd\\\" (2017).  Ross has also appeared in the series \\\"Boss\\\", \\\"NCIS\\\", \\\"Major Crimes\\\", \\\"Crash & Bernstein\\\", and \\\"Battle Creek\\\", and the films \\\"Officer Downe\\\" (2016) and \\\"American Milkshake\\\" (2013).\", \"Fire with Fire (2012 film) | Fire with Fire is a 2012 American action film directed by David Barrett starring Josh Duhamel, Bruce Willis and Rosario Dawson.  Duhamel plays a firefighter forced to confront a neo-Nazi murderer.  The film was released straight to DVD and Blu-ray Disc on November 6, 2012.\", \"Dean Winters | Dean Gerard Winters (born July 20, 1964) is an American actor.  He is known for his role as Ryan O'Reily on the HBO prison drama \\\"Oz\\\", and has also appeared on such television series as \\\"Rescue Me\\\", \\\"30 Rock\\\", and \\\"\\\", as well as the character \\\"Mayhem\\\" in a series of Allstate Insurance commercials.  Winters co-starred with Josh Duhamel in one season of the CBS Network cop drama series \\\"Battle Creek\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the premiere date of the series that Tyler Ross stars in with Josh Duhamel. The relevant passages indicate that both actors appeared in the series \"Battle Creek.\" According to passage [1], \"Battle Creek\" premiered on CBS on March 1, 2015. Tyler Ross\u2019s connection to \"Battle Creek\" is confirmed in passage [5], which lists it among the series he appeared in.\nSummary: The series \"Battle Creek,\" starring Tyler Ross and Josh Duhamel, premiered on CBS on March 1, 2015."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: When did the series that Tyler Ross stars in with Josh Duhamel premier?\nSummary 1: The series \"Battle Creek,\" starring Tyler Ross and Josh Duhamel, premiered on CBS on March 1, 2015."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The user's question pertains to the premiere date of a series starring Tyler Ross and Josh Duhamel. Based on the summary, the series in question is \"Battle Creek,\" which premiered on March 1, 2015. This aligns with the requested information about the premiere date.\nQuery: What is the premiere date of the series \"Battle Creek,\" starring Tyler Ross and Josh Duhamel?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: When did the series that Tyler Ross stars in with Josh Duhamel premier?\nContext: The series \"Battle Creek,\" starring Tyler Ross and Josh Duhamel, premiered on CBS on March 1, 2015.\nPassages: [\"Battle Creek (TV series) | Battle Creek is an American comedy-drama television series that premiered on CBS on March 1, 2015.  Starring Josh Duhamel and Dean Winters, the show followed the mismatched partnership of a police detective and FBI agent in Battle Creek, Michigan.\", \"Tyler Ross | Tyler Ross (born March 13, 1989) is an American actor best known for playing Kyle Stansbury in season four of the television series \\\"The Killing\\\" and for starring in the Stephen Cone films \\\"The Wise Kids\\\" (2011), \\\"Henry Gamble's Birthday Party\\\" (2015), and \\\"Princess Cyd\\\" (2017).  Ross has also appeared in the series \\\"Boss\\\", \\\"NCIS\\\", \\\"Major Crimes\\\", \\\"Crash & Bernstein\\\", and \\\"Battle Creek\\\", and the films \\\"Officer Downe\\\" (2016) and \\\"American Milkshake\\\" (2013).\", \"Dean Winters | Dean Gerard Winters (born July 20, 1964) is an American actor.  He is known for his role as Ryan O'Reily on the HBO prison drama \\\"Oz\\\", and has also appeared on such television series as \\\"Rescue Me\\\", \\\"30 Rock\\\", and \\\"\\\", as well as the character \\\"Mayhem\\\" in a series of Allstate Insurance commercials.  Winters co-starred with Josh Duhamel in one season of the CBS Network cop drama series \\\"Battle Creek\\\".\", \"Win a Date with Tad Hamilton! | Win a Date with Tad Hamilton!  is a 2004 American romantic comedy film directed by Robert Luketic, written by Victor Levin, and starring Kate Bosworth, Topher Grace, Josh Duhamel, Gary Cole, Ginnifer Goodwin, Sean Hayes, and Nathan Lane.  Heavily inspired by Ram Gopal Varma's 1995 Indian film \\\"Rangeela\\\", the film follows a small-town girl (Bosworth) who wins a contest for a date with a male celebrity (Duhamel), and a love triangle forms between the girl, the star, and the girl's best friend (Grace).\", \"Scenic Route (film) | Scenic Route, also known in the UK as Wrecked, is a 2013 American psychological thriller film written by Kyle Killen, directed by Kevin and Michael Goetz, and starring Josh Duhamel and Dan Fogler.  The film premiered at the 2013 South by Southwest Film Festival and was released on August 23, 2013.\", \"Lost in the Sun | Lost in the Sun is a 2015 drama thriller film written and directed by Trey Nelson, and starring Josh Duhamel, Josh Wiggins, Lynn Collins, and Emma Fuhrmann.\", \"Fire with Fire (2012 film) | Fire with Fire is a 2012 American action film directed by David Barrett starring Josh Duhamel, Bruce Willis and Rosario Dawson.  Duhamel plays a firefighter forced to confront a neo-Nazi murderer.  The film was released straight to DVD and Blu-ray Disc on November 6, 2012.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine the premiere date of the series starring Tyler Ross and Josh Duhamel, we look at the provided context and passages. The context explicitly states that the series \"Battle Creek,\" starring Tyler Ross and Josh Duhamel, premiered on CBS on March 1, 2015. This is corroborated by passage [1], which provides the same information about the premiere date of \"Battle Creek.\" Passages [2], [3], and others give additional background on the actors and their work but do not impact the premiere date stated in the context and passage [1].\nSummary: The series that Tyler Ross stars in with Josh Duhamel, \"Battle Creek,\" premiered on CBS on March 1, 2015."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: When did the series that Tyler Ross stars in with Josh Duhamel premier?\nSummary 1: The series \"Battle Creek,\" starring Tyler Ross and Josh Duhamel, premiered on CBS on March 1, 2015.\nSummary 2: The series that Tyler Ross stars in with Josh Duhamel, \"Battle Creek,\" premiered on CBS on March 1, 2015."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree on the key details, specifically the name of the series and its premiere date. \"Battle Creek,\" starring Tyler Ross and Josh Duhamel, premiered on CBS on March 1, 2015. As the information is consistent across both summaries, this can be concluded as accurate.\nAnswer: The series that Tyler Ross stars in with Josh Duhamel, \"Battle Creek,\" premiered on March 1, 2015."
+      }
+    ]
+  }
+}

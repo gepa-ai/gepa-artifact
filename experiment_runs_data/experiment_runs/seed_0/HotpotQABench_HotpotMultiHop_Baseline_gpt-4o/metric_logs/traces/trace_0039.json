@@ -1,0 +1,96 @@
+{
+  "example_id": "5a76b342554299373536016b",
+  "question": "Franz Viehb\u00f6ck and Ulrich Walter, have which occupation in common?",
+  "gold_answer": "engineer",
+  "prediction": {
+    "answer": "Astronaut.",
+    "hop1_docs": [
+      "Franz Viehb\u00f6ck | Franz Artur Viehb\u00f6ck (born August 24, 1960 in Vienna) is an Austrian electrical engineer, and was Austria's first cosmonaut.  He was titulated \"\u201eAustronaut\u201c\" by his country's media.  He visited the Mir space station in 1991 aboard Soyuz TM-13, returning aboard Soyuz TM-12 after spending just over a week in space.",
+      "Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau | Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau",
+      "Franz de Paula Ulrich, 3rd Prince Kinsky of Wchinitz and Tettau | Franz de Paula Ulrich, 3rd Prince Kinsky of Wchinitz and Tettau",
+      "Friedrich Gustav Carl Ulrich Franz von Schnehen | Friedrich Gustav Carl Ulrich Franz von Schnehen (Berlin, November 10, 1808 \u2013 Schloss Kl\u00fctzkow, August 26, 1893), Lord of Kl\u00fctzkow, Bahnitz and Wendenberg, was a German Politician and Nobleman",
+      "Ulrich Walter | Prof. Dr. Ulrich Hans Walter (born February 9, 1954) is a German physicist/engineer and a former DFVLR astronaut.",
+      "Walter Franz | Walter Franz (8 April 1911 in Munich \u2013 16 February 1992 in M\u00fcnster) was a theoretical physicist who independently discovered the Franz\u2013Keldysh effect.",
+      "Franz Friedrich Franck | Franz Friedrich Franck, born at Augsburg in 1627, was instructed by his father, Hans Ulrich Franck.  He died at Augsburg in 1687.  The following productions are by him:"
+    ],
+    "hop2_docs": [
+      "Franz Viehb\u00f6ck | Franz Artur Viehb\u00f6ck (born August 24, 1960 in Vienna) is an Austrian electrical engineer, and was Austria's first cosmonaut.  He was titulated \"\u201eAustronaut\u201c\" by his country's media.  He visited the Mir space station in 1991 aboard Soyuz TM-13, returning aboard Soyuz TM-12 after spending just over a week in space.",
+      "Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau | Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau",
+      "Franz de Paula Ulrich, 3rd Prince Kinsky of Wchinitz and Tettau | Franz de Paula Ulrich, 3rd Prince Kinsky of Wchinitz and Tettau",
+      "Friedrich Gustav Carl Ulrich Franz von Schnehen | Friedrich Gustav Carl Ulrich Franz von Schnehen (Berlin, November 10, 1808 \u2013 Schloss Kl\u00fctzkow, August 26, 1893), Lord of Kl\u00fctzkow, Bahnitz and Wendenberg, was a German Politician and Nobleman",
+      "Ulrich Walter | Prof. Dr. Ulrich Hans Walter (born February 9, 1954) is a German physicist/engineer and a former DFVLR astronaut.",
+      "Walter Franz | Walter Franz (8 April 1911 in Munich \u2013 16 February 1992 in M\u00fcnster) was a theoretical physicist who independently discovered the Franz\u2013Keldysh effect.",
+      "Franz Friedrich Franck | Franz Friedrich Franck, born at Augsburg in 1627, was instructed by his father, Hans Ulrich Franck.  He died at Augsburg in 1687.  The following productions are by him:"
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 39,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Franz Viehb\u00f6ck and Ulrich Walter, have which occupation in common?\nPassages: [\"Franz Viehb\\u00f6ck | Franz Artur Viehb\\u00f6ck (born August 24, 1960 in Vienna) is an Austrian electrical engineer, and was Austria's first cosmonaut.  He was titulated \\\"\\u201eAustronaut\\u201c\\\" by his country's media.  He visited the Mir space station in 1991 aboard Soyuz TM-13, returning aboard Soyuz TM-12 after spending just over a week in space.\", \"Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau | Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau\", \"Franz de Paula Ulrich, 3rd Prince Kinsky of Wchinitz and Tettau | Franz de Paula Ulrich, 3rd Prince Kinsky of Wchinitz and Tettau\", \"Friedrich Gustav Carl Ulrich Franz von Schnehen | Friedrich Gustav Carl Ulrich Franz von Schnehen (Berlin, November 10, 1808 \\u2013 Schloss Kl\\u00fctzkow, August 26, 1893), Lord of Kl\\u00fctzkow, Bahnitz and Wendenberg, was a German Politician and Nobleman\", \"Ulrich Walter | Prof. Dr. Ulrich Hans Walter (born February 9, 1954) is a German physicist/engineer and a former DFVLR astronaut.\", \"Walter Franz | Walter Franz (8 April 1911 in Munich \\u2013 16 February 1992 in M\\u00fcnster) was a theoretical physicist who independently discovered the Franz\\u2013Keldysh effect.\", \"Franz Friedrich Franck | Franz Friedrich Franck, born at Augsburg in 1627, was instructed by his father, Hans Ulrich Franck.  He died at Augsburg in 1687.  The following productions are by him:\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the common occupation of Franz Viehb\u00f6ck and Ulrich Walter. From the passages provided: Franz Viehb\u00f6ck is described as Austria's first cosmonaut and spent time aboard the Mir space station, indicating his occupation as an astronaut. Similarly, Ulrich Walter is described as a former astronaut (DFVLR astronaut) and a physicist/engineer. Both individuals share the occupation of being astronauts.\nSummary: Franz Viehb\u00f6ck and Ulrich Walter have the occupation of astronaut in common."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Franz Viehb\u00f6ck and Ulrich Walter, have which occupation in common?\nSummary 1: Franz Viehb\u00f6ck and Ulrich Walter have the occupation of astronaut in common."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is asking about the shared occupation of Franz Viehb\u00f6ck and Ulrich Walter. Based on the summary provided, it is evident that both individuals share the profession of astronaut. Hence, any query designed to confirm this would focus on retrieving information about their careers or roles as astronauts.\nQuery: What is the occupation shared by Franz Viehb\u00f6ck and Ulrich Walter?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Franz Viehb\u00f6ck and Ulrich Walter, have which occupation in common?\nContext: Franz Viehb\u00f6ck and Ulrich Walter have the occupation of astronaut in common.\nPassages: [\"Franz Viehb\\u00f6ck | Franz Artur Viehb\\u00f6ck (born August 24, 1960 in Vienna) is an Austrian electrical engineer, and was Austria's first cosmonaut.  He was titulated \\\"\\u201eAustronaut\\u201c\\\" by his country's media.  He visited the Mir space station in 1991 aboard Soyuz TM-13, returning aboard Soyuz TM-12 after spending just over a week in space.\", \"Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau | Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau\", \"Franz de Paula Ulrich, 3rd Prince Kinsky of Wchinitz and Tettau | Franz de Paula Ulrich, 3rd Prince Kinsky of Wchinitz and Tettau\", \"Friedrich Gustav Carl Ulrich Franz von Schnehen | Friedrich Gustav Carl Ulrich Franz von Schnehen (Berlin, November 10, 1808 \\u2013 Schloss Kl\\u00fctzkow, August 26, 1893), Lord of Kl\\u00fctzkow, Bahnitz and Wendenberg, was a German Politician and Nobleman\", \"Ulrich Walter | Prof. Dr. Ulrich Hans Walter (born February 9, 1954) is a German physicist/engineer and a former DFVLR astronaut.\", \"Walter Franz | Walter Franz (8 April 1911 in Munich \\u2013 16 February 1992 in M\\u00fcnster) was a theoretical physicist who independently discovered the Franz\\u2013Keldysh effect.\", \"Franz Friedrich Franck | Franz Friedrich Franck, born at Augsburg in 1627, was instructed by his father, Hans Ulrich Franck.  He died at Augsburg in 1687.  The following productions are by him:\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks what occupation Franz Viehb\u00f6ck and Ulrich Walter have in common. According to the context provided, both individuals share the occupation of astronaut. This is supported by the passages. Franz Viehb\u00f6ck, as noted in passage [1], is an Austrian electrical engineer and Austria's first cosmonaut who traveled to space aboard Soyuz missions and stayed aboard the Mir space station. Ulrich Walter, described in passage [5], is a German physicist/engineer and former DFVLR astronaut. Both individuals have been involved in space missions, confirming their shared occupation as astronauts.\nSummary: Franz Viehb\u00f6ck and Ulrich Walter have the occupation of astronaut in common."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Franz Viehb\u00f6ck and Ulrich Walter, have which occupation in common?\nSummary 1: Franz Viehb\u00f6ck and Ulrich Walter have the occupation of astronaut in common.\nSummary 2: Franz Viehb\u00f6ck and Ulrich Walter have the occupation of astronaut in common."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries confirm that Franz Viehb\u00f6ck and Ulrich Walter share the occupation of being astronauts. There are no discrepancies or contradictions in the information provided, which makes the answer consistent and reliable.\nAnswer: Astronaut."
+      }
+    ]
+  }
+}

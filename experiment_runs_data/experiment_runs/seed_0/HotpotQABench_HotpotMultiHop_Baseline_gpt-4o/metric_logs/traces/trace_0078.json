@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab590c75542997d4ad1f17d",
+  "question": "Zhuhai and Zhangzhou, are located in which country?",
+  "gold_answer": "China",
+  "prediction": {
+    "answer": "China",
+    "hop1_docs": [
+      "China Merchants Property | China Merchants Property Development Co., Ltd. was established in Shenzhen, China in 1984 and it is the real estate flagship of China Merchants.  It offers residential properties in China cities, including Shenzhen, Zhuhai, Zhangzhou, Foshan, Guangzhou, Shanghai, Suzhou, Nanjing, Beijing, Tianjin and Chongqing.",
+      "Zhangzhou Railway Station | Zhangzhou Railway Station is the main train station of the Zhangzhou metropolitan area in China's Fujian Province.  The station is located in Hongtang Village (\u6d2a\u5858\u6751) of Longhai City, about 10\u00a0km south of downtown Zhangzhou.  It is located on the common section of the Longxia Railway (Longyan-Xiamen; opened in mid-2012) and the Xiashen Railway (Xiamen-Shenzhen Railway; opened at the end of 2013).",
+      "Zhuhai City Polytechnic | Zhuhai City Polytechnic is located in China Guangdong Province Zhuhai City Xihu Chengqu Jinwan District, at the previous Zhuhai Institute of Education, Zhuhai University of Radio and Television (Zhuhai Electric University, Zhuhai Open University), Zhuhai City Polytechnic School, Zhuhai City Finance and Trade School (Zhuhai Business School) merged in 2004, mainly for industry education.  There are more than 16,000 students in the school.  The school covers an area of 360,000 square meters, construction area of 88,000 square meters.",
+      "Chaoyang, Fujian | Chaoyang () is a town in central Longwen District, Zhangzhou, Fujian Province, People's Republic of China.  It is located about 7 km east of downtown Zhangzhou and lies in the vicinity of the Xiazhang Expressway (\u53a6\u6f33\u9ad8\u901f\u516c\u8def), connecting Zhangzhou with Xiamen.",
+      "Tangjiawan Railway Station | Tangjiawan Station (), formerly Jintang Station () during planning, is an elevated station of the Guangzhou\u2013Zhuhai Intercity Railway (Guangzhu ICR).  It is located in Tangjia Town, Xiangzhou, Zhuhai, Guangdong, China, and is located directly in front of the Zhuhai College of the Beijing Institute of Technology and near the Zhuhai International Circuit.",
+      "Zhuhai Taoyuan Middle School | Zhuhai Taoyuan Middle School (; colloquially known as \u6843\u56ed\u4e2d\u5b66, T\u00e1oyu\u00e1n Zh\u014dngx\u00fae) is located in Xiangzhou, Zhuhai, Guangdong.  It was a first-class middle school in Zhuhai and one of the Provincal Model Junior High Schools.",
+      "Zhuhai Jinwan Airport | Zhuhai Jinwan Airport (IATA: ZUH,\u00a0ICAO: ZGSD) , formerly Zhuhai Sanzao Airport, is the airport serving the city of Zhuhai in Guangdong province, China.  It is located some 50 km (road distance) southwest of the Zhuhai city center in Sanzao Town, Jinwan District, and 25 km southwest of the special administrative region of Macau."
+    ],
+    "hop2_docs": [
+      "China Merchants Property | China Merchants Property Development Co., Ltd. was established in Shenzhen, China in 1984 and it is the real estate flagship of China Merchants.  It offers residential properties in China cities, including Shenzhen, Zhuhai, Zhangzhou, Foshan, Guangzhou, Shanghai, Suzhou, Nanjing, Beijing, Tianjin and Chongqing.",
+      "Zhangzhou Railway Station | Zhangzhou Railway Station is the main train station of the Zhangzhou metropolitan area in China's Fujian Province.  The station is located in Hongtang Village (\u6d2a\u5858\u6751) of Longhai City, about 10\u00a0km south of downtown Zhangzhou.  It is located on the common section of the Longxia Railway (Longyan-Xiamen; opened in mid-2012) and the Xiashen Railway (Xiamen-Shenzhen Railway; opened at the end of 2013).",
+      "Zhuhai City Polytechnic | Zhuhai City Polytechnic is located in China Guangdong Province Zhuhai City Xihu Chengqu Jinwan District, at the previous Zhuhai Institute of Education, Zhuhai University of Radio and Television (Zhuhai Electric University, Zhuhai Open University), Zhuhai City Polytechnic School, Zhuhai City Finance and Trade School (Zhuhai Business School) merged in 2004, mainly for industry education.  There are more than 16,000 students in the school.  The school covers an area of 360,000 square meters, construction area of 88,000 square meters.",
+      "Chaoyang, Fujian | Chaoyang () is a town in central Longwen District, Zhangzhou, Fujian Province, People's Republic of China.  It is located about 7 km east of downtown Zhangzhou and lies in the vicinity of the Xiazhang Expressway (\u53a6\u6f33\u9ad8\u901f\u516c\u8def), connecting Zhangzhou with Xiamen.",
+      "Tangjiawan Railway Station | Tangjiawan Station (), formerly Jintang Station () during planning, is an elevated station of the Guangzhou\u2013Zhuhai Intercity Railway (Guangzhu ICR).  It is located in Tangjia Town, Xiangzhou, Zhuhai, Guangdong, China, and is located directly in front of the Zhuhai College of the Beijing Institute of Technology and near the Zhuhai International Circuit.",
+      "Zhuhai Taoyuan Middle School | Zhuhai Taoyuan Middle School (; colloquially known as \u6843\u56ed\u4e2d\u5b66, T\u00e1oyu\u00e1n Zh\u014dngx\u00fae) is located in Xiangzhou, Zhuhai, Guangdong.  It was a first-class middle school in Zhuhai and one of the Provincal Model Junior High Schools.",
+      "Zhuhai Jinwan Airport | Zhuhai Jinwan Airport (IATA: ZUH,\u00a0ICAO: ZGSD) , formerly Zhuhai Sanzao Airport, is the airport serving the city of Zhuhai in Guangdong province, China.  It is located some 50 km (road distance) southwest of the Zhuhai city center in Sanzao Town, Jinwan District, and 25 km southwest of the special administrative region of Macau."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 78,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Zhuhai and Zhangzhou, are located in which country?\nPassages: [\"China Merchants Property | China Merchants Property Development Co., Ltd. was established in Shenzhen, China in 1984 and it is the real estate flagship of China Merchants.  It offers residential properties in China cities, including Shenzhen, Zhuhai, Zhangzhou, Foshan, Guangzhou, Shanghai, Suzhou, Nanjing, Beijing, Tianjin and Chongqing.\", \"Zhangzhou Railway Station | Zhangzhou Railway Station is the main train station of the Zhangzhou metropolitan area in China's Fujian Province.  The station is located in Hongtang Village (\\u6d2a\\u5858\\u6751) of Longhai City, about 10\\u00a0km south of downtown Zhangzhou.  It is located on the common section of the Longxia Railway (Longyan-Xiamen; opened in mid-2012) and the Xiashen Railway (Xiamen-Shenzhen Railway; opened at the end of 2013).\", \"Zhuhai City Polytechnic | Zhuhai City Polytechnic is located in China Guangdong Province Zhuhai City Xihu Chengqu Jinwan District, at the previous Zhuhai Institute of Education, Zhuhai University of Radio and Television (Zhuhai Electric University, Zhuhai Open University), Zhuhai City Polytechnic School, Zhuhai City Finance and Trade School (Zhuhai Business School) merged in 2004, mainly for industry education.  There are more than 16,000 students in the school.  The school covers an area of 360,000 square meters, construction area of 88,000 square meters.\", \"Chaoyang, Fujian | Chaoyang () is a town in central Longwen District, Zhangzhou, Fujian Province, People's Republic of China.  It is located about 7 km east of downtown Zhangzhou and lies in the vicinity of the Xiazhang Expressway (\\u53a6\\u6f33\\u9ad8\\u901f\\u516c\\u8def), connecting Zhangzhou with Xiamen.\", \"Tangjiawan Railway Station | Tangjiawan Station (), formerly Jintang Station () during planning, is an elevated station of the Guangzhou\\u2013Zhuhai Intercity Railway (Guangzhu ICR).  It is located in Tangjia Town, Xiangzhou, Zhuhai, Guangdong, China, and is located directly in front of the Zhuhai College of the Beijing Institute of Technology and near the Zhuhai International Circuit.\", \"Zhuhai Taoyuan Middle School | Zhuhai Taoyuan Middle School (; colloquially known as \\u6843\\u56ed\\u4e2d\\u5b66, T\\u00e1oyu\\u00e1n Zh\\u014dngx\\u00fae) is located in Xiangzhou, Zhuhai, Guangdong.  It was a first-class middle school in Zhuhai and one of the Provincal Model Junior High Schools.\", \"Zhuhai Jinwan Airport | Zhuhai Jinwan Airport (IATA: ZUH,\\u00a0ICAO: ZGSD) , formerly Zhuhai Sanzao Airport, is the airport serving the city of Zhuhai in Guangdong province, China.  It is located some 50 km (road distance) southwest of the Zhuhai city center in Sanzao Town, Jinwan District, and 25 km southwest of the special administrative region of Macau.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the provided passages, Zhuhai and Zhangzhou are consistently mentioned as being located within China. Passage [1] lists both cities among others in China, while passage [2] references Zhangzhou as being part of Fujian Province in China. Furthermore, passages [3], [5], and [6] describe Zhuhai as being in Guangdong Province, China. The detailed geographical context in multiple sources affirms that both Zhuhai and Zhangzhou are Chinese cities.\nSummary: Zhuhai and Zhangzhou are located in China."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Zhuhai and Zhangzhou, are located in which country?\nSummary 1: Zhuhai and Zhangzhou are located in China."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Zhuhai and Zhangzhou are both cities in China, as indicated in the information provided. To confirm, a query can be made to directly identify the country to which these cities belong.\nQuery: What country are Zhuhai and Zhangzhou located in?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Zhuhai and Zhangzhou, are located in which country?\nContext: Zhuhai and Zhangzhou are located in China.\nPassages: [\"China Merchants Property | China Merchants Property Development Co., Ltd. was established in Shenzhen, China in 1984 and it is the real estate flagship of China Merchants.  It offers residential properties in China cities, including Shenzhen, Zhuhai, Zhangzhou, Foshan, Guangzhou, Shanghai, Suzhou, Nanjing, Beijing, Tianjin and Chongqing.\", \"Zhangzhou Railway Station | Zhangzhou Railway Station is the main train station of the Zhangzhou metropolitan area in China's Fujian Province.  The station is located in Hongtang Village (\\u6d2a\\u5858\\u6751) of Longhai City, about 10\\u00a0km south of downtown Zhangzhou.  It is located on the common section of the Longxia Railway (Longyan-Xiamen; opened in mid-2012) and the Xiashen Railway (Xiamen-Shenzhen Railway; opened at the end of 2013).\", \"Zhuhai City Polytechnic | Zhuhai City Polytechnic is located in China Guangdong Province Zhuhai City Xihu Chengqu Jinwan District, at the previous Zhuhai Institute of Education, Zhuhai University of Radio and Television (Zhuhai Electric University, Zhuhai Open University), Zhuhai City Polytechnic School, Zhuhai City Finance and Trade School (Zhuhai Business School) merged in 2004, mainly for industry education.  There are more than 16,000 students in the school.  The school covers an area of 360,000 square meters, construction area of 88,000 square meters.\", \"Chaoyang, Fujian | Chaoyang () is a town in central Longwen District, Zhangzhou, Fujian Province, People's Republic of China.  It is located about 7 km east of downtown Zhangzhou and lies in the vicinity of the Xiazhang Expressway (\\u53a6\\u6f33\\u9ad8\\u901f\\u516c\\u8def), connecting Zhangzhou with Xiamen.\", \"Tangjiawan Railway Station | Tangjiawan Station (), formerly Jintang Station () during planning, is an elevated station of the Guangzhou\\u2013Zhuhai Intercity Railway (Guangzhu ICR).  It is located in Tangjia Town, Xiangzhou, Zhuhai, Guangdong, China, and is located directly in front of the Zhuhai College of the Beijing Institute of Technology and near the Zhuhai International Circuit.\", \"Zhuhai Taoyuan Middle School | Zhuhai Taoyuan Middle School (; colloquially known as \\u6843\\u56ed\\u4e2d\\u5b66, T\\u00e1oyu\\u00e1n Zh\\u014dngx\\u00fae) is located in Xiangzhou, Zhuhai, Guangdong.  It was a first-class middle school in Zhuhai and one of the Provincal Model Junior High Schools.\", \"Zhuhai Jinwan Airport | Zhuhai Jinwan Airport (IATA: ZUH,\\u00a0ICAO: ZGSD) , formerly Zhuhai Sanzao Airport, is the airport serving the city of Zhuhai in Guangdong province, China.  It is located some 50 km (road distance) southwest of the Zhuhai city center in Sanzao Town, Jinwan District, and 25 km southwest of the special administrative region of Macau.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the context and the passages provided, both Zhuhai and Zhangzhou are explicitly stated to be located in China. The context notes that both cities are located in China, and the passages reinforce this by providing specific information about these cities being in Guangdong Province (for Zhuhai) and Fujian Province (for Zhangzhou) within China. For example, Passage [1] lists these cities as part of China, while Passage [2], [3], [4], [5], [6], and [7] provide further specific details about their locations and infrastructure within the country.\nSummary: Zhuhai and Zhangzhou are located in China."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Zhuhai and Zhangzhou, are located in which country?\nSummary 1: Zhuhai and Zhangzhou are located in China.\nSummary 2: Zhuhai and Zhangzhou are located in China."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries explicitly confirm that Zhuhai and Zhangzhou are located in China. Since there is agreement between the summaries and no contradictory information is provided, it is reasonable to conclude that both cities are indeed in China.\nAnswer: China"
+      }
+    ]
+  }
+}

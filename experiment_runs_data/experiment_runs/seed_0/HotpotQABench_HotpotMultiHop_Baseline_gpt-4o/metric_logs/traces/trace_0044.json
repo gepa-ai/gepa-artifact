@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab48c705542991779162cd5",
+  "question": "What is the original film in the Trilogy that included an appearance by author Robinne Lee in 2017?",
+  "gold_answer": "\"Fifty Shades of Grey\"",
+  "prediction": {
+    "answer": "Fifty Shades of Grey",
+    "hop1_docs": [
+      "Robinne Lee | Robinne Lee (born July 16, 1974) is an American actress and author ab.  She made her screen debut in the 1997 independent film \"Hav Plenty\", and later has appeared in films \"National Security\" (2003), \"Deliver Us from Eva\" (2003), \"Hitch\" (2005), \"Seven Pounds\" (2008), \"Fifty Shades Darker\" (2017), and the upcoming \"Fifty Shades Freed\".  Her first novel will be released by St Martin's Press in June 2017.",
+      "Christopher Lee | Sir Christopher Frank Carandini Lee {'1': \", '2': \", '3': \", '4': \"} (27 May 1922 \u2013 7 June 2015) was an English character actor, singer, and author.  With a career spanning nearly 70 years, Lee was well known for portraying villains and became best known for his role as Count Dracula in a sequence of Hammer Horror films.  His other film roles include Francisco Scaramanga in the James Bond film \"The Man with the Golden Gun\" (1974), Saruman in \"The Lord of the Rings\" film trilogy (2001\u20132003) and \"The Hobbit\" film trilogy (2012\u20132014), and Count Dooku in the second and third films of the \"Star Wars\" prequel trilogy (2002 & 2005).",
+      "List of X-Men films cast members | The following is a list of cast members who have portrayed characters appearing in the \"X-Men\" film series, based upon the comic books of the same name.  Hugh Jackman appeared in the first seven films: he played James \"Logan\" Howlett / Wolverine in the original trilogy (\"X-Men\", \"X2 - X-Men United\", and \"\") and reprised his role in the prequel films \"\" and \"\", the latter in a cameo appearance.  He again starred in \"The Wolverine\" and \"\".  He appeared in photographic form in \"Deadpool\" and reprised his role as Wolverine in \"\" and one last stand-alone \"Wolverine\" film.  Patrick Stewart, Ian McKellen, Famke Janssen, Halle Berry, Anna Paquin, James Marsden and Shawn Ashmore have also appeared in the original trilogy and \"Days of Future Past\", with Stewart also making a cameo appearance in \"Origins: Wolverine\" and \"The Wolverine\", and Janssen and McKellen in \"The Wolverine\".  Rebecca Romijn also appeared in the original trilogy and made a cameo appearance in \"First Class\".",
+      "Gabrielle Robinne | Gabrielle Anna Charlotte Robinne (1 July 1886 \u2013 18 December 1980) was a French stage and film actress whose career spanned over sixty years.",
+      "C-3PO | C-3PO ( ) or See-Threepio is a humanoid robot character from the \"Star Wars\" franchise who appears in the original trilogy, the prequel trilogy and the sequel trilogy.  Built by Anakin Skywalker, C-3PO was designed as a protocol droid intended to assist in etiquette, customs, and translation, boasting that he is \"fluent in over six million forms of communication\".  Along with his astromech droid counterpart and friend R2-D2, C-3PO provides comic relief within the narrative structure of the films, and serves as a foil.  Anthony Daniels has portrayed the character in all nine \"Star Wars\" cinematic films released to date, including \"\" and the animated \"\"; C-3PO and R2-D2 are the only characters to appear in every film.",
+      "The Horses | \"The Horses\" is a song written by Rickie Lee Jones and Walter Becker.  It originally appeared on Jones' 1989 album \"Flying Cowboys\".  While not released as a single, the original version did appear in the 1996 film \"Jerry Maguire\", and was also included on the film's soundtrack.",
+      "The Birthgrave | The Birthgrave is a 1975 fantasy/science fiction novel by British author Tanith Lee.  The novel was Lee\u2019s first published novel for adults, and also the first novel in The Birthgrave Trilogy.  Inspired by Lee\u2019s own personal dreams from her early twenties, the story follows a nameless protagonist through various towns on a journey to discover who she really is and what she is capable of.  \"The Birthgrave\" received mostly positive reviews and was nominated for the 1975 Nebula Award for best novel."
+    ],
+    "hop2_docs": [
+      "Spank! The Fifty Shades Parody | Spank!  The Fifty Shades Parody is an unauthorized musical satire of E.L. James' Fifty Shades of Grey created by Mills Entertainment.  The show is currently touring Canada, United States, and Australia.  The production was directed by Jim Millan and stars three different casts consisting of three actors per cast (see actors below).  The story follows an author, EBJ, as she writes a sex fantasy about a younger version of herself named Natasha Woode and a handsome billionaire, Hugh Hansen.",
+      "Grey: Fifty Shades of Grey as Told by Christian | Grey: Fifty Shades of Grey As Told by Christian, also referred to as Grey, is a 2015 erotic romance by British author E. L. James.  It is the fourth installment in the \"Fifty Shades\" series, which had its start as fanfiction.",
+      "Fifty Shades (novel series) | The \"Fifty Shades\" trilogy is a series of erotic novels by E. L. James.  The trilogy consists of \"Fifty Shades of Grey\" (2011), \"Fifty Shades Darker\" and \"Fifty Shades Freed\" (2012).  The trilogy traces the deepening relationship between a college graduate, Anastasia Steele, and a young business magnate, Christian Grey.",
+      "I Know You | \"I Know You\" is a song recorded by American recording artist and songwriter Skylar Grey for the soundtrack to the film \"Fifty Shades of Grey\" (2015).  The song was written by Grey and Canadian composer/producer Stephan Moccio and was co-produced by Moccio and Dan Heath.  It was released as the second promotional single from the \"Fifty Shades of Grey\" soundtrack on February 3, 2015.",
+      "Earned It | \"Earned It\", alternatively titled \"Earned It (Fifty Shades of Grey)\", is a song by Canadian singer The Weeknd.  The song was released as the lead single from the soundtrack to the 2015 film \"Fifty Shades of Grey\" and was included on The Weeknd's second studio album \"Beauty Behind the Madness\".",
+      "Fifty Shades Freed (film) | Fifty Shades Freed is an upcoming American erotic romantic drama film directed by James Foley and written by Niall Leonard, based on the novel of same name by E. L. James.  It is the final film in the \"Fifty Shades\" trilogy, and a sequel to \"Fifty Shades of Grey\" (2015) and \"Fifty Shades Darker\" (2017).  The film stars Dakota Johnson and Jamie Dornan as Anastasia Steele and Christian Grey, respectively.",
+      "Fifty Shades Darker | Fifty Shades Darker is a 2012 erotic romance novel by British author E. L. James.  It is the second instalment in the \"Fifty Shades\" trilogy that traces the deepening relationship between a college graduate, Anastasia Steele, and a young business magnate, Christian Grey.  The first and third volumes, \"Fifty Shades of Grey\" and \"Fifty Shades Freed\", were published in 2011 and 2012.  The novel is published by Vintage Books and reached No. 1 on the \"USA Today\" best seller list."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 44,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the original film in the Trilogy that included an appearance by author Robinne Lee in 2017?\nPassages: [\"Robinne Lee | Robinne Lee (born July 16, 1974) is an American actress and author ab.  She made her screen debut in the 1997 independent film \\\"Hav Plenty\\\", and later has appeared in films \\\"National Security\\\" (2003), \\\"Deliver Us from Eva\\\" (2003), \\\"Hitch\\\" (2005), \\\"Seven Pounds\\\" (2008), \\\"Fifty Shades Darker\\\" (2017), and the upcoming \\\"Fifty Shades Freed\\\".  Her first novel will be released by St Martin's Press in June 2017.\", \"Christopher Lee | Sir Christopher Frank Carandini Lee {'1': \\\", '2': \\\", '3': \\\", '4': \\\"} (27 May 1922 \\u2013 7 June 2015) was an English character actor, singer, and author.  With a career spanning nearly 70 years, Lee was well known for portraying villains and became best known for his role as Count Dracula in a sequence of Hammer Horror films.  His other film roles include Francisco Scaramanga in the James Bond film \\\"The Man with the Golden Gun\\\" (1974), Saruman in \\\"The Lord of the Rings\\\" film trilogy (2001\\u20132003) and \\\"The Hobbit\\\" film trilogy (2012\\u20132014), and Count Dooku in the second and third films of the \\\"Star Wars\\\" prequel trilogy (2002 & 2005).\", \"List of X-Men films cast members | The following is a list of cast members who have portrayed characters appearing in the \\\"X-Men\\\" film series, based upon the comic books of the same name.  Hugh Jackman appeared in the first seven films: he played James \\\"Logan\\\" Howlett / Wolverine in the original trilogy (\\\"X-Men\\\", \\\"X2 - X-Men United\\\", and \\\"\\\") and reprised his role in the prequel films \\\"\\\" and \\\"\\\", the latter in a cameo appearance.  He again starred in \\\"The Wolverine\\\" and \\\"\\\".  He appeared in photographic form in \\\"Deadpool\\\" and reprised his role as Wolverine in \\\"\\\" and one last stand-alone \\\"Wolverine\\\" film.  Patrick Stewart, Ian McKellen, Famke Janssen, Halle Berry, Anna Paquin, James Marsden and Shawn Ashmore have also appeared in the original trilogy and \\\"Days of Future Past\\\", with Stewart also making a cameo appearance in \\\"Origins: Wolverine\\\" and \\\"The Wolverine\\\", and Janssen and McKellen in \\\"The Wolverine\\\".  Rebecca Romijn also appeared in the original trilogy and made a cameo appearance in \\\"First Class\\\".\", \"Gabrielle Robinne | Gabrielle Anna Charlotte Robinne (1 July 1886 \\u2013 18 December 1980) was a French stage and film actress whose career spanned over sixty years.\", \"C-3PO | C-3PO ( ) or See-Threepio is a humanoid robot character from the \\\"Star Wars\\\" franchise who appears in the original trilogy, the prequel trilogy and the sequel trilogy.  Built by Anakin Skywalker, C-3PO was designed as a protocol droid intended to assist in etiquette, customs, and translation, boasting that he is \\\"fluent in over six million forms of communication\\\".  Along with his astromech droid counterpart and friend R2-D2, C-3PO provides comic relief within the narrative structure of the films, and serves as a foil.  Anthony Daniels has portrayed the character in all nine \\\"Star Wars\\\" cinematic films released to date, including \\\"\\\" and the animated \\\"\\\"; C-3PO and R2-D2 are the only characters to appear in every film.\", \"The Horses | \\\"The Horses\\\" is a song written by Rickie Lee Jones and Walter Becker.  It originally appeared on Jones' 1989 album \\\"Flying Cowboys\\\".  While not released as a single, the original version did appear in the 1996 film \\\"Jerry Maguire\\\", and was also included on the film's soundtrack.\", \"The Birthgrave | The Birthgrave is a 1975 fantasy/science fiction novel by British author Tanith Lee.  The novel was Lee\\u2019s first published novel for adults, and also the first novel in The Birthgrave Trilogy.  Inspired by Lee\\u2019s own personal dreams from her early twenties, the story follows a nameless protagonist through various towns on a journey to discover who she really is and what she is capable of.  \\\"The Birthgrave\\\" received mostly positive reviews and was nominated for the 1975 Nebula Award for best novel.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks information about the original film in a trilogy that includes an appearance by Robinne Lee in 2017. From passage [1], Robinne Lee appears in \"Fifty Shades Darker\" (2017) and is also mentioned in connection with the upcoming film \"Fifty Shades Freed,\" which suggests these films are part of a series or trilogy. Upon further examination, these films belong to the \"Fifty Shades\" Trilogy, which originated with the film \"Fifty Shades of Grey\" (2015), followed by \"Fifty Shades Darker\" (2017), and ending with \"Fifty Shades Freed\" (2018).\nSummary: The original film in the trilogy that included an appearance by Robinne Lee in 2017 is \"Fifty Shades of Grey.\""
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the original film in the Trilogy that included an appearance by author Robinne Lee in 2017?\nSummary 1: The original film in the trilogy that included an appearance by Robinne Lee in 2017 is \"Fifty Shades of Grey.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is asking for the original film in a trilogy where Robinne Lee made an appearance in one of its movies in 2017. From the given summary, it is confirmed that the original film in this trilogy is \"Fifty Shades of Grey.\" This information aligns with the known details about Robinne Lee's involvement in the \"Fifty Shades\" series, as she appeared in \"Fifty Shades Darker\" (2017), which is the second film in the trilogy.\nQuery: What is the release year, plot, and cast details of \"Fifty Shades of Grey\"?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the original film in the Trilogy that included an appearance by author Robinne Lee in 2017?\nContext: The original film in the trilogy that included an appearance by Robinne Lee in 2017 is \"Fifty Shades of Grey.\"\nPassages: [\"Spank! The Fifty Shades Parody | Spank!  The Fifty Shades Parody is an unauthorized musical satire of E.L. James' Fifty Shades of Grey created by Mills Entertainment.  The show is currently touring Canada, United States, and Australia.  The production was directed by Jim Millan and stars three different casts consisting of three actors per cast (see actors below).  The story follows an author, EBJ, as she writes a sex fantasy about a younger version of herself named Natasha Woode and a handsome billionaire, Hugh Hansen.\", \"Grey: Fifty Shades of Grey as Told by Christian | Grey: Fifty Shades of Grey As Told by Christian, also referred to as Grey, is a 2015 erotic romance by British author E. L. James.  It is the fourth installment in the \\\"Fifty Shades\\\" series, which had its start as fanfiction.\", \"Fifty Shades (novel series) | The \\\"Fifty Shades\\\" trilogy is a series of erotic novels by E. L. James.  The trilogy consists of \\\"Fifty Shades of Grey\\\" (2011), \\\"Fifty Shades Darker\\\" and \\\"Fifty Shades Freed\\\" (2012).  The trilogy traces the deepening relationship between a college graduate, Anastasia Steele, and a young business magnate, Christian Grey.\", \"I Know You | \\\"I Know You\\\" is a song recorded by American recording artist and songwriter Skylar Grey for the soundtrack to the film \\\"Fifty Shades of Grey\\\" (2015).  The song was written by Grey and Canadian composer/producer Stephan Moccio and was co-produced by Moccio and Dan Heath.  It was released as the second promotional single from the \\\"Fifty Shades of Grey\\\" soundtrack on February 3, 2015.\", \"Earned It | \\\"Earned It\\\", alternatively titled \\\"Earned It (Fifty Shades of Grey)\\\", is a song by Canadian singer The Weeknd.  The song was released as the lead single from the soundtrack to the 2015 film \\\"Fifty Shades of Grey\\\" and was included on The Weeknd's second studio album \\\"Beauty Behind the Madness\\\".\", \"Fifty Shades Freed (film) | Fifty Shades Freed is an upcoming American erotic romantic drama film directed by James Foley and written by Niall Leonard, based on the novel of same name by E. L. James.  It is the final film in the \\\"Fifty Shades\\\" trilogy, and a sequel to \\\"Fifty Shades of Grey\\\" (2015) and \\\"Fifty Shades Darker\\\" (2017).  The film stars Dakota Johnson and Jamie Dornan as Anastasia Steele and Christian Grey, respectively.\", \"Fifty Shades Darker | Fifty Shades Darker is a 2012 erotic romance novel by British author E. L. James.  It is the second instalment in the \\\"Fifty Shades\\\" trilogy that traces the deepening relationship between a college graduate, Anastasia Steele, and a young business magnate, Christian Grey.  The first and third volumes, \\\"Fifty Shades of Grey\\\" and \\\"Fifty Shades Freed\\\", were published in 2011 and 2012.  The novel is published by Vintage Books and reached No. 1 on the \\\"USA Today\\\" best seller list.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the original film in the trilogy that included an appearance by author Robinne Lee in 2017. The context directly identifies the original film as \"Fifty Shades of Grey.\" From the passages, it is clear that \"Fifty Shades of Grey\" is the first installment in the \"Fifty Shades\" trilogy, adapted from the novel by E. L. James, and later followed by \"Fifty Shades Darker\" and \"Fifty Shades Freed.\" Additionally, the passages provide supporting information related to the trilogy, including the films and their soundtracks, but reinforce the fact that \"Fifty Shades of Grey\" was the original film and basis of the series.\nSummary: The original film in the trilogy that included an appearance by Robinne Lee in 2017 is \"Fifty Shades of Grey.\""
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the original film in the Trilogy that included an appearance by author Robinne Lee in 2017?\nSummary 1: The original film in the trilogy that included an appearance by Robinne Lee in 2017 is \"Fifty Shades of Grey.\"\nSummary 2: The original film in the trilogy that included an appearance by Robinne Lee in 2017 is \"Fifty Shades of Grey.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the original film in the trilogy that included an appearance by Robinne Lee in 2017 is \"Fifty Shades of Grey.\" Robinne Lee appeared in the second film, \"Fifty Shades Darker,\" in 2017, which was a sequel to the original film. Therefore, the original film in the trilogy must be \"Fifty Shades of Grey,\" released in 2015. This reasoning aligns with both summaries provided.\nAnswer: Fifty Shades of Grey"
+      }
+    ]
+  }
+}

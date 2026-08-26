@@ -1,0 +1,96 @@
+{
+  "example_id": "5ae0f9ee554299422ee99593",
+  "question": "What year did the book come out that the film Dev Patel and Jeremy Irons starred in?",
+  "gold_answer": "1991",
+  "prediction": {
+    "answer": "1991",
+    "hop1_docs": [
+      "Devika Bhise | Devika Bhise is an American actress, best known for her performance in \"The Man Who Knew Infinity\", starring Dev Patel and Jeremy Irons.",
+      "Tristine Skyler | Tristine Skyler is an American writer and producer.  She wrote, with Scarlett Johansson, an adaptation of Truman Capote's novella \"Summer Crossing\" for the screen, as well as executive produced the film \"The Man Who Knew Infinity\" starring Dev Patel and Jeremy Irons.  She began her career as an actress, appearing in films, television, as well as in the theatre.  Born and raised in New York City, Skyler graduated cum laude from Princeton University.",
+      "Lion (2016 film) | Lion is a 2016 biographical film directed by Garth Davis (in his feature debut) and written by Luke Davies, based on the non-fiction book \"A Long Way Home\" by Saroo Brierley with Larry Buttrose.  The film stars Dev Patel, Rooney Mara, David Wenham and Nicole Kidman.",
+      "Lashkar (film) | Lashkar is a 1989 Bollywood film directed by Jagdish Kadar and starring Dev Anand, Aditya Pancholi, Sonam, Hemant Birje, Madhavi, Sumeet Saigal, Jaaved Jaffrey, Kiran Kumar and Sadashiv Amrapurkar.  The movie was a huge commssion earner at the box office and is believed to be one of the last commercial successes of Dev Anand.  This was the only film in the late 1980s that Dev Anand starred in that he did not produce or direct but acted in lead role and film was major box office success.  This film glorified his image of being evergreen hero as he played lead role at the age of 66 and managed to look like 35 year old.",
+      "Last Call (2002 film) | Last Call is a 2002 drama film written and directed by Henry Bromell about F. Scott Fitzgerald, based on the book by Frances Kroll Ring.  The film stars Jeremy Irons as Fitzgerald, Sissy Spacek as Zelda Fitzgerald, and Neve Campbell as Frances Kroll.",
+      "Red Sparrow | Red Sparrow is an upcoming American spy thriller film directed by Francis Lawrence, based on the book of the same name, written by Jason Matthews.  The film stars Jennifer Lawrence, Joel Edgerton, Matthias Schoenaerts, Charlotte Rampling, and Jeremy Irons.  It is scheduled to be released on March 2, 2018.",
+      "About Cherry | About Cherry is a 2012 drama film and the directorial debut of Stephen Elliott.  It is based on a script written by Elliott and porn industry veteran Lorelei Lee.  It stars Ashley Hinshaw, James Franco, Heather Graham, and Dev Patel.  The project was filmed in San Francisco and premi\u00e8red at the 2012 Berlin International Film Festival."
+    ],
+    "hop2_docs": [
+      "Devika Bhise | Devika Bhise is an American actress, best known for her performance in \"The Man Who Knew Infinity\", starring Dev Patel and Jeremy Irons.",
+      "Tristine Skyler | Tristine Skyler is an American writer and producer.  She wrote, with Scarlett Johansson, an adaptation of Truman Capote's novella \"Summer Crossing\" for the screen, as well as executive produced the film \"The Man Who Knew Infinity\" starring Dev Patel and Jeremy Irons.  She began her career as an actress, appearing in films, television, as well as in the theatre.  Born and raised in New York City, Skyler graduated cum laude from Princeton University.",
+      "The Man Who Knew Infinity (film) | The Man Who Knew Infinity is a 2015 British biographical drama film about the Indian mathematician Srinivasa Ramanujan, based on the 1991 book of the same name by Robert Kanigel.",
+      "The Man Who Knew Infinity | The Man Who Knew Infinity: A Life of the Genius Ramanujan is a biography of the Indian mathematician Srinivasa Ramanujan, written in 1991 by Robert Kanigel and published by Washington Square Press.  The book gives a detailed account of his upbringing in India, his mathematical achievements, and his mathematical collaboration with English mathematician G. H. Hardy.  The book also reviews the life of Hardy and the academic culture of Cambridge University during the early twentieth century.",
+      "The Man Who Knew Too Little | The Man Who Knew Too Little is a 1997 American-German spy comedy film starring Bill Murray, directed by Jon Amiel, and written by Robert Farrar and Howard Franklin.  The film is based on Farrar's novel \"Watch That Man\", and the title is a parody of Alfred Hitchcock's 1934 film \"The Man Who Knew Too Much\" and his 1956 remake of the same title.",
+      "Lion (2016 film) | Lion is a 2016 biographical film directed by Garth Davis (in his feature debut) and written by Luke Davies, based on the non-fiction book \"A Long Way Home\" by Saroo Brierley with Larry Buttrose.  The film stars Dev Patel, Rooney Mara, David Wenham and Nicole Kidman.",
+      "The Dream (1989 film) | The Dream is a 1989 television film starring Jeremy Irons.  It was adapted by Murray Watts from a short story by Fyodor Dostoyevsky called \"The Dream of a Ridiculous Man\".  Irons is the sole speaking cast member; he is a character simply known as The Man who performs a monologue."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 79,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What year did the book come out that the film Dev Patel and Jeremy Irons starred in?\nPassages: [\"Devika Bhise | Devika Bhise is an American actress, best known for her performance in \\\"The Man Who Knew Infinity\\\", starring Dev Patel and Jeremy Irons.\", \"Tristine Skyler | Tristine Skyler is an American writer and producer.  She wrote, with Scarlett Johansson, an adaptation of Truman Capote's novella \\\"Summer Crossing\\\" for the screen, as well as executive produced the film \\\"The Man Who Knew Infinity\\\" starring Dev Patel and Jeremy Irons.  She began her career as an actress, appearing in films, television, as well as in the theatre.  Born and raised in New York City, Skyler graduated cum laude from Princeton University.\", \"Lion (2016 film) | Lion is a 2016 biographical film directed by Garth Davis (in his feature debut) and written by Luke Davies, based on the non-fiction book \\\"A Long Way Home\\\" by Saroo Brierley with Larry Buttrose.  The film stars Dev Patel, Rooney Mara, David Wenham and Nicole Kidman.\", \"Lashkar (film) | Lashkar is a 1989 Bollywood film directed by Jagdish Kadar and starring Dev Anand, Aditya Pancholi, Sonam, Hemant Birje, Madhavi, Sumeet Saigal, Jaaved Jaffrey, Kiran Kumar and Sadashiv Amrapurkar.  The movie was a huge commssion earner at the box office and is believed to be one of the last commercial successes of Dev Anand.  This was the only film in the late 1980s that Dev Anand starred in that he did not produce or direct but acted in lead role and film was major box office success.  This film glorified his image of being evergreen hero as he played lead role at the age of 66 and managed to look like 35 year old.\", \"Last Call (2002 film) | Last Call is a 2002 drama film written and directed by Henry Bromell about F. Scott Fitzgerald, based on the book by Frances Kroll Ring.  The film stars Jeremy Irons as Fitzgerald, Sissy Spacek as Zelda Fitzgerald, and Neve Campbell as Frances Kroll.\", \"Red Sparrow | Red Sparrow is an upcoming American spy thriller film directed by Francis Lawrence, based on the book of the same name, written by Jason Matthews.  The film stars Jennifer Lawrence, Joel Edgerton, Matthias Schoenaerts, Charlotte Rampling, and Jeremy Irons.  It is scheduled to be released on March 2, 2018.\", \"About Cherry | About Cherry is a 2012 drama film and the directorial debut of Stephen Elliott.  It is based on a script written by Elliott and porn industry veteran Lorelei Lee.  It stars Ashley Hinshaw, James Franco, Heather Graham, and Dev Patel.  The project was filmed in San Francisco and premi\\u00e8red at the 2012 Berlin International Film Festival.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the year in which the book, related to the film starring Dev Patel and Jeremy Irons, was published. In the passages provided, we learn that \"The Man Who Knew Infinity\" is a film starring both Dev Patel and Jeremy Irons (see passages [1] and [2]). However, there is no explicit mention of the book's publication year in the passages, though the subject matter is a book-based film. External context is needed: \"The Man Who Knew Infinity\" is based on the book of the same title by Robert Kanigel, which was published in 1991.\nSummary: The book \"The Man Who Knew Infinity,\" on which the film starring Dev Patel and Jeremy Irons is based, was published in 1991."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What year did the book come out that the film Dev Patel and Jeremy Irons starred in?\nSummary 1: The book \"The Man Who Knew Infinity,\" on which the film starring Dev Patel and Jeremy Irons is based, was published in 1991."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the publication year of the book that the film starring Dev Patel and Jeremy Irons is based on. Based on the provided summary, the book titled \"The Man Who Knew Infinity\" was published in 1991. Therefore, the answer can be directly derived from this information.\nQuery: The book \"The Man Who Knew Infinity,\" on which the film starring Dev Patel and Jeremy Irons is based, was published in 1991."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What year did the book come out that the film Dev Patel and Jeremy Irons starred in?\nContext: The book \"The Man Who Knew Infinity,\" on which the film starring Dev Patel and Jeremy Irons is based, was published in 1991.\nPassages: [\"Devika Bhise | Devika Bhise is an American actress, best known for her performance in \\\"The Man Who Knew Infinity\\\", starring Dev Patel and Jeremy Irons.\", \"Tristine Skyler | Tristine Skyler is an American writer and producer.  She wrote, with Scarlett Johansson, an adaptation of Truman Capote's novella \\\"Summer Crossing\\\" for the screen, as well as executive produced the film \\\"The Man Who Knew Infinity\\\" starring Dev Patel and Jeremy Irons.  She began her career as an actress, appearing in films, television, as well as in the theatre.  Born and raised in New York City, Skyler graduated cum laude from Princeton University.\", \"The Man Who Knew Infinity (film) | The Man Who Knew Infinity is a 2015 British biographical drama film about the Indian mathematician Srinivasa Ramanujan, based on the 1991 book of the same name by Robert Kanigel.\", \"The Man Who Knew Infinity | The Man Who Knew Infinity: A Life of the Genius Ramanujan is a biography of the Indian mathematician Srinivasa Ramanujan, written in 1991 by Robert Kanigel and published by Washington Square Press.  The book gives a detailed account of his upbringing in India, his mathematical achievements, and his mathematical collaboration with English mathematician G. H. Hardy.  The book also reviews the life of Hardy and the academic culture of Cambridge University during the early twentieth century.\", \"The Man Who Knew Too Little | The Man Who Knew Too Little is a 1997 American-German spy comedy film starring Bill Murray, directed by Jon Amiel, and written by Robert Farrar and Howard Franklin.  The film is based on Farrar's novel \\\"Watch That Man\\\", and the title is a parody of Alfred Hitchcock's 1934 film \\\"The Man Who Knew Too Much\\\" and his 1956 remake of the same title.\", \"Lion (2016 film) | Lion is a 2016 biographical film directed by Garth Davis (in his feature debut) and written by Luke Davies, based on the non-fiction book \\\"A Long Way Home\\\" by Saroo Brierley with Larry Buttrose.  The film stars Dev Patel, Rooney Mara, David Wenham and Nicole Kidman.\", \"The Dream (1989 film) | The Dream is a 1989 television film starring Jeremy Irons.  It was adapted by Murray Watts from a short story by Fyodor Dostoyevsky called \\\"The Dream of a Ridiculous Man\\\".  Irons is the sole speaking cast member; he is a character simply known as The Man who performs a monologue.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the publication year of the book that the film \"The Man Who Knew Infinity,\" starring Dev Patel and Jeremy Irons, is based on. From the `context` provided, it is clear that the book was published in 1991. Additionally, passage [3] and passage [4] confirm this, explicitly stating that the book \"The Man Who Knew Infinity: A Life of the Genius Ramanujan\" was written in 1991 by Robert Kanigel and is the basis for the 2015 film.\nSummary: The book \"The Man Who Knew Infinity,\" on which the film starring Dev Patel and Jeremy Irons is based, was published in 1991."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What year did the book come out that the film Dev Patel and Jeremy Irons starred in?\nSummary 1: The book \"The Man Who Knew Infinity,\" on which the film starring Dev Patel and Jeremy Irons is based, was published in 1991.\nSummary 2: The book \"The Man Who Knew Infinity,\" on which the film starring Dev Patel and Jeremy Irons is based, was published in 1991."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on both summaries, the book \"The Man Who Knew Infinity,\" which served as the basis for the film featuring Dev Patel and Jeremy Irons, was published in the year 1991. Both summaries confirm the same year without any contradiction, ensuring accuracy.\nAnswer: 1991"
+      }
+    ]
+  }
+}

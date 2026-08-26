@@ -1,0 +1,96 @@
+{
+  "example_id": "5ae0bf2c55429906c02dab20",
+  "question": "Who is the mother of both an English television chef and food critic and an English actor who holds both British and Irish citizenship?",
+  "gold_answer": "Cecil Day-Lewis",
+  "prediction": {
+    "answer": "Jill Balcon is the mother of both Tamasin Day-Lewis and Daniel Day-Lewis.",
+    "hop1_docs": [
+      "Neil Dickson | Neil Dickson is an English actor, who has worked extensively in both American and British film and television.",
+      "Tamasin Day-Lewis | Lydia Tamasin Day-Lewis (born 17 September 1953) is an English television chef and food critic.  Day-Lewis is the daughter of the poet Cecil Day-Lewis and actress Jill Balcon and the sister of the actor Daniel Day-Lewis.",
+      "Martin Benson (actor) | Martin Benjamin Benson (10 August 1918\u00a0\u2013 28 February 2010) was an English character actor, who appeared in films, theatre and television.  He appeared in both British and Hollywood productions.",
+      "Daniel Day-Lewis | Sir Daniel Michael Blake Day-Lewis (born 29 April 1957) is an English actor who holds both British and Irish citizenship.  Born and raised in London, he excelled on stage at the National Youth Theatre, before being accepted at the Bristol Old Vic Theatre School, which he attended for three years.  Despite his traditional actor training at the Bristol Old Vic, he is considered to be a method actor, known for his constant devotion to and research of his roles.  He would often remain completely in character for the duration of the shooting schedules of his films, even to the point of adversely affecting his health.  He is one of the most selective actors in the film industry, having starred in only five films since 1998, with as many as five years between roles.  Protective of his private life, he rarely gives interviews and makes very few public appearances.",
+      "Elizabeth Falkner | Elizabeth Falkner (born in San Francisco) is a consulting chef working and living in New York who has been cooking since 1990.  She frequently appears as a competitor and sometimes a judge on many of the cooking competitions on television from \"The Next Iron Chef, Super Chefs\", 2011 and \"The Next Iron Chef, Redemption\", 2012, (both Food Network), as well as \"Chopped All Stars\", (Food Network), \"Top Chef Masters\", \"Top Chef\", \"\", (Bravo), \"Top Chef, Canada\", \"Food Network Challenge\", (Food Network) on.  Falkner was the executive/chef/pastry chef and managing partner of Citizen Cake for 14 years, and executive chef and co-owner/co-managing partner of Orson for 4 years, restaurants located in San Francisco, California, U.S..  Both establishments closed in 2011.  In 2012 Falkner won First Prize at the World Pizza Championships in Naples, Italy with her innovative \"Finocchio Flower Power\" pizza.  Falkner relocated to Brooklyn, NY in 2012 and was employed at Krescendo for seven months.",
+      "Robert De Niro | Robert Anthony De Niro ( ; born August 17, 1943) is an American actor, producer, and director who holds both American and Italian citizenship.",
+      "James Peck (artist) | James Peck (born 1968) is an artist and writer born in the Falkland Islands who holds both Argentine and British citizenship."
+    ],
+    "hop2_docs": [
+      "Jill Balcon | Jill Angela Henriette Balcon (3 January 192518 July 2009) was an English film and radio actress.  She made her film debut in \"Nicholas Nickleby\" (1947), though she was best known for her stage, television, and radio work.",
+      "Tamasin Day-Lewis | Lydia Tamasin Day-Lewis (born 17 September 1953) is an English television chef and food critic.  Day-Lewis is the daughter of the poet Cecil Day-Lewis and actress Jill Balcon and the sister of the actor Daniel Day-Lewis.",
+      "Balcones Fault (band) | Balcones Fault was a 1970s comedic Dixieland jazz band from Austin, Texas who took their name after the Balcones Fault zone in southwest-central Texas.  Balcones Fault appeared frequently at the Armadillo World Headquarters.  The band appeared on the first season of Austin City Limits in 1976 and produced one album on the Cream label, titled \"It's All Balcones Fault\" in 1977.  the album title was taken from a Dallas radio show script written by Peter Nye, who played trombone with the band in 1975.",
+      "Miranda Shearer | Miranda Rose Shearer (born 11 May 1982) is a British journalist and author.  She is the daughter of John Shearer, a former Oxford University graduate and BBC employee who worked for many years as Head of Broadcasting for the North before transferring to the South, and Tamasin Day-Lewis, documentary maker, former Telegraph columnist and author of a number of cookbooks.  Miranda is also the granddaughter of Poet Laureate C. Day-Lewis and actress Jill Balcon and the eldest niece of three-time Oscar-winning actor Daniel Day-Lewis.  She is a resident of Somerset.",
+      "Balcones Heights, Texas | Balcones Heights is a city in Bexar County, Texas, United States.  The population was 2,941 at the 2010 census.  Balcones Heights is considered by some locals to be a district of San Antonio, despite the fact that the community was incorporated in 1948 to avoid annexation into the city.  Balcones Heights is an enclave of San Antonio since San Antonio city limits now completely surround it.",
+      "Balcones Fault | The Balcones Fault or Balcones Fault Zone is a tensional structural system in the U.S. state of Texas that runs approximately from the southwest part of the state near Del Rio to the north central region near Dallas along Interstate 35.  The Balcones Fault zone is made up of many smaller features, including normal faults, grabens, and horsts.  One of the obvious features is the Mount Bonnell Fault.",
+      "Michael Balcon | Sir Michael Elias Balcon (19 May 1896 \u2013 17 October 1977) was an English film producer, known for his work with Ealing Studios.  Balcon had earlier worked for Gainsborough Pictures, Gaumont British and MGM-British."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 148,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who is the mother of both an English television chef and food critic and an English actor who holds both British and Irish citizenship?\nPassages: [\"Neil Dickson | Neil Dickson is an English actor, who has worked extensively in both American and British film and television.\", \"Tamasin Day-Lewis | Lydia Tamasin Day-Lewis (born 17 September 1953) is an English television chef and food critic.  Day-Lewis is the daughter of the poet Cecil Day-Lewis and actress Jill Balcon and the sister of the actor Daniel Day-Lewis.\", \"Martin Benson (actor) | Martin Benjamin Benson (10 August 1918\\u00a0\\u2013 28 February 2010) was an English character actor, who appeared in films, theatre and television.  He appeared in both British and Hollywood productions.\", \"Daniel Day-Lewis | Sir Daniel Michael Blake Day-Lewis (born 29 April 1957) is an English actor who holds both British and Irish citizenship.  Born and raised in London, he excelled on stage at the National Youth Theatre, before being accepted at the Bristol Old Vic Theatre School, which he attended for three years.  Despite his traditional actor training at the Bristol Old Vic, he is considered to be a method actor, known for his constant devotion to and research of his roles.  He would often remain completely in character for the duration of the shooting schedules of his films, even to the point of adversely affecting his health.  He is one of the most selective actors in the film industry, having starred in only five films since 1998, with as many as five years between roles.  Protective of his private life, he rarely gives interviews and makes very few public appearances.\", \"Elizabeth Falkner | Elizabeth Falkner (born in San Francisco) is a consulting chef working and living in New York who has been cooking since 1990.  She frequently appears as a competitor and sometimes a judge on many of the cooking competitions on television from \\\"The Next Iron Chef, Super Chefs\\\", 2011 and \\\"The Next Iron Chef, Redemption\\\", 2012, (both Food Network), as well as \\\"Chopped All Stars\\\", (Food Network), \\\"Top Chef Masters\\\", \\\"Top Chef\\\", \\\"\\\", (Bravo), \\\"Top Chef, Canada\\\", \\\"Food Network Challenge\\\", (Food Network) on.  Falkner was the executive/chef/pastry chef and managing partner of Citizen Cake for 14 years, and executive chef and co-owner/co-managing partner of Orson for 4 years, restaurants located in San Francisco, California, U.S..  Both establishments closed in 2011.  In 2012 Falkner won First Prize at the World Pizza Championships in Naples, Italy with her innovative \\\"Finocchio Flower Power\\\" pizza.  Falkner relocated to Brooklyn, NY in 2012 and was employed at Krescendo for seven months.\", \"Robert De Niro | Robert Anthony De Niro ( ; born August 17, 1943) is an American actor, producer, and director who holds both American and Italian citizenship.\", \"James Peck (artist) | James Peck (born 1968) is an artist and writer born in the Falkland Islands who holds both Argentine and British citizenship.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the mother of both an English television chef and food critic, and an English actor who holds British and Irish citizenship. From Passage [2], we learn that Tamasin Day-Lewis is an English television chef and food critic, and her mother is identified as actress Jill Balcon. Furthermore, Tamasin\u2019s brother is the actor Daniel Day-Lewis, as stated in the same passage. Passage [4] provides additional details about Daniel Day-Lewis, noting that he is an English actor who holds both British and Irish citizenship. Since the siblings share the same mother, the answer to the question is Jill Balcon.\nSummary: The mother of both an English television chef and food critic (Tamasin Day-Lewis) and an English actor who holds both British and Irish citizenship (Daniel Day-Lewis) is Jill Balcon."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who is the mother of both an English television chef and food critic and an English actor who holds both British and Irish citizenship?\nSummary 1: The mother of both an English television chef and food critic (Tamasin Day-Lewis) and an English actor who holds both British and Irish citizenship (Daniel Day-Lewis) is Jill Balcon."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the mother of two specific individuals: an English television chef and food critic, and an English actor with dual British and Irish citizenship. From the provided summary, Tamasin Day-Lewis is identified as the chef and food critic, while Daniel Day-Lewis is the actor. Their mother is Jill Balcon. This information directly answers the question about the shared mother.\nQuery: Who is Jill Balcon?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who is the mother of both an English television chef and food critic and an English actor who holds both British and Irish citizenship?\nContext: The mother of both an English television chef and food critic (Tamasin Day-Lewis) and an English actor who holds both British and Irish citizenship (Daniel Day-Lewis) is Jill Balcon.\nPassages: [\"Jill Balcon | Jill Angela Henriette Balcon (3 January 192518 July 2009) was an English film and radio actress.  She made her film debut in \\\"Nicholas Nickleby\\\" (1947), though she was best known for her stage, television, and radio work.\", \"Tamasin Day-Lewis | Lydia Tamasin Day-Lewis (born 17 September 1953) is an English television chef and food critic.  Day-Lewis is the daughter of the poet Cecil Day-Lewis and actress Jill Balcon and the sister of the actor Daniel Day-Lewis.\", \"Balcones Fault (band) | Balcones Fault was a 1970s comedic Dixieland jazz band from Austin, Texas who took their name after the Balcones Fault zone in southwest-central Texas.  Balcones Fault appeared frequently at the Armadillo World Headquarters.  The band appeared on the first season of Austin City Limits in 1976 and produced one album on the Cream label, titled \\\"It's All Balcones Fault\\\" in 1977.  the album title was taken from a Dallas radio show script written by Peter Nye, who played trombone with the band in 1975.\", \"Miranda Shearer | Miranda Rose Shearer (born 11 May 1982) is a British journalist and author.  She is the daughter of John Shearer, a former Oxford University graduate and BBC employee who worked for many years as Head of Broadcasting for the North before transferring to the South, and Tamasin Day-Lewis, documentary maker, former Telegraph columnist and author of a number of cookbooks.  Miranda is also the granddaughter of Poet Laureate C. Day-Lewis and actress Jill Balcon and the eldest niece of three-time Oscar-winning actor Daniel Day-Lewis.  She is a resident of Somerset.\", \"Balcones Heights, Texas | Balcones Heights is a city in Bexar County, Texas, United States.  The population was 2,941 at the 2010 census.  Balcones Heights is considered by some locals to be a district of San Antonio, despite the fact that the community was incorporated in 1948 to avoid annexation into the city.  Balcones Heights is an enclave of San Antonio since San Antonio city limits now completely surround it.\", \"Balcones Fault | The Balcones Fault or Balcones Fault Zone is a tensional structural system in the U.S. state of Texas that runs approximately from the southwest part of the state near Del Rio to the north central region near Dallas along Interstate 35.  The Balcones Fault zone is made up of many smaller features, including normal faults, grabens, and horsts.  One of the obvious features is the Mount Bonnell Fault.\", \"Michael Balcon | Sir Michael Elias Balcon (19 May 1896 \\u2013 17 October 1977) was an English film producer, known for his work with Ealing Studios.  Balcon had earlier worked for Gainsborough Pictures, Gaumont British and MGM-British.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the context provided, the mother of both Tamasin Day-Lewis, the English television chef and food critic, and Daniel Day-Lewis, the English actor who holds both British and Irish citizenship, is Jill Balcon. Supporting evidence for this involves several mentions in the passages: Passage [2] explicitly states that Tamasin Day-Lewis is the daughter of Jill Balcon and the sister of Daniel Day-Lewis. Passage [4] reinforces this by mentioning that Miranda Shearer, daughter of Tamasin Day-Lewis, is also the granddaughter of Jill Balcon. Jill Balcon is prominently known as an English actress, as highlighted in Passage [1].\nSummary: The mother of both English television chef and food critic Tamasin Day-Lewis and English actor Daniel Day-Lewis is Jill Balcon."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who is the mother of both an English television chef and food critic and an English actor who holds both British and Irish citizenship?\nSummary 1: The mother of both an English television chef and food critic (Tamasin Day-Lewis) and an English actor who holds both British and Irish citizenship (Daniel Day-Lewis) is Jill Balcon.\nSummary 2: The mother of both English television chef and food critic Tamasin Day-Lewis and English actor Daniel Day-Lewis is Jill Balcon."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries provide consistent information, naming Jill Balcon as the mother of Tamasin Day-Lewis, an English television chef and food critic, and Daniel Day-Lewis, an English actor who holds British and Irish citizenship. The connection is clearly established and factual in both summaries.\nAnswer: Jill Balcon is the mother of both Tamasin Day-Lewis and Daniel Day-Lewis."
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "example_id": "5a90493255429916514e7462",
+  "question": "What is the institution that sponsors the sports team for which which Paul Johnson, coach of the 2008 Georgia Tech Yellow Jackets?",
+  "gold_answer": "The United States Naval Academy",
+  "prediction": {
+    "answer": "The institution that sponsors the sports team for which Paul Johnson was the coach of the 2008 Georgia Tech Yellow Jackets is the Georgia Institute of Technology.",
+    "hop1_docs": [
+      "2008 Georgia Tech Yellow Jackets football team | The 2008 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology in the 2008 NCAA Division I FBS football season.  The team's coach is former Navy Midshipmen and Georgia Southern Eagles coach Paul Johnson.  Georgia Tech plays their home games at Bobby Dodd Stadium in Atlanta, Georgia.",
+      "2009 Georgia Tech Yellow Jackets football team | The 2009 Yellow Jackets football team represented the Georgia Institute of Technology in the 2009 NCAA Division I FBS football season.  The team was coached by second year head coach Paul Johnson.  Georgia Tech played their home games at Bobby Dodd Stadium at Grant Field in Atlanta.",
+      "2017 Georgia Tech Yellow Jackets football team | The 2017 Georgia Tech Yellow Jackets football team represents the Georgia Institute of Technology in the 2017 NCAA Division I FBS football season.  The Yellow Jackets are led by tenth-year head coach Paul Johnson and play their home games at Bobby Dodd Stadium.  They are a member of the Coastal Division in the Atlantic Coast Conference.",
+      "2014 Georgia Tech Yellow Jackets football team | The 2014 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology in the 2014 NCAA Division I FBS football season.  The Yellow Jackets were led by seventh-year head coach Paul Johnson and played their home games at Bobby Dodd Stadium.  They were a member of the Coastal Division of the Atlantic Coast Conference.",
+      "2016 Georgia Tech Yellow Jackets football team | The 2016 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology in the 2016 NCAA Division I FBS football season.  The Yellow Jackets were led by ninth-year head coach Paul Johnson and played their home games at Bobby Dodd Stadium.  They were a member of the Coastal Division in the Atlantic Coast Conference.",
+      "2015 Georgia Tech Yellow Jackets football team | The 2015 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology in the 2015 NCAA Division I FBS football season.  The Yellow Jackets were led by eighth-year head coach Paul Johnson and played their home games at Bobby Dodd Stadium.  They were a member of the Coastal Division in the Atlantic Coast Conference.  They finished the season 3\u20139, 1\u20137 in ACC play to finish in last place in the Coastal Division.",
+      "2010 Georgia Tech Yellow Jackets football team | The 2010 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology in the 2010 NCAA Division I FBS football season.  The Yellow Jackets were led by 3rd year head coach Paul Johnson and played their home games at Bobby Dodd Stadium.  They are members of the Atlantic Coast Conference in the Coastal Division.  They finished the season 6\u20137, 4\u20134 in ACC play.  They were invited to the Independence Bowl where they were defeated by Air Force 7\u201314."
+    ],
+    "hop2_docs": [
+      "List of Georgia Institute of Technology faculty | <onlyinclude> This list of Georgia Institute of Technology faculty current and former faculty, staff and presidents of the Georgia Institute of Technology. </onlyinclude>",
+      "List of Georgia Institute of Technology alumni | <onlyinclude> This list of Georgia Institute of Technology alumni includes graduates, non-graduate former students, and current students of Georgia Tech.  Notable administration, faculty, and staff are found on the list of Georgia Institute of Technology faculty.  Georgia Tech alumni are generally known as Yellow Jackets.  According to the Georgia Tech Alumni Association,",
+      "List of Georgia Institute of Technology athletes | Georgia Institute of Technology has graduated a number of athletes.  This includes graduates, non-graduate former students and current students of Georgia Tech who are notable for their achievements within athletics, sometimes before or after their time at Georgia Tech.  Other alumni can be found in the list of Georgia Institute of Technology alumni; notable administration, faculty, and staff can be found on the list of Georgia Institute of Technology faculty.  Intercollegiate sports teams at Georgia Tech are called \"Yellow Jackets\", and are run by the Georgia Tech Athletic Association.  The Athletic Association runs Georgia Tech's Hall of Fame, which has inducted many of Tech's greatest players throughout the program's history.",
+      "Institute of Paper Science and Technology | The Institute of Paper Science and Technology (IPST) is one of nine institutes of research at the Georgia Institute of Technology, under which relevant interdisciplinary research is organized.  Initially founded in 1929 as the Institute of Paper Chemistry in Appleton, Wisconsin, it moved to Georgia Tech's campus in 1989, and integrated its operations with Georgia Tech on July 1, 2003.",
+      "Georgia Tech Savannah | Georgia Tech Savannah is a satellite campus of the Atlanta-based Georgia Institute of Technology.  It is located in Savannah, Georgia, near Savannah/Hilton Head International Airport.  The campus is the institute's hub for professional and continuing education and is home to the regional offices of the Georgia Tech Enterprise Innovation Institute, the Savannah Advanced Technology Development Center, and the Georgia Logistics Innovation Center.",
+      "Georgia Institute of Technology College of Computing | Georgia Institute of Technology College of Computing",
+      "Georgia Institute of Technology College of Engineering | Georgia Institute of Technology College of Engineering"
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 51,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the institution that sponsors the sports team for which which Paul Johnson, coach of the 2008 Georgia Tech Yellow Jackets?\nPassages: [\"2008 Georgia Tech Yellow Jackets football team | The 2008 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology in the 2008 NCAA Division I FBS football season.  The team's coach is former Navy Midshipmen and Georgia Southern Eagles coach Paul Johnson.  Georgia Tech plays their home games at Bobby Dodd Stadium in Atlanta, Georgia.\", \"2009 Georgia Tech Yellow Jackets football team | The 2009 Yellow Jackets football team represented the Georgia Institute of Technology in the 2009 NCAA Division I FBS football season.  The team was coached by second year head coach Paul Johnson.  Georgia Tech played their home games at Bobby Dodd Stadium at Grant Field in Atlanta.\", \"2017 Georgia Tech Yellow Jackets football team | The 2017 Georgia Tech Yellow Jackets football team represents the Georgia Institute of Technology in the 2017 NCAA Division I FBS football season.  The Yellow Jackets are led by tenth-year head coach Paul Johnson and play their home games at Bobby Dodd Stadium.  They are a member of the Coastal Division in the Atlantic Coast Conference.\", \"2014 Georgia Tech Yellow Jackets football team | The 2014 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology in the 2014 NCAA Division I FBS football season.  The Yellow Jackets were led by seventh-year head coach Paul Johnson and played their home games at Bobby Dodd Stadium.  They were a member of the Coastal Division of the Atlantic Coast Conference.\", \"2016 Georgia Tech Yellow Jackets football team | The 2016 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology in the 2016 NCAA Division I FBS football season.  The Yellow Jackets were led by ninth-year head coach Paul Johnson and played their home games at Bobby Dodd Stadium.  They were a member of the Coastal Division in the Atlantic Coast Conference.\", \"2015 Georgia Tech Yellow Jackets football team | The 2015 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology in the 2015 NCAA Division I FBS football season.  The Yellow Jackets were led by eighth-year head coach Paul Johnson and played their home games at Bobby Dodd Stadium.  They were a member of the Coastal Division in the Atlantic Coast Conference.  They finished the season 3\\u20139, 1\\u20137 in ACC play to finish in last place in the Coastal Division.\", \"2010 Georgia Tech Yellow Jackets football team | The 2010 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology in the 2010 NCAA Division I FBS football season.  The Yellow Jackets were led by 3rd year head coach Paul Johnson and played their home games at Bobby Dodd Stadium.  They are members of the Atlantic Coast Conference in the Coastal Division.  They finished the season 6\\u20137, 4\\u20134 in ACC play.  They were invited to the Independence Bowl where they were defeated by Air Force 7\\u201314.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the institution that sponsors the sports team coached by Paul Johnson during the 2008 season of the Georgia Tech Yellow Jackets. The relevant passage for this is passage [1], which specifies that the 2008 Georgia Tech Yellow Jackets football team represents the Georgia Institute of Technology in the 2008 NCAA Division I FBS football season. It also states that Paul Johnson is the team's coach, confirming that the sports team he coached that year was sponsored by the Georgia Institute of Technology.\nSummary: The institution that sponsors the sports team for which Paul Johnson was the coach of the 2008 Georgia Tech Yellow Jackets is the Georgia Institute of Technology."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the institution that sponsors the sports team for which which Paul Johnson, coach of the 2008 Georgia Tech Yellow Jackets?\nSummary 1: The institution that sponsors the sports team for which Paul Johnson was the coach of the 2008 Georgia Tech Yellow Jackets is the Georgia Institute of Technology."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to identify the institution associated with a specific sports team, led by Paul Johnson during a particular year. The provided summary directly states that the institution sponsoring the team (the 2008 Georgia Tech Yellow Jackets) is the Georgia Institute of Technology. Therefore, we can conclude that the answer to the query is \"Georgia Institute of Technology,\" as reiterated in the summary.\nQuery: Georgia Institute of Technology"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the institution that sponsors the sports team for which which Paul Johnson, coach of the 2008 Georgia Tech Yellow Jackets?\nContext: The institution that sponsors the sports team for which Paul Johnson was the coach of the 2008 Georgia Tech Yellow Jackets is the Georgia Institute of Technology.\nPassages: [\"List of Georgia Institute of Technology faculty | <onlyinclude> This list of Georgia Institute of Technology faculty current and former faculty, staff and presidents of the Georgia Institute of Technology. </onlyinclude>\", \"List of Georgia Institute of Technology alumni | <onlyinclude> This list of Georgia Institute of Technology alumni includes graduates, non-graduate former students, and current students of Georgia Tech.  Notable administration, faculty, and staff are found on the list of Georgia Institute of Technology faculty.  Georgia Tech alumni are generally known as Yellow Jackets.  According to the Georgia Tech Alumni Association,\", \"List of Georgia Institute of Technology athletes | Georgia Institute of Technology has graduated a number of athletes.  This includes graduates, non-graduate former students and current students of Georgia Tech who are notable for their achievements within athletics, sometimes before or after their time at Georgia Tech.  Other alumni can be found in the list of Georgia Institute of Technology alumni; notable administration, faculty, and staff can be found on the list of Georgia Institute of Technology faculty.  Intercollegiate sports teams at Georgia Tech are called \\\"Yellow Jackets\\\", and are run by the Georgia Tech Athletic Association.  The Athletic Association runs Georgia Tech's Hall of Fame, which has inducted many of Tech's greatest players throughout the program's history.\", \"Institute of Paper Science and Technology | The Institute of Paper Science and Technology (IPST) is one of nine institutes of research at the Georgia Institute of Technology, under which relevant interdisciplinary research is organized.  Initially founded in 1929 as the Institute of Paper Chemistry in Appleton, Wisconsin, it moved to Georgia Tech's campus in 1989, and integrated its operations with Georgia Tech on July 1, 2003.\", \"Georgia Tech Savannah | Georgia Tech Savannah is a satellite campus of the Atlanta-based Georgia Institute of Technology.  It is located in Savannah, Georgia, near Savannah/Hilton Head International Airport.  The campus is the institute's hub for professional and continuing education and is home to the regional offices of the Georgia Tech Enterprise Innovation Institute, the Savannah Advanced Technology Development Center, and the Georgia Logistics Innovation Center.\", \"Georgia Institute of Technology College of Computing | Georgia Institute of Technology College of Computing\", \"Georgia Institute of Technology College of Engineering | Georgia Institute of Technology College of Engineering\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The context directly states that the institution sponsoring the sports team for which Paul Johnson was the coach of the 2008 Georgia Tech Yellow Jackets is the Georgia Institute of Technology. The passages further reinforce this information, particularly passage [3], which specifies that the intercollegiate sports teams at Georgia Tech are called \"Yellow Jackets\" and are operated by the Georgia Tech Athletic Association.\nSummary: The institution that sponsors the sports team for which Paul Johnson, coach of the 2008 Georgia Tech Yellow Jackets, is the Georgia Institute of Technology."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the institution that sponsors the sports team for which which Paul Johnson, coach of the 2008 Georgia Tech Yellow Jackets?\nSummary 1: The institution that sponsors the sports team for which Paul Johnson was the coach of the 2008 Georgia Tech Yellow Jackets is the Georgia Institute of Technology.\nSummary 2: The institution that sponsors the sports team for which Paul Johnson, coach of the 2008 Georgia Tech Yellow Jackets, is the Georgia Institute of Technology."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries clearly state that the institution sponsoring the sports team that Paul Johnson coached in 2008, the Georgia Tech Yellow Jackets, is the Georgia Institute of Technology. There is no contradiction or ambiguity between the summaries.\nAnswer: The institution that sponsors the sports team for which Paul Johnson was the coach of the 2008 Georgia Tech Yellow Jackets is the Georgia Institute of Technology."
+      }
+    ]
+  }
+}

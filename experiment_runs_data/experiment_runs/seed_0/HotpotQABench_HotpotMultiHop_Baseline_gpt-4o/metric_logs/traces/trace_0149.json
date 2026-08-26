@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab86f2355429934fafe6db5",
+  "question": "Are Lisa Cholodenko and Tian Zhuangzhuang both film directors?",
+  "gold_answer": "yes",
+  "prediction": {
+    "answer": "Yes, Lisa Cholodenko and Tian Zhuangzhuang are both film directors.",
+    "hop1_docs": [
+      "Tian Zhuangzhuang | Tian Zhuangzhuang (, ] ; born April 1952 in Beijing, China) is a Chinese film director and producer.",
+      "Lisa Cholodenko | Lisa Cholodenko (born June 5, 1964) is an American screenwriter and director of film and television.  She has made the films \"High Art\", \"Laurel Canyon\" and \"The Kids Are All Right.\"",
+      "September (1984 film) | September is a 1984 Chinese film directed by the fifth generation filmmaker Tian Zhuangzhuang.  Though not his first film as director, \"September\" is considered Tian's first major feature.  The film is also known by the title \"In September\".",
+      "The Horse Thief | The Horse Thief is a 1986 Chinese film by director, Tian Zhuangzhuang.  It follows one of Tian's favorite topics, Chinese minorities, a topic he touched upon in 1984's \"On the Hunting Ground\" and would return to in 2004's documentary, \"Delamu\".  Like these other films, \"The Horse Thief\" shows Tian's fascination with China's ethnic minorities, and in particular the Buddhist ceremonies that these peoples practice.",
+      "Hu Mei | Hu Mei (born 2 September 1958) is a Chinese film director, television director and producer.  Usually classed as a Fifth Generation director, since she graduated from the Directors' class of the 1982 Beijing Film Academy cohort, she is a classmate of famous Fifth Generation directors such as Chen Kaige and Tian Zhuangzhuang.",
+      "Zhang Jianya | Zhang Jianya (, ] ) (born 1951) is a Chinese film director.  As a graduate of the 1982 class of the Beijing Film Academy, Zhang is a founding member of the so-called Fifth Generation, a group that also includes in its numbers directors such as Zhang Yimou, Chen Kaige, and Tian Zhuangzhuang.",
+      "Springtime in a Small Town | Springtime in a Small Town () is a 2002 Chinese film directed by Tian Zhuangzhuang.  The film is a remake of director Fei Mu's 1948 film, \"Spring in a Small Town\".  Though the two movies are referred to by different English titles, they share the same title in Chinese."
+    ],
+    "hop2_docs": [
+      "Tian Zhuangzhuang | Tian Zhuangzhuang (, ] ; born April 1952 in Beijing, China) is a Chinese film director and producer.",
+      "Lisa Cholodenko | Lisa Cholodenko (born June 5, 1964) is an American screenwriter and director of film and television.  She has made the films \"High Art\", \"Laurel Canyon\" and \"The Kids Are All Right.\"",
+      "September (1984 film) | September is a 1984 Chinese film directed by the fifth generation filmmaker Tian Zhuangzhuang.  Though not his first film as director, \"September\" is considered Tian's first major feature.  The film is also known by the title \"In September\".",
+      "Hu Mei | Hu Mei (born 2 September 1958) is a Chinese film director, television director and producer.  Usually classed as a Fifth Generation director, since she graduated from the Directors' class of the 1982 Beijing Film Academy cohort, she is a classmate of famous Fifth Generation directors such as Chen Kaige and Tian Zhuangzhuang.",
+      "Zhang Jianya | Zhang Jianya (, ] ) (born 1951) is a Chinese film director.  As a graduate of the 1982 class of the Beijing Film Academy, Zhang is a founding member of the so-called Fifth Generation, a group that also includes in its numbers directors such as Zhang Yimou, Chen Kaige, and Tian Zhuangzhuang.",
+      "The Horse Thief | The Horse Thief is a 1986 Chinese film by director, Tian Zhuangzhuang.  It follows one of Tian's favorite topics, Chinese minorities, a topic he touched upon in 1984's \"On the Hunting Ground\" and would return to in 2004's documentary, \"Delamu\".  Like these other films, \"The Horse Thief\" shows Tian's fascination with China's ethnic minorities, and in particular the Buddhist ceremonies that these peoples practice.",
+      "Springtime in a Small Town | Springtime in a Small Town () is a 2002 Chinese film directed by Tian Zhuangzhuang.  The film is a remake of director Fei Mu's 1948 film, \"Spring in a Small Town\".  Though the two movies are referred to by different English titles, they share the same title in Chinese."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 149,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are Lisa Cholodenko and Tian Zhuangzhuang both film directors?\nPassages: [\"Tian Zhuangzhuang | Tian Zhuangzhuang (, ] ; born April 1952 in Beijing, China) is a Chinese film director and producer.\", \"Lisa Cholodenko | Lisa Cholodenko (born June 5, 1964) is an American screenwriter and director of film and television.  She has made the films \\\"High Art\\\", \\\"Laurel Canyon\\\" and \\\"The Kids Are All Right.\\\"\", \"September (1984 film) | September is a 1984 Chinese film directed by the fifth generation filmmaker Tian Zhuangzhuang.  Though not his first film as director, \\\"September\\\" is considered Tian's first major feature.  The film is also known by the title \\\"In September\\\".\", \"The Horse Thief | The Horse Thief is a 1986 Chinese film by director, Tian Zhuangzhuang.  It follows one of Tian's favorite topics, Chinese minorities, a topic he touched upon in 1984's \\\"On the Hunting Ground\\\" and would return to in 2004's documentary, \\\"Delamu\\\".  Like these other films, \\\"The Horse Thief\\\" shows Tian's fascination with China's ethnic minorities, and in particular the Buddhist ceremonies that these peoples practice.\", \"Hu Mei | Hu Mei (born 2 September 1958) is a Chinese film director, television director and producer.  Usually classed as a Fifth Generation director, since she graduated from the Directors' class of the 1982 Beijing Film Academy cohort, she is a classmate of famous Fifth Generation directors such as Chen Kaige and Tian Zhuangzhuang.\", \"Zhang Jianya | Zhang Jianya (, ] ) (born 1951) is a Chinese film director.  As a graduate of the 1982 class of the Beijing Film Academy, Zhang is a founding member of the so-called Fifth Generation, a group that also includes in its numbers directors such as Zhang Yimou, Chen Kaige, and Tian Zhuangzhuang.\", \"Springtime in a Small Town | Springtime in a Small Town () is a 2002 Chinese film directed by Tian Zhuangzhuang.  The film is a remake of director Fei Mu's 1948 film, \\\"Spring in a Small Town\\\".  Though the two movies are referred to by different English titles, they share the same title in Chinese.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the passages, Lisa Cholodenko is identified as an American screenwriter and director of film and television, with works including \"High Art,\" \"Laurel Canyon,\" and \"The Kids Are All Right\" (passage 2). Tian Zhuangzhuang is described as a Chinese film director and producer, with several films to his credit, such as \"September,\" \"The Horse Thief,\" and \"Springtime in a Small Town\" (passages 1, 3, 4, and 7). Both individuals are clearly referenced as film directors in the given information.\nSummary: Yes, both Lisa Cholodenko and Tian Zhuangzhuang are film directors."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are Lisa Cholodenko and Tian Zhuangzhuang both film directors?\nSummary 1: Yes, both Lisa Cholodenko and Tian Zhuangzhuang are film directors."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks confirmation on whether Lisa Cholodenko and Tian Zhuangzhuang both share the profession of film directing. The summary confirms that this is the case. To corroborate this information, a query can be issued to gather explicit evidence validating their roles as film directors.\nQuery: \"Lisa Cholodenko film director biography\" and \"Tian Zhuangzhuang film director biography\""
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are Lisa Cholodenko and Tian Zhuangzhuang both film directors?\nContext: Yes, both Lisa Cholodenko and Tian Zhuangzhuang are film directors.\nPassages: [\"Tian Zhuangzhuang | Tian Zhuangzhuang (, ] ; born April 1952 in Beijing, China) is a Chinese film director and producer.\", \"Lisa Cholodenko | Lisa Cholodenko (born June 5, 1964) is an American screenwriter and director of film and television.  She has made the films \\\"High Art\\\", \\\"Laurel Canyon\\\" and \\\"The Kids Are All Right.\\\"\", \"September (1984 film) | September is a 1984 Chinese film directed by the fifth generation filmmaker Tian Zhuangzhuang.  Though not his first film as director, \\\"September\\\" is considered Tian's first major feature.  The film is also known by the title \\\"In September\\\".\", \"Hu Mei | Hu Mei (born 2 September 1958) is a Chinese film director, television director and producer.  Usually classed as a Fifth Generation director, since she graduated from the Directors' class of the 1982 Beijing Film Academy cohort, she is a classmate of famous Fifth Generation directors such as Chen Kaige and Tian Zhuangzhuang.\", \"Zhang Jianya | Zhang Jianya (, ] ) (born 1951) is a Chinese film director.  As a graduate of the 1982 class of the Beijing Film Academy, Zhang is a founding member of the so-called Fifth Generation, a group that also includes in its numbers directors such as Zhang Yimou, Chen Kaige, and Tian Zhuangzhuang.\", \"The Horse Thief | The Horse Thief is a 1986 Chinese film by director, Tian Zhuangzhuang.  It follows one of Tian's favorite topics, Chinese minorities, a topic he touched upon in 1984's \\\"On the Hunting Ground\\\" and would return to in 2004's documentary, \\\"Delamu\\\".  Like these other films, \\\"The Horse Thief\\\" shows Tian's fascination with China's ethnic minorities, and in particular the Buddhist ceremonies that these peoples practice.\", \"Springtime in a Small Town | Springtime in a Small Town () is a 2002 Chinese film directed by Tian Zhuangzhuang.  The film is a remake of director Fei Mu's 1948 film, \\\"Spring in a Small Town\\\".  Though the two movies are referred to by different English titles, they share the same title in Chinese.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The context clearly states that both Lisa Cholodenko and Tian Zhuangzhuang are film directors. Supporting evidence is found in passages:  \n- [1], which mentions Tian Zhuangzhuang as a Chinese film director and producer, known for significant contributions to film, including several of his works highlighted later.  \n- [2], which identifies Lisa Cholodenko as an American screenwriter and director of film and television. Specifically, her noted works include \"High Art,\" \"Laurel Canyon,\" and \"The Kids Are All Right.\"  \nThe information from the passages corroborates the context, confirming that both individuals are indeed film directors.\nSummary: Yes, Lisa Cholodenko and Tian Zhuangzhuang are both film directors."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Are Lisa Cholodenko and Tian Zhuangzhuang both film directors?\nSummary 1: Yes, both Lisa Cholodenko and Tian Zhuangzhuang are film directors.\nSummary 2: Yes, Lisa Cholodenko and Tian Zhuangzhuang are both film directors."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries confirm that Lisa Cholodenko and Tian Zhuangzhuang are film directors. There is no conflicting information or ambiguity in either summary, and this aligns with known facts about their professional careers.\nAnswer: Yes, Lisa Cholodenko and Tian Zhuangzhuang are both film directors."
+      }
+    ]
+  }
+}

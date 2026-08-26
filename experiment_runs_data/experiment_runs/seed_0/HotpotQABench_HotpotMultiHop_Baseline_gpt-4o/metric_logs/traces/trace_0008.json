@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab665d055429954757d3282",
+  "question": "Grand Anglo-Fran\u00e7ais Tricolore and and Kai Ken are breeds of what animal?",
+  "gold_answer": "Dog",
+  "prediction": {
+    "answer": "Dogs",
+    "hop1_docs": [
+      "Grand Anglo-Fran\u00e7ais Tricolore | The Grand Anglo-Francais Tricolore is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) Foxhounds.",
+      "Grand Anglo-Fran\u00e7ais Blanc et Noir | The Grand Anglo-Fran\u00e7ais Blanc et Noir (FCI No.323) translated into English as the Great Anglo-French White and Black Hound, is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) Foxhounds.",
+      "Grand Anglo-Fran\u00e7ais Blanc et Orange | The Grand Anglo-Fran\u00e7ais Blanc et Orange (FCI No.324) translated into English as the Great Anglo-French White and Orange Hound, is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) foxhounds.",
+      "Chien Fran\u00e7ais Tricolore | The Chien Fran\u00e7ais Tricolore (FCI No.219) translated into English as the French Tricolour Hound, is a breed of dog of the scenthound type, originating in France.  The breed is used for hunting in packs.",
+      "Anglo-Fran\u00e7ais and Fran\u00e7ais (hound) | Anglo-Fran\u00e7ais and Fran\u00e7ais hounds are a general type of hunting dogs that include ancient French hounds and breeds created by mixing the French dogs with English (Anglo) Foxhounds.  There are seven dog breeds that are described as Anglo-Fran\u00e7ais and Fran\u00e7ais hounds.",
+      "Anglo-Fran\u00e7ais de Petite V\u00e9nerie | The Anglo-Fran\u00e7ais de Petite V\u00e9nerie is a medium-sized breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) foxhounds.  The name \"Petite V\u00e9nerie\" does not mean that dogs of the breed are \"petite\" or small, but rather that it is used to hunt small game.",
+      "Kai Ken | The Kai Ken (\u7532\u6590\u72ac , also called the Tora Inu or Tiger Dog) is a breed of dog that hails from Japan where it is a natural monument and has been bred for centuries.  It is a rare dog even in its native land and is one of the six native Japanese dog breeds protected by the Nihon Ken Hozonkai."
+    ],
+    "hop2_docs": [
+      "Grand Anglo-Fran\u00e7ais Tricolore | The Grand Anglo-Francais Tricolore is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) Foxhounds.",
+      "Chien Fran\u00e7ais Tricolore | The Chien Fran\u00e7ais Tricolore (FCI No.219) translated into English as the French Tricolour Hound, is a breed of dog of the scenthound type, originating in France.  The breed is used for hunting in packs.",
+      "Anglo-Fran\u00e7ais and Fran\u00e7ais (hound) | Anglo-Fran\u00e7ais and Fran\u00e7ais hounds are a general type of hunting dogs that include ancient French hounds and breeds created by mixing the French dogs with English (Anglo) Foxhounds.  There are seven dog breeds that are described as Anglo-Fran\u00e7ais and Fran\u00e7ais hounds.",
+      "Grand Anglo-Fran\u00e7ais Blanc et Noir | The Grand Anglo-Fran\u00e7ais Blanc et Noir (FCI No.323) translated into English as the Great Anglo-French White and Black Hound, is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) Foxhounds.",
+      "Grand Anglo-Fran\u00e7ais Blanc et Orange | The Grand Anglo-Fran\u00e7ais Blanc et Orange (FCI No.324) translated into English as the Great Anglo-French White and Orange Hound, is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) foxhounds.",
+      "Ryukyu Inu | The Ryukyu Ken (\u7409\u7403\u72ac lit.  Ryuukyuu Dog) is a medium-sized breed of dog that originates from Okinawa, Japan.  It is Okinawa's only pedigree dog breed.  It is a rare dog and is slowly declining in numbers.  There were as few as 400 Ryukyu Inu as of 2015.  Unlike dogs such as the Kai Ken, the Ryukyu is not protected by the Nihon Ken Hozonkai.",
+      "Anglo-Fran\u00e7ais de Petite V\u00e9nerie | The Anglo-Fran\u00e7ais de Petite V\u00e9nerie is a medium-sized breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) foxhounds.  The name \"Petite V\u00e9nerie\" does not mean that dogs of the breed are \"petite\" or small, but rather that it is used to hunt small game."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 8,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Grand Anglo-Fran\u00e7ais Tricolore and and Kai Ken are breeds of what animal?\nPassages: [\"Grand Anglo-Fran\\u00e7ais Tricolore | The Grand Anglo-Francais Tricolore is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) Foxhounds.\", \"Grand Anglo-Fran\\u00e7ais Blanc et Noir | The Grand Anglo-Fran\\u00e7ais Blanc et Noir (FCI No.323) translated into English as the Great Anglo-French White and Black Hound, is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) Foxhounds.\", \"Grand Anglo-Fran\\u00e7ais Blanc et Orange | The Grand Anglo-Fran\\u00e7ais Blanc et Orange (FCI No.324) translated into English as the Great Anglo-French White and Orange Hound, is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) foxhounds.\", \"Chien Fran\\u00e7ais Tricolore | The Chien Fran\\u00e7ais Tricolore (FCI No.219) translated into English as the French Tricolour Hound, is a breed of dog of the scenthound type, originating in France.  The breed is used for hunting in packs.\", \"Anglo-Fran\\u00e7ais and Fran\\u00e7ais (hound) | Anglo-Fran\\u00e7ais and Fran\\u00e7ais hounds are a general type of hunting dogs that include ancient French hounds and breeds created by mixing the French dogs with English (Anglo) Foxhounds.  There are seven dog breeds that are described as Anglo-Fran\\u00e7ais and Fran\\u00e7ais hounds.\", \"Anglo-Fran\\u00e7ais de Petite V\\u00e9nerie | The Anglo-Fran\\u00e7ais de Petite V\\u00e9nerie is a medium-sized breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) foxhounds.  The name \\\"Petite V\\u00e9nerie\\\" does not mean that dogs of the breed are \\\"petite\\\" or small, but rather that it is used to hunt small game.\", \"Kai Ken | The Kai Ken (\\u7532\\u6590\\u72ac , also called the Tora Inu or Tiger Dog) is a breed of dog that hails from Japan where it is a natural monument and has been bred for centuries.  It is a rare dog even in its native land and is one of the six native Japanese dog breeds protected by the Nihon Ken Hozonkai.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the passages provided, the Grand Anglo-Fran\u00e7ais Tricolore and the Kai Ken are identified as breeds of dogs. The Grand Anglo-Fran\u00e7ais Tricolore is a breed of hunting dog, specifically a scenthound, that is part of the Anglo-French hound breeds originating in Europe. In contrast, the Kai Ken, also known as the Tora Inu or Tiger Dog, is a native Japanese dog breed known for its rarity and historical significance in Japan. Both breeds are explicitly described as dogs in their respective passages.\nSummary: The Grand Anglo-Fran\u00e7ais Tricolore and Kai Ken are breeds of dogs."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Grand Anglo-Fran\u00e7ais Tricolore and and Kai Ken are breeds of what animal?\nSummary 1: The Grand Anglo-Fran\u00e7ais Tricolore and Kai Ken are breeds of dogs."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The Grand Anglo-Fran\u00e7ais Tricolore and Kai Ken are identified as specific breeds of dogs. By referencing their breed classification under dogs, it confirms that both are recognized within canine categories.\nQuery: What are the origins and characteristics of the Grand Anglo-Fran\u00e7ais Tricolore and Kai Ken dog breeds?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Grand Anglo-Fran\u00e7ais Tricolore and and Kai Ken are breeds of what animal?\nContext: The Grand Anglo-Fran\u00e7ais Tricolore and Kai Ken are breeds of dogs.\nPassages: [\"Grand Anglo-Fran\\u00e7ais Tricolore | The Grand Anglo-Francais Tricolore is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) Foxhounds.\", \"Chien Fran\\u00e7ais Tricolore | The Chien Fran\\u00e7ais Tricolore (FCI No.219) translated into English as the French Tricolour Hound, is a breed of dog of the scenthound type, originating in France.  The breed is used for hunting in packs.\", \"Anglo-Fran\\u00e7ais and Fran\\u00e7ais (hound) | Anglo-Fran\\u00e7ais and Fran\\u00e7ais hounds are a general type of hunting dogs that include ancient French hounds and breeds created by mixing the French dogs with English (Anglo) Foxhounds.  There are seven dog breeds that are described as Anglo-Fran\\u00e7ais and Fran\\u00e7ais hounds.\", \"Grand Anglo-Fran\\u00e7ais Blanc et Noir | The Grand Anglo-Fran\\u00e7ais Blanc et Noir (FCI No.323) translated into English as the Great Anglo-French White and Black Hound, is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) Foxhounds.\", \"Grand Anglo-Fran\\u00e7ais Blanc et Orange | The Grand Anglo-Fran\\u00e7ais Blanc et Orange (FCI No.324) translated into English as the Great Anglo-French White and Orange Hound, is a breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) foxhounds.\", \"Ryukyu Inu | The Ryukyu Ken (\\u7409\\u7403\\u72ac lit.  Ryuukyuu Dog) is a medium-sized breed of dog that originates from Okinawa, Japan.  It is Okinawa's only pedigree dog breed.  It is a rare dog and is slowly declining in numbers.  There were as few as 400 Ryukyu Inu as of 2015.  Unlike dogs such as the Kai Ken, the Ryukyu is not protected by the Nihon Ken Hozonkai.\", \"Anglo-Fran\\u00e7ais de Petite V\\u00e9nerie | The Anglo-Fran\\u00e7ais de Petite V\\u00e9nerie is a medium-sized breed of dog used in hunting as a scenthound, usually in packs.  It is one of the Anglo-French hound breeds which were created by crossing French scenthounds with English (Anglo) foxhounds.  The name \\\"Petite V\\u00e9nerie\\\" does not mean that dogs of the breed are \\\"petite\\\" or small, but rather that it is used to hunt small game.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the species of the Grand Anglo-Fran\u00e7ais Tricolore and the Kai Ken. From the context provided, it is clearly stated that both are breeds of dogs. This is further supported by passages mentioned. Passages [1] and [3] discuss that the Grand Anglo-Fran\u00e7ais Tricolore is a breed of dog used as a scenthound, typically in hunting packs. Passage [6] explains that the Kai Ken is also a breed of dog native to Japan. Thus, combining the context and passages, the conclusive answer is that both names refer to breeds of dogs.\nSummary: Grand Anglo-Fran\u00e7ais Tricolore and Kai Ken are breeds of dogs."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Grand Anglo-Fran\u00e7ais Tricolore and and Kai Ken are breeds of what animal?\nSummary 1: The Grand Anglo-Fran\u00e7ais Tricolore and Kai Ken are breeds of dogs.\nSummary 2: Grand Anglo-Fran\u00e7ais Tricolore and Kai Ken are breeds of dogs."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries clearly state that the Grand Anglo-Fran\u00e7ais Tricolore and Kai Ken are breeds of dogs. Since there is agreement between the two summaries and they address the question directly, the information is reliable and there is no contradiction.\nAnswer: Dogs"
+      }
+    ]
+  }
+}

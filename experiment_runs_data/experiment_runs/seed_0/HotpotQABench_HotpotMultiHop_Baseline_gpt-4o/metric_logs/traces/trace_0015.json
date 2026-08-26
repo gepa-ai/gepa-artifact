@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab430425542991751b4d6dc",
+  "question": "Who was an American actor and released a film by 20th Century Fox?",
+  "gold_answer": "George Reeves",
+  "prediction": {
+    "answer": "Ben Lyon.",
+    "hop1_docs": [
+      "List of 20th Century Fox films (1935\u201399) | This is a list of films produced by the U.S. film studio 20th Century Fox Film Corporation and released between its May 31, 1935 creation as a merger between Fox Film Corporation (1915\u20131935) and 20th Century Pictures (1933\u20131936) until 1999.  For subsequent releases by 20th Century Fox, see List of 20th Century Fox films (2000\u2013present).",
+      "20th Century Fox Film Noir | 20th Century Fox Film Noir refers to a collection of films released on DVD by 20th Century Fox.  The series, a spinoff of the earlier \"Fox Studio Classics\" line, was premiered in March 2005, with the release of the inaugural titles \"Call Northside 777\", \"Laura\" and \"Panic in the Streets\".  Like the earlier \"Studio Classics\" line, \"Fox Film Noir\" DVDs are numbered on their spines.",
+      "20th Century Fox | Twentieth Century Fox Film Corporation (known as Twentieth Century-Fox Film Corporation with hyphen from 1935 until 1985, stylized as 20th Century Fox or simply known as Fox or 20th Century Fox Pictures) is an American film studio currently owned by 21st Century Fox.  It is one of the \"Big Six\" major American film studios and is located in the Century City area of Los Angeles, just west of Beverly Hills.  The studio was owned by News Corporation from 1984 to 2013.",
+      "20th Century Fox Marquee Musicals | 20th Century Fox Marquee Musicals refers to a collection of films released on DVD by 20th Century Fox.  The series, a spinoff of the earlier Fox Studio Classics line, premiered in February 2006, with the releases of inaugural titles \"Daddy Long Legs\", \"Pin-Up Girl\", and \"Week-End in Havana\".  It has consisted of individually released films on DVD and boxed sets.",
+      "List of 20th Century Fox films (2000\u2013present) | This is a list of films produced by the Twentieth Century Fox Film Corporation beginning in 2000.  For earlier releases see List of 20th Century Fox films (1935\u201399).",
+      "Ben Lyon | Ben Lyon (February 6, 1901 \u2013 March 22, 1979) was an American film actor and a studio executive at 20th Century Fox, who later acted in British radio, films and TV.",
+      "A Good Year | A Good Year is a 2006 British-American comedy-drama film directed and produced by Ridley Scott.  The film stars Russell Crowe, Marion Cotillard, Didier Bourdon, Abbie Cornish, Tom Hollander, Freddie Highmore and Albert Finney.  The film is loosely based on the 2004 novel of the same name by British author Peter Mayle.  The film was theatrically released in the United Kingdom on October 27, 2006 and in the United States on November 10, 2006 by 20th Century Fox.  The film grossed over $42.1 million against its $35 million budget.  The film received nominations for the Critics Choice Award for Best Young Actor and the Satellite Award for Best Cinematography.  \"A Good Year\" was released on DVD on February 27, 2007 by 20th Century Fox Home Entertainment."
+    ],
+    "hop2_docs": [
+      "Ben Lyon | Ben Lyon (February 6, 1901 \u2013 March 22, 1979) was an American film actor and a studio executive at 20th Century Fox, who later acted in British radio, films and TV.",
+      "Navy Wife (1935 film) | Navy Wife is a 1935 American drama film directed by Allan Dwan and written by Sonya Levien.  The film stars Claire Trevor, Ralph Bellamy, Jane Darwell, Warren Hymer, Ben Lyon and Kathleen Burke.  The film was released on November 29, 1935, by 20th Century Fox and Fox Film Corporation.",
+      "Steamboat Round the Bend | Steamboat Round the Bend is a 1935 American comedy film directed by John Ford, released by 20th Century Fox and produced by Fox Film, based on the 1933 novel of the same name by author Ben Lucien Burman.  The film stars Will Rogers and was released a few weeks after his death in an airplane crash.",
+      "List of 20th Century Fox films (1935\u201399) | This is a list of films produced by the U.S. film studio 20th Century Fox Film Corporation and released between its May 31, 1935 creation as a merger between Fox Film Corporation (1915\u20131935) and 20th Century Pictures (1933\u20131936) until 1999.  For subsequent releases by 20th Century Fox, see List of 20th Century Fox films (2000\u2013present).",
+      "20th Century Fox Film Noir | 20th Century Fox Film Noir refers to a collection of films released on DVD by 20th Century Fox.  The series, a spinoff of the earlier \"Fox Studio Classics\" line, was premiered in March 2005, with the release of the inaugural titles \"Call Northside 777\", \"Laura\" and \"Panic in the Streets\".  Like the earlier \"Studio Classics\" line, \"Fox Film Noir\" DVDs are numbered on their spines.",
+      "20th Century Fox Marquee Musicals | 20th Century Fox Marquee Musicals refers to a collection of films released on DVD by 20th Century Fox.  The series, a spinoff of the earlier Fox Studio Classics line, premiered in February 2006, with the releases of inaugural titles \"Daddy Long Legs\", \"Pin-Up Girl\", and \"Week-End in Havana\".  It has consisted of individually released films on DVD and boxed sets.",
+      "List of 20th Century Fox films (2000\u2013present) | This is a list of films produced by the Twentieth Century Fox Film Corporation beginning in 2000.  For earlier releases see List of 20th Century Fox films (1935\u201399)."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 15,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was an American actor and released a film by 20th Century Fox?\nPassages: [\"List of 20th Century Fox films (1935\\u201399) | This is a list of films produced by the U.S. film studio 20th Century Fox Film Corporation and released between its May 31, 1935 creation as a merger between Fox Film Corporation (1915\\u20131935) and 20th Century Pictures (1933\\u20131936) until 1999.  For subsequent releases by 20th Century Fox, see List of 20th Century Fox films (2000\\u2013present).\", \"20th Century Fox Film Noir | 20th Century Fox Film Noir refers to a collection of films released on DVD by 20th Century Fox.  The series, a spinoff of the earlier \\\"Fox Studio Classics\\\" line, was premiered in March 2005, with the release of the inaugural titles \\\"Call Northside 777\\\", \\\"Laura\\\" and \\\"Panic in the Streets\\\".  Like the earlier \\\"Studio Classics\\\" line, \\\"Fox Film Noir\\\" DVDs are numbered on their spines.\", \"20th Century Fox | Twentieth Century Fox Film Corporation (known as Twentieth Century-Fox Film Corporation with hyphen from 1935 until 1985, stylized as 20th Century Fox or simply known as Fox or 20th Century Fox Pictures) is an American film studio currently owned by 21st Century Fox.  It is one of the \\\"Big Six\\\" major American film studios and is located in the Century City area of Los Angeles, just west of Beverly Hills.  The studio was owned by News Corporation from 1984 to 2013.\", \"20th Century Fox Marquee Musicals | 20th Century Fox Marquee Musicals refers to a collection of films released on DVD by 20th Century Fox.  The series, a spinoff of the earlier Fox Studio Classics line, premiered in February 2006, with the releases of inaugural titles \\\"Daddy Long Legs\\\", \\\"Pin-Up Girl\\\", and \\\"Week-End in Havana\\\".  It has consisted of individually released films on DVD and boxed sets.\", \"List of 20th Century Fox films (2000\\u2013present) | This is a list of films produced by the Twentieth Century Fox Film Corporation beginning in 2000.  For earlier releases see List of 20th Century Fox films (1935\\u201399).\", \"Ben Lyon | Ben Lyon (February 6, 1901 \\u2013 March 22, 1979) was an American film actor and a studio executive at 20th Century Fox, who later acted in British radio, films and TV.\", \"A Good Year | A Good Year is a 2006 British-American comedy-drama film directed and produced by Ridley Scott.  The film stars Russell Crowe, Marion Cotillard, Didier Bourdon, Abbie Cornish, Tom Hollander, Freddie Highmore and Albert Finney.  The film is loosely based on the 2004 novel of the same name by British author Peter Mayle.  The film was theatrically released in the United Kingdom on October 27, 2006 and in the United States on November 10, 2006 by 20th Century Fox.  The film grossed over $42.1 million against its $35 million budget.  The film received nominations for the Critics Choice Award for Best Young Actor and the Satellite Award for Best Cinematography.  \\\"A Good Year\\\" was released on DVD on February 27, 2007 by 20th Century Fox Home Entertainment.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine an American actor who released a film by 20th Century Fox, we examine the provided passages. Passage [6] discusses Ben Lyon, identifying him as an American film actor and a studio executive at 20th Century Fox. Although the question combines \"being an actor\" and \"releasing a film by 20th Century Fox,\" it is reasonable to deduce that Ben Lyon, as both an actor and someone associated with 20th Century Fox, satisfies these criteria when interpreted broadly.\nSummary: Ben Lyon was an American actor and a studio executive at 20th Century Fox, meeting the criteria of being an actor and having a connection to films released by 20th Century Fox."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was an American actor and released a film by 20th Century Fox?\nSummary 1: Ben Lyon was an American actor and a studio executive at 20th Century Fox, meeting the criteria of being an actor and having a connection to films released by 20th Century Fox."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to identify an American actor linked to a film released by 20th Century Fox. The provided summary states that Ben Lyon was an American actor and also served as a studio executive at 20th Century Fox. This makes him a suitable candidate since he meets both criteria: being an actor and associated with films from that studio.\nQuery: Who is Ben Lyon, and what was his connection to 20th Century Fox and the films it released?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was an American actor and released a film by 20th Century Fox?\nContext: Ben Lyon was an American actor and a studio executive at 20th Century Fox, meeting the criteria of being an actor and having a connection to films released by 20th Century Fox.\nPassages: [\"Ben Lyon | Ben Lyon (February 6, 1901 \\u2013 March 22, 1979) was an American film actor and a studio executive at 20th Century Fox, who later acted in British radio, films and TV.\", \"Navy Wife (1935 film) | Navy Wife is a 1935 American drama film directed by Allan Dwan and written by Sonya Levien.  The film stars Claire Trevor, Ralph Bellamy, Jane Darwell, Warren Hymer, Ben Lyon and Kathleen Burke.  The film was released on November 29, 1935, by 20th Century Fox and Fox Film Corporation.\", \"Steamboat Round the Bend | Steamboat Round the Bend is a 1935 American comedy film directed by John Ford, released by 20th Century Fox and produced by Fox Film, based on the 1933 novel of the same name by author Ben Lucien Burman.  The film stars Will Rogers and was released a few weeks after his death in an airplane crash.\", \"List of 20th Century Fox films (1935\\u201399) | This is a list of films produced by the U.S. film studio 20th Century Fox Film Corporation and released between its May 31, 1935 creation as a merger between Fox Film Corporation (1915\\u20131935) and 20th Century Pictures (1933\\u20131936) until 1999.  For subsequent releases by 20th Century Fox, see List of 20th Century Fox films (2000\\u2013present).\", \"20th Century Fox Film Noir | 20th Century Fox Film Noir refers to a collection of films released on DVD by 20th Century Fox.  The series, a spinoff of the earlier \\\"Fox Studio Classics\\\" line, was premiered in March 2005, with the release of the inaugural titles \\\"Call Northside 777\\\", \\\"Laura\\\" and \\\"Panic in the Streets\\\".  Like the earlier \\\"Studio Classics\\\" line, \\\"Fox Film Noir\\\" DVDs are numbered on their spines.\", \"20th Century Fox Marquee Musicals | 20th Century Fox Marquee Musicals refers to a collection of films released on DVD by 20th Century Fox.  The series, a spinoff of the earlier Fox Studio Classics line, premiered in February 2006, with the releases of inaugural titles \\\"Daddy Long Legs\\\", \\\"Pin-Up Girl\\\", and \\\"Week-End in Havana\\\".  It has consisted of individually released films on DVD and boxed sets.\", \"List of 20th Century Fox films (2000\\u2013present) | This is a list of films produced by the Twentieth Century Fox Film Corporation beginning in 2000.  For earlier releases see List of 20th Century Fox films (1935\\u201399).\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for an American actor who was associated with a film released by 20th Century Fox. From the `context`, Ben Lyon is mentioned as an American actor and a studio executive at 20th Century Fox. This connection is further supported in the `passages`, particularly in passage [2], which mentions Ben Lyon starring in the movie \"Navy Wife,\" released in 1935 by 20th Century Fox. This confirms that Ben Lyon fits the criteria of being an American actor with a connection to a film released by 20th Century Fox.\nSummary: Ben Lyon was an American actor associated with a film released by 20th Century Fox, notably \"Navy Wife\" in 1935."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was an American actor and released a film by 20th Century Fox?\nSummary 1: Ben Lyon was an American actor and a studio executive at 20th Century Fox, meeting the criteria of being an actor and having a connection to films released by 20th Century Fox.\nSummary 2: Ben Lyon was an American actor associated with a film released by 20th Century Fox, notably \"Navy Wife\" in 1935."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that Ben Lyon was an American actor and had a connection to 20th Century Fox. Summary_1 emphasizes Ben Lyon's role both as an actor and studio executive at 20th Century Fox, while Summary_2 provides a specific example of his association with a film released by the studio, \"Navy Wife\" in 1935. This aligns with the question's criteria of being an American actor and linked to a 20th Century Fox film.\nAnswer: Ben Lyon."
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "example_id": "5ae7950b5542994a481bbdb2",
+  "question": "Which film in which Sa\u00efd Taghmaoui: took a major role is a 1995 French black-and-white crime drama film written, co-edited, and directed by Mathieu Kassovitz?",
+  "gold_answer": "La Haine",
+  "prediction": {
+    "answer": "The 1995 French black-and-white crime drama film in which Sa\u00efd Taghmaoui took a major role is \"La Haine,\" directed by Mathieu Kassovitz.",
+    "hop1_docs": [
+      "Sa\u00efd Taghmaoui | Sa\u00efd Taghmaoui (born July 19, 1973) is a French-American actor and screenwriter.  One of his major screen roles was that of Sa\u00efd in the 1995 French film \"La Haine\", directed by Mathieu Kassovitz.  Taghmaoui has also appeared in a number of English-language films, with roles such as Captain Said in \"Three Kings\" (1999) and Sameer in \"Wonder Woman\" (2017).",
+      "La Haine | La Haine (] , \"Hate\") is a 1995 French black-and-white crime drama film written, co-edited, and directed by Mathieu Kassovitz.  It is commonly released under its French title in the English-speaking world, although its U.S. VHS release was titled Hate.  It is about three young friends and their struggle to live in the \"banlieues\" of Paris.  The title derives from a line spoken by one of them, Hubert, \"\"La haine attire la haine!\"\" , \"hatred breeds hatred.\"",
+      "Assassin(s) | Assassin(s) is a 1997 French drama film directed, co-written, co-edited by and starring Mathieu Kassovitz.  It was entered into the 1997 Cannes Film Festival.",
+      "Rebellion (2011 film) | Rebellion (French: L'Ordre et la Morale ) is a 2011 French historical drama film directed, produced, co-written, co-edited by and starring Mathieu Kassovitz.  Set in New Caledonia but filmed in Tahiti, the film recreates a version of the Ouv\u00e9a cave hostage taking in 1988.  Kassovitz, Beno\u00eet Jaubert and Pierre Geller were collectively nominated for the 2012 Best Writing (Adaptation) C\u00e9sar Award.",
+      "Amen. | Amen.  is a 2002 German, Romanian-French historical drama film, co-written and directed by Costa-Gavras and starring Ulrich Tukur, Mathieu Kassovitz, Sebastian Koch and Ulrich M\u00fche.  The film examines the links between the Vatican and Nazi Germany.",
+      "The Crimson Rivers | The Crimson Rivers (French: \"Les Rivi\u00e8res Pourpres\" ) is a 2000 French psychological horror film starring Jean Reno and Vincent Cassel.  The film, which was directed by Mathieu Kassovitz, is based on the best-selling novel \"Les Rivi\u00e8res Pourpres\".  Its screenplay was co-written by the book's author, Jean-Christophe Grang\u00e9.",
+      "Djinns (film) | Djinns (also known by the title: Stranded) is a 2010 French film written and directed by Hugues Martin and Sandra Martin.  It stars Sa\u00efd Taghmaoui, Cyril Raffaelli and Aur\u00e9lien Wiik."
+    ],
+    "hop2_docs": [
+      "Sa\u00efd Taghmaoui | Sa\u00efd Taghmaoui (born July 19, 1973) is a French-American actor and screenwriter.  One of his major screen roles was that of Sa\u00efd in the 1995 French film \"La Haine\", directed by Mathieu Kassovitz.  Taghmaoui has also appeared in a number of English-language films, with roles such as Captain Said in \"Three Kings\" (1999) and Sameer in \"Wonder Woman\" (2017).",
+      "La Haine | La Haine (] , \"Hate\") is a 1995 French black-and-white crime drama film written, co-edited, and directed by Mathieu Kassovitz.  It is commonly released under its French title in the English-speaking world, although its U.S. VHS release was titled Hate.  It is about three young friends and their struggle to live in the \"banlieues\" of Paris.  The title derives from a line spoken by one of them, Hubert, \"\"La haine attire la haine!\"\" , \"hatred breeds hatred.\"",
+      "Djinns (film) | Djinns (also known by the title: Stranded) is a 2010 French film written and directed by Hugues Martin and Sandra Martin.  It stars Sa\u00efd Taghmaoui, Cyril Raffaelli and Aur\u00e9lien Wiik.",
+      "What the Day Owes the Night (film) | What the Day Owes the Night (French: Ce que le jour doit \u00e0 la nuit ) is a 2012 French drama film based on the novel of the same name by Yasmina Khadra.",
+      "Hideous Kinky (film) | \"Hideous Kinky\" is a 1998 drama directed by Scottish director Gillies MacKinnon.  Based on Esther Freud's semi-autobiographical 1992 novel of the same name, it follows a young English mother who moves from London to Morocco with her two young daughters in the early 70s.  The film stars Kate Winslet and French-Moroccan actor Sa\u00efd Taghmaoui. The soundtrack mixes original music with songs from the 60s, including tracks from Canned Heat, Richie Havens and the Incredible String Band.",
+      "Five Fingers (2006 film) | Five Fingers is a 2006 American drama-thriller film directed by Laurence Malkin, and written by Chad Thumann and Malkin.  The film had ten producers, including actor Laurence Fishburne, who stars in it alongside Ryan Phillippe, Gina Torres, Touriya Haoud, Sa\u00efd Taghmaoui and Colm Meaney.  \"Five Fingers\" was filmed in the Netherlands, Morocco, and Louisiana in 2004.",
+      "Michael Jai White | Michael Jai White (born November 10, 1967) is an American actor and martial artist who has appeared in numerous films and television series.  He is the first African American to portray a major comic book superhero in a major motion picture, having starred as Al Simmons, the protagonist in the 1997 film \"Spawn\".  White appeared as Marcus Williams in the Tyler Perry films \"Why Did I Get Married? \" and \"Why Did I Get Married Too? \", and starred as the character on the TBS/OWN comedy-drama television series \"Tyler Perry's For Better or Worse\".  White portrayed Jax Briggs in \"\".  White also portrayed boxer Mike Tyson in the 1995 HBO television movie \"Tyson\", and starred as Black Dynamite."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 5,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which film in which Sa\u00efd Taghmaoui: took a major role is a 1995 French black-and-white crime drama film written, co-edited, and directed by Mathieu Kassovitz?\nPassages: [\"Sa\\u00efd Taghmaoui | Sa\\u00efd Taghmaoui (born July 19, 1973) is a French-American actor and screenwriter.  One of his major screen roles was that of Sa\\u00efd in the 1995 French film \\\"La Haine\\\", directed by Mathieu Kassovitz.  Taghmaoui has also appeared in a number of English-language films, with roles such as Captain Said in \\\"Three Kings\\\" (1999) and Sameer in \\\"Wonder Woman\\\" (2017).\", \"La Haine | La Haine (] , \\\"Hate\\\") is a 1995 French black-and-white crime drama film written, co-edited, and directed by Mathieu Kassovitz.  It is commonly released under its French title in the English-speaking world, although its U.S. VHS release was titled Hate.  It is about three young friends and their struggle to live in the \\\"banlieues\\\" of Paris.  The title derives from a line spoken by one of them, Hubert, \\\"\\\"La haine attire la haine!\\\"\\\" , \\\"hatred breeds hatred.\\\"\", \"Assassin(s) | Assassin(s) is a 1997 French drama film directed, co-written, co-edited by and starring Mathieu Kassovitz.  It was entered into the 1997 Cannes Film Festival.\", \"Rebellion (2011 film) | Rebellion (French: L'Ordre et la Morale ) is a 2011 French historical drama film directed, produced, co-written, co-edited by and starring Mathieu Kassovitz.  Set in New Caledonia but filmed in Tahiti, the film recreates a version of the Ouv\\u00e9a cave hostage taking in 1988.  Kassovitz, Beno\\u00eet Jaubert and Pierre Geller were collectively nominated for the 2012 Best Writing (Adaptation) C\\u00e9sar Award.\", \"Amen. | Amen.  is a 2002 German, Romanian-French historical drama film, co-written and directed by Costa-Gavras and starring Ulrich Tukur, Mathieu Kassovitz, Sebastian Koch and Ulrich M\\u00fche.  The film examines the links between the Vatican and Nazi Germany.\", \"The Crimson Rivers | The Crimson Rivers (French: \\\"Les Rivi\\u00e8res Pourpres\\\" ) is a 2000 French psychological horror film starring Jean Reno and Vincent Cassel.  The film, which was directed by Mathieu Kassovitz, is based on the best-selling novel \\\"Les Rivi\\u00e8res Pourpres\\\".  Its screenplay was co-written by the book's author, Jean-Christophe Grang\\u00e9.\", \"Djinns (film) | Djinns (also known by the title: Stranded) is a 2010 French film written and directed by Hugues Martin and Sandra Martin.  It stars Sa\\u00efd Taghmaoui, Cyril Raffaelli and Aur\\u00e9lien Wiik.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the question, we are looking for a 1995 French black-and-white crime drama film written, co-edited, and directed by Mathieu Kassovitz, in which Sa\u00efd Taghmaoui played a major role. Passage [1] confirms that Sa\u00efd Taghmaoui had a prominent role in the 1995 French film \"La Haine,\" directed by Mathieu Kassovitz. Passage [2] further explains that \"La Haine\" is indeed a 1995 French black-and-white crime drama film and provides additional details about the movie. Since the question matches the details found in passages [1] and [2], the answer is \"La Haine.\"\nSummary: The 1995 French black-and-white crime drama film in which Sa\u00efd Taghmaoui took a major role is \"La Haine,\" directed by Mathieu Kassovitz."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which film in which Sa\u00efd Taghmaoui: took a major role is a 1995 French black-and-white crime drama film written, co-edited, and directed by Mathieu Kassovitz?\nSummary 1: The 1995 French black-and-white crime drama film in which Sa\u00efd Taghmaoui took a major role is \"La Haine,\" directed by Mathieu Kassovitz."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of a 1995 French black-and-white crime drama film where Sa\u00efd Taghmaoui played a significant role. The summary confirms that the film is \"La Haine,\" directed by Mathieu Kassovitz. Using this information, the query can be shaped to verify or extract additional context about this connection.\nQuery: What is the plot and significance of the 1995 French black-and-white crime drama film \"La Haine,\" and what major role did Sa\u00efd Taghmaoui play in it?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which film in which Sa\u00efd Taghmaoui: took a major role is a 1995 French black-and-white crime drama film written, co-edited, and directed by Mathieu Kassovitz?\nContext: The 1995 French black-and-white crime drama film in which Sa\u00efd Taghmaoui took a major role is \"La Haine,\" directed by Mathieu Kassovitz.\nPassages: [\"Sa\\u00efd Taghmaoui | Sa\\u00efd Taghmaoui (born July 19, 1973) is a French-American actor and screenwriter.  One of his major screen roles was that of Sa\\u00efd in the 1995 French film \\\"La Haine\\\", directed by Mathieu Kassovitz.  Taghmaoui has also appeared in a number of English-language films, with roles such as Captain Said in \\\"Three Kings\\\" (1999) and Sameer in \\\"Wonder Woman\\\" (2017).\", \"La Haine | La Haine (] , \\\"Hate\\\") is a 1995 French black-and-white crime drama film written, co-edited, and directed by Mathieu Kassovitz.  It is commonly released under its French title in the English-speaking world, although its U.S. VHS release was titled Hate.  It is about three young friends and their struggle to live in the \\\"banlieues\\\" of Paris.  The title derives from a line spoken by one of them, Hubert, \\\"\\\"La haine attire la haine!\\\"\\\" , \\\"hatred breeds hatred.\\\"\", \"Djinns (film) | Djinns (also known by the title: Stranded) is a 2010 French film written and directed by Hugues Martin and Sandra Martin.  It stars Sa\\u00efd Taghmaoui, Cyril Raffaelli and Aur\\u00e9lien Wiik.\", \"What the Day Owes the Night (film) | What the Day Owes the Night (French: Ce que le jour doit \\u00e0 la nuit ) is a 2012 French drama film based on the novel of the same name by Yasmina Khadra.\", \"Hideous Kinky (film) | \\\"Hideous Kinky\\\" is a 1998 drama directed by Scottish director Gillies MacKinnon.  Based on Esther Freud's semi-autobiographical 1992 novel of the same name, it follows a young English mother who moves from London to Morocco with her two young daughters in the early 70s.  The film stars Kate Winslet and French-Moroccan actor Sa\\u00efd Taghmaoui. The soundtrack mixes original music with songs from the 60s, including tracks from Canned Heat, Richie Havens and the Incredible String Band.\", \"Five Fingers (2006 film) | Five Fingers is a 2006 American drama-thriller film directed by Laurence Malkin, and written by Chad Thumann and Malkin.  The film had ten producers, including actor Laurence Fishburne, who stars in it alongside Ryan Phillippe, Gina Torres, Touriya Haoud, Sa\\u00efd Taghmaoui and Colm Meaney.  \\\"Five Fingers\\\" was filmed in the Netherlands, Morocco, and Louisiana in 2004.\", \"Michael Jai White | Michael Jai White (born November 10, 1967) is an American actor and martial artist who has appeared in numerous films and television series.  He is the first African American to portray a major comic book superhero in a major motion picture, having starred as Al Simmons, the protagonist in the 1997 film \\\"Spawn\\\".  White appeared as Marcus Williams in the Tyler Perry films \\\"Why Did I Get Married? \\\" and \\\"Why Did I Get Married Too? \\\", and starred as the character on the TBS/OWN comedy-drama television series \\\"Tyler Perry's For Better or Worse\\\".  White portrayed Jax Briggs in \\\"\\\".  White also portrayed boxer Mike Tyson in the 1995 HBO television movie \\\"Tyson\\\", and starred as Black Dynamite.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about a film in which Sa\u00efd Taghmaoui took a major role, which is a 1995 French black-and-white crime drama directed by Mathieu Kassovitz. According to the context and passages, the film is \"La Haine\" (\"Hate\"). This information is directly corroborated by passage [1], stating that Sa\u00efd Taghmaoui played a major role as Sa\u00efd in \"La Haine,\" and passage [2], which describes \"La Haine\" as a 1995 French black-and-white crime drama film directed by Kassovitz. Together, these confirm the answer.\nSummary: The 1995 French black-and-white crime drama film in which Sa\u00efd Taghmaoui took a major role is \"La Haine,\" directed by Mathieu Kassovitz."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which film in which Sa\u00efd Taghmaoui: took a major role is a 1995 French black-and-white crime drama film written, co-edited, and directed by Mathieu Kassovitz?\nSummary 1: The 1995 French black-and-white crime drama film in which Sa\u00efd Taghmaoui took a major role is \"La Haine,\" directed by Mathieu Kassovitz.\nSummary 2: The 1995 French black-and-white crime drama film in which Sa\u00efd Taghmaoui took a major role is \"La Haine,\" directed by Mathieu Kassovitz."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the 1995 French black-and-white crime drama film in which Sa\u00efd Taghmaoui took a major role is \"La Haine,\" directed by Mathieu Kassovitz. This information aligns with the widely-known details of the film and Sa\u00efd Taghmaoui\u2019s involvement in it as one of the lead actors. Therefore, the provided answer in both summaries is consistent and accurate.\nAnswer: The 1995 French black-and-white crime drama film in which Sa\u00efd Taghmaoui took a major role is \"La Haine,\" directed by Mathieu Kassovitz."
+      }
+    ]
+  }
+}

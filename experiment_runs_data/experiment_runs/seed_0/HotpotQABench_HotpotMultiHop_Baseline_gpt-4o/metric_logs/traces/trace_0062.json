@@ -1,0 +1,96 @@
+{
+  "example_id": "5a8b662855429949d91db596",
+  "question": "Which film, Waking Sleeping Beauty or Tonka, was filmed in Bend, Oregon, and distributed by Buena Vista Distribution?",
+  "gold_answer": "Tonka",
+  "prediction": {
+    "answer": "Tonka",
+    "hop1_docs": [
+      "Tonka (film) | Tonka is a 1958 Walt Disney Western adventure film about the US cavalry horse that survived the Battle of the Little Big Horn.  Also released under the title A Horse Named Comanche, it stars Sal Mineo as a Sioux who fought there.  It was filmed in Bend, Oregon, and distributed by Buena Vista Distribution.",
+      "Walt Disney Studios Motion Pictures | Walt Disney Studios Motion Pictures (formerly Buena Vista Pictures Distribution and Buena Vista Film Distribution Company) is an American film distributor owned by The Walt Disney Company.  Established in 1953 as Buena Vista Film Distribution Company, the company handles theatrical distribution, marketing and promotion for films produced and released by the Walt Disney Studios, including Walt Disney Pictures, Walt Disney Animation Studios, Pixar Animation Studios, DisneyToon Studios, Marvel Studios, Lucasfilm, Disneynature, and Touchstone Pictures.  The division took on its current name in late 2007, which before that had been Buena Vista Pictures Distribution since 1987.",
+      "Sleeping Beauty (1959 film) | Sleeping Beauty is a 1959 American animated musical fantasy film produced by Walt Disney based on \"The Sleeping Beauty\" by Charles Perrault.  The 16th Disney animated feature film, it was released to theaters on January 29, 1959, by Buena Vista Distribution.  This was the last Disney adaptation of a fairy tale for some years because of its initial mixed critical reception and underperformance at the box office; the studio did not return to the genre until 30 years later, after Walt Disney died in 1966, with the release of \"The Little Mermaid\" (1989).",
+      "List of Walt Disney Pictures films | This is a list of films released theatrically under the Walt Disney Pictures banner (known as that since 1983, with \"Never Cry Wolf\" as its first release) and films released before that under the former name of the parent company, Walt Disney Productions (1929\u20131983).  Most films listed here were distributed in the United States by the company's distribution division, Walt Disney Studios Motion Pictures (formerly known as Buena Vista Distribution Company [1953\u20131987] and Buena Vista Pictures Distribution [1987\u20132007]).  The Disney features produced before \"Peter Pan\" (1953) were originally distributed by RKO Radio Pictures, and are now distributed by Walt Disney Studios Motion Pictures.",
+      "Caravan Pictures | Caravan Pictures, Inc. was an American independent film distributor and film production company of Walt Disney Studios, formed by Roger Birnbaum and Joe Roth.  Caravan's films were distributed by Buena Vista Pictures Distribution.",
+      "Amy (1981 film) | Amy is a 1981 American family drama film produced by Walt Disney Productions, distributed by Buena Vista Distribution, written by Noreen Stone and directed by Vincent McEveety, and starring Jenny Agutter.",
+      "The Many Adventures of Winnie the Pooh | The Many Adventures of Winnie the Pooh is a 1977 American animated film produced by Walt Disney Productions and distributed by Buena Vista Distribution.  It is the 22nd Disney animated feature film and was first released on March 11, 1977 on a double bill with \"The Littlest Horse Thieves\"."
+    ],
+    "hop2_docs": [
+      "Tonka | Tonka is an American producer of toy trucks.  Maisto International, which makes diecast vehicles, acquired the rights to use the Tonka name in a line of 1:64 scale diecast vehicles, featuring mostly trucks.  The Winifred Museum in Winifred, Montana, has a collection of more than 3,000 Tonka toys.",
+      "Sens &amp; Tonka | Sens & Tonka is a French publishing house that was founded in the early 1990s by Jeanne-Marie Sens and Hubert Tonka.",
+      "Tonka Obretenova | Tonka Obretenova (Bulgarian: \u0422\u043e\u043d\u043a\u0430 \u041e\u0431\u0440\u0435\u0442\u0435\u043d\u043e\u0432\u0430 ), known as Baba Tonka (\u0411\u0430\u0431\u0430 \u0422\u043e\u043d\u043a\u0430), was a female Bulgarian revolutionary, born in 1812, probably in Rousse.",
+      "Tonka Tomicic | Tonka Tomicic Petric \u00a0\u00a0 (Croatian: \"Tonka Tomi\u010di\u0107 Petri\u0107\" ; born 31 May 1976) is a Chilean model and television presenter of Croatian origin.",
+      "Tonka Bay, Minnesota | Tonka Bay is a city in Hennepin County, Minnesota, United States.  It is located on Lake Minnetonka between the upper and lower lakes.  The population of Tonka Bay was 1,475 at the 2010 census.",
+      "DJ Tonka | DJ Tonka (born June 24, 1973 in Mainz, West Germany; real name Thomas-Ren\u00e9 Gerlach), is a German electronic music artist.  He is also known as Tonka, Chip Tunes, and Thomastic.",
+      "Tonka (disambiguation) | Tonka is an American toy company."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 62,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which film, Waking Sleeping Beauty or Tonka, was filmed in Bend, Oregon, and distributed by Buena Vista Distribution?\nPassages: [\"Tonka (film) | Tonka is a 1958 Walt Disney Western adventure film about the US cavalry horse that survived the Battle of the Little Big Horn.  Also released under the title A Horse Named Comanche, it stars Sal Mineo as a Sioux who fought there.  It was filmed in Bend, Oregon, and distributed by Buena Vista Distribution.\", \"Walt Disney Studios Motion Pictures | Walt Disney Studios Motion Pictures (formerly Buena Vista Pictures Distribution and Buena Vista Film Distribution Company) is an American film distributor owned by The Walt Disney Company.  Established in 1953 as Buena Vista Film Distribution Company, the company handles theatrical distribution, marketing and promotion for films produced and released by the Walt Disney Studios, including Walt Disney Pictures, Walt Disney Animation Studios, Pixar Animation Studios, DisneyToon Studios, Marvel Studios, Lucasfilm, Disneynature, and Touchstone Pictures.  The division took on its current name in late 2007, which before that had been Buena Vista Pictures Distribution since 1987.\", \"Sleeping Beauty (1959 film) | Sleeping Beauty is a 1959 American animated musical fantasy film produced by Walt Disney based on \\\"The Sleeping Beauty\\\" by Charles Perrault.  The 16th Disney animated feature film, it was released to theaters on January 29, 1959, by Buena Vista Distribution.  This was the last Disney adaptation of a fairy tale for some years because of its initial mixed critical reception and underperformance at the box office; the studio did not return to the genre until 30 years later, after Walt Disney died in 1966, with the release of \\\"The Little Mermaid\\\" (1989).\", \"List of Walt Disney Pictures films | This is a list of films released theatrically under the Walt Disney Pictures banner (known as that since 1983, with \\\"Never Cry Wolf\\\" as its first release) and films released before that under the former name of the parent company, Walt Disney Productions (1929\\u20131983).  Most films listed here were distributed in the United States by the company's distribution division, Walt Disney Studios Motion Pictures (formerly known as Buena Vista Distribution Company [1953\\u20131987] and Buena Vista Pictures Distribution [1987\\u20132007]).  The Disney features produced before \\\"Peter Pan\\\" (1953) were originally distributed by RKO Radio Pictures, and are now distributed by Walt Disney Studios Motion Pictures.\", \"Caravan Pictures | Caravan Pictures, Inc. was an American independent film distributor and film production company of Walt Disney Studios, formed by Roger Birnbaum and Joe Roth.  Caravan's films were distributed by Buena Vista Pictures Distribution.\", \"Amy (1981 film) | Amy is a 1981 American family drama film produced by Walt Disney Productions, distributed by Buena Vista Distribution, written by Noreen Stone and directed by Vincent McEveety, and starring Jenny Agutter.\", \"The Many Adventures of Winnie the Pooh | The Many Adventures of Winnie the Pooh is a 1977 American animated film produced by Walt Disney Productions and distributed by Buena Vista Distribution.  It is the 22nd Disney animated feature film and was first released on March 11, 1977 on a double bill with \\\"The Littlest Horse Thieves\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine which film, \"Waking Sleeping Beauty\" or \"Tonka,\" was filmed in Bend, Oregon, and distributed by Buena Vista Distribution, I examined the provided passages:\n\n1. Passage [1] specifically mentions that \"Tonka\" is a 1958 Walt Disney Western adventure film that was filmed in Bend, Oregon, and distributed by Buena Vista Distribution.\n2. No other passage provided information associating \"Waking Sleeping Beauty\" with this context.\n3. Passage [3] refers to \"Sleeping Beauty\" but not \"Waking Sleeping Beauty,\" confirming they are not the same films. Moreover, \"Sleeping Beauty\" was not filmed in Bend, Oregon.\n\nBased on the information in the passages, it is clear that \"Tonka\" was filmed in Bend, Oregon, and distributed by Buena Vista Distribution.\nSummary: The film \"Tonka\" was filmed in Bend, Oregon, and distributed by Buena Vista Distribution."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which film, Waking Sleeping Beauty or Tonka, was filmed in Bend, Oregon, and distributed by Buena Vista Distribution?\nSummary 1: The film \"Tonka\" was filmed in Bend, Oregon, and distributed by Buena Vista Distribution."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the information given in `summary_1`, the film \"Tonka\" aligns with both conditions in the question: it was filmed in Bend, Oregon, and distributed by Buena Vista Distribution. Therefore, the correct answer is \"Tonka.\"\nQuery: Tonka"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which film, Waking Sleeping Beauty or Tonka, was filmed in Bend, Oregon, and distributed by Buena Vista Distribution?\nContext: The film \"Tonka\" was filmed in Bend, Oregon, and distributed by Buena Vista Distribution.\nPassages: [\"Tonka | Tonka is an American producer of toy trucks.  Maisto International, which makes diecast vehicles, acquired the rights to use the Tonka name in a line of 1:64 scale diecast vehicles, featuring mostly trucks.  The Winifred Museum in Winifred, Montana, has a collection of more than 3,000 Tonka toys.\", \"Sens &amp; Tonka | Sens & Tonka is a French publishing house that was founded in the early 1990s by Jeanne-Marie Sens and Hubert Tonka.\", \"Tonka Obretenova | Tonka Obretenova (Bulgarian: \\u0422\\u043e\\u043d\\u043a\\u0430 \\u041e\\u0431\\u0440\\u0435\\u0442\\u0435\\u043d\\u043e\\u0432\\u0430 ), known as Baba Tonka (\\u0411\\u0430\\u0431\\u0430 \\u0422\\u043e\\u043d\\u043a\\u0430), was a female Bulgarian revolutionary, born in 1812, probably in Rousse.\", \"Tonka Tomicic | Tonka Tomicic Petric \\u00a0\\u00a0 (Croatian: \\\"Tonka Tomi\\u010di\\u0107 Petri\\u0107\\\" ; born 31 May 1976) is a Chilean model and television presenter of Croatian origin.\", \"Tonka Bay, Minnesota | Tonka Bay is a city in Hennepin County, Minnesota, United States.  It is located on Lake Minnetonka between the upper and lower lakes.  The population of Tonka Bay was 1,475 at the 2010 census.\", \"DJ Tonka | DJ Tonka (born June 24, 1973 in Mainz, West Germany; real name Thomas-Ren\\u00e9 Gerlach), is a German electronic music artist.  He is also known as Tonka, Chip Tunes, and Thomastic.\", \"Tonka (disambiguation) | Tonka is an American toy company.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the `context`, it is stated directly that the film \"Tonka\" was filmed in Bend, Oregon, and distributed by Buena Vista Distribution. This clearly answers the question. The film \"Waking Sleeping Beauty\" is not mentioned in the context or passages as being filmed in Bend, Oregon or distributed by Buena Vista Distribution. The passages primarily refer to other unrelated uses or meanings of \"Tonka,\" but none are relevant to the question about the film, except the `context`.\nSummary: The film \"Tonka\" was filmed in Bend, Oregon, and distributed by Buena Vista Distribution."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which film, Waking Sleeping Beauty or Tonka, was filmed in Bend, Oregon, and distributed by Buena Vista Distribution?\nSummary 1: The film \"Tonka\" was filmed in Bend, Oregon, and distributed by Buena Vista Distribution.\nSummary 2: The film \"Tonka\" was filmed in Bend, Oregon, and distributed by Buena Vista Distribution."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries confirm that the film \"Tonka\" was filmed in Bend, Oregon, and was distributed by Buena Vista Distribution. There is no mention of \"Waking Sleeping Beauty\" having any connection to Bend, Oregon, or Buena Vista Distribution. Therefore, based on the provided information, \"Tonka\" is the correct answer.\nAnswer: Tonka"
+      }
+    ]
+  }
+}

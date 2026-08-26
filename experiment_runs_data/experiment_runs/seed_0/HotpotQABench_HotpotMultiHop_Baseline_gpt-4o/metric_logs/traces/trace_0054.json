@@ -1,0 +1,96 @@
+{
+  "example_id": "5adeb6de5542995534e8c6e3",
+  "question": "Aram Avakian and Wilfred Lucas, have which nationality in common?",
+  "gold_answer": "American",
+  "prediction": {
+    "answer": "American",
+    "hop1_docs": [
+      "Aram Avakian | Aram A. Avakian (April 23, 1926 \u2013 January 17, 1987) was an Armenian-American film editor and director.  His work in the latter role includes \"Jazz on a Summer's Day\" (1960) and the indie film \"End of the Road\" (1970).",
+      "Cops and Robbers (1973 film) | Cops and Robbers is a 1973 crime comedy film directed by Aram Avakian with an original screenplay by Donald E. Westlake which Westlake subsequently expanded into a novel.  The film stars Cliff Gorman as Tom and Joseph Bologna as Joe.",
+      "End of the Road (1970 film) | End of the Road is a 1970 film directed, co-written, and edited by Aram Avakian and adapted from a 1958 novel by John Barth, and stars Stacy Keach, James Earl Jones and Harris Yulin.",
+      "Last universal common ancestor | The last universal common ancestor (LUCA), also called the last universal ancestor (LUA), cenancestor, or (incorrectly) progenote, is the most recent population of organisms from which all organisms now living on Earth have a common descent.  LUCA is the most recent common ancestor of all current life on Earth.  LUCA should not be assumed to be the first living organism on Earth.  The LUCA is estimated to have lived some 3.5 to 3.8 billion years ago (sometime in the Paleoarchean era).  The composition of the LUCA is not directly accessible as a fossil, but can be studied by comparing the genomes of its descendents, organisms living today.  By this means, a 2016 study identified a set of 355 genes inferred to have been present in the LUCA.",
+      "11 Harrowhouse | 11 Harrowhouse is a 1974 British film directed by Aram Avakian.  It was adapted by Charles Grodin based upon the novel by Gerald A. Browne with the screenplay by Jeffrey Bloom.  It stars Charles Grodin, Candice Bergen, James Mason, Trevor Howard and John Gielgud.",
+      "Wilfred Lucas | Wilfred Lucas (January 30, 1871 \u2013 December 13, 1940) was a Canadian-born American stage actor who found success in film as an actor, director, and screenwriter.",
+      "The Spanish Jade (1915 film) | The Spanish Jade is a 1915 American drama silent film directed by Wilfred Lucas and written by Maurice Hewlett and Louis Joseph Vance.  The film stars Betty Bellairs, Wilfred Lucas, Nigel De Brulier, Arthur Tavares, Frank Lanning and Howard Davies.  The film was released on April 11, 1915, by Paramount Pictures."
+    ],
+    "hop2_docs": [
+      "List of Hispanic and Latino Americans | This is a list of notable Hispanic and Latino Americans: citizens or residents of the United States with origins in Hispanic America or Spain.  The following groups are officially designated as \"Spanish/Hispanic/Latino\": Mexican American, (Stateside) Puerto Rican, Cuban American, Dominican American, Costa Rican American, Guatemalan American, Honduran American, Nicaraguan American, Panamanian American, Salvadoran American, Argentine American, Bolivian American, Chilean American, Colombian American, Ecuadorian American, Paraguayan American, Peruvian American, Spanish American, Uruguayan American, and Venezuelan American.  However, Hispanic or Latino people can have any ancestry.",
+      "Italian Americans | Italian Americans (Italian: \"italoamericani \"or\" italo-americani\" ] ) are an ethnic group consisting of Americans who have full or partial ancestry from Italy.  Italian Americans are the fourth largest European ethnic group in the United States (not including American ethnicity, an ethnonym used by many in the United States; overall, Italian Americans rank seventh, behind German American, Irish American, African American, English American, American, and Mexican American). .",
+      "Asian Americans in California | Asian Californians are residents of the state of California who are of Asian ancestry.  California has the largest Asian American population in the U.S., and second highest proportion of Asian American residents, after Hawaii.  As of the 2010 U.S. Census, Asian-Americans were 13.6% of the state's population.  The largest Asian American ethnic subgroups in California are Filipino Americans, Chinese Americans, Vietnamese Americans, and Indian Americans. Asian Americans are concentrated in the San Francisco Bay Area and Greater Los Angeles area.",
+      "Indian Americans | Indian Americans or Indo-Americans are Americans whose ancestry belongs to any of the many ethnic groups of the Republic of India.  As the most socio-economically successful minority ethnic group in the U.S., Indian Americans comprise 4 million people, representing around 1% of the U.S. population as of 2015.  Indian Americans are the country's third-largest Asian group alone or in combination with other races after Chinese Americans and Filipino Americans, according to 2015 American Community Survey data.  The U.S. Census Bureau uses the term Asian Indian to avoid confusion with the indigenous peoples of the Americas commonly referred to as American Indians (or Native Americans).",
+      "Scandinavian Americans | Scandinavian Americans or Nordic Americans are Americans of Scandinavian (in the broad sense), or part-Scandinavian ancestry, defined in this article to include Danish Americans (estimate: 1,453,897), Faroese Americans (no estimates), Finnish Americans (estimate: 677,272), Greenlandic Americans (estimate: 352), Icelandic Americans (estimate: 51,234), Norwegian Americans (estimate: 4,602,337), Sami Americans (estimate: 30,000), Swedish Americans (estimate: 4,293,208).  Also included are persons who reported 'Northern European' ancestry (estimate: 230,027) or 'Scandinavian' ancestry (estimate: 582,549).  According to 2010 census data, there are approximately 11,890,524 people of Scandinavian ancestry in the United States.",
+      "Franklin Odo | Dr. Franklin S. Odo (born 1939) is a Japanese American author, scholar, activist, and historian.  Dr. Odo has served as the director of the Asian Pacific American Program at the Smithsonian Institution since the program\u2019s inception in 1997.  As the director of the APA Program, Dr. Odo has brought numerous exhibits to the Smithsonian highlighting the experiences of Chinese Americans, Native Hawaiians, Japanese Americans, Filipino Americans, Vietnamese Americans, Korean Americans, and Indian Americans.  He is also the only Asian Pacific American curator at the National Museum of American History.",
+      "American Beauty/American Psycho Tour | The American Beauty/American Psycho Tour was a concert tour by American rock band Fall Out Boy.  Supporting the band's sixth studio album \"American Beauty/American Psycho\" (2015), the tour visited North America and Europe in 2015.  The North American leg was co-headlined with American rapper Wiz Khalifa under the name The Boys of Zummer.  The Boys of Zummer leg with Wiz Khalifa ranked fifty-ninth for Pollstar's Year End Top 200 North American Tours of 2015, grossing $18.2 million."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 54,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Aram Avakian and Wilfred Lucas, have which nationality in common?\nPassages: [\"Aram Avakian | Aram A. Avakian (April 23, 1926 \\u2013 January 17, 1987) was an Armenian-American film editor and director.  His work in the latter role includes \\\"Jazz on a Summer's Day\\\" (1960) and the indie film \\\"End of the Road\\\" (1970).\", \"Cops and Robbers (1973 film) | Cops and Robbers is a 1973 crime comedy film directed by Aram Avakian with an original screenplay by Donald E. Westlake which Westlake subsequently expanded into a novel.  The film stars Cliff Gorman as Tom and Joseph Bologna as Joe.\", \"End of the Road (1970 film) | End of the Road is a 1970 film directed, co-written, and edited by Aram Avakian and adapted from a 1958 novel by John Barth, and stars Stacy Keach, James Earl Jones and Harris Yulin.\", \"Last universal common ancestor | The last universal common ancestor (LUCA), also called the last universal ancestor (LUA), cenancestor, or (incorrectly) progenote, is the most recent population of organisms from which all organisms now living on Earth have a common descent.  LUCA is the most recent common ancestor of all current life on Earth.  LUCA should not be assumed to be the first living organism on Earth.  The LUCA is estimated to have lived some 3.5 to 3.8 billion years ago (sometime in the Paleoarchean era).  The composition of the LUCA is not directly accessible as a fossil, but can be studied by comparing the genomes of its descendents, organisms living today.  By this means, a 2016 study identified a set of 355 genes inferred to have been present in the LUCA.\", \"11 Harrowhouse | 11 Harrowhouse is a 1974 British film directed by Aram Avakian.  It was adapted by Charles Grodin based upon the novel by Gerald A. Browne with the screenplay by Jeffrey Bloom.  It stars Charles Grodin, Candice Bergen, James Mason, Trevor Howard and John Gielgud.\", \"Wilfred Lucas | Wilfred Lucas (January 30, 1871 \\u2013 December 13, 1940) was a Canadian-born American stage actor who found success in film as an actor, director, and screenwriter.\", \"The Spanish Jade (1915 film) | The Spanish Jade is a 1915 American drama silent film directed by Wilfred Lucas and written by Maurice Hewlett and Louis Joseph Vance.  The film stars Betty Bellairs, Wilfred Lucas, Nigel De Brulier, Arthur Tavares, Frank Lanning and Howard Davies.  The film was released on April 11, 1915, by Paramount Pictures.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the provided passages, it is clear that Aram Avakian is described as an \"Armenian-American\" (passage [1]), indicating he has dual Armenian and American nationality. Wilfred Lucas is referred to as \"a Canadian-born American\" (passage [6]), implying he also held American nationality. Therefore, the shared nationality between these two individuals is \"American.\"\nSummary: Aram Avakian and Wilfred Lucas share American nationality."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Aram Avakian and Wilfred Lucas, have which nationality in common?\nSummary 1: Aram Avakian and Wilfred Lucas share American nationality."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the nationality that Aram Avakian and Wilfred Lucas share. From the provided summary, it is clear that both individuals are American. This directly answers the question.\nQuery: American"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Aram Avakian and Wilfred Lucas, have which nationality in common?\nContext: Aram Avakian and Wilfred Lucas share American nationality.\nPassages: [\"List of Hispanic and Latino Americans | This is a list of notable Hispanic and Latino Americans: citizens or residents of the United States with origins in Hispanic America or Spain.  The following groups are officially designated as \\\"Spanish/Hispanic/Latino\\\": Mexican American, (Stateside) Puerto Rican, Cuban American, Dominican American, Costa Rican American, Guatemalan American, Honduran American, Nicaraguan American, Panamanian American, Salvadoran American, Argentine American, Bolivian American, Chilean American, Colombian American, Ecuadorian American, Paraguayan American, Peruvian American, Spanish American, Uruguayan American, and Venezuelan American.  However, Hispanic or Latino people can have any ancestry.\", \"Italian Americans | Italian Americans (Italian: \\\"italoamericani \\\"or\\\" italo-americani\\\" ] ) are an ethnic group consisting of Americans who have full or partial ancestry from Italy.  Italian Americans are the fourth largest European ethnic group in the United States (not including American ethnicity, an ethnonym used by many in the United States; overall, Italian Americans rank seventh, behind German American, Irish American, African American, English American, American, and Mexican American). .\", \"Asian Americans in California | Asian Californians are residents of the state of California who are of Asian ancestry.  California has the largest Asian American population in the U.S., and second highest proportion of Asian American residents, after Hawaii.  As of the 2010 U.S. Census, Asian-Americans were 13.6% of the state's population.  The largest Asian American ethnic subgroups in California are Filipino Americans, Chinese Americans, Vietnamese Americans, and Indian Americans. Asian Americans are concentrated in the San Francisco Bay Area and Greater Los Angeles area.\", \"Indian Americans | Indian Americans or Indo-Americans are Americans whose ancestry belongs to any of the many ethnic groups of the Republic of India.  As the most socio-economically successful minority ethnic group in the U.S., Indian Americans comprise 4 million people, representing around 1% of the U.S. population as of 2015.  Indian Americans are the country's third-largest Asian group alone or in combination with other races after Chinese Americans and Filipino Americans, according to 2015 American Community Survey data.  The U.S. Census Bureau uses the term Asian Indian to avoid confusion with the indigenous peoples of the Americas commonly referred to as American Indians (or Native Americans).\", \"Scandinavian Americans | Scandinavian Americans or Nordic Americans are Americans of Scandinavian (in the broad sense), or part-Scandinavian ancestry, defined in this article to include Danish Americans (estimate: 1,453,897), Faroese Americans (no estimates), Finnish Americans (estimate: 677,272), Greenlandic Americans (estimate: 352), Icelandic Americans (estimate: 51,234), Norwegian Americans (estimate: 4,602,337), Sami Americans (estimate: 30,000), Swedish Americans (estimate: 4,293,208).  Also included are persons who reported 'Northern European' ancestry (estimate: 230,027) or 'Scandinavian' ancestry (estimate: 582,549).  According to 2010 census data, there are approximately 11,890,524 people of Scandinavian ancestry in the United States.\", \"Franklin Odo | Dr. Franklin S. Odo (born 1939) is a Japanese American author, scholar, activist, and historian.  Dr. Odo has served as the director of the Asian Pacific American Program at the Smithsonian Institution since the program\\u2019s inception in 1997.  As the director of the APA Program, Dr. Odo has brought numerous exhibits to the Smithsonian highlighting the experiences of Chinese Americans, Native Hawaiians, Japanese Americans, Filipino Americans, Vietnamese Americans, Korean Americans, and Indian Americans.  He is also the only Asian Pacific American curator at the National Museum of American History.\", \"American Beauty/American Psycho Tour | The American Beauty/American Psycho Tour was a concert tour by American rock band Fall Out Boy.  Supporting the band's sixth studio album \\\"American Beauty/American Psycho\\\" (2015), the tour visited North America and Europe in 2015.  The North American leg was co-headlined with American rapper Wiz Khalifa under the name The Boys of Zummer.  The Boys of Zummer leg with Wiz Khalifa ranked fifty-ninth for Pollstar's Year End Top 200 North American Tours of 2015, grossing $18.2 million.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks us about the nationality that Aram Avakian and Wilfred Lucas share. The context explicitly states that they both have American nationality. The provided passages include various discussions about ethnic groups and notable individuals associated with America, but there is no specific mention of either Aram Avakian or Wilfred Lucas. Despite the detailed ethnic descriptions, the central shared nationality is explicitly mentioned in the context as American. Thus, further exploration of the passages is unnecessary as the answer to the question is directly stated in the context.\nSummary: Aram Avakian and Wilfred Lucas share American nationality."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Aram Avakian and Wilfred Lucas, have which nationality in common?\nSummary 1: Aram Avakian and Wilfred Lucas share American nationality.\nSummary 2: Aram Avakian and Wilfred Lucas share American nationality."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries, `summary_1` and `summary_2`, state that Aram Avakian and Wilfred Lucas share American nationality. Since both summaries agree and provide the same information, it can be concluded that the shared nationality is American.\nAnswer: American"
+      }
+    ]
+  }
+}

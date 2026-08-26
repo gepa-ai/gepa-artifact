@@ -1,0 +1,96 @@
+{
+  "example_id": "5ade3a9d5542992fa25da707",
+  "question": "Tay Garnett and Alexander Kluge both have what job?",
+  "gold_answer": "film director",
+  "prediction": {
+    "answer": "Tay Garnett and Alexander Kluge are both film directors.",
+    "hop1_docs": [
+      "Tay Garnett | William Taylor \"Tay\" Garnett (June 13, 1894 \u2013 October 3, 1977) was an American film director and writer.",
+      "Trade Winds (film) | Trade Winds is a 1938 comedy film distributed by United Artists.  It was directed by Tay Garnett, and starred Fredric March and Joan Bennett.  The screenplay was written by Dorothy Parker, Alan Campbell and Frank R. Adams, based on story by Tay Garnett.",
+      "Prestige (film) | Prestige is a 1932 American pre-Code drama film directed by Tay Garnett and written by Tay Garnett, Rollo Lloyd and Francis Edward Faragoh.  The film stars Ann Harding, Adolphe Menjou, Melvyn Douglas and Guy Bates Post.  The film was released on January 22, 1932, by RKO Pictures.",
+      "Alexander Kluge | Alexander Kluge (born 14 February 1932) is a German author, philosopher, academic and film director.",
+      "Cattle King | Cattle King is a 1963 film directed by Tay Garnett.  It stars Robert Taylor and Robert Loggia.  It also appears to have been called Guns of Wyoming in some countries.",
+      "G\u00fcnther von Kluge | G\u00fcnther von Kluge (30 October 1882 \u2013 19 August 1944) was a German field marshal during World War II.  Kluge held commands on both the Eastern and Western Fronts.  Although Kluge was not an active conspirator in the 20 July plot, he committed suicide on 19 August 1944, after having been recalled to Berlin for a meeting with Hitler in the aftermath of the failed coup.  He was replaced by Field Marshal Walter Model.",
+      "Bad Company (1931 film) | Bad Company is a 1931 American Pre-Code gangster film directed and co-written by Tay Garnett with Tom Buckingham based on Jack Lait's 1930 novel \"Put on the Spot\".  It stars Helen Twelvetrees and Ricardo Cortez.  Told from the view of a woman, the working titles of this film were \"The Gangster's Wife\" and \"The Mad Marriage\".  Unlike many static early sound films, Garnett includes several scenes using a moving camera climaxing in a gigantic assault on an office building with both sides using heavy machine guns."
+    ],
+    "hop2_docs": [
+      "Tay Garnett | William Taylor \"Tay\" Garnett (June 13, 1894 \u2013 October 3, 1977) was an American film director and writer.",
+      "Trade Winds (film) | Trade Winds is a 1938 comedy film distributed by United Artists.  It was directed by Tay Garnett, and starred Fredric March and Joan Bennett.  The screenplay was written by Dorothy Parker, Alan Campbell and Frank R. Adams, based on story by Tay Garnett.",
+      "Prestige (film) | Prestige is a 1932 American pre-Code drama film directed by Tay Garnett and written by Tay Garnett, Rollo Lloyd and Francis Edward Faragoh.  The film stars Ann Harding, Adolphe Menjou, Melvyn Douglas and Guy Bates Post.  The film was released on January 22, 1932, by RKO Pictures.",
+      "Alexander Kluge | Alexander Kluge (born 14 February 1932) is a German author, philosopher, academic and film director.",
+      "Wild Harvest | Wild Harvest is a 1947 film directed by Tay Garnett.  It stars Alan Ladd and Dorothy Lamour.",
+      "Timber Tramps | Timber Tramps is a 1975 film directed by Tay Garnett and starring Claude Akins and Leon Ames.",
+      "Yesterday Girl | Yesterday Girl (German: Abschied von gestern, \"Farewell to Yesterday\") is a 1966 New German Cinema film directed and written by Alexander Kluge.  The film is based on the short story \"Anita G.\" (1962), which is also by Alexander Kluge.  The film tells the story of Anita G., a young East German migrant to West Germany and her struggle to adjust to her new life."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 18,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Tay Garnett and Alexander Kluge both have what job?\nPassages: [\"Tay Garnett | William Taylor \\\"Tay\\\" Garnett (June 13, 1894 \\u2013 October 3, 1977) was an American film director and writer.\", \"Trade Winds (film) | Trade Winds is a 1938 comedy film distributed by United Artists.  It was directed by Tay Garnett, and starred Fredric March and Joan Bennett.  The screenplay was written by Dorothy Parker, Alan Campbell and Frank R. Adams, based on story by Tay Garnett.\", \"Prestige (film) | Prestige is a 1932 American pre-Code drama film directed by Tay Garnett and written by Tay Garnett, Rollo Lloyd and Francis Edward Faragoh.  The film stars Ann Harding, Adolphe Menjou, Melvyn Douglas and Guy Bates Post.  The film was released on January 22, 1932, by RKO Pictures.\", \"Alexander Kluge | Alexander Kluge (born 14 February 1932) is a German author, philosopher, academic and film director.\", \"Cattle King | Cattle King is a 1963 film directed by Tay Garnett.  It stars Robert Taylor and Robert Loggia.  It also appears to have been called Guns of Wyoming in some countries.\", \"G\\u00fcnther von Kluge | G\\u00fcnther von Kluge (30 October 1882 \\u2013 19 August 1944) was a German field marshal during World War II.  Kluge held commands on both the Eastern and Western Fronts.  Although Kluge was not an active conspirator in the 20 July plot, he committed suicide on 19 August 1944, after having been recalled to Berlin for a meeting with Hitler in the aftermath of the failed coup.  He was replaced by Field Marshal Walter Model.\", \"Bad Company (1931 film) | Bad Company is a 1931 American Pre-Code gangster film directed and co-written by Tay Garnett with Tom Buckingham based on Jack Lait's 1930 novel \\\"Put on the Spot\\\".  It stars Helen Twelvetrees and Ricardo Cortez.  Told from the view of a woman, the working titles of this film were \\\"The Gangster's Wife\\\" and \\\"The Mad Marriage\\\".  Unlike many static early sound films, Garnett includes several scenes using a moving camera climaxing in a gigantic assault on an office building with both sides using heavy machine guns.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the provided passages, Tay Garnett is mentioned as an American film director and writer. Multiple references highlight his work directing films like \"Trade Winds,\" \"Prestige,\" \"Cattle King,\" and \"Bad Company.\" Similarly, Alexander Kluge is described as a German author, philosopher, academic, and film director. Both individuals are explicitly identified as film directors, albeit in different cultural and creative contexts.\nSummary: Tay Garnett and Alexander Kluge are both film directors."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Tay Garnett and Alexander Kluge both have what job?\nSummary 1: Tay Garnett and Alexander Kluge are both film directors."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about a shared job or profession between Tay Garnett and Alexander Kluge. The provided summary states that both are film directors. Therefore, the answer is that they share the job of being a film director.\nQuery: What job do Tay Garnett and Alexander Kluge share?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Tay Garnett and Alexander Kluge both have what job?\nContext: Tay Garnett and Alexander Kluge are both film directors.\nPassages: [\"Tay Garnett | William Taylor \\\"Tay\\\" Garnett (June 13, 1894 \\u2013 October 3, 1977) was an American film director and writer.\", \"Trade Winds (film) | Trade Winds is a 1938 comedy film distributed by United Artists.  It was directed by Tay Garnett, and starred Fredric March and Joan Bennett.  The screenplay was written by Dorothy Parker, Alan Campbell and Frank R. Adams, based on story by Tay Garnett.\", \"Prestige (film) | Prestige is a 1932 American pre-Code drama film directed by Tay Garnett and written by Tay Garnett, Rollo Lloyd and Francis Edward Faragoh.  The film stars Ann Harding, Adolphe Menjou, Melvyn Douglas and Guy Bates Post.  The film was released on January 22, 1932, by RKO Pictures.\", \"Alexander Kluge | Alexander Kluge (born 14 February 1932) is a German author, philosopher, academic and film director.\", \"Wild Harvest | Wild Harvest is a 1947 film directed by Tay Garnett.  It stars Alan Ladd and Dorothy Lamour.\", \"Timber Tramps | Timber Tramps is a 1975 film directed by Tay Garnett and starring Claude Akins and Leon Ames.\", \"Yesterday Girl | Yesterday Girl (German: Abschied von gestern, \\\"Farewell to Yesterday\\\") is a 1966 New German Cinema film directed and written by Alexander Kluge.  The film is based on the short story \\\"Anita G.\\\" (1962), which is also by Alexander Kluge.  The film tells the story of Anita G., a young East German migrant to West Germany and her struggle to adjust to her new life.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: By examining the context and the passages provided, it's evident that both Tay Garnett and Alexander Kluge are film directors. Tay Garnett is mentioned throughout multiple entries (such as passages 1, 2, 3, 5, and 6) as a director of American films, including \"Trade Winds\" and \"Prestige.\" Similarly, Alexander Kluge is identified in passages 4 and 7 as a German film director, with work such as \"Yesterday Girl\" attributed to him. Therefore, their common profession is film directing.\nSummary: Tay Garnett and Alexander Kluge are both film directors."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Tay Garnett and Alexander Kluge both have what job?\nSummary 1: Tay Garnett and Alexander Kluge are both film directors.\nSummary 2: Tay Garnett and Alexander Kluge are both film directors."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that Tay Garnett and Alexander Kluge share the same profession as film directors. There is no conflicting information between the provided summaries.\nAnswer: Tay Garnett and Alexander Kluge are both film directors."
+      }
+    ]
+  }
+}

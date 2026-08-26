@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7fc8c85542992e7d278d83",
+  "question": "What record company released the first single off the album Ol' Waylon?",
+  "gold_answer": "RCA Victor",
+  "prediction": {
+    "answer": "RCA Victor.",
+    "hop1_docs": [
+      "Ol' Waylon Sings Ol' Hank | Ol' Waylon Sings Ol' Hank is an album by Waylon Jennings, released independently on WJ Records, the singer's own label, in 1992.  As the title suggests, it features Jennings' performances of songs written or made famous by Hank Williams.  The recordings were made in 1985 and very few copies of the release were pressed; in effect, the original album is extremely rare today.  In 2006, the record was reissued on YMC Records as Waylon Sings Hank Williams with a new cover and a bonus track featuring Jennings reminiscing on his past.",
+      "What a Way to Live | What a Way to Live is the fifth studio album released by American country music artist Mark Chesnutt.  His first album for Decca Records, it earned RIAA gold certification in the United States for sales of 500,000 copies.  The tracks \"She Dreams\", \"Goin' Through the Big D\", \"Gonna Get a Life\", and \"Down in Tennessee\" were all released as singles, peaking at #6, #2, #1, and #23, respectively, on the \"Billboard\" Hot Country Songs charts.  \"She Dreams\" was co-written and originally recorded by Tim Mensy on his 1992 album \"This Ol' Heart\", from which it was released as a single, peaking at #74 on the country charts that year.  Mark duets with Waylon Jennings on the track \"Rainy Day Woman\" which Jennings first recorded on his 1974 album \"The Ramblin' Man\".",
+      "Luckenbach, Texas (Back to the Basics of Love) | \"Luckenbach, Texas (Back to the Basics of Love)\" is a song recorded by the American country music artist Waylon Jennings.  It was released in April 1977 as the first single from the album \"Ol' Waylon\".  It was written by Chips Moman and Bobby Emmons.",
+      "Ol' Waylon | Ol' Waylon is an album by Waylon Jennings, released on RCA Victor in 1977.  It eventually became one of Jennings' highest-selling albums, due in no small part to the phenomenal success of the chart-topping \"Luckenbach, Texas (Back to the Basics of Love).\"  It was also the singer's fourth solo album in a row to reach the top of the country charts, remaining there for thirteen weeks and becoming country music's first platinum album by any single solo artist.",
+      "The Blues Come Around | \"The Blues Come Around\" is a song written and recorded by Hank Williams for MGM Records.  It was released as the B-side to the single \"I'm a Long Gone Daddy\" in June 1948.  It was recorded at Castle Studio in Nashville with Fred Rose producing and backing from Jerry Byrd (steel guitar), Robert \"Chubby\" Wise (fiddle), Zeke Turner (lead guitar), probably Louis Innis (bass) and either Owen Bradley or Rose on piano.  Waylon Jennings recorded the song for his 1992 album \"Ol' Waylon Sings Ol' Hank\".",
+      "Come with Me (Waylon Jennings song) | \"Come with Me\" is a song written by Chuck Howard and recorded by American country music artist Waylon Jennings.  It was released in August 1979 as the first single from the album, \"What Goes Around Comes Around\".  \"Come with Me\" was Waylon Jennings' eighth No. 1 on the Country chart as a solo artist.  The single stayed at No. 1 for two weeks and spent a total of thirteen weeks on the Country chart.",
+      "Waylon's Greatest Hits, Vol. 2 | Waylon's Greatest Hits, Vol.  2 is a compilation album by Waylon Jennings, released on RCA Victor in 1984.  It contains several songs recorded primarily in the later period of the singer's career, encompassing the late 1970s as well as the early 1980s.  Although several relatively obscure tracks were included, the compilation also contains the hits \"Theme from the Dukes of Hazzard (Good Ol' Boys)\" and \"Don't You Think This Outlaw Bit's Done Got Out of Hand\".  \"Looking for Suzanne\", \"America\" and \"Waltz Me to Heaven\" are all previously unreleased Jennings recordings; the first of these made a reappearance on Jennings' \"Sweet Mother Texas\" (1986).  \"America\" and \"Waltz Me to Heaven\" charted as singles, reaching #6 and #10, respectively, with a music video being released for the former; the album peaked at #27 on the country charts."
+    ],
+    "hop2_docs": [
+      "Ol' Waylon | Ol' Waylon is an album by Waylon Jennings, released on RCA Victor in 1977.  It eventually became one of Jennings' highest-selling albums, due in no small part to the phenomenal success of the chart-topping \"Luckenbach, Texas (Back to the Basics of Love).\"  It was also the singer's fourth solo album in a row to reach the top of the country charts, remaining there for thirteen weeks and becoming country music's first platinum album by any single solo artist.",
+      "Waylon Sings Ol' Harlan | Waylon Sings Ol' Harlan is a 1967 album by Waylon Jennings on RCA Victor.  It consists completely of songs by Harlan Howard.",
+      "Waylon's Greatest Hits, Vol. 2 | Waylon's Greatest Hits, Vol.  2 is a compilation album by Waylon Jennings, released on RCA Victor in 1984.  It contains several songs recorded primarily in the later period of the singer's career, encompassing the late 1970s as well as the early 1980s.  Although several relatively obscure tracks were included, the compilation also contains the hits \"Theme from the Dukes of Hazzard (Good Ol' Boys)\" and \"Don't You Think This Outlaw Bit's Done Got Out of Hand\".  \"Looking for Suzanne\", \"America\" and \"Waltz Me to Heaven\" are all previously unreleased Jennings recordings; the first of these made a reappearance on Jennings' \"Sweet Mother Texas\" (1986).  \"America\" and \"Waltz Me to Heaven\" charted as singles, reaching #6 and #10, respectively, with a music video being released for the former; the album peaked at #27 on the country charts.",
+      "Waylon | Waylon is a 1970 album by Waylon Jennings released on RCA Victor.",
+      "Waylon Live | Waylon Live is an live album by Waylon Jennings, released on RCA Victor in 1976.",
+      "Jewels (Waylon Jennings album) | Jewels is an album by Waylon Jennings, released in 1968 on RCA Victor.",
+      "A Country Star Is Born | A Country Star is Born is the debut studio album by American country music artist, Jessi Colter.  The album was released April 1970 off of RCA Victor, and was produced by Chet Atkins and Waylon Jennings."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 94,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What record company released the first single off the album Ol' Waylon?\nPassages: [\"Ol' Waylon Sings Ol' Hank | Ol' Waylon Sings Ol' Hank is an album by Waylon Jennings, released independently on WJ Records, the singer's own label, in 1992.  As the title suggests, it features Jennings' performances of songs written or made famous by Hank Williams.  The recordings were made in 1985 and very few copies of the release were pressed; in effect, the original album is extremely rare today.  In 2006, the record was reissued on YMC Records as Waylon Sings Hank Williams with a new cover and a bonus track featuring Jennings reminiscing on his past.\", \"What a Way to Live | What a Way to Live is the fifth studio album released by American country music artist Mark Chesnutt.  His first album for Decca Records, it earned RIAA gold certification in the United States for sales of 500,000 copies.  The tracks \\\"She Dreams\\\", \\\"Goin' Through the Big D\\\", \\\"Gonna Get a Life\\\", and \\\"Down in Tennessee\\\" were all released as singles, peaking at #6, #2, #1, and #23, respectively, on the \\\"Billboard\\\" Hot Country Songs charts.  \\\"She Dreams\\\" was co-written and originally recorded by Tim Mensy on his 1992 album \\\"This Ol' Heart\\\", from which it was released as a single, peaking at #74 on the country charts that year.  Mark duets with Waylon Jennings on the track \\\"Rainy Day Woman\\\" which Jennings first recorded on his 1974 album \\\"The Ramblin' Man\\\".\", \"Luckenbach, Texas (Back to the Basics of Love) | \\\"Luckenbach, Texas (Back to the Basics of Love)\\\" is a song recorded by the American country music artist Waylon Jennings.  It was released in April 1977 as the first single from the album \\\"Ol' Waylon\\\".  It was written by Chips Moman and Bobby Emmons.\", \"Ol' Waylon | Ol' Waylon is an album by Waylon Jennings, released on RCA Victor in 1977.  It eventually became one of Jennings' highest-selling albums, due in no small part to the phenomenal success of the chart-topping \\\"Luckenbach, Texas (Back to the Basics of Love).\\\"  It was also the singer's fourth solo album in a row to reach the top of the country charts, remaining there for thirteen weeks and becoming country music's first platinum album by any single solo artist.\", \"The Blues Come Around | \\\"The Blues Come Around\\\" is a song written and recorded by Hank Williams for MGM Records.  It was released as the B-side to the single \\\"I'm a Long Gone Daddy\\\" in June 1948.  It was recorded at Castle Studio in Nashville with Fred Rose producing and backing from Jerry Byrd (steel guitar), Robert \\\"Chubby\\\" Wise (fiddle), Zeke Turner (lead guitar), probably Louis Innis (bass) and either Owen Bradley or Rose on piano.  Waylon Jennings recorded the song for his 1992 album \\\"Ol' Waylon Sings Ol' Hank\\\".\", \"Come with Me (Waylon Jennings song) | \\\"Come with Me\\\" is a song written by Chuck Howard and recorded by American country music artist Waylon Jennings.  It was released in August 1979 as the first single from the album, \\\"What Goes Around Comes Around\\\".  \\\"Come with Me\\\" was Waylon Jennings' eighth No. 1 on the Country chart as a solo artist.  The single stayed at No. 1 for two weeks and spent a total of thirteen weeks on the Country chart.\", \"Waylon's Greatest Hits, Vol. 2 | Waylon's Greatest Hits, Vol.  2 is a compilation album by Waylon Jennings, released on RCA Victor in 1984.  It contains several songs recorded primarily in the later period of the singer's career, encompassing the late 1970s as well as the early 1980s.  Although several relatively obscure tracks were included, the compilation also contains the hits \\\"Theme from the Dukes of Hazzard (Good Ol' Boys)\\\" and \\\"Don't You Think This Outlaw Bit's Done Got Out of Hand\\\".  \\\"Looking for Suzanne\\\", \\\"America\\\" and \\\"Waltz Me to Heaven\\\" are all previously unreleased Jennings recordings; the first of these made a reappearance on Jennings' \\\"Sweet Mother Texas\\\" (1986).  \\\"America\\\" and \\\"Waltz Me to Heaven\\\" charted as singles, reaching #6 and #10, respectively, with a music video being released for the former; the album peaked at #27 on the country charts.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine the record company that released the first single off the album \"Ol' Waylon,\" we focused on the passages that describe this album and its singles. Passage [4] explicitly states that \"Ol' Waylon\" is an album released by Waylon Jennings on RCA Victor in 1977 and highlights its success. Additionally, passage [3] confirms that the first single from \"Ol' Waylon\" was \"Luckenbach, Texas (Back to the Basics of Love),\" which was released in April 1977. The combination of these two passages indicates that RCA Victor was the record company responsible for releasing the first single from the album \"Ol' Waylon.\"\nSummary: The first single off the album \"Ol' Waylon\" was released by RCA Victor."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What record company released the first single off the album Ol' Waylon?\nSummary 1: The first single off the album \"Ol' Waylon\" was released by RCA Victor."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks information about the record company responsible for releasing the first single from \"Ol' Waylon.\" Based on the provided summary, the first single was released by RCA Victor. The query can, therefore, confirm this association by verifying it or seeking more specific details about the release.\nQuery: Who released the first single off the album \"Ol' Waylon\"? Was it RCA Victor?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What record company released the first single off the album Ol' Waylon?\nContext: The first single off the album \"Ol' Waylon\" was released by RCA Victor.\nPassages: [\"Ol' Waylon | Ol' Waylon is an album by Waylon Jennings, released on RCA Victor in 1977.  It eventually became one of Jennings' highest-selling albums, due in no small part to the phenomenal success of the chart-topping \\\"Luckenbach, Texas (Back to the Basics of Love).\\\"  It was also the singer's fourth solo album in a row to reach the top of the country charts, remaining there for thirteen weeks and becoming country music's first platinum album by any single solo artist.\", \"Waylon Sings Ol' Harlan | Waylon Sings Ol' Harlan is a 1967 album by Waylon Jennings on RCA Victor.  It consists completely of songs by Harlan Howard.\", \"Waylon's Greatest Hits, Vol. 2 | Waylon's Greatest Hits, Vol.  2 is a compilation album by Waylon Jennings, released on RCA Victor in 1984.  It contains several songs recorded primarily in the later period of the singer's career, encompassing the late 1970s as well as the early 1980s.  Although several relatively obscure tracks were included, the compilation also contains the hits \\\"Theme from the Dukes of Hazzard (Good Ol' Boys)\\\" and \\\"Don't You Think This Outlaw Bit's Done Got Out of Hand\\\".  \\\"Looking for Suzanne\\\", \\\"America\\\" and \\\"Waltz Me to Heaven\\\" are all previously unreleased Jennings recordings; the first of these made a reappearance on Jennings' \\\"Sweet Mother Texas\\\" (1986).  \\\"America\\\" and \\\"Waltz Me to Heaven\\\" charted as singles, reaching #6 and #10, respectively, with a music video being released for the former; the album peaked at #27 on the country charts.\", \"Waylon | Waylon is a 1970 album by Waylon Jennings released on RCA Victor.\", \"Waylon Live | Waylon Live is an live album by Waylon Jennings, released on RCA Victor in 1976.\", \"Jewels (Waylon Jennings album) | Jewels is an album by Waylon Jennings, released in 1968 on RCA Victor.\", \"A Country Star Is Born | A Country Star is Born is the debut studio album by American country music artist, Jessi Colter.  The album was released April 1970 off of RCA Victor, and was produced by Chet Atkins and Waylon Jennings.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the context provided, it is clearly stated that the first single off the album \"Ol' Waylon\" was released by RCA Victor. Additionally, every relevant passage that references \"Ol' Waylon\" or other Waylon Jennings albums consistently lists RCA Victor as the record company responsible for their release. This further supports the conclusion that RCA Victor was indeed the record company for the first single from \"Ol' Waylon.\"\nSummary: The first single off the album \"Ol' Waylon\" was released by RCA Victor."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What record company released the first single off the album Ol' Waylon?\nSummary 1: The first single off the album \"Ol' Waylon\" was released by RCA Victor.\nSummary 2: The first single off the album \"Ol' Waylon\" was released by RCA Victor."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the first single off the album \"Ol' Waylon\" was released by RCA Victor. Cross-referencing and consistency between the summaries indicate this is likely an accurate statement. RCA Victor is a well-known label associated with numerous country music releases, aligning with the genre of the album.\nAnswer: RCA Victor."
+      }
+    ]
+  }
+}

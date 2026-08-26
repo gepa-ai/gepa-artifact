@@ -1,0 +1,96 @@
+{
+  "example_id": "5a899c925542993b751ca95f",
+  "question": "What type of company is Zipcar led by Scott Griffith from 2003-2013?",
+  "gold_answer": "car-sharing company",
+  "prediction": {
+    "answer": "Zipcar, led by Scott Griffith from 2003 to 2013, is an American car-sharing company that offers short-term car rentals based on a membership model.",
+    "hop1_docs": [
+      "Scott Griffith | Scott Griffith was the Chairman and Chief Executive Officer of Zipcar, Inc. from February 2003 until his resignation on March 15, 2013 following the acquisition of Zipcar by Avis Budget Group.",
+      "Zipcar | Zipcar is an American car-sharing company and a subsidiary of Avis Budget Group.  Zipcar provides automobile reservations to its members, billable by the hour or day; members pay a monthly or annual membership fee in addition to car reservations charges.  Zipcar was founded in 2000 by Antje Danielson and Robin Chase.",
+      "Streetcar (carsharing) | Streetcar was the largest carsharing/car club company in the United Kingdom, established in 2004, which merged with the American company Zipcar in 2010, following a period of investment by Smedvig Capital. <ref name=\"Streetcar/Zipcar Merger Press Release\">Zipcar Acquires Streetcar, expanding world's largest car sharing service, in April 21, 2010</ref>",
+      "George Douglas Scott | (George) Douglas Scott (Doug Scott) is Honorary Entrepreneurial Fellow in the Business School of Durham University, and Managing Director at What You See Is All There Is.  He was previously the chief executive officer of Tyneside Economic Development Company (TEDCO Ltd), Jarrow, Tyne and Wear from 1997 to 2013.",
+      "Scott's - Bell 47 | Scott's \u2013 Bell 47, Inc. is the current, (March 2013), Original Equipment Manufacturer (OEM) of the Bell 47 helicopter.  The company was formed in 2009 after acquiring the type certificates from Bell Helicopter.",
+      "Fred Neufeld | Fred (Friedrich) Neufeld (17 February 1869 in Danzig \u2013 18 April 1945 in Berlin) was a physician and bacteriologist who discovered the pneumococcal types.  This discovery led Fred Griffith to show that one pneumococcal type could be transformed into another (Griffith's experiment).  Subsequently, Oswald Avery demonstrated that the transforming substance was DNA.  All modern molecular biology has evolved from this work.",
+      "S/2003 J 3 | S/2003 J 3 is a natural satellite of Jupiter.  It was discovered by a team of astronomers from the University of Hawaii led by Scott S. Sheppard in 2003."
+    ],
+    "hop2_docs": [
+      "Zipcar | Zipcar is an American car-sharing company and a subsidiary of Avis Budget Group.  Zipcar provides automobile reservations to its members, billable by the hour or day; members pay a monthly or annual membership fee in addition to car reservations charges.  Zipcar was founded in 2000 by Antje Danielson and Robin Chase.",
+      "JustShareIt | JustShareIt is a peer-to-peer car rental and car sharing marketplace.  It allows individuals to rent vehicles directly from individual car owners or car sharing companies in local neighborhood locations or wherever they are traveling.  It allows its members to rent the vehicles by the hour, using their smartphone.  As with companies like Airbnb, TaskRabbit, and Zipcar.  JustShareIt is considered to be a service provider in the Sharing Economy.",
+      "Carsharing | Carsharing or car sharing (US and AU) or car clubs (UK) is a model of car rental where people rent cars for short periods of time, often by the hour.  They are attractive to customers who make only occasional use of a vehicle, as well as others who would like occasional access to a vehicle of a different type than they use day-to-day.  The organization renting the cars may be a commercial business or the users may be organized as a company, public agency, cooperative, or \"ad hoc\" grouping.  Car sharing is part of a larger trend of shared mobility.  Shared mobility includes all modes of travel that offer short-term access to transportation on an on-needed basis either for personal transportation or goods delivery.",
+      "Avis Budget Group | Avis Budget Group, Inc. is the American parent company of Avis Car Rental, Budget Car Rental, Budget Truck Rental, Payless Car Rental, Apex Car Rentals, Maggiore Group and Zipcar.  The company's headquarters are located in Parsippany-Troy Hills, New Jersey, United States.",
+      "Motivate (company) | Motivate (formerly Alta Bicycle Share) (also known as Motivate International Inc.) is a company based in New York City that operates bicycle sharing systems in the United States, Canada, and Australia.  The systems provide a flexible method for completing short trips, as contrasted with the longer rentals offered by traditional bike rental companies.  Motivate was listed in Fast Company's \"World's Most Innovative Companies\" for 2014 under its previous name.",
+      "Irish Car Rentals | Irish Car Rentals is a car rental company headquartered in Santry, Dublin that provides car rental services in Ireland.  The Irish Car Rentals was the owner of GoCar, the first car sharing service in Ireland and has the Europcar franchise in Ireland.",
+      "Scott Griffith | Scott Griffith was the Chairman and Chief Executive Officer of Zipcar, Inc. from February 2003 until his resignation on March 15, 2013 following the acquisition of Zipcar by Avis Budget Group."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 45,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What type of company is Zipcar led by Scott Griffith from 2003-2013?\nPassages: [\"Scott Griffith | Scott Griffith was the Chairman and Chief Executive Officer of Zipcar, Inc. from February 2003 until his resignation on March 15, 2013 following the acquisition of Zipcar by Avis Budget Group.\", \"Zipcar | Zipcar is an American car-sharing company and a subsidiary of Avis Budget Group.  Zipcar provides automobile reservations to its members, billable by the hour or day; members pay a monthly or annual membership fee in addition to car reservations charges.  Zipcar was founded in 2000 by Antje Danielson and Robin Chase.\", \"Streetcar (carsharing) | Streetcar was the largest carsharing/car club company in the United Kingdom, established in 2004, which merged with the American company Zipcar in 2010, following a period of investment by Smedvig Capital. <ref name=\\\"Streetcar/Zipcar Merger Press Release\\\">Zipcar Acquires Streetcar, expanding world's largest car sharing service, in April 21, 2010</ref>\", \"George Douglas Scott | (George) Douglas Scott (Doug Scott) is Honorary Entrepreneurial Fellow in the Business School of Durham University, and Managing Director at What You See Is All There Is.  He was previously the chief executive officer of Tyneside Economic Development Company (TEDCO Ltd), Jarrow, Tyne and Wear from 1997 to 2013.\", \"Scott's - Bell 47 | Scott's \\u2013 Bell 47, Inc. is the current, (March 2013), Original Equipment Manufacturer (OEM) of the Bell 47 helicopter.  The company was formed in 2009 after acquiring the type certificates from Bell Helicopter.\", \"Fred Neufeld | Fred (Friedrich) Neufeld (17 February 1869 in Danzig \\u2013 18 April 1945 in Berlin) was a physician and bacteriologist who discovered the pneumococcal types.  This discovery led Fred Griffith to show that one pneumococcal type could be transformed into another (Griffith's experiment).  Subsequently, Oswald Avery demonstrated that the transforming substance was DNA.  All modern molecular biology has evolved from this work.\", \"S/2003 J 3 | S/2003 J 3 is a natural satellite of Jupiter.  It was discovered by a team of astronomers from the University of Hawaii led by Scott S. Sheppard in 2003.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine what type of company Zipcar is, the relevant passages to consider include [2] and [3]. Passage [2] identifies Zipcar as an \"American car-sharing company\" and describes its business model, which focuses on providing automobile reservations to its members who are billed by the hour or day and pay membership fees. The company's focus on car-sharing distinguishes it as a company operating in the transportation service industry. Additional context from passage [3] reinforces the idea that Zipcar is a leading entity in the car-sharing space, as it acquired Streetcar, another car-sharing company, to expand its global presence. These descriptions provide a clear answer to the type of company Zipcar is under Scott Griffith's leadership from 2003 to 2013.\nSummary: Zipcar, led by Scott Griffith from 2003 to 2013, is an American car-sharing company that provides car rental services to its members on a short-term basis, charging by the hour or day, and requiring monthly or annual membership fees."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What type of company is Zipcar led by Scott Griffith from 2003-2013?\nSummary 1: Zipcar, led by Scott Griffith from 2003 to 2013, is an American car-sharing company that provides car rental services to its members on a short-term basis, charging by the hour or day, and requiring monthly or annual membership fees."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The summary explains that Zipcar, under Scott Griffith's leadership from 2003 to 2013, operated as a car-sharing company. It is defined by its short-term vehicle rental services, billed by the hour or day, requiring memberships. Therefore, understanding the type of company it is requires combining these provided characteristics into a concise query addressing its industry type and business model.\nQuery: What type of business or industry is Zipcar under Scott Griffith, operating as a car-sharing company requiring memberships and providing short-term rentals?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What type of company is Zipcar led by Scott Griffith from 2003-2013?\nContext: Zipcar, led by Scott Griffith from 2003 to 2013, is an American car-sharing company that provides car rental services to its members on a short-term basis, charging by the hour or day, and requiring monthly or annual membership fees.\nPassages: [\"Zipcar | Zipcar is an American car-sharing company and a subsidiary of Avis Budget Group.  Zipcar provides automobile reservations to its members, billable by the hour or day; members pay a monthly or annual membership fee in addition to car reservations charges.  Zipcar was founded in 2000 by Antje Danielson and Robin Chase.\", \"JustShareIt | JustShareIt is a peer-to-peer car rental and car sharing marketplace.  It allows individuals to rent vehicles directly from individual car owners or car sharing companies in local neighborhood locations or wherever they are traveling.  It allows its members to rent the vehicles by the hour, using their smartphone.  As with companies like Airbnb, TaskRabbit, and Zipcar.  JustShareIt is considered to be a service provider in the Sharing Economy.\", \"Carsharing | Carsharing or car sharing (US and AU) or car clubs (UK) is a model of car rental where people rent cars for short periods of time, often by the hour.  They are attractive to customers who make only occasional use of a vehicle, as well as others who would like occasional access to a vehicle of a different type than they use day-to-day.  The organization renting the cars may be a commercial business or the users may be organized as a company, public agency, cooperative, or \\\"ad hoc\\\" grouping.  Car sharing is part of a larger trend of shared mobility.  Shared mobility includes all modes of travel that offer short-term access to transportation on an on-needed basis either for personal transportation or goods delivery.\", \"Avis Budget Group | Avis Budget Group, Inc. is the American parent company of Avis Car Rental, Budget Car Rental, Budget Truck Rental, Payless Car Rental, Apex Car Rentals, Maggiore Group and Zipcar.  The company's headquarters are located in Parsippany-Troy Hills, New Jersey, United States.\", \"Motivate (company) | Motivate (formerly Alta Bicycle Share) (also known as Motivate International Inc.) is a company based in New York City that operates bicycle sharing systems in the United States, Canada, and Australia.  The systems provide a flexible method for completing short trips, as contrasted with the longer rentals offered by traditional bike rental companies.  Motivate was listed in Fast Company's \\\"World's Most Innovative Companies\\\" for 2014 under its previous name.\", \"Irish Car Rentals | Irish Car Rentals is a car rental company headquartered in Santry, Dublin that provides car rental services in Ireland.  The Irish Car Rentals was the owner of GoCar, the first car sharing service in Ireland and has the Europcar franchise in Ireland.\", \"Scott Griffith | Scott Griffith was the Chairman and Chief Executive Officer of Zipcar, Inc. from February 2003 until his resignation on March 15, 2013 following the acquisition of Zipcar by Avis Budget Group.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Zipcar is a company that offers car-sharing services, allowing members to rent vehicles on a short-term basis, charged by the hour or day, with additional membership fees. From the passages, it is clear that Zipcar is categorized under the car-sharing industry, which provides shared mobility solutions for people who need vehicles intermittently or for specific purposes. Scott Griffith led Zipcar during a significant portion of its growth from 2003 to 2013. The context and passages also confirm that Zipcar operates as a subsidiary of Avis Budget Group, serving as a commercial car-sharing business. Its model aligns with the broader sharing economy trend.\nSummary: Zipcar is an American car-sharing company, focused on short-term car rentals, and was led by Scott Griffith between 2003 and 2013."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What type of company is Zipcar led by Scott Griffith from 2003-2013?\nSummary 1: Zipcar, led by Scott Griffith from 2003 to 2013, is an American car-sharing company that provides car rental services to its members on a short-term basis, charging by the hour or day, and requiring monthly or annual membership fees.\nSummary 2: Zipcar is an American car-sharing company, focused on short-term car rentals, and was led by Scott Griffith between 2003 and 2013."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries describe Zipcar as an American car-sharing company specializing in short-term car rentals. The key activity of the company involves providing vehicles to its members on a short-term basis, and it operates with a membership model. Scott Griffith served as the company's leader from 2003 to 2013, as stated consistently in both summaries.\nAnswer: Zipcar, led by Scott Griffith from 2003 to 2013, is an American car-sharing company that offers short-term car rentals based on a membership model."
+      }
+    ]
+  }
+}

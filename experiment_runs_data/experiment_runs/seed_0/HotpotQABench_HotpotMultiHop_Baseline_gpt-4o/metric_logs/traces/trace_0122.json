@@ -1,0 +1,96 @@
+{
+  "example_id": "5a88d928554299206df2b37c",
+  "question": "Who did the founder of Project RAND view as his own person \"troubleshooter\" while serving as general of the Air Force?",
+  "gold_answer": "St. Clair Streett",
+  "prediction": {
+    "answer": "Major General St. Clair Streett.",
+    "hop1_docs": [
+      "St. Clair Streett | St. Clair Streett (October 6, 1893 \u2013 September 28, 1970), known as \"Bill\", was a United States Air Force (USAF) major general and writer who first organized and led the Strategic Air Command (SAC).  Streett served as aide to air power advocate General Billy Mitchell, and was viewed by General of the Air Force Henry H. Arnold as his own personal \"troubleshooter\".",
+      "Henry H. Arnold | Henry Harley \"Hap\" Arnold (June 25, 1886\u00a0\u2013 January 15, 1950) was an American general officer holding the grades of General of the Army and General of the Air Force.  Arnold was an aviation pioneer, Chief of the Air Corps (1938\u20131941), Commanding General of the U.S. Army Air Forces, the only U.S. Air Force general to hold five-star rank, and the only officer to hold a five-star rank in two different U.S. military services.  Arnold was also the founder of Project RAND, which evolved into one of the world's largest non-profit global policy think tanks, the RAND Corporation, and one of the founders of Pan American World Airways.",
+      "William Rand (physician) | William Rand (\"fl.\"  1650\u20131660) was an English physician who projected general reforms in medical education, practice and publication.  His views were Paracelsian and Helmontian, and he participated in the Hartlib Circle.",
+      "Objectivism and homosexuality | Ayn Rand, founder of Objectivism, held controversial views regarding homosexuality and gender roles. Although her personal view of homosexuality was unambiguously negative, considering it immoral and disgusting, Rand endorsed non-discrimination protection for homosexuals in the public sphere while opposing laws against discrimination in the private sector on the basis of economic freedom.",
+      "Robin Rand | Robin Rand (born 1956) is a United States Air Force general and commander of Air Force Global Strike Command.  His command provides combat-ready forces to conduct strategic nuclear deterrence and global strike operations in support of combatant commanders.  Ultimately, General Rand is responsible for the Nation's three intercontinental ballistic missile wings, the two B-52 wings, and the only B-2 wing with two B-1 wings and a weapon's storage complex to be added in FY16, approximately one-third of the nation's nuclear deterrent.",
+      "George Tanham | George K. Tanham (1922-2003) joined the American RAND Corporation in 1955 and held several positions before retiring in 1987, including leading Project AIR FORCE from 1970 to 1975.  He also served on the RAND Board of Trustees and was an advisory trustee at the time of his death.  He continued to write on international security issues, especially regarding South Asia, after his retirement.",
+      "Billy J. Boles | General Billy Joe Boles (born July 27, 1938) is a retired United States Air Force four-star general.  At the time of his retirement, he was Commander of the Air Education and Training Command, a 70,000-person organization, responsible for recruiting, training and educating Air Force personnel.  He served for more than three years as the Senior Personnel Officer for the US Air Force, at that time a 700,000-person organization, worldwide.  In his early career, Bill served in key leadership positions throughout the Air Force, to include four tours of duty at Air Force headquarters in Washington DC.  During his command and staff assignments he had extensive experience in media relations and in presenting Air Force programs to congressional committees."
+    ],
+    "hop2_docs": [
+      "St. Clair Streett | St. Clair Streett (October 6, 1893 \u2013 September 28, 1970), known as \"Bill\", was a United States Air Force (USAF) major general and writer who first organized and led the Strategic Air Command (SAC).  Streett served as aide to air power advocate General Billy Mitchell, and was viewed by General of the Air Force Henry H. Arnold as his own personal \"troubleshooter\".",
+      "St. Clair Augustine Mulholland | St. Clair Augustine Mulholland (April 1, 1839 \u2013 February 17, 1910) was a colonel in the Union Army in the American Civil War who later received the brevets of brigadier general of volunteers and major general of volunteers and the Medal of Honor for gallantry in action at the Battle of Chancellorsville.",
+      "Thomas Staunton St Clair | Major General Thomas Staunton St Clair {'1': \", '2': \", '3': \", '4': \"} (1785 \u2013 1847) was a British Army officer known for his water-colour paintings which recorded British colonies in Gibraltar.",
+      "Ebba St. Claire | Edward Joseph \"Ebba\" St. Claire (August 5, 1921 \u2013 August 22, 1982) was an American catcher in Major League Baseball player and the father of Randy St. Claire, a right-handed pitcher for five Major League clubs between 1984\u201394 and current pitching coach in professional baseball.  The elder St. Claire stood 6 ft tall and weighed 219 pounds.  He was a switch hitter and threw right-handed.  He can best be described as a prototypical defensive-minded backup catcher.",
+      "Windsor St. Clair Saints | The Windsor St. Clair Saints were a Senior \"AAA\" ice hockey team based in St. Clair College in Windsor, Ontario, Canada.  They joined the Ontario Hockey Association's Major League Hockey in 2006, only to leave in 2008.",
+      "Arthur St. Clair | Arthur St. Clair (March 23, 1736 [O.S. ] \u2013 August 31, 1818) was an American soldier and politician.  Born in Thurso, Scotland, he served in the British Army during the French and Indian War before settling in Pennsylvania, where he held local office.  During the American Revolutionary War, he rose to the rank of major general in the Continental Army, but lost his command after a controversial retreat from Fort Ticonderoga.",
+      "St. Clair County, Missouri | St. Clair County is a county located in the western portion of the U.S. state of Missouri.  As of the 2010 census, the population was 9,805.  Its county seat is Osceola.  The county was organized in 1841 and named for General Arthur St. Clair, Governor of the Northwest Territory.  St. Clair was also the 9th President of the United States in Congress Assembled.  Under his Presidency, the Northwest Ordinance and United States Constitution were passed."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 122,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who did the founder of Project RAND view as his own person \"troubleshooter\" while serving as general of the Air Force?\nPassages: [\"St. Clair Streett | St. Clair Streett (October 6, 1893 \\u2013 September 28, 1970), known as \\\"Bill\\\", was a United States Air Force (USAF) major general and writer who first organized and led the Strategic Air Command (SAC).  Streett served as aide to air power advocate General Billy Mitchell, and was viewed by General of the Air Force Henry H. Arnold as his own personal \\\"troubleshooter\\\".\", \"Henry H. Arnold | Henry Harley \\\"Hap\\\" Arnold (June 25, 1886\\u00a0\\u2013 January 15, 1950) was an American general officer holding the grades of General of the Army and General of the Air Force.  Arnold was an aviation pioneer, Chief of the Air Corps (1938\\u20131941), Commanding General of the U.S. Army Air Forces, the only U.S. Air Force general to hold five-star rank, and the only officer to hold a five-star rank in two different U.S. military services.  Arnold was also the founder of Project RAND, which evolved into one of the world's largest non-profit global policy think tanks, the RAND Corporation, and one of the founders of Pan American World Airways.\", \"William Rand (physician) | William Rand (\\\"fl.\\\"  1650\\u20131660) was an English physician who projected general reforms in medical education, practice and publication.  His views were Paracelsian and Helmontian, and he participated in the Hartlib Circle.\", \"Objectivism and homosexuality | Ayn Rand, founder of Objectivism, held controversial views regarding homosexuality and gender roles. Although her personal view of homosexuality was unambiguously negative, considering it immoral and disgusting, Rand endorsed non-discrimination protection for homosexuals in the public sphere while opposing laws against discrimination in the private sector on the basis of economic freedom.\", \"Robin Rand | Robin Rand (born 1956) is a United States Air Force general and commander of Air Force Global Strike Command.  His command provides combat-ready forces to conduct strategic nuclear deterrence and global strike operations in support of combatant commanders.  Ultimately, General Rand is responsible for the Nation's three intercontinental ballistic missile wings, the two B-52 wings, and the only B-2 wing with two B-1 wings and a weapon's storage complex to be added in FY16, approximately one-third of the nation's nuclear deterrent.\", \"George Tanham | George K. Tanham (1922-2003) joined the American RAND Corporation in 1955 and held several positions before retiring in 1987, including leading Project AIR FORCE from 1970 to 1975.  He also served on the RAND Board of Trustees and was an advisory trustee at the time of his death.  He continued to write on international security issues, especially regarding South Asia, after his retirement.\", \"Billy J. Boles | General Billy Joe Boles (born July 27, 1938) is a retired United States Air Force four-star general.  At the time of his retirement, he was Commander of the Air Education and Training Command, a 70,000-person organization, responsible for recruiting, training and educating Air Force personnel.  He served for more than three years as the Senior Personnel Officer for the US Air Force, at that time a 700,000-person organization, worldwide.  In his early career, Bill served in key leadership positions throughout the Air Force, to include four tours of duty at Air Force headquarters in Washington DC.  During his command and staff assignments he had extensive experience in media relations and in presenting Air Force programs to congressional committees.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks who General Henry H. Arnold, founder of Project RAND and General of the Air Force, viewed as his personal \"troubleshooter.\" The passages contain key details about Henry H. Arnold (Passage [2]) and other individuals who may be relevant to answering the question. Importantly, Passage [1] specifies that St. Clair Streett, a major general in the United States Air Force, was seen by General Henry H. Arnold as his own personal \"troubleshooter.\" This aligns directly with the information requested in the question.\nSummary: General Henry H. Arnold, founder of Project RAND, viewed Major General St. Clair Streett as his own personal \"troubleshooter\" while serving as General of the Air Force."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who did the founder of Project RAND view as his own person \"troubleshooter\" while serving as general of the Air Force?\nSummary 1: General Henry H. Arnold, founder of Project RAND, viewed Major General St. Clair Streett as his own personal \"troubleshooter\" while serving as General of the Air Force."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to identify the individual General Henry H. Arnold, the founder of Project RAND, regarded as his personal \"troubleshooter\" while serving as General of the Air Force. From the summary provided, it is explicitly stated that Major General St. Clair Streett was considered Arnold's \"troubleshooter.\" Therefore, the summary directly answers the question without ambiguity.\nQuery: Major General St. Clair Streett."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who did the founder of Project RAND view as his own person \"troubleshooter\" while serving as general of the Air Force?\nContext: General Henry H. Arnold, founder of Project RAND, viewed Major General St. Clair Streett as his own personal \"troubleshooter\" while serving as General of the Air Force.\nPassages: [\"St. Clair Streett | St. Clair Streett (October 6, 1893 \\u2013 September 28, 1970), known as \\\"Bill\\\", was a United States Air Force (USAF) major general and writer who first organized and led the Strategic Air Command (SAC).  Streett served as aide to air power advocate General Billy Mitchell, and was viewed by General of the Air Force Henry H. Arnold as his own personal \\\"troubleshooter\\\".\", \"St. Clair Augustine Mulholland | St. Clair Augustine Mulholland (April 1, 1839 \\u2013 February 17, 1910) was a colonel in the Union Army in the American Civil War who later received the brevets of brigadier general of volunteers and major general of volunteers and the Medal of Honor for gallantry in action at the Battle of Chancellorsville.\", \"Thomas Staunton St Clair | Major General Thomas Staunton St Clair {'1': \\\", '2': \\\", '3': \\\", '4': \\\"} (1785 \\u2013 1847) was a British Army officer known for his water-colour paintings which recorded British colonies in Gibraltar.\", \"Ebba St. Claire | Edward Joseph \\\"Ebba\\\" St. Claire (August 5, 1921 \\u2013 August 22, 1982) was an American catcher in Major League Baseball player and the father of Randy St. Claire, a right-handed pitcher for five Major League clubs between 1984\\u201394 and current pitching coach in professional baseball.  The elder St. Claire stood 6 ft tall and weighed 219 pounds.  He was a switch hitter and threw right-handed.  He can best be described as a prototypical defensive-minded backup catcher.\", \"Windsor St. Clair Saints | The Windsor St. Clair Saints were a Senior \\\"AAA\\\" ice hockey team based in St. Clair College in Windsor, Ontario, Canada.  They joined the Ontario Hockey Association's Major League Hockey in 2006, only to leave in 2008.\", \"Arthur St. Clair | Arthur St. Clair (March 23, 1736 [O.S. ] \\u2013 August 31, 1818) was an American soldier and politician.  Born in Thurso, Scotland, he served in the British Army during the French and Indian War before settling in Pennsylvania, where he held local office.  During the American Revolutionary War, he rose to the rank of major general in the Continental Army, but lost his command after a controversial retreat from Fort Ticonderoga.\", \"St. Clair County, Missouri | St. Clair County is a county located in the western portion of the U.S. state of Missouri.  As of the 2010 census, the population was 9,805.  Its county seat is Osceola.  The county was organized in 1841 and named for General Arthur St. Clair, Governor of the Northwest Territory.  St. Clair was also the 9th President of the United States in Congress Assembled.  Under his Presidency, the Northwest Ordinance and United States Constitution were passed.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question pertains to identifying who General Henry H. Arnold, founder of Project RAND, regarded as his personal troubleshooter during his time as General of the Air Force. The context directly names Major General St. Clair Streett as the individual fulfilling this role. Furthermore, Passage [1] corroborates this information by stating that St. Clair Streett was a USAF Major General and was specifically viewed by General Arnold as his personal troubleshooter. Other passages are unrelated and provide irrelevant information about different individuals or entities with similar names.\nSummary: General Henry H. Arnold, the founder of Project RAND, regarded Major General St. Clair Streett as his personal \"troubleshooter\" while serving as General of the Air Force."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who did the founder of Project RAND view as his own person \"troubleshooter\" while serving as general of the Air Force?\nSummary 1: General Henry H. Arnold, founder of Project RAND, viewed Major General St. Clair Streett as his own personal \"troubleshooter\" while serving as General of the Air Force.\nSummary 2: General Henry H. Arnold, the founder of Project RAND, regarded Major General St. Clair Streett as his personal \"troubleshooter\" while serving as General of the Air Force."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries are consistent in their information about General Henry H. Arnold and his choice of Major General St. Clair Streett as his personal \"troubleshooter\" while serving as General of the Air Force. Since the information in both summaries aligns and confirms each other, it can be confidently concluded that Major General St. Clair Streett is the individual in question.\nAnswer: Major General St. Clair Streett."
+      }
+    ]
+  }
+}

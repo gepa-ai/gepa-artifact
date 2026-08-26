@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7a44365542994f819ef1a1",
+  "question": "Whose bestseller list did the author of Empress Bianca have a biography on in 1992?",
+  "gold_answer": "The New York Times",
+  "prediction": {
+    "answer": "The author of \"Empress Bianca,\" Lady Colin Campbell, had a biography on \"The New York Times\" bestseller list in 1992.",
+    "hop1_docs": [
+      "Bianca Bosker | Bianca Bosker is an American journalist and author whose \"New York Times\" bestselling book \"Cork Dork\" has been reviewed by \"The New York Times\" and \"Publishers Weekly\".",
+      "Jen Lancaster | Jennifer (\"Jen\") Lancaster (born November 5, 1967) is an American author whose titles have appeared on the New York Times bestseller list.  As of August 2015, she has twelve published books.",
+      "Luiz Cesar Pimentel | Luiz Cesar Pimentel (S\u00e3o Paulo, January 22, 1971) is a Brazilian journalist, writer and currently Director of Content of the Web Portal R7, of Record TV.  He is the author of five books, biographies, that have entered the list of the 20 bestsellers in Brazil by \"Veja\" Magazine.  He is also a collaborator of some of the main vehicles, newspapers and magazines, in his country such as \"Rolling Stone\", \"Elle\" and \"Playboy\".",
+      "James L. Snyder | James Lucion Snyder (born July 21, 1951) is an American writer.  He is a minister with the Christian and Missionary Alliance and an award winning author and humorist whose writings have appeared in more than eighty periodicals including Guideposts.  Snyder's first book, his 1991 biography of A.W. Tozer, \"In Pursuit of God: The Life of A. W. Tozer,\" won the Reader\u2019s Choice Award in 1992 by Christianity Today.  Snyder has authored 15 books altogether.",
+      "Carlo Bertinazzi | Carlo Antonio Bertinazzi (2 December 1710, Turin \u2013 6 September 1783), known as Carlin, was an Italian actor and author.  He is known to have traveled with Giacomo Casanova's mother, Zanetta Farussi, to St Petersburg to perform for Empress Anna of Russia, only to return to Italy shortly after, as the empress did not approve of the comedy.",
+      "Robert Rankin | Robert Fleming Rankin (born 27 July 1949) is a prolific British author of comedic fantasy novels.  Born in Parsons Green, London, he started writing in the late 1970s, and first entered the bestsellers lists with \"Snuff Fiction\" in 1999, by which time his previous eighteen books had sold around one million copies.  His books are a mix of science fiction, fantasy, the occult, urban legends, running gags, metafiction, steampunk and outrageous characters.  According to the (largely fictional) biography printed in some Corgi editions of his books, Rankin refers to his style as 'Far Fetched Fiction' in the hope that bookshops will let him have a section to himself.  Many of Rankin's books are bestsellers.",
+      "Gabriel Sherman | Gabriel Sherman is an American author.  In 2014, he wrote a biography about Fox News Channel president Roger Ailes called \"The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News \u2013 and Divided a Country\", which debuted at #9 on The New York Times Bestseller list."
+    ],
+    "hop2_docs": [
+      "Bianca Bosker | Bianca Bosker is an American journalist and author whose \"New York Times\" bestselling book \"Cork Dork\" has been reviewed by \"The New York Times\" and \"Publishers Weekly\".",
+      "Gabriel Sherman | Gabriel Sherman is an American author.  In 2014, he wrote a biography about Fox News Channel president Roger Ailes called \"The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News \u2013 and Divided a Country\", which debuted at #9 on The New York Times Bestseller list.",
+      "Clare Barnes, Jr. | Clarence A. Barnes, Jr. (usually referred to as Clare Barnes, Jr. during his days as a popular author) (c. 1907-February 2, 1992) was an American author and advertising agency art director.  He was best known for his series of books, starting in 1949 with \"White Collar Zoo\", which featured animal photos with humorous captions.  \"White Collar Zoo\" was the number 1 non-fiction bestseller of 1949 on the New York Times Best Seller list, and its followup \"Home Sweet Zoo\" was number 4.",
+      "Lady Colin Campbell | Georgia Arianna, Lady Colin Campbell (\"n\u00e9e\" Ziadie; born 17 August 1949) is a Jamaican-born British writer, socialite, and television and radio personality.  She has published three books about the British Royal Family.  They include biographies of Diana, Princess of Wales, which was on \"The New York Times\" bestseller list in 1992, and Queen Elizabeth The Queen Mother.  She has also written two autobiographies, one exploring her mother.",
+      "The Polish Biographical Dictionary | The Polish Biographical Dictionary is a compact English\u2013language dictionary of Polish biography, authored by Stanley S. Sokol and published by Bolchazy-Carducci Publishers in 1992.  It features nearly 900 biographies of important Poles since Duke Mieszko I in the 10th century.",
+      "Robert Rankin | Robert Fleming Rankin (born 27 July 1949) is a prolific British author of comedic fantasy novels.  Born in Parsons Green, London, he started writing in the late 1970s, and first entered the bestsellers lists with \"Snuff Fiction\" in 1999, by which time his previous eighteen books had sold around one million copies.  His books are a mix of science fiction, fantasy, the occult, urban legends, running gags, metafiction, steampunk and outrageous characters.  According to the (largely fictional) biography printed in some Corgi editions of his books, Rankin refers to his style as 'Far Fetched Fiction' in the hope that bookshops will let him have a section to himself.  Many of Rankin's books are bestsellers.",
+      "Empress Bianca | Empress Bianca, the first novel by Lady Colin Campbell, was initially published in June 2005.  One month later, Arcadia Books, the British publisher, withdrew the book and pulped all unsold copies in reaction to a legal threat initiated on behalf of Lily Safra under her interpretation that the book was a defamatory roman \u00e0 clef.  After some changes the book was republished in the United States in 2008 by Dynasty Press."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 113,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Whose bestseller list did the author of Empress Bianca have a biography on in 1992?\nPassages: [\"Bianca Bosker | Bianca Bosker is an American journalist and author whose \\\"New York Times\\\" bestselling book \\\"Cork Dork\\\" has been reviewed by \\\"The New York Times\\\" and \\\"Publishers Weekly\\\".\", \"Jen Lancaster | Jennifer (\\\"Jen\\\") Lancaster (born November 5, 1967) is an American author whose titles have appeared on the New York Times bestseller list.  As of August 2015, she has twelve published books.\", \"Luiz Cesar Pimentel | Luiz Cesar Pimentel (S\\u00e3o Paulo, January 22, 1971) is a Brazilian journalist, writer and currently Director of Content of the Web Portal R7, of Record TV.  He is the author of five books, biographies, that have entered the list of the 20 bestsellers in Brazil by \\\"Veja\\\" Magazine.  He is also a collaborator of some of the main vehicles, newspapers and magazines, in his country such as \\\"Rolling Stone\\\", \\\"Elle\\\" and \\\"Playboy\\\".\", \"James L. Snyder | James Lucion Snyder (born July 21, 1951) is an American writer.  He is a minister with the Christian and Missionary Alliance and an award winning author and humorist whose writings have appeared in more than eighty periodicals including Guideposts.  Snyder's first book, his 1991 biography of A.W. Tozer, \\\"In Pursuit of God: The Life of A. W. Tozer,\\\" won the Reader\\u2019s Choice Award in 1992 by Christianity Today.  Snyder has authored 15 books altogether.\", \"Carlo Bertinazzi | Carlo Antonio Bertinazzi (2 December 1710, Turin \\u2013 6 September 1783), known as Carlin, was an Italian actor and author.  He is known to have traveled with Giacomo Casanova's mother, Zanetta Farussi, to St Petersburg to perform for Empress Anna of Russia, only to return to Italy shortly after, as the empress did not approve of the comedy.\", \"Robert Rankin | Robert Fleming Rankin (born 27 July 1949) is a prolific British author of comedic fantasy novels.  Born in Parsons Green, London, he started writing in the late 1970s, and first entered the bestsellers lists with \\\"Snuff Fiction\\\" in 1999, by which time his previous eighteen books had sold around one million copies.  His books are a mix of science fiction, fantasy, the occult, urban legends, running gags, metafiction, steampunk and outrageous characters.  According to the (largely fictional) biography printed in some Corgi editions of his books, Rankin refers to his style as 'Far Fetched Fiction' in the hope that bookshops will let him have a section to himself.  Many of Rankin's books are bestsellers.\", \"Gabriel Sherman | Gabriel Sherman is an American author.  In 2014, he wrote a biography about Fox News Channel president Roger Ailes called \\\"The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News \\u2013 and Divided a Country\\\", which debuted at #9 on The New York Times Bestseller list.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To answer the question about whose bestseller list the author of Empress Bianca had a biography on in 1992, I closely examined the provided passages to identify mention of any biography and a bestseller list in 1992. There is only one reference that aligns with this: passage [4]. It describes James L. Snyder and his 1991 biography \"In Pursuit of God: The Life of A. W. Tozer,\" which won the Reader\u2019s Choice Award in 1992 by Christianity Today. No other passage explicitly mentions a bestselling biography from 1992.\nSummary: The author of Empress Bianca had a biography on Christianity Today's bestseller list in 1992."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Whose bestseller list did the author of Empress Bianca have a biography on in 1992?\nSummary 1: The author of Empress Bianca had a biography on Christianity Today's bestseller list in 1992."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to determine which bestseller list featured a biography by the author of Empress Bianca in 1992. Based on the provided summary, the answer is explicit: the biography was on Christianity Today's bestseller list.\nQuery: Which bestseller list featured a biography by the author of Empress Bianca in 1992?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Whose bestseller list did the author of Empress Bianca have a biography on in 1992?\nContext: The author of Empress Bianca had a biography on Christianity Today's bestseller list in 1992.\nPassages: [\"Bianca Bosker | Bianca Bosker is an American journalist and author whose \\\"New York Times\\\" bestselling book \\\"Cork Dork\\\" has been reviewed by \\\"The New York Times\\\" and \\\"Publishers Weekly\\\".\", \"Gabriel Sherman | Gabriel Sherman is an American author.  In 2014, he wrote a biography about Fox News Channel president Roger Ailes called \\\"The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News \\u2013 and Divided a Country\\\", which debuted at #9 on The New York Times Bestseller list.\", \"Clare Barnes, Jr. | Clarence A. Barnes, Jr. (usually referred to as Clare Barnes, Jr. during his days as a popular author) (c. 1907-February 2, 1992) was an American author and advertising agency art director.  He was best known for his series of books, starting in 1949 with \\\"White Collar Zoo\\\", which featured animal photos with humorous captions.  \\\"White Collar Zoo\\\" was the number 1 non-fiction bestseller of 1949 on the New York Times Best Seller list, and its followup \\\"Home Sweet Zoo\\\" was number 4.\", \"Lady Colin Campbell | Georgia Arianna, Lady Colin Campbell (\\\"n\\u00e9e\\\" Ziadie; born 17 August 1949) is a Jamaican-born British writer, socialite, and television and radio personality.  She has published three books about the British Royal Family.  They include biographies of Diana, Princess of Wales, which was on \\\"The New York Times\\\" bestseller list in 1992, and Queen Elizabeth The Queen Mother.  She has also written two autobiographies, one exploring her mother.\", \"The Polish Biographical Dictionary | The Polish Biographical Dictionary is a compact English\\u2013language dictionary of Polish biography, authored by Stanley S. Sokol and published by Bolchazy-Carducci Publishers in 1992.  It features nearly 900 biographies of important Poles since Duke Mieszko I in the 10th century.\", \"Robert Rankin | Robert Fleming Rankin (born 27 July 1949) is a prolific British author of comedic fantasy novels.  Born in Parsons Green, London, he started writing in the late 1970s, and first entered the bestsellers lists with \\\"Snuff Fiction\\\" in 1999, by which time his previous eighteen books had sold around one million copies.  His books are a mix of science fiction, fantasy, the occult, urban legends, running gags, metafiction, steampunk and outrageous characters.  According to the (largely fictional) biography printed in some Corgi editions of his books, Rankin refers to his style as 'Far Fetched Fiction' in the hope that bookshops will let him have a section to himself.  Many of Rankin's books are bestsellers.\", \"Empress Bianca | Empress Bianca, the first novel by Lady Colin Campbell, was initially published in June 2005.  One month later, Arcadia Books, the British publisher, withdrew the book and pulped all unsold copies in reaction to a legal threat initiated on behalf of Lily Safra under her interpretation that the book was a defamatory roman \\u00e0 clef.  After some changes the book was republished in the United States in 2008 by Dynasty Press.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about whose bestseller list featured a biography by the author of \"Empress Bianca\" in 1992. Based on the context provided, the author had a biography on \"Christianity Today's\" bestseller list in 1992. However, in the passages, Lady Colin Campbell is identified as the author of \"Empress Bianca.\" Furthermore, she also had biographies of Diana, Princess of Wales, one of which appeared on \"The New York Times\" bestseller list in 1992. There is no information connecting Lady Colin Campbell or her biographies to \"Christianity Today.\" Hence, it seems the initial context specifying \"Christianity Today\" is inconsistent with the evidence in the passages, which mention \"The New York Times\" bestseller list.\nSummary: The author of \"Empress Bianca,\" Lady Colin Campbell, had a biography of Diana, Princess of Wales, on \"The New York Times\" bestseller list in 1992."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Whose bestseller list did the author of Empress Bianca have a biography on in 1992?\nSummary 1: The author of Empress Bianca had a biography on Christianity Today's bestseller list in 1992.\nSummary 2: The author of \"Empress Bianca,\" Lady Colin Campbell, had a biography of Diana, Princess of Wales, on \"The New York Times\" bestseller list in 1992."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Summary_1 states that the author of \"Empress Bianca\" had a biography on Christianity Today's bestseller list in 1992, while summary_2 asserts that Lady Colin Campbell (the author of \"Empress Bianca\") had a biography of Diana, Princess of Wales, on \"The New York Times\" bestseller list in 1992. Since both summaries do not agree on which bestseller list the biography appeared on, further verification would be required for complete accuracy. However, summary_2 provides specific details about the author's identity (Lady Colin Campbell), the subject of the biography (Diana, Princess of Wales), and the bestselling list being \"The New York Times,\" giving it more credence.\nAnswer: The author of \"Empress Bianca,\" Lady Colin Campbell, had a biography on \"The New York Times\" bestseller list in 1992."
+      }
+    ]
+  }
+}

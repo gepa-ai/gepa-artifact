@@ -1,0 +1,96 @@
+{
+  "example_id": "5a771ef55542993569682cd0",
+  "question": "In what sub-provincial city is the Affiliated High School of Sichuan University located?",
+  "gold_answer": "Chengdu",
+  "prediction": {
+    "answer": "The Affiliated High School of Sichuan University is located in Chengdu, a sub-provincial city in Sichuan Province, China.",
+    "hop1_docs": [
+      "The Affiliated High School of Sichuan University | The Affiliated High School of Sichuan University () is a public middle school for grades 7-12.  It has two campuses, both of which are located in the Wuhou District, Chengdu, Sichuan, China.  It is one of the top rated middle schools in Chengdu and it is listed as \"Key School of Sichuan Province\".",
+      "North Sichuan Medical University | North Sichuan Medical University (), previously North Sichuan Medical College (NSMC), is a provincial medical school with campuses located in Shunqing District and Gaoping District, Nanchong city, Sichuan Province, China.",
+      "Pace University High School | Pace University High School, also known as \"Pace High School,\" is a public high school located in the New York City borough of Manhattan, affiliated with Pace University.",
+      "Nanhai Experimental High School | Nanhai Experimental High School, the Affiliated High School of South China Normal University (; French: Lyc\u00e9e Exp\u00e9rimental de Nanhai, \u00c9cole secondaire affili\u00e9e \u00e0 l'Universit\u00e9 Normale de la Chine du Sud) is a campus in Nanhai District of the Affiliated High School of South China Normal University.  It is a Chinese public School located in the Nanhai District of Foshan City, Guangdong Province, China.  There is some evidence that there has been a school founded by Andrew Patton Happer on the site since 1888, but the Affiliated High School of South China Normal University of today was officially founded by the Chinese government in 1952.",
+      "Number Seven Yucai Middle School | Number Seven Yucai Middle School (), also called \"Yucai School Attached to Sichuan Chengdu No. 7 High School\", is the middle school affiliated with No. 7 High School.  In 1957, the growing city of Chengdu in Sichuan, China established No. 7 High School, the predecessor of today\u2019s Yucai.  During the next forty years, the school expanded and altered its name, and was for a time known as No. 35.  With guidance from the Chengdu Education Bureau, the school was reorganized again in 1997 to keep pace with its rapidly developing environment.  Today the school sits under the jurisdiction of the Education Bureau of Chengdu\u2019s Jinjiang District.",
+      "High School Affiliated to Anhui Normal University | The High School Affiliated to Anhui Normal University () is a famous public high school in Wuhu City, Anhui, People's Republic of China.  It was founded in 1903 and was named \"Yu-Ying School\" at that time.  The campus is located near Mount Zhe in downtown of Wuhu, covering an area of approximately 63,400 square meters.  The construction of a new campus was launched in December 2009.",
+      "Southwest Jiaotong University | Southwest Jiaotong University () is located in national central city Chengdu, Sichuan Province, affiliated to the Ministry of Education of the People's Republic of China.  It's a national key university co-build by the Ministry of Education of the People's Republic of China, China Railway Corporation, Sichuan Province and Chengdu City."
+    ],
+    "hop2_docs": [
+      "Chengdu Railway Station | Chengdu Railway Station () is one of the 3 major railway stations in Chengdu, China, the others being Chengdu South Railway Station and Chengdu East Railway Station.",
+      "Chengdu East Railway Station | Chengdu East Railway Station () is a railway station on the Chengyu Passenger Railway, the Chengdu\u2013Leshan Intercity Railway and the Dacheng Railway.  The station located in Chenghua, Chengdu, Sichuan, China.  It is connected to Chengdu Metro Line 2.",
+      "Chengdu University of Science and Technology | Chengdu University of Science and Technology() was a university in Chengdu, China.  This university was founded in 1952, separated from the Sichuan University.  At that time, its name was Engineering Institute of Chengdu ().  It was one of the schools led by the Chinese Academy of Sciences.  In 1978, this university was renamed to \"Chengdu University of Science and Technology\"().  In 1993, the Chengdu University of Science and Technology was merged with Sichuan University.",
+      "Museum of Contemporary Art Chengdu | The Museum of Contemporary Art Chengdu (abbreviated MOCA) in Chengdu, China is a Chinese museum solely dedicated to exhibiting, interpreting and collecting contemporary art, both from across China and around the world.  Chengdu MOCA is located at Chengdu Tianfu Software Park.",
+      "Chengdu Tianfu International Airport | Chengdu Tianfu International Airport () is an under-construction airport serving Chengdu, the capital of China's Sichuan province and a major air hub.  The site of the airport has been chosen at Lujia, Jianyang, 51 km south-east of the center of Chengdu.  It is also named after the Tianfu New Area, a development zone for Chengdu in which the airport is located (Tianfu translating as \"Land of Abundance\" in English).  Construction began May 2016, complete in 2019 and due to be opened in 2020.  This airport will operate as a second airport for Chengdu with Chengdu Shuangliu International Airport continuing to operate.",
+      "Line 18, Chengdu Metro | Line 18 of the Chengdu Metro () or New Airport Express Line () runs from Gaoxin District to Jianyang City.  It starts at Chengdu South Railway Station and ends at Chengdu Tianfu International Airport.  The total length is 59.27\u00a0km.  Line 18's color is teal.  New Airport Express Line began construction on late 2015, ends on mid 2020.  from Chengdu South Railway Station to Chengdu Tianfu International Airport.",
+      "Chengdu Aircraft Industry Group | The Chengdu Aircraft Industry Group or Chengdu Aerospace Corporation, a subsidiary of AVIC, is a Chinese aerospace conglomerate that designs and manufactures combat aircraft and is also a manufacturer of aircraft parts.  It was founded in 1958 (as Chengdu State Aircraft Factory No.132 Aircraft Plant) in Chengdu, Sichuan province, China to be an aircraft supplier for the Chinese military."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 146,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what sub-provincial city is the Affiliated High School of Sichuan University located?\nPassages: [\"The Affiliated High School of Sichuan University | The Affiliated High School of Sichuan University () is a public middle school for grades 7-12.  It has two campuses, both of which are located in the Wuhou District, Chengdu, Sichuan, China.  It is one of the top rated middle schools in Chengdu and it is listed as \\\"Key School of Sichuan Province\\\".\", \"North Sichuan Medical University | North Sichuan Medical University (), previously North Sichuan Medical College (NSMC), is a provincial medical school with campuses located in Shunqing District and Gaoping District, Nanchong city, Sichuan Province, China.\", \"Pace University High School | Pace University High School, also known as \\\"Pace High School,\\\" is a public high school located in the New York City borough of Manhattan, affiliated with Pace University.\", \"Nanhai Experimental High School | Nanhai Experimental High School, the Affiliated High School of South China Normal University (; French: Lyc\\u00e9e Exp\\u00e9rimental de Nanhai, \\u00c9cole secondaire affili\\u00e9e \\u00e0 l'Universit\\u00e9 Normale de la Chine du Sud) is a campus in Nanhai District of the Affiliated High School of South China Normal University.  It is a Chinese public School located in the Nanhai District of Foshan City, Guangdong Province, China.  There is some evidence that there has been a school founded by Andrew Patton Happer on the site since 1888, but the Affiliated High School of South China Normal University of today was officially founded by the Chinese government in 1952.\", \"Number Seven Yucai Middle School | Number Seven Yucai Middle School (), also called \\\"Yucai School Attached to Sichuan Chengdu No. 7 High School\\\", is the middle school affiliated with No. 7 High School.  In 1957, the growing city of Chengdu in Sichuan, China established No. 7 High School, the predecessor of today\\u2019s Yucai.  During the next forty years, the school expanded and altered its name, and was for a time known as No. 35.  With guidance from the Chengdu Education Bureau, the school was reorganized again in 1997 to keep pace with its rapidly developing environment.  Today the school sits under the jurisdiction of the Education Bureau of Chengdu\\u2019s Jinjiang District.\", \"High School Affiliated to Anhui Normal University | The High School Affiliated to Anhui Normal University () is a famous public high school in Wuhu City, Anhui, People's Republic of China.  It was founded in 1903 and was named \\\"Yu-Ying School\\\" at that time.  The campus is located near Mount Zhe in downtown of Wuhu, covering an area of approximately 63,400 square meters.  The construction of a new campus was launched in December 2009.\", \"Southwest Jiaotong University | Southwest Jiaotong University () is located in national central city Chengdu, Sichuan Province, affiliated to the Ministry of Education of the People's Republic of China.  It's a national key university co-build by the Ministry of Education of the People's Republic of China, China Railway Corporation, Sichuan Province and Chengdu City.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks where the Affiliated High School of Sichuan University is located. Passage [1] directly provides the relevant information. It states that the school has two campuses which are located in the Wuhou District of Chengdu, Sichuan, China. Chengdu is identified in passage [7] as a sub-provincial city in Sichuan Province. None of the other passages refer to the Affiliated High School of Sichuan University, so passage [1] provides the needed information.\nSummary: The Affiliated High School of Sichuan University is located in Chengdu, a sub-provincial city in Sichuan Province, China."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what sub-provincial city is the Affiliated High School of Sichuan University located?\nSummary 1: The Affiliated High School of Sichuan University is located in Chengdu, a sub-provincial city in Sichuan Province, China."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to identify the sub-provincial city in which the Affiliated High School of Sichuan University is located. Based on the information provided in summary_1, the school is situated in Chengdu, which is a sub-provincial city in Sichuan Province, China. The summary explicitly answers the question and specifies Chengdu as the location.\nQuery: Chengdu"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what sub-provincial city is the Affiliated High School of Sichuan University located?\nContext: The Affiliated High School of Sichuan University is located in Chengdu, a sub-provincial city in Sichuan Province, China.\nPassages: [\"Chengdu Railway Station | Chengdu Railway Station () is one of the 3 major railway stations in Chengdu, China, the others being Chengdu South Railway Station and Chengdu East Railway Station.\", \"Chengdu East Railway Station | Chengdu East Railway Station () is a railway station on the Chengyu Passenger Railway, the Chengdu\\u2013Leshan Intercity Railway and the Dacheng Railway.  The station located in Chenghua, Chengdu, Sichuan, China.  It is connected to Chengdu Metro Line 2.\", \"Chengdu University of Science and Technology | Chengdu University of Science and Technology() was a university in Chengdu, China.  This university was founded in 1952, separated from the Sichuan University.  At that time, its name was Engineering Institute of Chengdu ().  It was one of the schools led by the Chinese Academy of Sciences.  In 1978, this university was renamed to \\\"Chengdu University of Science and Technology\\\"().  In 1993, the Chengdu University of Science and Technology was merged with Sichuan University.\", \"Museum of Contemporary Art Chengdu | The Museum of Contemporary Art Chengdu (abbreviated MOCA) in Chengdu, China is a Chinese museum solely dedicated to exhibiting, interpreting and collecting contemporary art, both from across China and around the world.  Chengdu MOCA is located at Chengdu Tianfu Software Park.\", \"Chengdu Tianfu International Airport | Chengdu Tianfu International Airport () is an under-construction airport serving Chengdu, the capital of China's Sichuan province and a major air hub.  The site of the airport has been chosen at Lujia, Jianyang, 51 km south-east of the center of Chengdu.  It is also named after the Tianfu New Area, a development zone for Chengdu in which the airport is located (Tianfu translating as \\\"Land of Abundance\\\" in English).  Construction began May 2016, complete in 2019 and due to be opened in 2020.  This airport will operate as a second airport for Chengdu with Chengdu Shuangliu International Airport continuing to operate.\", \"Line 18, Chengdu Metro | Line 18 of the Chengdu Metro () or New Airport Express Line () runs from Gaoxin District to Jianyang City.  It starts at Chengdu South Railway Station and ends at Chengdu Tianfu International Airport.  The total length is 59.27\\u00a0km.  Line 18's color is teal.  New Airport Express Line began construction on late 2015, ends on mid 2020.  from Chengdu South Railway Station to Chengdu Tianfu International Airport.\", \"Chengdu Aircraft Industry Group | The Chengdu Aircraft Industry Group or Chengdu Aerospace Corporation, a subsidiary of AVIC, is a Chinese aerospace conglomerate that designs and manufactures combat aircraft and is also a manufacturer of aircraft parts.  It was founded in 1958 (as Chengdu State Aircraft Factory No.132 Aircraft Plant) in Chengdu, Sichuan province, China to be an aircraft supplier for the Chinese military.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question inquires about the sub-provincial city in which the Affiliated High School of Sichuan University is located. The context states that the school is specifically located in Chengdu, a sub-provincial city within Sichuan Province, China. The passages provide additional details about Chengdu, establishing its status as a sub-provincial city but do not directly mention the high school. Since the context explicitly states the location, the reasoning concludes that the Affiliated High School of Sichuan University is in Chengdu.\nSummary: The Affiliated High School of Sichuan University is located in Chengdu, a sub-provincial city in Sichuan Province, China."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what sub-provincial city is the Affiliated High School of Sichuan University located?\nSummary 1: The Affiliated High School of Sichuan University is located in Chengdu, a sub-provincial city in Sichuan Province, China.\nSummary 2: The Affiliated High School of Sichuan University is located in Chengdu, a sub-provincial city in Sichuan Province, China."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the Affiliated High School of Sichuan University is located in Chengdu. Chengdu is indeed recognized as a sub-provincial city in Sichuan Province, China. The consistency of this information ensures the response's accuracy.\nAnswer: The Affiliated High School of Sichuan University is located in Chengdu, a sub-provincial city in Sichuan Province, China."
+      }
+    ]
+  }
+}

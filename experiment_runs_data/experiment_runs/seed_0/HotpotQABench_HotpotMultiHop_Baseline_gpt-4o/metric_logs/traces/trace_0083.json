@@ -1,0 +1,96 @@
+{
+  "example_id": "5ae4dddf55429908b6326498",
+  "question": "In between Erik Van Looy and Jaap Speyer who was married to the German actress Mia Pankau?",
+  "gold_answer": "Jaap Speyer",
+  "prediction": {
+    "answer": "Jaap Speyer was married to the German actress Mia Pankau.",
+    "hop1_docs": [
+      "Mia Pankau | Mia Pankau (1891\u20131974) was a German film actress.  She was married to the director Jaap Speyer who directed her in a number of films during the silent era.",
+      "Jaap Speyer | Jaap Speyer (1891\u20131952) was a Dutch film director.  He was married to the German actress Mia Pankau.",
+      "Hotel Rats | Hotel Rats (German: Hotelratten) is a 1927 German silent film directed by Jaap Speyer and starring Nils Asther, Ellen K\u00fcrti and Mia Pankau.",
+      "Erik Van Looy | Erik Ludovicus Maria Van Looy (] ) is a Belgian film director known for his thriller movies.  He was born on 26 April 1962.",
+      "The Loft (film) | The Loft is a 2014 American-Belgian erotic thriller mystery film directed by Erik Van Looy.  It is a remake of the 2008 Dutch-language Belgian film \"Loft\", which was also directed by Van Looy.  The screenplay was written by Wesley Strick, adapted from the original script by Bart De Pauw.  Starring Karl Urban, James Marsden and Wentworth Miller, it also features Matthias Schoenaerts who reprises his role from the original film.",
+      "Shades (1999 film) | Shades is a 1999 Belgian film directed by Erik Van Looy and written by Looy, Paul Breuls and Guy Lee Thys.  The story is loosely inspired on the Belgian murderer and his escape from prison in 1982.",
+      "Lilli's Marriage | Lilli's Marriage (German:Lillis Ehe) is a 1919 German silent film directed by Jaap Speyer."
+    ],
+    "hop2_docs": [
+      "Jaap Speyer | Jaap Speyer (1891\u20131952) was a Dutch film director.  He was married to the German actress Mia Pankau.",
+      "Mia Pankau | Mia Pankau (1891\u20131974) was a German film actress.  She was married to the director Jaap Speyer who directed her in a number of films during the silent era.",
+      "Lilli (film) | Lilli is a 1919 German silent film directed by Jaap Speyer.",
+      "The Tars | The Tars or De Jantjes is a 1934 Dutch comedy film drama directed by Jaap Speyer.",
+      "Lilli's Marriage | Lilli's Marriage (German:Lillis Ehe) is a 1919 German silent film directed by Jaap Speyer.",
+      "Hedda's Revenge | Hedda's Revenge (German:Heddas Rache) is a 1919 German silent film directed by Jaap Speyer.",
+      "The Red Night | The Red Night (German:Die rote Nacht) is a 1921 German silent film directed by Jaap Speyer."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 83,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In between Erik Van Looy and Jaap Speyer who was married to the German actress Mia Pankau?\nPassages: [\"Mia Pankau | Mia Pankau (1891\\u20131974) was a German film actress.  She was married to the director Jaap Speyer who directed her in a number of films during the silent era.\", \"Jaap Speyer | Jaap Speyer (1891\\u20131952) was a Dutch film director.  He was married to the German actress Mia Pankau.\", \"Hotel Rats | Hotel Rats (German: Hotelratten) is a 1927 German silent film directed by Jaap Speyer and starring Nils Asther, Ellen K\\u00fcrti and Mia Pankau.\", \"Erik Van Looy | Erik Ludovicus Maria Van Looy (] ) is a Belgian film director known for his thriller movies.  He was born on 26 April 1962.\", \"The Loft (film) | The Loft is a 2014 American-Belgian erotic thriller mystery film directed by Erik Van Looy.  It is a remake of the 2008 Dutch-language Belgian film \\\"Loft\\\", which was also directed by Van Looy.  The screenplay was written by Wesley Strick, adapted from the original script by Bart De Pauw.  Starring Karl Urban, James Marsden and Wentworth Miller, it also features Matthias Schoenaerts who reprises his role from the original film.\", \"Shades (1999 film) | Shades is a 1999 Belgian film directed by Erik Van Looy and written by Looy, Paul Breuls and Guy Lee Thys.  The story is loosely inspired on the Belgian murderer and his escape from prison in 1982.\", \"Lilli's Marriage | Lilli's Marriage (German:Lillis Ehe) is a 1919 German silent film directed by Jaap Speyer.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the provided passages, it is evident that Mia Pankau (a German actress) was married to Jaap Speyer, as stated in both passages [1] and [2]. Erik Van Looy, on the other hand, is a Belgian film director, and no connection to Mia Pankau or marriage to her is mentioned in any passages. Thus, Jaap Speyer, not Erik Van Looy, was married to Mia Pankau.\nSummary: Jaap Speyer was married to the German actress Mia Pankau."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In between Erik Van Looy and Jaap Speyer who was married to the German actress Mia Pankau?\nSummary 1: Jaap Speyer was married to the German actress Mia Pankau."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question compares two individuals, Erik Van Looy and Jaap Speyer, to determine who was married to the German actress Mia Pankau. The summary explicitly states that Jaap Speyer was married to Mia Pankau, which directly answers the question.\nQuery: Who was Jaap Speyer married to?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In between Erik Van Looy and Jaap Speyer who was married to the German actress Mia Pankau?\nContext: Jaap Speyer was married to the German actress Mia Pankau.\nPassages: [\"Jaap Speyer | Jaap Speyer (1891\\u20131952) was a Dutch film director.  He was married to the German actress Mia Pankau.\", \"Mia Pankau | Mia Pankau (1891\\u20131974) was a German film actress.  She was married to the director Jaap Speyer who directed her in a number of films during the silent era.\", \"Lilli (film) | Lilli is a 1919 German silent film directed by Jaap Speyer.\", \"The Tars | The Tars or De Jantjes is a 1934 Dutch comedy film drama directed by Jaap Speyer.\", \"Lilli's Marriage | Lilli's Marriage (German:Lillis Ehe) is a 1919 German silent film directed by Jaap Speyer.\", \"Hedda's Revenge | Hedda's Revenge (German:Heddas Rache) is a 1919 German silent film directed by Jaap Speyer.\", \"The Red Night | The Red Night (German:Die rote Nacht) is a 1921 German silent film directed by Jaap Speyer.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is asking about the person, between Erik Van Looy and Jaap Speyer, who was married to the German actress Mia Pankau. The context explicitly states that Jaap Speyer was married to Mia Pankau. Furthermore, the supporting passages confirm this detail in multiple entries. For instance, passage [1] directly states: \"Jaap Speyer (1891\u20131952) was a Dutch film director. He was married to the German actress Mia Pankau,\" and passage [2] corroborates: \"Mia Pankau\u2026was married to the director Jaap Speyer.\" There is no mention of Erik Van Looy being connected to Mia Pankau. Thus, the answer is Jaap Speyer.\nSummary: Jaap Speyer was married to the German actress Mia Pankau."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In between Erik Van Looy and Jaap Speyer who was married to the German actress Mia Pankau?\nSummary 1: Jaap Speyer was married to the German actress Mia Pankau.\nSummary 2: Jaap Speyer was married to the German actress Mia Pankau."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries explicitly state that Jaap Speyer was married to the German actress Mia Pankau. This provides a clear and direct answer to the question.\nAnswer: Jaap Speyer was married to the German actress Mia Pankau."
+      }
+    ]
+  }
+}

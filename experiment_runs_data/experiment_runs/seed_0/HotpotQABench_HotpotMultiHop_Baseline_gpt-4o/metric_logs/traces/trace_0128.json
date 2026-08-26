@@ -1,0 +1,96 @@
+{
+  "example_id": "5ae7d4f4554299540e5a5659",
+  "question": "In what year was the band whose second studio album is \"Sound & Color\" formed?",
+  "gold_answer": "2009",
+  "prediction": {
+    "answer": "2009",
+    "hop1_docs": [
+      "Sound &amp; Color | Sound & Color is the second studio album by American rock band Alabama Shakes.  It was released on April 21, 2015 via ATO Records, MapleMusic Recordings and Rough Trade Records.",
+      "2gether (CNBLUE album) | 2gether is the second studio album by South Korean pop rock idol band CNBLUE.  It was released on September 14, 2015, under FNC Entertainment.  After ending domestic promotions for \"Can't Stop\" (2014), the band concentrated on individual activities; most notably, frontman Jung Yong-hwa released his debut solo album \"One Fine Day\" (2015) in January.  The remaining band members sought out opportunities in television, particularly in acting, variety show appearances, and MCing.  In August 2015, it was announced that CNBLUE would release its second studio album after an absence lasting one year and seven months.  With \"2gether\", the band decided to change the direction of its music; it stripped itself of the acoustic tracks it was known for and explored electronic dance music in order to create a particular color and form a distinctive sound.",
+      "A Higher Form of Killing | A Higher Form of Killing is the second studio album by the metal band, Intruder.  It marks their departure from the speed metal sound displayed on their previous album in favor of a thrash metal sound.  Unlike their previous album which was recorded as a four-piece band, this album was recorded as a quintet with the addition of Greg Messick on rhythm guitar.",
+      "The Perfect Crime | The Perfect Crime is the second studio album by English punk rock band the Anti-Nowhere League.  The sound of the band changed a great deal from their debut album \"We Are...The League\" album.  \"The Perfect Crime\" features a blend of 1980s rock with a light punk sound.  It was a big seller but the last studio album by the band before their 10-year break up.",
+      "What We Live For | What We Live For is the second studio album by American indie rock band American Authors, produced by returning collaborators Aaron Accetta and Shep Goodman.  Running at 42 minutes and comprising twelve tracks, the album was released worldwide by Island Records on July 1, 2016.  The album marks the third major release by the band under the American Authors moniker, and largely continues the sound of their debut album, \"Oh, What a Life\".",
+      "South of Heaven | South of Heaven is the fourth studio album by American thrash metal band Slayer.  Released on July 5, 1988, the album was the band's second collaboration with record producer Rick Rubin, whose production skills on Slayer's previous album \"Reign in Blood\" had helped the band's sound evolve.",
+      "One Thousand Years of Trouble | One Thousand Years of Trouble is the debut full-length album, and second album overall, by English electronic rock band Age of Chance, released in 1987 by Virgin Records.  After attracting the attention of Virgin after their industrial cover version of Prince's \"Kiss\", the band signed to the label and began working on the album with producer Howard Gray, whose Sequential Circuits Studio 440 enticed the band.  Gray was given free hand by Virgin on the album, which was recorded at Trident Studios.  The album showcases the band's unique \"crush collision\" sound, incorporating sampling, noisy power chords, hard percussion, house beats, and influences from post-punk and hip hop.  Lead singer Steve Elvidge's lyrics display a Northern, bitter tone, commenting on contemporary politicsm."
+    ],
+    "hop2_docs": [
+      "Miss Guatemala 2009 | The Miss Guatemala 2009 pageant was held on May 25, 2009 at Auditorio Nacionalin the capital city Guatemala City, Guatemala.  This year only 24 candidates were competing for the national crown.  The chosen winner will represent Guatemala at the Miss Universe 2009 and at Miss Continente Americano 2009.  The winner of best national costume, the costume will be use in Miss Universe 2009.  Miss World Guatemala will represent Guatemala at the Miss World 2009.  Miss Guatemala Internacional will represent Guatemala at the Miss International 2009.  The First Runner-Up will enter Miss Intercontinental 2009 and the Second Runner-Up will enter Top Model of the World 2009.  The Top 10 Semifinalists entered Reina Internacional del Caf\u00e9 2009, Reina Hispanoamericana 2009, Reina Mundial del Banano 2009, Miss Globe International 2009, and Miss Tourism International 2009.",
+      "Miss Spain 2009 | Miss Spain 2009 was the 49th Miss Spain pageant and was held on July 18, 2009.  There were 52 candidates for the national title.  The winner represented Spain at Miss Universe 2009.  The First Runner-up went to Miss World 2009.  The Second Runner-up went to Miss Earth 2009.  The finalists went to Miss International 2009 and Reina Hispanoamericana 2009.",
+      "Miss Namibia 2009 | Miss Namibia 2009 was held on June 7, 2009 in Windhoek, Namibia.  The winner represented Namibia in Miss Universe 2009 and Miss World 2009.  10 contestants competed for crown.  The first runner up entered in Miss International 2009.  The second runner up entered in Miss Earth 2009.  This is the first edition that they acquired the license for Miss International and Miss Earth.",
+      "2009 Evening Standard Theatre Awards | The 2009 Evening Standard Theatre Awards were announced on 2009.  The shortlist was revealed on 2009 and the longlist on 2 November 2009.",
+      "2009 Rally Isle of Man | 2009 Rally Isle of Man was held on July 9\u201311, 2009, the 46th Rally Isle of Man and was round 4 of the 2009 MSA British Rally Championship, round 6 of the 2009 Irish Tarmac Rally Championship and round 5 of the 2009 MSA British Historic Rally Championship.",
+      "Miss Costa Rica 2009 | The Miss Costa Rica 2009 was held on March 27, 2009.  9 contestant entered representing each province and national capital.  The pageant was held in the capital city.  The location was The \"Auditorio del Museo de los Ni\u00f1os de Costa Rica\".  The winner that was crowned Jessica Uma\u00f1a representing the National Capital.  Uma\u00f1a, who stands 1.75 m tall, was one of the favorites for the title.  This was her second try at the crown -she had competed in Miss Costa Rica 2008-, but withdrew before the finals took place.  She decided to try again, winning the title over 8 other contestants.  The winner will enter Miss Universe 2009, Reina Hispanoamericana 2009 and Miss Continente Americano 2009.  The first runner up will enter Miss World 2009 and Miss Tourism Queen International 2009.  The second runner up will enter Miss International 2009 and Miss Intercontinental 2009.  The third runner up will enter Miss Earth 2009 and Reinado Internacional del Caf\u00e9 2009.",
+      "International cricket in 2009 | International cricket in 2009 is defined as the season of international cricket between May and August 2009 in all cricket playing countries, as well as all international matches scheduled for the 2009 English cricket season.  Matches between September 2008 and March 2009 are defined as belonging to the 2008\u201309 season, while matches between September 2009 and March 2010 will fall under the 2009\u201310 season."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 128,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year was the band whose second studio album is \"Sound & Color\" formed?\nPassages: [\"Sound &amp; Color | Sound & Color is the second studio album by American rock band Alabama Shakes.  It was released on April 21, 2015 via ATO Records, MapleMusic Recordings and Rough Trade Records.\", \"2gether (CNBLUE album) | 2gether is the second studio album by South Korean pop rock idol band CNBLUE.  It was released on September 14, 2015, under FNC Entertainment.  After ending domestic promotions for \\\"Can't Stop\\\" (2014), the band concentrated on individual activities; most notably, frontman Jung Yong-hwa released his debut solo album \\\"One Fine Day\\\" (2015) in January.  The remaining band members sought out opportunities in television, particularly in acting, variety show appearances, and MCing.  In August 2015, it was announced that CNBLUE would release its second studio album after an absence lasting one year and seven months.  With \\\"2gether\\\", the band decided to change the direction of its music; it stripped itself of the acoustic tracks it was known for and explored electronic dance music in order to create a particular color and form a distinctive sound.\", \"A Higher Form of Killing | A Higher Form of Killing is the second studio album by the metal band, Intruder.  It marks their departure from the speed metal sound displayed on their previous album in favor of a thrash metal sound.  Unlike their previous album which was recorded as a four-piece band, this album was recorded as a quintet with the addition of Greg Messick on rhythm guitar.\", \"The Perfect Crime | The Perfect Crime is the second studio album by English punk rock band the Anti-Nowhere League.  The sound of the band changed a great deal from their debut album \\\"We Are...The League\\\" album.  \\\"The Perfect Crime\\\" features a blend of 1980s rock with a light punk sound.  It was a big seller but the last studio album by the band before their 10-year break up.\", \"What We Live For | What We Live For is the second studio album by American indie rock band American Authors, produced by returning collaborators Aaron Accetta and Shep Goodman.  Running at 42 minutes and comprising twelve tracks, the album was released worldwide by Island Records on July 1, 2016.  The album marks the third major release by the band under the American Authors moniker, and largely continues the sound of their debut album, \\\"Oh, What a Life\\\".\", \"South of Heaven | South of Heaven is the fourth studio album by American thrash metal band Slayer.  Released on July 5, 1988, the album was the band's second collaboration with record producer Rick Rubin, whose production skills on Slayer's previous album \\\"Reign in Blood\\\" had helped the band's sound evolve.\", \"One Thousand Years of Trouble | One Thousand Years of Trouble is the debut full-length album, and second album overall, by English electronic rock band Age of Chance, released in 1987 by Virgin Records.  After attracting the attention of Virgin after their industrial cover version of Prince's \\\"Kiss\\\", the band signed to the label and began working on the album with producer Howard Gray, whose Sequential Circuits Studio 440 enticed the band.  Gray was given free hand by Virgin on the album, which was recorded at Trident Studios.  The album showcases the band's unique \\\"crush collision\\\" sound, incorporating sampling, noisy power chords, hard percussion, house beats, and influences from post-punk and hip hop.  Lead singer Steve Elvidge's lyrics display a Northern, bitter tone, commenting on contemporary politicsm.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the formation year of the band whose second studio album is \"Sound & Color\". From the passages provided, passage [1] explicitly identifies \"Sound & Color\" as the second studio album by the band Alabama Shakes. However, none of the passages directly state the year Alabama Shakes was formed. To answer this question, external knowledge is required: Alabama Shakes was formed in 2009.\nSummary: The band Alabama Shakes, whose second studio album is \"Sound & Color\", was formed in 2009."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year was the band whose second studio album is \"Sound & Color\" formed?\nSummary 1: The band Alabama Shakes, whose second studio album is \"Sound & Color\", was formed in 2009."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is asking about the year in which the band associated with \"Sound & Color\" was formed. Based on the summary provided, the band Alabama Shakes released \"Sound & Color\" as their second studio album, and they were formed in the year 2009.\nQuery: 2009"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year was the band whose second studio album is \"Sound & Color\" formed?\nContext: The band Alabama Shakes, whose second studio album is \"Sound & Color\", was formed in 2009.\nPassages: [\"Miss Guatemala 2009 | The Miss Guatemala 2009 pageant was held on May 25, 2009 at Auditorio Nacionalin the capital city Guatemala City, Guatemala.  This year only 24 candidates were competing for the national crown.  The chosen winner will represent Guatemala at the Miss Universe 2009 and at Miss Continente Americano 2009.  The winner of best national costume, the costume will be use in Miss Universe 2009.  Miss World Guatemala will represent Guatemala at the Miss World 2009.  Miss Guatemala Internacional will represent Guatemala at the Miss International 2009.  The First Runner-Up will enter Miss Intercontinental 2009 and the Second Runner-Up will enter Top Model of the World 2009.  The Top 10 Semifinalists entered Reina Internacional del Caf\\u00e9 2009, Reina Hispanoamericana 2009, Reina Mundial del Banano 2009, Miss Globe International 2009, and Miss Tourism International 2009.\", \"Miss Spain 2009 | Miss Spain 2009 was the 49th Miss Spain pageant and was held on July 18, 2009.  There were 52 candidates for the national title.  The winner represented Spain at Miss Universe 2009.  The First Runner-up went to Miss World 2009.  The Second Runner-up went to Miss Earth 2009.  The finalists went to Miss International 2009 and Reina Hispanoamericana 2009.\", \"Miss Namibia 2009 | Miss Namibia 2009 was held on June 7, 2009 in Windhoek, Namibia.  The winner represented Namibia in Miss Universe 2009 and Miss World 2009.  10 contestants competed for crown.  The first runner up entered in Miss International 2009.  The second runner up entered in Miss Earth 2009.  This is the first edition that they acquired the license for Miss International and Miss Earth.\", \"2009 Evening Standard Theatre Awards | The 2009 Evening Standard Theatre Awards were announced on 2009.  The shortlist was revealed on 2009 and the longlist on 2 November 2009.\", \"2009 Rally Isle of Man | 2009 Rally Isle of Man was held on July 9\\u201311, 2009, the 46th Rally Isle of Man and was round 4 of the 2009 MSA British Rally Championship, round 6 of the 2009 Irish Tarmac Rally Championship and round 5 of the 2009 MSA British Historic Rally Championship.\", \"Miss Costa Rica 2009 | The Miss Costa Rica 2009 was held on March 27, 2009.  9 contestant entered representing each province and national capital.  The pageant was held in the capital city.  The location was The \\\"Auditorio del Museo de los Ni\\u00f1os de Costa Rica\\\".  The winner that was crowned Jessica Uma\\u00f1a representing the National Capital.  Uma\\u00f1a, who stands 1.75 m tall, was one of the favorites for the title.  This was her second try at the crown -she had competed in Miss Costa Rica 2008-, but withdrew before the finals took place.  She decided to try again, winning the title over 8 other contestants.  The winner will enter Miss Universe 2009, Reina Hispanoamericana 2009 and Miss Continente Americano 2009.  The first runner up will enter Miss World 2009 and Miss Tourism Queen International 2009.  The second runner up will enter Miss International 2009 and Miss Intercontinental 2009.  The third runner up will enter Miss Earth 2009 and Reinado Internacional del Caf\\u00e9 2009.\", \"International cricket in 2009 | International cricket in 2009 is defined as the season of international cricket between May and August 2009 in all cricket playing countries, as well as all international matches scheduled for the 2009 English cricket season.  Matches between September 2008 and March 2009 are defined as belonging to the 2008\\u201309 season, while matches between September 2009 and March 2010 will fall under the 2009\\u201310 season.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To answer the question regarding the year the band was formed, we look into the `context` field directly, as the information regarding the formation of Alabama Shakes is clearly stated there. The context mentions Alabama Shakes, whose second studio album is \"Sound & Color\", was formed in 2009. The information from the provided passages is unrelated to the question as they primarily cover events and competitions in 2009 and do not pertain to the band Alabama Shakes.\nSummary: The band whose second studio album is \"Sound & Color,\" Alabama Shakes, was formed in 2009."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year was the band whose second studio album is \"Sound & Color\" formed?\nSummary 1: The band Alabama Shakes, whose second studio album is \"Sound & Color\", was formed in 2009.\nSummary 2: The band whose second studio album is \"Sound & Color,\" Alabama Shakes, was formed in 2009."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries clearly state that the band Alabama Shakes, whose second studio album is \"Sound & Color,\" was formed in 2009. There is no conflicting information between the summaries, and the year of formation is consistently provided.\nAnswer: 2009"
+      }
+    ]
+  }
+}

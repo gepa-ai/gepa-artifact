@@ -1,0 +1,96 @@
+{
+  "example_id": "5ae279165542992decbdcd1b",
+  "question": "Who was the son of British radio and television presenter and historian best known as an analyst of election results?",
+  "gold_answer": "Dan Snow",
+  "prediction": {
+    "answer": "Dan Snow",
+    "hop1_docs": [
+      "Peter Snow | Peter Snow, CBE (born 20 April 1938) is a British radio and television presenter and historian, best known as an analyst of election results.  He presented the 2016 BBC series, \"Trainspotting Live\", along with co-presenters Dr Hannah Fry and Dick Strawbridge.",
+      "Jonathan Dimbleby | Jonathan Dimbleby (born 31 July 1944) is a British presenter of current affairs and political radio and television programmes, an author and historian.  He is the son of Richard Dimbleby and younger brother of British TV presenter David Dimbleby.",
+      "Reggie Yates | Reggie Yates (born 31 May 1983) is a British actor, television presenter and radio DJ, best known from his roles as Rastamouse, Leo Jones in \"Doctor Who\", and for his work at the BBC in radio and television - presenting various shows for BBC Radio 1 with Fearne Cotton \u2013 as well as hosting the ITV2 reality show \"Release the Hounds\" from 2013 until 2017.",
+      "Suzannah Lipscomb | Suzannah Rebecca Gabriella Lipscomb (born 1978) is a British historian, academic and television presenter who has written and appeared in a number of television and radio programmes about British history.",
+      "Chris Stuart | Chris Stuart (born 1948) is a British journalist, songwriter and radio and television presenter, best known as a presenter of the early breakfast show on BBC Radio 2 between 1988 and 1991.  He was also one of the first presenters of BBC Radio Wales.",
+      "Rianna Scipio | Rianna Soraya Scipio is a British television host, journalist, producer and director who is best known for her work on UK national television, as a prime-time television host (presenter) of such flagship series as the BBC\u2018s \"Watchdog\", \"Holiday\", \"UK\u2019s Worst\u2026?\" , \"Newsroom Southeast\", \"Wide World\" (Channel 5), and on BBC Radio 2 and Choice FM (Global Radio).",
+      "Ben Hanlin | Ben Hanlin is a British magician, television presenter and radio presenter, best known for presenting the ITV2 series \"Tricked\" since 2013."
+    ],
+    "hop2_docs": [
+      "20th Century Battlefields | 20th Century Battlefields is a BBC documentary television series hosted by television and radio personality Peter Snow, and his son Dan Snow.",
+      "Vera Fusek | Vera Fusek (born 20 May 1932 in Czechoslovakia) is an actress.  She is known for her work in films such as \"Treasures of the Snow\" (1980) and \"The Great Van Robbery\" (1959).  She also appeared on many TV shows such as \"Doctor Who\".  Her son is writer Andrew Fusek Peters.",
+      "Peter Snow (priest) | Peter Snow (executed at York, 15 June 1598) was an English Roman Catholic priest.  He is a Catholic martyr, along with Ralph Grimston who died with him, beatified in 1987.  Their liturgical celebration is on 15 June.",
+      "Peter Snow (disambiguation) | Peter Snow (born 1938) is a British television and radio presenter.",
+      "Peter T. Snowe | Peter T. Snowe (January 16, 1943 \u2013 April 10, 1973) was an American businessman and politician.",
+      "Peter Snow (doctor) | Dr Peter Snow (1935\u00a0\u2013 28 February 2006) was a general practitioner who served the New Zealand rural community of Tapanui for over 30 years.  He was president of the Royal New Zealand College of GPs from 1998\u201399 and received their highest honour, Distinguished Fellowship, in 2001.  He was a member of the Otago Hospital Board and its successor, the District Health Board.",
+      "The Snow Leopard | The Snow Leopard is a 1978 book by Peter Matthiessen.  It is an account of his two-month search for the snow leopard with naturalist George Schaller in the Dolpo region on the Tibetan Plateau in the Himalayas."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 120,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the son of British radio and television presenter and historian best known as an analyst of election results?\nPassages: [\"Peter Snow | Peter Snow, CBE (born 20 April 1938) is a British radio and television presenter and historian, best known as an analyst of election results.  He presented the 2016 BBC series, \\\"Trainspotting Live\\\", along with co-presenters Dr Hannah Fry and Dick Strawbridge.\", \"Jonathan Dimbleby | Jonathan Dimbleby (born 31 July 1944) is a British presenter of current affairs and political radio and television programmes, an author and historian.  He is the son of Richard Dimbleby and younger brother of British TV presenter David Dimbleby.\", \"Reggie Yates | Reggie Yates (born 31 May 1983) is a British actor, television presenter and radio DJ, best known from his roles as Rastamouse, Leo Jones in \\\"Doctor Who\\\", and for his work at the BBC in radio and television - presenting various shows for BBC Radio 1 with Fearne Cotton \\u2013 as well as hosting the ITV2 reality show \\\"Release the Hounds\\\" from 2013 until 2017.\", \"Suzannah Lipscomb | Suzannah Rebecca Gabriella Lipscomb (born 1978) is a British historian, academic and television presenter who has written and appeared in a number of television and radio programmes about British history.\", \"Chris Stuart | Chris Stuart (born 1948) is a British journalist, songwriter and radio and television presenter, best known as a presenter of the early breakfast show on BBC Radio 2 between 1988 and 1991.  He was also one of the first presenters of BBC Radio Wales.\", \"Rianna Scipio | Rianna Soraya Scipio is a British television host, journalist, producer and director who is best known for her work on UK national television, as a prime-time television host (presenter) of such flagship series as the BBC\\u2018s \\\"Watchdog\\\", \\\"Holiday\\\", \\\"UK\\u2019s Worst\\u2026?\\\" , \\\"Newsroom Southeast\\\", \\\"Wide World\\\" (Channel 5), and on BBC Radio 2 and Choice FM (Global Radio).\", \"Ben Hanlin | Ben Hanlin is a British magician, television presenter and radio presenter, best known for presenting the ITV2 series \\\"Tricked\\\" since 2013.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From passage [1], it is clear that Peter Snow is a British radio and television presenter and historian, best known as an analyst of election results. The question asks for the son of such a person, but no explicit mention of Peter Snow's son is made in the provided passages. While Peter Snow is identified as fitting the relevant qualities described in the question, further information outside the provided passages would be needed to identify his son.\nSummary: Peter Snow, a British radio and television presenter and historian known as an analyst of election results, is the individual referenced. However, the name of his son is not provided in the passages."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the son of British radio and television presenter and historian best known as an analyst of election results?\nSummary 1: Peter Snow, a British radio and television presenter and historian known as an analyst of election results, is the individual referenced. However, the name of his son is not provided in the passages."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is asking for the son of Peter Snow, who is known as a British radio and television presenter and historian renowned for analyzing election results. From the provided summary, there is no direct information about Peter Snow's son's name. Therefore, further inquiry is necessary to identify his son.\nQuery: Who is the son of Peter Snow?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the son of British radio and television presenter and historian best known as an analyst of election results?\nContext: Peter Snow, a British radio and television presenter and historian known as an analyst of election results, is the individual referenced. However, the name of his son is not provided in the passages.\nPassages: [\"20th Century Battlefields | 20th Century Battlefields is a BBC documentary television series hosted by television and radio personality Peter Snow, and his son Dan Snow.\", \"Vera Fusek | Vera Fusek (born 20 May 1932 in Czechoslovakia) is an actress.  She is known for her work in films such as \\\"Treasures of the Snow\\\" (1980) and \\\"The Great Van Robbery\\\" (1959).  She also appeared on many TV shows such as \\\"Doctor Who\\\".  Her son is writer Andrew Fusek Peters.\", \"Peter Snow (priest) | Peter Snow (executed at York, 15 June 1598) was an English Roman Catholic priest.  He is a Catholic martyr, along with Ralph Grimston who died with him, beatified in 1987.  Their liturgical celebration is on 15 June.\", \"Peter Snow (disambiguation) | Peter Snow (born 1938) is a British television and radio presenter.\", \"Peter T. Snowe | Peter T. Snowe (January 16, 1943 \\u2013 April 10, 1973) was an American businessman and politician.\", \"Peter Snow (doctor) | Dr Peter Snow (1935\\u00a0\\u2013 28 February 2006) was a general practitioner who served the New Zealand rural community of Tapanui for over 30 years.  He was president of the Royal New Zealand College of GPs from 1998\\u201399 and received their highest honour, Distinguished Fellowship, in 2001.  He was a member of the Otago Hospital Board and its successor, the District Health Board.\", \"The Snow Leopard | The Snow Leopard is a 1978 book by Peter Matthiessen.  It is an account of his two-month search for the snow leopard with naturalist George Schaller in the Dolpo region on the Tibetan Plateau in the Himalayas.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of the son of Peter Snow, a British radio and television presenter known for analyzing election results. Looking at the provided passages, Passage [1] mentions Peter Snow as hosting the BBC documentary series \"20th Century Battlefields\" along with his son Dan Snow. The context aligns with the description of Peter Snow, confirming that the relevant Peter Snow is the one referenced in the question. Therefore, his son is Dan Snow.\nSummary: The son of British radio and television presenter and historian Peter Snow, who is best known as an analyst of election results, is Dan Snow."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the son of British radio and television presenter and historian best known as an analyst of election results?\nSummary 1: Peter Snow, a British radio and television presenter and historian known as an analyst of election results, is the individual referenced. However, the name of his son is not provided in the passages.\nSummary 2: The son of British radio and television presenter and historian Peter Snow, who is best known as an analyst of election results, is Dan Snow."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Summary_1 identifies Peter Snow as the British radio and television presenter and historian known as an analyst of election results but does not mention his son's name. On the other hand, Summary_2 directly names Dan Snow as the son of Peter Snow. Since Summary_2 provides the information required to answer the question and there are no contradictions between the summaries, Dan Snow is the correct answer.\nAnswer: Dan Snow"
+      }
+    ]
+  }
+}

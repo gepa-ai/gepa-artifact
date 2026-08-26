@@ -1,0 +1,96 @@
+{
+  "example_id": "5aba66f855429955dce3ee0e",
+  "question": "Which northwest Adelaide suburb, and birthplace of Mark Harrity the fast bowler, shares its name with a system of flag signalling?",
+  "gold_answer": "Semaphore",
+  "prediction": {
+    "answer": "Semaphore",
+    "hop1_docs": [
+      "Mark Harrity | Mark Andrew Harrity (born 9 March 1974) is a former Australian cricketer.  He was born in Semaphore, a suburb of Adelaide.  He was a very fast bowler but one who has seen his career repeatedly interrupted by injury.  Unusually in the modern game, he was an extremely poor batsman even by the standards of specialist bowlers: in over 100 innings in first-class and List A level he never even reached 20.",
+      "Electoral district of Port Adelaide | Port Adelaide is an electoral district of the House of Assembly in the Australian state of South Australia.  Named after Port Adelaide because of its geographical location, it is a 91.3\u00a0km\u00b2 urban electorate on Adelaide's Lefevre Peninsula and stretches east toward Adelaide's northern suburbs.  It contains a mix of seaside residential areas, wasteland and industrial regions.  Besides the bulk of the suburb of Port Adelaide, which is shared with Cheltenham, it includes the suburbs of Cavan, Dry Creek, Gillman, Globe Derby Park, Green Fields, Largs North, Mawson Lakes, North Haven, Osborne, Ottoway, Outer Harbor, Taperoo and Wingfield as well as parts of Gepps Cross, Pooraka and Rosewater.",
+      "Kilburn, South Australia | Kilburn is a suburb in the inner north of Adelaide, South Australia.  The suburb borders Blair Athol, Gepps Cross, Wingfield, Regency Park and Prospect.  Kilburn shares the same postcode as Blair Athol which is 5084 and was previously known as 'Little Chicago' before its name was changed during the 20th century.",
+      "International maritime signal flags | International maritime signal flags refers to various flags used to communicate with ships.  The principal system of flags and associated codes is the International Code of Signals.  Various navies have flag systems with additional flags and codes, and other flags are used in special uses, or have historical significance.",
+      "List of Adelaide obsolete suburb names | This List of Adelaide obsolete suburb names gives suburb names which have been officially discontinued by 1993, and their new names or the suburbs into which they were incorporated.",
+      "Stork Ridge | Stork Ridge ( ) is an ENE-WSW ridge, 1 nautical mile (1.9\u00a0km) long and rising to about 420 m, located 3.5 nautical miles (6\u00a0km) northwest of Rothera Point, southeast Adelaide Island.  The naming of the ridge follows a hydrographic survey conducted from HMS marked with a staff and flag, giving the appearance of a stork on the ridge.",
+      "Yellow flag (contagion) | In International maritime signal flags, plain yellow, green, and even black flags have been used to symbolize disease in both ships and ports, with the color yellow having a longer historical precedent, as a color of marking for houses of infection, previous to its use as a maritime marking color for disease."
+    ],
+    "hop2_docs": [
+      "Mark Harrity | Mark Andrew Harrity (born 9 March 1974) is a former Australian cricketer.  He was born in Semaphore, a suburb of Adelaide.  He was a very fast bowler but one who has seen his career repeatedly interrupted by injury.  Unusually in the modern game, he was an extremely poor batsman even by the standards of specialist bowlers: in over 100 innings in first-class and List A level he never even reached 20.",
+      "Highfield, Harare | Highfield is the second oldest high-density suburb or township in Harare, Zimbabwe built to house Rhodesians of African origin, the first being Mbare.  Highfield was founded on what used to be Highfields Farm.  It is of historical, cultural and political significance to Zimbabwe and is known as Fiyo in local slang.  It is one of the birthplaces of the Zimbabwe African National Union and is home to several prominent people in the country.",
+      "Semaphore railway line | Semaphore railway line was a railway line in the Australian state of South Australia located in the north-west of Adelaide servicing the suburbs of Semaphore and Exeter.  It had two stations: Semaphore and Exeter.  The line opened in 1878 and closed in 1978.",
+      "William F. Harrity | William Francis Harrity (born 19 October 1850, Wilmington, Delaware \u2013 d. 17 April 1912, Overbrook, Philadelphia, Pennsylvania) was an American politician and lawyer.  Harrity is best known as chairperson of the Democratic National Committee from 1892 to 1896.  He also served as Secretary of the Commonwealth of Pennsylvania between 1891 through 1895.",
+      "Semaphore Park, South Australia | Semaphore Park is a suburb in the Australian state of South Australia located in the west of Adelaide on the coastline of Gulf St Vincent.  The northern end of the suburb is considered to be located within the Lefevre Peninsula.",
+      "Semaphore South, South Australia | Semaphore South is a beachside suburb of Adelaide, in the City of Port Adelaide Enfield.",
+      "Holly Bank Trust | Hollybank was one of the first registered schools for disabled children to be built in the North of England.  It is a registered charity and care home, specialising in caring for children with multiple and profound disabilities.  Hollybank Trust was established in 1954 in Lindley, a suburb of Huddersfield in Yorkshire.  Huddersfield is known for its central role at the beginning of the Industrial Revolution, for being the birthplace of rugby league and birthplace of the former British Prime Minister, Harold Wilson."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 52,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which northwest Adelaide suburb, and birthplace of Mark Harrity the fast bowler, shares its name with a system of flag signalling?\nPassages: [\"Mark Harrity | Mark Andrew Harrity (born 9 March 1974) is a former Australian cricketer.  He was born in Semaphore, a suburb of Adelaide.  He was a very fast bowler but one who has seen his career repeatedly interrupted by injury.  Unusually in the modern game, he was an extremely poor batsman even by the standards of specialist bowlers: in over 100 innings in first-class and List A level he never even reached 20.\", \"Electoral district of Port Adelaide | Port Adelaide is an electoral district of the House of Assembly in the Australian state of South Australia.  Named after Port Adelaide because of its geographical location, it is a 91.3\\u00a0km\\u00b2 urban electorate on Adelaide's Lefevre Peninsula and stretches east toward Adelaide's northern suburbs.  It contains a mix of seaside residential areas, wasteland and industrial regions.  Besides the bulk of the suburb of Port Adelaide, which is shared with Cheltenham, it includes the suburbs of Cavan, Dry Creek, Gillman, Globe Derby Park, Green Fields, Largs North, Mawson Lakes, North Haven, Osborne, Ottoway, Outer Harbor, Taperoo and Wingfield as well as parts of Gepps Cross, Pooraka and Rosewater.\", \"Kilburn, South Australia | Kilburn is a suburb in the inner north of Adelaide, South Australia.  The suburb borders Blair Athol, Gepps Cross, Wingfield, Regency Park and Prospect.  Kilburn shares the same postcode as Blair Athol which is 5084 and was previously known as 'Little Chicago' before its name was changed during the 20th century.\", \"International maritime signal flags | International maritime signal flags refers to various flags used to communicate with ships.  The principal system of flags and associated codes is the International Code of Signals.  Various navies have flag systems with additional flags and codes, and other flags are used in special uses, or have historical significance.\", \"List of Adelaide obsolete suburb names | This List of Adelaide obsolete suburb names gives suburb names which have been officially discontinued by 1993, and their new names or the suburbs into which they were incorporated.\", \"Stork Ridge | Stork Ridge ( ) is an ENE-WSW ridge, 1 nautical mile (1.9\\u00a0km) long and rising to about 420 m, located 3.5 nautical miles (6\\u00a0km) northwest of Rothera Point, southeast Adelaide Island.  The naming of the ridge follows a hydrographic survey conducted from HMS marked with a staff and flag, giving the appearance of a stork on the ridge.\", \"Yellow flag (contagion) | In International maritime signal flags, plain yellow, green, and even black flags have been used to symbolize disease in both ships and ports, with the color yellow having a longer historical precedent, as a color of marking for houses of infection, previous to its use as a maritime marking color for disease.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of a northwest Adelaide suburb, which is also the birthplace of Mark Harrity and shares its name with a system of flag signalling. \n\nFrom passage [1], it is established that Mark Harrity was born in Semaphore, a suburb of Adelaide. Passage [4] mentions that flag signalling systems are often referred to in the context of maritime communication, specifically the \"International Code of Signals,\" which involves flag systems. Additionally, the word \"semaphore\" itself refers to a system of sending messages using visual signals, particularly using flags or arms.\n\nGiven this information, the northwest Adelaide suburb, which is Mark Harrity's birthplace, and shares its name with a system of flag signalling is Semaphore.\nSummary: The northwest Adelaide suburb that shares its name with a system of flag signalling and is the birthplace of Mark Harrity is Semaphore."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which northwest Adelaide suburb, and birthplace of Mark Harrity the fast bowler, shares its name with a system of flag signalling?\nSummary 1: The northwest Adelaide suburb that shares its name with a system of flag signalling and is the birthplace of Mark Harrity is Semaphore."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for a northwest Adelaide suburb that corresponds to a system of flag signalling and is the birthplace of Mark Harrity. The summary provided identifies this suburb as Semaphore, which aligns with the shared name of a flag signalling system.\nQuery: What is Semaphore known for beyond being a suburb and birthplace of Mark Harrity?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which northwest Adelaide suburb, and birthplace of Mark Harrity the fast bowler, shares its name with a system of flag signalling?\nContext: The northwest Adelaide suburb that shares its name with a system of flag signalling and is the birthplace of Mark Harrity is Semaphore.\nPassages: [\"Mark Harrity | Mark Andrew Harrity (born 9 March 1974) is a former Australian cricketer.  He was born in Semaphore, a suburb of Adelaide.  He was a very fast bowler but one who has seen his career repeatedly interrupted by injury.  Unusually in the modern game, he was an extremely poor batsman even by the standards of specialist bowlers: in over 100 innings in first-class and List A level he never even reached 20.\", \"Highfield, Harare | Highfield is the second oldest high-density suburb or township in Harare, Zimbabwe built to house Rhodesians of African origin, the first being Mbare.  Highfield was founded on what used to be Highfields Farm.  It is of historical, cultural and political significance to Zimbabwe and is known as Fiyo in local slang.  It is one of the birthplaces of the Zimbabwe African National Union and is home to several prominent people in the country.\", \"Semaphore railway line | Semaphore railway line was a railway line in the Australian state of South Australia located in the north-west of Adelaide servicing the suburbs of Semaphore and Exeter.  It had two stations: Semaphore and Exeter.  The line opened in 1878 and closed in 1978.\", \"William F. Harrity | William Francis Harrity (born 19 October 1850, Wilmington, Delaware \\u2013 d. 17 April 1912, Overbrook, Philadelphia, Pennsylvania) was an American politician and lawyer.  Harrity is best known as chairperson of the Democratic National Committee from 1892 to 1896.  He also served as Secretary of the Commonwealth of Pennsylvania between 1891 through 1895.\", \"Semaphore Park, South Australia | Semaphore Park is a suburb in the Australian state of South Australia located in the west of Adelaide on the coastline of Gulf St Vincent.  The northern end of the suburb is considered to be located within the Lefevre Peninsula.\", \"Semaphore South, South Australia | Semaphore South is a beachside suburb of Adelaide, in the City of Port Adelaide Enfield.\", \"Holly Bank Trust | Hollybank was one of the first registered schools for disabled children to be built in the North of England.  It is a registered charity and care home, specialising in caring for children with multiple and profound disabilities.  Hollybank Trust was established in 1954 in Lindley, a suburb of Huddersfield in Yorkshire.  Huddersfield is known for its central role at the beginning of the Industrial Revolution, for being the birthplace of rugby league and birthplace of the former British Prime Minister, Harold Wilson.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question inquires about a northwest Adelaide suburb that shares its name with a system of flag signalling and is the birthplace of Mark Harrity. From the provided context, it is clear that the answer is Semaphore. This is corroborated by passage [1], which specifies that Mark Harrity was born in Semaphore, a suburb of Adelaide. Additionally, a system of flag signalling is historically referred to as \"semaphore,\" confirming the connection.\nSummary: The northwest Adelaide suburb that shares its name with a system of flag signalling and is the birthplace of fast bowler Mark Harrity is Semaphore."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which northwest Adelaide suburb, and birthplace of Mark Harrity the fast bowler, shares its name with a system of flag signalling?\nSummary 1: The northwest Adelaide suburb that shares its name with a system of flag signalling and is the birthplace of Mark Harrity is Semaphore.\nSummary 2: The northwest Adelaide suburb that shares its name with a system of flag signalling and is the birthplace of fast bowler Mark Harrity is Semaphore."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries provide the same answer: Semaphore. Semaphore is indeed a system of flag signalling used for communication over distances, and it is also the name of a suburb in northwest Adelaide, which is noted as the birthplace of fast bowler Mark Harrity. The use of \"Semaphore\" in both contexts aligns well with the clues provided in the question.\nAnswer: Semaphore"
+      }
+    ]
+  }
+}

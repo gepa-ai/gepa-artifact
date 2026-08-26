@@ -1,0 +1,96 @@
+{
+  "example_id": "5ae692e15542991bbc97613b",
+  "question": "When was the person born who The Loudest Voice in the Room is about?",
+  "gold_answer": "May 15, 1940",
+  "prediction": {
+    "answer": "Roger Ailes, the person who \"The Loudest Voice in the Room\" is about, was born on May 15, 1940.",
+    "hop1_docs": [
+      "The Loudest Voice in the Room | The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News - and Divided a Country is a 2014 biographical book about Fox News Channel president Roger Ailes written by Gabriel Sherman.  which debuted at #9 on The New York Times Bestseller list.",
+      "Gabriel Sherman | Gabriel Sherman is an American author.  In 2014, he wrote a biography about Fox News Channel president Roger Ailes called \"The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News \u2013 and Divided a Country\", which debuted at #9 on The New York Times Bestseller list.",
+      "When You Walk in the Room | \"When You Walk in the Room\" is a song written and recorded by Jackie DeShannon, first released by her in 1963 but covered by many artists.  The lyrics of the song attempt to detail the singer's emotions when in the presence of the person he or she loves.  There is also an expression of frustration by the singer that he or she cannot manage to tell that person of his or her love.",
+      "Speaker recognition | Speaker recognition is the identification of a person from characteristics of voices (\"voice biometrics\").  It is also called voice recognition.  There is a difference between \"speaker recognition\" (recognizing who is speaking) and \"speech recognition\" (recognizing what is being said).  These two terms are frequently confused, and \"voice recognition\" can be used for both.  In addition, there is a difference between the act of authentication (commonly referred to as speaker verification or speaker authentication) and identification.  Finally, there is a difference between \"speaker recognition\" (recognizing who is speaking) and \"speaker diarisation\" (recognizing when the same speaker is speaking).  Recognizing the speaker can simplify the task of translating speech in systems that have been trained on specific person's voices or it can be used to authenticate or verify the identity of a speaker as part of a security process.",
+      "Moka Akashiya | Moka Akashiya (\u8d64\u591c \u840c\u9999 , Akashiya Moka ) is a fictional title character from the Japanese manga and anime series \"Rosario + Vampire\".  She serves as the primary love interest to Tsukune Aono, who is the only human enrolled in a school of monsters.  She has a rosary that gives her a split personality; her outer persona is kind and sweet, but her inner persona, which manifests when her rosary is removed, is a cold and serious martial artist who mainly uses powerful kicks.  In the Japanese version of the anime, her voice actress is Nana Mizuki, who is also responsible for performing the theme songs for both anime seasons.  In the English version, Moka's outer personality is voiced by Alexis Tipton, while her inner personality is voiced by Colleen Clinkenbeard.",
+      "DB drag racing | dB drag racing is a competition rewarding the person who can produce the loudest sound inside a vehicle.  The \"dB\" means decibels of sound pressure level (SPL).  In these competitions, SPL of over 140 decibels is common; and the international record is 171.5.",
+      "Ronald Brittain | Ronald Brittain, MBE (2 September 1899 \u2013 9 January 1981) was a well-known Regimental Sergeant Major (R.S.M.) in the British Army.  The Warrant Officer class 1, who was reported on widely in the newspapers of the day, featured in several British military training films during the Second World War.  He was said to have possibly the loudest voice in the British Army"
+    ],
+    "hop2_docs": [
+      "The Loudest Voice in the Room | The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News - and Divided a Country is a 2014 biographical book about Fox News Channel president Roger Ailes written by Gabriel Sherman.  which debuted at #9 on The New York Times Bestseller list.",
+      "Gabriel Sherman | Gabriel Sherman is an American author.  In 2014, he wrote a biography about Fox News Channel president Roger Ailes called \"The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News \u2013 and Divided a Country\", which debuted at #9 on The New York Times Bestseller list.",
+      "Roger Ailes | Roger Eugene Ailes (May 15, 1940\u00a0\u2013 May 18, 2017) was an American television executive and media consultant.  He was the founder and one-time Chairman and CEO of Fox News and the Fox Television Stations Group, from which he resigned in July 2016 following allegations that he sexually harassed female colleagues.  Ailes was a media consultant for Republican presidents Richard Nixon, Ronald Reagan, and George H. W. Bush, and for Rudy Giuliani's first mayoral campaign.  In 2016, after he left Fox News, he became an adviser to the Donald Trump campaign, where he assisted with debate preparation.",
+      "The Loudest Sound Ever Heard | The Loudest Sound Ever Heard is the 14th studio album by Christian alternative rock band The Choir, released on May 15, 2012, although prior to that date, a rough mix of \"The Forest\" was made available to those who pre-ordered the album via the band's official website.",
+      "Roger Robinson (actor) | Roger Robinson (born May 2, 1940) is an American actor who won the Tony Award for Best Performance by a Featured Actor in a Play for the 2009 revival of \"Joe Turner's Come and Gone\".",
+      "Billy West | William Richard West (born April 16, 1952) is an American voice actor, singer, comedian, musician, songwriter and former radio personality who is known for his voice-over work in a number of television series, films, video games and commercials.  He has done hundreds of voice-overs in his career such as Ren (season 3 to season 5) and Stimpy on \"The Ren & Stimpy Show\"; Doug Funnie and Roger Klotz on \"Doug\"; and Philip J. Fry, Professor Farnsworth, Dr. Zoidberg, Zapp Brannigan and a number of others on \"Futurama\".  He does voices for commercials and is the current voice of the red M&M and was also the voice of Buzz, the Honey Nut Cheerios Bee until 2004.  In addition to his original voices, he has voiced Bugs Bunny, Elmer Fudd, Shaggy Rogers, Popeye and Woody Woodpecker during later renditions of the respective characters.  He was a cast member on \"The Howard Stern Show\", noted for his impersonation of The Three Stooges' Larry Fine.",
+      "The Fox Effect | The Fox Effect: How Roger Ailes Turned a Network into a Propaganda Machine is a 2012 book written by David Brock and Ari Rabin-Havt.  Brock heads the progressive media watchdog group \"Media Matters\", the stated mission of which is \"to comprehensively monitor, analyze, and correct conservative misinformation in the U.S. media.\"  The book details the numerous controversies of Fox News, with emphasis on its president, Roger Ailes."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 25,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: When was the person born who The Loudest Voice in the Room is about?\nPassages: [\"The Loudest Voice in the Room | The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News - and Divided a Country is a 2014 biographical book about Fox News Channel president Roger Ailes written by Gabriel Sherman.  which debuted at #9 on The New York Times Bestseller list.\", \"Gabriel Sherman | Gabriel Sherman is an American author.  In 2014, he wrote a biography about Fox News Channel president Roger Ailes called \\\"The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News \\u2013 and Divided a Country\\\", which debuted at #9 on The New York Times Bestseller list.\", \"When You Walk in the Room | \\\"When You Walk in the Room\\\" is a song written and recorded by Jackie DeShannon, first released by her in 1963 but covered by many artists.  The lyrics of the song attempt to detail the singer's emotions when in the presence of the person he or she loves.  There is also an expression of frustration by the singer that he or she cannot manage to tell that person of his or her love.\", \"Speaker recognition | Speaker recognition is the identification of a person from characteristics of voices (\\\"voice biometrics\\\").  It is also called voice recognition.  There is a difference between \\\"speaker recognition\\\" (recognizing who is speaking) and \\\"speech recognition\\\" (recognizing what is being said).  These two terms are frequently confused, and \\\"voice recognition\\\" can be used for both.  In addition, there is a difference between the act of authentication (commonly referred to as speaker verification or speaker authentication) and identification.  Finally, there is a difference between \\\"speaker recognition\\\" (recognizing who is speaking) and \\\"speaker diarisation\\\" (recognizing when the same speaker is speaking).  Recognizing the speaker can simplify the task of translating speech in systems that have been trained on specific person's voices or it can be used to authenticate or verify the identity of a speaker as part of a security process.\", \"Moka Akashiya | Moka Akashiya (\\u8d64\\u591c \\u840c\\u9999 , Akashiya Moka ) is a fictional title character from the Japanese manga and anime series \\\"Rosario + Vampire\\\".  She serves as the primary love interest to Tsukune Aono, who is the only human enrolled in a school of monsters.  She has a rosary that gives her a split personality; her outer persona is kind and sweet, but her inner persona, which manifests when her rosary is removed, is a cold and serious martial artist who mainly uses powerful kicks.  In the Japanese version of the anime, her voice actress is Nana Mizuki, who is also responsible for performing the theme songs for both anime seasons.  In the English version, Moka's outer personality is voiced by Alexis Tipton, while her inner personality is voiced by Colleen Clinkenbeard.\", \"DB drag racing | dB drag racing is a competition rewarding the person who can produce the loudest sound inside a vehicle.  The \\\"dB\\\" means decibels of sound pressure level (SPL).  In these competitions, SPL of over 140 decibels is common; and the international record is 171.5.\", \"Ronald Brittain | Ronald Brittain, MBE (2 September 1899 \\u2013 9 January 1981) was a well-known Regimental Sergeant Major (R.S.M.) in the British Army.  The Warrant Officer class 1, who was reported on widely in the newspapers of the day, featured in several British military training films during the Second World War.  He was said to have possibly the loudest voice in the British Army\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the birth date of the person featured in \"The Loudest Voice in the Room.\" From the provided passages, it's clear that the book \"The Loudest Voice in the Room\" is a biography about Roger Ailes. However, none of the provided passages specifically state his birth date. Additional independent knowledge or resources indicate that Roger Ailes was born on May 15, 1940.\nSummary: Roger Ailes, the subject of \"The Loudest Voice in the Room,\" was born on May 15, 1940."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: When was the person born who The Loudest Voice in the Room is about?\nSummary 1: Roger Ailes, the subject of \"The Loudest Voice in the Room,\" was born on May 15, 1940."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the birthdate of the individual who is the subject of the work \"The Loudest Voice in the Room.\" From the provided summary, it's clear that the individual in question is Roger Ailes, and his birthdate is May 15, 1940. Therefore, the information directly addresses the query.\nQuery: Roger Ailes, the person who \"The Loudest Voice in the Room\" is about, was born on May 15, 1940."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: When was the person born who The Loudest Voice in the Room is about?\nContext: Roger Ailes, the subject of \"The Loudest Voice in the Room,\" was born on May 15, 1940.\nPassages: [\"The Loudest Voice in the Room | The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News - and Divided a Country is a 2014 biographical book about Fox News Channel president Roger Ailes written by Gabriel Sherman.  which debuted at #9 on The New York Times Bestseller list.\", \"Gabriel Sherman | Gabriel Sherman is an American author.  In 2014, he wrote a biography about Fox News Channel president Roger Ailes called \\\"The Loudest Voice in the Room: How the Brilliant, Bombastic Roger Ailes Built Fox News \\u2013 and Divided a Country\\\", which debuted at #9 on The New York Times Bestseller list.\", \"Roger Ailes | Roger Eugene Ailes (May 15, 1940\\u00a0\\u2013 May 18, 2017) was an American television executive and media consultant.  He was the founder and one-time Chairman and CEO of Fox News and the Fox Television Stations Group, from which he resigned in July 2016 following allegations that he sexually harassed female colleagues.  Ailes was a media consultant for Republican presidents Richard Nixon, Ronald Reagan, and George H. W. Bush, and for Rudy Giuliani's first mayoral campaign.  In 2016, after he left Fox News, he became an adviser to the Donald Trump campaign, where he assisted with debate preparation.\", \"The Loudest Sound Ever Heard | The Loudest Sound Ever Heard is the 14th studio album by Christian alternative rock band The Choir, released on May 15, 2012, although prior to that date, a rough mix of \\\"The Forest\\\" was made available to those who pre-ordered the album via the band's official website.\", \"Roger Robinson (actor) | Roger Robinson (born May 2, 1940) is an American actor who won the Tony Award for Best Performance by a Featured Actor in a Play for the 2009 revival of \\\"Joe Turner's Come and Gone\\\".\", \"Billy West | William Richard West (born April 16, 1952) is an American voice actor, singer, comedian, musician, songwriter and former radio personality who is known for his voice-over work in a number of television series, films, video games and commercials.  He has done hundreds of voice-overs in his career such as Ren (season 3 to season 5) and Stimpy on \\\"The Ren & Stimpy Show\\\"; Doug Funnie and Roger Klotz on \\\"Doug\\\"; and Philip J. Fry, Professor Farnsworth, Dr. Zoidberg, Zapp Brannigan and a number of others on \\\"Futurama\\\".  He does voices for commercials and is the current voice of the red M&M and was also the voice of Buzz, the Honey Nut Cheerios Bee until 2004.  In addition to his original voices, he has voiced Bugs Bunny, Elmer Fudd, Shaggy Rogers, Popeye and Woody Woodpecker during later renditions of the respective characters.  He was a cast member on \\\"The Howard Stern Show\\\", noted for his impersonation of The Three Stooges' Larry Fine.\", \"The Fox Effect | The Fox Effect: How Roger Ailes Turned a Network into a Propaganda Machine is a 2012 book written by David Brock and Ari Rabin-Havt.  Brock heads the progressive media watchdog group \\\"Media Matters\\\", the stated mission of which is \\\"to comprehensively monitor, analyze, and correct conservative misinformation in the U.S. media.\\\"  The book details the numerous controversies of Fox News, with emphasis on its president, Roger Ailes.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the birthdate of the person who is the subject of *The Loudest Voice in the Room*. From the context, it is clear that the subject is Roger Ailes, whose birthdate is provided as May 15, 1940. This is corroborated by passage [3], which includes both his full name and birthdate. None of the other passages contradict or provide differing information about Roger Ailes' birthdate.\nSummary: The person who is the subject of *The Loudest Voice in the Room*, Roger Ailes, was born on May 15, 1940."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: When was the person born who The Loudest Voice in the Room is about?\nSummary 1: Roger Ailes, the subject of \"The Loudest Voice in the Room,\" was born on May 15, 1940.\nSummary 2: The person who is the subject of *The Loudest Voice in the Room*, Roger Ailes, was born on May 15, 1940."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries indicate that the subject of \"The Loudest Voice in the Room,\" Roger Ailes, was born on May 15, 1940. The information in both summaries is consistent and directly answers the question regarding his birthdate.\nAnswer: Roger Ailes, the person who \"The Loudest Voice in the Room\" is about, was born on May 15, 1940."
+      }
+    ]
+  }
+}

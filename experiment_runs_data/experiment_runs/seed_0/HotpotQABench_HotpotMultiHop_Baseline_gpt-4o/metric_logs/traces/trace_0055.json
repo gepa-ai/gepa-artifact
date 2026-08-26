@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7e14725542995f4f4023d4",
+  "question": "Hawaii Route 8930 lies on what island?",
+  "gold_answer": "Oahu",
+  "prediction": {
+    "answer": "Oahu",
+    "hop1_docs": [
+      "Hawaii Route 8930 | Hawaii Route 8930, previously known as the North\u2013South Road, broke ground in 2005 and completed in 2010.  The 2.5 mi highway connects the H-1 freeway in the north end to Kapolei Parkway in the south end in Kapolei.",
+      "Hawaii Route 240 | Hawaii Route 240 is a State Route in the U.S. State of Hawaii.  The highway is located on the island of Hawaii, and travels from southeast of the city of Honokaa northwest to Waimanu Natural Estuarine Research Reserve, on the coast of the island.  The highway connects the settlement located by the Reserve to the main highway, Hawaii Route 19.",
+      "P\u0101pa\u02bbaloa, Hawaii | Papa\u02bb aloa (also spelled Papaaloa) is an unincorporated community on the island of Hawaii in Hawaii County, Hawaii, United States.  It lies along Hawaii Route 19 north of Hilo, the county seat of Hawaii County.  Its elevation is 10\u00a0feet (3\u00a0m) Because the community has borne multiple names, the Board on Geographic Names officially designated it \"Papaaloa\" in 1914 and 1954 before assigning the current name in 2001.  Although it is unincorporated, it has a post office, with the ZIP code of 96780.",
+      "\u02bb\u014c\u02bb\u014dkala, Hawaii | \u02bb \u014c\u02bb \u014dkala (also spelled Ookala) is an unincorporated community on the island of Hawaii in Hawaii County, Hawaii, United States.  It lies along Hawaii Route 19 north of Hilo, the county seat of Hawaii County.  Its elevation is 371\u00a0feet (113\u00a0m), and it is located at (20.0175000, -155.2872222).  Because the community has borne multiple names, the Board on Geographic Names officially designated it \"\u02bb \u014c\u02bb \u014dkala\" in 2000.  Although it is unincorporated, it has a post office, with the ZIP code of 96774.",
+      "Hawaii Route 377 | Route\u00a0377 is a 9.2 mi road on the island of Maui in Hawaii.  The route starts and ends at Route\u00a037, and is signed as Haleakala Highway for the northernmost 6 mi , and Kekaulike Avenue for the rest, because the Haleakala highway continues on Hawaii Route 378.",
+      "Hawaii Route 440 | Hawaii Route 440 is a 13.2 mi state highway on the island of Lanai in Hawaii.",
+      "Kunia Camp, Hawaii | Kunia Camp (also called Kunia) is an unincorporated community on the island of Oahu in Honolulu County, Hawaii, United States.  It lies along Hawaii Route 750 northwest of downtown Honolulu, the county seat of Honolulu County.  Its elevation is 883\u00a0feet (269\u00a0m).  Although it is unincorporated, it has a post office (under the name of Kunia), with the ZIP code of 96759."
+    ],
+    "hop2_docs": [
+      "Hawaii Route 8930 | Hawaii Route 8930, previously known as the North\u2013South Road, broke ground in 2005 and completed in 2010.  The 2.5 mi highway connects the H-1 freeway in the north end to Kapolei Parkway in the south end in Kapolei.",
+      "Hawaii Route 93 | Route 93 is a major east\u2013west highway on the island of Oahu which begins as Interstate H-1 terminates in Kapolei and ends at Kaena Point on the extreme northwest end of Oahu, just past Makaha.  It is part of the Farrington Highway.",
+      "Hawaii Route 240 | Hawaii Route 240 is a State Route in the U.S. State of Hawaii.  The highway is located on the island of Hawaii, and travels from southeast of the city of Honokaa northwest to Waimanu Natural Estuarine Research Reserve, on the coast of the island.  The highway connects the settlement located by the Reserve to the main highway, Hawaii Route 19.",
+      "Hawaii Convention Center | The Hawai\u2018i Convention Center is a premier convention and exhibition center in Hawaii, located in Honolulu on the island of Oahu.  The Hawaii Convention Center is the largest exhibition center of its type in the state.  It is located directly to the west of the Waikiki district of Honolulu.",
+      "AES Hawaii Power Plant | AES Hawaii Power Plant is a medium-size coal-fired electrical power station located in the south-west corner of a Hawaiian island of Oahu.  Owned and operated by AES Hawaii, the plant is the only coal-fired power plant in the state of Hawaii, and is the state's leading single source of toxic pollutants.  AES Hawaii consists of a single unit on the grounds of Campbell Industrial Park, has a year-around capacity of 180 MWe, and in 2006 represented about 11% of Oahu's commercial electricity supply.",
+      "Hawaiian Railway Society | The Hawaiian Railway Society is a narrow gauge heritage railroad located in Ewa, Hawaii, USA, on the island of Oahu.  It utilizes trackage of the defunct Oahu Railway and Land Company.",
+      "Kunia Camp, Hawaii | Kunia Camp (also called Kunia) is an unincorporated community on the island of Oahu in Honolulu County, Hawaii, United States.  It lies along Hawaii Route 750 northwest of downtown Honolulu, the county seat of Honolulu County.  Its elevation is 883\u00a0feet (269\u00a0m).  Although it is unincorporated, it has a post office (under the name of Kunia), with the ZIP code of 96759."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 55,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Hawaii Route 8930 lies on what island?\nPassages: [\"Hawaii Route 8930 | Hawaii Route 8930, previously known as the North\\u2013South Road, broke ground in 2005 and completed in 2010.  The 2.5 mi highway connects the H-1 freeway in the north end to Kapolei Parkway in the south end in Kapolei.\", \"Hawaii Route 240 | Hawaii Route 240 is a State Route in the U.S. State of Hawaii.  The highway is located on the island of Hawaii, and travels from southeast of the city of Honokaa northwest to Waimanu Natural Estuarine Research Reserve, on the coast of the island.  The highway connects the settlement located by the Reserve to the main highway, Hawaii Route 19.\", \"P\\u0101pa\\u02bbaloa, Hawaii | Papa\\u02bb aloa (also spelled Papaaloa) is an unincorporated community on the island of Hawaii in Hawaii County, Hawaii, United States.  It lies along Hawaii Route 19 north of Hilo, the county seat of Hawaii County.  Its elevation is 10\\u00a0feet (3\\u00a0m) Because the community has borne multiple names, the Board on Geographic Names officially designated it \\\"Papaaloa\\\" in 1914 and 1954 before assigning the current name in 2001.  Although it is unincorporated, it has a post office, with the ZIP code of 96780.\", \"\\u02bb\\u014c\\u02bb\\u014dkala, Hawaii | \\u02bb \\u014c\\u02bb \\u014dkala (also spelled Ookala) is an unincorporated community on the island of Hawaii in Hawaii County, Hawaii, United States.  It lies along Hawaii Route 19 north of Hilo, the county seat of Hawaii County.  Its elevation is 371\\u00a0feet (113\\u00a0m), and it is located at (20.0175000, -155.2872222).  Because the community has borne multiple names, the Board on Geographic Names officially designated it \\\"\\u02bb \\u014c\\u02bb \\u014dkala\\\" in 2000.  Although it is unincorporated, it has a post office, with the ZIP code of 96774.\", \"Hawaii Route 377 | Route\\u00a0377 is a 9.2 mi road on the island of Maui in Hawaii.  The route starts and ends at Route\\u00a037, and is signed as Haleakala Highway for the northernmost 6 mi , and Kekaulike Avenue for the rest, because the Haleakala highway continues on Hawaii Route 378.\", \"Hawaii Route 440 | Hawaii Route 440 is a 13.2 mi state highway on the island of Lanai in Hawaii.\", \"Kunia Camp, Hawaii | Kunia Camp (also called Kunia) is an unincorporated community on the island of Oahu in Honolulu County, Hawaii, United States.  It lies along Hawaii Route 750 northwest of downtown Honolulu, the county seat of Honolulu County.  Its elevation is 883\\u00a0feet (269\\u00a0m).  Although it is unincorporated, it has a post office (under the name of Kunia), with the ZIP code of 96759.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks which island Hawaii Route 8930 lies on. From passage [1], we learn that Hawaii Route 8930 connects the H-1 freeway in the north end to Kapolei Parkway in the south end and is located in Kapolei. Kapolei is a city on the island of Oahu, as mentioned in sources such as passage [7], which references another location on the island of Oahu near Kapolei. No other passages mention Hawaii Route 8930 or Kapolei. Therefore, it can be concluded that Hawaii Route 8930 is on the island of Oahu.\nSummary: Hawaii Route 8930 is located on the island of Oahu."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Hawaii Route 8930 lies on what island?\nSummary 1: Hawaii Route 8930 is located on the island of Oahu."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to determine the specific island on which Hawaii Route 8930 is located. According to the provided summary, Hawaii Route 8930 is on the island of Oahu. This directly answers the question without ambiguity.\nQuery: Hawaii Route 8930 is located on the island of Oahu."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Hawaii Route 8930 lies on what island?\nContext: Hawaii Route 8930 is located on the island of Oahu.\nPassages: [\"Hawaii Route 8930 | Hawaii Route 8930, previously known as the North\\u2013South Road, broke ground in 2005 and completed in 2010.  The 2.5 mi highway connects the H-1 freeway in the north end to Kapolei Parkway in the south end in Kapolei.\", \"Hawaii Route 93 | Route 93 is a major east\\u2013west highway on the island of Oahu which begins as Interstate H-1 terminates in Kapolei and ends at Kaena Point on the extreme northwest end of Oahu, just past Makaha.  It is part of the Farrington Highway.\", \"Hawaii Route 240 | Hawaii Route 240 is a State Route in the U.S. State of Hawaii.  The highway is located on the island of Hawaii, and travels from southeast of the city of Honokaa northwest to Waimanu Natural Estuarine Research Reserve, on the coast of the island.  The highway connects the settlement located by the Reserve to the main highway, Hawaii Route 19.\", \"Hawaii Convention Center | The Hawai\\u2018i Convention Center is a premier convention and exhibition center in Hawaii, located in Honolulu on the island of Oahu.  The Hawaii Convention Center is the largest exhibition center of its type in the state.  It is located directly to the west of the Waikiki district of Honolulu.\", \"AES Hawaii Power Plant | AES Hawaii Power Plant is a medium-size coal-fired electrical power station located in the south-west corner of a Hawaiian island of Oahu.  Owned and operated by AES Hawaii, the plant is the only coal-fired power plant in the state of Hawaii, and is the state's leading single source of toxic pollutants.  AES Hawaii consists of a single unit on the grounds of Campbell Industrial Park, has a year-around capacity of 180 MWe, and in 2006 represented about 11% of Oahu's commercial electricity supply.\", \"Hawaiian Railway Society | The Hawaiian Railway Society is a narrow gauge heritage railroad located in Ewa, Hawaii, USA, on the island of Oahu.  It utilizes trackage of the defunct Oahu Railway and Land Company.\", \"Kunia Camp, Hawaii | Kunia Camp (also called Kunia) is an unincorporated community on the island of Oahu in Honolulu County, Hawaii, United States.  It lies along Hawaii Route 750 northwest of downtown Honolulu, the county seat of Honolulu County.  Its elevation is 883\\u00a0feet (269\\u00a0m).  Although it is unincorporated, it has a post office (under the name of Kunia), with the ZIP code of 96759.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Hawaii Route 8930 is explicitly stated in the context as being located on the island of Oahu. Additionally, passages provide supporting details about locations in Oahu, such as Kapolei (mentioned in Passage 1), which is consistent with the context. This confirms that Hawaii Route 8930 lies on Oahu.\nSummary: Hawaii Route 8930 lies on the island of Oahu."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Hawaii Route 8930 lies on what island?\nSummary 1: Hawaii Route 8930 is located on the island of Oahu.\nSummary 2: Hawaii Route 8930 lies on the island of Oahu."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries confirm that Hawaii Route 8930 is located on the island of Oahu. Since there is no contradiction or evidence suggesting otherwise, it is reasonable to conclude that the route lies on Oahu.\nAnswer: Oahu"
+      }
+    ]
+  }
+}

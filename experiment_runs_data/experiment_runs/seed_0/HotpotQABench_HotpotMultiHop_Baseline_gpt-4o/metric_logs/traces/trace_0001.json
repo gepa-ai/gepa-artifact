@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab28cb55542993be8fa9944",
+  "question": "What was the name of the character played by an actor from the last six Harry Potter films in the BBC television serial \"The Singing Detective\"?",
+  "gold_answer": "the eponymous mystery writer protagonist",
+  "prediction": {
+    "answer": "Philip Marlow",
+    "hop1_docs": [
+      "Michael Gambon | Sir Michael John Gambon {'1': \", '2': \", '3': \", '4': \"} (born 19 October 1940) is an Irish-born English actor who has worked in theatre, television and film.  Gambon has played the eponymous mystery writer protagonist in the BBC television serial \"The Singing Detective\", Jules Maigret in the 1990s ITV serial \"Maigret\", and Professor Albus Dumbledore in the final six \"Harry Potter\" films after the death of previous actor Richard Harris.  He has won four BAFTA TV Awards and three Olivier Awards.",
+      "The Singing Detective | The Singing Detective is a BBC television serial drama, written by Dennis Potter, which stars Michael Gambon and was directed by Jon Amiel.  The six episodes were \"Skin\", \"Heat\", \"Lovely Days\", \"Clues\", \"Pitter Patter\" and \"Who Done It\".",
+      "The Singing Detective (film) | The Singing Detective is a 2003 American musical crime comedy film directed by Keith Gordon and loosely based on the BBC serial of the same name, a work by British writer Dennis Potter.  It stars Robert Downey, Jr. and features a supporting cast that includes Katie Holmes, Adrien Brody, Robin Wright Penn, and Mel Gibson, as well as a number of songs from the 1950s.",
+      "David Ryall | David John Ryall (5 January 1935 \u2013 25 December 2014) was an English stage, film and television character actor.  He had leading roles in \"Lytton's Diary\" and \"Goodnight Sweetheart\", as well as memorable roles in Dennis Potter's \"The Singing Detective\" and Andrew Davies's adaptation of \"To Play the King\".  He also portrayed Billy Buzzle in the ITV sitcom \"Bless Me, Father\" and Frank in the BBC sitcom \"Outnumbered\".",
+      "Pennies from Heaven (TV series) | Pennies From Heaven is a 1978 BBC musical drama serial written by Dennis Potter.  The title is taken from the song \"Pennies from Heaven\" written by Johnny Burke and Arthur Johnston.  It was one of several Potter serials (another being \"The Singing Detective\") to mix the reality of the drama with a dark fantasy content, and the earliest of his works where the characters burst into extended performances of popular songs.",
+      "Janet Henfrey | Janet E. A. Henfrey (born 16 August 1935) is a British stage and television actress.  She is best known for playing Mrs. Bale on \"As Time Goes By\", which is still rerun in the United States on PBS stations, and for her role as the schoolteacher in the BBC Dennis Potter serial \"The Singing Detective\" (1986).  She had previously appeared in the Potter play \"Stand Up, Nigel Barton\" (1965), also as a schoolteacher.",
+      "Simon Fisher-Becker | Simon Fisher-Becker, Viscount of William & Mona (born 25 November 1961) is an English stage, television and film actor, specialising in comedy and character parts.  His more notable roles include Tony Fazackerley in Puppy Love for the BBC, The Fat Friar in the Harry Potter film \"Harry Potter and the Philosopher's Stone\", and Dorium Maldovar in series 5 and 6 of \"Doctor Who\"."
+    ],
+    "hop2_docs": [
+      "Michael Gambon | Sir Michael John Gambon {'1': \", '2': \", '3': \", '4': \"} (born 19 October 1940) is an Irish-born English actor who has worked in theatre, television and film.  Gambon has played the eponymous mystery writer protagonist in the BBC television serial \"The Singing Detective\", Jules Maigret in the 1990s ITV serial \"Maigret\", and Professor Albus Dumbledore in the final six \"Harry Potter\" films after the death of previous actor Richard Harris.  He has won four BAFTA TV Awards and three Olivier Awards.",
+      "The Singing Detective | The Singing Detective is a BBC television serial drama, written by Dennis Potter, which stars Michael Gambon and was directed by Jon Amiel.  The six episodes were \"Skin\", \"Heat\", \"Lovely Days\", \"Clues\", \"Pitter Patter\" and \"Who Done It\".",
+      "Badi Uzzaman | Mohammed Badi Uzzaman Azmi (8 March 1939 \u2013 14 June 2011), better known as Badi Uzzaman, was a Pakistani-British television and film actor.  According to \"The Guardian\", Uzzaman was perhaps best known for his role as a hospital patient in the 1986 television series, \"The Singing Detective\", opposite actor Michael Gambon.  He later appeared in numerous television roles during his career, often as a supporting character, including \"Torchwood\", \"Inspector Morse\", \"Coronation Street\", \"Cracker\", \"The Bill\" and \"Casualty\".",
+      "Emma (2009 TV serial) | Emma is a four-part BBC television drama serial adaptation of Jane Austen's novel \"Emma\", first published in 1815.  The episodes were written by Sandy Welch, acclaimed writer of previous BBC costume-dramas \"Jane Eyre\" and \"North & South\", and directed by Jim O'Hanlon.  The serial stars Romola Garai as the titular heroine Emma Woodhouse, Jonny Lee Miller as her loyal lifelong friend Mr. Knightley and Michael Gambon as Emma's father, Mr. Woodhouse.  The serial originally ran weekly on Sunday nights on BBC One from 4 to 25 October 2009.",
+      "Perfect Strangers (TV serial) | Perfect Strangers (renamed Almost Strangers for American distribution) is a television drama first aired in 2001, produced for BBC Two.  It was written and directed by Stephen Poliakoff, and starred Michael Gambon, who won a British Academy Television Award for his performance, Lindsay Duncan, Matthew Macfadyen, Claire Skinner, and Toby Stephens.  The drama received two Royal Television Society awards and a Peabody Award.",
+      "Oscar (TV serial) | Oscar is a British TV serial first transmitted by BBC 2 in March 1985.  Michael Gambon portrayed Oscar Wilde while other actors included Robin Lermitte as Lord Alfred Douglas, Tim Hardy as Alfred Taylor, Emily Richard as Constance Wilde and Norman Rodway as the Marquis of Queensberry.  The serial concentrated on Wilde's trials and time in prison.",
+      "Janet Henfrey | Janet E. A. Henfrey (born 16 August 1935) is a British stage and television actress.  She is best known for playing Mrs. Bale on \"As Time Goes By\", which is still rerun in the United States on PBS stations, and for her role as the schoolteacher in the BBC Dennis Potter serial \"The Singing Detective\" (1986).  She had previously appeared in the Potter play \"Stand Up, Nigel Barton\" (1965), also as a schoolteacher."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 1,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What was the name of the character played by an actor from the last six Harry Potter films in the BBC television serial \"The Singing Detective\"?\nPassages: [\"Michael Gambon | Sir Michael John Gambon {'1': \\\", '2': \\\", '3': \\\", '4': \\\"} (born 19 October 1940) is an Irish-born English actor who has worked in theatre, television and film.  Gambon has played the eponymous mystery writer protagonist in the BBC television serial \\\"The Singing Detective\\\", Jules Maigret in the 1990s ITV serial \\\"Maigret\\\", and Professor Albus Dumbledore in the final six \\\"Harry Potter\\\" films after the death of previous actor Richard Harris.  He has won four BAFTA TV Awards and three Olivier Awards.\", \"The Singing Detective | The Singing Detective is a BBC television serial drama, written by Dennis Potter, which stars Michael Gambon and was directed by Jon Amiel.  The six episodes were \\\"Skin\\\", \\\"Heat\\\", \\\"Lovely Days\\\", \\\"Clues\\\", \\\"Pitter Patter\\\" and \\\"Who Done It\\\".\", \"The Singing Detective (film) | The Singing Detective is a 2003 American musical crime comedy film directed by Keith Gordon and loosely based on the BBC serial of the same name, a work by British writer Dennis Potter.  It stars Robert Downey, Jr. and features a supporting cast that includes Katie Holmes, Adrien Brody, Robin Wright Penn, and Mel Gibson, as well as a number of songs from the 1950s.\", \"David Ryall | David John Ryall (5 January 1935 \\u2013 25 December 2014) was an English stage, film and television character actor.  He had leading roles in \\\"Lytton's Diary\\\" and \\\"Goodnight Sweetheart\\\", as well as memorable roles in Dennis Potter's \\\"The Singing Detective\\\" and Andrew Davies's adaptation of \\\"To Play the King\\\".  He also portrayed Billy Buzzle in the ITV sitcom \\\"Bless Me, Father\\\" and Frank in the BBC sitcom \\\"Outnumbered\\\".\", \"Pennies from Heaven (TV series) | Pennies From Heaven is a 1978 BBC musical drama serial written by Dennis Potter.  The title is taken from the song \\\"Pennies from Heaven\\\" written by Johnny Burke and Arthur Johnston.  It was one of several Potter serials (another being \\\"The Singing Detective\\\") to mix the reality of the drama with a dark fantasy content, and the earliest of his works where the characters burst into extended performances of popular songs.\", \"Janet Henfrey | Janet E. A. Henfrey (born 16 August 1935) is a British stage and television actress.  She is best known for playing Mrs. Bale on \\\"As Time Goes By\\\", which is still rerun in the United States on PBS stations, and for her role as the schoolteacher in the BBC Dennis Potter serial \\\"The Singing Detective\\\" (1986).  She had previously appeared in the Potter play \\\"Stand Up, Nigel Barton\\\" (1965), also as a schoolteacher.\", \"Simon Fisher-Becker | Simon Fisher-Becker, Viscount of William & Mona (born 25 November 1961) is an English stage, television and film actor, specialising in comedy and character parts.  His more notable roles include Tony Fazackerley in Puppy Love for the BBC, The Fat Friar in the Harry Potter film \\\"Harry Potter and the Philosopher's Stone\\\", and Dorium Maldovar in series 5 and 6 of \\\"Doctor Who\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of the character played by an actor from the last six \"Harry Potter\" films in the BBC television serial \"The Singing Detective.\" From passage [1], it is stated that Michael Gambon played both Professor Albus Dumbledore in the final six \"Harry Potter\" films and the protagonist of \"The Singing Detective,\" who is described as a mystery writer. From passage [2], it is mentioned that \"The Singing Detective\" stars Michael Gambon, and the context implies that his role is the central character, who is known as the eponymous singing detective (a mystery writer). Thus, Michael Gambon played the protagonist Philip Marlow in \"The Singing Detective.\" The additional passages do not mention the actor's name or character from both \"Harry Potter\" and \"The Singing Detective\" in this specific combination.\nSummary: The character played by Michael Gambon, who appeared in the last six \"Harry Potter\" films, in \"The Singing Detective\" was Philip Marlow."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What was the name of the character played by an actor from the last six Harry Potter films in the BBC television serial \"The Singing Detective\"?\nSummary 1: The character played by Michael Gambon, who appeared in the last six \"Harry Potter\" films, in \"The Singing Detective\" was Philip Marlow."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of a character played by an actor from the last six Harry Potter films in \"The Singing Detective.\" Based on the provided summary, Michael Gambon, who appeared in the last six Harry Potter films, played the character Philip Marlow in \"The Singing Detective.\"\nQuery: What character did Michael Gambon play in the BBC television serial \"The Singing Detective\"?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What was the name of the character played by an actor from the last six Harry Potter films in the BBC television serial \"The Singing Detective\"?\nContext: The character played by Michael Gambon, who appeared in the last six \"Harry Potter\" films, in \"The Singing Detective\" was Philip Marlow.\nPassages: [\"Michael Gambon | Sir Michael John Gambon {'1': \\\", '2': \\\", '3': \\\", '4': \\\"} (born 19 October 1940) is an Irish-born English actor who has worked in theatre, television and film.  Gambon has played the eponymous mystery writer protagonist in the BBC television serial \\\"The Singing Detective\\\", Jules Maigret in the 1990s ITV serial \\\"Maigret\\\", and Professor Albus Dumbledore in the final six \\\"Harry Potter\\\" films after the death of previous actor Richard Harris.  He has won four BAFTA TV Awards and three Olivier Awards.\", \"The Singing Detective | The Singing Detective is a BBC television serial drama, written by Dennis Potter, which stars Michael Gambon and was directed by Jon Amiel.  The six episodes were \\\"Skin\\\", \\\"Heat\\\", \\\"Lovely Days\\\", \\\"Clues\\\", \\\"Pitter Patter\\\" and \\\"Who Done It\\\".\", \"Badi Uzzaman | Mohammed Badi Uzzaman Azmi (8 March 1939 \\u2013 14 June 2011), better known as Badi Uzzaman, was a Pakistani-British television and film actor.  According to \\\"The Guardian\\\", Uzzaman was perhaps best known for his role as a hospital patient in the 1986 television series, \\\"The Singing Detective\\\", opposite actor Michael Gambon.  He later appeared in numerous television roles during his career, often as a supporting character, including \\\"Torchwood\\\", \\\"Inspector Morse\\\", \\\"Coronation Street\\\", \\\"Cracker\\\", \\\"The Bill\\\" and \\\"Casualty\\\".\", \"Emma (2009 TV serial) | Emma is a four-part BBC television drama serial adaptation of Jane Austen's novel \\\"Emma\\\", first published in 1815.  The episodes were written by Sandy Welch, acclaimed writer of previous BBC costume-dramas \\\"Jane Eyre\\\" and \\\"North & South\\\", and directed by Jim O'Hanlon.  The serial stars Romola Garai as the titular heroine Emma Woodhouse, Jonny Lee Miller as her loyal lifelong friend Mr. Knightley and Michael Gambon as Emma's father, Mr. Woodhouse.  The serial originally ran weekly on Sunday nights on BBC One from 4 to 25 October 2009.\", \"Perfect Strangers (TV serial) | Perfect Strangers (renamed Almost Strangers for American distribution) is a television drama first aired in 2001, produced for BBC Two.  It was written and directed by Stephen Poliakoff, and starred Michael Gambon, who won a British Academy Television Award for his performance, Lindsay Duncan, Matthew Macfadyen, Claire Skinner, and Toby Stephens.  The drama received two Royal Television Society awards and a Peabody Award.\", \"Oscar (TV serial) | Oscar is a British TV serial first transmitted by BBC 2 in March 1985.  Michael Gambon portrayed Oscar Wilde while other actors included Robin Lermitte as Lord Alfred Douglas, Tim Hardy as Alfred Taylor, Emily Richard as Constance Wilde and Norman Rodway as the Marquis of Queensberry.  The serial concentrated on Wilde's trials and time in prison.\", \"Janet Henfrey | Janet E. A. Henfrey (born 16 August 1935) is a British stage and television actress.  She is best known for playing Mrs. Bale on \\\"As Time Goes By\\\", which is still rerun in the United States on PBS stations, and for her role as the schoolteacher in the BBC Dennis Potter serial \\\"The Singing Detective\\\" (1986).  She had previously appeared in the Potter play \\\"Stand Up, Nigel Barton\\\" (1965), also as a schoolteacher.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the context provided and supported by the passages, Michael Gambon played the character Philip Marlow in the BBC television serial \"The Singing Detective\". Gambon is known for his portrayal of Professor Albus Dumbledore in the last six Harry Potter films, which establishes the direct link to the question. Passage [1] confirms Gambon\u2019s appearance in both \"The Singing Detective\" and the Harry Potter series. Additionally, Passage [2] further identifies Michael Gambon as the star of \"The Singing Detective\". The specific name of the character, Philip Marlow, is explicitly mentioned in the context.\nSummary: The character played by Michael Gambon, who appeared in the last six Harry Potter films, in the BBC television serial \"The Singing Detective\" was Philip Marlow."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What was the name of the character played by an actor from the last six Harry Potter films in the BBC television serial \"The Singing Detective\"?\nSummary 1: The character played by Michael Gambon, who appeared in the last six \"Harry Potter\" films, in \"The Singing Detective\" was Philip Marlow.\nSummary 2: The character played by Michael Gambon, who appeared in the last six Harry Potter films, in the BBC television serial \"The Singing Detective\" was Philip Marlow."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that Michael Gambon, known for his role in the last six \"Harry Potter\" films, portrayed the character Philip Marlow in the BBC television serial \"The Singing Detective\". The information is consistent and aligns with established knowledge.\nAnswer: Philip Marlow"
+      }
+    ]
+  }
+}

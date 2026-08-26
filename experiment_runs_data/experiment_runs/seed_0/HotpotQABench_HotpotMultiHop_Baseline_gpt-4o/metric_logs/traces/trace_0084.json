@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7f5b6a5542994857a766fb",
+  "question": "What network did a musical game show that was the second game show to be produced and broadcast on the network, was produced by the CEO of Worldwide Biggies?",
+  "gold_answer": "MTV",
+  "prediction": {
+    "answer": "MTV",
+    "hop1_docs": [
+      "Turn It Up! | Turn It Up!  was a musical game show that aired on MTV from June 30 to December 7, 1990.  It was the second game show to be produced and broadcast on the network, produced by Albie Hecht, Alan Goodman, and Fred Seibert, of Chauncey Street Productions in New York City.",
+      "Detroit Lions Television Network | The Detroit Lions Television Network is a network of seven television stations (and one cable/satellite channel) in Michigan and Ohio that broadcast the NFL's Detroit Lions preseason games and related coverage.  On May 21, 2015, the Detroit Lions announced a multi-year broadcast partnership with WJBK (Fox 2) and Fox Sports Detroit.  Fox Sports Detroit produces the preseason game broadcasts with Fox 2 producing the pre-game and post-game segments.  The games air live on Fox 2 and the rest of the Detroit Lions Television Network, with re-airings on Fox Sports Detroit.  The wrap around shows' hosts are Dan Miller, Herman Moore, Jamie Samuelsen, Jennifer Hammond, and Woody Woodriffe.  The game announcers are Matt Shepard with play-by-play, Chris Spielman with color commentary, and Jennifer Hammond with sideline reports.  The network also airs a live regular season pre-game show called \"Lions Game Day Live\", while Fox Sports Detroit has a live regular season post-game show called \"Lions Live\".",
+      "The Selection Box | The Selection Box was a talent search reality TV show produced by Adare Productions for RT\u00c9.  It was directed by Brian Reddin and Brian Graham.  It was broadcast on Network 2 (now RT\u00c9 Two) in 2001.  It was produced to find a new presenter for a new Network 2 show called \"The Fame Game\".",
+      "List of programs broadcast by Game Show Network | The following is a list of game shows, reality shows, documentaries and specials that are current or upcoming, or were formerly broadcast by Game Show Network.",
+      "List of programs broadcast by TV5 (Philippines) | Programs broadcast by TV5, a broadcasting network in the Philippines, includes news and information shows from News5, sports programming produced by Sports5, drama, anime, sitcoms, game shows, reality and variety shows, cartoons and children's shows, talk shows, infomercials and movie blocks.",
+      "Wowowin | Wowowin ( ) is a Philippine afternoon variety show presented by Willie Revillame and broadcast by GMA Network.  The program premiered on May 10, 2015 as a Sunday afternoon game-variety show produced by Revillame's WBR Entertainment Productions on the network's \"Sunday Grande\" block.  The show later became a co-production with GMA Network, currently airing during the network's weeknight \"GMA Telebabad\" block.  The program is also broadcast internationally in the Americas, Europe, Middle East and Asia Pacific via GMA Pinoy TV, GMA Network's international channel.",
+      "Wipeout (2009 Australian game show) | Wipeout, presented on air as Wipeout Australia, is an Australian game show, which is based on the U.S. game show of the same name.  The game show premiered on the Nine Network on Tuesday 3 February 2009 at 7:30\u00a0pm for an initial run of eight episodes.  The show was produced by Endemol Southern Star.  The show is currently being re-aired on GO! , a Nine Network multi-channel."
+    ],
+    "hop2_docs": [
+      "Turn It Up! | Turn It Up!  was a musical game show that aired on MTV from June 30 to December 7, 1990.  It was the second game show to be produced and broadcast on the network, produced by Albie Hecht, Alan Goodman, and Fred Seibert, of Chauncey Street Productions in New York City.",
+      "Albie Hecht | Albie Hecht is a television producer and media executive.  He is the CEO of Worldwide Biggies, founder of Spike TV, and a former president of Nickelodeon Entertainment, and former head of HLN, the television channel.",
+      "You May Be Right (game show) | You May Be Right is an Australian television game show, jointly produced by dSPBeyond & the Seven Network, and was hosted by \"Dancing With The Stars\" judge Todd McKenney.  The show was aired on Sunday nights at 7:30pm and premiered on 13 August 2006.  The format pitted two teams of Australian celebrities against each other, testing their knowledge on movies, music and television.  Among the games involved are: \"Check It Out\", \"Crate Expectations\", \"Face Race\", \"Looney Tunes\", \"Slay That Song\" and \"What Happened Next\".  The show's in-house band is the Scared Weird Little Guys.  The original working title for the pilot was \"Famous\", but was later changed to its current title.  The show was based on the Swedish concept \"Doobidoo\".",
+      "Get the Picture (game show) | Get the Picture is an American children's game show that aired from March 18, 1991 to December 6, 1991 on Nickelodeon.  Hosted by Mike O'Malley, the show features two teams answering questions and playing games for the opportunity to guess a hidden picture on a giant screen made up of 16 smaller screens.  The show was taped at Nickelodeon Studios at Universal Studios in Orlando, Florida.  The program's theme music and game music was composed by Dan Vitco & Mark Schultz, and produced by Schultz.  Its tagline is \"The Great Frame Game.\"",
+      "Wipeout (2009 Australian game show) | Wipeout, presented on air as Wipeout Australia, is an Australian game show, which is based on the U.S. game show of the same name.  The game show premiered on the Nine Network on Tuesday 3 February 2009 at 7:30\u00a0pm for an initial run of eight episodes.  The show was produced by Endemol Southern Star.  The show is currently being re-aired on GO! , a Nine Network multi-channel.",
+      "Double Up (U.S. game show) | Double Up is an American game show that aired on NBC Saturday mornings from September 5 to October 17, 1992.  J. D. Roth hosted as well as being one of its executive producers.  A rap DJ named Disco served as announcer.  (Dick Clark Productions and MCA TV produced a completely unrelated pilot in 1987 also called \"Double Up\", hosted by Jamie Farr; the show was not picked up, but Farr was still promoted as being host of the show when he appeared during a \"Game Show Hosts\" week in 1987 on the NBC game show \"Scrabble\".)",
+      "Blind Date (Australian game show) | Blind Date is an Australian television game show aired from 1967 to 1970 on what was then the 0-10 Network (now Network Ten), and again in 1974 on the Seven Network.  It was based on U.S. series \"The Dating Game\"."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 84,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What network did a musical game show that was the second game show to be produced and broadcast on the network, was produced by the CEO of Worldwide Biggies?\nPassages: [\"Turn It Up! | Turn It Up!  was a musical game show that aired on MTV from June 30 to December 7, 1990.  It was the second game show to be produced and broadcast on the network, produced by Albie Hecht, Alan Goodman, and Fred Seibert, of Chauncey Street Productions in New York City.\", \"Detroit Lions Television Network | The Detroit Lions Television Network is a network of seven television stations (and one cable/satellite channel) in Michigan and Ohio that broadcast the NFL's Detroit Lions preseason games and related coverage.  On May 21, 2015, the Detroit Lions announced a multi-year broadcast partnership with WJBK (Fox 2) and Fox Sports Detroit.  Fox Sports Detroit produces the preseason game broadcasts with Fox 2 producing the pre-game and post-game segments.  The games air live on Fox 2 and the rest of the Detroit Lions Television Network, with re-airings on Fox Sports Detroit.  The wrap around shows' hosts are Dan Miller, Herman Moore, Jamie Samuelsen, Jennifer Hammond, and Woody Woodriffe.  The game announcers are Matt Shepard with play-by-play, Chris Spielman with color commentary, and Jennifer Hammond with sideline reports.  The network also airs a live regular season pre-game show called \\\"Lions Game Day Live\\\", while Fox Sports Detroit has a live regular season post-game show called \\\"Lions Live\\\".\", \"The Selection Box | The Selection Box was a talent search reality TV show produced by Adare Productions for RT\\u00c9.  It was directed by Brian Reddin and Brian Graham.  It was broadcast on Network 2 (now RT\\u00c9 Two) in 2001.  It was produced to find a new presenter for a new Network 2 show called \\\"The Fame Game\\\".\", \"List of programs broadcast by Game Show Network | The following is a list of game shows, reality shows, documentaries and specials that are current or upcoming, or were formerly broadcast by Game Show Network.\", \"List of programs broadcast by TV5 (Philippines) | Programs broadcast by TV5, a broadcasting network in the Philippines, includes news and information shows from News5, sports programming produced by Sports5, drama, anime, sitcoms, game shows, reality and variety shows, cartoons and children's shows, talk shows, infomercials and movie blocks.\", \"Wowowin | Wowowin ( ) is a Philippine afternoon variety show presented by Willie Revillame and broadcast by GMA Network.  The program premiered on May 10, 2015 as a Sunday afternoon game-variety show produced by Revillame's WBR Entertainment Productions on the network's \\\"Sunday Grande\\\" block.  The show later became a co-production with GMA Network, currently airing during the network's weeknight \\\"GMA Telebabad\\\" block.  The program is also broadcast internationally in the Americas, Europe, Middle East and Asia Pacific via GMA Pinoy TV, GMA Network's international channel.\", \"Wipeout (2009 Australian game show) | Wipeout, presented on air as Wipeout Australia, is an Australian game show, which is based on the U.S. game show of the same name.  The game show premiered on the Nine Network on Tuesday 3 February 2009 at 7:30\\u00a0pm for an initial run of eight episodes.  The show was produced by Endemol Southern Star.  The show is currently being re-aired on GO! , a Nine Network multi-channel.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question specifies a musical game show that was the second game show ever produced and broadcast on its respective network and was produced by the CEO of Worldwide Biggies. Passage [1] discusses \"Turn It Up!,\" a musical game show aired on MTV from June 30 to December 7, 1990. It explicitly states that it was the second game show produced and broadcast on the network. Furthermore, Albie Hecht, mentioned as one of the producers of \"Turn It Up!,\" has been the CEO of Worldwide Biggies. No other passage provides relevant or overlapping information for this specific question.\nSummary: The network in question is MTV, which aired the musical game show \"Turn It Up!\" that was produced by Albie Hecht, who later went on to become the CEO of Worldwide Biggies."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What network did a musical game show that was the second game show to be produced and broadcast on the network, was produced by the CEO of Worldwide Biggies?\nSummary 1: The network in question is MTV, which aired the musical game show \"Turn It Up!\" that was produced by Albie Hecht, who later went on to become the CEO of Worldwide Biggies."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the network associated with a second game show, specifically a musical game show produced by the CEO of Worldwide Biggies. Based on the summary provided, the network is MTV, and the game show is \"Turn It Up!\", which was produced by Albie Hecht. The relationship between the network, the specific game show, and the producer aligns to answer the question effectively.\nQuery: What network aired \"Turn It Up!\", a musical game show that was its second game show and was produced by Albie Hecht, the future CEO of Worldwide Biggies?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What network did a musical game show that was the second game show to be produced and broadcast on the network, was produced by the CEO of Worldwide Biggies?\nContext: The network in question is MTV, which aired the musical game show \"Turn It Up!\" that was produced by Albie Hecht, who later went on to become the CEO of Worldwide Biggies.\nPassages: [\"Turn It Up! | Turn It Up!  was a musical game show that aired on MTV from June 30 to December 7, 1990.  It was the second game show to be produced and broadcast on the network, produced by Albie Hecht, Alan Goodman, and Fred Seibert, of Chauncey Street Productions in New York City.\", \"Albie Hecht | Albie Hecht is a television producer and media executive.  He is the CEO of Worldwide Biggies, founder of Spike TV, and a former president of Nickelodeon Entertainment, and former head of HLN, the television channel.\", \"You May Be Right (game show) | You May Be Right is an Australian television game show, jointly produced by dSPBeyond & the Seven Network, and was hosted by \\\"Dancing With The Stars\\\" judge Todd McKenney.  The show was aired on Sunday nights at 7:30pm and premiered on 13 August 2006.  The format pitted two teams of Australian celebrities against each other, testing their knowledge on movies, music and television.  Among the games involved are: \\\"Check It Out\\\", \\\"Crate Expectations\\\", \\\"Face Race\\\", \\\"Looney Tunes\\\", \\\"Slay That Song\\\" and \\\"What Happened Next\\\".  The show's in-house band is the Scared Weird Little Guys.  The original working title for the pilot was \\\"Famous\\\", but was later changed to its current title.  The show was based on the Swedish concept \\\"Doobidoo\\\".\", \"Get the Picture (game show) | Get the Picture is an American children's game show that aired from March 18, 1991 to December 6, 1991 on Nickelodeon.  Hosted by Mike O'Malley, the show features two teams answering questions and playing games for the opportunity to guess a hidden picture on a giant screen made up of 16 smaller screens.  The show was taped at Nickelodeon Studios at Universal Studios in Orlando, Florida.  The program's theme music and game music was composed by Dan Vitco & Mark Schultz, and produced by Schultz.  Its tagline is \\\"The Great Frame Game.\\\"\", \"Wipeout (2009 Australian game show) | Wipeout, presented on air as Wipeout Australia, is an Australian game show, which is based on the U.S. game show of the same name.  The game show premiered on the Nine Network on Tuesday 3 February 2009 at 7:30\\u00a0pm for an initial run of eight episodes.  The show was produced by Endemol Southern Star.  The show is currently being re-aired on GO! , a Nine Network multi-channel.\", \"Double Up (U.S. game show) | Double Up is an American game show that aired on NBC Saturday mornings from September 5 to October 17, 1992.  J. D. Roth hosted as well as being one of its executive producers.  A rap DJ named Disco served as announcer.  (Dick Clark Productions and MCA TV produced a completely unrelated pilot in 1987 also called \\\"Double Up\\\", hosted by Jamie Farr; the show was not picked up, but Farr was still promoted as being host of the show when he appeared during a \\\"Game Show Hosts\\\" week in 1987 on the NBC game show \\\"Scrabble\\\".)\", \"Blind Date (Australian game show) | Blind Date is an Australian television game show aired from 1967 to 1970 on what was then the 0-10 Network (now Network Ten), and again in 1974 on the Seven Network.  It was based on U.S. series \\\"The Dating Game\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the question, we are tasked with identifying the network that aired a musical game show, which was the second game show on the network, and was produced by Albie Hecht, the CEO of Worldwide Biggies. \n\nFrom the context, it is confirmed that the network is MTV, and the game show mentioned is \"Turn It Up!\". Cross-referencing this with the passages, passage [1] specifically states that \"Turn It Up!\" was a musical game show on MTV aired between June 30 and December 7, 1990, making it the second game show to appear on the network. Additionally, Albie Hecht is listed in passage [1] as one of the producers of \"Turn It Up!\". Furthermore, passage [2] provides background on Albie Hecht, confirming his role as the CEO of Worldwide Biggies and his involvement as a television producer. \n\nThus, based on the evidence, the answer to the question is that the network is MTV.\nSummary: The musical game show \"Turn It Up!\" aired on MTV. It was the second game show broadcast on the network and was produced by Albie Hecht, who later became the CEO of Worldwide Biggies."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What network did a musical game show that was the second game show to be produced and broadcast on the network, was produced by the CEO of Worldwide Biggies?\nSummary 1: The network in question is MTV, which aired the musical game show \"Turn It Up!\" that was produced by Albie Hecht, who later went on to become the CEO of Worldwide Biggies.\nSummary 2: The musical game show \"Turn It Up!\" aired on MTV. It was the second game show broadcast on the network and was produced by Albie Hecht, who later became the CEO of Worldwide Biggies."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree on the critical details related to the question. The musical game show \"Turn It Up!\" was aired on MTV, and it was produced by Albie Hecht, who later became the CEO of Worldwide Biggies. They also confirm that it was the second game show produced and broadcast on the network, satisfying the specifics of the question.\nAnswer: MTV"
+      }
+    ]
+  }
+}

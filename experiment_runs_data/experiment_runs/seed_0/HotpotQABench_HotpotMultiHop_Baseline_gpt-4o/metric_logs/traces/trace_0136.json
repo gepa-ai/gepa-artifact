@@ -1,0 +1,96 @@
+{
+  "example_id": "5a76b7bf5542993735360185",
+  "question": "The Lies of Locke Lamora is a 2006 fantasy novel by which American fantasy author?",
+  "gold_answer": "Scott Lynch",
+  "prediction": {
+    "answer": "Scott Lynch",
+    "hop1_docs": [
+      "The Lies of Locke Lamora | The Lies of Locke Lamora is a 2006 fantasy novel by Scott Lynch, the first book of the \"Gentleman Bastard\" series.  Elite con artists calling themselves the \"Gentleman Bastards\" rob the rich of the city of Camorr, based on late medieval Venice but on an unnamed world.  Two stories interweave: in the present, the Gentleman Bastards fight a mysterious Gray King taking over the criminal underworld; alternate chapters describe the history of Camorr and the Gentleman Bastards, in particular protagonist Locke Lamora.",
+      "Scott Lynch | Scott Lynch (born April 2, 1978) is an American fantasy author, best known for his \"Gentleman Bastard\" series of novels.  He resides in Massachusetts.  According to his website, he had a variety of jobs including dishwasher, busboy, waiter, web designer, office manager, prep cook, and freelance writer.  His first novel, \"The Lies of Locke Lamora\", was purchased by Orion Books in August 2004 and published in June 2006 under the Gollancz imprint in the United Kingdom and under the Bantam imprint in the United States.  The next two novels in the series, \"Red Seas Under Red Skies\" and \"The Republic of Thieves\", were published in 2007 and 2013 respectively.",
+      "Jenna Black | Jennifer Black is an American author of paranormal romance novels, urban fantasy, and young adult fantasy novels.  She began writing under the pen name Jenna Black in 2006.  She published one novel earlier under her other name, Jennifer Barlow, and at least two short stories before that under her birth name.",
+      "The Goblin Emperor | The Goblin Emperor is a 2014 fantasy novel written by the American author Sarah Monette under the pseudonym Katherine Addison.  The novel received the Locus Award for Best Fantasy Novel and was nominated for the Nebula, Hugo and World Fantasy Awards.  It was well received by critics, who noted the strength of the protagonist's characterization and, unusual for fantasy, the work's warm and understated tone.",
+      "Meilin Miranda | Lynn Siprelle, better known by the pen name MeiLin Miranda, is the American author of the fantasy series \"An Intimate History of the Greater Kingdom\".  She is also the author of the online fantasy western serial \"Scryer's Gulch\".  She co-authored the shared steampunk fantasy series \"The Drifting Isle Chronicles\".  Her fantasy and science fiction novels are set in the Victorian era.",
+      "Patricia A. McKillip | Patricia Anne McKillip (born February 29, 1948) is an American author of fantasy and science fiction novels, which have been winners of the World Fantasy Award, the Locus Award, and the Mythopoeic Award.  In 2008, she was a recipient of the World Fantasy Award for Life Achievement.  She lives in Oregon and is married to David Lunde, a poet.",
+      "Winter Rose (novel) | Winter Rose is a 1996 fantasy novel by American writer Patricia A. McKillip.  It was nominated for the 1996 Nebula Award and 1997 Locus Award for Best Fantasy Novel, and was a finalist for the 1997 Mythopoeic Fantasy Award for Adult Literature.  In 2006, McKillip published its sequel, \"Solstice Wood\"."
+    ],
+    "hop2_docs": [
+      "David Lynch Scott | David Lynch Scott (21 August 1845 \u2013 26 July 1924) was a Canadian militia officer, lawyer, and judge.  He served as mayor of Orangeville, Ontario, mayor of Regina, Saskatchewan and Chief Justice of Alberta.",
+      "Final Score (2017 film) | Final Score is an upcoming action film directed by Scott Mann and written by David T. Lynch and Keith Lynch, starring Dave Bautista, who previously worked with Mann in \"Heist\", Ray Stevenson and Pierce Brosnan.",
+      "Ella Scott Lynch | She is a graduate of the National Institute of Dramatic Arts.",
+      "Scott Lynch | Scott Lynch (born April 2, 1978) is an American fantasy author, best known for his \"Gentleman Bastard\" series of novels.  He resides in Massachusetts.  According to his website, he had a variety of jobs including dishwasher, busboy, waiter, web designer, office manager, prep cook, and freelance writer.  His first novel, \"The Lies of Locke Lamora\", was purchased by Orion Books in August 2004 and published in June 2006 under the Gollancz imprint in the United Kingdom and under the Bantam imprint in the United States.  The next two novels in the series, \"Red Seas Under Red Skies\" and \"The Republic of Thieves\", were published in 2007 and 2013 respectively.",
+      "Rabbits (film) | Rabbits is a 2002 series of short horror web films written and directed by David Lynch, although Lynch himself refers to it as a nine-episode sitcom.  It depicts three humanoid rabbits played by Scott Coffey, Laura Elena Harring and Naomi Watts in a room.  Their disjointed conversations are interrupted by a laugh track.  \"Rabbits\" is presented with the tagline \"In a nameless city deluged by a continuous rain... three rabbits live with a fearful mystery\".",
+      "Scott Frost (writer) | Scott Frost is an American screen writer and novelist.  He is the son of actor Warren Frost and the brother of Mark Frost and actress Lindsay Frost.  He worked with his brother and David Lynch on the Twin Peaks television series, writing two episodes.  He wrote episode 1.4 of the little-seen On The Air television series for Lynch and his brother, although the episode was never aired in the United States.  Among others, he has also written an episode of Babylon 5 entitled \"The Long Dark\", and two episodes of Andromeda.  In the early 1990s, he wrote the script for the mystery/thriller TV movie Past Tense with Miguel Tejada-Flores.  He again worked with his brother on the 2001 series \"All Souls\".",
+      "Status Update | Status Update is an upcoming teen comedy romance film starring Ross Lynch in his feature film debut.  The film is directed by Scott Speer, from a script written by Jason Filardi."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 136,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The Lies of Locke Lamora is a 2006 fantasy novel by which American fantasy author?\nPassages: [\"The Lies of Locke Lamora | The Lies of Locke Lamora is a 2006 fantasy novel by Scott Lynch, the first book of the \\\"Gentleman Bastard\\\" series.  Elite con artists calling themselves the \\\"Gentleman Bastards\\\" rob the rich of the city of Camorr, based on late medieval Venice but on an unnamed world.  Two stories interweave: in the present, the Gentleman Bastards fight a mysterious Gray King taking over the criminal underworld; alternate chapters describe the history of Camorr and the Gentleman Bastards, in particular protagonist Locke Lamora.\", \"Scott Lynch | Scott Lynch (born April 2, 1978) is an American fantasy author, best known for his \\\"Gentleman Bastard\\\" series of novels.  He resides in Massachusetts.  According to his website, he had a variety of jobs including dishwasher, busboy, waiter, web designer, office manager, prep cook, and freelance writer.  His first novel, \\\"The Lies of Locke Lamora\\\", was purchased by Orion Books in August 2004 and published in June 2006 under the Gollancz imprint in the United Kingdom and under the Bantam imprint in the United States.  The next two novels in the series, \\\"Red Seas Under Red Skies\\\" and \\\"The Republic of Thieves\\\", were published in 2007 and 2013 respectively.\", \"Jenna Black | Jennifer Black is an American author of paranormal romance novels, urban fantasy, and young adult fantasy novels.  She began writing under the pen name Jenna Black in 2006.  She published one novel earlier under her other name, Jennifer Barlow, and at least two short stories before that under her birth name.\", \"The Goblin Emperor | The Goblin Emperor is a 2014 fantasy novel written by the American author Sarah Monette under the pseudonym Katherine Addison.  The novel received the Locus Award for Best Fantasy Novel and was nominated for the Nebula, Hugo and World Fantasy Awards.  It was well received by critics, who noted the strength of the protagonist's characterization and, unusual for fantasy, the work's warm and understated tone.\", \"Meilin Miranda | Lynn Siprelle, better known by the pen name MeiLin Miranda, is the American author of the fantasy series \\\"An Intimate History of the Greater Kingdom\\\".  She is also the author of the online fantasy western serial \\\"Scryer's Gulch\\\".  She co-authored the shared steampunk fantasy series \\\"The Drifting Isle Chronicles\\\".  Her fantasy and science fiction novels are set in the Victorian era.\", \"Patricia A. McKillip | Patricia Anne McKillip (born February 29, 1948) is an American author of fantasy and science fiction novels, which have been winners of the World Fantasy Award, the Locus Award, and the Mythopoeic Award.  In 2008, she was a recipient of the World Fantasy Award for Life Achievement.  She lives in Oregon and is married to David Lunde, a poet.\", \"Winter Rose (novel) | Winter Rose is a 1996 fantasy novel by American writer Patricia A. McKillip.  It was nominated for the 1996 Nebula Award and 1997 Locus Award for Best Fantasy Novel, and was a finalist for the 1997 Mythopoeic Fantasy Award for Adult Literature.  In 2006, McKillip published its sequel, \\\"Solstice Wood\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the provided passages, Passage [1] explicitly states that \"The Lies of Locke Lamora\" is a 2006 fantasy novel by Scott Lynch, and identifies it as the first book in the \"Gentleman Bastard\" series. Additionally, Passage [2] corroborates this, describing Scott Lynch as an American fantasy author, who is best known for his \"Gentleman Bastard\" series. It further establishes that \"The Lies of Locke Lamora\" was his first novel, published in June 2006. None of the other passages suggest any connection to the novel or its authorship.\nSummary: \"The Lies of Locke Lamora\" is a 2006 fantasy novel by the American fantasy author Scott Lynch."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The Lies of Locke Lamora is a 2006 fantasy novel by which American fantasy author?\nSummary 1: \"The Lies of Locke Lamora\" is a 2006 fantasy novel by the American fantasy author Scott Lynch."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the name of the author of \"The Lies of Locke Lamora,\" a 2006 fantasy novel. The summary provided directly states that the novel was written by Scott Lynch. Therefore, the answer can be derived straightforwardly from the summary.\nQuery: Scott Lynch"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The Lies of Locke Lamora is a 2006 fantasy novel by which American fantasy author?\nContext: \"The Lies of Locke Lamora\" is a 2006 fantasy novel by the American fantasy author Scott Lynch.\nPassages: [\"David Lynch Scott | David Lynch Scott (21 August 1845 \\u2013 26 July 1924) was a Canadian militia officer, lawyer, and judge.  He served as mayor of Orangeville, Ontario, mayor of Regina, Saskatchewan and Chief Justice of Alberta.\", \"Final Score (2017 film) | Final Score is an upcoming action film directed by Scott Mann and written by David T. Lynch and Keith Lynch, starring Dave Bautista, who previously worked with Mann in \\\"Heist\\\", Ray Stevenson and Pierce Brosnan.\", \"Ella Scott Lynch | She is a graduate of the National Institute of Dramatic Arts.\", \"Scott Lynch | Scott Lynch (born April 2, 1978) is an American fantasy author, best known for his \\\"Gentleman Bastard\\\" series of novels.  He resides in Massachusetts.  According to his website, he had a variety of jobs including dishwasher, busboy, waiter, web designer, office manager, prep cook, and freelance writer.  His first novel, \\\"The Lies of Locke Lamora\\\", was purchased by Orion Books in August 2004 and published in June 2006 under the Gollancz imprint in the United Kingdom and under the Bantam imprint in the United States.  The next two novels in the series, \\\"Red Seas Under Red Skies\\\" and \\\"The Republic of Thieves\\\", were published in 2007 and 2013 respectively.\", \"Rabbits (film) | Rabbits is a 2002 series of short horror web films written and directed by David Lynch, although Lynch himself refers to it as a nine-episode sitcom.  It depicts three humanoid rabbits played by Scott Coffey, Laura Elena Harring and Naomi Watts in a room.  Their disjointed conversations are interrupted by a laugh track.  \\\"Rabbits\\\" is presented with the tagline \\\"In a nameless city deluged by a continuous rain... three rabbits live with a fearful mystery\\\".\", \"Scott Frost (writer) | Scott Frost is an American screen writer and novelist.  He is the son of actor Warren Frost and the brother of Mark Frost and actress Lindsay Frost.  He worked with his brother and David Lynch on the Twin Peaks television series, writing two episodes.  He wrote episode 1.4 of the little-seen On The Air television series for Lynch and his brother, although the episode was never aired in the United States.  Among others, he has also written an episode of Babylon 5 entitled \\\"The Long Dark\\\", and two episodes of Andromeda.  In the early 1990s, he wrote the script for the mystery/thriller TV movie Past Tense with Miguel Tejada-Flores.  He again worked with his brother on the 2001 series \\\"All Souls\\\".\", \"Status Update | Status Update is an upcoming teen comedy romance film starring Ross Lynch in his feature film debut.  The film is directed by Scott Speer, from a script written by Jason Filardi.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Examining the provided context, it is explicitly stated that \"The Lies of Locke Lamora\" is a 2006 fantasy novel by Scott Lynch, an American fantasy author. The passages confirm this information, particularly passage [4], which provides details about Scott Lynch and his authorship of \"The Lies of Locke Lamora\" as part of the \"Gentleman Bastard\" series. The context and the relevant passage align to conclusively identify Scott Lynch as the author.\nSummary: \"The Lies of Locke Lamora\" is a 2006 fantasy novel written by the American fantasy author Scott Lynch."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The Lies of Locke Lamora is a 2006 fantasy novel by which American fantasy author?\nSummary 1: \"The Lies of Locke Lamora\" is a 2006 fantasy novel by the American fantasy author Scott Lynch.\nSummary 2: \"The Lies of Locke Lamora\" is a 2006 fantasy novel written by the American fantasy author Scott Lynch."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that \"The Lies of Locke Lamora\" is a 2006 fantasy novel written by the American fantasy author Scott Lynch. There is no discrepancy or conflicting information between the two summaries. Therefore, it is reasonable to conclude that Scott Lynch is the correct answer.\nAnswer: Scott Lynch"
+      }
+    ]
+  }
+}

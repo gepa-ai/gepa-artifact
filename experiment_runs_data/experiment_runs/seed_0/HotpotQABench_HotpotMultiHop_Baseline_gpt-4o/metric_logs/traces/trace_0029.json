@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7a9e1255429941d65f26f9",
+  "question": "Who is older Terry Gilliam or Peter Jackson?",
+  "gold_answer": "\"Terry\" Gilliam",
+  "prediction": {
+    "answer": "Terry Gilliam is older than Peter Jackson.",
+    "hop1_docs": [
+      "Terry Gilliam filmography | This is a filmography for film director, screenwriter, producer, animator and actor Terry Gilliam.",
+      "Getting Gilliam | Getting Gilliam is a 2005 documentary film directed by Vincenzo Natali about the making of Terry Gilliam's film \"Tideland\".",
+      "Terry Gilliam | Terrence Vance \"Terry\" Gilliam ( ; born 22 November 1940) is an American-born British screenwriter, film director, animator, actor, comedian and member of the Monty Python comedy troupe.",
+      "The Man Who Killed Don Quixote | The Man Who Killed Don Quixote is an upcoming fantasy-adventure-comedy film directed by Terry Gilliam and written by Gilliam and Tony Grisoni, loosely based on the novel \"Don Quixote\" by Miguel de Cervantes.  It is widely recognized as one of the most infamous examples of development hell in film history, with Gilliam unsuccessfully attempting to make the film a total of eight times over the span of nineteen years.",
+      "Lost in La Mancha | Lost in La Mancha is a 2002 documentary film about Terry Gilliam's unfinished film \"The Man Who Killed Don Quixote\", a film adaptation of the novel \"Don Quixote\" by Miguel de Cervantes.  It was shot in 2000 during Gilliam's first attempt to make the film with the purpose of being its making-of, but Gilliam's failure in making the movie led it to be retitled \"Lost in la Mancha\" and to be released independently.",
+      "Jackson Earle Gilliam | Jackson Earle Gilliam (June 20, 1920 \u2013 October 19, 2000) was bishop of the Episcopal Diocese of Montana, serving from 1968 to 1985.",
+      "Time Bandits | Time Bandits is a 1981 British fantasy film co-written, produced, and directed by Terry Gilliam and starring Sean Connery, John Cleese, Shelley Duvall, Ralph Richardson, Katherine Helmond, Ian Holm, Michael Palin, Peter Vaughn, and David Warner."
+    ],
+    "hop2_docs": [
+      "Terry Gilliam filmography | This is a filmography for film director, screenwriter, producer, animator and actor Terry Gilliam.",
+      "Getting Gilliam | Getting Gilliam is a 2005 documentary film directed by Vincenzo Natali about the making of Terry Gilliam's film \"Tideland\".",
+      "Terry Gilliam | Terrence Vance \"Terry\" Gilliam ( ; born 22 November 1940) is an American-born British screenwriter, film director, animator, actor, comedian and member of the Monty Python comedy troupe.",
+      "The Man Who Killed Don Quixote | The Man Who Killed Don Quixote is an upcoming fantasy-adventure-comedy film directed by Terry Gilliam and written by Gilliam and Tony Grisoni, loosely based on the novel \"Don Quixote\" by Miguel de Cervantes.  It is widely recognized as one of the most infamous examples of development hell in film history, with Gilliam unsuccessfully attempting to make the film a total of eight times over the span of nineteen years.",
+      "Jackson Earle Gilliam | Jackson Earle Gilliam (June 20, 1920 \u2013 October 19, 2000) was bishop of the Episcopal Diocese of Montana, serving from 1968 to 1985.",
+      "Time Bandits | Time Bandits is a 1981 British fantasy film co-written, produced, and directed by Terry Gilliam and starring Sean Connery, John Cleese, Shelley Duvall, Ralph Richardson, Katherine Helmond, Ian Holm, Michael Palin, Peter Vaughn, and David Warner.",
+      "Story Time (film) | Story Time is a 1979 short animated comedy compilation film written, directed and animated by Terry Gilliam.  It is compiled from several of Gilliam's works from the late 1960s and early 1970s, and stylistically resembles the distinctive animations which Gilliam produced in that period for \"Monty Python's Flying Circus\"."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 29,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who is older Terry Gilliam or Peter Jackson?\nPassages: [\"Terry Gilliam filmography | This is a filmography for film director, screenwriter, producer, animator and actor Terry Gilliam.\", \"Getting Gilliam | Getting Gilliam is a 2005 documentary film directed by Vincenzo Natali about the making of Terry Gilliam's film \\\"Tideland\\\".\", \"Terry Gilliam | Terrence Vance \\\"Terry\\\" Gilliam ( ; born 22 November 1940) is an American-born British screenwriter, film director, animator, actor, comedian and member of the Monty Python comedy troupe.\", \"The Man Who Killed Don Quixote | The Man Who Killed Don Quixote is an upcoming fantasy-adventure-comedy film directed by Terry Gilliam and written by Gilliam and Tony Grisoni, loosely based on the novel \\\"Don Quixote\\\" by Miguel de Cervantes.  It is widely recognized as one of the most infamous examples of development hell in film history, with Gilliam unsuccessfully attempting to make the film a total of eight times over the span of nineteen years.\", \"Lost in La Mancha | Lost in La Mancha is a 2002 documentary film about Terry Gilliam's unfinished film \\\"The Man Who Killed Don Quixote\\\", a film adaptation of the novel \\\"Don Quixote\\\" by Miguel de Cervantes.  It was shot in 2000 during Gilliam's first attempt to make the film with the purpose of being its making-of, but Gilliam's failure in making the movie led it to be retitled \\\"Lost in la Mancha\\\" and to be released independently.\", \"Jackson Earle Gilliam | Jackson Earle Gilliam (June 20, 1920 \\u2013 October 19, 2000) was bishop of the Episcopal Diocese of Montana, serving from 1968 to 1985.\", \"Time Bandits | Time Bandits is a 1981 British fantasy film co-written, produced, and directed by Terry Gilliam and starring Sean Connery, John Cleese, Shelley Duvall, Ralph Richardson, Katherine Helmond, Ian Holm, Michael Palin, Peter Vaughn, and David Warner.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: In the passages, we learn that Terry Gilliam was born on November 22, 1940. However, there is no mention in the provided passages about Peter Jackson's birthdate. To answer the question, additional information on Peter Jackson's birthdate is necessary. As of common knowledge, Peter Jackson was born on October 31, 1961. Comparing the two birthdates, Terry Gilliam was born earlier, making him older than Peter Jackson.\nSummary: Terry Gilliam is older than Peter Jackson."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who is older Terry Gilliam or Peter Jackson?\nSummary 1: Terry Gilliam is older than Peter Jackson."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The summary provided states that Terry Gilliam is older than Peter Jackson. Confirming this involves checking the birth years of both individuals, as age comparisons depend on their respective dates of birth.\nQuery: What are the birth years of Terry Gilliam and Peter Jackson?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who is older Terry Gilliam or Peter Jackson?\nContext: Terry Gilliam is older than Peter Jackson.\nPassages: [\"Terry Gilliam filmography | This is a filmography for film director, screenwriter, producer, animator and actor Terry Gilliam.\", \"Getting Gilliam | Getting Gilliam is a 2005 documentary film directed by Vincenzo Natali about the making of Terry Gilliam's film \\\"Tideland\\\".\", \"Terry Gilliam | Terrence Vance \\\"Terry\\\" Gilliam ( ; born 22 November 1940) is an American-born British screenwriter, film director, animator, actor, comedian and member of the Monty Python comedy troupe.\", \"The Man Who Killed Don Quixote | The Man Who Killed Don Quixote is an upcoming fantasy-adventure-comedy film directed by Terry Gilliam and written by Gilliam and Tony Grisoni, loosely based on the novel \\\"Don Quixote\\\" by Miguel de Cervantes.  It is widely recognized as one of the most infamous examples of development hell in film history, with Gilliam unsuccessfully attempting to make the film a total of eight times over the span of nineteen years.\", \"Jackson Earle Gilliam | Jackson Earle Gilliam (June 20, 1920 \\u2013 October 19, 2000) was bishop of the Episcopal Diocese of Montana, serving from 1968 to 1985.\", \"Time Bandits | Time Bandits is a 1981 British fantasy film co-written, produced, and directed by Terry Gilliam and starring Sean Connery, John Cleese, Shelley Duvall, Ralph Richardson, Katherine Helmond, Ian Holm, Michael Palin, Peter Vaughn, and David Warner.\", \"Story Time (film) | Story Time is a 1979 short animated comedy compilation film written, directed and animated by Terry Gilliam.  It is compiled from several of Gilliam's works from the late 1960s and early 1970s, and stylistically resembles the distinctive animations which Gilliam produced in that period for \\\"Monty Python's Flying Circus\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine who is older between Terry Gilliam and Peter Jackson, the key detail is Terry Gilliam's birthdate, which is November 22, 1940, as stated in passage [3]. The context confirms that Terry Gilliam is older than Peter Jackson, reinforcing this fact. While Peter Jackson's exact birthdate is not provided in the passages here, external knowledge provides that Peter Jackson was born on October 31, 1961, making him significantly younger than Terry Gilliam.\nSummary: Terry Gilliam is older than Peter Jackson, as he was born on November 22, 1940."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who is older Terry Gilliam or Peter Jackson?\nSummary 1: Terry Gilliam is older than Peter Jackson.\nSummary 2: Terry Gilliam is older than Peter Jackson, as he was born on November 22, 1940."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that Terry Gilliam is older than Peter Jackson. Additionally, summary_2 specifies that Terry Gilliam was born on November 22, 1940, which further supports the claim of his seniority over Peter Jackson. The information in both summaries is aligned and conclusive.\nAnswer: Terry Gilliam is older than Peter Jackson."
+      }
+    ]
+  }
+}

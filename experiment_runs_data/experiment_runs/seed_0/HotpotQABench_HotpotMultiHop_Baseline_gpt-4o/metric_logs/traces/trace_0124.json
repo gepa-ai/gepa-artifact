@@ -1,0 +1,96 @@
+{
+  "example_id": "5a809b3a5542996402f6a59b",
+  "question": "In what year was the actress that was in \"Enemies Among Us\" in a movie based on a comic book?",
+  "gold_answer": "2010",
+  "prediction": {
+    "answer": "The year cannot be determined with the information provided.",
+    "hop1_docs": [
+      "List of Spider-Man enemies | Spider-Man is a fictional superhero in the Marvel Universe debuting in the anthology comic book series issue \"Amazing Fantasy\" #15 (August 1962) in the Silver Age of Comics published by Marvel Comics.  After his debut he would get his own comic book entitled \"The Amazing Spider-Man\".  The comic book series would introduce many of what would become his major supervillain adversaries.  Spider-Man would then be popular enough for more Spider-Man comic spinoffs (\"The Spectacular Spider-Man\", \"Marvel Team-Up\", \"Web of Spider-Man\", \"\" etc.) which introduced more recurring enemies of the web-slinger.",
+      "The Wolf Among Us | The Wolf Among Us is an episodic interactive fantasy mystery graphic adventure video game based on Bill Willingham's \"Fables\" comic book series.  It is developed by Telltale Games.  It is canon with the comic book universe and is set as a prequel to the comic book.  The game consists of five episodes, with the first episode being released for Microsoft Windows and Xbox 360 worldwide on October 11, 2013, for OS X worldwide on October 14, 2013, for PlayStation 3 on October 15, 2013, in North America and on October 16, 2013, in Europe and Australia, for iOS worldwide on December 4, 2013, and PlayStation Vita before the end of 2014.  Retail versions for the PlayStation 3, PlayStation 4, PlayStation Vita, Xbox 360, and Xbox One consoles were released in November 2014.",
+      "Superman vs. The Elite | Superman vs. The Elite is an animated superhero film based on \"What's So Funny About Truth, Justice & the American Way? ,\" the story published in the comic book \"Action Comics\" #775 (March 2001).  The movie was adapted and written by Joe Kelly, who wrote the comic it was based on, and is directed by Michael Chang.  It was released on June 12, 2012.  The film also featured the return of George Newbern as Superman, and David Kaufman as Jimmy Olsen, reprising their roles from the DC animated universe.  It is the 14th film in the DC Universe Animated Original Movies line.",
+      "Bluntman and Chronic | Bluntman and Chronic are characters appearing in a fictional eponymous comic book series seen in the movies \"Chasing Amy\" and \"Jay and Silent Bob Strike Back\".  Actual \"Bluntman and Chronic\" comic books based on the fictional movie comic book series were published after the release of \"Jay and Silent Bob Strike Back\".  Both the movies and the comic books were created by writer and actor Kevin Smith.  Famed comics creator Mike Allred designed the costumes for the characters.",
+      "O Menino Maluquinho | O Menino Maluquinho (\"The Nutty Boy\") is a comic book and comic strip series created by Brazilian writer and cartoonist Ziraldo.  It was based on the eponymous children's book published in 1980 which for many years was regarded as a classic of children's literature in Brazil, getting spun off into movies, plays and TV series.  The comic books were published by Abril and Globo from 1989 until 2007.  It was Ziraldo's second series of comic books, after \"Turma do Perer\u00ea\".",
+      "Introduction to the Enemy | Introduction to the Enemy is a documentary movie about Vietnam, filmed and directed by Haskell Wexler.  Shot in the spring of 1974 and released before the end of the year, the film examines the human costs of the Vietnam War.  The camera follows American actress Jane Fonda and her husband Tom Hayden, already known in their home country for antiwar activism, as they make inquiries regarding the war's effects and legacy among Vietnamese people from all walks of life.",
+      "Thong Girl | Thong Girl is the comic book creation of writer and filmmaker Glen Weiss.  What started out as an independent comic book has blossomed into a franchise that includes movies, video games, action figures, posters, tee shirts and more."
+    ],
+    "hop2_docs": [
+      "Bluntman and Chronic | Bluntman and Chronic are characters appearing in a fictional eponymous comic book series seen in the movies \"Chasing Amy\" and \"Jay and Silent Bob Strike Back\".  Actual \"Bluntman and Chronic\" comic books based on the fictional movie comic book series were published after the release of \"Jay and Silent Bob Strike Back\".  Both the movies and the comic books were created by writer and actor Kevin Smith.  Famed comics creator Mike Allred designed the costumes for the characters.",
+      "List of Highlander cast members | The following is a list of cast members who portrayed characters appearing in the movies and series of the Highlander franchise.  As for the series, listed are, in chronological order, regular cast, recurring cast as well as guest cast credited in the \"opening\" credits.  Guest actors credited in the \"closing\" credits are \"not\" listed.",
+      "List of fictional books from non-print media | False documents are a frequent device in literature.  This is a list of fictional books that appear in television, movies, music, video games, and other non-print media.  Fictional books appearing in books are listed in List of fictional books.  Fictional books appearing in comics, newspapers, and the like are listed in List of fictional books from periodicals.",
+      "Non (comics) | Non is a fictional supervillain appearing in American comic books published by DC Comics, commonly as an adversary of the superhero Superman.  He first appeared in the 1978 film \"Superman: The Movie\", where he was portrayed by actor and former boxer Jack O'Halloran.  Nearly three decades later, the character made his comic book debut in \"Action Comics\" #845 (January 2007).",
+      "Andrew Johnston (American actor) | Andrew Johnston is a character actor who has appeared in a long list of projects including many guest-starring roles on television series as well as roles in several movies.  In 2005 he appeared in the television movie \"Living With the Enemy\".  He has appeared in feature films including \"Miracle\" (2004) and \"Agent Cody Banks\" (2003).  Though mostly appearing in American film and television projects he is Canadian and has run a small theatre company just outside Montreal, Quebec.",
+      "List of Gunsmoke cast members | This list contains actors who appeared on the \"Gunsmoke\" American radio program, TV series and TV movies.",
+      "List of Garfield characters | This is a list of characters in the Garfield comic strip, created by Jim Davis.  It includes notable characters from the comic strip as well as cartoons, and movies centered on the Garfield character, and is organized by what medium they appeared in first."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 124,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year was the actress that was in \"Enemies Among Us\" in a movie based on a comic book?\nPassages: [\"List of Spider-Man enemies | Spider-Man is a fictional superhero in the Marvel Universe debuting in the anthology comic book series issue \\\"Amazing Fantasy\\\" #15 (August 1962) in the Silver Age of Comics published by Marvel Comics.  After his debut he would get his own comic book entitled \\\"The Amazing Spider-Man\\\".  The comic book series would introduce many of what would become his major supervillain adversaries.  Spider-Man would then be popular enough for more Spider-Man comic spinoffs (\\\"The Spectacular Spider-Man\\\", \\\"Marvel Team-Up\\\", \\\"Web of Spider-Man\\\", \\\"\\\" etc.) which introduced more recurring enemies of the web-slinger.\", \"The Wolf Among Us | The Wolf Among Us is an episodic interactive fantasy mystery graphic adventure video game based on Bill Willingham's \\\"Fables\\\" comic book series.  It is developed by Telltale Games.  It is canon with the comic book universe and is set as a prequel to the comic book.  The game consists of five episodes, with the first episode being released for Microsoft Windows and Xbox 360 worldwide on October 11, 2013, for OS X worldwide on October 14, 2013, for PlayStation 3 on October 15, 2013, in North America and on October 16, 2013, in Europe and Australia, for iOS worldwide on December 4, 2013, and PlayStation Vita before the end of 2014.  Retail versions for the PlayStation 3, PlayStation 4, PlayStation Vita, Xbox 360, and Xbox One consoles were released in November 2014.\", \"Superman vs. The Elite | Superman vs. The Elite is an animated superhero film based on \\\"What's So Funny About Truth, Justice & the American Way? ,\\\" the story published in the comic book \\\"Action Comics\\\" #775 (March 2001).  The movie was adapted and written by Joe Kelly, who wrote the comic it was based on, and is directed by Michael Chang.  It was released on June 12, 2012.  The film also featured the return of George Newbern as Superman, and David Kaufman as Jimmy Olsen, reprising their roles from the DC animated universe.  It is the 14th film in the DC Universe Animated Original Movies line.\", \"Bluntman and Chronic | Bluntman and Chronic are characters appearing in a fictional eponymous comic book series seen in the movies \\\"Chasing Amy\\\" and \\\"Jay and Silent Bob Strike Back\\\".  Actual \\\"Bluntman and Chronic\\\" comic books based on the fictional movie comic book series were published after the release of \\\"Jay and Silent Bob Strike Back\\\".  Both the movies and the comic books were created by writer and actor Kevin Smith.  Famed comics creator Mike Allred designed the costumes for the characters.\", \"O Menino Maluquinho | O Menino Maluquinho (\\\"The Nutty Boy\\\") is a comic book and comic strip series created by Brazilian writer and cartoonist Ziraldo.  It was based on the eponymous children's book published in 1980 which for many years was regarded as a classic of children's literature in Brazil, getting spun off into movies, plays and TV series.  The comic books were published by Abril and Globo from 1989 until 2007.  It was Ziraldo's second series of comic books, after \\\"Turma do Perer\\u00ea\\\".\", \"Introduction to the Enemy | Introduction to the Enemy is a documentary movie about Vietnam, filmed and directed by Haskell Wexler.  Shot in the spring of 1974 and released before the end of the year, the film examines the human costs of the Vietnam War.  The camera follows American actress Jane Fonda and her husband Tom Hayden, already known in their home country for antiwar activism, as they make inquiries regarding the war's effects and legacy among Vietnamese people from all walks of life.\", \"Thong Girl | Thong Girl is the comic book creation of writer and filmmaker Glen Weiss.  What started out as an independent comic book has blossomed into a franchise that includes movies, video games, action figures, posters, tee shirts and more.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine the year the actress from \"Enemies Among Us\" was in a movie based on a comic book, we need first to identify who the actress is and verify her roles in such movies. However, the provided passages do not directly mention \"Enemies Among Us\" or its cast, nor do they identify a link between its actress and a movie based on a comic book. The passages instead discuss various comic books, movies, and games based on comic book series. Without explicit information linking the movie \"Enemies Among Us\" to its cast or confirming an actress's involvement in a comic book-based movie, it is impossible to provide a definitive answer.\nSummary: The year the actress from \"Enemies Among Us\" was in a movie based on a comic book cannot be determined based on the provided passages, as neither the cast of \"Enemies Among Us\" nor such an actress's involvement in a comic book-related movie is mentioned."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year was the actress that was in \"Enemies Among Us\" in a movie based on a comic book?\nSummary 1: The year the actress from \"Enemies Among Us\" was in a movie based on a comic book cannot be determined based on the provided passages, as neither the cast of \"Enemies Among Us\" nor such an actress's involvement in a comic book-related movie is mentioned."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine the year in which an actress from \"Enemies Among Us\" acted in a comic book-related movie, it is necessary to know the cast of \"Enemies Among Us\" and identify if any of them appeared in a comic book-based movie. This information was not provided in the summary, so further research is required to establish the identities of the cast of \"Enemies Among Us\" and trace their respective filmographies for any comic book-based roles.\nQuery: What is the cast list of the movie \"Enemies Among Us,\" and did any of these actors appear in a movie based on a comic book?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year was the actress that was in \"Enemies Among Us\" in a movie based on a comic book?\nContext: The year the actress from \"Enemies Among Us\" was in a movie based on a comic book cannot be determined based on the provided passages, as neither the cast of \"Enemies Among Us\" nor such an actress's involvement in a comic book-related movie is mentioned.\nPassages: [\"Bluntman and Chronic | Bluntman and Chronic are characters appearing in a fictional eponymous comic book series seen in the movies \\\"Chasing Amy\\\" and \\\"Jay and Silent Bob Strike Back\\\".  Actual \\\"Bluntman and Chronic\\\" comic books based on the fictional movie comic book series were published after the release of \\\"Jay and Silent Bob Strike Back\\\".  Both the movies and the comic books were created by writer and actor Kevin Smith.  Famed comics creator Mike Allred designed the costumes for the characters.\", \"List of Highlander cast members | The following is a list of cast members who portrayed characters appearing in the movies and series of the Highlander franchise.  As for the series, listed are, in chronological order, regular cast, recurring cast as well as guest cast credited in the \\\"opening\\\" credits.  Guest actors credited in the \\\"closing\\\" credits are \\\"not\\\" listed.\", \"List of fictional books from non-print media | False documents are a frequent device in literature.  This is a list of fictional books that appear in television, movies, music, video games, and other non-print media.  Fictional books appearing in books are listed in List of fictional books.  Fictional books appearing in comics, newspapers, and the like are listed in List of fictional books from periodicals.\", \"Non (comics) | Non is a fictional supervillain appearing in American comic books published by DC Comics, commonly as an adversary of the superhero Superman.  He first appeared in the 1978 film \\\"Superman: The Movie\\\", where he was portrayed by actor and former boxer Jack O'Halloran.  Nearly three decades later, the character made his comic book debut in \\\"Action Comics\\\" #845 (January 2007).\", \"Andrew Johnston (American actor) | Andrew Johnston is a character actor who has appeared in a long list of projects including many guest-starring roles on television series as well as roles in several movies.  In 2005 he appeared in the television movie \\\"Living With the Enemy\\\".  He has appeared in feature films including \\\"Miracle\\\" (2004) and \\\"Agent Cody Banks\\\" (2003).  Though mostly appearing in American film and television projects he is Canadian and has run a small theatre company just outside Montreal, Quebec.\", \"List of Gunsmoke cast members | This list contains actors who appeared on the \\\"Gunsmoke\\\" American radio program, TV series and TV movies.\", \"List of Garfield characters | This is a list of characters in the Garfield comic strip, created by Jim Davis.  It includes notable characters from the comic strip as well as cartoons, and movies centered on the Garfield character, and is organized by what medium they appeared in first.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The context indicates that the year the actress from \"Enemies Among Us\" was in a movie based on a comic book cannot be determined. None of the passages mention \"Enemies Among Us,\" its cast, or any actress from the film appearing in comic book-related movies. Furthermore, the provided passages primarily cover unrelated topics, such as comic characters, fictional books, Highlander cast members, and Garfield-related media, without directly addressing the inquiry.\nSummary: It is not possible to determine the year the actress from \"Enemies Among Us\" was in a movie based on a comic book, as neither the cast of \"Enemies Among Us\" nor such involvement in a comic book-related movie is mentioned in the given passages or context."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: In what year was the actress that was in \"Enemies Among Us\" in a movie based on a comic book?\nSummary 1: The year the actress from \"Enemies Among Us\" was in a movie based on a comic book cannot be determined based on the provided passages, as neither the cast of \"Enemies Among Us\" nor such an actress's involvement in a comic book-related movie is mentioned.\nSummary 2: It is not possible to determine the year the actress from \"Enemies Among Us\" was in a movie based on a comic book, as neither the cast of \"Enemies Among Us\" nor such involvement in a comic book-related movie is mentioned in the given passages or context."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the provided summaries, there is no information available about the cast of \"Enemies Among Us\" or an actress from that film appearing in a movie based on a comic book. Since this specific detail is missing from the given context, it is not possible to determine the year in question.\nAnswer: The year cannot be determined with the information provided."
+      }
+    ]
+  }
+}

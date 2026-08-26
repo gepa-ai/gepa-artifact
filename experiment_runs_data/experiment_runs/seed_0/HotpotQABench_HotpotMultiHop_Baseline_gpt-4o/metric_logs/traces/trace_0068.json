@@ -1,0 +1,96 @@
+{
+  "example_id": "5ade06705542995b365fabcf",
+  "question": "From 1988-1992 Yvonne Kennedy served as national president of a sorority that was founded by women from what university?",
+  "gold_answer": "Howard University",
+  "prediction": {
+    "answer": "Howard University",
+    "hop1_docs": [
+      "Yvonne Kennedy | Yvonne Kennedy (January 8, 1945\u00a0\u2013 December 8, 2012) was an Alabama state representative from Mobile, Alabama, and a former president of Bishop State Community College.  She served as national president of Delta Sigma Theta sorority from 1988-1992.",
+      "Lambda Tau Omega | Lambda Tau Omega Sorority, Inc. (\u039b\u03a4\u03a9) is a multicultural sorority founded in 1988 at Montclair State College, now Montclair State University, in Montclair, New Jersey.  The sorority was founded by sixteen women who felt the need for a multicultural sorority at Montclair State College.Lambda Tau Omega is a founding member of the National Multicultural Greek Council (NMGC).",
+      "Lucy Diggs Slowe | Lucy Diggs Slowe (July 4, 1885 \u2013 October 21, 1937) was the first black women to serve as Dean of Women at any American University and the first Dean of Women at Howard University.  She was one of the original sixteen founders of Alpha Kappa Alpha Sorority, Incorporated, the first sorority founded by African-American women.  She was one of the nine original founders of the sorority in 1908 at Howard University.",
+      "Delta Xi Phi | Delta Xi Phi (\u0394\u039e\u03a6) is a national multicultural sorority that was founded at the University of Illinois at Urbana-Champaign by 15 women on April 20, 1994.  The sorority welcomes women from all ethnic, cultural, religious and socio-economic backgrounds.  Defined by diversity, Delta Xi Phi is not only multicultural in membership but also in programming since its inception.  Delta Xi Phi is one of the founding members of the National Multicultural Greek Council (NMGC).",
+      "Richard D. Remington | Richard D. Remington (August 2, 1931 \u2013 July 26, 1992) was an acting President of the University of Iowa, serving from 1987 to 1988.  He received his bachelor's and master's degrees, both in Mathematics, from the University of Montana and his M.P.H. and Ph.D. in Public Health Statistics from the University of Michigan.  He married Betty Brooks Morrison on Dec. 28, 1952.  From 1982 to 1988, he was the vice president for academic affairs and dean of the faculties at the University of Iowa, and was acting president from 1987 to 1988.  He also served as director of the Institute for Health, Behavior and Environmental Policy at the University of Iowa's College of Medicine.  He held the position of UI Foundation Distinguished Professor of Preventive Medicine and Environmental Health, which he retained until his death in 1992.",
+      "Sigma Lambda Alpha Sorority | Sigma Lambda Alpha Sorority, Inc. (\u03a3\u039b\u0391) is an American Latina based Greek-lettered sorority of college-educated women, dedicated to the ideals of community service, academic achievement, and cultural awareness of different cultures and traditions.  Sigma Lambda Alpha Sorority, Inc. was founded in the summer of 1992, at Texas Woman's University in Denton, Texas by Angeles Gonzalez and the help of five other young women.",
+      "Lambda Pi Chi | Lambda Pi Chi Sorority, Incorporated (\u039b\u03a0\u03a7) (\"also known as Latinas Promoviendo Comunidad/Lambda Pi Chi Sorority, Inc.\") is a Latina-based, but not Latina-exclusive Greek letter intercollegiate sorority founded on April 16, 1988, at Cornell University by five women."
+    ],
+    "hop2_docs": [
+      "Yvonne Kennedy | Yvonne Kennedy (January 8, 1945\u00a0\u2013 December 8, 2012) was an Alabama state representative from Mobile, Alabama, and a former president of Bishop State Community College.  She served as national president of Delta Sigma Theta sorority from 1988-1992.",
+      "Syracuse Triad | The Syracuse Triad is the name given to the three women's sororities founded at Syracuse University.  Alpha Phi was founded first in 1872 by 10 of the original 20 women admitted into Syracuse University.  Gamma Phi Beta came along two years later in 1874 and with it came the term \"sorority,\" which was coined at the time of its founding.  (Prior to that, women's Greek-letter organizations used the term \"women's fraternity,\" since no more appropriate term existed.)  Alpha Gamma Delta completed the triad in 1904.",
+      "Lucy Diggs Slowe | Lucy Diggs Slowe (July 4, 1885 \u2013 October 21, 1937) was the first black women to serve as Dean of Women at any American University and the first Dean of Women at Howard University.  She was one of the original sixteen founders of Alpha Kappa Alpha Sorority, Incorporated, the first sorority founded by African-American women.  She was one of the nine original founders of the sorority in 1908 at Howard University.",
+      "Gamma Eta | Gamma Eta (\u0393\u0397) is the first social sorority to be founded in the State of Florida.  Eighteen women came together to create the sorority at the University of Florida in Gainesville on October 18, 1995.  The sorority is dedicated to creating a culturally aware atmosphere in which women from diverse ethnic backgrounds can develop a sense of pride, sisterhood, and support in order to ensure professional and academic success.  Gamma Eta was chartered and incorporated on August 2, 1999.",
+      "Alpha Phi | Alpha Phi International Women's Fraternity (\u0391\u03a6) is a sorority with 170 active chapters and over 200,000 initiated members.  Founded at Syracuse University in Syracuse, New York on September 18, 1872, It is the fourth Greek-letter organization founded for women, and the first \"sorority\" founded for women in the northeast.",
+      "Gamma Phi Beta Sorority House (Urbana, Illinois) | The Gamma Phi Beta Sorority House is a historic sorority house located at the University of Illinois at Urbana\u2013Champaign in Urbana, Illinois.  The house was built in 1918 for the university's Omicron chapter of the Gamma Phi Beta sorority, which was formed in 1909 as the Phi Beta Club and officially made part of the national sorority in 1913.  During its early years, the chapter was noted for the academic success of its members, its promotion of women's issues on campus, and its social activities.  The sorority's house was part of an emerging sorority district in Urbana; while the university's fraternity row was in Champaign, the Urbana site was closer to the women's dormitory and gymnasium and thus more attractive for sororities.  In 1927, during a growth period for the university's Greek-letter organizations, architecture firm Hewitt, Emerson & Gregg designed and built a Georgian Revival expansion of the sorority's original duplex house.",
+      "Lambda Tau Omega | Lambda Tau Omega Sorority, Inc. (\u039b\u03a4\u03a9) is a multicultural sorority founded in 1988 at Montclair State College, now Montclair State University, in Montclair, New Jersey.  The sorority was founded by sixteen women who felt the need for a multicultural sorority at Montclair State College.Lambda Tau Omega is a founding member of the National Multicultural Greek Council (NMGC)."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 68,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: From 1988-1992 Yvonne Kennedy served as national president of a sorority that was founded by women from what university?\nPassages: [\"Yvonne Kennedy | Yvonne Kennedy (January 8, 1945\\u00a0\\u2013 December 8, 2012) was an Alabama state representative from Mobile, Alabama, and a former president of Bishop State Community College.  She served as national president of Delta Sigma Theta sorority from 1988-1992.\", \"Lambda Tau Omega | Lambda Tau Omega Sorority, Inc. (\\u039b\\u03a4\\u03a9) is a multicultural sorority founded in 1988 at Montclair State College, now Montclair State University, in Montclair, New Jersey.  The sorority was founded by sixteen women who felt the need for a multicultural sorority at Montclair State College.Lambda Tau Omega is a founding member of the National Multicultural Greek Council (NMGC).\", \"Lucy Diggs Slowe | Lucy Diggs Slowe (July 4, 1885 \\u2013 October 21, 1937) was the first black women to serve as Dean of Women at any American University and the first Dean of Women at Howard University.  She was one of the original sixteen founders of Alpha Kappa Alpha Sorority, Incorporated, the first sorority founded by African-American women.  She was one of the nine original founders of the sorority in 1908 at Howard University.\", \"Delta Xi Phi | Delta Xi Phi (\\u0394\\u039e\\u03a6) is a national multicultural sorority that was founded at the University of Illinois at Urbana-Champaign by 15 women on April 20, 1994.  The sorority welcomes women from all ethnic, cultural, religious and socio-economic backgrounds.  Defined by diversity, Delta Xi Phi is not only multicultural in membership but also in programming since its inception.  Delta Xi Phi is one of the founding members of the National Multicultural Greek Council (NMGC).\", \"Richard D. Remington | Richard D. Remington (August 2, 1931 \\u2013 July 26, 1992) was an acting President of the University of Iowa, serving from 1987 to 1988.  He received his bachelor's and master's degrees, both in Mathematics, from the University of Montana and his M.P.H. and Ph.D. in Public Health Statistics from the University of Michigan.  He married Betty Brooks Morrison on Dec. 28, 1952.  From 1982 to 1988, he was the vice president for academic affairs and dean of the faculties at the University of Iowa, and was acting president from 1987 to 1988.  He also served as director of the Institute for Health, Behavior and Environmental Policy at the University of Iowa's College of Medicine.  He held the position of UI Foundation Distinguished Professor of Preventive Medicine and Environmental Health, which he retained until his death in 1992.\", \"Sigma Lambda Alpha Sorority | Sigma Lambda Alpha Sorority, Inc. (\\u03a3\\u039b\\u0391) is an American Latina based Greek-lettered sorority of college-educated women, dedicated to the ideals of community service, academic achievement, and cultural awareness of different cultures and traditions.  Sigma Lambda Alpha Sorority, Inc. was founded in the summer of 1992, at Texas Woman's University in Denton, Texas by Angeles Gonzalez and the help of five other young women.\", \"Lambda Pi Chi | Lambda Pi Chi Sorority, Incorporated (\\u039b\\u03a0\\u03a7) (\\\"also known as Latinas Promoviendo Comunidad/Lambda Pi Chi Sorority, Inc.\\\") is a Latina-based, but not Latina-exclusive Greek letter intercollegiate sorority founded on April 16, 1988, at Cornell University by five women.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: From the passages provided, we learn that Yvonne Kennedy served as the national president of Delta Sigma Theta sorority from 1988 to 1992, according to passage [1]. To determine the university where Delta Sigma Theta was founded, we consult general knowledge (not provided in the passages), which shows that Delta Sigma Theta was established at Howard University. None of the passages explicitly mention the founding university of Delta Sigma Theta, but this is a known fact: Delta Sigma Theta was founded in 1913 by 22 women at Howard University.\nSummary: Yvonne Kennedy served as national president of Delta Sigma Theta sorority, which was founded by women from Howard University."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: From 1988-1992 Yvonne Kennedy served as national president of a sorority that was founded by women from what university?\nSummary 1: Yvonne Kennedy served as national president of Delta Sigma Theta sorority, which was founded by women from Howard University."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about Yvonne Kennedy's role as the national president of a sorority, specifically Delta Sigma Theta, and seeks to identify the university where its founding members originated. The summary confirms both her position in Delta Sigma Theta and its founding at Howard University.\nQuery: What sorority was Yvonne Kennedy president of, and which university's women founded it?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: From 1988-1992 Yvonne Kennedy served as national president of a sorority that was founded by women from what university?\nContext: Yvonne Kennedy served as national president of Delta Sigma Theta sorority, which was founded by women from Howard University.\nPassages: [\"Yvonne Kennedy | Yvonne Kennedy (January 8, 1945\\u00a0\\u2013 December 8, 2012) was an Alabama state representative from Mobile, Alabama, and a former president of Bishop State Community College.  She served as national president of Delta Sigma Theta sorority from 1988-1992.\", \"Syracuse Triad | The Syracuse Triad is the name given to the three women's sororities founded at Syracuse University.  Alpha Phi was founded first in 1872 by 10 of the original 20 women admitted into Syracuse University.  Gamma Phi Beta came along two years later in 1874 and with it came the term \\\"sorority,\\\" which was coined at the time of its founding.  (Prior to that, women's Greek-letter organizations used the term \\\"women's fraternity,\\\" since no more appropriate term existed.)  Alpha Gamma Delta completed the triad in 1904.\", \"Lucy Diggs Slowe | Lucy Diggs Slowe (July 4, 1885 \\u2013 October 21, 1937) was the first black women to serve as Dean of Women at any American University and the first Dean of Women at Howard University.  She was one of the original sixteen founders of Alpha Kappa Alpha Sorority, Incorporated, the first sorority founded by African-American women.  She was one of the nine original founders of the sorority in 1908 at Howard University.\", \"Gamma Eta | Gamma Eta (\\u0393\\u0397) is the first social sorority to be founded in the State of Florida.  Eighteen women came together to create the sorority at the University of Florida in Gainesville on October 18, 1995.  The sorority is dedicated to creating a culturally aware atmosphere in which women from diverse ethnic backgrounds can develop a sense of pride, sisterhood, and support in order to ensure professional and academic success.  Gamma Eta was chartered and incorporated on August 2, 1999.\", \"Alpha Phi | Alpha Phi International Women's Fraternity (\\u0391\\u03a6) is a sorority with 170 active chapters and over 200,000 initiated members.  Founded at Syracuse University in Syracuse, New York on September 18, 1872, It is the fourth Greek-letter organization founded for women, and the first \\\"sorority\\\" founded for women in the northeast.\", \"Gamma Phi Beta Sorority House (Urbana, Illinois) | The Gamma Phi Beta Sorority House is a historic sorority house located at the University of Illinois at Urbana\\u2013Champaign in Urbana, Illinois.  The house was built in 1918 for the university's Omicron chapter of the Gamma Phi Beta sorority, which was formed in 1909 as the Phi Beta Club and officially made part of the national sorority in 1913.  During its early years, the chapter was noted for the academic success of its members, its promotion of women's issues on campus, and its social activities.  The sorority's house was part of an emerging sorority district in Urbana; while the university's fraternity row was in Champaign, the Urbana site was closer to the women's dormitory and gymnasium and thus more attractive for sororities.  In 1927, during a growth period for the university's Greek-letter organizations, architecture firm Hewitt, Emerson & Gregg designed and built a Georgian Revival expansion of the sorority's original duplex house.\", \"Lambda Tau Omega | Lambda Tau Omega Sorority, Inc. (\\u039b\\u03a4\\u03a9) is a multicultural sorority founded in 1988 at Montclair State College, now Montclair State University, in Montclair, New Jersey.  The sorority was founded by sixteen women who felt the need for a multicultural sorority at Montclair State College.Lambda Tau Omega is a founding member of the National Multicultural Greek Council (NMGC).\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine the university where the sorority Delta Sigma Theta was founded, it is helpful to note that Yvonne Kennedy served as its national president from 1988-1992. From the provided context, Delta Sigma Theta sorority is explicitly stated to have been founded by women from Howard University. Additionally, none of the passages contradict this information or provide a different origin for the sorority. The other passages mention sororities founded at various universities (e.g., Syracuse University, University of Florida, Montclair State University), but none of them is relevant to Delta Sigma Theta, as it directly relates to Howard University based on the context.\nSummary: From 1988-1992, Yvonne Kennedy served as national president of Delta Sigma Theta sorority, which was founded by women from Howard University."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: From 1988-1992 Yvonne Kennedy served as national president of a sorority that was founded by women from what university?\nSummary 1: Yvonne Kennedy served as national president of Delta Sigma Theta sorority, which was founded by women from Howard University.\nSummary 2: From 1988-1992, Yvonne Kennedy served as national president of Delta Sigma Theta sorority, which was founded by women from Howard University."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries identify Yvonne Kennedy as the national president of Delta Sigma Theta sorority during the 1988-1992 period. Additionally, both summaries state that Delta Sigma Theta was founded by women from Howard University. Since the summaries agree and correctly link the sorority to its founding university, the answer is straightforward.\nAnswer: Howard University"
+      }
+    ]
+  }
+}

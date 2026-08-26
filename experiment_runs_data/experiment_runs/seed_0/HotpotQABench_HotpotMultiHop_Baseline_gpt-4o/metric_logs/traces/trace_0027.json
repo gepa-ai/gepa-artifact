@@ -1,0 +1,96 @@
+{
+  "example_id": "5a8a332455429930ff3c0cf6",
+  "question": "What singer born in London in 1988 joined The Voice as a new judge in 2015?",
+  "gold_answer": "Jessie J",
+  "prediction": {
+    "answer": "Jessie J",
+    "hop1_docs": [
+      "The Voice (Australia season 4) | The fourth season of \"The Voice\" premiered on 28 June 2015.  Ricky Martin and Joel Madden returned as coaches for the fourth season.  On 13 January 2015, it was announced that Delta Goodrem would return to the panel, and new judges Jessie J and Benji Madden would join the series, replacing former judges Kylie Minogue and will.i.am.  On 22 February 2015, it was announced that Sonia Kruger would be joining the fourth season as a co-host with Darren McMullen.",
+      "The Voice UK discography | The Voice UK is the British version of \"The Voice of Holland\", a television talent show, along the lines of \"The X Factor\".  This talent show was created by John de Mol and features four coaches looking for a talented new artist, with the intent that a potential auditionee could become a global superstar.  The show's concept is simple; the auditionee walks on to the stage with the judges' backs turned to them, rendering looks, personalities, stage presence or dance routines irrelevant, and starts singing.  If the judges like what they hear, they will turn around, indicating intent to coach them.  If more than one coach turns round, power falls into the hands of the singer.  Once all four teams are complete, the live shows begin and the singers sing songs chosen for them by the coaches.",
+      "Barbara Judge | Barbara Thomas Judge, Lady Judge, CBE (n\u00e9e Barbara Sue Singer; born 28 December 1946 in New York City), known before as Barbara Singer Thomas, is an American-British lawyer and businesswoman, based in London with dual US/UK citizenship.",
+      "Elha Nympha | Elha Mae Nympha (born April 16, 2004) is a Filipino singer who won the second season of \"The Voice Kids\" in 2015.  She started singing at the age of 3 and started joining a school competition at the age of 7, where she won a rotary competition on Amaranth on February 18, 2014.  At the age of 9, she auditioned for the first season of \"The Voice Kids\" but did not make it.  In 2015, she tried her fate again and auditioned for the second season, which she won.",
+      "Lillie McCloud | Lillie Arlene Nicole Jade McCloud (born December 7, 1958 in Rochester, New York), commonly known by her former stage name Nicole McCloud, or Nicole J. McCloud is an American dance and R&B singer.  She has recorded four studio albums, \"What About Me\" (1986), \"Jam Packed\" (1988) (aka \"Rock the House\"), \"Love Town\" (1998), and \"So What?\"  (2002).  Her single \"Don't You Want My Love\" became an international hit.  Other US singles include \"Runnin' Away\" and \"Search'n\".  In the late 1990s, she was also part of a house music project Voices of Freedom.",
+      "The Voice Portugal | The Voice Portugal (A Voz de Portugal in the first season) is a Portuguese reality singing competition and local version of The Voice originally broadcast as The Voice of Holland.  It premiered on 29 October 2011, on RTP1, with the first season finale airing on February 25, 2012, crowning Denis Filipe as the winner.  The show came back in 2014 with its second season with new judges, a new co-host, a new show name, and new \"Rep\u00f3rteres V\" (backstage hosts).  The winner of the second season was Rui Drummond.  RTP1 later announced the first season of \"The Voice Kids Portugal\" and the third season of the main show.  The third season premiered October 11, 2015 with new judge, Aurea.  In its third season, the show proved to be a hit and was subsequently renewed for a fourth season, which was premiered in 2016.",
+      "The Voice of Germany (season 4) | The Voice of Germany (season 4) is a German reality talent show that premiered on 9 October 2014 on ProSieben and Sat.1.  Based on the reality singing competition \"The Voice of Holland\", the series was created by Dutch television producer John de Mol.  It is part of an international series.  Only one judge from season 3, Samu Haber, singer of the Finnish pop-rock band Sunrise Avenue was retained for season 4.  The other three judges of season 3, Nena, The BossHoss and Max Herre were replaced.  Nena and The BossHoss had served for the program's all three previous seasons and Herre had been a new judge in season 3.  They were replaced by the returning judge, the Irish singer-songwriter, guitarist Rea Garvey, a judge for seasons 1 and 2 coming back after a hiatus of a year.  Stefanie Klo\u00df lead singer of the band Silbermond resided for the first time in the series.  So did the two collaborating judges sitting together, the German artists Michi Beck and Smudo both part of German hip hop group Die Fantastischen Vier.  The season was won by Charley Ann Schmutzler."
+    ],
+    "hop2_docs": [
+      "Jessie Turnbull | Jessie Turnbull or Jessie McEwen (December, 1845 \u2013 1 June, 1920) was a Canadian woman.  It was said that if the public were asked to name which \"woman who has done most to shape...Canada ...[no] name would stand higher than that of Jessie Turnbull McEwen\".",
+      "Jessie Joe Parker | Jessie Joe Nandye (born 8 July 1985), also commonly known by his former name Jessie Joe Parker, is a Papua New Guinean rugby league footballer who currently plays for Whitehaven.  He is a Papua New Guinean national representative who primarily plays at centre.",
+      "Disappearance of Jessie Foster | Jessie Foster (born May 27, 1984), full name Jessica Edith Louise Foster, is a Canadian woman who disappeared in the Las Vegas Valley in Nevada, United States, in 2006.  Her parents are Glendene Grant and Dwight Foster.  Jessie had spent some time living in Calgary, Alberta.  In 2005, Jessie and a friend of hers visited Florida together, and then stopped by Las Vegas on the way back in May where Jessie decided to stay.  Before disappearing the following year, Jessie became involved in prostitution, was arrested once for solicitation, and was the victim of battery on several occasions.",
+      "Jessy De Smet | Jessy De Smet, whose stage name is Jessy (born 8 July 1976, Zottegem, Belgium), is a Belgian dance music singer of Flemish origin.  who had several gold records in the late 1990s and 2000s.",
+      "Who's Laughing Now (song) | \"Who's Laughing Now\" is a song by the British singer-songwriter Jessie J from her first studio album, \"Who You Are\" (2011).  The song was written by Jessie J, George Astasio, Jason Pebworth, Jon Shave\u2014collectively known as The Invisible Men\u2014Peter Ighile, Kyle Abrahams and Talay Riley, and it was produced by The Invisible Men and Ighile & James.  It refers to people who have put down or bullied Jessie J and how she is living her life as a celebrity.  The song was released as the fourth UK single from the album on 26 August 2011.",
+      "Jessy Reindorf | Jessy Yapo Reindorf (born 10 July 1991) is a professional footballer who plays as a forward.",
+      "Jessy B\u00e9net | Jessy B\u00e9net (born 24 January 1995) is a French footballer who currently plays for Dijon."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 27,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What singer born in London in 1988 joined The Voice as a new judge in 2015?\nPassages: [\"The Voice (Australia season 4) | The fourth season of \\\"The Voice\\\" premiered on 28 June 2015.  Ricky Martin and Joel Madden returned as coaches for the fourth season.  On 13 January 2015, it was announced that Delta Goodrem would return to the panel, and new judges Jessie J and Benji Madden would join the series, replacing former judges Kylie Minogue and will.i.am.  On 22 February 2015, it was announced that Sonia Kruger would be joining the fourth season as a co-host with Darren McMullen.\", \"The Voice UK discography | The Voice UK is the British version of \\\"The Voice of Holland\\\", a television talent show, along the lines of \\\"The X Factor\\\".  This talent show was created by John de Mol and features four coaches looking for a talented new artist, with the intent that a potential auditionee could become a global superstar.  The show's concept is simple; the auditionee walks on to the stage with the judges' backs turned to them, rendering looks, personalities, stage presence or dance routines irrelevant, and starts singing.  If the judges like what they hear, they will turn around, indicating intent to coach them.  If more than one coach turns round, power falls into the hands of the singer.  Once all four teams are complete, the live shows begin and the singers sing songs chosen for them by the coaches.\", \"Barbara Judge | Barbara Thomas Judge, Lady Judge, CBE (n\\u00e9e Barbara Sue Singer; born 28 December 1946 in New York City), known before as Barbara Singer Thomas, is an American-British lawyer and businesswoman, based in London with dual US/UK citizenship.\", \"Elha Nympha | Elha Mae Nympha (born April 16, 2004) is a Filipino singer who won the second season of \\\"The Voice Kids\\\" in 2015.  She started singing at the age of 3 and started joining a school competition at the age of 7, where she won a rotary competition on Amaranth on February 18, 2014.  At the age of 9, she auditioned for the first season of \\\"The Voice Kids\\\" but did not make it.  In 2015, she tried her fate again and auditioned for the second season, which she won.\", \"Lillie McCloud | Lillie Arlene Nicole Jade McCloud (born December 7, 1958 in Rochester, New York), commonly known by her former stage name Nicole McCloud, or Nicole J. McCloud is an American dance and R&B singer.  She has recorded four studio albums, \\\"What About Me\\\" (1986), \\\"Jam Packed\\\" (1988) (aka \\\"Rock the House\\\"), \\\"Love Town\\\" (1998), and \\\"So What?\\\"  (2002).  Her single \\\"Don't You Want My Love\\\" became an international hit.  Other US singles include \\\"Runnin' Away\\\" and \\\"Search'n\\\".  In the late 1990s, she was also part of a house music project Voices of Freedom.\", \"The Voice Portugal | The Voice Portugal (A Voz de Portugal in the first season) is a Portuguese reality singing competition and local version of The Voice originally broadcast as The Voice of Holland.  It premiered on 29 October 2011, on RTP1, with the first season finale airing on February 25, 2012, crowning Denis Filipe as the winner.  The show came back in 2014 with its second season with new judges, a new co-host, a new show name, and new \\\"Rep\\u00f3rteres V\\\" (backstage hosts).  The winner of the second season was Rui Drummond.  RTP1 later announced the first season of \\\"The Voice Kids Portugal\\\" and the third season of the main show.  The third season premiered October 11, 2015 with new judge, Aurea.  In its third season, the show proved to be a hit and was subsequently renewed for a fourth season, which was premiered in 2016.\", \"The Voice of Germany (season 4) | The Voice of Germany (season 4) is a German reality talent show that premiered on 9 October 2014 on ProSieben and Sat.1.  Based on the reality singing competition \\\"The Voice of Holland\\\", the series was created by Dutch television producer John de Mol.  It is part of an international series.  Only one judge from season 3, Samu Haber, singer of the Finnish pop-rock band Sunrise Avenue was retained for season 4.  The other three judges of season 3, Nena, The BossHoss and Max Herre were replaced.  Nena and The BossHoss had served for the program's all three previous seasons and Herre had been a new judge in season 3.  They were replaced by the returning judge, the Irish singer-songwriter, guitarist Rea Garvey, a judge for seasons 1 and 2 coming back after a hiatus of a year.  Stefanie Klo\\u00df lead singer of the band Silbermond resided for the first time in the series.  So did the two collaborating judges sitting together, the German artists Michi Beck and Smudo both part of German hip hop group Die Fantastischen Vier.  The season was won by Charley Ann Schmutzler.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of a singer born in London in 1988 who joined \"The Voice\" as a new judge in 2015. Among the provided passages, passage [1] mentions that Jessie J joined the judges' panel for the fourth season of \"The Voice Australia\" in 2015. Jessie J is a singer born in London in 1988, which aligns with the details in the question. None of the other passages provide relevant information about singers or new judges matching these criteria.\nSummary: The singer born in London in 1988 who joined \"The Voice\" as a new judge in 2015 is Jessie J."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What singer born in London in 1988 joined The Voice as a new judge in 2015?\nSummary 1: The singer born in London in 1988 who joined \"The Voice\" as a new judge in 2015 is Jessie J."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To identify the singer born in London in 1988 who joined \"The Voice\" as a new judge in 2015, I utilized the information provided in the summary. The summary explicitly states that Jessie J fulfills these criteria.\nQuery: Who is Jessie J?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What singer born in London in 1988 joined The Voice as a new judge in 2015?\nContext: The singer born in London in 1988 who joined \"The Voice\" as a new judge in 2015 is Jessie J.\nPassages: [\"Jessie Turnbull | Jessie Turnbull or Jessie McEwen (December, 1845 \\u2013 1 June, 1920) was a Canadian woman.  It was said that if the public were asked to name which \\\"woman who has done most to shape...Canada ...[no] name would stand higher than that of Jessie Turnbull McEwen\\\".\", \"Jessie Joe Parker | Jessie Joe Nandye (born 8 July 1985), also commonly known by his former name Jessie Joe Parker, is a Papua New Guinean rugby league footballer who currently plays for Whitehaven.  He is a Papua New Guinean national representative who primarily plays at centre.\", \"Disappearance of Jessie Foster | Jessie Foster (born May 27, 1984), full name Jessica Edith Louise Foster, is a Canadian woman who disappeared in the Las Vegas Valley in Nevada, United States, in 2006.  Her parents are Glendene Grant and Dwight Foster.  Jessie had spent some time living in Calgary, Alberta.  In 2005, Jessie and a friend of hers visited Florida together, and then stopped by Las Vegas on the way back in May where Jessie decided to stay.  Before disappearing the following year, Jessie became involved in prostitution, was arrested once for solicitation, and was the victim of battery on several occasions.\", \"Jessy De Smet | Jessy De Smet, whose stage name is Jessy (born 8 July 1976, Zottegem, Belgium), is a Belgian dance music singer of Flemish origin.  who had several gold records in the late 1990s and 2000s.\", \"Who's Laughing Now (song) | \\\"Who's Laughing Now\\\" is a song by the British singer-songwriter Jessie J from her first studio album, \\\"Who You Are\\\" (2011).  The song was written by Jessie J, George Astasio, Jason Pebworth, Jon Shave\\u2014collectively known as The Invisible Men\\u2014Peter Ighile, Kyle Abrahams and Talay Riley, and it was produced by The Invisible Men and Ighile & James.  It refers to people who have put down or bullied Jessie J and how she is living her life as a celebrity.  The song was released as the fourth UK single from the album on 26 August 2011.\", \"Jessy Reindorf | Jessy Yapo Reindorf (born 10 July 1991) is a professional footballer who plays as a forward.\", \"Jessy B\\u00e9net | Jessy B\\u00e9net (born 24 January 1995) is a French footballer who currently plays for Dijon.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of a singer born in London in 1988 who joined \"The Voice\" as a judge in 2015. The context provides a direct and clear answer to this question: Jessie J is identified as the singer fitting this description. None of the passages contradict this information, as the only pertinent passage mentioning Jessie J ([5]) describes her career achievements and music. Therefore, pulling this information together, Jessie J, born in London in 1988, joined \"The Voice\" as a judge in 2015.\nSummary: The singer born in London in 1988 who joined \"The Voice\" as a new judge in 2015 is Jessie J."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What singer born in London in 1988 joined The Voice as a new judge in 2015?\nSummary 1: The singer born in London in 1988 who joined \"The Voice\" as a new judge in 2015 is Jessie J.\nSummary 2: The singer born in London in 1988 who joined \"The Voice\" as a new judge in 2015 is Jessie J."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the singer born in London in 1988 who joined \"The Voice\" as a new judge in 2015 is Jessie J. Jessie J is a well-known singer and songwriter with her career encompassing both solo performances and television appearances, including her role as a judge on \"The Voice\". The consistency in the provided summaries and the factual nature of the information support this answer.\nAnswer: Jessie J"
+      }
+    ]
+  }
+}

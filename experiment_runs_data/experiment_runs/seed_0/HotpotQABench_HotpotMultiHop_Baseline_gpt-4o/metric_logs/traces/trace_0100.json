@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab5e33e5542992aa134a3c8",
+  "question": "Lonesome Lake is located south of a 4080 ft peak that was home to what?",
+  "gold_answer": "the Old Man of the Mountain",
+  "prediction": {
+    "answer": "The 4080 ft peak south of Lonesome Lake, Cannon Mountain, was home to the Old Man of the Mountain.",
+    "hop1_docs": [
+      "Lonesome Lake Peak | Lonesome Lake Peak, also known as Lonesome Peak, at 11302 ft above sea level is a peak in the White Cloud Mountains of Idaho.  The peak is located in Sawtooth National Recreation Area in Custer County.  The peak is located 2.07 mi south-southeast of D. O. Lee Peak, its line parent.  It is the 68th highest peak in Idaho and rises above the west side of Lonesome Lake, the uppermost of the Boulder Chain Lakes.",
+      "Kinsman Range | The Kinsman Range, also known as the Cannon\u2013Kinsman Range, is located in the White Mountains of New Hampshire in the United States.  The highest point in the north-south range is 4358 ft Kinsman Mountain, followed by the 4293 ft North Peak of Kinsman, and 4080 ft Cannon Mountain, one of the richest in rock climbing routes in the Whites.  All are official \"Four-thousand footers\".  3478 ft Mount Wolf is on the crest of the range south of Kinsman Mountain.  Rounding out the range is 2470 ft Bald Peak on the west side of Kinsman Mountain.",
+      "Cannon Mountain (New Hampshire) | Cannon Mountain (formerly Profile Mountain) is a 4080 ft peak in the White Mountains of New Hampshire.  It is known for both its technical rock and ice climbing on its cliff face and skiing at Cannon Mountain Ski Area.  Until the formation collapsed on May 3, 2003, it was also home to the Old Man of the Mountain.",
+      "Upper Kintla Lake | Upper Kintla Lake is located in Glacier National Park, in the U. S. state of Montana.  Upper Kintla Lake is 2 mi east of Kintla Lake and the surrounding mountains rise dramatically above the north and south shores of the lake.  Kinnerly Peak rises 5575 ft above the south shoreline of Upper Kintla Lake while Long Knife Peak towers more than 5400 ft above the northwest shoreline of the lake.",
+      "Imogene Peak | Imogene Peak, at 10125 ft above sea level is a peak in the Sawtooth Range of Idaho.  The peak is located in the Sawtooth Wilderness of Sawtooth National Recreation Area in Custer County.  The peak is located 1.83 mi north of Parks Peak, its line parent.  Farley Lake is located south of the peak, and Imogene Lake is west of the peak.",
+      "Garfield Peak (Oregon) | Garfield Peak is a mountain peak on the south end of Crater Lake in Crater Lake National Park, Oregon.  The top of the peak reaches 7976 ft above sea level.  The peak has a 1000 ft elevation trail to the summit from the Crater Lake lodge, one of the most popular hiking sites surrounding the lake.  The 1.7 mile trail continues East toward Applegate peak (7976 ft high).  The peak is one of seven peaks on Crater Lake's rim to rise above 8000 ft .",
+      "Eagles Rest Peak | Eagles Rest Peak (11258 ft ) is in the northern Teton Range, Grand Teton National Park, Wyoming.  The peak is located west of and across Jackson Lake from Colter Bay Village.  The peak rises dramatically almost 4500 ft above Jackson Lake in less than 1 mi .  Waterfalls Canyon is to the north of the peak and Snowshoe Canyon lies to the south."
+    ],
+    "hop2_docs": [
+      "Cannon Mountain (New Hampshire) | Cannon Mountain (formerly Profile Mountain) is a 4080 ft peak in the White Mountains of New Hampshire.  It is known for both its technical rock and ice climbing on its cliff face and skiing at Cannon Mountain Ski Area.  Until the formation collapsed on May 3, 2003, it was also home to the Old Man of the Mountain.",
+      "Kinsman Range | The Kinsman Range, also known as the Cannon\u2013Kinsman Range, is located in the White Mountains of New Hampshire in the United States.  The highest point in the north-south range is 4358 ft Kinsman Mountain, followed by the 4293 ft North Peak of Kinsman, and 4080 ft Cannon Mountain, one of the richest in rock climbing routes in the Whites.  All are official \"Four-thousand footers\".  3478 ft Mount Wolf is on the crest of the range south of Kinsman Mountain.  Rounding out the range is 2470 ft Bald Peak on the west side of Kinsman Mountain.",
+      "Lonesome Lake Peak | Lonesome Lake Peak, also known as Lonesome Peak, at 11302 ft above sea level is a peak in the White Cloud Mountains of Idaho.  The peak is located in Sawtooth National Recreation Area in Custer County.  The peak is located 2.07 mi south-southeast of D. O. Lee Peak, its line parent.  It is the 68th highest peak in Idaho and rises above the west side of Lonesome Lake, the uppermost of the Boulder Chain Lakes.",
+      "Old Man of the Mountain | The Old Man of the Mountain, also known as the Great Stone Face or the Profile, was a series of five granite cliff ledges on Cannon Mountain in the White Mountains of New Hampshire, United States, that appeared to be the jagged profile of a face when viewed from the north.  The rock formation was 1200 ft above Profile Lake, and measured 40 ft tall and 25 ft wide.  The site is located in the town of Franconia.",
+      "Lonesome Lake (New Hampshire) | Lonesome Lake is a 12.2 acre water body located in Franconia Notch in the White Mountains of New Hampshire, south of Cannon Mountain.  The lake is reachable by hiking trails from the Franconia Notch Parkway and features an Appalachian Mountain Club hut on its southwest shore.",
+      "Franconia Notch State Park | Franconia Notch State Park is located in the White Mountains in northern New Hampshire, United States, and straddles 8 mi of Interstate 93 as it passes through Franconia Notch, a mountain pass between the Kinsman Range and Franconia Range.  Attractions in the state park include the Flume Gorge and visitor center, the Old Man of the Mountain historical site, fishing in Echo Lake and Profile Lake, and miles of hiking, biking and ski trails.  The northern part of the park, including Cannon Mountain and Echo and Profile lakes, is in the town of Franconia, and the southern part, including Lonesome Lake and the Flume, is in Lincoln.",
+      "Profile Lake | Profile Lake is a 13 acre water body located in Franconia Notch in the White Mountains of New Hampshire, at the foot of Cannon Mountain.  The lake was given its name due to its location directly beneath the Old Man of the Mountain, a famous rock formation which collapsed in 2003.  The lake is near the height of land in Franconia Notch; the lake's outlet is the Pemigewasset River, which flows south to the Merrimack River and ultimately the Gulf of Maine (Atlantic Ocean) at Newburyport, Massachusetts."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 100,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Lonesome Lake is located south of a 4080 ft peak that was home to what?\nPassages: [\"Lonesome Lake Peak | Lonesome Lake Peak, also known as Lonesome Peak, at 11302 ft above sea level is a peak in the White Cloud Mountains of Idaho.  The peak is located in Sawtooth National Recreation Area in Custer County.  The peak is located 2.07 mi south-southeast of D. O. Lee Peak, its line parent.  It is the 68th highest peak in Idaho and rises above the west side of Lonesome Lake, the uppermost of the Boulder Chain Lakes.\", \"Kinsman Range | The Kinsman Range, also known as the Cannon\\u2013Kinsman Range, is located in the White Mountains of New Hampshire in the United States.  The highest point in the north-south range is 4358 ft Kinsman Mountain, followed by the 4293 ft North Peak of Kinsman, and 4080 ft Cannon Mountain, one of the richest in rock climbing routes in the Whites.  All are official \\\"Four-thousand footers\\\".  3478 ft Mount Wolf is on the crest of the range south of Kinsman Mountain.  Rounding out the range is 2470 ft Bald Peak on the west side of Kinsman Mountain.\", \"Cannon Mountain (New Hampshire) | Cannon Mountain (formerly Profile Mountain) is a 4080 ft peak in the White Mountains of New Hampshire.  It is known for both its technical rock and ice climbing on its cliff face and skiing at Cannon Mountain Ski Area.  Until the formation collapsed on May 3, 2003, it was also home to the Old Man of the Mountain.\", \"Upper Kintla Lake | Upper Kintla Lake is located in Glacier National Park, in the U. S. state of Montana.  Upper Kintla Lake is 2 mi east of Kintla Lake and the surrounding mountains rise dramatically above the north and south shores of the lake.  Kinnerly Peak rises 5575 ft above the south shoreline of Upper Kintla Lake while Long Knife Peak towers more than 5400 ft above the northwest shoreline of the lake.\", \"Imogene Peak | Imogene Peak, at 10125 ft above sea level is a peak in the Sawtooth Range of Idaho.  The peak is located in the Sawtooth Wilderness of Sawtooth National Recreation Area in Custer County.  The peak is located 1.83 mi north of Parks Peak, its line parent.  Farley Lake is located south of the peak, and Imogene Lake is west of the peak.\", \"Garfield Peak (Oregon) | Garfield Peak is a mountain peak on the south end of Crater Lake in Crater Lake National Park, Oregon.  The top of the peak reaches 7976 ft above sea level.  The peak has a 1000 ft elevation trail to the summit from the Crater Lake lodge, one of the most popular hiking sites surrounding the lake.  The 1.7 mile trail continues East toward Applegate peak (7976 ft high).  The peak is one of seven peaks on Crater Lake's rim to rise above 8000 ft .\", \"Eagles Rest Peak | Eagles Rest Peak (11258 ft ) is in the northern Teton Range, Grand Teton National Park, Wyoming.  The peak is located west of and across Jackson Lake from Colter Bay Village.  The peak rises dramatically almost 4500 ft above Jackson Lake in less than 1 mi .  Waterfalls Canyon is to the north of the peak and Snowshoe Canyon lies to the south.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The inquiry seeks to identify what significant feature was associated with a specific 4080 ft peak located south of Lonesome Lake. Reviewing the provided passages, the relevant information is from passage [3], which mentions that Cannon Mountain in the White Mountains of New Hampshire is a 4080 ft peak and was previously home to the \"Old Man of the Mountain,\" a famous natural rock formation. Although Cannon Mountain is not directly linked to Lonesome Lake in the passages provided, it is the only 4080 ft peak mentioned that was home to a notable feature.\nSummary: Lonesome Lake is located south of the 4080 ft peak, Cannon Mountain, which was home to the Old Man of the Mountain until the formation collapsed on May 3, 2003."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Lonesome Lake is located south of a 4080 ft peak that was home to what?\nSummary 1: Lonesome Lake is located south of the 4080 ft peak, Cannon Mountain, which was home to the Old Man of the Mountain until the formation collapsed on May 3, 2003."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about what a 4080 ft peak, located north of Lonesome Lake, was home to. The summary identifies this peak as Cannon Mountain and states that it was home to the Old Man of the Mountain until its collapse in 2003. By extracting this information, we can determine that the 4080 ft peak (Cannon Mountain) was home to the Old Man of the Mountain.\nQuery: The 4080 ft peak south of Lonesome Lake, Cannon Mountain, was home to the Old Man of the Mountain."
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Lonesome Lake is located south of a 4080 ft peak that was home to what?\nContext: Lonesome Lake is located south of the 4080 ft peak, Cannon Mountain, which was home to the Old Man of the Mountain until the formation collapsed on May 3, 2003.\nPassages: [\"Cannon Mountain (New Hampshire) | Cannon Mountain (formerly Profile Mountain) is a 4080 ft peak in the White Mountains of New Hampshire.  It is known for both its technical rock and ice climbing on its cliff face and skiing at Cannon Mountain Ski Area.  Until the formation collapsed on May 3, 2003, it was also home to the Old Man of the Mountain.\", \"Kinsman Range | The Kinsman Range, also known as the Cannon\\u2013Kinsman Range, is located in the White Mountains of New Hampshire in the United States.  The highest point in the north-south range is 4358 ft Kinsman Mountain, followed by the 4293 ft North Peak of Kinsman, and 4080 ft Cannon Mountain, one of the richest in rock climbing routes in the Whites.  All are official \\\"Four-thousand footers\\\".  3478 ft Mount Wolf is on the crest of the range south of Kinsman Mountain.  Rounding out the range is 2470 ft Bald Peak on the west side of Kinsman Mountain.\", \"Lonesome Lake Peak | Lonesome Lake Peak, also known as Lonesome Peak, at 11302 ft above sea level is a peak in the White Cloud Mountains of Idaho.  The peak is located in Sawtooth National Recreation Area in Custer County.  The peak is located 2.07 mi south-southeast of D. O. Lee Peak, its line parent.  It is the 68th highest peak in Idaho and rises above the west side of Lonesome Lake, the uppermost of the Boulder Chain Lakes.\", \"Old Man of the Mountain | The Old Man of the Mountain, also known as the Great Stone Face or the Profile, was a series of five granite cliff ledges on Cannon Mountain in the White Mountains of New Hampshire, United States, that appeared to be the jagged profile of a face when viewed from the north.  The rock formation was 1200 ft above Profile Lake, and measured 40 ft tall and 25 ft wide.  The site is located in the town of Franconia.\", \"Lonesome Lake (New Hampshire) | Lonesome Lake is a 12.2 acre water body located in Franconia Notch in the White Mountains of New Hampshire, south of Cannon Mountain.  The lake is reachable by hiking trails from the Franconia Notch Parkway and features an Appalachian Mountain Club hut on its southwest shore.\", \"Franconia Notch State Park | Franconia Notch State Park is located in the White Mountains in northern New Hampshire, United States, and straddles 8 mi of Interstate 93 as it passes through Franconia Notch, a mountain pass between the Kinsman Range and Franconia Range.  Attractions in the state park include the Flume Gorge and visitor center, the Old Man of the Mountain historical site, fishing in Echo Lake and Profile Lake, and miles of hiking, biking and ski trails.  The northern part of the park, including Cannon Mountain and Echo and Profile lakes, is in the town of Franconia, and the southern part, including Lonesome Lake and the Flume, is in Lincoln.\", \"Profile Lake | Profile Lake is a 13 acre water body located in Franconia Notch in the White Mountains of New Hampshire, at the foot of Cannon Mountain.  The lake was given its name due to its location directly beneath the Old Man of the Mountain, a famous rock formation which collapsed in 2003.  The lake is near the height of land in Franconia Notch; the lake's outlet is the Pemigewasset River, which flows south to the Merrimack River and ultimately the Gulf of Maine (Atlantic Ocean) at Newburyport, Massachusetts.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks what the 4080 ft peak south of Lonesome Lake was home to. Based on the context and passages provided, Cannon Mountain is identified as the 4080 ft peak near Lonesome Lake in the White Mountains of New Hampshire. The information confirms that Cannon Mountain was the site of the Old Man of the Mountain rock formation, also known as the Great Stone Face or Profile. The formation collapsed on May 3, 2003, marking the conclusion of its existence. Thus, Cannon Mountain, south of Lonesome Lake, was home to the Old Man of the Mountain.\nSummary: The 4080 ft peak south of Lonesome Lake, Cannon Mountain, was home to the Old Man of the Mountain until the rock formation collapsed on May 3, 2003."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Lonesome Lake is located south of a 4080 ft peak that was home to what?\nSummary 1: Lonesome Lake is located south of the 4080 ft peak, Cannon Mountain, which was home to the Old Man of the Mountain until the formation collapsed on May 3, 2003.\nSummary 2: The 4080 ft peak south of Lonesome Lake, Cannon Mountain, was home to the Old Man of the Mountain until the rock formation collapsed on May 3, 2003."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the 4080 ft peak is Cannon Mountain, which was home to the Old Man of the Mountain. They also agree on the date of the collapse of this rock formation, May 3, 2003. The key information regarding what the peak was home to is consistently presented across both summaries.\nAnswer: The 4080 ft peak south of Lonesome Lake, Cannon Mountain, was home to the Old Man of the Mountain."
+      }
+    ]
+  }
+}

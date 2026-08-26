@@ -1,0 +1,96 @@
+{
+  "example_id": "5a8de6d05542995085b37350",
+  "question": "Who was the partner of British comic book artist, Henry Flint, that helped create Zombo?",
+  "gold_answer": "Al Ewing",
+  "prediction": {
+    "answer": "Al Ewing",
+    "hop1_docs": [
+      "Zombo (comics) | Zombo is a fictional human-zombie hybrid featuring in the British science fiction comics anthology \"2000 AD\".  The character was created by Henry Flint and Al Ewing and first appeared in 2009.",
+      "Henry Flint | Henry Flint is a British comic book artist who has worked mainly for British science fiction comic \"2000 AD\".",
+      "Shakara | Shakara!  is a comics character appearing in the British magazine \"2000 AD\", starring in their own eponymous story, who was created by Robbie Morrison and Henry Flint.",
+      "Low Life (comics) | Low Life is a comics story published in British anthology \"2000 AD\".  Set in the world of Judge Dredd, it was created by Rob Williams and Henry Flint.",
+      "Harry Sahle | Harry Frank Sahle (c. 1913 to c. 1954) was an American comic book artist who drew for such publishers as Archie Comics\u2014helping create the defined look of Archie Comics' breakout character, Archie Andrews\u2014Quality Comics and the Marvel Comics precursor company Timely Comics during the 1930s-1940s period historians and fans call the Golden Age of Comic Books.",
+      "Proof (comics) | Proof is an American comic book series, published by Image Comics and created by writer Alex Grecian and artist Riley Rossmo.  The story concerns John \"Proof\" Prufrock, a sasquatch, who works for a secret government organization.  He hunts cryptids with his partner, Ginger Brown, and seeks clues to his past.  The book was influenced by \"The X-Files\" and Tarzan.",
+      "FX (comics) | FX is a six-issue comic book limited series written and created by Wayne Osborne and drawn by John Byrne.  It was published by IDW Publishing in 2008.  Osborne, a lifelong comics fan, realized his dream by hiring Byrne, a prominent professional comics artist, to help create his own comic book title."
+    ],
+    "hop2_docs": [
+      "Zombo (comics) | Zombo is a fictional human-zombie hybrid featuring in the British science fiction comics anthology \"2000 AD\".  The character was created by Henry Flint and Al Ewing and first appeared in 2009.",
+      "Al Ewing | Al Ewing ( ; born 12 August 1977) is a British comics writer who has mainly worked in the small press and for \"2000 AD\".",
+      "Henry Flint | Henry Flint is a British comic book artist who has worked mainly for British science fiction comic \"2000 AD\".",
+      "Zombo, Uganda | Zombo, Uganda, often referred to simply as Zombo, is a town in Zombo District, West Nile sub-region, Northern Uganda.",
+      "Walter Ewing | Walter Henry Ewing (11 February 1878 \u2013 25 June 1945) was a Canadian sport shooter who competed at the 1908 Summer Olympics.",
+      "Zombo District | Zombo District is a district in the Northern Region of Uganda.  The town of Zombo is the district's main municipal, administrative, and commercial center,",
+      "Mitchell Flint | Mitchell Flint (June 27, 1923 \u2013 September 16, 2017) was an American lawyer and a veteran aviator.  He was a U.S. Navy Fighter pilot during World War II, and later served as an American Volunteer pilot in Israel's first fighter squadron during its War of Independence.  Mitchell Flint was credited as one of the people who assisted in the creation of the Israeli Air Force."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 24,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the partner of British comic book artist, Henry Flint, that helped create Zombo?\nPassages: [\"Zombo (comics) | Zombo is a fictional human-zombie hybrid featuring in the British science fiction comics anthology \\\"2000 AD\\\".  The character was created by Henry Flint and Al Ewing and first appeared in 2009.\", \"Henry Flint | Henry Flint is a British comic book artist who has worked mainly for British science fiction comic \\\"2000 AD\\\".\", \"Shakara | Shakara!  is a comics character appearing in the British magazine \\\"2000 AD\\\", starring in their own eponymous story, who was created by Robbie Morrison and Henry Flint.\", \"Low Life (comics) | Low Life is a comics story published in British anthology \\\"2000 AD\\\".  Set in the world of Judge Dredd, it was created by Rob Williams and Henry Flint.\", \"Harry Sahle | Harry Frank Sahle (c. 1913 to c. 1954) was an American comic book artist who drew for such publishers as Archie Comics\\u2014helping create the defined look of Archie Comics' breakout character, Archie Andrews\\u2014Quality Comics and the Marvel Comics precursor company Timely Comics during the 1930s-1940s period historians and fans call the Golden Age of Comic Books.\", \"Proof (comics) | Proof is an American comic book series, published by Image Comics and created by writer Alex Grecian and artist Riley Rossmo.  The story concerns John \\\"Proof\\\" Prufrock, a sasquatch, who works for a secret government organization.  He hunts cryptids with his partner, Ginger Brown, and seeks clues to his past.  The book was influenced by \\\"The X-Files\\\" and Tarzan.\", \"FX (comics) | FX is a six-issue comic book limited series written and created by Wayne Osborne and drawn by John Byrne.  It was published by IDW Publishing in 2008.  Osborne, a lifelong comics fan, realized his dream by hiring Byrne, a prominent professional comics artist, to help create his own comic book title.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the partner of British comic book artist Henry Flint, who co-created Zombo. From passage [1], it is clear that Zombo is a fictional character that appeared in \"2000 AD\" and was created by both Henry Flint and Al Ewing. None of the other passages provide additional information directly relevant to Zombo or its co-creation. Therefore, the partner who helped Flint create Zombo is Al Ewing.\nSummary: The partner of British comic book artist Henry Flint who helped create Zombo was Al Ewing."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the partner of British comic book artist, Henry Flint, that helped create Zombo?\nSummary 1: The partner of British comic book artist Henry Flint who helped create Zombo was Al Ewing."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to identify Henry Flint's partner in the creation of the comic character Zombo. Based on the provided summary, Al Ewing was the collaborator who worked alongside Henry Flint. By focusing on the details, the solution involves verifying the partnership and emphasizing Al Ewing's contributions in relation to Zombo.\nQuery: Who was Al Ewing in relation to Henry Flint and the creation of Zombo?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the partner of British comic book artist, Henry Flint, that helped create Zombo?\nContext: The partner of British comic book artist Henry Flint who helped create Zombo was Al Ewing.\nPassages: [\"Zombo (comics) | Zombo is a fictional human-zombie hybrid featuring in the British science fiction comics anthology \\\"2000 AD\\\".  The character was created by Henry Flint and Al Ewing and first appeared in 2009.\", \"Al Ewing | Al Ewing ( ; born 12 August 1977) is a British comics writer who has mainly worked in the small press and for \\\"2000 AD\\\".\", \"Henry Flint | Henry Flint is a British comic book artist who has worked mainly for British science fiction comic \\\"2000 AD\\\".\", \"Zombo, Uganda | Zombo, Uganda, often referred to simply as Zombo, is a town in Zombo District, West Nile sub-region, Northern Uganda.\", \"Walter Ewing | Walter Henry Ewing (11 February 1878 \\u2013 25 June 1945) was a Canadian sport shooter who competed at the 1908 Summer Olympics.\", \"Zombo District | Zombo District is a district in the Northern Region of Uganda.  The town of Zombo is the district's main municipal, administrative, and commercial center,\", \"Mitchell Flint | Mitchell Flint (June 27, 1923 \\u2013 September 16, 2017) was an American lawyer and a veteran aviator.  He was a U.S. Navy Fighter pilot during World War II, and later served as an American Volunteer pilot in Israel's first fighter squadron during its War of Independence.  Mitchell Flint was credited as one of the people who assisted in the creation of the Israeli Air Force.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about the partner of Henry Flint who helped create the comic Zombo. Based on the context provided, alongside the relevant passages (specifically passage [1]), it is indicated that Zombo is a creation of both Henry Flint and Al Ewing. Passage [1] clearly states that the fictional character Zombo was created by Henry Flint and Al Ewing for the \"2000 AD\" comics anthology. Context and passages confirm this partnership.\nSummary: The partner of British comic book artist Henry Flint, who helped create Zombo, was Al Ewing."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Who was the partner of British comic book artist, Henry Flint, that helped create Zombo?\nSummary 1: The partner of British comic book artist Henry Flint who helped create Zombo was Al Ewing.\nSummary 2: The partner of British comic book artist Henry Flint, who helped create Zombo, was Al Ewing."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree that the partner of British comic book artist Henry Flint, who helped create Zombo, was Al Ewing. The information is consistent and corroborates the claim.\nAnswer: Al Ewing"
+      }
+    ]
+  }
+}

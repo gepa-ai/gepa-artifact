@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7e33205542995ed0d166ca",
+  "question": "Langston Hughes and Ann Beattie, are American, which occupation do they share?",
+  "gold_answer": "novelist",
+  "prediction": {
+    "answer": "Writer.",
+    "hop1_docs": [
+      "Langston Hughes Society | The Langston Hughes Society is a United States-based literary society concerned with the work of African American poet Langston Hughes.  The society was the first national organisation to be dedicated to the work of an African American writer.  Founded after the poet's death and in the wake of the Langston Hughes Study conference of 1981 by Hughes' literary assistant George Houston Bass, the society's official publication is the \"Langston Hughes Review\", published by Institute for African American Studies at The University of Georgia.  The organisation also presents the \"Langston Hughes Award\" annually.",
+      "Langston Hughes (disambiguation) | Langston Hughes (1902\u20131967) was an American poet, social activist, novelist, playwright, and columnist.",
+      "Langston Hughes House | Langston Hughes House is a historic home located in Harlem, Manhattan, New York City.  It is an Italianate style dwelling built in 1869.  It is a three story with basement, rowhouse faced in brownstone and measuring 20 feet wide and 45 feet deep.  Noted African American poet and author Langston Hughes (1902-1967) occupied the top floor as his workroom from 1947 to 1967.",
+      "Langston Hughes | James Mercer Langston Hughes (February 1, 1902 \u2013 May 22, 1967) was an American poet, social activist, novelist, playwright, and columnist from Joplin, Missouri.",
+      "Langston Hughes Medal | The Langston Hughes Medal has been awarded annually since 1978 to recognize an influential and distinguished writer associated with the African diaspora for their \"impressive works of poetry, fiction, drama, autobiography and critical essays that help to celebrate the memory and tradition of Langston Hughes\".",
+      "Langston Hughes Performing Arts Center | Langston Hughes Performing Arts Institute (LHPAI) is an arts venue in Seattle, Washington, USA, operated by City of Seattle Office of Arts and Culture and named after African-American writer Langston Hughes.  The building has Seattle landmark status.  Dating from 1915, it was originally a synagogue, designed by B. Marcus Priteca for the Orthodox Jewish congregation Chevra Bikur Cholim, now Bikur Cholim Machzikay Hadath.  As of 2009, it will soon undergo a US$2.5 million upgrade, including its second round of seismic retrofitting.",
+      "Langston Hughes Library | The Langston Hughes Library is a private non-circulating library designed by Maya Lin, and located on the Haley Farm in Clinton, Tennessee.  It contains a 5,000-volume reference collection focusing on works by African-American authors and illustrator, and books focused on the Black experience."
+    ],
+    "hop2_docs": [
+      "Langston Hughes Society | The Langston Hughes Society is a United States-based literary society concerned with the work of African American poet Langston Hughes.  The society was the first national organisation to be dedicated to the work of an African American writer.  Founded after the poet's death and in the wake of the Langston Hughes Study conference of 1981 by Hughes' literary assistant George Houston Bass, the society's official publication is the \"Langston Hughes Review\", published by Institute for African American Studies at The University of Georgia.  The organisation also presents the \"Langston Hughes Award\" annually.",
+      "Langston Hughes, Baltimore | Langston Hughes is a neighborhood in the Northwest District of Baltimore, located between the neighborhoods of Central Park Heights (east) and Woodmere.  Its roughly pentagonal boundaries are marked by West Belvedere Avenue (northwest), Litchfield Avenue (northeast), Reisterstown Road (south) and Oakmont Avenue (east).",
+      "Langston Hughes Medal | The Langston Hughes Medal has been awarded annually since 1978 to recognize an influential and distinguished writer associated with the African diaspora for their \"impressive works of poetry, fiction, drama, autobiography and critical essays that help to celebrate the memory and tradition of Langston Hughes\".",
+      "Langston Hughes (disambiguation) | Langston Hughes (1902\u20131967) was an American poet, social activist, novelist, playwright, and columnist.",
+      "Langston Hughes House | Langston Hughes House is a historic home located in Harlem, Manhattan, New York City.  It is an Italianate style dwelling built in 1869.  It is a three story with basement, rowhouse faced in brownstone and measuring 20 feet wide and 45 feet deep.  Noted African American poet and author Langston Hughes (1902-1967) occupied the top floor as his workroom from 1947 to 1967.",
+      "I, Too (Langston Hughes poem) | I, Too is a poem written by Langston Hughes that demonstrates a yearning for equality through perseverance while disproving the idea that patriotism is limited by race.  It was first published in 1926, and published in \"The First Collection of Poems of Langston Hughes.\"  This poem, along with other works by Hughes, helped define the Harlem Renaissance, a period in the early 1920s and 30s of newfound cultural identity for blacks in America who had discovered the power of literature, art, music, and poetry as a means of personal and collective expression in the scope of civil rights.",
+      "Professionalization | Professionalization is a social process by which any trade or occupation transforms itself into a true \"profession of the highest integrity and competence.\"  The definition of what constitutes a profession is often contested.  Professionalization tends to result in establishing acceptable qualifications, one or more professional associations to recommend best practice and to oversee the conduct of members of the profession, and some degree of demarcation of the qualified from unqualified amateurs (that is, professional certification).  It is also likely to create \"occupational closure\", closing the profession to entry from outsiders, amateurs and the unqualified."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 50,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Langston Hughes and Ann Beattie, are American, which occupation do they share?\nPassages: [\"Langston Hughes Society | The Langston Hughes Society is a United States-based literary society concerned with the work of African American poet Langston Hughes.  The society was the first national organisation to be dedicated to the work of an African American writer.  Founded after the poet's death and in the wake of the Langston Hughes Study conference of 1981 by Hughes' literary assistant George Houston Bass, the society's official publication is the \\\"Langston Hughes Review\\\", published by Institute for African American Studies at The University of Georgia.  The organisation also presents the \\\"Langston Hughes Award\\\" annually.\", \"Langston Hughes (disambiguation) | Langston Hughes (1902\\u20131967) was an American poet, social activist, novelist, playwright, and columnist.\", \"Langston Hughes House | Langston Hughes House is a historic home located in Harlem, Manhattan, New York City.  It is an Italianate style dwelling built in 1869.  It is a three story with basement, rowhouse faced in brownstone and measuring 20 feet wide and 45 feet deep.  Noted African American poet and author Langston Hughes (1902-1967) occupied the top floor as his workroom from 1947 to 1967.\", \"Langston Hughes | James Mercer Langston Hughes (February 1, 1902 \\u2013 May 22, 1967) was an American poet, social activist, novelist, playwright, and columnist from Joplin, Missouri.\", \"Langston Hughes Medal | The Langston Hughes Medal has been awarded annually since 1978 to recognize an influential and distinguished writer associated with the African diaspora for their \\\"impressive works of poetry, fiction, drama, autobiography and critical essays that help to celebrate the memory and tradition of Langston Hughes\\\".\", \"Langston Hughes Performing Arts Center | Langston Hughes Performing Arts Institute (LHPAI) is an arts venue in Seattle, Washington, USA, operated by City of Seattle Office of Arts and Culture and named after African-American writer Langston Hughes.  The building has Seattle landmark status.  Dating from 1915, it was originally a synagogue, designed by B. Marcus Priteca for the Orthodox Jewish congregation Chevra Bikur Cholim, now Bikur Cholim Machzikay Hadath.  As of 2009, it will soon undergo a US$2.5 million upgrade, including its second round of seismic retrofitting.\", \"Langston Hughes Library | The Langston Hughes Library is a private non-circulating library designed by Maya Lin, and located on the Haley Farm in Clinton, Tennessee.  It contains a 5,000-volume reference collection focusing on works by African-American authors and illustrator, and books focused on the Black experience.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks to identify a shared occupation between Langston Hughes and Ann Beattie. The passages provide multiple mentions of Langston Hughes, consistently emphasizing his work as an American poet, novelist, playwright, and columnist. There is no direct mention of Ann Beattie in these passages, but based on general knowledge, Ann Beattie is a well-known American author and writer. By cross-referencing this knowledge, it is clear that both Langston Hughes and Ann Beattie share the occupation of being writers, specifically authors.\nSummary: Langston Hughes and Ann Beattie both share the occupation of being writers."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Langston Hughes and Ann Beattie, are American, which occupation do they share?\nSummary 1: Langston Hughes and Ann Beattie both share the occupation of being writers."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Langston Hughes and Ann Beattie are both known for their contributions to literature. Langston Hughes is recognized as a prominent poet, novelist, and playwright associated with the Harlem Renaissance, while Ann Beattie is acclaimed for her short stories and novels. Their shared occupation as writers directly answers the question about what they have in common professionally.\nQuery: What is the shared profession or occupation between Langston Hughes and Ann Beattie?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Langston Hughes and Ann Beattie, are American, which occupation do they share?\nContext: Langston Hughes and Ann Beattie both share the occupation of being writers.\nPassages: [\"Langston Hughes Society | The Langston Hughes Society is a United States-based literary society concerned with the work of African American poet Langston Hughes.  The society was the first national organisation to be dedicated to the work of an African American writer.  Founded after the poet's death and in the wake of the Langston Hughes Study conference of 1981 by Hughes' literary assistant George Houston Bass, the society's official publication is the \\\"Langston Hughes Review\\\", published by Institute for African American Studies at The University of Georgia.  The organisation also presents the \\\"Langston Hughes Award\\\" annually.\", \"Langston Hughes, Baltimore | Langston Hughes is a neighborhood in the Northwest District of Baltimore, located between the neighborhoods of Central Park Heights (east) and Woodmere.  Its roughly pentagonal boundaries are marked by West Belvedere Avenue (northwest), Litchfield Avenue (northeast), Reisterstown Road (south) and Oakmont Avenue (east).\", \"Langston Hughes Medal | The Langston Hughes Medal has been awarded annually since 1978 to recognize an influential and distinguished writer associated with the African diaspora for their \\\"impressive works of poetry, fiction, drama, autobiography and critical essays that help to celebrate the memory and tradition of Langston Hughes\\\".\", \"Langston Hughes (disambiguation) | Langston Hughes (1902\\u20131967) was an American poet, social activist, novelist, playwright, and columnist.\", \"Langston Hughes House | Langston Hughes House is a historic home located in Harlem, Manhattan, New York City.  It is an Italianate style dwelling built in 1869.  It is a three story with basement, rowhouse faced in brownstone and measuring 20 feet wide and 45 feet deep.  Noted African American poet and author Langston Hughes (1902-1967) occupied the top floor as his workroom from 1947 to 1967.\", \"I, Too (Langston Hughes poem) | I, Too is a poem written by Langston Hughes that demonstrates a yearning for equality through perseverance while disproving the idea that patriotism is limited by race.  It was first published in 1926, and published in \\\"The First Collection of Poems of Langston Hughes.\\\"  This poem, along with other works by Hughes, helped define the Harlem Renaissance, a period in the early 1920s and 30s of newfound cultural identity for blacks in America who had discovered the power of literature, art, music, and poetry as a means of personal and collective expression in the scope of civil rights.\", \"Professionalization | Professionalization is a social process by which any trade or occupation transforms itself into a true \\\"profession of the highest integrity and competence.\\\"  The definition of what constitutes a profession is often contested.  Professionalization tends to result in establishing acceptable qualifications, one or more professional associations to recommend best practice and to oversee the conduct of members of the profession, and some degree of demarcation of the qualified from unqualified amateurs (that is, professional certification).  It is also likely to create \\\"occupational closure\\\", closing the profession to entry from outsiders, amateurs and the unqualified.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the context, Langston Hughes and Ann Beattie share the occupation of being writers. The context explicitly states this, and the provided passages further reinforce Langston Hughes' accomplishments as an American poet, novelist, playwright, and author. Ann Beattie is also known for her work as a writer, particularly for her short stories and novels. Although the passages do not explicitly mention Ann Beattie, the context gives clear evidence that both individuals share the profession of writing.\nSummary: Langston Hughes and Ann Beattie are both American writers."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Langston Hughes and Ann Beattie, are American, which occupation do they share?\nSummary 1: Langston Hughes and Ann Beattie both share the occupation of being writers.\nSummary 2: Langston Hughes and Ann Beattie are both American writers."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries indicate that Langston Hughes and Ann Beattie share the same occupation of being writers. This conclusion is drawn from their shared designation as \"American writers,\" confirming their mutual profession.\nAnswer: Writer."
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "example_id": "5a7cfaa155429907fabef081",
+  "question": "Which is from farther south, Incubus or Crash Test Dummies?",
+  "gold_answer": "Incubus",
+  "prediction": {
+    "answer": "Incubus is from farther south than Crash Test Dummies.",
+    "hop1_docs": [
+      "The Best of Crash Test Dummies | The Best of Crash Test Dummies is a 2007 compilation album by the Crash Test Dummies.  It is released by Sony BMG and it includes songs from both the band's BMG and independent releases.  It was released on \u00a01,\u00a02007\u00a0(2007--) and re-released on March 10, 2008 with the inclusion of two previously unreleased tracks.  The re-release carries a slightly different title of, \"Best Of Crash Test Dummies - Collections\".",
+      "Crash Test Dummies | The Crash Test Dummies are a Canadian rock band from Winnipeg, Manitoba.",
+      "Crash test dummy | A crash test dummy is a full-scale anthropomorphic test device (ATD) that simulates the dimensions, weight proportions and articulation of the human body, and is usually instrumented to record data about the dynamic behavior of the ATD in simulated vehicle impacts.  The Crash Test Dummy is widely used by researchers and automobile companies to predict the biomechanics, force, impact, and injury of a human being in an automobile crash.  This data can include variables such as velocity of impact, crushing force, bending, folding, or torque of the body, and deceleration rates during a collision for use in crash tests.  The more advanced dummies are sophisticated machines designed to behave as a human body and with many sensors to record the forces of an impact; they may cost over US$400,000.",
+      "Symptomology of a Rock Band: The Case of Crash Test Dummies | Symptomology of a Rock Band: The Case of Crash Test Dummies",
+      "Promised Land (Crash Test Dummies song) | \"Promised Land\" is a collaboration between producer/composer Marc Mysterio, rock band Crash Test Dummies and Mark Crozer meant to honor and benefit the refugees now descending upon Europe.  Mysterio and Crash Test Dummies previously collaborated in March 2015, when Mysterio released a remix of the band's 1993 hit Mmm Mmm Mmm Mmm.",
+      "Jingle All the Way (Crash Test Dummies album) | Jingle All the Way is a 2002 Christmas album by Crash Test Dummies.",
+      "Harold Mertz | Harold J. \"Bud\" Mertz is considered to be the driving force in the creation of the Hybrid III crash test dummy, the standard dummy used today.  Working with General Motors in the late 1960s, Mertz designed and built the dummy which is today the only recognized test device in both North America and Europe for restraint devices which protect against frontal collisions."
+    ],
+    "hop2_docs": [
+      "Selkirk Concession | The Selkirk Concession was a land grant issued by the Hudson's Bay Company to Thomas Douglas, 5th Earl of Selkirk, in 1811.  The Selkirk Concession, also known as Selkirk's Grant, included the portions of Rupert's Land, or the watershed of Hudson Bay, bounded on the north by the line of 52\u00b0 N latitude roughly from the Assiniboine River east to Lake Winnipegosis, then by the line of 52\u00b0 30\u2032 N latitude from Lake Winnipegosis to Lake Winnipeg, and then by the Winnipeg River, Lake of the Woods and Rainy River; on the west roughly by the current boundary between Saskatchewan and Manitoba; and on the south by the (mostly very slight) rise of land marking the extent of the watershed.  This covered portions of present-day southern Manitoba, northern Minnesota and eastern North Dakota, in addition to small parts of eastern Saskatchewan, northwestern Ontario and northeastern South Dakota.",
+      "Winnipeg South (provincial electoral district) | Winnipeg South was a provincial electoral division in Manitoba, Canada, which existed on two separate occasions.",
+      "Investors Group Field | Investors Group Field is a football stadium in Winnipeg, Manitoba, Canada.  The stadium, which opened in 2013, is located on the University of Manitoba campus next to University Stadium.  Owned by Triple B Stadium Inc., a consortium of the City of Winnipeg, the Province of Manitoba, the Winnipeg Football Club, and the University of Manitoba, the stadium is home to the Winnipeg Blue Bombers of the Canadian Football League, University of Manitoba Bisons football team, and the Winnipeg Rifles (CJFL).",
+      "Fernando de Toro | Fernando de Toro is a Full Professor in the Department of English, Film and Theatre at the University of Manitoba, Winnipeg, Manitoba, Canada.  He was for five years Dean of the Faculty of Graduate Studies in the same university (Winnipeg, Manitoba, Canada).  De Toro has published in diverse fields: literary theory, semiotics, comparative literature, post-modernity and post-coloniality, Latin American literature and Western Literatures.",
+      "Winnipeg Blues | The Winnipeg Blues are a Manitoba Junior Hockey League team based in Winnipeg, Manitoba, Canada.  The team was founded in 1930 and formerly known as the Winnipeg Monarchs, Fort Garry Blues, and Winnipeg South Blues.",
+      "Southernmost settlements | Southernmost settlements are cities, towns, weather stations or permanent military bases which are farther south than latitude 45\u00b0S.  They are closely related to the Southern Ocean or either the Roaring Forties or Furious Fifties.",
+      "Winnipeg South | Winnipeg South (French: Winnipeg-Sud ) is a Canadian federal electoral district in Manitoba, Canada, that has been represented in the Canadian House of Commons from 1917 to 1979, and since 1988.  It covers the south of the city of Winnipeg."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 96,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is from farther south, Incubus or Crash Test Dummies?\nPassages: [\"The Best of Crash Test Dummies | The Best of Crash Test Dummies is a 2007 compilation album by the Crash Test Dummies.  It is released by Sony BMG and it includes songs from both the band's BMG and independent releases.  It was released on \\u00a01,\\u00a02007\\u00a0(2007--) and re-released on March 10, 2008 with the inclusion of two previously unreleased tracks.  The re-release carries a slightly different title of, \\\"Best Of Crash Test Dummies - Collections\\\".\", \"Crash Test Dummies | The Crash Test Dummies are a Canadian rock band from Winnipeg, Manitoba.\", \"Crash test dummy | A crash test dummy is a full-scale anthropomorphic test device (ATD) that simulates the dimensions, weight proportions and articulation of the human body, and is usually instrumented to record data about the dynamic behavior of the ATD in simulated vehicle impacts.  The Crash Test Dummy is widely used by researchers and automobile companies to predict the biomechanics, force, impact, and injury of a human being in an automobile crash.  This data can include variables such as velocity of impact, crushing force, bending, folding, or torque of the body, and deceleration rates during a collision for use in crash tests.  The more advanced dummies are sophisticated machines designed to behave as a human body and with many sensors to record the forces of an impact; they may cost over US$400,000.\", \"Symptomology of a Rock Band: The Case of Crash Test Dummies | Symptomology of a Rock Band: The Case of Crash Test Dummies\", \"Promised Land (Crash Test Dummies song) | \\\"Promised Land\\\" is a collaboration between producer/composer Marc Mysterio, rock band Crash Test Dummies and Mark Crozer meant to honor and benefit the refugees now descending upon Europe.  Mysterio and Crash Test Dummies previously collaborated in March 2015, when Mysterio released a remix of the band's 1993 hit Mmm Mmm Mmm Mmm.\", \"Jingle All the Way (Crash Test Dummies album) | Jingle All the Way is a 2002 Christmas album by Crash Test Dummies.\", \"Harold Mertz | Harold J. \\\"Bud\\\" Mertz is considered to be the driving force in the creation of the Hybrid III crash test dummy, the standard dummy used today.  Working with General Motors in the late 1960s, Mertz designed and built the dummy which is today the only recognized test device in both North America and Europe for restraint devices which protect against frontal collisions.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Based on the passages, Crash Test Dummies is identified as a Canadian rock band from Winnipeg, Manitoba (Passage [2]). Canada as a country lies farther north compared to most U.S. locations. On the other hand, background related to the geographic origin of the band Incubus is not explicitly given in these passages. However, Incubus is well-known to be a rock band from the United States, specifically formed in Calabasas, California, which lies farther south than Winnipeg, Canada.\n\nTherefore, Incubus is from farther south compared to Crash Test Dummies.\nSummary: Incubus is from farther south than Crash Test Dummies, as Incubus originates in Calabasas, California, USA, while Crash Test Dummies is from Winnipeg, Manitoba, Canada."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is from farther south, Incubus or Crash Test Dummies?\nSummary 1: Incubus is from farther south than Crash Test Dummies, as Incubus originates in Calabasas, California, USA, while Crash Test Dummies is from Winnipeg, Manitoba, Canada."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine which band is from farther south, we consider their places of origin. Incubus is based in Calabasas, California, which is located in the United States at a southern latitude compared to Winnipeg, Manitoba, Canada, the origin of Crash Test Dummies. Since California is geographically farther south than Manitoba, Incubus is from farther south than Crash Test Dummies.\nQuery: What is the latitude of Calabasas, California compared to Winnipeg, Manitoba, to confirm which is farther south?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is from farther south, Incubus or Crash Test Dummies?\nContext: Incubus is from farther south than Crash Test Dummies, as Incubus originates in Calabasas, California, USA, while Crash Test Dummies is from Winnipeg, Manitoba, Canada.\nPassages: [\"Selkirk Concession | The Selkirk Concession was a land grant issued by the Hudson's Bay Company to Thomas Douglas, 5th Earl of Selkirk, in 1811.  The Selkirk Concession, also known as Selkirk's Grant, included the portions of Rupert's Land, or the watershed of Hudson Bay, bounded on the north by the line of 52\\u00b0 N latitude roughly from the Assiniboine River east to Lake Winnipegosis, then by the line of 52\\u00b0 30\\u2032 N latitude from Lake Winnipegosis to Lake Winnipeg, and then by the Winnipeg River, Lake of the Woods and Rainy River; on the west roughly by the current boundary between Saskatchewan and Manitoba; and on the south by the (mostly very slight) rise of land marking the extent of the watershed.  This covered portions of present-day southern Manitoba, northern Minnesota and eastern North Dakota, in addition to small parts of eastern Saskatchewan, northwestern Ontario and northeastern South Dakota.\", \"Winnipeg South (provincial electoral district) | Winnipeg South was a provincial electoral division in Manitoba, Canada, which existed on two separate occasions.\", \"Investors Group Field | Investors Group Field is a football stadium in Winnipeg, Manitoba, Canada.  The stadium, which opened in 2013, is located on the University of Manitoba campus next to University Stadium.  Owned by Triple B Stadium Inc., a consortium of the City of Winnipeg, the Province of Manitoba, the Winnipeg Football Club, and the University of Manitoba, the stadium is home to the Winnipeg Blue Bombers of the Canadian Football League, University of Manitoba Bisons football team, and the Winnipeg Rifles (CJFL).\", \"Fernando de Toro | Fernando de Toro is a Full Professor in the Department of English, Film and Theatre at the University of Manitoba, Winnipeg, Manitoba, Canada.  He was for five years Dean of the Faculty of Graduate Studies in the same university (Winnipeg, Manitoba, Canada).  De Toro has published in diverse fields: literary theory, semiotics, comparative literature, post-modernity and post-coloniality, Latin American literature and Western Literatures.\", \"Winnipeg Blues | The Winnipeg Blues are a Manitoba Junior Hockey League team based in Winnipeg, Manitoba, Canada.  The team was founded in 1930 and formerly known as the Winnipeg Monarchs, Fort Garry Blues, and Winnipeg South Blues.\", \"Southernmost settlements | Southernmost settlements are cities, towns, weather stations or permanent military bases which are farther south than latitude 45\\u00b0S.  They are closely related to the Southern Ocean or either the Roaring Forties or Furious Fifties.\", \"Winnipeg South | Winnipeg South (French: Winnipeg-Sud ) is a Canadian federal electoral district in Manitoba, Canada, that has been represented in the Canadian House of Commons from 1917 to 1979, and since 1988.  It covers the south of the city of Winnipeg.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine which originates farther south between Incubus and Crash Test Dummies, we need to consider their respective origins. From the context provided, Incubus is from Calabasas, California, USA, while Crash Test Dummies is from Winnipeg, Manitoba, Canada. Geographically, Calabasas is located notably farther south than Winnipeg. The passages provide additional references to Manitoba and Winnipeg but do not contradict the context's geographic detail.\nSummary: Incubus is from farther south than Crash Test Dummies because the band originates in Calabasas, California, USA, which is geographically farther south than Winnipeg, Manitoba, Canada, where Crash Test Dummies is from."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which is from farther south, Incubus or Crash Test Dummies?\nSummary 1: Incubus is from farther south than Crash Test Dummies, as Incubus originates in Calabasas, California, USA, while Crash Test Dummies is from Winnipeg, Manitoba, Canada.\nSummary 2: Incubus is from farther south than Crash Test Dummies because the band originates in Calabasas, California, USA, which is geographically farther south than Winnipeg, Manitoba, Canada, where Crash Test Dummies is from."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Incubus originates from Calabasas, California, which is located in the southwestern United States. Crash Test Dummies, on the other hand, come from Winnipeg, Manitoba, located in central Canada. Geographically, California is situated significantly farther south than Manitoba, which confirms that Incubus is from farther south than Crash Test Dummies.\nAnswer: Incubus is from farther south than Crash Test Dummies."
+      }
+    ]
+  }
+}

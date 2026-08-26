@@ -1,0 +1,96 @@
+{
+  "example_id": "5a8741545542994846c1cd39",
+  "question": "A New Life is the second album by The Marshall Tucker Band, an American Southern rock/country rock band originally from Spartanburg, in which US state?",
+  "gold_answer": "South Carolina",
+  "prediction": {
+    "answer": "South Carolina",
+    "hop1_docs": [
+      "The Marshall Tucker Band | The Marshall Tucker Band is an American Southern rock/country rock band originally from Spartanburg, South Carolina.  The band's blend of rock, rhythm and blues, jazz, country, and gospel helped establish the Southern rock genre in the early 1970s.  While the band had reached the height of its commercial success by the end of the decade, the band has recorded and performed continuously under various lineups for 45 years.",
+      "The Marshall Tucker Band (album) | The Marshall Tucker Band is the self-titled debut album by The Marshall Tucker Band, a country rock-oriented Southern rock band.  It was recorded in 1973 in Macon, Georgia, at Capricorn Studios.",
+      "Can't You See (The Marshall Tucker Band song) | \"Can't You See\" is a song written by Toy Caldwell of The Marshall Tucker Band.  The song was originally recorded by the band on their 1973 debut album, \"The Marshall Tucker Band\", and released as the album's first single.  It was re-released in 1977 and peaked at number 75 on the \"Billboard\" Hot 100.  Cover versions of \"Can't You See\" have charted for Waylon Jennings (in 1976) and the Zac\u00a0Brown\u00a0Band\u00a0with\u00a0Kid\u00a0Rock (2010).",
+      "A New Life (album) | A New Life is the second album by The Marshall Tucker Band.  It was recorded in Macon, Georgia at Capricorn Studios.  Guest musicians include Charlie Daniels and Jaimoe from The Allman Brothers Band.",
+      "Southern Rock Allstars | The Southern Rock Allstars are a band that got its name from the history/lineage of its former members all of whom were connected with Southern rock.  Its current lineup consists of former members of The Rossington Band and sidemen of Lynyrd Skynyrd, Marshall Tucker and Jimmy Farrar.",
+      "Playin' to Win | Playin' to Win is the fourth album by American southern rock band Outlaws, released in 1978.  (See 1978 in music).  The album is their first without guitarist and singer/songwriter Henry Paul, who had acted as the second frontman behind Hughie Thomasson.  The album was not as well received as the band's previous three albums, even though it still featured most of the original lineup, which would remain until the departure of guitarist Billy Jones.  The album was more straight southern rock than the country rock sound of their previous three, especially the last two.",
+      "Grinderswitch | Grinderswitch was an American southern rock band.  They recorded a number of albums for Capricorn Records in the 1970s, but never achieved the same widespread recognition enjoyed by some of the label's other artists, such as The Allman Brothers Band and Marshall Tucker Band.  They also recorded for Atlantic.  In the UK they are perhaps best known for their recording \"Pickin' the Blues\", which was used for many years by the disc jockey John Peel as the theme tune for his BBC radio shows."
+    ],
+    "hop2_docs": [
+      "South Carolina Wing Civil Air Patrol | The South Carolina Wing of the Civil Air Patrol (CAP) is the highest echelon of Civil Air Patrol in the state of South Carolina.  South Carolina Wing headquarters are located in West Columbia, South Carolina.  The South Carolina Wing consists of over 750 cadet and adult members at over 17 locations across the state of South Carolina.",
+      "South Carolina Public Radio | South Carolina Public Radio is the National Public Radio member network serving the state of South Carolina.  It is operated by the South Carolina Educational Television Commission, an agency of the South Carolina state government.  It is a sister network to South Carolina Educational Television.",
+      "John Belton O'Neall | John Belton O'Neall was a judge on the precursor of the South Carolina Supreme Court.  He graduated from South Carolina College (now the University of South Carolina) in December 1812 and began teaching at Newberry Academy.  He was admitted to practice law in May 1814 in South Carolina.  He was elected to the South Carolina House of Representatives in 1816 from the Newberry, South Carolina area.  He was elected again in 1822, and in 1824, he served as the Speaker of the South Carolina House of Representatives.  He was first elected as a trial judge in 1828, and in 1830 was elected a judge on the South Carolina Court of Appeals.  Following reforms to South Carolina's judicial branch, he was elected to serve as Chief Justice and President of the South Carolina Court of Appeals, the highest court of the state.  O'Neall died on December 27, 1863, and is buried in Rosemont Cemetery in Newberry, South Carolina.",
+      "North Carolina\u2013South Carolina football rivalry | The North Carolina\u2013South Carolina football rivalry, also known as Battle of the Carolinas, is an American college football rivalry between the North Carolina Tar Heels football team of the University of North Carolina at Chapel Hill and South Carolina Gamecocks football team of the University of South Carolina.  North Carolina leads the series 34\u201319\u20134.",
+      "South Carolina Republican Party | The South Carolina Republican Party and the South Carolina Democratic Party are the two major political parties within the U.S. state of South Carolina.  The South Carolina Republican Party is an affiliate of the national Republican Party and has been the most influential political party within South Carolina since the late 1900s.",
+      "David E. Finley | David E. Finley (February 28, 1861 \u2013 January 26, 1917) was a United States Representative from South Carolina.  He was born in Trenton, Arkansas.  He attended the public schools of Rock Hill, South Carolina and Ebenezer, South Carolina and was graduated from the law department of South Carolina College (now the University of South Carolina) at Columbia, South Carolina in 1885.  He was admitted to the bar in 1886 and commenced practice in York, South Carolina.",
+      "South Carolina General Assembly | The South Carolina General Assembly, also called the South Carolina Legislature, is the state legislature of the U.S. state of South Carolina.  The legislature is bicameral and consists of the lower South Carolina House of Representatives and the upper South Carolina Senate.  Altogether, the General Assembly consists of 170 members.  The legislature convenes at the State House in Columbia."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 65,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: A New Life is the second album by The Marshall Tucker Band, an American Southern rock/country rock band originally from Spartanburg, in which US state?\nPassages: [\"The Marshall Tucker Band | The Marshall Tucker Band is an American Southern rock/country rock band originally from Spartanburg, South Carolina.  The band's blend of rock, rhythm and blues, jazz, country, and gospel helped establish the Southern rock genre in the early 1970s.  While the band had reached the height of its commercial success by the end of the decade, the band has recorded and performed continuously under various lineups for 45 years.\", \"The Marshall Tucker Band (album) | The Marshall Tucker Band is the self-titled debut album by The Marshall Tucker Band, a country rock-oriented Southern rock band.  It was recorded in 1973 in Macon, Georgia, at Capricorn Studios.\", \"Can't You See (The Marshall Tucker Band song) | \\\"Can't You See\\\" is a song written by Toy Caldwell of The Marshall Tucker Band.  The song was originally recorded by the band on their 1973 debut album, \\\"The Marshall Tucker Band\\\", and released as the album's first single.  It was re-released in 1977 and peaked at number 75 on the \\\"Billboard\\\" Hot 100.  Cover versions of \\\"Can't You See\\\" have charted for Waylon Jennings (in 1976) and the Zac\\u00a0Brown\\u00a0Band\\u00a0with\\u00a0Kid\\u00a0Rock (2010).\", \"A New Life (album) | A New Life is the second album by The Marshall Tucker Band.  It was recorded in Macon, Georgia at Capricorn Studios.  Guest musicians include Charlie Daniels and Jaimoe from The Allman Brothers Band.\", \"Southern Rock Allstars | The Southern Rock Allstars are a band that got its name from the history/lineage of its former members all of whom were connected with Southern rock.  Its current lineup consists of former members of The Rossington Band and sidemen of Lynyrd Skynyrd, Marshall Tucker and Jimmy Farrar.\", \"Playin' to Win | Playin' to Win is the fourth album by American southern rock band Outlaws, released in 1978.  (See 1978 in music).  The album is their first without guitarist and singer/songwriter Henry Paul, who had acted as the second frontman behind Hughie Thomasson.  The album was not as well received as the band's previous three albums, even though it still featured most of the original lineup, which would remain until the departure of guitarist Billy Jones.  The album was more straight southern rock than the country rock sound of their previous three, especially the last two.\", \"Grinderswitch | Grinderswitch was an American southern rock band.  They recorded a number of albums for Capricorn Records in the 1970s, but never achieved the same widespread recognition enjoyed by some of the label's other artists, such as The Allman Brothers Band and Marshall Tucker Band.  They also recorded for Atlantic.  In the UK they are perhaps best known for their recording \\\"Pickin' the Blues\\\", which was used for many years by the disc jockey John Peel as the theme tune for his BBC radio shows.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the US state where The Marshall Tucker Band, originally from Spartanburg, is based. Passage [1] explicitly states, \"The Marshall Tucker Band is an American Southern rock/country rock band originally from Spartanburg, South Carolina.\" This passage provides a direct answer, identifying South Carolina as the state in question. None of the other passages contradict this information or add further relevant details about the band's origin.\nSummary: The Marshall Tucker Band, originally from Spartanburg, is based in South Carolina."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: A New Life is the second album by The Marshall Tucker Band, an American Southern rock/country rock band originally from Spartanburg, in which US state?\nSummary 1: The Marshall Tucker Band, originally from Spartanburg, is based in South Carolina."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks in which US state Spartanburg is located, as The Marshall Tucker Band originated there. Based on the summary provided, Spartanburg is in the state of South Carolina.\nQuery: South Carolina"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: A New Life is the second album by The Marshall Tucker Band, an American Southern rock/country rock band originally from Spartanburg, in which US state?\nContext: The Marshall Tucker Band, originally from Spartanburg, is based in South Carolina.\nPassages: [\"South Carolina Wing Civil Air Patrol | The South Carolina Wing of the Civil Air Patrol (CAP) is the highest echelon of Civil Air Patrol in the state of South Carolina.  South Carolina Wing headquarters are located in West Columbia, South Carolina.  The South Carolina Wing consists of over 750 cadet and adult members at over 17 locations across the state of South Carolina.\", \"South Carolina Public Radio | South Carolina Public Radio is the National Public Radio member network serving the state of South Carolina.  It is operated by the South Carolina Educational Television Commission, an agency of the South Carolina state government.  It is a sister network to South Carolina Educational Television.\", \"John Belton O'Neall | John Belton O'Neall was a judge on the precursor of the South Carolina Supreme Court.  He graduated from South Carolina College (now the University of South Carolina) in December 1812 and began teaching at Newberry Academy.  He was admitted to practice law in May 1814 in South Carolina.  He was elected to the South Carolina House of Representatives in 1816 from the Newberry, South Carolina area.  He was elected again in 1822, and in 1824, he served as the Speaker of the South Carolina House of Representatives.  He was first elected as a trial judge in 1828, and in 1830 was elected a judge on the South Carolina Court of Appeals.  Following reforms to South Carolina's judicial branch, he was elected to serve as Chief Justice and President of the South Carolina Court of Appeals, the highest court of the state.  O'Neall died on December 27, 1863, and is buried in Rosemont Cemetery in Newberry, South Carolina.\", \"North Carolina\\u2013South Carolina football rivalry | The North Carolina\\u2013South Carolina football rivalry, also known as Battle of the Carolinas, is an American college football rivalry between the North Carolina Tar Heels football team of the University of North Carolina at Chapel Hill and South Carolina Gamecocks football team of the University of South Carolina.  North Carolina leads the series 34\\u201319\\u20134.\", \"South Carolina Republican Party | The South Carolina Republican Party and the South Carolina Democratic Party are the two major political parties within the U.S. state of South Carolina.  The South Carolina Republican Party is an affiliate of the national Republican Party and has been the most influential political party within South Carolina since the late 1900s.\", \"David E. Finley | David E. Finley (February 28, 1861 \\u2013 January 26, 1917) was a United States Representative from South Carolina.  He was born in Trenton, Arkansas.  He attended the public schools of Rock Hill, South Carolina and Ebenezer, South Carolina and was graduated from the law department of South Carolina College (now the University of South Carolina) at Columbia, South Carolina in 1885.  He was admitted to the bar in 1886 and commenced practice in York, South Carolina.\", \"South Carolina General Assembly | The South Carolina General Assembly, also called the South Carolina Legislature, is the state legislature of the U.S. state of South Carolina.  The legislature is bicameral and consists of the lower South Carolina House of Representatives and the upper South Carolina Senate.  Altogether, the General Assembly consists of 170 members.  The legislature convenes at the State House in Columbia.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the U.S. state where the city of Spartanburg is located, as it pertains to The Marshall Tucker Band's origin. From the provided `context` section, Spartanburg is identified as being in South Carolina. Furthermore, passages 1 through 7 all pertain to South Carolina, reinforcing that Spartanburg, and hence The Marshall Tucker Band, are associated with South Carolina.\nSummary: The Marshall Tucker Band is originally from Spartanburg, South Carolina."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: A New Life is the second album by The Marshall Tucker Band, an American Southern rock/country rock band originally from Spartanburg, in which US state?\nSummary 1: The Marshall Tucker Band, originally from Spartanburg, is based in South Carolina.\nSummary 2: The Marshall Tucker Band is originally from Spartanburg, South Carolina."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries confirm that The Marshall Tucker Band is originally from Spartanburg, South Carolina. Since there is no conflicting information and both summarize the same detail accurately, the answer to the question can be directly derived from the provided summaries.\nAnswer: South Carolina"
+      }
+    ]
+  }
+}

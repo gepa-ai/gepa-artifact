@@ -1,0 +1,96 @@
+{
+  "example_id": "5a87ab255542994846c1cdc1",
+  "question": "What is the time-travel agency called in the expanded fourth edition of the \"GURPS\" role-playing game published by Steve Jackson Games in 2005 that connects to GURPS Banestorm?",
+  "gold_answer": "Infinity Patrol",
+  "prediction": {
+    "answer": "The time-travel agency in the expanded fourth edition of the \"GURPS\" role-playing game, which connects to GURPS Banestorm, is called the \"Infinity Patrol.\"",
+    "hop1_docs": [
+      "GURPS Infinite Worlds | GURPS Infinite Worlds is a supplement for the Fourth Edition of the \"GURPS\" role-playing game, published by Steve Jackson Games in 2005 and written by Kenneth Hite, Steve Jackson, and John M. Ford.  It expands upon the campaign setting of conflict between the \"Infinity Patrol\", which is the time-travel agency on \"our\" Earth, referred to as Homeline, and \"Centrum\" across a multiplicity of alternate history Earths.  This was presented in the \"Fourth Edition GURPS Basic Set\" (and originated in the Third Edition supplements \"GURPS Time Travel\", \"GURPS Alternate Earths\", and \"GURPS Alternate Earths II\").",
+      "GURPS Banestorm | GURPS Banestorm, written by Phil Masters and Jonathan Woodward, was released in October 2005.  It is a setting sourcebook for the fourth edition of the GURPS Role-playing game.  It details a fantasy setting called \"Yrth\" that has been updated from the older GURPS Fantasy source books Orcslayer and GURPS Magic (first edition).  The standard fantasy elements such as Wizards, Orcs, Elves, and Dwarves are present, along with connections to Infinite Worlds.  There are also some more unusual fantastic races like the Reptile Men, and several others which can be added in as desired by the game master.",
+      "GURPS Traveller: Interstellar Wars | GURPS Traveller: Interstellar Wars is the first fourth edition book in the GURPS Traveller role-playing game series, by Steve Jackson Games, set early in the history of the Traveller universe.",
+      "GURPS Fantasy | GURPS Fantasy is a \"Genre Toolkit\" source book for the GURPS Role-playing game.  The fourth edition of GURPS separates the fantasy parts into fantasy and a setting book called GURPS Banestorm",
+      "GURPS Magic | GURPS Magic is a source book for the GURPS Role-playing game from Steve Jackson Games that provides in depth coverage of magic in the context of GURPS.  The book expands on the material outlined in the Basic Set, provides alternative forms of magic for GMs to use, and contains much more material.  The first edition was published in 1989.",
+      "GURPS Japan | GURPS Japan, full title GURPS Japan: Roleplaying in the World of the Shogunate (1st edition) or GURPS Japan: Beauty, Terror, and Adventure (2nd edition), is a sourcebook for \"GURPS\", a role-playing game by Steve Jackson Games.  The first edition was published in 1988.",
+      "GURPS Traveller | GURPS Traveller is a set of table-top role-playing game books by Steve Jackson Games, designed to allow game play in Traveller's Third Imperium science-fiction setting using the GURPS rule system.  Traveller was originally published in 1977 by Game Designers' Workshop and was inducted into the Origins Adventure Gaming Hall of Fame in 1997."
+    ],
+    "hop2_docs": [
+      "GURPS Infinite Worlds | GURPS Infinite Worlds is a supplement for the Fourth Edition of the \"GURPS\" role-playing game, published by Steve Jackson Games in 2005 and written by Kenneth Hite, Steve Jackson, and John M. Ford.  It expands upon the campaign setting of conflict between the \"Infinity Patrol\", which is the time-travel agency on \"our\" Earth, referred to as Homeline, and \"Centrum\" across a multiplicity of alternate history Earths.  This was presented in the \"Fourth Edition GURPS Basic Set\" (and originated in the Third Edition supplements \"GURPS Time Travel\", \"GURPS Alternate Earths\", and \"GURPS Alternate Earths II\").",
+      "GURPS Banestorm | GURPS Banestorm, written by Phil Masters and Jonathan Woodward, was released in October 2005.  It is a setting sourcebook for the fourth edition of the GURPS Role-playing game.  It details a fantasy setting called \"Yrth\" that has been updated from the older GURPS Fantasy source books Orcslayer and GURPS Magic (first edition).  The standard fantasy elements such as Wizards, Orcs, Elves, and Dwarves are present, along with connections to Infinite Worlds.  There are also some more unusual fantastic races like the Reptile Men, and several others which can be added in as desired by the game master.",
+      "GURPS Fantasy | GURPS Fantasy is a \"Genre Toolkit\" source book for the GURPS Role-playing game.  The fourth edition of GURPS separates the fantasy parts into fantasy and a setting book called GURPS Banestorm",
+      "GURPS Time Travel | GURPS Time Travel is a sourcebook for \"GURPS\".  It was published in 1991.",
+      "GURPS Traveller: Interstellar Wars | GURPS Traveller: Interstellar Wars is the first fourth edition book in the GURPS Traveller role-playing game series, by Steve Jackson Games, set early in the history of the Traveller universe.",
+      "GURPS Magic | GURPS Magic is a source book for the GURPS Role-playing game from Steve Jackson Games that provides in depth coverage of magic in the context of GURPS.  The book expands on the material outlined in the Basic Set, provides alternative forms of magic for GMs to use, and contains much more material.  The first edition was published in 1989.",
+      "GURPS Japan | GURPS Japan, full title GURPS Japan: Roleplaying in the World of the Shogunate (1st edition) or GURPS Japan: Beauty, Terror, and Adventure (2nd edition), is a sourcebook for \"GURPS\", a role-playing game by Steve Jackson Games.  The first edition was published in 1988."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 126,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the time-travel agency called in the expanded fourth edition of the \"GURPS\" role-playing game published by Steve Jackson Games in 2005 that connects to GURPS Banestorm?\nPassages: [\"GURPS Infinite Worlds | GURPS Infinite Worlds is a supplement for the Fourth Edition of the \\\"GURPS\\\" role-playing game, published by Steve Jackson Games in 2005 and written by Kenneth Hite, Steve Jackson, and John M. Ford.  It expands upon the campaign setting of conflict between the \\\"Infinity Patrol\\\", which is the time-travel agency on \\\"our\\\" Earth, referred to as Homeline, and \\\"Centrum\\\" across a multiplicity of alternate history Earths.  This was presented in the \\\"Fourth Edition GURPS Basic Set\\\" (and originated in the Third Edition supplements \\\"GURPS Time Travel\\\", \\\"GURPS Alternate Earths\\\", and \\\"GURPS Alternate Earths II\\\").\", \"GURPS Banestorm | GURPS Banestorm, written by Phil Masters and Jonathan Woodward, was released in October 2005.  It is a setting sourcebook for the fourth edition of the GURPS Role-playing game.  It details a fantasy setting called \\\"Yrth\\\" that has been updated from the older GURPS Fantasy source books Orcslayer and GURPS Magic (first edition).  The standard fantasy elements such as Wizards, Orcs, Elves, and Dwarves are present, along with connections to Infinite Worlds.  There are also some more unusual fantastic races like the Reptile Men, and several others which can be added in as desired by the game master.\", \"GURPS Traveller: Interstellar Wars | GURPS Traveller: Interstellar Wars is the first fourth edition book in the GURPS Traveller role-playing game series, by Steve Jackson Games, set early in the history of the Traveller universe.\", \"GURPS Fantasy | GURPS Fantasy is a \\\"Genre Toolkit\\\" source book for the GURPS Role-playing game.  The fourth edition of GURPS separates the fantasy parts into fantasy and a setting book called GURPS Banestorm\", \"GURPS Magic | GURPS Magic is a source book for the GURPS Role-playing game from Steve Jackson Games that provides in depth coverage of magic in the context of GURPS.  The book expands on the material outlined in the Basic Set, provides alternative forms of magic for GMs to use, and contains much more material.  The first edition was published in 1989.\", \"GURPS Japan | GURPS Japan, full title GURPS Japan: Roleplaying in the World of the Shogunate (1st edition) or GURPS Japan: Beauty, Terror, and Adventure (2nd edition), is a sourcebook for \\\"GURPS\\\", a role-playing game by Steve Jackson Games.  The first edition was published in 1988.\", \"GURPS Traveller | GURPS Traveller is a set of table-top role-playing game books by Steve Jackson Games, designed to allow game play in Traveller's Third Imperium science-fiction setting using the GURPS rule system.  Traveller was originally published in 1977 by Game Designers' Workshop and was inducted into the Origins Adventure Gaming Hall of Fame in 1997.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine the name of the time-travel agency in the expanded fourth edition of \"GURPS\" that connects to GURPS Banestorm, I focused on the content describing both \"GURPS Infinite Worlds\" [1] and \"GURPS Banestorm\" [2]. Passage [1] provides information about a campaign setting involving a time-travel agency called the \"Infinity Patrol\" on a version of Earth called Homeline, in the \"GURPS Infinite Worlds\" supplement published in 2005 for the Fourth Edition of GURPS. Additionally, passage [2] confirms that GURPS Banestorm, released in 2005 as well, connects to Infinite Worlds.\n\nFrom this, it can be deduced that the time-travel agency in question is called the \"Infinity Patrol\" as described in GURPS Infinite Worlds, which shares connections with GURPS Banestorm.\nSummary: The time-travel agency in the expanded fourth edition of the \"GURPS\" role-playing game, which connects to GURPS Banestorm, is called the \"Infinity Patrol.\""
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the time-travel agency called in the expanded fourth edition of the \"GURPS\" role-playing game published by Steve Jackson Games in 2005 that connects to GURPS Banestorm?\nSummary 1: The time-travel agency in the expanded fourth edition of the \"GURPS\" role-playing game, which connects to GURPS Banestorm, is called the \"Infinity Patrol.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of the time-travel agency in the expanded fourth edition of \"GURPS\" that connects to GURPS Banestorm. According to the information provided in the summary, the time-travel agency is called the \"Infinity Patrol.\" Thus, the query should be structured to confirm this specific name from an authoritative source or directly validate its accuracy in the context of the game.\nQuery: What is the name of the time-travel agency in the expanded fourth edition of \"GURPS\" (published in 2005) that connects to GURPS Banestorm? Is it the \"Infinity Patrol,\" as mentioned in the summary?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the time-travel agency called in the expanded fourth edition of the \"GURPS\" role-playing game published by Steve Jackson Games in 2005 that connects to GURPS Banestorm?\nContext: The time-travel agency in the expanded fourth edition of the \"GURPS\" role-playing game, which connects to GURPS Banestorm, is called the \"Infinity Patrol.\"\nPassages: [\"GURPS Infinite Worlds | GURPS Infinite Worlds is a supplement for the Fourth Edition of the \\\"GURPS\\\" role-playing game, published by Steve Jackson Games in 2005 and written by Kenneth Hite, Steve Jackson, and John M. Ford.  It expands upon the campaign setting of conflict between the \\\"Infinity Patrol\\\", which is the time-travel agency on \\\"our\\\" Earth, referred to as Homeline, and \\\"Centrum\\\" across a multiplicity of alternate history Earths.  This was presented in the \\\"Fourth Edition GURPS Basic Set\\\" (and originated in the Third Edition supplements \\\"GURPS Time Travel\\\", \\\"GURPS Alternate Earths\\\", and \\\"GURPS Alternate Earths II\\\").\", \"GURPS Banestorm | GURPS Banestorm, written by Phil Masters and Jonathan Woodward, was released in October 2005.  It is a setting sourcebook for the fourth edition of the GURPS Role-playing game.  It details a fantasy setting called \\\"Yrth\\\" that has been updated from the older GURPS Fantasy source books Orcslayer and GURPS Magic (first edition).  The standard fantasy elements such as Wizards, Orcs, Elves, and Dwarves are present, along with connections to Infinite Worlds.  There are also some more unusual fantastic races like the Reptile Men, and several others which can be added in as desired by the game master.\", \"GURPS Fantasy | GURPS Fantasy is a \\\"Genre Toolkit\\\" source book for the GURPS Role-playing game.  The fourth edition of GURPS separates the fantasy parts into fantasy and a setting book called GURPS Banestorm\", \"GURPS Time Travel | GURPS Time Travel is a sourcebook for \\\"GURPS\\\".  It was published in 1991.\", \"GURPS Traveller: Interstellar Wars | GURPS Traveller: Interstellar Wars is the first fourth edition book in the GURPS Traveller role-playing game series, by Steve Jackson Games, set early in the history of the Traveller universe.\", \"GURPS Magic | GURPS Magic is a source book for the GURPS Role-playing game from Steve Jackson Games that provides in depth coverage of magic in the context of GURPS.  The book expands on the material outlined in the Basic Set, provides alternative forms of magic for GMs to use, and contains much more material.  The first edition was published in 1989.\", \"GURPS Japan | GURPS Japan, full title GURPS Japan: Roleplaying in the World of the Shogunate (1st edition) or GURPS Japan: Beauty, Terror, and Adventure (2nd edition), is a sourcebook for \\\"GURPS\\\", a role-playing game by Steve Jackson Games.  The first edition was published in 1988.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks for the name of the time-travel agency in the expanded fourth edition of the \"GURPS\" role-playing game that connects to GURPS Banestorm. From the context provided, the agency is explicitly named as the \"Infinity Patrol\". Additionally, passage [1] offers supporting information, confirming that the \"Infinity Patrol\" is the time-travel agency introduced in connection with the fourth edition \"GURPS Infinite Worlds\" supplement, which deals with alternate history Earths and is part of the broader GURPS framework. Passage [2] establishes the connection between GURPS Banestorm and GURPS Infinite Worlds within the fourth edition.\nSummary: The time-travel agency in the expanded fourth edition of the \"GURPS\" role-playing game that connects to GURPS Banestorm is called the \"Infinity Patrol.\""
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is the time-travel agency called in the expanded fourth edition of the \"GURPS\" role-playing game published by Steve Jackson Games in 2005 that connects to GURPS Banestorm?\nSummary 1: The time-travel agency in the expanded fourth edition of the \"GURPS\" role-playing game, which connects to GURPS Banestorm, is called the \"Infinity Patrol.\"\nSummary 2: The time-travel agency in the expanded fourth edition of the \"GURPS\" role-playing game that connects to GURPS Banestorm is called the \"Infinity Patrol.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries agree on the name of the time-travel agency from the expanded fourth edition of the \"GURPS\" role-playing game, which connects to GURPS Banestorm. They both identify the agency as the \"Infinity Patrol.\" Since there is no conflict between the two summaries and the information aligns with what is known from the game, the answer can be confidently derived.\nAnswer: The time-travel agency in the expanded fourth edition of the \"GURPS\" role-playing game, which connects to GURPS Banestorm, is called the \"Infinity Patrol.\""
+      }
+    ]
+  }
+}

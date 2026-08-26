@@ -1,0 +1,96 @@
+{
+  "example_id": "5a8f186d55429918e830d187",
+  "question": "What is Mikael Blomkvist's profession in \"The Girl in the Spider's Web\"?",
+  "gold_answer": "investigative journalist",
+  "prediction": {
+    "answer": "Mikael Blomkvist's profession in \"The Girl in the Spider's Web\" is that of an investigative journalist and publisher of the magazine \"Millennium.\"",
+    "hop1_docs": [
+      "The Girl in the Spider's Web | The Girl in the Spider's Web (original title in Swedish: \"Det som inte d\u00f6dar oss\" , literally \"That which does not kill us\") is the fourth novel in the \"Millennium\" series, focuses on the characters Lisbeth Salander and Mikael Blomkvist.  Written by David Lagercrantz, this is the first novel in the series not authored by the series' creator and author of the first three \"Millennium\" books, Stieg Larsson, who died of a heart attack in 2004.  The novel was released worldwide on 27 August 2015, except in the United States, where it was released on 1 September 2015.",
+      "Mikael Blomkvist | Mikael Blomkvist is a fictional character created by Swedish author and journalist Stieg Larsson.  He is a main character of Larsson's award-winning \"Millennium\" series, along with Lisbeth Salander.",
+      "The Girl with the Dragon Tattoo (2011 film) | The Girl with the Dragon Tattoo is a 2011 Swedish-American psychological thriller film based on the novel of the same name by Stieg Larsson.  This film adaptation was directed by David Fincher and written by Steven Zaillian.  Starring Daniel Craig and Rooney Mara, it tells the story of journalist Mikael Blomkvist (Daniel Craig)'s investigation to find out what happened to a woman from a wealthy family who disappeared 40 years prior.  He recruits the help of computer hacker Lisbeth Salander (Rooney Mara).",
+      "The Girl Who Takes an Eye for an Eye | The Girl Who Takes an Eye for an Eye (original title in Swedish: \"Mannen Som S\u00f6kte Sin Skugga\" , literally \"The Man Who Chased His Shadow\") is the fifth novel in the \"Millennium\" series, focusing on the characters Lisbeth Salander and Mikael Blomkvist.  Written by David Lagercrantz, this is the second novel in the series not authored by the series' creator and author of the first three \"Millennium\" books, Stieg Larsson, who died of a heart attack in 2004.  The novel was released worldwide on 7 September 2017.",
+      "Lisbeth Salander | Lisbeth Salander is a fictional character created by Swedish author and journalist Stieg Larsson.  She is the lead character in Larsson's award-winning \"Millennium\" series, along with the journalist Mikael Blomkvist.",
+      "Spider-Girl | Spider-Girl (May \"Mayday\" Parker) is a fictional superheroine in Marvel Comics' MC2 universe.  The character was created by Tom DeFalco and Ron Frenz as the teenage daughter of Peter Parker (Spider-Man) and Mary Jane Watson, and first appeared in \"What If\" (vol.  2) #105 (February 1998).  She later acquired her own ongoing comic book, \"Spider-Girl\", written by DeFalco and drawn by Frenz and Pat Olliffe, which was the longest-running superhero book with a lead female character ever published by Marvel before being relaunched as \"The Amazing Spider-Girl\", and later \"The Spectacular Spider-Girl\".",
+      "Millennium (novel series) | Millennium is a series of best-selling and award-winning Swedish crime novels, created by Stieg Larsson.  The two primary characters in the saga are Lisbeth Salander, a woman in her twenties with a photographic memory and poor social skills, and Mikael Blomkvist, an investigative journalist and publisher of a magazine called \"Millennium\"."
+    ],
+    "hop2_docs": [
+      "The Girl in the Spider's Web | The Girl in the Spider's Web (original title in Swedish: \"Det som inte d\u00f6dar oss\" , literally \"That which does not kill us\") is the fourth novel in the \"Millennium\" series, focuses on the characters Lisbeth Salander and Mikael Blomkvist.  Written by David Lagercrantz, this is the first novel in the series not authored by the series' creator and author of the first three \"Millennium\" books, Stieg Larsson, who died of a heart attack in 2004.  The novel was released worldwide on 27 August 2015, except in the United States, where it was released on 1 September 2015.",
+      "Mikael Blomkvist | Mikael Blomkvist is a fictional character created by Swedish author and journalist Stieg Larsson.  He is a main character of Larsson's award-winning \"Millennium\" series, along with Lisbeth Salander.",
+      "The Girl with the Dragon Tattoo (2011 film) | The Girl with the Dragon Tattoo is a 2011 Swedish-American psychological thriller film based on the novel of the same name by Stieg Larsson.  This film adaptation was directed by David Fincher and written by Steven Zaillian.  Starring Daniel Craig and Rooney Mara, it tells the story of journalist Mikael Blomkvist (Daniel Craig)'s investigation to find out what happened to a woman from a wealthy family who disappeared 40 years prior.  He recruits the help of computer hacker Lisbeth Salander (Rooney Mara).",
+      "The Girl Who Takes an Eye for an Eye | The Girl Who Takes an Eye for an Eye (original title in Swedish: \"Mannen Som S\u00f6kte Sin Skugga\" , literally \"The Man Who Chased His Shadow\") is the fifth novel in the \"Millennium\" series, focusing on the characters Lisbeth Salander and Mikael Blomkvist.  Written by David Lagercrantz, this is the second novel in the series not authored by the series' creator and author of the first three \"Millennium\" books, Stieg Larsson, who died of a heart attack in 2004.  The novel was released worldwide on 7 September 2017.",
+      "Lisbeth Salander | Lisbeth Salander is a fictional character created by Swedish author and journalist Stieg Larsson.  She is the lead character in Larsson's award-winning \"Millennium\" series, along with the journalist Mikael Blomkvist.",
+      "Spider-Girl | Spider-Girl (May \"Mayday\" Parker) is a fictional superheroine in Marvel Comics' MC2 universe.  The character was created by Tom DeFalco and Ron Frenz as the teenage daughter of Peter Parker (Spider-Man) and Mary Jane Watson, and first appeared in \"What If\" (vol.  2) #105 (February 1998).  She later acquired her own ongoing comic book, \"Spider-Girl\", written by DeFalco and drawn by Frenz and Pat Olliffe, which was the longest-running superhero book with a lead female character ever published by Marvel before being relaunched as \"The Amazing Spider-Girl\", and later \"The Spectacular Spider-Girl\".",
+      "Millennium (novel series) | Millennium is a series of best-selling and award-winning Swedish crime novels, created by Stieg Larsson.  The two primary characters in the saga are Lisbeth Salander, a woman in her twenties with a photographic memory and poor social skills, and Mikael Blomkvist, an investigative journalist and publisher of a magazine called \"Millennium\"."
+    ]
+  },
+  "metric_output": false,
+  "idx_in_split": 77,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is Mikael Blomkvist's profession in \"The Girl in the Spider's Web\"?\nPassages: [\"The Girl in the Spider's Web | The Girl in the Spider's Web (original title in Swedish: \\\"Det som inte d\\u00f6dar oss\\\" , literally \\\"That which does not kill us\\\") is the fourth novel in the \\\"Millennium\\\" series, focuses on the characters Lisbeth Salander and Mikael Blomkvist.  Written by David Lagercrantz, this is the first novel in the series not authored by the series' creator and author of the first three \\\"Millennium\\\" books, Stieg Larsson, who died of a heart attack in 2004.  The novel was released worldwide on 27 August 2015, except in the United States, where it was released on 1 September 2015.\", \"Mikael Blomkvist | Mikael Blomkvist is a fictional character created by Swedish author and journalist Stieg Larsson.  He is a main character of Larsson's award-winning \\\"Millennium\\\" series, along with Lisbeth Salander.\", \"The Girl with the Dragon Tattoo (2011 film) | The Girl with the Dragon Tattoo is a 2011 Swedish-American psychological thriller film based on the novel of the same name by Stieg Larsson.  This film adaptation was directed by David Fincher and written by Steven Zaillian.  Starring Daniel Craig and Rooney Mara, it tells the story of journalist Mikael Blomkvist (Daniel Craig)'s investigation to find out what happened to a woman from a wealthy family who disappeared 40 years prior.  He recruits the help of computer hacker Lisbeth Salander (Rooney Mara).\", \"The Girl Who Takes an Eye for an Eye | The Girl Who Takes an Eye for an Eye (original title in Swedish: \\\"Mannen Som S\\u00f6kte Sin Skugga\\\" , literally \\\"The Man Who Chased His Shadow\\\") is the fifth novel in the \\\"Millennium\\\" series, focusing on the characters Lisbeth Salander and Mikael Blomkvist.  Written by David Lagercrantz, this is the second novel in the series not authored by the series' creator and author of the first three \\\"Millennium\\\" books, Stieg Larsson, who died of a heart attack in 2004.  The novel was released worldwide on 7 September 2017.\", \"Lisbeth Salander | Lisbeth Salander is a fictional character created by Swedish author and journalist Stieg Larsson.  She is the lead character in Larsson's award-winning \\\"Millennium\\\" series, along with the journalist Mikael Blomkvist.\", \"Spider-Girl | Spider-Girl (May \\\"Mayday\\\" Parker) is a fictional superheroine in Marvel Comics' MC2 universe.  The character was created by Tom DeFalco and Ron Frenz as the teenage daughter of Peter Parker (Spider-Man) and Mary Jane Watson, and first appeared in \\\"What If\\\" (vol.  2) #105 (February 1998).  She later acquired her own ongoing comic book, \\\"Spider-Girl\\\", written by DeFalco and drawn by Frenz and Pat Olliffe, which was the longest-running superhero book with a lead female character ever published by Marvel before being relaunched as \\\"The Amazing Spider-Girl\\\", and later \\\"The Spectacular Spider-Girl\\\".\", \"Millennium (novel series) | Millennium is a series of best-selling and award-winning Swedish crime novels, created by Stieg Larsson.  The two primary characters in the saga are Lisbeth Salander, a woman in her twenties with a photographic memory and poor social skills, and Mikael Blomkvist, an investigative journalist and publisher of a magazine called \\\"Millennium\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To identify Mikael Blomkvist's profession in \"The Girl in the Spider's Web,\" the relevant passages need to provide specific information regarding his role or activities. From passage [7], it is explicitly mentioned that Mikael Blomkvist is an investigative journalist and the publisher of a magazine called \"Millennium.\" Additionally, passage [3] corroborates this by describing Blomkvist as a journalist conducting an investigation. This confirms his profession as a journalist, which remains consistent throughout the \"Millennium\" series, including \"The Girl in the Spider's Web.\"\nSummary: Mikael Blomkvist's profession in \"The Girl in the Spider's Web\" is that of an investigative journalist and publisher of the magazine \"Millennium.\""
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is Mikael Blomkvist's profession in \"The Girl in the Spider's Web\"?\nSummary 1: Mikael Blomkvist's profession in \"The Girl in the Spider's Web\" is that of an investigative journalist and publisher of the magazine \"Millennium.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To answer the question about Mikael Blomkvist's profession in \"The Girl in the Spider's Web,\" we rely on the summary provided, which explicitly states that he is an investigative journalist and the publisher of the magazine \"Millennium.\" This directly addresses the query, confirming his role and the context of his profession in the narrative.\nQuery: What is Mikael Blomkvist's profession in \"The Girl in the Spider's Web\"?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is Mikael Blomkvist's profession in \"The Girl in the Spider's Web\"?\nContext: Mikael Blomkvist's profession in \"The Girl in the Spider's Web\" is that of an investigative journalist and publisher of the magazine \"Millennium.\"\nPassages: [\"The Girl in the Spider's Web | The Girl in the Spider's Web (original title in Swedish: \\\"Det som inte d\\u00f6dar oss\\\" , literally \\\"That which does not kill us\\\") is the fourth novel in the \\\"Millennium\\\" series, focuses on the characters Lisbeth Salander and Mikael Blomkvist.  Written by David Lagercrantz, this is the first novel in the series not authored by the series' creator and author of the first three \\\"Millennium\\\" books, Stieg Larsson, who died of a heart attack in 2004.  The novel was released worldwide on 27 August 2015, except in the United States, where it was released on 1 September 2015.\", \"Mikael Blomkvist | Mikael Blomkvist is a fictional character created by Swedish author and journalist Stieg Larsson.  He is a main character of Larsson's award-winning \\\"Millennium\\\" series, along with Lisbeth Salander.\", \"The Girl with the Dragon Tattoo (2011 film) | The Girl with the Dragon Tattoo is a 2011 Swedish-American psychological thriller film based on the novel of the same name by Stieg Larsson.  This film adaptation was directed by David Fincher and written by Steven Zaillian.  Starring Daniel Craig and Rooney Mara, it tells the story of journalist Mikael Blomkvist (Daniel Craig)'s investigation to find out what happened to a woman from a wealthy family who disappeared 40 years prior.  He recruits the help of computer hacker Lisbeth Salander (Rooney Mara).\", \"The Girl Who Takes an Eye for an Eye | The Girl Who Takes an Eye for an Eye (original title in Swedish: \\\"Mannen Som S\\u00f6kte Sin Skugga\\\" , literally \\\"The Man Who Chased His Shadow\\\") is the fifth novel in the \\\"Millennium\\\" series, focusing on the characters Lisbeth Salander and Mikael Blomkvist.  Written by David Lagercrantz, this is the second novel in the series not authored by the series' creator and author of the first three \\\"Millennium\\\" books, Stieg Larsson, who died of a heart attack in 2004.  The novel was released worldwide on 7 September 2017.\", \"Lisbeth Salander | Lisbeth Salander is a fictional character created by Swedish author and journalist Stieg Larsson.  She is the lead character in Larsson's award-winning \\\"Millennium\\\" series, along with the journalist Mikael Blomkvist.\", \"Spider-Girl | Spider-Girl (May \\\"Mayday\\\" Parker) is a fictional superheroine in Marvel Comics' MC2 universe.  The character was created by Tom DeFalco and Ron Frenz as the teenage daughter of Peter Parker (Spider-Man) and Mary Jane Watson, and first appeared in \\\"What If\\\" (vol.  2) #105 (February 1998).  She later acquired her own ongoing comic book, \\\"Spider-Girl\\\", written by DeFalco and drawn by Frenz and Pat Olliffe, which was the longest-running superhero book with a lead female character ever published by Marvel before being relaunched as \\\"The Amazing Spider-Girl\\\", and later \\\"The Spectacular Spider-Girl\\\".\", \"Millennium (novel series) | Millennium is a series of best-selling and award-winning Swedish crime novels, created by Stieg Larsson.  The two primary characters in the saga are Lisbeth Salander, a woman in her twenties with a photographic memory and poor social skills, and Mikael Blomkvist, an investigative journalist and publisher of a magazine called \\\"Millennium\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: To determine Mikael Blomkvist's profession in \"The Girl in the Spider's Web,\" I referenced the context provided and relevant passages. The context explicitly states that Blomkvist is an investigative journalist and publisher of the magazine \"Millennium.\" Supporting evidence from passage [7] confirms that Mikael Blomkvist is described as an investigative journalist and magazine publisher in the \"Millennium\" series. Therefore, based on the context and passages, his profession in \"The Girl in the Spider's Web\" aligns with his established role in the series.\nSummary: Mikael Blomkvist's profession in \"The Girl in the Spider's Web\" is that of an investigative journalist and publisher of the magazine \"Millennium.\""
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: What is Mikael Blomkvist's profession in \"The Girl in the Spider's Web\"?\nSummary 1: Mikael Blomkvist's profession in \"The Girl in the Spider's Web\" is that of an investigative journalist and publisher of the magazine \"Millennium.\"\nSummary 2: Mikael Blomkvist's profession in \"The Girl in the Spider's Web\" is that of an investigative journalist and publisher of the magazine \"Millennium.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries clearly state that Mikael Blomkvist's profession in \"The Girl in the Spider's Web\" is as an investigative journalist and publisher of the magazine \"Millennium.\" There is consistency in the information provided in the summaries, leaving no ambiguity or contradiction.\nAnswer: Mikael Blomkvist's profession in \"The Girl in the Spider's Web\" is that of an investigative journalist and publisher of the magazine \"Millennium.\""
+      }
+    ]
+  }
+}

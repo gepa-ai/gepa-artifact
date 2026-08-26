@@ -1,0 +1,96 @@
+{
+  "example_id": "5a8f89325542997ba9cb32a5",
+  "question": "The actress born Uma Devi Khatri stars with Madhubala andPradeep Kumar in what 1956 Indian film?",
+  "gold_answer": "Raj Hath",
+  "prediction": {
+    "answer": "Raj Hath",
+    "hop1_docs": [
+      "Tun Tun | Tun Tun (11 July 1923 \u2013 24 November 2003) was the screen name of Indian playback singer and actress-comedian, Uma Devi Khatri, who was called \"Hindi cinema's first-ever comedienne\".",
+      "Shehnai (1947 film) | Shehnai is a 1947 Indian Bollywood film directed by P.L. Santoshi, starring Kishore Kumar, Indumati, Radhakrishan, V.H. Desai and Rehana.  It was the fifth highest grossing Indian film of 1947.  Santoshi went on make the classic, \"Barsaat Ki Raat\" (1960) starring Madhubala and Bharat Bhushan.",
+      "Mahal (1949 film) | Mahal (Hindi: \u092e\u0939\u0932, English: \"The Mansion\" ) is a 1949 Indian Hindi film directed by Kamal Amrohi and starring Ashok Kumar and Madhubala.  It was India's first reincarnation thriller film.",
+      "Raj Hath | Raj Hath, also called Rajhath (Devanagari:\u0930\u093e\u091c\u0939\u0920; meaning \"\"Royal obstinacy or stubbornness\"\"), is a 1956 Indian (Hindi) romantic fantasy drama film directed and produced by Sohrab Modi.  It starred Madhubala, Pradeep Kumar, Tun Tun, Sohrab Modi and Ulhas in the main roles.  Music for the film was scored by well known music directors, Jaikishan Dayabhai Panchal and Shankarsingh Raghuwanshi, often credited as Shankar Jaikishan.",
+      "Seeta Devi (actress) | Seeta (or Sita) Devi (1912\u20131983), born Renee Smith, was one of the early stars of silent films in the Indian film industry.",
+      "Tarana (1951 film) | Tarana is a 1951 Hindi movie produced and written by K S Daryani and directed by Ram Daryani.  The film stars Dilip Kumar and Madhubala for the first time together, along with Shyama and Jeevan.  Anil Biswas wrote the music for the film and one of the popular numbers was the duet \"Seene Mein Sulagte Hain Arman\", sung by Talat Mehmood and Lata Mangeshkar for Dilip Kumar and Madhubala.",
+      "Yahudi Ki Ladki (1957 film) | Yahudi Ki Ladki (The Jew's Daughter) is a 1957 Indian Hindi drama film directed by S.D. Narang, starring Madhubala and Pradeep Kumar as leads.  director and producer, S.D. Narang is known for \"Shehnai\" (1964) and \"Dilli Ka Thug\" (1958)."
+    ],
+    "hop2_docs": [
+      "Raj Hath | Raj Hath, also called Rajhath (Devanagari:\u0930\u093e\u091c\u0939\u0920; meaning \"\"Royal obstinacy or stubbornness\"\"), is a 1956 Indian (Hindi) romantic fantasy drama film directed and produced by Sohrab Modi.  It starred Madhubala, Pradeep Kumar, Tun Tun, Sohrab Modi and Ulhas in the main roles.  Music for the film was scored by well known music directors, Jaikishan Dayabhai Panchal and Shankarsingh Raghuwanshi, often credited as Shankar Jaikishan.",
+      "Raj Kapoor | Ranbir Raj Kapoor (14 December 1924\u00a0\u2013 2 June 1988), also known as \"the greatest showman of Indian cinema\", was a noted Indian film actor, producer and director of Hindi cinema.  Born at Kapoor Haveli in Peshawar to actor Prithviraj Kapoorhe was a prominent member of the Kapoor familythat produced several celebrated Bollywood superstars.",
+      "Jaan Hatheli Pe | Jaan Hatheli Pe is a 1987 Bollywood film produced by Sudesh Kumar on Vijaya Shree Pictures banner and directed by Raghunath Jhalani.  Starring Dharmendra, Jeetendra, Raj Babbar, Hema Malini and Rekha in lead roles and music composed by Laxmikant-Pyarelal.",
+      "Inder Raj Anand | Inder Raj Anand (Hindi: \u0907\u0902\u0926\u0930 \u0930\u093e\u091c \u0906\u0928\u0928\u094d\u0926 ; died 6 March 1987) was an Indian film dialogue and screenwriter in Hindi cinema, who worked on many Raj Kapoor films, starting with \"Aag\" (1948), \"Aah \" (1953), \"Anari\" (1959) and \"Sangam\" (1963).",
+      "J. D. Thottan | J. D. Thottan was an Indian director of Malayalam language films.  \"Indian Cinema\" cited him along with M. Krishnan Nair, S. S. Rajan, and A. B. Raj as one of the Malayalam film industry's successful film directors.",
+      "Mera Naam Joker | Mera Naam Joker (translation: \"My Name is Joker\") is a 1970 Indian Hindi drama film directed by Raj Kapoor.  The screenplay was written by Khwaja Ahmad Abbas.  This film was the debut of Rishi Kapoor.  \"Mera Naam Joker\" is a film about a clown who must make his audience laugh at the cost of his own sorrows.  The film is considered to be one of the lengthiest films of Indian cinema.  After \"Sangam\" became a blockbuster, \"Mera Naam Joker\" was highly anticipated as it was under production for six years and was heavily publicized to be loosely based on Raj Kapoor's own life.  Upon release the film turned out to be a critical and commercial disaster putting Kapoor into a financial crisis.  The film was heavily panned for its length and plot.  However, over the years, the film has gained a cult status and is regarded as a classic today.  Both audience's and critics' response has turned highly favorable with the passage of time.  An abridged version was released in the 1980s and had a highly successful run at the box office.  Raj Kapoor termed this his favorite film and described it as having deep philosophical depth and meaning.  The film is regarded as one of Kapoor's finest works today with film experts labeling it as a 'misunderstood masterpiece'.",
+      "Sikuru Hathe | Sikuru Hathe (Sinhalese: \"\u0dc3\u0dd2\u0d9a\u0dd4\u0dbb\u0dd4 \u0dc4\u0dad\u0dda\" ) is a 2015 Sri Lankan Sinhala comedy film directed by Giriraj Kaushalya and produced by Hans Anton Vanstarex for New Imperial Talkies.  It stars Vijaya Nandasiri, Anarkali Akarsha and Suraj Mapa in lead roles along with Rodney Warnakula and Susila Kottage.  Music composed by Tharupathi Munasinghe, and songs composed by Rohana Weerasinghe and Navaratne Gamage.  It is the 1092nd Sri Lankan film in the Sinhala cinema.  One of best comedy films ever produced in the country, \"Sikuru Hathe\" became the highest-grossing film in 2007 and won many awards at several local film award ceremonies."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 2,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The actress born Uma Devi Khatri stars with Madhubala andPradeep Kumar in what 1956 Indian film?\nPassages: [\"Tun Tun | Tun Tun (11 July 1923 \\u2013 24 November 2003) was the screen name of Indian playback singer and actress-comedian, Uma Devi Khatri, who was called \\\"Hindi cinema's first-ever comedienne\\\".\", \"Shehnai (1947 film) | Shehnai is a 1947 Indian Bollywood film directed by P.L. Santoshi, starring Kishore Kumar, Indumati, Radhakrishan, V.H. Desai and Rehana.  It was the fifth highest grossing Indian film of 1947.  Santoshi went on make the classic, \\\"Barsaat Ki Raat\\\" (1960) starring Madhubala and Bharat Bhushan.\", \"Mahal (1949 film) | Mahal (Hindi: \\u092e\\u0939\\u0932, English: \\\"The Mansion\\\" ) is a 1949 Indian Hindi film directed by Kamal Amrohi and starring Ashok Kumar and Madhubala.  It was India's first reincarnation thriller film.\", \"Raj Hath | Raj Hath, also called Rajhath (Devanagari:\\u0930\\u093e\\u091c\\u0939\\u0920; meaning \\\"\\\"Royal obstinacy or stubbornness\\\"\\\"), is a 1956 Indian (Hindi) romantic fantasy drama film directed and produced by Sohrab Modi.  It starred Madhubala, Pradeep Kumar, Tun Tun, Sohrab Modi and Ulhas in the main roles.  Music for the film was scored by well known music directors, Jaikishan Dayabhai Panchal and Shankarsingh Raghuwanshi, often credited as Shankar Jaikishan.\", \"Seeta Devi (actress) | Seeta (or Sita) Devi (1912\\u20131983), born Renee Smith, was one of the early stars of silent films in the Indian film industry.\", \"Tarana (1951 film) | Tarana is a 1951 Hindi movie produced and written by K S Daryani and directed by Ram Daryani.  The film stars Dilip Kumar and Madhubala for the first time together, along with Shyama and Jeevan.  Anil Biswas wrote the music for the film and one of the popular numbers was the duet \\\"Seene Mein Sulagte Hain Arman\\\", sung by Talat Mehmood and Lata Mangeshkar for Dilip Kumar and Madhubala.\", \"Yahudi Ki Ladki (1957 film) | Yahudi Ki Ladki (The Jew's Daughter) is a 1957 Indian Hindi drama film directed by S.D. Narang, starring Madhubala and Pradeep Kumar as leads.  director and producer, S.D. Narang is known for \\\"Shehnai\\\" (1964) and \\\"Dilli Ka Thug\\\" (1958).\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the 1956 Indian film featuring Uma Devi Khatri, Madhubala, and Pradeep Kumar. Uma Devi Khatri, known as Tun Tun, is described in the passages as a notable actress. Passage [4] mentions the 1956 film \"Raj Hath\" (or \"Rajhath\"), which stars Madhubala, Pradeep Kumar, and Tun Tun, aligning completely with the query's requirements. None of the other passages reference a film from 1956 featuring all three individuals.\nSummary: The 1956 Indian film in which Uma Devi Khatri (Tun Tun) stars alongside Madhubala and Pradeep Kumar is \"Raj Hath.\""
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The actress born Uma Devi Khatri stars with Madhubala andPradeep Kumar in what 1956 Indian film?\nSummary 1: The 1956 Indian film in which Uma Devi Khatri (Tun Tun) stars alongside Madhubala and Pradeep Kumar is \"Raj Hath.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question seeks the name of a 1956 Indian film featuring actress Uma Devi Khatri (known as Tun Tun), Madhubala, and Pradeep Kumar. The summary indicates that this specific film is titled \"Raj Hath.\" Thus, the question is answered by confirming the information provided in the summary.\nQuery: What is the plot and significance of the film \"Raj Hath\" in the context of Indian cinema?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The actress born Uma Devi Khatri stars with Madhubala andPradeep Kumar in what 1956 Indian film?\nContext: The 1956 Indian film in which Uma Devi Khatri (Tun Tun) stars alongside Madhubala and Pradeep Kumar is \"Raj Hath.\"\nPassages: [\"Raj Hath | Raj Hath, also called Rajhath (Devanagari:\\u0930\\u093e\\u091c\\u0939\\u0920; meaning \\\"\\\"Royal obstinacy or stubbornness\\\"\\\"), is a 1956 Indian (Hindi) romantic fantasy drama film directed and produced by Sohrab Modi.  It starred Madhubala, Pradeep Kumar, Tun Tun, Sohrab Modi and Ulhas in the main roles.  Music for the film was scored by well known music directors, Jaikishan Dayabhai Panchal and Shankarsingh Raghuwanshi, often credited as Shankar Jaikishan.\", \"Raj Kapoor | Ranbir Raj Kapoor (14 December 1924\\u00a0\\u2013 2 June 1988), also known as \\\"the greatest showman of Indian cinema\\\", was a noted Indian film actor, producer and director of Hindi cinema.  Born at Kapoor Haveli in Peshawar to actor Prithviraj Kapoorhe was a prominent member of the Kapoor familythat produced several celebrated Bollywood superstars.\", \"Jaan Hatheli Pe | Jaan Hatheli Pe is a 1987 Bollywood film produced by Sudesh Kumar on Vijaya Shree Pictures banner and directed by Raghunath Jhalani.  Starring Dharmendra, Jeetendra, Raj Babbar, Hema Malini and Rekha in lead roles and music composed by Laxmikant-Pyarelal.\", \"Inder Raj Anand | Inder Raj Anand (Hindi: \\u0907\\u0902\\u0926\\u0930 \\u0930\\u093e\\u091c \\u0906\\u0928\\u0928\\u094d\\u0926 ; died 6 March 1987) was an Indian film dialogue and screenwriter in Hindi cinema, who worked on many Raj Kapoor films, starting with \\\"Aag\\\" (1948), \\\"Aah \\\" (1953), \\\"Anari\\\" (1959) and \\\"Sangam\\\" (1963).\", \"J. D. Thottan | J. D. Thottan was an Indian director of Malayalam language films.  \\\"Indian Cinema\\\" cited him along with M. Krishnan Nair, S. S. Rajan, and A. B. Raj as one of the Malayalam film industry's successful film directors.\", \"Mera Naam Joker | Mera Naam Joker (translation: \\\"My Name is Joker\\\") is a 1970 Indian Hindi drama film directed by Raj Kapoor.  The screenplay was written by Khwaja Ahmad Abbas.  This film was the debut of Rishi Kapoor.  \\\"Mera Naam Joker\\\" is a film about a clown who must make his audience laugh at the cost of his own sorrows.  The film is considered to be one of the lengthiest films of Indian cinema.  After \\\"Sangam\\\" became a blockbuster, \\\"Mera Naam Joker\\\" was highly anticipated as it was under production for six years and was heavily publicized to be loosely based on Raj Kapoor's own life.  Upon release the film turned out to be a critical and commercial disaster putting Kapoor into a financial crisis.  The film was heavily panned for its length and plot.  However, over the years, the film has gained a cult status and is regarded as a classic today.  Both audience's and critics' response has turned highly favorable with the passage of time.  An abridged version was released in the 1980s and had a highly successful run at the box office.  Raj Kapoor termed this his favorite film and described it as having deep philosophical depth and meaning.  The film is regarded as one of Kapoor's finest works today with film experts labeling it as a 'misunderstood masterpiece'.\", \"Sikuru Hathe | Sikuru Hathe (Sinhalese: \\\"\\u0dc3\\u0dd2\\u0d9a\\u0dd4\\u0dbb\\u0dd4 \\u0dc4\\u0dad\\u0dda\\\" ) is a 2015 Sri Lankan Sinhala comedy film directed by Giriraj Kaushalya and produced by Hans Anton Vanstarex for New Imperial Talkies.  It stars Vijaya Nandasiri, Anarkali Akarsha and Suraj Mapa in lead roles along with Rodney Warnakula and Susila Kottage.  Music composed by Tharupathi Munasinghe, and songs composed by Rohana Weerasinghe and Navaratne Gamage.  It is the 1092nd Sri Lankan film in the Sinhala cinema.  One of best comedy films ever produced in the country, \\\"Sikuru Hathe\\\" became the highest-grossing film in 2007 and won many awards at several local film award ceremonies.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question is asking for the 1956 Indian film in which the actress Uma Devi Khatri starred alongside Madhubala and Pradeep Kumar. The `context` points directly to \"Raj Hath\" as the film satisfying this criterion. Additionally, Passage [1] confirms that \"Raj Hath,\" a 1956 Indian romantic fantasy film, featured these actors, including Uma Devi Khatri, also known as Tun Tun. Passages [2] through [7] do not provide relevant information contrary to or related to this film, further solidifying \"Raj Hath\" as the correct answer.\nSummary: The 1956 Indian film starring Uma Devi Khatri (Tun Tun), Madhubala, and Pradeep Kumar is \"Raj Hath.\""
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: The actress born Uma Devi Khatri stars with Madhubala andPradeep Kumar in what 1956 Indian film?\nSummary 1: The 1956 Indian film in which Uma Devi Khatri (Tun Tun) stars alongside Madhubala and Pradeep Kumar is \"Raj Hath.\"\nSummary 2: The 1956 Indian film starring Uma Devi Khatri (Tun Tun), Madhubala, and Pradeep Kumar is \"Raj Hath.\""
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summaries provide identical answers, indicating that the 1956 Indian film starring Uma Devi Khatri (also known as Tun Tun), Madhubala, and Pradeep Kumar is \"Raj Hath.\" There is no conflicting information between the summaries, suggesting the answer is reliable and well-supported by the provided data.\nAnswer: Raj Hath"
+      }
+    ]
+  }
+}

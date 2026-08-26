@@ -1,0 +1,96 @@
+{
+  "example_id": "5ab478435542991751b4d783",
+  "question": "Which former Danity Kane singer starred in her own reality television series on Oxygen?",
+  "gold_answer": "Aubrey O'Day",
+  "prediction": {
+    "answer": "Aubrey O'Day",
+    "hop1_docs": [
+      "Aubrey O'Day | Aubrey Morgan O'Day (born February 11, 1984) is an American singer-songwriter, member of the duo Dumblonde, reality television personality, and a former member of the girl group Danity Kane.  Following discord among Danity Kane and with her mentor at the time, P. Diddy, O'Day was fired from the group in 2008, but reunited with them in 2013 before a second disbandment.",
+      "All About Aubrey | All About Aubrey is a reality television series from Oxygen that premiered on March 7, 2011.  The show follows pop star Aubrey O'Day as she mounts a solo comeback after being fired from multi-platinum girl group Danity Kane by Sean Combs on MTV's \"Making the Band\".  The show was not renewed for a second season due to low ratings.",
+      "Danity Kane | Danity Kane was an American girl group comprising members Aubrey O'Day, Wanita \"D. Woods\" Woodgett, Shannon Bex, Dawn Richard and Aundrea Fimbres.  Formed on the third iteration of MTV's \"Making the Band\" reality television series in 2005, they were soon signed to Bad Boy Records by Diddy.",
+      "Danity Kane discography | The discography of Danity Kane, an American R&B group, consists of two studio album, five singles, and four music videos. Danity Kane were formed in 2005 during the third season of the reality television series \"Making the Band\", and consisted of Aubrey O'Day, Wanita \"D. Woods\" Woodgett, Shannon Bex, Dawn Richard, and Aundrea Fimbres.  The group disbanded in January 2009 during the fourth season of \"Making the Band\".  The group released their self titled debut album in August 2006.  The album reached number one on the United States \"Billboard\" 200 and was certified platinum by the Recording Industry Association of America (RIAA).  Danity Kane's debut single, \"Show Stopper\", which featured rapper Yung Joc, reached number eight on the U.S. \"Billboard\" Hot 100. \" Ride for You\", their second single, reached number 78 on the \"Billboard\" Hot 100. \" Welcome to the Dollhouse\", Danity Kane's second album, was released in March 2008.  It reached number one on the \"Billboard\" 200 and was certified gold by the RIAA.  The album's lead single, \"Damaged\", reached number ten on the \"Billboard\" Hot 100 and was certified platinum by the RIAA.  The group's fifth single, \"Bad Girl\", featured Missy Elliott and reached number 110 on the \"Billboard\" Hot 100.",
+      "D. Woods | Wanita Denise Woodgett (born July 6, 1985), better known as by her nickname D. Woods, is an American singer, dancer, and actress.  She is a former member of the girl group Danity Kane.  Woods is the founder and CEO of Woodgrane Entertainment.",
+      "Making the Band | Making the Band was an ABC/MTV reality television series that exists in separate iterations, each iteration focusing on a specific music act.  It spawned musical acts O-Town, Da Band, Danity Kane, Day26, and Donnie Klang.  Except for the first iteration of the series featuring O-Town, all seasons of \"Making the Band\" have been overseen by Diddy, acting as the man of the house who makes the final decision on who will be in the band.",
+      "Keyshia Cole: All In | Keyshia Cole: All In was a reality television series starring Grammy-nominated R&B singer Keyshia Cole.  The series premiered on February 24, 2015, on BET as a follow-up to her 2012 reality television series, \"\"."
+    ],
+    "hop2_docs": [
+      "Aubrey O'Day | Aubrey Morgan O'Day (born February 11, 1984) is an American singer-songwriter, member of the duo Dumblonde, reality television personality, and a former member of the girl group Danity Kane.  Following discord among Danity Kane and with her mentor at the time, P. Diddy, O'Day was fired from the group in 2008, but reunited with them in 2013 before a second disbandment.",
+      "All About Aubrey | All About Aubrey is a reality television series from Oxygen that premiered on March 7, 2011.  The show follows pop star Aubrey O'Day as she mounts a solo comeback after being fired from multi-platinum girl group Danity Kane by Sean Combs on MTV's \"Making the Band\".  The show was not renewed for a second season due to low ratings.",
+      "Danity Kane | Danity Kane was an American girl group comprising members Aubrey O'Day, Wanita \"D. Woods\" Woodgett, Shannon Bex, Dawn Richard and Aundrea Fimbres.  Formed on the third iteration of MTV's \"Making the Band\" reality television series in 2005, they were soon signed to Bad Boy Records by Diddy.",
+      "Danity Kane discography | The discography of Danity Kane, an American R&B group, consists of two studio album, five singles, and four music videos. Danity Kane were formed in 2005 during the third season of the reality television series \"Making the Band\", and consisted of Aubrey O'Day, Wanita \"D. Woods\" Woodgett, Shannon Bex, Dawn Richard, and Aundrea Fimbres.  The group disbanded in January 2009 during the fourth season of \"Making the Band\".  The group released their self titled debut album in August 2006.  The album reached number one on the United States \"Billboard\" 200 and was certified platinum by the Recording Industry Association of America (RIAA).  Danity Kane's debut single, \"Show Stopper\", which featured rapper Yung Joc, reached number eight on the U.S. \"Billboard\" Hot 100. \" Ride for You\", their second single, reached number 78 on the \"Billboard\" Hot 100. \" Welcome to the Dollhouse\", Danity Kane's second album, was released in March 2008.  It reached number one on the \"Billboard\" 200 and was certified gold by the RIAA.  The album's lead single, \"Damaged\", reached number ten on the \"Billboard\" Hot 100 and was certified platinum by the RIAA.  The group's fifth single, \"Bad Girl\", featured Missy Elliott and reached number 110 on the \"Billboard\" Hot 100.",
+      "Dumblonde | Dumblonde (stylized dumblonde) is an American alternative dance pop duo consisting of former Danity Kane members Shannon Bex and Aubrey O'Day.",
+      "Between Two Evils | Between Two Evils is the debut extended play (EP) by American singer and Danity Kane member Aubrey O'Day.  It was released on August 13, 2013.",
+      "Dumblonde (album) | dumblonde is the debut studio album by American duo Dumblonde, consisting of Aubrey O'Day and Shannon Bex.  It was released on September 25, 2015 by Double Platinum, Inc, and is their first musical project since the split of their original girl group Danity Kane in 2014."
+    ]
+  },
+  "metric_output": true,
+  "idx_in_split": 99,
+  "sub_agent_calling_1": {
+    "name": "summarize1.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which former Danity Kane singer starred in her own reality television series on Oxygen?\nPassages: [\"Aubrey O'Day | Aubrey Morgan O'Day (born February 11, 1984) is an American singer-songwriter, member of the duo Dumblonde, reality television personality, and a former member of the girl group Danity Kane.  Following discord among Danity Kane and with her mentor at the time, P. Diddy, O'Day was fired from the group in 2008, but reunited with them in 2013 before a second disbandment.\", \"All About Aubrey | All About Aubrey is a reality television series from Oxygen that premiered on March 7, 2011.  The show follows pop star Aubrey O'Day as she mounts a solo comeback after being fired from multi-platinum girl group Danity Kane by Sean Combs on MTV's \\\"Making the Band\\\".  The show was not renewed for a second season due to low ratings.\", \"Danity Kane | Danity Kane was an American girl group comprising members Aubrey O'Day, Wanita \\\"D. Woods\\\" Woodgett, Shannon Bex, Dawn Richard and Aundrea Fimbres.  Formed on the third iteration of MTV's \\\"Making the Band\\\" reality television series in 2005, they were soon signed to Bad Boy Records by Diddy.\", \"Danity Kane discography | The discography of Danity Kane, an American R&B group, consists of two studio album, five singles, and four music videos. Danity Kane were formed in 2005 during the third season of the reality television series \\\"Making the Band\\\", and consisted of Aubrey O'Day, Wanita \\\"D. Woods\\\" Woodgett, Shannon Bex, Dawn Richard, and Aundrea Fimbres.  The group disbanded in January 2009 during the fourth season of \\\"Making the Band\\\".  The group released their self titled debut album in August 2006.  The album reached number one on the United States \\\"Billboard\\\" 200 and was certified platinum by the Recording Industry Association of America (RIAA).  Danity Kane's debut single, \\\"Show Stopper\\\", which featured rapper Yung Joc, reached number eight on the U.S. \\\"Billboard\\\" Hot 100. \\\" Ride for You\\\", their second single, reached number 78 on the \\\"Billboard\\\" Hot 100. \\\" Welcome to the Dollhouse\\\", Danity Kane's second album, was released in March 2008.  It reached number one on the \\\"Billboard\\\" 200 and was certified gold by the RIAA.  The album's lead single, \\\"Damaged\\\", reached number ten on the \\\"Billboard\\\" Hot 100 and was certified platinum by the RIAA.  The group's fifth single, \\\"Bad Girl\\\", featured Missy Elliott and reached number 110 on the \\\"Billboard\\\" Hot 100.\", \"D. Woods | Wanita Denise Woodgett (born July 6, 1985), better known as by her nickname D. Woods, is an American singer, dancer, and actress.  She is a former member of the girl group Danity Kane.  Woods is the founder and CEO of Woodgrane Entertainment.\", \"Making the Band | Making the Band was an ABC/MTV reality television series that exists in separate iterations, each iteration focusing on a specific music act.  It spawned musical acts O-Town, Da Band, Danity Kane, Day26, and Donnie Klang.  Except for the first iteration of the series featuring O-Town, all seasons of \\\"Making the Band\\\" have been overseen by Diddy, acting as the man of the house who makes the final decision on who will be in the band.\", \"Keyshia Cole: All In | Keyshia Cole: All In was a reality television series starring Grammy-nominated R&B singer Keyshia Cole.  The series premiered on February 24, 2015, on BET as a follow-up to her 2012 reality television series, \\\"\\\".\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks which former member of Danity Kane starred in her own reality television series on Oxygen. From passage [1], Aubrey O'Day is identified as a former member of Danity Kane and a reality television personality. In passage [2], it is mentioned that the reality television series \"All About Aubrey\" aired on Oxygen and followed Aubrey O'Day. Therefore, the former Danity Kane singer who starred in her own reality series on Oxygen is Aubrey O'Day.\nSummary: The former Danity Kane singer who starred in her own reality television series on Oxygen is Aubrey O'Day."
+      }
+    ]
+  },
+  "sub_agent_calling_2": {
+    "name": "create_query_hop2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, produce the fields `query`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which former Danity Kane singer starred in her own reality television series on Oxygen?\nSummary 1: The former Danity Kane singer who starred in her own reality television series on Oxygen is Aubrey O'Day."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The question asks about a former Danity Kane singer who featured in her own reality television series on Oxygen. From the summary provided, it's specified that the artist in question is Aubrey O'Day. No further verification or clarification is needed as the summary directly answers the question.\nQuery: Who is Aubrey O'Day, and what is her connection to Danity Kane and Oxygen's reality television?"
+      }
+    ]
+  },
+  "sub_agent_calling_3": {
+    "name": "summarize2.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `context`, `passages`, produce the fields `summary`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which former Danity Kane singer starred in her own reality television series on Oxygen?\nContext: The former Danity Kane singer who starred in her own reality television series on Oxygen is Aubrey O'Day.\nPassages: [\"Aubrey O'Day | Aubrey Morgan O'Day (born February 11, 1984) is an American singer-songwriter, member of the duo Dumblonde, reality television personality, and a former member of the girl group Danity Kane.  Following discord among Danity Kane and with her mentor at the time, P. Diddy, O'Day was fired from the group in 2008, but reunited with them in 2013 before a second disbandment.\", \"All About Aubrey | All About Aubrey is a reality television series from Oxygen that premiered on March 7, 2011.  The show follows pop star Aubrey O'Day as she mounts a solo comeback after being fired from multi-platinum girl group Danity Kane by Sean Combs on MTV's \\\"Making the Band\\\".  The show was not renewed for a second season due to low ratings.\", \"Danity Kane | Danity Kane was an American girl group comprising members Aubrey O'Day, Wanita \\\"D. Woods\\\" Woodgett, Shannon Bex, Dawn Richard and Aundrea Fimbres.  Formed on the third iteration of MTV's \\\"Making the Band\\\" reality television series in 2005, they were soon signed to Bad Boy Records by Diddy.\", \"Danity Kane discography | The discography of Danity Kane, an American R&B group, consists of two studio album, five singles, and four music videos. Danity Kane were formed in 2005 during the third season of the reality television series \\\"Making the Band\\\", and consisted of Aubrey O'Day, Wanita \\\"D. Woods\\\" Woodgett, Shannon Bex, Dawn Richard, and Aundrea Fimbres.  The group disbanded in January 2009 during the fourth season of \\\"Making the Band\\\".  The group released their self titled debut album in August 2006.  The album reached number one on the United States \\\"Billboard\\\" 200 and was certified platinum by the Recording Industry Association of America (RIAA).  Danity Kane's debut single, \\\"Show Stopper\\\", which featured rapper Yung Joc, reached number eight on the U.S. \\\"Billboard\\\" Hot 100. \\\" Ride for You\\\", their second single, reached number 78 on the \\\"Billboard\\\" Hot 100. \\\" Welcome to the Dollhouse\\\", Danity Kane's second album, was released in March 2008.  It reached number one on the \\\"Billboard\\\" 200 and was certified gold by the RIAA.  The album's lead single, \\\"Damaged\\\", reached number ten on the \\\"Billboard\\\" Hot 100 and was certified platinum by the RIAA.  The group's fifth single, \\\"Bad Girl\\\", featured Missy Elliott and reached number 110 on the \\\"Billboard\\\" Hot 100.\", \"Dumblonde | Dumblonde (stylized dumblonde) is an American alternative dance pop duo consisting of former Danity Kane members Shannon Bex and Aubrey O'Day.\", \"Between Two Evils | Between Two Evils is the debut extended play (EP) by American singer and Danity Kane member Aubrey O'Day.  It was released on August 13, 2013.\", \"Dumblonde (album) | dumblonde is the debut studio album by American duo Dumblonde, consisting of Aubrey O'Day and Shannon Bex.  It was released on September 25, 2015 by Double Platinum, Inc, and is their first musical project since the split of their original girl group Danity Kane in 2014.\"]"
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: The passages provide information linking Aubrey O'Day, a former member of the girl group Danity Kane, to a reality television series on Oxygen. Passage [2] specifically names the show as \"All About Aubrey,\" which premiered on March 7, 2011, and followed her attempt at a solo music comeback after leaving Danity Kane. The context confirms that Aubrey O'Day is the singer who starred in the show. Based on this evidence, the answer is clearly Aubrey O'Day.\nSummary: The former Danity Kane singer who starred in her own reality television series on Oxygen is Aubrey O'Day. Her show, \"All About Aubrey,\" premiered in 2011."
+      }
+    ]
+  },
+  "sub_agent_calling_4": {
+    "name": "final_answer.predict",
+    "trace": [
+      {
+        "role": "system",
+        "content": "Given the fields `question`, `summary_1`, `summary_2`, produce the fields `answer`."
+      },
+      {
+        "role": "user",
+        "content": "Question: Which former Danity Kane singer starred in her own reality television series on Oxygen?\nSummary 1: The former Danity Kane singer who starred in her own reality television series on Oxygen is Aubrey O'Day.\nSummary 2: The former Danity Kane singer who starred in her own reality television series on Oxygen is Aubrey O'Day. Her show, \"All About Aubrey,\" premiered in 2011."
+      },
+      {
+        "role": "assistant",
+        "content": "Reasoning: Both summary_1 and summary_2 identify Aubrey O'Day as the former Danity Kane singer who starred in her own reality television series on Oxygen. Summary_2 provides additional information about the show, titled \"All About Aubrey,\" which premiered in 2011. Based on these consistent details, Aubrey O'Day is the correct answer.\nAnswer: Aubrey O'Day"
+      }
+    ]
+  }
+}
