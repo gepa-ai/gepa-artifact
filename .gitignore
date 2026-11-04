@@ -210,3 +210,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Reproduction: generated retrieval, launch and run files
+/wiki.abstracts.2017.tar.gz
+gepa_artifact/benchmarks/hover/wiki.abstracts.2017.jsonl
+gepa_artifact/benchmarks/hover/bm25s_retriever/
+/launch_commands
+/reference_runs_data/
+/storage/
